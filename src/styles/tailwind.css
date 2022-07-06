@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* prevents alpine content to blip */
+[x-cloak] {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*[id]:target {
+  padding-top: 200px;
+  margin-top: -200px;
+  outline: 0;
+}
