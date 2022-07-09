@@ -10,12 +10,13 @@ module.exports = {
     ],
     theme: {
         colors: {
-            dark: "#141A18",
-            primary: "#FF8235",
-            secondary: "#30E8BF",
-            muted: "#9CA3AF",
-            green: colors.lime,
-            gray: colors.neutral,
+            white: '#fff',
+            gray: colors.slate,
+            primary: '#4BA6EE',
+            secondary: '#B440FC',
+        },
+        fontFamily: {
+            'sans': ['Plus Jakarta Sans, system-ui, sans-serif'],
         },
         container: {
             center: true,

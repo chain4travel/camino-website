@@ -3,6 +3,21 @@ title: Test
 layout: default
 ---
 
-<div class="container py-16">
-    <h1 class="text-4xl">Hello Camino!</h1>
+<div class="relative camino-bg bg-cover 2xl:bg-contain bg-no-repeat bg-center">
+    <div class="container flex flex-col justify-center items-center h-screen">
+        <div class="flex flex-col justify-center items-center relative z-10 -top-8">
+            <img data-sal="zoom-out" data-sal-duration="750" class="h-10 md:h-12" src="../images/camino-logo-dark.svg" alt="">
+            <h1 data-sal="zoom-out" data-sal-duration="750" data-sal-delay="500" class="text-3xl md:text-6xl lg:text-8xl my-12 text-center font-extrabold drop-shadow-2xl">
+                Connecting the <br> new world of travel
+            </h1>
+            <h2 data-sal="zoom-out" data-sal-duration="750" data-sal-delay="750" class="text-xl md:text-2xl text-gray-200 mb-12 text-center">
+                Join the travel revolution now and be part of the future. Coming soon!
+            </h2>
+            <div data-sal="zoom-out" data-sal-duration="750" data-sal-delay="1000" class="flex -mx-2 md:-mx-4">
+                <a href="https://www.chain4travel.com/" target="_blank" class="transform transition-transform active:scale-100 hover:scale-110 mx-2 md:mx-4 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-gradient-to-r from-primary to-secondary">Camino Docs</a>
+                <a href="https://docs.camino.foundation/" target="_blank" class="transform transition-transform active:scale-100 hover:scale-110 mx-2 md:mx-4 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-white/10">Chain4Travel</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="bg-gradient-to-r from-primary to-secondary w-screen h-64 fixed left-0 right-0 -bottom-32 blur-[128px] opacity-75"></div> -->
 </div>
