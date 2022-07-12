@@ -43,7 +43,16 @@
 }
 
 .camino-bg {
-  background-image: url(../images/camino-bg.png);
+  background-image: url(../images/camino-bg-2.png);
+  background-position: 110% 0;
+}
+
+.button {
+  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-white/10 text-white;
+}
+
+.button-gradient {
+  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 text-white bg-gradient-to-r from-primary to-secondary
 }
 
 /* prevents alpine content to blip */
