@@ -14,6 +14,7 @@ module.exports = {
             gray: colors.slate,
             primary: '#4BA6EE',
             secondary: '#B440FC',
+            tertiary: '#35E9AD'
         },
         fontFamily: {
             'sans': ['Plus Jakarta Sans, system-ui, sans-serif'],

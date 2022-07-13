@@ -51,7 +51,7 @@
 }
 
 .text-body {
-  @apply text-gray-300 leading-relaxed md:text-xl;
+  @apply leading-relaxed md:text-xl;
 }
 
 .button {
@@ -60,6 +60,18 @@
 
 .button-gradient {
   @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 text-white bg-gradient-to-r from-primary to-secondary
+}
+
+.bg-gradient-primary {
+  @apply bg-gradient-to-tl from-primary to-secondary
+}
+
+.bg-gradient-secondary {
+  @apply bg-gradient-to-tl from-secondary to-tertiary
+  
+}
+.bg-gradient-tertiary {
+  @apply bg-gradient-to-tl from-tertiary to-primary
 }
 
 /* prevents alpine content to blip */
