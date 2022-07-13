@@ -43,7 +43,7 @@
 }
 
 .button {
-  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-white/10 text-white;
+  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-gray-800/75 text-white;
 }
 
 .button-gradient {
