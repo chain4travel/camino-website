@@ -42,11 +42,6 @@
        url('../static/fonts/plus-jakarta-sans-v2-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.camino-bg {
-  background-image: url(../images/camino-bg-2.png);
-  background-position: 110% 0;
-}
-
 .button {
   @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-white/10 text-white;
 }
