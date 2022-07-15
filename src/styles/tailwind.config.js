@@ -14,6 +14,7 @@ module.exports = {
             gray: colors.slate,
             primary: '#4BA6EE',
             secondary: '#B440FC',
+            secondaryLight: '#CB79FD',
             tertiary: '#35E9AD'
         },
         fontFamily: {
