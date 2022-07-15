@@ -47,7 +47,7 @@
 }
 
 .text-headline-xl {
-  @apply text-3xl md:text-4xl 2xl:text-5xl mb-8 md:mb-16 font-extrabold text-white;
+  @apply text-3xl md:text-4xl 2xl:text-5xl mb-6 md:mb-12 font-extrabold text-white;
 }
 
 .text-headline {
@@ -63,11 +63,11 @@
 }
 
 .button {
-  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-gray-800/75 text-white;
+  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl inline-flex items-center justify-center rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-gray-800/75 text-white;
 }
 
 .button-gradient {
-  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 text-white bg-gradient-to-r from-primary to-secondary
+  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl inline-flex items-center justify-center rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 text-white bg-gradient-to-r from-primary to-secondary
 }
 
 .bg-gradient-primary {
