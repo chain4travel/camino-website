@@ -42,8 +42,12 @@
        url('../static/fonts/plus-jakarta-sans-v2-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.text-headline-xl {
+.text-headline-2xl {
   @apply text-3xl md:text-5xl 2xl:text-7xl mb-8 md:mb-16 font-extrabold text-white;
+}
+
+.text-headline-xl {
+  @apply text-3xl md:text-4xl 2xl:text-5xl mb-8 md:mb-16 font-extrabold text-white;
 }
 
 .text-headline {
