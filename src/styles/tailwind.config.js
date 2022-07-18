@@ -9,13 +9,15 @@ module.exports = {
         require('@tailwindcss/forms'),
     ],
     theme: {
-        colors: {
-            white: '#fff',
-            gray: colors.slate,
-            primary: '#4BA6EE',
-            secondary: '#B440FC',
-            secondaryLight: '#CB79FD',
-            tertiary: '#35E9AD'
+        extend: {
+            colors: {
+                white: '#fff',
+                gray: colors.slate,
+                primary: '#4BA6EE',
+                secondary: '#B440FC',
+                secondaryLight: '#CB79FD',
+                tertiary: '#35E9AD'
+            },
         },
         fontFamily: {
             'sans': ['Plus Jakarta Sans, system-ui, sans-serif'],

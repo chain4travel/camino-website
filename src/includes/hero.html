@@ -2,7 +2,7 @@
   <div class="container flex pt-32 pb-52 md:py-64 relative">
     <div class="xl:w-6/12 2xl:w-7/12 z-20 md:pr-16 text-center md:text-left">
       <h1 class="text-headline-2xl" data-sal="slide-up" data-sal-duration="500">
-        The world of travel reinvented.
+        The world of travel <span class="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">reinvented</span>
       </h1>
       <p class="text-body mb-4 md:mb-8" data-sal="slide-up" data-sal-delay="250" data-sal-duration="500">
         Camino is a fast, high-throughput open-source consortium blockchain enabling the creation of travel related products. Camino’s tech stack and consensus protocol deliver unmatched speed, security and reliability within the network.
@@ -64,7 +64,7 @@
         devicePixelRatio: 2,
         width: 600,
         height: 600,
-        phi: 50,
+        phi: 0,
         theta: 0,
         dark: 1,
         diffuse: 1,
@@ -82,14 +82,12 @@
         { location: [33.590885,-7.624927], size: 0.15 }, // Casablanca
         { location: [-33.933676,18.468294], size: 0.15 }, // Capetown
         { location: [-22.913338,-43.198791], size: 0.15 }, // Rio de Janeiro
-        { location: [51.229638,6.755503], size: 0.15 }, //Duesseldorf
-        { location: [51.229638,6.755503], size: 0.15 }, //Duesseldorf
         ],
         onRender: (state) => {
         // Called on every animation frame.
         // `state` will be an empty object, return updated params.
         state.phi = phi
-        phi += 0.005
+        phi -= 0.00125
         },
     })
 </script>
