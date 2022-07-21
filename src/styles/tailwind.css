@@ -55,7 +55,7 @@
 }
 
 .text-headline-sm {
-  @apply text-lg md:text-xl lg:text-2xl mb-3 md:mb-6 font-extrabold text-white;
+  @apply text-lg md:text-xl lg:text-2xl mb-2 md:mb-4 font-extrabold text-white;
 }
 
 .text-body {
