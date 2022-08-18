@@ -46,6 +46,10 @@
   @apply bg-gradient-to-tl from-primary to-secondary bg-clip-text text-transparent
 }
 
+.text-gradient-2 {
+  @apply bg-gradient-to-tl from-tertiary to-primary bg-clip-text text-transparent
+}
+
 .text-headline-2xl {
   @apply text-3xl md:text-5xl 2xl:text-7xl mb-8 md:mb-8 font-extrabold text-white;
 }
