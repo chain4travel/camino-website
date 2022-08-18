@@ -43,7 +43,7 @@
 }
 
 .text-gradient {
-  @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent
+  @apply bg-gradient-to-tl from-primary to-secondary bg-clip-text text-transparent
 }
 
 .text-headline-2xl {
@@ -60,6 +60,10 @@
 
 .text-headline-sm {
   @apply text-lg md:text-xl lg:text-2xl mb-2 md:mb-4 font-extrabold text-white;
+}
+
+.text-headline-xs {
+  @apply text-lg md:text-xl mb-2 md:mb-4 text-gray-200;
 }
 
 .text-body {
