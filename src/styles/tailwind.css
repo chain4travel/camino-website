@@ -75,11 +75,11 @@
 }
 
 .button {
-  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl inline-flex items-center justify-center rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-gray-800/75 text-white;
+  @apply transform transition-transform active:scale-100 hover:scale-105 mx-2 whitespace-nowrap font-medium md:text-xl inline-flex items-center justify-center rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-gray-700 text-white;
 }
 
 .button-gradient {
-  @apply transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl inline-flex items-center justify-center rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 text-white bg-gradient-to-r from-primary to-secondary
+  @apply transform transition-transform active:scale-100 hover:scale-105 mx-2 whitespace-nowrap font-medium md:text-xl inline-flex items-center justify-center rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 text-white bg-gradient-to-r from-primary to-secondary
 }
 
 .bg-gradient-primary {
