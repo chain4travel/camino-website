@@ -12,6 +12,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/images')
   eleventyConfig.addPassthroughCopy('src/static')
   eleventyConfig.addPassthroughCopy('robots.txt')
+
+  eleventyConfig.addPassthroughCopy('src/Camino-Media-Kit.zip')
   
   eleventyConfig.addPassthroughCopy('src/static/favicon.ico')
   eleventyConfig.addPassthroughCopy('src/static/favicon-16x16.png')
