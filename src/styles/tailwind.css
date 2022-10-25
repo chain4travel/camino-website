@@ -20,7 +20,15 @@ section {
   @apply container max-w-screen-lg text-center py-32 md:py-64;
 }
 
+.button {
+  @apply inline-block transition-all bg-blue-600 hover:bg-blue-500 text-white py-3 px-6 rounded-xl;
+}
+
 h1 { @apply font-headline font-semibold xl:text-7xl md:text-6xl text-5xl; }
 h2 { @apply font-headline font-semibold xl:text-5xl md:text-4xl text-3xl; }
 h3 { @apply font-headline font-medium xl:text-3xl md:text-2xl text-xl; }
 h4 { @apply font-headline font-medium xl:text-2xl md:text-xl text-lg; }
+
+p {
+  @apply text-gray-300
+}
