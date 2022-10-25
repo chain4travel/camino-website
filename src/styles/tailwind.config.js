@@ -11,26 +11,22 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                white: '#fff',
                 gray: colors.slate,
-                primary: '#4BA6EE',
-                secondary: '#B440FC',
-                secondaryLight: '#CB79FD',
-                tertiary: '#35E9AD'
             },
         },
         fontFamily: {
-            'sans': ['Plus Jakarta Sans, system-ui, sans-serif'],
+            'sans': ['Inter, system-ui, sans-serif'],
+            'headline': ['ClashDisplay-Variable, system-ui, sans-serif'],
         },
         container: {
             center: true,
             padding: {
-                DEFAULT: '1rem',
-                sm: '2rem',
+                DEFAULT: '2rem',
+                sm: '4rem',
                 lg: '4rem',
                 xl: '4rem',
                 '2xl': '4rem',
                 },
         }
-      },
-  }
+    },
+}

@@ -1,0 +1,25 @@
+<div
+    class="bg-cover bg-no-repeat relative"
+    {% if heroBgImage %}
+    style="background-image:url('/static/images/heroBgImages/{{ heroBgImage }}.png');--sal-duration: .75s; --sal-delay: .25s;"
+    {% endif %}
+>
+    <div class="hero">
+        {% if heroTitle %}
+        <h1 class="{% if heroSubtitle %}mb-8{% endif %}" data-sal="slide-up">
+            {{ heroTitle }}
+        </h1>
+        {% endif %}
+        {% if heroSubtitle %}
+        <h2 class="{% if heroText %}mb-8{% endif %}" data-sal="slide-up">
+            {{ heroSubtitle }}
+        </h2>
+        {% endif %}
+        {% if heroText %}
+        <p data-sal="slide-up">
+            {{ heroText }}
+        </p>
+        {% endif %}
+    </div>
+    <div class="h-32 absolute w-full bottom-0 left-0 bg-gradient-to-b from-gray-900/0 to-gray-900"></div>
+</div>
