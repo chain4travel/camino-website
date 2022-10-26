@@ -15,7 +15,7 @@ module.exports = {
             },
         },
         fontFamily: {
-            'sans': ['Inter, system-ui, sans-serif'],
+            'body': ['Inter, system-ui, sans-serif'],
             'headline': ['ClashDisplay-Variable, system-ui, sans-serif'],
         },
         container: {
