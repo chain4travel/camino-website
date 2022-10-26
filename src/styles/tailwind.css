@@ -28,6 +28,10 @@ section {
   @apply inline-block transition-all bg-blue-600 hover:bg-blue-500 text-white py-3 px-6 rounded-2xl;
 }
 
+.card {
+  @apply bg-gray-800 rounded-3xl p-8
+}
+
 h1 { @apply font-headline font-semibold xl:text-7xl md:text-6xl text-5xl; }
 h2 { @apply font-headline font-semibold xl:text-5xl md:text-4xl text-3xl; }
 h3 { @apply font-headline font-medium xl:text-3xl md:text-2xl text-xl; }

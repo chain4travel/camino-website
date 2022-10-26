@@ -6,9 +6,10 @@ layout:         default
 
 <!-- Hero Start -->
     {% set heroTitle = "The world of travel reinvented" %}
-    {% set heroSubtitle = "Discover the world of Camino" %}
+    {% set heroSubtitle = "" %}
     {% set heroText = "Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token.​ We offers a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers." %}
-    {% set heroBgImage = "cards" %}
+    {% set heroBgImage = "blocks" %}
+    {% set home = "true" %}
     {% include "hero.html" %}
 <!-- Hero End -->
 
@@ -20,3 +21,27 @@ layout:         default
     {% set simpleTextButtonLink = "/litepaper" %}
     {% include "simpleText.html" %}
 <!-- SimpleText ENd -->
+
+<!-- CardRow Start -->
+    {% set cardRowTitle = "It is time to build the future of travel" %}
+    {% set cardRowSubtitle = "In today’s travel industry, the innovation pace is decelerated due to standards and exchange protocols that are more than 40 years old and desperately need replacement." %}
+    {% set cardRowBgImage = "" %}
+    
+    {% set cardFirstTitle = "Fast transaction processes" %}
+    {% set cardFirstText = "" %}
+    {% set cardFirstLinkLabel = "" %}
+    
+    {% set cardSecondTitle = "Modern technological structures" %}
+    {% set cardSecondText = "" %}
+    {% set cardSecondLinkLabel = "" %}
+
+    {% set cardThirdTitle = "Low transaction fees" %}
+    {% set cardThirdText = "" %}
+    {% set cardThirdLinkLabel = "" %}
+
+    {% set cardFourthTitle = "Low transaction fees" %}
+    {% set cardFourthText = "" %}
+    {% set cardFourthLinkLabel = "" %}
+
+    {% include "cardRow.html" %}
+<!-- CardRow ENd -->

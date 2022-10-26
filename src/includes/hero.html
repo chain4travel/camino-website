@@ -1,5 +1,5 @@
 <div
-    class="bg-cover bg-center bg-no-repeat relative"
+    class="bg-contain bg-top bg-no-repeat relative"
     {% if heroBgImage %}
     style="background-image:url('/static/images/heroBgImages/{{ heroBgImage }}.png');--sal-duration: .75s; --sal-delay: .25s;"
     {% endif %}
@@ -16,10 +16,15 @@
         </h2>
         {% endif %}
         {% if heroText %}
-        <p data-sal="slide-up">
+        <p data-sal="slide-up" class="{% if heroSubtitle %} {% else %} mt-8 {% endif %}">
             {{ heroText }}
         </p>
         {% endif %}
+        {% if home %}
+        <div class="relative mt-16 max-w-[600px] mx-auto">
+            <img class="" src="/static/images/heroBgImages/camino-glas.png" alt="">
+            <div class="absolute -inset-12 -z-10 blur-3xl rounded-full bg-gradient-to-tr opacity-75 from-cyan-600 to-purple-600"></div>
+        </div>
+        {% endif %}
     </div>
-    <div class="h-32 absolute w-full bottom-0 left-0 bg-gradient-to-b from-gray-900/0 to-gray-900"></div>
 </div>
