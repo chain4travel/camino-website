@@ -36,7 +36,3 @@ h1 { @apply font-headline tracking-wide font-semibold xl:text-7xl md:text-6xl te
 h2 { @apply font-headline tracking-wide font-semibold xl:text-5xl md:text-4xl text-3xl; }
 h3 { @apply font-headline tracking-wide font-medium xl:text-3xl md:text-2xl text-xl; }
 h4 { @apply font-headline tracking-wide font-medium xl:text-2xl md:text-xl text-lg; }
-
-p {
-  @apply text-gray-300
-}

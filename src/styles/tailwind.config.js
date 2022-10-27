@@ -12,6 +12,10 @@ module.exports = {
         extend: {
             colors: {
                 gray: colors.slate,
+                primary: "#0085FF",
+                secondary: "#B440FC",
+                accent: "#35E9AD",
+                accentDark: "#15373E",
             },
         },
         fontFamily: {
@@ -22,10 +26,6 @@ module.exports = {
             center: true,
             padding: {
                 DEFAULT: '2rem',
-                sm: '4rem',
-                lg: '4rem',
-                xl: '4rem',
-                '2xl': '4rem',
                 },
         }
     },

@@ -1,0 +1,56 @@
+<divclass="bg-contain bg-top bg-no-repeat relative>
+    <section class="text-center">
+
+        <div class="bg-{{ cardSoloBG }} rounded-[64px] flex items-stretch">
+        
+            {% if cardSoloImagePosition == 'left' %}
+            <div class="w-2/3 flex items-end">
+                <img class="w-full" src="../static/images/cardImages/{{cardSoloImage}}.png" alt="">
+            </div>
+            {% endif %}
+
+            <div class="
+                md:p-16 text-left flex flex-col justify-center
+                {% if cardSoloBG == 'gray-800' %} text-white {% endif %}
+                {% if cardSoloBG == 'primary' %} text-white {% endif %}
+                {% if cardSoloBG == 'accent' %} text-gray-900 {% endif %}
+            ">
+                <h2 class="{% if cardRowSubtitle %}mb-6{% endif %}">{{ cardSoloTitle }}</h2>
+                {% if cardSoloSubtitle %}
+                <h3>
+                    {{ cardSoloSubtitle }}
+                </h3>
+                {% endif %}
+                {% if cardSoloParagraph %}
+                <p class="{% if cardSoloParagraph2 %}mb-6{% endif %}">
+                    {{ cardSoloParagraph }}
+                </p>
+                {% endif %}
+                {% if cardSoloParagraph2 %}
+                <p>
+                    {{ cardSoloParagraph2 }}
+                </p>
+                {% endif %}
+                {% if cardSoloLinkLabel %}
+                <p >
+                    <a href="{{ cardSoloLink }}">{{ cardSoloLinkLabel }}</a>
+                </p>
+                {% endif %}
+                {% if cardSoloButton %}
+                <a class="
+                    inline-block w-fit transition-all py-3 px-6 rounded-2xl mt-6
+                    {% if cardSoloBG == 'gray-800' %} bg-primary hover:bg-primary/80 text-white {% endif %}
+                    {% if cardSoloBG == 'primary' %} bg-white hover:bg-white/80 text-gray-900 {% endif %}
+                    {% if cardSoloBG == 'accent' %} bg-gray-900 hover:bg-gray-800 text-white {% endif %}
+                "
+                href="{{ cardSoloButtonLink }}">{{ cardSoloButton }}</a>
+                {% endif %}
+            </div>
+            {% if cardSoloImagePosition == 'right' %}
+            <div class="w-2/3 flex items-end">
+                <img class="w-full" src="../static/images/cardImages/{{cardSoloImage}}.png" alt="">
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</div>
