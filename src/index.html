@@ -6,8 +6,8 @@ layout:         default
 
 <!-- Hero Start -->
     {% set heroTitle = "The world of travel reinvented" %}
-    {% set heroSubtitle = "" %}
-    {% set heroText = "Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token.​ We offers a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers." %}
+    {% set heroSubtitle = "Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token." %}
+    {% set heroText = "We offer a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers." %}
     {% set heroBgImage = "blocks" %}
     {% set home = "true" %}
     {% include "hero.html" %}
@@ -20,7 +20,7 @@ layout:         default
     {% set simpleTextButton = "Download Litepaper" %}
     {% set simpleTextButtonLink = "/litepaper" %}
     {% include "simpleText.html" %}
-<!-- SimpleText ENd -->
+<!-- SimpleText End -->
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "It is time to build the future of travel" %}
@@ -48,16 +48,41 @@ layout:         default
     {% set cardFourthLinkLabel = "" %}
 
     {% include "cardRow.html" %}
-<!-- CardRow ENd -->
+<!-- CardRow End -->
 
 <!-- CardSolo Start -->
     {% set cardSoloBG = "accent" %}
-    {% set cardSoloImage = "loyaltyCard-dark-left" %}
-    {% set cardSoloImagePosition = "left" %}
+    {% set cardSoloImage = "loyaltyCard-dark-right" %}
+    {% set cardSoloImagePosition = "right" %}
     {% set cardSoloTitle = "What we do" %}
     {% set cardSoloParagraph = "Camino offers a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers." %}
     {% set cardSoloParagraph2 = "The Camino blockchain is a Decentralized Autonomous Organization operated, maintained, and governed by the travel industry for travel enthusiasts." %}
     {% set cardSoloButton = "Download Litepaper" %}
     {% set cardSoloButtonLink = "/litepaper" %}
+    {% include "cardSolo.html" %}
+<!-- CardSolo ENd -->
+
+<!-- CardSolo Start -->
+    {% include "supporter.html" %}
+<!-- CardSolo End -->
+
+<!-- TextImage Start -->
+    {% set textImageImage =         "blockStack-dark-left" %}
+    {% set textImageImagePosition = "left" %}
+    {% set textImageTitle =         "The new world of travel is decentralized" %}
+    {% set textImageParagraph2 =    "Camino is the first realistic approach to provide blockchain technology in the travel industry." %}
+    {% set textImageParagraph =     "The possibilities are huge: Camino is an open-source, programmable smart contracts network for decentralized applications of all kind of travel-related products." %}
+    {% include "textImage.html" %}
+<!-- TextImage End -->
+
+<!-- CardSolo Start -->
+    {% set cardSoloBG = "gray-800" %}
+    {% set cardSoloImage = "loyaltyCard-dark-right" %}
+    {% set cardSoloImagePosition = "right" %}
+    {% set cardSoloTitle = "B2B travel applications powered by blockchain" %}
+    {% set cardSoloParagraph = "With Camino companies have access to an industry-owned travel blockchain, empowering peer-to-peer business and creating unimaginable travel innovation " %}
+    {% set cardSoloParagraph2 = "" %}
+    {% set cardSoloButton = "Explore our ecosystem" %}
+    {% set cardSoloButtonLink = "/ecosystem" %}
     {% include "cardSolo.html" %}
 <!-- CardSolo ENd -->

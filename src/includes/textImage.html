@@ -1,0 +1,21 @@
+<div class="border-y border-gray-700">
+    <div class="container grid grid-cols-12 items-center">
+        {% if textImageImagePosition == 'left' %}
+        <div class="col-span-5">
+            <img class="w-full h-[480px] object-contain object-bottom" src="/static/images/cardImages/{{ textImageImage }}.png" alt="">
+        </div>
+        {% endif %}
+        <div class="col-span-6 {% if textImageImagePosition == 'left' %} col-start-7 {% endif %}">
+            <h2 class="mb-6">{{ textImageTitle }}</h2>
+            <p class="text-gray-300 {% if textImageParagraph2 %} mb-6 {% endif %}">{{ textImageParagraph }}</p>
+            {% if textImageParagraph2 %}
+            <p class="text-gray-300">{{ textImageParagraph2 }}</p>
+            {% endif %}
+        </div>
+        {% if textImageImagePosition == 'right' %}
+        <div class="col-span-5 col-start-8">
+            <img class="w-full h-[480px] object-contain object-bottom" src="/static/images/cardImages/{{ textImageImage }}.png" alt="">
+        </div>
+        {% endif %}
+    </div>
+</div>

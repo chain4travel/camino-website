@@ -1,0 +1,13 @@
+<section>
+    <h2 class="text-center mb-12">Teaming up with the biggest names in travel</h2>
+    <div class="grid grid-cols-12 gap-2">
+        {% for supporter in supporter %}
+            <a
+                href="{{supporter.url}}"
+                class="group inline-flex flex-col items-center rounded-lg col-span-6 sm:col-span-3 lg:col-span-2" target="_blank">
+                <img class="opacity-50 group-hover:opacity-100 transition-all max-w-[180px]" src="../static/images/supporter/{{supporter.slug}}.png" alt="{{supporter.name}}">
+                <div class="text-gray-600 hidden">{{supporter.name}}</div>
+            </a>
+        {% endfor %}
+    </div>
+</section>
