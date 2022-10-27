@@ -32,6 +32,10 @@ section {
   @apply bg-gray-800 rounded-3xl p-8
 }
 
+.gradient {
+  @apply bg-gradient-to-tr from-[#BD00FF] to-[#00ACFF];
+}
+
 h1 { @apply font-headline tracking-wide font-semibold xl:text-7xl md:text-6xl text-5xl; }
 h2 { @apply font-headline tracking-wide font-semibold xl:text-5xl md:text-4xl text-3xl; }
 h3 { @apply font-headline tracking-wide font-medium xl:text-3xl md:text-2xl text-xl; }
