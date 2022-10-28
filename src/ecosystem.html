@@ -12,18 +12,44 @@ layout:         default
     {% include "hero.html" %}
 <!-- Hero End -->
 
+<section>
+    <h1 class="text-center mb-12">Discover dApp projects on Camino</h1>
+    <div class="grid gap-6 grid-cols-12">
+        <div class="col-span-3 text-center">
+            <img class="w-24 h-24 mx-auto" src="/static/images/apps/app-milesandmore.png" alt="">
+            <h3 class="mt-6 mb-2">Miles & More Anywhere</h3>
+            <p class="text-gray-300">Loyalty programs made easy and accesible</p>
+        </div>
+        <div class="col-span-3 text-center">
+            <img class="w-24 h-24 mx-auto" src="/static/images/apps/app-giata.png" alt="">
+            <h3 class="mt-6 mb-2">Giata Hotel <br> Wallets</h3>
+            <p class="text-gray-300">Hotel information in web3</p>
+        </div>
+        <div class="col-span-3 text-center">
+            <img class="w-24 h-24 mx-auto" src="/static/images/apps/app-a3m.png" alt="">
+            <h3 class="mt-6 mb-2">A3M Disaster Information</h3>
+            <p class="text-gray-300">A3M incident messaging in web3</p>
+        </div>
+        <div class="col-span-3 text-center">
+            <img class="w-24 h-24 mx-auto" src="/static/images/apps/app-travelledger.png" alt="">
+            <h3 class="mt-6 mb-2">Travel Ledger <br> Pay</h3>
+            <p class="text-gray-300">TL Pay for real-time settlement</p>
+        </div>
+    </div>
+</section>
+
 <!-- CardRow Start -->
     {% set cardRowTitle = "Join the community of travel thought leaders" %}
     {% set cardRowBgImage = "" %}
-    {% set cardFirstImage = "cardimage01" %}
+    {% set cardFirstImage = "generic-01" %}
     {% set cardFirstTitle = "Supporter" %}
     {% set cardFirstText = "Shares our vision of a decentralized blockchain ecosystem for the travel industry. A supporter is listed on our website and in marketing material. The network of supporters has been steadily growing and growing." %}
     {% set cardFirstLinkLabel = "" %}
-    {% set cardSecondImage = "cardimage02" %}
+    {% set cardSecondImage = "generic-02" %}
     {% set cardSecondTitle = "DApp Developer" %}
     {% set cardSecondText = "Builds and runs decentralized applications on Camino. The source code is open for everyone. Our ecosystem welcomes all travel enthusiasts and developers who would like to shape the future of travel." %}
     {% set cardSecondLinkLabel = "" %}
-    {% set cardThirdImage = "cardimage03" %}
+    {% set cardThirdImage = "generic-03" %}
     {% set cardThirdTitle = "Validator" %}
     {% set cardThirdText = "Has an important role in governing and securing the Camino blockchain. To become a validator certain preconditions must be met and one must be accepted into the role by a vote of the currently active validators." %}
     {% set cardThirdLinkLabel = "" %}
@@ -31,4 +57,40 @@ layout:         default
 <!-- CardRow ENd -->
 
 
+<!-- TextImage Start -->
+{% set textImageImage =         "network-dark-right" %}
+{% set textImageImagePosition = "right" %}
+{% set textImageTitle =         "Validator network" %}
+{% set textImageParagraph2 =    "What sounds unimaginable today could become a reality powered by blockchain very soon: Complete and easily accessible hotel information. This will be possible by creating unique hotel wallets on Camino that are easily accessible with a simple API connection and entail all the hotel's content." %}
+{% set textImageParagraph =     "One solution “Giata Drive” already offers on Camino in form of a channel manager for images, facts and description: Drag and drop images onto cloud-based platform → Plugin image categories, captions and facts → DefineRoomtypes → DefineHygiene/Covid Information → Check your quality score compared to other Hotels." %}
+{% set textImageButtonLink =    "###" %}
+{% set textImageButtonLabel =   "Block Explorer" %}
+{% include "textImage.html" %}
+<!-- TextImage End -->
+
 {% include "tagCloud.html" %}
+
+{% include "roadmap.html" %}
+
+<!-- TextImage Start -->
+{% set textImageImage =         "loyaltyCard-dark-right" %}
+{% set textImageImagePosition = "right" %}
+{% set textImageTitle =         "Camino powered by its native token" %}
+{% set textImageParagraph =     "Create a Camino wallet for storing assets and start engaging in the network." %}
+{% set textImageParagraph2 =    "" %}
+{% set textImageButtonLink =    "###" %}
+{% set textImageButtonLabel =   "Create wallet" %}
+{% include "textImage.html" %}
+<!-- TextImage End -->
+
+<!-- TextImage Start -->
+{% set textImageImage =         "eco-dark-left" %}
+{% set textImageImagePosition = "left" %}
+{% set textImageTitle =         "Eco-friendly blockchain solutions" %}
+{% set textImageSubtitle =      "Partners for a greener travel future" %}
+{% set textImageParagraph =     "There are already companies in our community with impactful solutions for a more environmentally friendly travel industry, showing that technology has a significant role in creating a greener future." %}
+{% set textImageParagraph2 =    "" %}
+{% set textImageButtonLink =    "" %}
+{% set textImageButtonLabel =   "" %}
+{% include "textImage.html" %}
+<!-- TextImage End -->

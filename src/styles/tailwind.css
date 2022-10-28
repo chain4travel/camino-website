@@ -29,7 +29,7 @@ section {
 }
 
 .card {
-  @apply bg-gray-800 rounded-3xl p-8
+  @apply bg-gray-800 rounded-3xl p-8 pt-0
 }
 
 .gradient-full {
