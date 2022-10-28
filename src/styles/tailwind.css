@@ -32,8 +32,12 @@ section {
   @apply bg-gray-800 rounded-3xl p-8
 }
 
+.gradient-full {
+  @apply bg-gradient-to-bl from-[#BD00FF] to-[#00ACFF];
+}
+
 .gradient {
-  @apply bg-gradient-to-tr from-[#BD00FF] to-[#00ACFF];
+  @apply bg-gradient-to-bl from-[rgba(189,0,255,.33)] to-[rgba(0,172,255,.33)];
 }
 
 h1 { @apply font-headline tracking-wide font-semibold xl:text-7xl md:text-6xl text-5xl; }
