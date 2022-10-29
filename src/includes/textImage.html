@@ -1,11 +1,11 @@
 <div class="border-y border-gray-700">
     <div class="container grid grid-cols-12 items-end">
         {% if textImageImagePosition == 'left' %}
-        <div class="col-span-5">
+        <div class="col-span-12 md:col-span-5 order-last md:order-first">
             <img class="w-full md:h-[500px] object-contain object-bottom" src="/static/images/cardImages/{{ textImageImage }}.png" alt="">
         </div>
         {% endif %}
-        <div class="py-24 col-span-6 {% if textImageImagePosition == 'left' %} col-start-7 {% endif %}">
+        <div class="py-12 md:py-24 col-span-12 md:col-span-6 {% if textImageImagePosition == 'left' %} md:col-start-7 {% endif %}">
             <h1 class="mb-6">{{ textImageTitle }}</h1>
             {% if textImageSubtitle %}
             <h3 class="mb-6">{{ textImageSubtitle }}</h3>
@@ -19,8 +19,8 @@
             {% endif %}
         </div>
         {% if textImageImagePosition == 'right' %}
-        <div class="col-span-5 col-start-8">
-            <img class="w-full h-[480px] object-contain object-bottom" src="/static/images/cardImages/{{ textImageImage }}.png" alt="">
+        <div class="col-span-12 md:col-span-5 md:col-start-8">
+            <img class="w-full md:h-[480px] object-contain object-bottom" src="/static/images/cardImages/{{ textImageImage }}.png" alt="">
         </div>
         {% endif %}
     </div>

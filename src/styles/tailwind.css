@@ -29,7 +29,7 @@ section {
 }
 
 .card {
-  @apply bg-gray-800 rounded-3xl p-8 pt-0
+  @apply bg-gray-800 p-6 md:p-8 pt-0 rounded-camino;
 }
 
 .gradient-full {
@@ -41,10 +41,10 @@ section {
 }
 
 .rounded-camino {
-  @apply rounded-[64px];
+  @apply rounded-3xl md:rounded-[64px];
 }
 
-h1 { @apply font-headline tracking-wide font-semibold xl:text-7xl md:text-6xl text-5xl; }
+h1 { @apply font-headline tracking-wide font-semibold xl:text-7xl md:text-6xl text-4xl; }
 h2 { @apply font-headline tracking-wide font-semibold xl:text-5xl md:text-4xl text-3xl; }
 h3 { @apply font-headline tracking-wide font-medium xl:text-3xl md:text-2xl text-xl; }
 h4 { @apply font-headline tracking-wide font-medium xl:text-2xl md:text-xl text-lg; }
