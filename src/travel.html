@@ -23,23 +23,26 @@ layout:         default
     {% include "simpleText.html" %}
 <!-- SimpleText End -->
 
-<!-- CardRow Start -->
-    {% set cardRowTitle = "Validator node set-up made easy" %}
-    {% set cardRowSubtitle = "" %}
-    {% set cardRowBgImage = "" %}
-
-    {% set cardFirstImage = "" %}
-    {% set cardFirstTitle = "Few requirements, no entry barriers" %}
-    {% set cardFirstText = "" %}
-    {% set cardFirstLinkLabel = "" %}
-
-    {% set cardSecondImage = "" %}
-    {% set cardSecondTitle = "Easy set-up, low mainenance" %}
-    {% set cardSecondText = "" %}
-    {% set cardSecondLinkLabel = "" %}
-
-    {% include "cardRow.html" %}
-<!-- CardRow End -->
+<section>
+    <h1 class="text-center mb-12">Validator node set-up made easy</h1>
+    <div class="grid grid-cols-2 gap-6 md:gap-12">
+        <div class="grid-cols-2 md:grid-cols-1 rounded-camino bg-primary p-8 md:p-16">
+            <h2 class="mb-6">Few requirements, no entry barriers</h2>
+            <ul class="list-disc ml-4">
+                <li>Stake of 100,000 CAMs</li>
+                <li>KYB verification</li>
+                <li>Admittance as a validator by the validator consortia via a vote</li>
+            </ul>
+        </div>
+        <div class="grid-cols-2 md:grid-cols-1 rounded-camino bg-accent text-gray-900 p-8 md:p-16">
+            <h2 class="mb-6">Easy set-up, low mainenance</h2>
+            <ul class="list-disc ml-4">
+                <li>Set up takes only 1-2 hours</li>
+                <li>Cost of running the validator node is approx. 100 USD per month</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <!-- TextImage Start -->
     {% set textImageImage = "loyaltyCard-dark-right" %}
