@@ -12,6 +12,34 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../static/fonts/inter-v12-latin-regular.woff2') format('woff2'),
+    url('../static/fonts/inter-v12-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../static/fonts/inter-v12-latin-500.woff2') format('woff2'),
+    url('../static/fonts/inter-v12-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../static/fonts/inter-v12-latin-700.woff2') format('woff2'),
+    url('../static/fonts/inter-v12-latin-700.woff') format('woff');
+}
+
+
 body {
   @apply font-body
 }
@@ -25,7 +53,7 @@ section {
 }
 
 .button {
-  @apply inline-block transition-all bg-blue-600 hover:bg-blue-500 text-white py-3 px-6 rounded-2xl;
+  @apply inline-block transition-all bg-blue-600 hover:bg-blue-500 md:text-lg font-medium text-white py-3 px-6 rounded-2xl;
 }
 
 .card {

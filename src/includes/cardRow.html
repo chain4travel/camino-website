@@ -24,7 +24,7 @@
                 {% if cardFirstImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardFirstImage }}.png" alt="{{ cardFirstTitle }} - image">{% endif %}
                 <h3 class="{% if cardFirstText %} mb-6 {% endif %}">{{ cardFirstTitle }}</h3>
                 <p>{{ cardFirstText }}</p>
-                <a href="{{ cardFirstLink }}">{{ cardFirstLinkLabel }}</a>
+                <a class="button mt-6" href="{{ cardFirstLink }}">{{ cardFirstLinkLabel }}</a>
             </div>
             {% endif %}
 
@@ -33,7 +33,7 @@
                 {% if cardSecondImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardSecondImage }}.png" alt="{{ cardSecondTitle }} - image">{% endif %}
                 <h3 class="{% if cardSecondText %} mb-6 {% endif %}">{{ cardSecondTitle }}</h3>
                 <p>{{ cardSecondText }}</p>
-                <a href="{{ cardSecondLink }}">{{ cardSecondLinkLabel }}</a>
+                <a class="button mt-6" href="{{ cardSecondLink }}">{{ cardSecondLinkLabel }}</a>
             </div>
             {% endif %}
 
@@ -42,7 +42,7 @@
                 {% if cardThirdImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardThirdImage }}.png" alt="{{ cardThirdTitle }} - image">{% endif %}
                 <h3 class="{% if cardThirdText %} mb-6 {% endif %}">{{ cardThirdTitle }}</h3>
                 <p>{{ cardThirdText }}</p>
-                <a href="{{ cardThirdLink }}">{{ cardThirdLinkLabel }}</a>
+                <a class="button mt-6" href="{{ cardThirdLink }}">{{ cardThirdLinkLabel }}</a>
             </div>
             {% endif %}
 
