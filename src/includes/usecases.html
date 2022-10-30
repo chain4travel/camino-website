@@ -1,0 +1,54 @@
+<div
+    class="bg-contain bg-top bg-no-repeat relative"
+    {% if heroBgImage %}
+    style="background-image:url('/static/images/heroBgImages/bubbles.png');--sal-duration: .75s; --sal-delay: .25s;"
+    {% endif %}
+>
+    <section>
+        <h1 class="text-center mb-12">Solutions that make a difference</h1>
+
+        <div class="gradient-full p-2 rounded-camino">
+            <div class="bg-gray-900 rounded-2xl md:rounded-[56px] overflow-hidden lg:flex">
+                
+                <div class="lg:w-1/2">
+                    {% for usecase in usecases %}
+                    {% if (loop.index <= 10) %}
+                    <details class="border border-gray-700 cursor-pointer transition-all hover:bg-gray-800 open:bg-gray-800">
+                        <summary class="p-6 lg:p-10 flex">
+                            <h2 class="mr-4 -mt-2">{{ usecase.icon }}</h2>
+                            <h3 class="line-clamp-1">{{ usecase.title }}</h3>
+                        </summary>
+                        <div class="p-6 pt-0 lg:p-10 lg:pt-0 text-lg">
+                            <p class="text-gray-500 mb-4 md:hidden">{{ usecase.title }}</p>
+                            <p class="mb-4">{{ usecase.paragraph1 }}</p>
+                            <p class="mb-4">{{ usecase.paragraph2 }}</p>
+                            <p class="mb-4">{{ usecase.paragraph3 }}</p>
+                        </div>
+                    </details>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                
+                <div class="lg:w-1/2">
+                    {% for usecase in usecases %}
+                    {% if (loop.index >= 11) %}
+                    <details class="border border-gray-700 cursor-pointer transition-all hover:bg-gray-800 open:bg-gray-800">
+                        <summary class="p-6 lg:p-10 flex">
+                            <h2 class="mr-4 -mt-2">{{ usecase.icon }}</h2>
+                            <h3 class="line-clamp-1">{{ usecase.title }}</h3>
+                        </summary>
+                        <div class="p-6 pt-0 lg:p-10 lg:pt-0 text-lg">
+                            <p class="text-gray-500 mb-4 md:hidden">{{ usecase.title }}</p>
+                            <p class="mb-4">{{ usecase.paragraph1 }}</p>
+                            <p class="mb-4">{{ usecase.paragraph2 }}</p>
+                            <p class="mb-4">{{ usecase.paragraph3 }}</p>
+                        </div>
+                    </details>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
