@@ -50,9 +50,24 @@
         "url": "https://www.bentour.de/"
     },
     {
+        "name": "Berge & Meer Touristik GmbH",
+        "slug": "berge-und-meer",
+        "url": "https://www.berge-meer.de/"
+    },
+    {
+        "name": "Bewotec GmbH",
+        "slug": "bewotec",
+        "url": "https://bewotec.de/"
+    },
+    {
         "name": "Beyond Bookings",
         "slug": "beyondbookings",
         "url": "https://beyond-bookings.com/"
+    },
+    {
+        "name": "BHolly Consulting",
+        "slug": "bholly-consulting",
+        "url": "https://bhollyconsulting.com/"
     },
     {
         "name": "Busy Rooms",
@@ -63,6 +78,11 @@
         "name": "CarbonClick",
         "slug": "carbonclick",
         "url": "https://www.carbonclick.com/"
+    },
+    {
+        "name": "CFM_media GmbH",
+        "slug": "cfm-media",
+        "url": "https://www.cfmmedia.de/"
     },
     {
         "name": "DataArt",
@@ -78,6 +98,16 @@
         "name": "Dtravel",
         "slug": "dtravel",
         "url": "https://dtravel.com/"
+    },
+    {
+        "name": "e-confirm GmbH",
+        "slug": "e-confirm",
+        "url": "https://www.e-confirm.de/"
+    },
+    {
+        "name": "Ennea Capital Partners",
+        "slug": "ennea",
+        "url": "https://www.ennea.vc/"
     },
     {
         "name": "Eurowings",
@@ -103,6 +133,11 @@
         "name": "FTI",
         "slug": "fti",
         "url": "https://www.fti.de/"
+    },
+    {
+        "name": "Fraport AG",
+        "slug": "fraport",
+        "url": "https://www.fraport.com/de.html"
     },
     {
         "name": "Gerrit Halfmann Design",
@@ -165,6 +200,11 @@
         "url": "https://www.invia.de/en/"
     },
     {
+        "name": "Involatus",
+        "slug": "involatus",
+        "url": "https://www.involatus.com/"
+    },
+    {
         "name": "IT-Square",
         "slug": "itsquare",
         "url": "https://itsquare.de/"
@@ -173,6 +213,11 @@
         "name": "ISO Travel Solutions",
         "slug": "iso",
         "url": "https://www.isotravel.com/en"
+    },
+    {
+        "name": "Deutsche Lufthansa AG",
+        "slug": "lufthansa",
+        "url": "https://www.lufthansagroup.com/de/home.html"
     },
     {
         "name": "Lufthansa City Center",
@@ -220,6 +265,11 @@
         "url": "https://www.neusta-tourism.de/"
     },
     {
+        "name": "OH.TEC Tourism Expert Consulting",
+        "slug": "ohtec",
+        "url": "https://www.oh-tec.de/"
+    },
+    {
         "name": "Orchestra",
         "slug": "orchestra",
         "url": "https://www.orchestra.eu/en/"
@@ -228,6 +278,16 @@
         "name": "OTS",
         "slug": "ots",
         "url": "https://otsglobe.com/"
+    },
+    {
+        "name": "OTS Travel Solutions AG",
+        "slug": "ots-2",
+        "url": "http://www.ontravelsolutions.com/"
+    },
+    {
+        "name": "Passolution GmbH",
+        "slug": "passolution",
+        "url": "https://www.passolution.de/"
     },
     {
         "name": "Peakwork",
@@ -240,9 +300,19 @@
         "url": "https://www.prodyna.com/"
     },
     {
+        "name": "RITA AG",
+        "slug": "ritaag",
+        "url": "https://rita.ag/"
+    },
+    {
         "name": "Riversoft",
         "slug": "riversoft",
         "url": "https://www.riversoft.com.tw/"
+    },
+    {
+        "name": "Saltours International",
+        "slug": "saltours",
+        "url": "https://www.saltours.travel/"
     },
     {
         "name": "SH Financial",
@@ -260,6 +330,11 @@
         "url": "https://www.sunweb.de/"
     },
     {
+        "name": "Sunny Cars GmbH",
+        "slug": "sunny-cars",
+        "url": "https://www.sunnycars.de/"
+    },
+    {
         "name": "TenetX",
         "slug": "tenetx",
         "url": "https://tenetx.io/"
@@ -268,6 +343,16 @@
         "name": "Traffics",
         "slug": "traffics",
         "url": "https://www.traffics.de/"
+    },
+    {
+        "name": "TraSo GmbH",
+        "slug": "traso",
+        "url": "https://www.traso.de/"
+    },
+    {
+        "name": "Hiberus Travel One Inventory",
+        "slug": "travel-one-inventory",
+        "url": "https://www.hiberus.com/en/travel-one-inventory-solution"
     },
     {
         "name": "TUI",
@@ -280,6 +365,11 @@
         "url": "https://soluciones.turismoi.com/"
     },
     {
+        "name": "Twerenbold Service AG",
+        "slug": "twerenbold",
+        "url": "https://www.twerenbold.ch/ueber-uns/team"
+    },
+    {
         "name": "Unicsoft",
         "slug": "unicsoft",
         "url": "https://unicsoft.com/"
@@ -288,6 +378,11 @@
         "name": "Ventura",
         "slug": "ventura",
         "url": "https://www.venturatravel.org/"
+    },
+    {
+        "name": "Verband Internet Reisevertrieb e.V.",
+        "slug": "vir",
+        "url": "https://v-i-r.de/"
     },
     {
         "name": "Xeni",
