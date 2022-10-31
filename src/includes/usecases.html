@@ -14,9 +14,9 @@
                     {% for usecase in usecases %}
                     {% if (loop.index <= 10) %}
                     <details class="border border-gray-700 cursor-pointer transition-all hover:bg-gray-800 open:bg-gray-800">
-                        <summary class="p-6 lg:p-10 flex">
-                            <h2 class="mr-4 -mt-2">{{ usecase.icon }}</h2>
-                            <h3 class="line-clamp-1">{{ usecase.title }}</h3>
+                        <summary class="p-4 md:p-6 flex items-center">
+                            <h4 class="mr-4">{{ usecase.icon }}</h4>
+                            <h4 class="line-clamp-1">{{ usecase.title }}</h4>
                         </summary>
                         <div class="p-6 pt-0 lg:p-10 lg:pt-0 text-lg">
                             <p class="text-gray-500 mb-4 md:hidden">{{ usecase.title }}</p>
@@ -33,9 +33,9 @@
                     {% for usecase in usecases %}
                     {% if (loop.index >= 11) %}
                     <details class="border border-gray-700 cursor-pointer transition-all hover:bg-gray-800 open:bg-gray-800">
-                        <summary class="p-6 lg:p-10 flex">
-                            <h2 class="mr-4 -mt-2">{{ usecase.icon }}</h2>
-                            <h3 class="line-clamp-1">{{ usecase.title }}</h3>
+                        <summary class="p-4 md:p-6 flex items-center">
+                            <h4 class="mr-4">{{ usecase.icon }}</h4>
+                            <h4 class="line-clamp-1">{{ usecase.title }}</h4>
                         </summary>
                         <div class="p-6 pt-0 lg:p-10 lg:pt-0 text-lg">
                             <p class="text-gray-500 mb-4 md:hidden">{{ usecase.title }}</p>

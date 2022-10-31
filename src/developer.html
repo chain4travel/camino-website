@@ -43,23 +43,21 @@ layout:         default
 <section>
     <h1 class="text-center mb-12">Node set-up made easy</h1>
     <div class="grid grid-cols-2 gap-6 md:gap-12">
-        <div class="grid-cols-2 md:grid-cols-1 rounded-camino bg-primary p-8 md:p-14">
-            <h1 class="mb-4">👩‍💻</h1>
+        <div class="grid-cols-2 md:grid-cols-1 rounded-camino bg-primary p-8 md:p-14 flex flex-col">
             <h2 class="mb-6">Easy set-up</h2>
             <ul class="list-disc ml-4">
                 <li>Set-up takes only 1-2 hours</li>
                 <li>Cost of running the node is approx. 100 USD per month</li>
                 <li>Stake of 100,000 CAMs and a vote of the consortium is a requirement</li>
             </ul>
-            <h3 class="mt-8 mb-6">Different set-up options</h3>
-            <div class="flex flex-wrap">
+            <h3 class="mt-8 mb-6">Different set-up options:</h3>
+            <div class="flex flex-wrap mt-auto">
                 <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white text-gray-900">Manual set-up</a>
                 <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Install script</a>
                 <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Docker installation</a>
             </div>
         </div>
-        <div class="grid-cols-2 md:grid-cols-1 rounded-camino bg-secondary p-8 md:p-14">
-            <h1 class="mb-4">🎛</h1>
+        <div class="grid-cols-2 md:grid-cols-1 rounded-camino bg-secondary p-8 md:p-14 flex flex-col">
             <h2 class="mb-8">Hardware requirements</h2>
             <h3 class="mb-6">“Light Weight” Node</h3>
             <p>Equivalent of 8 AWS vCPU</p>
@@ -68,7 +66,7 @@ layout:         default
                 <li>Storage: 512 GiB</li>
                 <li>OS: Ubuntu 18.04/20.04 or MacOS</li>
             </ul>
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap mt-auto">
                 <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white text-gray-900">Get in touch</a>
                 <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Learn more</a>
             </div>
@@ -76,17 +74,14 @@ layout:         default
     </div>
 </section>
 
-<!-- SimpleText Start -->
-    {% set simpleTextTitle = "Why three chains?" %}
-    {% set simpleTextSubtitle = "The philosophy behind the three specialized chains approach originates from Avalanche. Since Camino is built on Avalanche's advanced technical base, the same applies to us. Each of these chains is designed, optimized, and strictly considered a fully independent system, subject to its intended use." %}
-    {% set simpleTextParagraph = "Who needs to work with which chain effectively depends on the requirements and the role of the unit/person who wants to work with it. Validators, for example, work with the P-Chain. For app developers, it depends on whether the X-Chain makes sense or whether they need to use the C-Chain for more complex application scenarios that require EVM-compatible techniques, such as smart contracts." %}
-    {% set simpleTextParagraph2 = "" %}
-    {% set simpleTextButton = "" %}
-    {% set simpleTextButtonLink = "" %}
-    {% set simpleTextBgImage = "bubbles" %}
-    {% set simpleTextBg = "" %}
-    {% include "simpleText.html" %}
-<!-- SimpleText End -->
+<!-- TextImage Start -->
+    {% set textImageImage =         "blockStack-dark-right" %}
+    {% set textImageImagePosition = "right" %}
+    {% set textImageTitle =         "Why three chains?" %}
+    {% set textImageParagraph =     "The philosophy behind the three specialized chains approach originates from Avalanche. Since Camino is built on Avalanche's advanced technical base, the same applies to us. Each of these chains is designed, optimized, and strictly considered a fully independent system, subject to its intended use." %}
+    {% set textImageParagraph2 =    "Who needs to work with which chain effectively depends on the requirements and the role of the unit/person who wants to work with it. Validators, for example, work with the P-Chain. For app developers, it depends on whether the X-Chain makes sense or whether they need to use the C-Chain for more complex application scenarios that require EVM-compatible techniques, such as smart contracts." %}
+    {% include "textImage.html" %}
+<!-- TextImage End -->
 
 <!-- SimpleText Start -->
     {% set simpleTextTitle = "Camino's specific features" %}
@@ -105,16 +100,16 @@ layout:         default
     <h3 class="mb-12 text-center">We want to give you the opportunity to build something awesome, and we know that getting started can be tough. That's why we've made it easy for you to get started with a detailed description in our documentation.</h3>
     <div class="grid grid-cols-2 grid-rows-2 gap-12">
         <div class="bg-primary p-16 col-span-1 row-span-1 rounded-camino">
-            <h2 class="mb-6">1. First</h2>
+            <h2 class="mb-6">First</h2>
             <p>Building on the Camino blockchain is easy. The team has streamlined the process so that anyone with basic technical skills can get started. </p>
         </div>
         <div class="bg-gray-800 text-accent p-16 col-span-1 row-span-2 rounded-camino">
             <img class="w-full -mt-16" src="/static/images/cardImages/generic-08.png" alt="">
-            <h2 class="mb-6">3. Third</h2>
+            <h2 class="mb-6">Third</h2>
             <p>There's a strong community behind this network that's committed to making sure everyone succeeds and thrives. This means that even if you don't have any experience developing dApps or launching blockchain projects, they'll be happy to help you out along every step of the way, or even connect you with the ones that can.</p>
         </div>
         <div class="bg-secondary p-16 col-span-1 row-span-1 rounded-camino">
-            <h2 class="mb-6">2. Second</h2>
+            <h2 class="mb-6">Second</h2>
             <p>We offer dApp incentives. If you want to get started with a great idea but don’t have the funds, you can apply for the dApp inventive pool. The amount varies depending on how promising your project sounds. </p>
         </div>
     </div>
