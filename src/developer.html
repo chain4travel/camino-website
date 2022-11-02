@@ -14,7 +14,8 @@ layout:         default
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Our tech stack based on specialized chains" %}
-    {% set cardRowSubtitle = "The core is developed using the GO language. Developers can quickly build applications on Camino using the EVM-compatible C-Chain. Decentralized frontend applications (dApps) can be built on top of the Camino backend. By maintaining full EVM compatibility, all common standards like ERC-20 (fungible token), ERC-721 (non-fungible token), ERC-2771 (meta transactions), and variants are supported in our backend. Beyond that, proven smart contracts and dApps running on Ethereum and compatible chains can be easily adopted." %}
+    {% set cardRowParagraph = "The core is developed using the GO language. Developers can quickly build applications on Camino using the EVM-compatible C-Chain. Decentralized frontend applications (dApps) can be built on top of the Camino backend. By maintaining full EVM compatibility, all common standards like ERC-20 (fungible token), ERC-721 (non-fungible token), ERC-2771 (meta transactions), and variants are supported in our backend. Beyond that, proven smart contracts and dApps running on Ethereum and compatible chains can be easily adopted." %}
+    {% set cardRowSubtitle = "" %}
     {% set cardRowBgImage = "" %}
 
     {% set cardFirstImage = "generic-04" %}
@@ -83,17 +84,40 @@ layout:         default
     {% include "textImage.html" %}
 <!-- TextImage End -->
 
-<!-- SimpleText Start -->
-    {% set simpleTextTitle = "Camino's specific features" %}
-    {% set simpleTextSubtitle = "Validator KYB proof — Gas fee voting — Validator voting" %}
-    {% set simpleTextParagraph = "To begin with, we are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept." %}
-    {% set simpleTextParagraph2 = "Additionally, we changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry. The most crucial point, however, is that the network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment." %}
-    {% set simpleTextButton = "" %}
-    {% set simpleTextButtonLink = "" %}
-    {% set simpleTextBg = "gradient" %}
-    {% set simpleTextRadius = "64px" %}
-    {% include "simpleText.html" %}
-<!-- SimpleText End -->
+<div
+    class="bg-contain bg-top bg-no-repeat relative gradient rounded-camino"
+    {% if simpleTextBgImage %}
+    style="--sal-duration: .75s; --sal-delay: .25s;"
+    {% endif %}
+>
+    <section class="text-center">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="mb-8" data-sal="slide-up">
+                Camino's specific features
+            </h1>
+            <div class="md:flex mb-8">
+                <div class="bg-gray-900 font-headline text-2xl flex-1 py-6 rounded-3xl mx-2 flex flex-col items-center mb-4 md:mb-0">
+                    <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    Validator KYB proof
+                </div>
+                <div class="bg-gray-900 font-headline text-2xl flex-1 py-6 rounded-3xl mx-2 flex flex-col items-center mb-4 md:mb-0">
+                    <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    Gas fee voting
+                </div>
+                <div class="bg-gray-900 font-headline text-2xl flex-1 py-6 rounded-3xl mx-2 flex flex-col items-center">
+                    <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    Validator voting
+                </div>
+            </div>
+            <p class="text-lg md:text-2xl text-gray-300 mb-8" data-sal="slide-up">
+                To begin with, we are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept.
+            </p>
+            <p class="text-lg md:text-2xl text-gray-300" data-sal="slide-up" >
+                Additionally, we changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry. The most crucial point, however, is that the network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment.
+            </p>
+        </div>
+    </section>
+</div>
 
 <section>
     <h1 class="mb-12 text-center">Node set-up made easy</h1>
@@ -166,6 +190,19 @@ layout:         default
         </table>
     </section>
 </div>
+
+<!-- SimpleText Start -->
+    {% set simpleTextTitle = "Join our discord server" %}
+    {% set simpleTextSubtitle = "" %}
+    {% set simpleTextParagraph = "" %}
+    {% set simpleTextParagraph2 = "" %}
+    {% set simpleTextButton = "Camino Discord" %}
+    {% set simpleTextButtonLink = "https://discord.gg/Vzxf8cqn" %}
+    {% set simpleTextBgImage = "bubbles" %}
+    {% set simpleTextBg = "" %}
+    {% set simpleTextRadius = "" %}
+    {% include "simpleText.html" %}
+<!-- SimpleText End -->
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Network services" %}

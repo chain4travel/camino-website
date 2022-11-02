@@ -72,45 +72,38 @@ layout:         default
 
 {% include "roadmap.html" %}
 
-<!-- TextImage Start -->
-{% set textImageImage =         "token-dark-both" %}
-{% set textImageImagePosition = "right" %}
-{% set textImageTitle =         "Camino powered by its native token" %}
-{% set textImageParagraph =     "Create a Camino wallet for storing assets and start engaging in the network." %}
-{% set textImageParagraph2 =    "" %}
-{% set textImageButtonLink =    "###" %}
-{% set textImageButtonLabel =   "Create wallet" %}
-{% include "textImage.html" %}
-<!-- TextImage End -->
+<div class="border-y border-gray-700">
+    <div class="container items-center grid grid-cols-12">
+        <div class="py-12 md:py-24 col-span-12 md:col-span-6 {% if textImageImagePosition == 'left' %} md:col-start-7 {% endif %}">
+            <h2 class="mb-2">Camino token</h2>
+            <p class="mb-8 text-gray-400">Token Name: Camino (CAM), Token Supply: 1,000,000,000</p>
 
-<section>
-    <h1 class="text-center mb-12">Camino token</h1>
-    <div class="grid grid-cols-2 grid-rows-2 gap-8">
-        <div class="col-span-6 md:col-span-1 row-span-1 p-4 md:p-12 bg-gray-800 rounded-3xl">
-            <img class="h-16 md:h-32 md:mb-6" src="/static/images/cardImages/coins.png" alt="">
-            <h2 class="mt-2 md:mb-6"md:>Token information</h2>
-            <ul classtext-sm md:text-base ="text-gray-300 text-lg list-disc ml-4">
-                <li>Token Name: Camino (CAM)</li>
-                <li>Token Supply: 1,000,000,000</li>
-            </ul>
+            <h2 class="mb-2">Token distribution</h2>
+            <p class="mb-8 text-gray-400">Camino (CAM) is the native token of the Camino network. It is used to secure the network through staking or pay for fees.</p>
+
+            <h2 class="mb-2">Camino (CAM)</h2>
+            <p class="mb-8 text-gray-400">The Camino native utility token is used for gas price and transactions fees. In a second phase Camino will also be used by enduser for payment.</p>
+
+            <h2 class="mb-2">Stable Coin</h2>
+            <p class="mb-8 text-gray-400">We are supporting USDollar stable coins. In a second phase we will also support stable EURO coins.</p>
         </div>
-        <div class="col-span-6 md:col-span-1 row-span-1 p-4 md:p-12 bg-gray-800 rounded-3xl">
-            <img class="h-16 md:h-32 md:mb-6" src="/static/images/cardImages/coins.png" alt="">
-            <h2 class="mt-2 md:mb-6"md:>Token distribution</h2>
-            <p class="text-sm md:text-base text-gray-300">Camino (CAM) is the native token of the Camino network. It is used to secure the network through staking or pay for fees.</p>
-        </div>
-        <div class="col-span-6 md:col-span-1 row-span-1 p-4 md:p-12 bg-gray-800 rounded-3xl">
-            <img class="h-16 md:h-32 md:mb-6" src="/static/images/cardImages/coins.png" alt="">
-            <h2 class="mt-2 md:mb-6"md:>Camino (CAM)</h2>
-            <p class="text-sm md:text-base text-gray-300">The Camino native utility token is used for gas price and transactions fees. In a second phase Camino will also be used by enduser for payment. </p>
-        </div>
-        <div class="col-span-6 md:col-span-1 row-span-1 p-4 md:p-12 bg-gray-800 rounded-3xl">
-            <img class="h-16 md:h-32 md:mb-6" src="/static/images/cardImages/coins.png" alt="">
-            <h2 class="mt-2 md:mb-6"md:>Stable Coin</h2>
-            <p class="text-sm md:text-base text-gray-300">We are supporting USDollar stable coins. In a second phase we will also support stable EURO coins.</p>
+        <div class="col-span-12 md:col-span-5 md:col-start-8">
+            <img class="w-full object-contain" src="/static/images/cardImages/tokenomics-dark-right.png" alt="">
         </div>
     </div>
-</section>
+</div>
+
+<!-- SimpleText Start -->
+    {% set simpleTextTitle = "Camino powered by its native token" %}
+    {% set simpleTextSubtitle = "Create a Camino wallet for storing assets and start engaging in the network." %}
+    {% set simpleTextParagraph = "" %}
+    {% set simpleTextParagraph2 = "" %}
+    {% set simpleTextButton = "Create wallet" %}
+    {% set simpleTextButtonLink = "" %}
+    {% set simpleTextBg = "" %}
+    {% set simpleTextRadius = "" %}
+    {% include "simpleText.html" %}
+<!-- SimpleText End -->
 
 <!-- TextImage Start -->
 {% set textImageImage =         "eco-dark-left" %}

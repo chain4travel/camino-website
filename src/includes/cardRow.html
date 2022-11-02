@@ -15,6 +15,11 @@
             {{ cardRowSubtitle }}
         </h3>
         {% endif %}
+        {% if cardRowParagraph %}
+        <p class="text-lg mt-8" data-sal="slide-up">
+            {{ cardRowParagraph }}
+        </p>
+        {% endif %}
 
         <!-- CardRow Start -->
         <div class="grid grid-cols-12 gap-6 mt-6 md:mt-12">
