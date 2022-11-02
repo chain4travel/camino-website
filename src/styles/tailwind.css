@@ -45,7 +45,7 @@ body {
 }
 
 section {
-  @apply container py-8 md:py-12 2xl:py-20;
+  @apply container py-16 lg:py-24;
 }
 
 .hero {

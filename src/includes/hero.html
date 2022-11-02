@@ -1,5 +1,5 @@
 <div
-    class="bg-contain bg-top bg-no-repeat relative"
+    class="bg-cover md:bg-contain bg-top bg-no-repeat relative"
     {% if heroBgImage %}
     style="background-image:url('/static/images/heroBgImages/{{ heroBgImage }}.png');--sal-duration: .75s; --sal-delay: .25s;"
     {% endif %}
@@ -21,9 +21,8 @@
         </p>
         {% endif %}
         {% if home %}
-        <div class="relative mt-16 max-w-[600px] mx-auto" data-sal="zoom-in">
-            <img class="" src="/static/images/heroBgImages/camino-glas.png" alt="">
-            <div class="absolute -inset-12 -z-10 blur-3xl rounded-full bg-gradient-to-tr opacity-75 from-cyan-600 to-purple-600"></div>
+        <div class="relative -mt-0 md:-mt-20 max-w-[800px] mx-auto" data-sal="zoom-in">
+            <img src="/static/images/camino-logo.gif" alt="">
         </div>
         {% endif %}
     </div>
