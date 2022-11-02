@@ -22,33 +22,42 @@ layout:         default
     {% include "simpleText.html" %}
 <!-- SimpleText End -->
 
-<!-- CardRow Start -->
-    {% set cardRowTitle = "It is time to build the future of travel" %}
-    {% set cardRowSubtitle = "In today’s travel industry, the innovation pace is decelerated due to standards and exchange protocols that are more than 40 years old and desperately need replacement." %}
-    {% set cardRowBgImage = "" %}
-    
-    {% set cardFirstImage = "cardimage01" %}
-    {% set cardFirstTitle = "Fast transaction processes" %}
-    {% set cardFirstText = "" %}
-    {% set cardFirstLinkLabel = "" %}
-    
-    {% set cardSecondImage = "cardimage02" %}
-    {% set cardSecondTitle = "Modern technological structures" %}
-    {% set cardSecondText = "" %}
-    {% set cardSecondLinkLabel = "" %}
+<div
+    class="bg-contain bg-top bg-no-repeat relative"
+    {% if heroBgImage %}
+    style="--sal-duration: .75s; --sal-delay: .25s;"
+    {% endif %}
+>
+    <section class="text-center">
+        <h1 class="mb-6" data-sal="slide-up">
+            It is time to build the future of travel
+        </h1>
+        <h3 class="max-w-screen-md mx-auto" data-sal="slide-up">
+            In today’s travel industry, the innovation pace is decelerated due to standards and exchange protocols that are more than 40 years old and desperately need replacement.
+        </h3>
 
-    {% set cardThirdImage = "cardimage03" %}
-    {% set cardThirdTitle = "Low transaction fees" %}
-    {% set cardThirdText = "" %}
-    {% set cardThirdLinkLabel = "" %}
-
-    {% set cardFourthImage = "cardimage04" %}
-    {% set cardFourthTitle = "Accelerated innovation pace" %}
-    {% set cardFourthText = "" %}
-    {% set cardFourthLinkLabel = "" %}
-
-    {% include "cardRow.html" %}
-<!-- CardRow End -->
+        <!-- CardRow Start -->
+        <div class="grid grid-cols-12 gap-6 mt-6 md:mt-12">
+            <div class="card col-span-12 sm:col-span-6 lg:col-span-3">
+                <img class="mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage01.png" alt="{{ cardFirstTitle }} - image">
+                <h3><span class="text-primary">Fast</span> transaction processes</h3>
+            </div>
+            <div class="card col-span-12 sm:col-span-6 lg:col-span-3">
+                <img class="mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage02.png" alt="{{ cardFirstTitle }} - image">
+                <h3><span class="text-primary">Modern</span> technological structures</h3>
+            </div>
+            <div class="card col-span-12 sm:col-span-6 lg:col-span-3">
+                <img class="mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage03.png" alt="{{ cardFirstTitle }} - image">
+                <h3><span class="text-primary">Low</span> transaction <br> fees</h3>
+            </div>
+            <div class="card col-span-12 sm:col-span-6 lg:col-span-3">
+                <img class="mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage04.png" alt="{{ cardFirstTitle }} - image">
+                <h3><span class="text-primary">Accelerated</span> innovation pace</h3>
+            </div>
+        </div>
+        <!-- CardRow End -->
+    </section>
+</div>
 
 <!-- Supporter Start -->
     {% include "supporter.html" %}
