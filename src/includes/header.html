@@ -2,7 +2,7 @@
 
 <div x-data="{ atTop : true }">
     <header
-        class="text-gray-200 w-full transition-all fixed top-0 left-0 right-0 z-50 border-b border-gray-700 bg-gray-900/50"
+        class="text-gray-200 w-full transition-all fixed top-0 left-0 right-0 z-50 bg-gray-900/50"
         :class="{'backdrop-blur-3xl' : !atTop}"
         @scroll.window="atTop = ( window.pageYOffset > 0 ) ? false : true">
         <div class="container mx-auto flex flex-wrap py-5 items-center">
