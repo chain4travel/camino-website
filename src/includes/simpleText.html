@@ -7,27 +7,27 @@
     <section class="text-center">
         <div class="max-w-5xl mx-auto">
             {% if simpleTextTitle %}
-            <h1 class="mb-8" data-sal="slide-up">
+            <h1 class="mb-8">
                 {{ simpleTextTitle }}
             </h1>
             {% endif %}
             {% if simpleTextSubtitle %}
-            <h3 class="{% if simpleTextParagraph %}mb-8{% endif %}" data-sal="slide-up">
+            <h3 class="{% if simpleTextParagraph %}mb-8{% endif %}">
                 {{ simpleTextSubtitle }}
             </h3>
             {% endif %}
             {% if simpleTextParagraph %}
-            <p class="text-lg md:text-2xl text-gray-300 {% if simpleTextParagraph2 %}mb-8{% endif %}" data-sal="slide-up">
+            <p class="text-lg md:text-2xl text-gray-300 {% if simpleTextParagraph2 %}mb-8{% endif %}">
                 {{ simpleTextParagraph }}
             </p>
             {% endif %}
             {% if simpleTextParagraph2 %}
-            <p class="text-lg md:text-2xl text-gray-300" data-sal="slide-up" >
+            <p class="text-lg md:text-2xl text-gray-300" >
                 {{ simpleTextParagraph2 }}
             </p>
             {% endif %}
             {% if simpleTextButton %}
-            <a class="button mt-8" href="{{ simpleTextButtonLink }}" data-sal="slide-up">
+            <a class="button mt-8" href="{{ simpleTextButtonLink }}">
                 {{ simpleTextButton }}
             </a>
             {% endif %}

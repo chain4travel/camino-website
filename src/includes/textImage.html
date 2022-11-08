@@ -6,6 +6,9 @@
         </div>
         {% endif %}
         <div class="py-12 md:py-24 col-span-12 md:col-span-6 {% if textImageImagePosition == 'left' %} md:col-start-7 {% endif %}">
+            {% if textImageCategory %}
+            <div class="mb-4 md:mb-8 font-bold text-secondary uppercase text-sm tracking-widest">{{ textImageCategory }}</div>
+            {% endif %}
             <h2 class="mb-6">{{ textImageTitle }}</h2>
             {% if textImageSubtitle %}
             <h3 class="mb-6">{{ textImageSubtitle }}</h3>

@@ -6,8 +6,8 @@ layout:         default
 
 <!-- Hero Start -->
     {% set heroTitle = "Camino is developer-friendly" %}
-    {% set heroSubtitle = "Start building on the first layer one for the travel industry" %}
-    {% set heroText = "" %}
+    {% set heroSubtitle = "" %}
+    {% set heroText = "Start building on the first layer one for the travel industry" %}
     {% set heroBgImage = "cards" %}
     {% include "hero.html" %}
 <!-- Hero End -->
@@ -53,9 +53,9 @@ layout:         default
             </ul>
             <h3 class="mt-8 mb-6">Different set-up options:</h3>
             <div class="flex flex-wrap mt-auto">
-                <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white text-gray-900">Manual set-up</a>
-                <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Install script</a>
-                <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Docker installation</a>
+                <a href="https://docs.camino.foundation/apps/nodes/run-camino-node" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white text-gray-900">Manual set-up</a>
+                <a href="https://docs.camino.foundation/apps/nodes/set-up-node-with-installer" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Install script</a>
+                <a href="https://docs.camino.foundation/apps/nodes/set-up-node-with-docker" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Docker installation</a>
             </div>
         </div>
         <div class="col-span-2 md:col-span-1 rounded-camino bg-secondary p-8 md:p-14 flex flex-col">
@@ -68,8 +68,7 @@ layout:         default
                 <li>OS: Ubuntu 18.04/20.04 or MacOS</li>
             </ul>
             <div class="flex flex-wrap mt-auto">
-                <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white text-gray-900">Get in touch</a>
-                <a href="#" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Learn more</a>
+                <a href="https://docs.camino.foundation/about/#application-specific-requirements" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white text-gray-900">Learn more</a>
             </div>
         </div>
     </div>
@@ -92,7 +91,7 @@ layout:         default
 >
     <section class="text-center">
         <div class="max-w-5xl mx-auto">
-            <h1 class="mb-8" data-sal="slide-up">
+            <h1 class="mb-8">
                 Camino's specific features
             </h1>
             <div class="md:flex mb-8">
@@ -109,10 +108,10 @@ layout:         default
                     Validator voting
                 </div>
             </div>
-            <p class="text-lg md:text-2xl text-gray-300 mb-8" data-sal="slide-up">
+            <p class="text-lg md:text-2xl text-gray-300 mb-8">
                 To begin with, we are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept.
             </p>
-            <p class="text-lg md:text-2xl text-gray-300" data-sal="slide-up" >
+            <p class="text-lg md:text-2xl text-gray-300" >
                 Additionally, we changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry. The most crucial point, however, is that the network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment.
             </p>
         </div>
@@ -120,7 +119,7 @@ layout:         default
 </div>
 
 <section>
-    <h1 class="mb-12 text-center">Node set-up made easy</h1>
+    <h1 class="mb-12 text-center">Three step node set-up</h1>
     <h3 class="mb-12 text-center">We want to give you the opportunity to build something awesome, and we know that getting started can be tough. That's why we've made it easy for you to get started with a detailed description in our documentation.</h3>
     <div class="md:grid grid-cols-2 grid-rows-2 gap-12">
         <div class="bg-primary p-16 col-span-2 md:col-span-1 md:row-span-1 rounded-camino mb-8 md:mb-0">
@@ -145,7 +144,7 @@ layout:         default
     {% set simpleTextParagraph = "" %}
     {% set simpleTextParagraph2 = "" %}
     {% set simpleTextButton = "Start building on Camino" %}
-    {% set simpleTextButtonLink = "#" %}
+    {% set simpleTextButtonLink = "https://docs.camino.foundation/developer/build/create-a-local-test-network" %}
     {% set simpleTextBgImage = "cards" %}
     {% set simpleTextBg = "" %}
     {% set simpleTextRadius = "" %}
@@ -206,6 +205,7 @@ layout:         default
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Network services" %}
+    {% set cardRowParagraph = "" %}
     {% set cardRowSubtitle = "" %}
     {% set cardRowBgImage = "" %}
 
@@ -238,7 +238,7 @@ layout:         default
     {% set simpleTextParagraph = "" %}
     {% set simpleTextParagraph2 = "" %}
     {% set simpleTextButton = "Go to Camino Documentation" %}
-    {% set simpleTextButtonLink = "#" %}
+    {% set simpleTextButtonLink = "https://docs.camino.foundation/" %}
     {% set simpleTextBgImage = "cubes" %}
     {% set simpleTextBg = "" %}
     {% set simpleTextRadius = "" %}

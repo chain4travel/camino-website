@@ -6,22 +6,22 @@
 >
     <div class="hero">
         {% if heroTitle %}
-        <h1 class="{% if home %}text-4xl md:text-5xl lg:text-8xl{% endif %} {% if heroSubtitle %}mb-8{% endif %}" data-sal="slide-up">
+        <h1 class="{% if heroSubtitle %}mb-8{% endif %}">
             {{ heroTitle }}
         </h1>
         {% endif %}
         {% if heroSubtitle %}
-        <h2 class="{% if heroText %}mb-8{% endif %}" data-sal="slide-up">
+        <h2 class="{% if heroText %}mb-8{% endif %}">
             {{ heroSubtitle }}
         </h2>
         {% endif %}
         {% if home %}
-        <div class="border border-gray-700 overflow-hidden mb-8 mx-auto rounded-2xl shadow-2xl" data-sal="slide-up">
+        <div class="border border-gray-700 overflow-hidden mb-8 mx-auto rounded-2xl shadow-2xl">
             <video preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" poster="/static/images/video-poster.png" controls></video>
         </div>
         {% endif %}
         {% if heroText %}
-        <p data-sal="slide-up" class="text-lg md:text-2xl text-gray-300 {% if heroSubtitle %} {% else %} mt-8 {% endif %}">
+        <p class="text-lg md:text-2xl text-gray-300 {% if heroSubtitle %} {% else %} mt-8 {% endif %}">
             {{ heroText }}
         </p>
         {% endif %}
