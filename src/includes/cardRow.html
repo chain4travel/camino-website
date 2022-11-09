@@ -11,13 +11,18 @@
         </h1>
         {% endif %}
         {% if cardRowSubtitle %}
-        <h3>
+        <h2>
             {{ cardRowSubtitle }}
         </h3>
         {% endif %}
         {% if cardRowParagraph %}
-        <p class="text-lg mt-8">
+        <p class="text-lg mt-8 max-w-screen-lg mx-auto text-gray-300">
             {{ cardRowParagraph }}
+        </p>
+        {% endif %}
+        {% if cardRowParagraph2 %}
+        <p class="text-lg mt-8 max-w-screen-lg mx-auto text-gray-300">
+            {{ cardRowParagraph2 }}
         </p>
         {% endif %}
 
@@ -25,9 +30,9 @@
         <div class="grid grid-cols-12 gap-6 mt-6 md:mt-12">
 
             {% if cardFirstTitle %}
-            <div class="card col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+            <div class="bg-gray-800 p-8 md:p-12 {% if cardFirstImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardFirstImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardFirstImage }}.png" alt="{{ cardFirstTitle }} - image">{% endif %}
-                <h3 class="{% if cardFirstText %} mb-6 {% endif %}">{{ cardFirstTitle }}</h3>
+                <h2 class="{% if cardFirstText %} mb-6 {% endif %}">{{ cardFirstTitle }}</h2>
                 <p>{{ cardFirstText }}</p>
                 {% if cardFirstLinkLabel %}
                 <a class="button mt-6" href="{{ cardFirstLink }}">{{ cardFirstLinkLabel }}</a>
@@ -36,9 +41,9 @@
             {% endif %}
 
             {% if cardSecondTitle %}
-            <div class="card col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+            <div class="bg-gray-800 p-8 md:p-12 {% if cardSecondImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardSecondImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardSecondImage }}.png" alt="{{ cardSecondTitle }} - image">{% endif %}
-                <h3 class="{% if cardSecondText %} mb-6 {% endif %}">{{ cardSecondTitle }}</h3>
+                <h2 class="{% if cardSecondText %} mb-6 {% endif %}">{{ cardSecondTitle }}</h2>
                 <p>{{ cardSecondText }}</p>
                 {% if cardSecondLinkLabel %}
                 <a class="button mt-6" href="{{ cardSecondLink }}">{{ cardSecondLinkLabel }}</a>
@@ -47,9 +52,9 @@
             {% endif %}
 
             {% if cardThirdTitle %}
-            <div class="card col-span-12 {% if cardFourthTitle %} md:col-span-3 {% else %} md:col-span-4 {% endif %}">
+            <div class="bg-gray-800 p-8 md:p-12 {% if cardThirdImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardThirdImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardThirdImage }}.png" alt="{{ cardThirdTitle }} - image">{% endif %}
-                <h3 class="{% if cardThirdText %} mb-6 {% endif %}">{{ cardThirdTitle }}</h3>
+                <h2 class="{% if cardThirdText %} mb-6 {% endif %}">{{ cardThirdTitle }}</h2>
                 <p>{{ cardThirdText }}</p>
                 {% if cardThirdLinkLabel %}
                 <a class="button mt-6" href="{{ cardThirdLink }}">{{ cardThirdLinkLabel }}</a>
@@ -58,9 +63,9 @@
             {% endif %}
 
             {% if cardFourthTitle %}
-            <div class="card col-span-12 md:col-span-3">
+            <div class="bg-gray-800 p-8 md:p-12 {% if cardFourthImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardFourthImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardFourthImage }}.png" alt="{{ cardFourthTitle }} - image">{% endif %}
-                <h3 class="{% if cardFourthText %} mb-6 {% endif %}">{{ cardFourthTitle }}</h3>
+                <h2 class="{% if cardFourthText %} mb-6 {% endif %}">{{ cardFourthTitle }}</h2>
                 <p>{{ cardFourthText }}</p>
                 {% if cardFourthLinkLabel %}
                 <a class="button mt-6" href="{{ cardFourthLink }}">{{ cardFourthLinkLabel }}</a>

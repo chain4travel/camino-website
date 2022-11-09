@@ -83,40 +83,35 @@ layout:         default
     {% include "textImage.html" %}
 <!-- TextImage End -->
 
-<div
-    class="bg-contain bg-top bg-no-repeat relative gradient rounded-camino"
-    {% if simpleTextBgImage %}
-    style="--sal-duration: .75s; --sal-delay: .25s;"
-    {% endif %}
->
-    <section class="text-center">
-        <div class="max-w-5xl mx-auto">
-            <h1 class="mb-8">
-                Camino's specific features
-            </h1>
-            <div class="md:flex mb-8">
-                <div class="bg-gray-900 font-headline text-2xl flex-1 py-6 rounded-3xl mx-2 flex flex-col items-center mb-4 md:mb-0">
-                    <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-                    Validator KYB proof
-                </div>
-                <div class="bg-gray-900 font-headline text-2xl flex-1 py-6 rounded-3xl mx-2 flex flex-col items-center mb-4 md:mb-0">
-                    <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-                    Gas fee voting
-                </div>
-                <div class="bg-gray-900 font-headline text-2xl flex-1 py-6 rounded-3xl mx-2 flex flex-col items-center">
-                    <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-                    Validator voting
-                </div>
-            </div>
-            <p class="text-lg md:text-2xl text-gray-300 mb-8">
-                To begin with, we are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept.
-            </p>
-            <p class="text-lg md:text-2xl text-gray-300" >
-                Additionally, we changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry. The most crucial point, however, is that the network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment.
-            </p>
-        </div>
-    </section>
-</div>
+<!-- CardRow Start -->
+    {% set cardRowTitle = "Camino's specific features" %}
+    {% set cardRowSubtitle = "" %}
+    {% set cardRowParagraph = "To begin with, we are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept." %}
+    {% set cardRowParagraph2 = "Additionally, we changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry. The most crucial point, however, is that the network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment." %}
+    {% set cardRowBgImage = "" %}
+
+    {% set cardFirstImage = "" %}
+    {% set cardFirstTitle = "Validator voting" %}
+    {% set cardFirstText = "We are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept." %}
+    {% set cardFirstLinkLabel = "" %}
+
+    {% set cardSecondImage = "" %}
+    {% set cardSecondTitle = "Gas fee voting" %}
+    {% set cardSecondText = "We changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry." %}
+    {% set cardSecondLinkLabel = "" %}
+
+    {% set cardThirdImage = "" %}
+    {% set cardThirdTitle = "Validator voting" %}
+    {% set cardThirdText = "The network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment." %}
+    {% set cardThirdLinkLabel = "" %}
+
+    {% set cardFourthImage = "" %}
+    {% set cardFourthTitle = "" %}
+    {% set cardFourthText = "" %}
+    {% set cardFourthLinkLabel = "" %}
+
+    {% include "cardRow.html" %}
+<!-- CardRow End -->
 
 <section>
     <h1 class="mb-12 text-center">Three step node set-up</h1>
