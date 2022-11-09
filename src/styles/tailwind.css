@@ -39,6 +39,10 @@
     url('../static/fonts/inter-v12-latin-700.woff') format('woff');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 [x-cloak] {
   display: none !important;
 }

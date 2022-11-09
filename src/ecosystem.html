@@ -9,6 +9,7 @@ layout:         default
     {% set heroSubtitle = "" %}
     {% set heroText = "Discover the world of Camino" %}
     {% set heroBgImage = "bubbles" %}
+    {% set ecosystem = "true" %}
     {% include "hero.html" %}
 <!-- Hero End -->
 
@@ -76,7 +77,7 @@ layout:         default
 
 {% include "roadmap.html" %}
 
-<div class="border-y border-gray-700">
+<div class="border-y border-gray-700" id="tokenomics">
     <div class="container items-center grid grid-cols-12">
         <div class="py-12 md:py-24 col-span-12 md:col-span-6 {% if textImageImagePosition == 'left' %} md:col-start-7 {% endif %}">
             <h1 class="mb-8">Tokenomics</h1>
