@@ -5,9 +5,6 @@
     {% endif %}
 >
     <div class="hero">
-        {% if home %}
-            <img class="-mt-16 md:-mt-32 max-h-[500px] mx-auto" src="/static/images/video-poster.png" alt="Camino Network">
-        {% endif %}
         {% if heroTitle %}
         <h1 class="{% if heroSubtitle %}mb-8{% endif %}">
             {{ heroTitle }}
@@ -22,16 +19,6 @@
         <p class="text-lg md:text-2xl text-gray-300 {% if heroSubtitle %} {% else %} mt-8 {% endif %}">
             {{ heroText }}
         </p>
-        {% endif %}
-        {% if home %}
-        <div x-data="{ CaminoVideoModal: false }">
-            <div class="button-xl mt-8 cursor-pointer" @click="CaminoVideoModal = true">Watch our Video</div>
-            <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50">
-                <div class="bg-gray-800 mx-auto" @click.away="CaminoVideoModal = false">
-                    <video preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
-                </div>
-            </div>
-        </div>
         {% endif %}
     </div>
 </div>

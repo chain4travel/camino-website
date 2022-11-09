@@ -79,7 +79,7 @@ section {
   @apply rounded-3xl md:rounded-[64px];
 }
 
-h1 { @apply font-headline tracking-wide font-semibold xl:text-7xl md:text-5xl text-3xl; }
+h1 { @apply font-headline tracking-wide font-semibold xl:text-6xl md:text-5xl text-3xl; }
 h2 { @apply font-headline tracking-wide font-medium xl:text-4xl md:text-3xl text-2xl; }
-h3 { @apply font-headline tracking-wide font-medium xl:text-xl text-lg; }
-h4 { @apply font-headline tracking-wide font-medium xl:text-lg text-base; }
+h3 { @apply font-headline tracking-wide font-medium xl:text-2xl text-xl; }
+h4 { @apply font-headline tracking-wide font-medium xl:text-xl text-lg; }

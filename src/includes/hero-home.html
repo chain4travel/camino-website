@@ -1,0 +1,23 @@
+<div class="bg-cover md:bg-contain bg-top bg-no-repeat relative"
+style="background-image:url('/static/images/heroBgImages/cards.png');--sal-duration: .75s; --sal-delay: .25s;">
+    <div class="container pt-40 xl:pt-48 pb-24 xl:pb-32">
+        <div class="xl:flex items-center">
+            <div class="pr-16 2xl:pr-32 relative z-10">
+                <h1>The world of travel reinvented</h1>
+                <p class="mt-4 md:mt-8 text-lg md:text-2xl text-gray-300">Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token.</p>
+                <p class="mt-4 md:mt-8 text-lg md:text-2xl text-gray-300">We offer a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers.</p>
+                <div x-data="{ CaminoVideoModal: false }">
+                    <div class="button-xl mt-8 cursor-pointer" @click="CaminoVideoModal = true">Watch our Video</div>
+                    <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50">
+                        <div class="bg-gray-800 mx-auto" @click.away="CaminoVideoModal = false">
+                            <video preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute xl:relative z-0 top-0 -right-48 md:-right-64 xl:right-0 w-[600px] xl:w-auto opacity-20 xl:opacity-100">
+                <img src="/static/images/home-hero.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
