@@ -12,13 +12,13 @@
                 
                 <div class="lg:w-1/2">
                     {% for usecase in usecases %}
-                    {% if (loop.index <= 10) %}
+                    {% if (loop.index <= 11) %}
                     <details class="border border-gray-700 cursor-pointer transition-all hover:bg-gray-800 open:bg-gray-800">
                         <summary class="p-4 md:p-6 flex items-center">
                             <h4 class="mr-4">{{ usecase.icon }}</h4>
-                            <h4 class="line-clamp-1">{{ usecase.title }}</h4>
+                            <h3 class="line-clamp-1">{{ usecase.title }}</h3>
                         </summary>
-                        <div class="p-6 pt-0 lg:p-10 lg:pt-0 text-lg">
+                        <div class="p-6 pt-0 lg:p-6 lg:pt-0 text-lg">
                             <p class="text-gray-500 mb-4 md:hidden">{{ usecase.title }}</p>
                             <p class="mb-4">{{ usecase.paragraph1 }}</p>
                             <p class="mb-4">{{ usecase.paragraph2 }}</p>
@@ -31,13 +31,13 @@
                 
                 <div class="lg:w-1/2">
                     {% for usecase in usecases %}
-                    {% if (loop.index >= 11) %}
+                    {% if (loop.index >= 12) %}
                     <details class="border border-gray-700 cursor-pointer transition-all hover:bg-gray-800 open:bg-gray-800">
                         <summary class="p-4 md:p-6 flex items-center">
                             <h4 class="mr-4">{{ usecase.icon }}</h4>
-                            <h4 class="line-clamp-1">{{ usecase.title }}</h4>
+                            <h3 class="line-clamp-1">{{ usecase.title }}</h3>
                         </summary>
-                        <div class="p-6 pt-0 lg:p-10 lg:pt-0 text-lg">
+                        <div class="p-6 pt-0 lg:p-6 lg:pt-0 text-lg">
                             <p class="text-gray-500 mb-4 md:hidden">{{ usecase.title }}</p>
                             <p class="mb-4">{{ usecase.paragraph1 }}</p>
                             <p class="mb-4">{{ usecase.paragraph2 }}</p>

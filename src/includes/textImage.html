@@ -12,9 +12,9 @@
         {% if textImageSubtitle %}
         <h3 class="mb-6">{{ textImageSubtitle }}</h3>
         {% endif %}
-        <p class="text-gray-300 {% if textImageParagraph2 %} mb-6 {% endif %}">{{ textImageParagraph }}</p>
+        <p class="{% if textImageParagraph2 %} mb-6 {% endif %}">{{ textImageParagraph }}</p>
         {% if textImageParagraph2 %}
-        <p class="text-gray-300">{{ textImageParagraph2 }}</p>
+        <p>{{ textImageParagraph2 }}</p>
         {% endif %}
         {% if textImageButtonLink %}
         <a class="button mt-6" href="{{ textImageButtonLink }}" target="_blank" rel="noopener noreferrer">{{ textImageButtonLabel }}</a>

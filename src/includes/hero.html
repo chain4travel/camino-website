@@ -16,7 +16,7 @@
         </h2>
         {% endif %}
         {% if heroText %}
-        <p class="text-lg md:text-2xl text-gray-300 {% if heroSubtitle %} {% else %} mt-8 {% endif %}">
+        <p class="text-lg md:text-2xl {% if heroSubtitle %} {% else %} mt-8 {% endif %}">
             {{ heroText }}
         </p>
         {% endif %}
