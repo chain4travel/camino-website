@@ -84,35 +84,23 @@ layout:         default
     {% include "textImage.html" %}
 <!-- TextImage End -->
 
-<!-- CardRow Start -->
-    {% set cardRowTitle = "Camino's specific features" %}
-    {% set cardRowSubtitle = "" %}
-    {% set cardRowParagraph = "" %}
-    {% set cardRowParagraph2 = "" %}
-    {% set cardRowBgImage = "" %}
-
-    {% set cardFirstImage = "" %}
-    {% set cardFirstTitle = "Validator voting" %}
-    {% set cardFirstText = "We are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept." %}
-    {% set cardFirstLinkLabel = "" %}
-
-    {% set cardSecondImage = "" %}
-    {% set cardSecondTitle = "Gas fee voting" %}
-    {% set cardSecondText = "We changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry." %}
-    {% set cardSecondLinkLabel = "" %}
-
-    {% set cardThirdImage = "" %}
-    {% set cardThirdTitle = "KYB proof" %}
-    {% set cardThirdText = "The network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment." %}
-    {% set cardThirdLinkLabel = "" %}
-
-    {% set cardFourthImage = "" %}
-    {% set cardFourthTitle = "" %}
-    {% set cardFourthText = "" %}
-    {% set cardFourthLinkLabel = "" %}
-
-    {% include "cardRow.html" %}
-<!-- CardRow End -->
+<section>
+    <h1 class="mb-12 text-center">Camino's specific features</h1>
+    <div class="md:flex items-start md:-mx-3">
+        <details class="bg-gray-800 rounded-camino text-center md:w-1/3 mx-3 hover:bg-gray-700 transition-colors">
+            <summary class="p-4 md:p-8 cursor-pointer hover:text-gray-200"><h2>Validator voting</h2></summary>
+            <div class="p-4 pt-0 md:p-8 md:pt-0">We are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept.</div>
+        </details>
+        <details class="bg-gray-800 rounded-camino text-center w-1/3 mx-3 hover:bg-gray-700 transition-colors">
+            <summary class="p-4 md:p-8 cursor-pointer hover:text-gray-200"><h2>Gas fee voting</h2></summary>
+            <div class="p-4 pt-0 md:p-8 md:pt-0">We changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry.</div>
+        </details>
+        <details class="bg-gray-800 rounded-camino text-center w-1/3 mx-3 hover:bg-gray-700 transition-colors">
+            <summary class="p-4 md:p-8 cursor-pointer hover:text-gray-200"><h2>KYB proof</h2></summary>
+            <div class="p-4 pt-0 md:p-8 md:pt-0">The network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment.</div>
+        </details>
+    </div>
+</section>
 
 <section>
     <h1 class="mb-12 text-center">Three step node set-up</h1>

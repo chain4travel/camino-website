@@ -26,14 +26,7 @@ layout:         default
 
 {% include "tagCloud.html" %}
 
-<!-- SimpleText Start -->
-    {% set simpleTextTitle = "Get involved & secure the network" %}
-    {% set simpleTextParagraph = "Validators of Camino are key industry players who share the vision of a decentralized travel industry; therefore, validators see the transaction income as compensation for operating the node, not as a profit center. Each validator has an equal voice in the governance of the Camino network, the distribution of development incentives, and the usage of the Camino foundation’s token reserves." %}
-    {% set simpleTextParagraph2 = "" %}
-    {% set simpleTextButton = "Become a validator" %}
-    {% set simpleTextButtonLink = "/" %}
-    {% include "simpleText.html" %}
-<!-- SimpleText End -->
+{% include "validatorForm.html" %}
 
 <section>
     <h1 class="text-center mb-12">Validator node set-up made easy</h1>
@@ -62,7 +55,7 @@ layout:         default
             One global travel network for all
         </h2>
         <div class="gradient-full p-1 rounded-camino mb-6">
-            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-12 rounded-camino">
+            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-8 rounded-camino">
                 <p class="leading-snug lg:leading-relaxed italic mb-6 lg:mb-0 lg:text-xl lg:text-left">“Blockchains have enormous potential to materially change our business model by making transactions along the value chain more secure, efficient and traceable. Camino, as the first blockchain platform for travel, offers vast possibilities to enhance processes, products and services in the travel industry. Eurowings will be one of the first movers, currently exploring first use cases in inflight shopping, customer loyalty, digital marketing and sales.“</p>
                 <div class="flex flex-col justify-center lg:w-1/4 flex-shrink-0 lg:ml-16">
                     <img class="mx-auto w-16 h-16 mb-4 rounded-full" src="/static/images/people/jensbischof.png" alt="">
@@ -72,7 +65,7 @@ layout:         default
             </div>
         </div>
         <div class="gradient-full p-1 rounded-camino mb-6">
-            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-12 rounded-camino">
+            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-8 rounded-camino">
                 <p class="leading-snug lg:leading-relaxed italic mb-6 lg:mb-0 lg:text-xl lg:text-left">“At TUI, we were early adopters of blockchain technology and have already developed initial applications in the hotel sector. Chain4Travel offers new opportunities for our distribution and travel production - thanks to its technology and network. Bringing the travel industry together with blockchain technology is the right approach to drive innovation in the industry and keep transaction costs low.”</p>
                 <div class="flex flex-col justify-center lg:w-1/4 flex-shrink-0 lg:ml-16">
                     <img class="mx-auto w-16 h-16 mb-4 rounded-full" src="/static/images/people/frankrosenberger.png" alt="">
@@ -82,7 +75,7 @@ layout:         default
             </div>
         </div>
         <div class="gradient-full p-1 rounded-camino">
-            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-12 rounded-camino">
+            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-8 rounded-camino">
                 <p class="leading-snug lg:leading-relaxed italic mb-6 lg:mb-0 lg:text-xl lg:text-left">“Today, hotel distribution can be quite challenging. The Camino consortium blockchain has the potential for a technical revolution. Our hospitality industry can benefit immensely from the Camino Mainnet in various areas. At Falkensteiner Hotels & Residences we are already working on ideas and concepts for voucher solutions, customer loyalty programs and the improved distribution of microservices and ancillaries linked to our hotels. We are also evolving our digital footprint towards new ways our guests will consume and experience our products and services, even in the meta space.”</p>
                 <div class="flex flex-col justify-center lg:w-1/4 flex-shrink-0 lg:ml-16">
                     <img class="mx-auto w-16 h-16 mb-4 rounded-full" src="/static/images/people/erichfalkensteiner.png" alt="">
