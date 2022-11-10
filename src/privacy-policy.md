@@ -7,26 +7,6 @@ layout: default
 <div class="max-w-screen-lg mx-auto px-4 prose prose-invert prose-lg mt-32">
 
 # Privacy Policy
-Table of content
-
-- What information do we collect?
-- How do we use your information?
-- Will your information be shared with anyone?
-- Do we use cookies and other tracking technologies?
-- Is your information transferred internationally?
-- How long do we keep your information?
-- How do we keep your information safe?
-- Do we collect information from minors?
-- What happens in case of data breach?
-- What are control mechanisms for do-not-track-features?
-- Do Californian residents have specific privacy rights?
-- Do we make updates on this policy?
-- How can you contact us about this policy?
-- Name of the controller:
-- Represented by:
-- Address of the controller:
-- Data Protection Officer:
-- Browser Opt Out
 
 This policy (“Privacy Policy”, together with our Terms of Use ) explains and sets out the basis for why and when we collect personal information about the people who visit our website(s), how we use it, the conditions under which we may disclose it to others and the measures we take to keep it secure.
 
@@ -160,7 +140,7 @@ Arbachstrasse 2
 CH - 6340 Baar
 <a href="mailto:dataprotection@chain4travel.com">dataprotection@chain4travel.com</a>
 
-## Cookie Policy
+### Cookie Policy
 
 Last updated November, 2022
 
