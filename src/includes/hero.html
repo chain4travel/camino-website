@@ -1,28 +1,28 @@
 <div
     class="bg-cover md:bg-contain bg-top bg-no-repeat relative"
     {% if heroBgImage %}
-    style="background-image:url('/static/images/heroBgImages/{{ heroBgImage }}.png');--sal-duration: .75s; --sal-delay: .25s;"
+    style="background-image:url('/static/images/heroBgImages/{{ heroBgImage }}.png');"
     {% endif %}
 >
     <div class="hero">
         {% if heroTitle %}
-        <h1 class="{% if heroSubtitle %}mb-8{% endif %}">
+        <h1 data-sal="slide-up" class="{% if heroSubtitle %}mb-8{% endif %}">
             {{ heroTitle }}
         </h1>
         {% endif %}
         {% if heroSubtitle %}
-        <h2 class="{% if heroText %}mb-8{% endif %}">
+        <h2 data-sal="slide-up" class="{% if heroText %}mb-8{% endif %}">
             {{ heroSubtitle }}
         </h2>
         {% endif %}
         {% if heroText %}
-        <p class="text-lg md:text-2xl {% if heroSubtitle %} {% else %} mt-8 {% endif %}">
+        <p data-sal="slide-up" class="text-lg md:text-2xl">
             {{ heroText }}
         </p>
         {% endif %}
 
         {% if developers %}
-        <div class="container flex justify-center mt-8">
+        <div data-sal="slide-up" class="container flex justify-center mt-8">
             <a class="button mx-1" href="https://docs.camino.foundation/" target="_blank" rel="noopener noreferrer">Documentation</a>
             <a class="button mx-1" href="https://explorer.camino.foundation/c-chain" target="_blank" rel="noopener noreferrer">Block Explorer</a>
         </div>

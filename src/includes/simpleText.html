@@ -1,28 +1,28 @@
 <div
     class="bg-contain bg-top bg-no-repeat relative bg-{{simpleTextBg}} rounded-[{{simpleTextRadius}}]"
     {% if simpleTextBgImage %}
-    style="background-image:url('/static/images/heroBgImages/{{ simpleTextBgImage }}.png');--sal-duration: .75s; --sal-delay: .25s;"
+    style="background-image:url('/static/images/heroBgImages/{{ simpleTextBgImage }}.png')"
     {% endif %}
 >
     <section class="text-center {% if simpleTextBg == 'accent' %}text-gray-900{% endif %}">
-        <div class="max-w-5xl mx-auto">
+        <div data-sal="slide-up" class="max-w-5xl mx-auto">
             {% if simpleTextTitle %}
-            <h1 class="mb-8">
+            <h1>
                 {{ simpleTextTitle }}
             </h1>
             {% endif %}
             {% if simpleTextSubtitle %}
-            <h3 class="{% if simpleTextParagraph %}mb-8{% endif %}">
+            <h3>
                 {{ simpleTextSubtitle }}
             </h3>
             {% endif %}
             {% if simpleTextParagraph %}
-            <p class="text-lg md:text-2xl {% if simpleTextParagraph2 %}mb-8{% endif %}">
+            <p>
                 {{ simpleTextParagraph }}
             </p>
             {% endif %}
             {% if simpleTextParagraph2 %}
-            <p class="text-lg md:text-2xl" >
+            <p>
                 {{ simpleTextParagraph2 }}
             </p>
             {% endif %}
