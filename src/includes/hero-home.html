@@ -1,36 +1,46 @@
-<div class="bg-cover md:bg-contain bg-top bg-no-repeat relative overflow-hidden"
-style="background-image:url('/static/images/heroBgImages/cards-50.png');--sal-duration: .75s; --sal-delay: .25s;">
-    <div class="container pt-40 lg:pt-48 pb-24 lg:pb-32">
-        <div class="lg:flex items-center">
-            <div class="md:pr-16 2lg:pr-32 relative z-10">
-                <h1>The world of travel reinvented</h1>
-                <p class="mt-4 md:mt-8 text-lg md:text-2xl">Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token.</p>
-                <p class="mt-4 md:mt-8 text-lg md:text-2xl">We offer a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers.</p>
-                
-                <div x-data="{ CaminoVideoModal: false }">
-                    <div class="button-xl mt-8 cursor-pointer" @click="CaminoVideoModal = true">Watch our Video</div>
-                    <!-- Video modal -->
-                    <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50" onclick="pauseVideo()">
-                        <div class="bg-gray-800 mx-auto relative" @click.away="CaminoVideoModal = false">
-                            <div @click="CaminoVideoModal = false" onclick="pauseVideo()" class="p-4 rounded-full z-20 bg-gray-700 absolute top-2 right-2 cursor-pointer hover:bg-gray-600">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                            </div>
-                            <video id="caminoVideo" preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
+
+
+    <canvas class="fixed top-0 left-1/2 -translate-x-1/2 z-0" id="canvas" width="1920" height="600"></canvas>
+
+    <script>
+        new rive.Rive({
+        src: "/static/videos/new_file.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true
+        });
+    </script>
+
+<div class="container pt-40 lg:pt-48 pb-24 lg:pb-32">
+    
+    <div class="lg:flex items-center">
+        <div class="md:pr-16 2lg:pr-32 relative z-10">
+            <h1>The world of travel reinvented</h1>
+            <p class="mt-4 md:mt-8 text-lg md:text-2xl">Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token.</p>
+            <p class="mt-4 md:mt-8 text-lg md:text-2xl">We offer a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers.</p>
+            
+            <div x-data="{ CaminoVideoModal: false }">
+                <div class="button-xl mt-8 cursor-pointer" @click="CaminoVideoModal = true">Watch our Video</div>
+                <!-- Video modal -->
+                <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50" onclick="pauseVideo()">
+                    <div class="bg-gray-800 mx-auto relative" @click.away="CaminoVideoModal = false">
+                        <div @click="CaminoVideoModal = false" onclick="pauseVideo()" class="p-4 rounded-full z-20 bg-gray-700 absolute top-2 right-2 cursor-pointer hover:bg-gray-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </div>
+                        <video id="caminoVideo" preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
                     </div>
                 </div>
-
-                <script> 
-                    var myVideo = document.getElementById("caminoVideo"); 
-                    function pauseVideo() { 
-                        myVideo.pause();
-                    } 
-                </script> 
-
             </div>
-            <div class="absolute lg:relative z-0 top-0 -right-32 md:-right-64 lg:right-0 w-96 md:w-[600px] lg:w-auto opacity-20 lg:opacity-100">
-                <img src="/static/images/home-hero.png" alt="">
-            </div>
+
+            <script> 
+                var myVideo = document.getElementById("caminoVideo"); 
+                function pauseVideo() { 
+                    myVideo.pause();
+                } 
+            </script> 
+
+        </div>
+        <div class="absolute lg:relative z-0 top-0 -right-32 md:-right-64 lg:right-0 w-96 md:w-[600px] lg:w-auto opacity-20 lg:opacity-100">
+            <img src="/static/images/home-hero.png" alt="">
         </div>
     </div>
 </div>
