@@ -46,16 +46,18 @@ module.exports = async function () {
     aggregates.data.aggregates.transactionCount,
     1
   );
-  // const validators = await axios.post(`https://columbus.camino.foundation/ext/bc/P`, {
-  //   jsonrpc: "2.0",
-  //   method: "platform.getCurrentValidators",
-  //   params: {
-  //     subnetID: null,
-  //     nodeIDs: [],
-  //   },
-  //   id: 1,
-  // });
-  // const numberOfValidators = validators.data.result.validators.length;
-  const numberOfValidators = 24;
+  const validators = await axios.post(
+    `https://columbus.camino.foundation/ext/bc/P`,
+    {
+      jsonrpc: "2.0",
+      method: "platform.getCurrentValidators",
+      params: {
+        subnetID: null,
+        nodeIDs: [],
+      },
+      id: 1,
+    }
+  );
+  const numberOfValidators = validators.data.result.validators.length;
   return { txfee, numOfTransaction, numberOfValidators };
 };
