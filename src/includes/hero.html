@@ -6,23 +6,23 @@
 >
     <div class="hero">
         {% if heroTitle %}
-        <h1 data-sal="slide-up" class="{% if heroSubtitle %}mb-8{% endif %}">
+        <h1 data-sal="zoom-out" class="{% if heroSubtitle %}mb-8{% endif %}">
             {{ heroTitle }}
         </h1>
         {% endif %}
         {% if heroSubtitle %}
-        <h2 data-sal="slide-up" class="{% if heroText %}mb-8{% endif %}">
+        <h2 data-sal="zoom-out" class="{% if heroText %}mb-8{% endif %}">
             {{ heroSubtitle }}
         </h2>
         {% endif %}
         {% if heroText %}
-        <p data-sal="slide-up" class="text-lg md:text-2xl">
+        <p data-sal="zoom-out" class="text-lg md:text-2xl">
             {{ heroText }}
         </p>
         {% endif %}
 
         {% if developers %}
-        <div data-sal="slide-up" class="container flex justify-center mt-8">
+        <div data-sal="zoom-out" class="container flex justify-center mt-8">
             <a class="button mx-1" href="https://docs.camino.foundation/" target="_blank" rel="noopener noreferrer">Documentation</a>
             <a class="button mx-1" href="https://explorer.camino.foundation/c-chain" target="_blank" rel="noopener noreferrer">Block Explorer</a>
         </div>

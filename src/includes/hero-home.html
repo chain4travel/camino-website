@@ -1,16 +1,14 @@
-<canvas data-sal="fade" class="pointer-events-none fixed top-0 left-1/2 -translate-x-1/2 z-0" id="canvas" width="1920" height="600"></canvas>
-
-<script>
-    new rive.Rive({
-    src: "/static/videos/new_file.riv",
-    canvas: document.getElementById("canvas"),
-    autoplay: true
-    });
-</script>
-
 <section>
     <div class="container items-center grid grid-cols-12">
-        <div data-sal="slide-down" class="col-span-12 md:col-span-6">
+        <canvas data-sal="fade" data-sal-delay="500" class="pointer-events-none absolute top-0 left-0 z-0 w-full" id="canvas" width="1920" height="600"></canvas>
+        <script>
+            new rive.Rive({
+            src: "/static/videos/new_file.riv",
+            canvas: document.getElementById("canvas"),
+            autoplay: true
+            });
+        </script>
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-6">
             <h1 class="text-4xl md:text-5xl 2xl:text-7xl">The world of <br> travel reinvented</h1>
             <p>Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token. The versatile platform offers the perfect opportunity to map and expand current business models and create new touristic products and ways to interact with travelers.</p>
             <div x-data="{ CaminoVideoModal: false }">
@@ -26,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div data-sal="slide-up" class="col-span-12 md:col-span-5 md:col-start-8">
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-5 md:col-start-8">
             <img class="w-full object-contain" src="/static/images/home-hero.png" alt="">
         </div>
     </div>
