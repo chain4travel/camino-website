@@ -12,7 +12,10 @@
             <h1 class="text-4xl md:text-5xl 2xl:text-7xl">The world of <br> travel reinvented</h1>
             <p>Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token. The versatile platform offers the perfect opportunity to map and expand current business models and create new touristic products and ways to interact with travelers.</p>
             <div x-data="{ CaminoVideoModal: false }">
-                <div class="button-xl mt-8 cursor-pointer" @click="CaminoVideoModal = true">Watch video</div>
+                <div class="flex items-center mt-6">
+                    <div class="button-gradient cursor-pointer mr-2" @click="CaminoVideoModal = true">Watch video</div>
+                    <a class="button-secondary" href="/ecosystem">Explore ecosystem</a>
+                </div>
                 <!-- Video modal -->
                 <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50" onclick="pauseVideo()">
                     <div class="bg-gray-800 mx-auto relative" @click.away="CaminoVideoModal = false">

@@ -63,8 +63,12 @@ section {
   @apply whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-blue-500 font-medium text-white py-3 px-6 rounded-2xl;
 }
 
-.button-xl {
-  @apply whitespace-nowrap inline-block transition-all bg-gradient-to-bl from-[#BD00FF] to-[#00ACFF] text-white py-3 px-6 text-lg rounded-2xl;
+.button-secondary {
+  @apply whitespace-nowrap inline-block transition-all bg-gray-800 hover:bg-gray-700 font-medium text-white py-3 px-6 rounded-2xl;
+}
+
+.button-gradient {
+  @apply whitespace-nowrap inline-block transition-all bg-gradient-to-bl from-[#BD00FF] to-[#00ACFF] text-white py-3 px-6 rounded-2xl;
 }
 
 .card {
