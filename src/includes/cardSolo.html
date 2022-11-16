@@ -9,7 +9,7 @@
             </div>
             {% endif %}
 
-            <div class="p-8 md:p-16 text-left flex flex-col justify-center {% if cardSoloBG == 'gray-800' %} text-white {% endif %} {% if cardSoloBG == 'primary' %} text-white {% endif %} {% if cardSoloBG == 'accent' %} text-gray-900 {% endif %} {% if cardSoloBG == 'sky-300' %} text-gray-900 {% endif %}">
+            <div class="p-8 md:p-16 text-left flex flex-col justify-center {% if cardSoloBG == 'gray-800' %} text-white {% endif %} {% if cardSoloBG == 'primary' %} text-white {% endif %} {% if cardSoloBG == 'accent' %} text-gray-900 {% endif %} {% if cardSoloBG == 'caminoSky' %} text-gray-900 {% endif %}">
                 <h1 data-sal="zoom-out" class="{% if cardSoloBG == 'accent' %} text-gray-900 {% endif %}">{{ cardSoloTitle }}</h1>
                 {% if cardSoloSubtitle %}
                 <h3 data-sal="zoom-out" class="{% if cardSoloBG == 'accent' %} text-gray-900 {% endif %}">
@@ -32,7 +32,7 @@
                 </p>
                 {% endif %}
                 {% if cardSoloButton %}
-                <a data-sal="zoom-out" class="inline-block w-fit transition-all py-3 px-6 rounded-2xl mt-6{% if cardSoloBG == 'gray-800' %} bg-primary hover:bg-primary/80 text-white {% endif %}{% if cardSoloBG == 'primary' %} bg-white hover:bg-white/80 text-gray-900 {% endif %}{% if cardSoloBG == 'accent' %} bg-gray-900 hover:bg-gray-800 text-white {% endif %}"
+                <a data-sal="zoom-out" class="inline-block w-fit transition-all py-3 px-6 rounded-2xl mt-6{% if cardSoloBG == 'gray-800' %} bg-primary hover:bg-primary/80 text-white {% endif %}{% if cardSoloBG == 'primary' %} bg-white hover:bg-white/80 text-gray-900 {% endif %}{% if cardSoloBG == 'accent' %} bg-gray-900 hover:bg-gray-800 text-white {% endif %}{% if cardSoloBG == 'caminoSky' %} bg-gray-900 hover:bg-gray-800 text-white {% endif %}"
                 href="{{ cardSoloButtonLink }}">{{ cardSoloButton }}</a>
                 {% endif %}
             </div>

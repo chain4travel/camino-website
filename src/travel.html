@@ -13,8 +13,8 @@ layout:         default
 <!-- Hero End -->
 
 <!-- CardSolo Start -->
-{% set cardSoloBG = "sky-300" %}
-{% set cardSoloImage = "cards-dark-right" %}
+{% set cardSoloBG = "caminoSky" %}
+{% set cardSoloImage = "blockStair-dark-right" %}
 {% set cardSoloImagePosition = "right" %}
 {% set cardSoloTitle = "Operating system of the global travel industry" %}
 {% set cardSoloParagraph = "Camino will form the new operating system of the global travel industry, allowing all participants in the space, from airlines and hotels to rental car companies and tour operators, to interact with one another efficiently, reliably, and transparently." %}
@@ -31,7 +31,7 @@ layout:         default
 <section>
     <h1 class="text-center mb-12">Validator node set-up made easy</h1>
     <div class="grid grid-cols-2 gap-6 md:gap-12">
-        <div class="col-span-2 md:col-span-1 rounded-camino bg-primary p-8 md:p-16">
+        <div class="col-span-2 md:col-span-1 rounded-camino bg-primary  p-8 md:p-10 2xl:p-16">
             <h2 class="mb-6">Few requirements, no entry barriers</h2>
             <ul class="list-disc ml-4">
                 <li>Stake of 100,000 CAMs</li>
@@ -39,7 +39,7 @@ layout:         default
                 <li>Admittance as a validator by the validator consortia via a vote</li>
             </ul>
         </div>
-        <div class="col-span-2 md:col-span-1 rounded-camino bg-accent text-gray-900 p-8 md:p-16">
+        <div class="col-span-2 md:col-span-1 rounded-camino bg-accent text-gray-900 p-8 md:p-10 2xl:p-16">
             <h2 class="mb-6">Easy set-up, low mainenance</h2>
             <ul class="list-disc ml-4">
                 <li>Set up takes only 1-2 hours</li>
@@ -50,44 +50,6 @@ layout:         default
 </section>
 
 {% include "section_testimonials.html" %}
-
-<section>
-    <div class="gradient p-4 md:p-16 rounded-camino text-center">
-        <h2 class="mb-8 md:mb-12">
-            One global travel network for all
-        </h2>
-        <div class="gradient-full p-1 rounded-camino mb-6">
-            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-8 rounded-camino">
-                <p class="leading-snug lg:leading-relaxed italic mb-6 lg:mb-0 lg:text-xl lg:text-left">“Blockchains have enormous potential to materially change our business model by making transactions along the value chain more secure, efficient and traceable. Camino, as the first blockchain platform for travel, offers vast possibilities to enhance processes, products and services in the travel industry. Eurowings will be one of the first movers, currently exploring first use cases in inflight shopping, customer loyalty, digital marketing and sales.“</p>
-                <div class="flex flex-col justify-center lg:w-1/4 flex-shrink-0 lg:ml-16">
-                    <img class="mx-auto w-16 h-16 mb-4 rounded-full" src="/static/images/people/jensbischof.png" alt="">
-                    <p class="font-headline text-xl lg:text-2xl tracking-wider">Jens Bischof</p>
-                    <p class="text-primary text-sm uppercase tracking-wider">CEO EUROWINGS</p>
-                </div>
-            </div>
-        </div>
-        <div class="gradient-full p-1 rounded-camino mb-6">
-            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-8 rounded-camino">
-                <p class="leading-snug lg:leading-relaxed italic mb-6 lg:mb-0 lg:text-xl lg:text-left">“At TUI, we were early adopters of blockchain technology and have already developed initial applications in the hotel sector. Chain4Travel offers new opportunities for our distribution and travel production - thanks to its technology and network. Bringing the travel industry together with blockchain technology is the right approach to drive innovation in the industry and keep transaction costs low.”</p>
-                <div class="flex flex-col justify-center lg:w-1/4 flex-shrink-0 lg:ml-16">
-                    <img class="mx-auto w-16 h-16 mb-4 rounded-full" src="/static/images/people/frankrosenberger.png" alt="">
-                    <p class="font-headline text-xl lg:text-2xl tracking-wider">Frank Rosenberger</p>
-                    <p class="text-primary text-sm uppercase tracking-wider">CIO & CEO FUTURE MARKETS TUI GROUP</p>
-                </div>
-            </div>
-        </div>
-        <div class="gradient-full p-1 rounded-camino">
-            <div class="flex flex-col lg:flex-row justify-center items-center bg-gray-900 p-6 lg:p-8 rounded-camino">
-                <p class="leading-snug lg:leading-relaxed italic mb-6 lg:mb-0 lg:text-xl lg:text-left">“Today, hotel distribution can be quite challenging. The Camino consortium blockchain has the potential for a technical revolution. Our hospitality industry can benefit immensely from the Camino Mainnet in various areas. At Falkensteiner Hotels & Residences we are already working on ideas and concepts for voucher solutions, customer loyalty programs and the improved distribution of microservices and ancillaries linked to our hotels. We are also evolving our digital footprint towards new ways our guests will consume and experience our products and services, even in the meta space.”</p>
-                <div class="flex flex-col justify-center lg:w-1/4 flex-shrink-0 lg:ml-16">
-                    <img class="mx-auto w-16 h-16 mb-4 rounded-full" src="/static/images/people/erichfalkensteiner.png" alt="">
-                    <p class="font-headline text-xl lg:text-2xl tracking-wider">Erich Falkensteiner</p>
-                    <p class="text-primary text-sm uppercase tracking-wider">Chairman Falkensteiner Michaeler Tourism Group</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- TextImage Start -->
     {% set textImageImage = "coins-dark-right" %}
@@ -109,7 +71,7 @@ layout:         default
     {% set textImageParagraph =     "What sounds unimaginable today could become a reality powered by blockchain very soon: Complete and easily accessible hotel information. This will be possible by creating unique hotel wallets on Camino that are easily accessible with a simple API connection and entail all the hotel's content." %}
     {% set textImageParagraph2 =    "One solution “Giata Drive” already offers on Camino in form of a channel manager for images, facts and descriptio: Drag and drop images onto cloud-based platform → Plugin image categories, captions and facts → DefineRoomtypes → DefineHygiene/Covid Information → Check your quality score compared to other Hotels." %}
     {% set textImageButtonLink =    "https://youtu.be/hIxtQUQOfVw" %}
-    {% set textImageButtonLabel =   "Hotel Information in Web3 by Ralf Usbeck" %}
+    {% set textImageButtonLabel =   "Hotel Information in Web3" %}
     {% include "textImage.html" %}
 <!-- TextImage End -->
 
@@ -121,6 +83,6 @@ layout:         default
     {% set textImageParagraph =     "Customer loyalty programs spread rapidly across many industries. The result is a maze of point systems and redemption options, as well as complicated processes involving the exchange of points between program partners. Customer loyalty programs are ripe for innovation that will simplify their use. One solution offers blockchain." %}
     {% set textImageParagraph2 =    "Loyalty programs based on blockchain technology prove to be very successful in various industries. Camino finally provides an approach for the travel industry to take it to another level. Three key messages can be derived from her keynote speech: 1. Easily create your own loyalty token and set up a loyalty program 2. Reward customers for the desired action 3. Add loyalty partners effortlessly." %}
     {% set textImageButtonLink =    "https://youtu.be/dtp5JCL-bOk" %}
-    {% set textImageButtonLabel =   "Loyalty programs on Camino by Anke Hsu" %}
+    {% set textImageButtonLabel =   "Loyalty programs on Camino" %}
     {% include "textImage.html" %}
 <!-- TextImage End -->

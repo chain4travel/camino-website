@@ -16,6 +16,7 @@ module.exports = {
                 secondary: "#B440FC",
                 accent: "#35E9AD",
                 accentDark: "#15373E",
+                caminoSky: "#B5E3FD",
             },
         },
         fontFamily: {
@@ -25,7 +26,7 @@ module.exports = {
         container: {
             center: true,
             padding: {
-                DEFAULT: '2rem',
+                DEFAULT: '1.5rem',
                 },
         }
     },
