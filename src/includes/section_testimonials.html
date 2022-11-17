@@ -1,82 +1,19 @@
 <section>
-<div class="gradient-full p-1 md:p-4 rounded-camino">
-    <h2 class="text-center mt-4 md:mt-6 mb-4 md:mb-8 px-4">
-        One global travel network for all
-    </h2>
-    <div class="px-8 md:px-0 bg-gray-900 rounded-camino relative" x-data="{ testimonialActive: 2 }" x-cloak>
-
-        <button class="absolute z-40 -left-5 md:left-0 top-0 bottom-0 p-8 text-2xl md:text-5xl text-gray-500 hover:text-white" x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">←</button>
-        <button class="absolute z-40 -right-5 md:right-0 top-0 bottom-0 p-8 text-2xl md:text-5xl text-gray-500 hover:text-white" x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">→</button>
-        
-    
-        <div class="flex flex-col h-full relative">
-        
-        <div class="h-full text-center relative z-10">
-            <div x-show.immediate="testimonialActive === 1">
-            <p class="text-white italic py-4 md:px-32 md:py-10 text-sm md:text-2xl" x-show.transition="testimonialActive == 1">
-                Blockchains have enormous potential to materially change our business model by making transactions along the value chain more secure, efficient and traceable. Camino, as the first blockchain platform for travel, offers vast possibilities to enhance processes, products and services in the travel industry. Eurowings will be one of the first movers, currently exploring first use cases in inflight shopping, customer loyalty, digital marketing and sales.
-            </p>
-            </div>
-            
-            <div x-show.immediate="testimonialActive === 2">
-            <p class="text-white italic py-4 md:px-32 md:py-10 text-sm md:text-2xl" x-show.transition="testimonialActive == 2">
-                At TUI, we were early adopters of blockchain technology and have already developed initial applications in the hotel sector. Chain4Travel offers new opportunities for our distribution and travel production - thanks to its technology and network. Bringing the travel industry together with blockchain technology is the right approach to drive innovation in the industry and keep transaction costs low.”
-            </p>
-            </div>
-            
-            <div x-show.immediate="testimonialActive === 3"> 
-            <p class="text-white italic py-4 md:px-32 md:py-10 text-sm md:text-2xl" x-show.transition="testimonialActive == 3">
-                Today, hotel distribution can be quite challenging. The Camino consortium blockchain has the potential for a technical revolution. Our hospitality industry can benefit immensely from the Camino Mainnet in various areas. At Falkensteiner Hotels & Residences we are already working on ideas and concepts for voucher solutions, customer loyalty programs and the improved distribution of microservices and ancillaries linked to our hotels. We are also evolving our digital footprint towards new ways our guests will consume and experience our products and services, even in the meta space.
-            </p>
-            </div>
-        </div>
-        
-        <div class="flex mt-2 md:mt-8 justify-center items-center">
-            <button 
-                @click.prevent="testimonialActive = 1" 
-                class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
-                :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 1 }"	
-            >
-            <img class="rounded-full" src="/static/images/people/frankrosenberger.png" alt="">
-            </button>
-            <button 
-                @click.prevent="testimonialActive = 2" 
-                class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
-                :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 2 }"	
-            >
-            <img class="rounded-full" src="/static/images/people/jensbischof.png" alt="">
-            </button>
-            <button 
-                @click.prevent="testimonialActive = 3" 
-                class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
-                :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 3 }"
-            >
-            <img class="rounded-full" src="/static/images/people/erichfalkensteiner.png" alt="">
-            </button>
-        </div>
-        
-        <div class="flex justify-center pt-2 pb-8">
-            <div class="text-center" x-show="testimonialActive == 1">
-                <h2 class="text-sm md:text-xl text-white">Frank Rosenberger</h2>
-                <small class="text-gray-900 text-xs md:text-sm truncate">---</small>
+    <h1 class="text-center mt-4 md:mt-6 mb-4 md:mb-12">
+        One global travel network for all (Masonry Grid, more quotes needed)
+    </h1>
+    <div class="md:columns-2 xl:columns-3 gap-4 md:gap-8">
+        {% for testimonial in testimonials %}
+        <div class="bg-gray-800 p-4 md:p-8 mb-4 md:mb-8 rounded-3xl inline-block shadow-2xl hover:bg-gray-700 hover:scale-110 transition-all">
+            <p>{{testimonial.text}}</p>
+            <div class="flex items-center mt-4">
+                <img class="mr-3 w-10 h-10 rounded-full" src="/static/images/people/{{testimonial.slug}}.png" alt="">
+                <div>
+                    <div>{{testimonial.name}}</div>
+                    <div class="text-xs text-gray-300">{{testimonial.company}}</div>
                 </div>
-                
-                <div class="text-center" x-show="testimonialActive == 2">
-                <h2 class="text-sm md:text-xl text-white">Jens Bischof</h2>
-                <small class="text-gray-400 text-xs md:text-sm truncate">CEO EUROWINGS</small>
-                </div>
-                
-                <div class="text-center" x-show="testimonialActive == 3">
-                <h2 class="text-sm md:text-xl text-white">Erich Falkensteiner</h2>
-                <small class="text-gray-400 text-xs md:text-sm truncate">Chairman Falkensteiner Michaeler Tourism Group</small>
-            </div>	 
+            </div>
         </div>
-        </div>
-        </div>
-        
-        </body>
-        </html>
-        
-        </div>
-</div>
+        {% endfor %}
+    </div>
 </section>
