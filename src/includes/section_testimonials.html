@@ -1,19 +1,60 @@
-<section>
+<section id="testimonials">
     <h1 class="text-center mt-4 md:mt-6 mb-4 md:mb-12">
-        One global travel network for all (Masonry Grid, more quotes needed)
+        One global travel network for all
     </h1>
-    <div class="md:columns-2 xl:columns-3 gap-4 md:gap-8">
-        {% for testimonial in testimonials %}
-        <div class="bg-gray-800 p-4 md:p-8 mb-4 md:mb-8 rounded-3xl inline-block shadow-2xl hover:bg-gray-700 hover:scale-110 transition-all">
-            <p>{{testimonial.text}}</p>
-            <div class="flex items-center mt-4">
-                <img class="mr-3 w-10 h-10 rounded-full" src="/static/images/people/{{testimonial.slug}}.png" alt="">
-                <div>
-                    <div>{{testimonial.name}}</div>
-                    <div class="text-xs text-gray-300">{{testimonial.company}}</div>
+    <div :class="{'h-[600px] lg:h-[800px]' : !isOpen}" class="duration-500 transition-all relative md:p-6 overflow-hidden" x-data="{ isOpen: false }">
+    <div class="grid grid-cols-12 gap-4 md:gap-8">
+        <div class="absolute z-10 bottom-0 flex justify-center left-0 right-0 py-8 bg-gradient-to-t from-gray-900 to-transparent">
+            <a href="#testimonials" class="button bottom-0" x-text="isOpen ? 'Close' : 'Show more'" @click="isOpen = !isOpen">Show more</a>
+        </div>
+        <div class="col-span-12 lg:col-span-4">
+            {% for testimonial in testimonials %}
+            {% if testimonial.col === "1" %}
+            <div class="bg-gray-800 p-4 md:p-8 mb-4 lg:mb-8 rounded-3xl inline-block shadow-2xl hover:bg-gray-700 md:hover:scale-105 transition-all">
+                <p class="text-sm md:text-base">{{testimonial.text}}</p>
+                <div class="flex items-center mt-4">
+                    <img class="mr-3 w-10 h-10 rounded-full" src="/static/images/people/{{testimonial.slug}}.png" alt="">
+                    <div>
+                        <div>{{testimonial.person}}</div>
+                        <div class="text-xs text-gray-300">{{testimonial.company}}</div>
+                    </div>
                 </div>
             </div>
+            {% endif %}
+            {% endfor %}
         </div>
-        {% endfor %}
+        <div class="col-span-12 lg:col-span-4">
+            {% for testimonial in testimonials %}
+            {% if testimonial.col === "2" %} 
+            <div class="bg-gray-800 p-4 md:p-8 mb-4 lg:mb-8 rounded-3xl inline-block shadow-2xl hover:bg-gray-700 md:hover:scale-105 transition-all">
+                <p class="text-sm md:text-base">{{testimonial.text}}</p>
+                <div class="flex items-center mt-4">
+                    <img class="mr-3 w-10 h-10 rounded-full" src="/static/images/people/{{testimonial.slug}}.png" alt="">
+                    <div>
+                        <div>{{testimonial.person}}</div>
+                        <div class="text-xs text-gray-300">{{testimonial.company}}</div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="col-span-12 lg:col-span-4">
+            {% for testimonial in testimonials %}
+            {% if testimonial.col === "3" %}
+            <div class="bg-gray-800 p-4 md:p-8 mb-4 lg:mb-8 rounded-3xl inline-block shadow-2xl hover:bg-gray-700 md:hover:scale-105 transition-all">
+                <p class="text-sm md:text-base">{{testimonial.text}}</p>
+                <div class="flex items-center mt-4">
+                    <img class="mr-3 w-10 h-10 rounded-full" src="/static/images/people/{{testimonial.slug}}.png" alt="">
+                    <div>
+                        <div>{{testimonial.person}}</div>
+                        <div class="text-xs text-gray-300">{{testimonial.company}}</div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
     </div>
 </section>
