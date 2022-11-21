@@ -2,7 +2,7 @@
     <h1 class="text-center mt-4 md:mt-6 mb-4 md:mb-12">
         One global travel network for all
     </h1>
-    <div :class="{'h-[600px] lg:h-[800px]' : !isOpen}" class="duration-500 transition-all relative md:p-6 overflow-hidden" x-data="{ isOpen: false }">
+    <div :class="{'h-[600px] lg:h-[800px]' : !isOpen}" class="relative md:p-6 overflow-hidden" x-data="{ isOpen: false }">
     <div class="grid grid-cols-12 gap-4 md:gap-8">
         <div class="absolute z-10 bottom-0 flex justify-center left-0 right-0 py-8 bg-gradient-to-t from-gray-900 to-transparent">
             <a href="#testimonials" class="button bottom-0" x-text="isOpen ? 'Close' : 'Show more'" @click="isOpen = !isOpen">Show more</a>
