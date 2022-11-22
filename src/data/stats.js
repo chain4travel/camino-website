@@ -31,33 +31,57 @@ function nFormatter(num, digits) {
     : "0";
 }
 
+const getNumberOfTxFee = async (startDate, endDate) => {
+  try {
+    const txfeeAggregates = await api.get(
+      `/txfeeAggregates?chainID=${chainID}&startTime=${startDate}&endTime=${endDate}`
+    );
+    return nFormatter(txfeeAggregates.data.aggregates.txfee, 1);
+  } catch (e) {
+    return "-";
+  }
+};
+const getNumberOfTransaction = async (startDate, endDate) => {
+  try {
+    const aggregates = await api.get(
+      `/aggregates?chainID=${chainID}&startTime=${startDate}&endTime=${endDate}`
+    );
+    return nFormatter(aggregates.data.aggregates.transactionCount, 1);
+  } catch (e) {
+    return "-";
+  }
+};
+const getNumberOfValidators = async () => {
+  try {
+    const validators = await axios.post(
+      `https://columbus.camino.foundation/ext/bc/P`,
+      {
+        jsonrpc: "2.0",
+        method: "platform.getCurrentValidators",
+        params: {
+          subnetID: null,
+          nodeIDs: [],
+        },
+        id: 1,
+      }
+    );
+    return validators.data.result.validators.length;
+  } catch (e) {
+    return "-";
+  }
+};
 module.exports = async function () {
   const currentDate = DateTime.now().setZone("utc");
   const startDate = currentDate.minus({ days: 7 });
-  const txfeeAggregates = await api.get(
-    `/txfeeAggregates?chainID=${chainID}&startTime=${startDate}&endTime=${currentDate.toISO()}`
-  );
-  const aggregates = await api.get(
-    `/aggregates?chainID=${chainID}&startTime=${startDate}&endTime=${currentDate.toISO()}`
-  );
-  const txfee = nFormatter(txfeeAggregates.data.aggregates.txfee, 1);
-
-  const numOfTransaction = nFormatter(
-    aggregates.data.aggregates.transactionCount,
-    1
-  );
-  const validators = await axios.post(
-    `https://columbus.camino.foundation/ext/bc/P`,
-    {
-      jsonrpc: "2.0",
-      method: "platform.getCurrentValidators",
-      params: {
-        subnetID: null,
-        nodeIDs: [],
-      },
-      id: 1,
-    }
-  );
-  const numberOfValidators = validators.data.result.validators.length;
-  return { txfee, numOfTransaction, numberOfValidators };
+  const endDate = currentDate.toISO();
+  let results = await Promise.all([
+    getNumberOfTxFee(startDate, endDate),
+    getNumberOfTransaction(startDate, endDate),
+    getNumberOfValidators(),
+  ]);
+  return {
+    txfee: results[0],
+    numOfTransaction: results[1],
+    numberOfValidators: results[2],
+  };
 };
