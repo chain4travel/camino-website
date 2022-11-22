@@ -4,7 +4,7 @@
         style="background-image:url('/static/images/{{ simpleTextBgImage }}.png')"
     {% endif %}
 >
-    <section class="text-center {% if simpleTextBg == 'accent' %}text-gray-900{% endif %}">
+    <section class="text-center {% if simpleTextBg == 'accent' %}text-gray-900{% endif %} {% if simpleTextBg == 'caminoSky' %}text-gray-900{% endif %}">
         <div data-sal="zoom-out" class="max-w-5xl mx-auto">
             {% if simpleTextTitle %}
             <h1>
