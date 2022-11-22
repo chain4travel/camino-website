@@ -1,7 +1,7 @@
 <div
-    class="bg-contain bg-top bg-no-repeat relative bg-{{simpleTextBg}} rounded-[{{simpleTextRadius}}]"
+    class="bg-contain bg-center bg-no-repeat relative bg-{{simpleTextBg}} rounded-[{{simpleTextRadius}}]"
     {% if simpleTextBgImage %}
-    style="background-image:url('/static/images/heroBgImages/{{ simpleTextBgImage }}.png')"
+        style="background-image:url('/static/images/{{ simpleTextBgImage }}.png')"
     {% endif %}
 >
     <section class="text-center {% if simpleTextBg == 'accent' %}text-gray-900{% endif %}">
