@@ -80,7 +80,7 @@ section {
 }
 
 .rounded-camino {
-  @apply rounded-3xl md:rounded-[64px];
+  @apply rounded-2xl md:rounded-3xl xl:rounded-[64px];
 }
 
 summary::marker {

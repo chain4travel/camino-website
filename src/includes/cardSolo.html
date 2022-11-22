@@ -4,7 +4,7 @@
         <div class="bg-{{ cardSoloBG }} rounded-camino flex flex-col md:flex-row items-stretch overflow-hidden">
         
             {% if cardSoloImagePosition == 'left' %}
-            <div class="md:w-2/3 max-h-[400px] flex order-last md:order-first">
+            <div class="flex-shrink-0 md:w-1/3 flex order-last md:order-first">
                 <img class="w-full object-contain" src="../static/images/cardImages/{{ cardSoloImage }}.png" alt="">
             </div>
             {% endif %}
@@ -37,7 +37,7 @@
                 {% endif %}
             </div>
             {% if cardSoloImagePosition == 'right' %}
-            <div data-sal="zoom-out" class="md:w-2/3 max-h-[400px] flex">
+            <div data-sal="zoom-out" class="flex-shrink-0 md:w-1/3 flex">
                 <img class="w-full object-contain" src="../static/images/cardImages/{{cardSoloImage}}.png" alt="">
             </div>
             {% endif %}
