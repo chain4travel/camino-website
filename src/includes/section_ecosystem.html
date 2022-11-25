@@ -1,0 +1,37 @@
+{% set textImageImage =         "glas/eco" %}
+{% set textImageImagePosition = "left" %}
+{% set textImageTitle =         "Eco-friendly blockchain solutions" %}
+{% set textImageSubtitle =      "Partners for a greener travel future" %}
+{% set textImageParagraph =     "There are already companies in our community with impactful solutions for a more environmentally friendly travel industry, showing that technology has a significant role in creating a greener future." %}
+{% set textImageParagraph2 =    "" %}
+{% set textImageButtonLink =    "" %}
+{% set textImageButtonLabel =   "" %}
+
+<section>
+    <div class="container items-center grid grid-cols-12">
+        {% if textImageImagePosition == 'left' %}
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-5">
+            <img class="w-full object-contain" src="/static/images/{{ textImageImage }}.png" alt="{{textImageImage}} - Camino Network">
+        </div>
+        {% endif %}
+        <div data-sal="zoom-out" class="py-12 md:py-24 col-span-12 md:col-span-6 {% if textImageImagePosition == 'left' %} md:col-start-7 {% endif %}">
+            {% if textImageCategory %}
+            <h3 class="mb-2">{{ textImageCategory }}</h3>
+            {% endif %}
+            <h1><span class="text-green-600">Eco-friendly</span> blockchain solutions</h1>
+            <h3>{{ textImageSubtitle }}</h3>
+            <p>{{ textImageParagraph }}</p>
+            {% if textImageParagraph2 %}
+            <p>{{ textImageParagraph2 }}</p>
+            {% endif %}
+            {% if textImageButtonLink %}
+            <a class="button mt-8" href="{{ textImageButtonLink }}" target="_blank" rel="noopener noreferrer">{{ textImageButtonLabel }}</a>
+            {% endif %}
+        </div>
+        {% if textImageImagePosition == 'right' %}
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-5 md:col-start-8 order-first md:order-last">
+            <img class="w-full object-contain" src="/static/images/{{ textImageImage }}.png" alt="{{textImageImage}} - Camino Network">
+        </div>
+        {% endif %}
+    </div>
+</section>
