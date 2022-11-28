@@ -1,5 +1,6 @@
 <section>
-    <div class="pt-24 md:pt-32 pb-16 md:pb-24 items-center grid grid-cols-12">
+    <div class="pt-24 md:pt-32 pb-16 md:pb-24">
+
         <canvas data-sal="fade" data-sal-delay="500" class="pointer-events-none absolute top-0 left-0 z-0 w-full" id="canvas" width="1920" height="600"></canvas>
         <script>
             new rive.Rive({
@@ -8,11 +9,12 @@
             autoplay: true
             });
         </script>
-        <div data-sal="zoom-out" class="col-span-12 md:col-span-6 relative z-10">
-            <h1 class="text-4xl md:text-5xl 2xl:text-7xl">The world of <br> travel <span class="text-primary">reinvented</span> </h1>
+
+        <div data-sal="zoom-out" class="text-center max-w-screen-md mx-auto relative z-10">
+            <h1 class="text-4xl md:text-7xl">The world of <br> travel <span class="text-primary">reinvented</span> </h1>
             <p>Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token. The versatile platform offers the perfect opportunity to map and expand current business models and create new touristic products and ways to interact with travelers.</p>
             <div x-data="{ CaminoVideoModal: false }">
-                <div class="flex items-center mt-6">
+                <div class="flex justify-center items-center mt-6">
                     <div class="button-gradient cursor-pointer mr-2" @click="CaminoVideoModal = true">Watch video</div>
                     <a class="button-secondary" href="/ecosystem">Learn more</a>
                 </div>
@@ -35,8 +37,44 @@
             </script> 
 
         </div>
-        <div data-sal="zoom-out" class="col-span-12 md:col-span-5 md:col-start-8">
-            <img class="w-full object-contain" src="/static/images/home-hero.png" alt="Camino Network Visual">
+
+        <div class="mt-32 relative w-full h-[1400px]">
+            <img src="/static/images/globe.png" class="object-contain relative left-1/2 z-10 -translate-x-1/2 top-0 globuscamino w-[1200px] h-[1200px] rounded-full mx-auto" />
+            <img src="/static/images/camino-star.png" class="object-contain relative left-1/2 z-0 -translate-x-1/2 top-64 globuscamino2 w-[60px] h-[60px] opacity-0 rounded-full mx-auto" />
         </div>
+
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.set('.globuscamino', { position: 'absolute'});
+            gsap.set('.globuscamino2', { position: 'absolute'});
+
+            gsap.to('.globuscamino', {
+                scale: .25,
+                opacity: 0,
+                ease: 'power2',
+                scrollTrigger: {
+                    trigger: '.globuscamino',
+                    markers: true,
+                    start: '-128px top',
+                    end: '+=600px',
+                    scrub: true,
+                    pin: true,
+                }
+            })
+
+            gsap.to('.globuscamino2', {
+                scale: 10,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: '.globuscamino2',
+                    markers: true,
+                    start: '-700px top',
+                    end: '+=800px',
+                    scrub: true,
+                    pin: true,
+                }
+            })
+        </script>
     </div>
 </section>
