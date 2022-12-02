@@ -60,7 +60,7 @@ section {
 }
 
 .button-secondary {
-  @apply whitespace-nowrap inline-block transition-all bg-gray-800 hover:bg-gray-700 font-medium text-white py-3 px-6 rounded-2xl;
+  @apply whitespace-nowrap inline-block transition-all bg-gray-700/50 hover:bg-gray-700 font-medium text-white py-3 px-6 rounded-2xl;
 }
 
 .button-gradient {
@@ -80,7 +80,7 @@ section {
 }
 
 .rounded-camino {
-  @apply rounded-2xl md:rounded-3xl xl:rounded-[64px];
+  @apply rounded-3xl xl:rounded-[64px];
 }
 
 summary::marker {
