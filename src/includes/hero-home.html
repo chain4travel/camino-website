@@ -1,17 +1,41 @@
-<section class="relative min-h-[800px] h-screen overflow-hidden flex items-center">
+<section class="relative min-h-[800px] h-screen overflow-hidden flex flex-col md:flex-row items-center justify-center text-center">
 
-        <div class="text-center">
+
+
+            <img
+                data-sal="slide-left"
+                data-sal-easing="easeInOutQuint"
+                data-sal-delay="0"
+                data-sal-duration="1000"
+                src="/static/images/flares.png"
+                class="hidden md:block z-0 w-2/12 md:max-w-screen-md xl:max-w-screen-lg object-contain"
+            />
 
             <img
                 data-sal="zoom-out"
                 data-sal-easing="easeInOutQuint"
-                data-sal-delay="250"
+                data-sal-delay="0"
                 data-sal-duration="1000"
                 src="/static/images/globe.png"
-                class="z-0 w-full md:max-w-screen-md xl:max-w-screen-lg object-contain mx-auto"
+                class="z-0 w-8/12 md:max-w-screen-md xl:max-w-screen-lg object-contain"
             />
 
-            <div class="order-last md:px-4 w-full max-w-screen-md md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 z-20">
+            <img
+                data-sal="slide-right"
+                data-sal-easing="easeInOutQuint"
+                data-sal-delay="0"
+                data-sal-duration="1000"
+                src="/static/images/flares-right.png"
+                class="hidden md:block z-0 w-2/12 md:max-w-screen-md xl:max-w-screen-lg object-contain"
+            />
+
+            <div
+                data-sal="fade"
+                data-sal-easing="easeInOutQuint"
+                data-sal-delay="800"
+                data-sal-duration="1000"
+                class="order-last md:px-4 w-full max-w-screen-md md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 z-20"
+            >
                 <h1 class="text-4xl md:text-7xl">
                     The world of <br> travel <span class="text-primary">reinvented</span>
                 </h1>
@@ -35,6 +59,5 @@
                 </div>
             </div>
 
-        </div>
 
 </section>
