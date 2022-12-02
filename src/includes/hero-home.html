@@ -1,80 +1,40 @@
-<section>
-    <div class="pt-24 md:pt-32 pb-16 md:pb-24">
+<section class="relative min-h-[800px] h-screen overflow-hidden flex items-center">
 
-        <canvas data-sal="fade" data-sal-delay="500" class="pointer-events-none absolute top-0 left-0 z-0 w-full" id="canvas" width="1920" height="600"></canvas>
-        <script>
-            new rive.Rive({
-            src: "/static/videos/new_file.riv",
-            canvas: document.getElementById("canvas"),
-            autoplay: true
-            });
-        </script>
+        <div class="text-center">
 
-        <div data-sal="zoom-out" class="text-center max-w-screen-md mx-auto relative z-10">
-            <h1 class="text-4xl md:text-7xl">The world of <br> travel <span class="text-primary">reinvented</span> </h1>
-            <p>Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token. The versatile platform offers the perfect opportunity to map and expand current business models and create new touristic products and ways to interact with travelers.</p>
-            <div x-data="{ CaminoVideoModal: false }">
-                <div class="flex justify-center items-center mt-6">
-                    <div class="button-gradient cursor-pointer mr-2" @click="CaminoVideoModal = true">Watch video</div>
-                    <a class="button-secondary" href="/ecosystem">Learn more</a>
-                </div>
-                <!-- Video modal -->
-                <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50" onclick="pauseVideo()">
-                    <div class="bg-gray-800 mx-auto relative" @click.away="CaminoVideoModal = false">
-                        <div @click="CaminoVideoModal = false" onclick="pauseVideo()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <img
+                data-sal="zoom-out"
+                data-sal-easing="easeInOutQuint"
+                data-sal-delay="250"
+                data-sal-duration="1000"
+                src="/static/images/globe.png"
+                class="z-0 w-full md:max-w-screen-md xl:max-w-screen-lg object-contain mx-auto"
+            />
+
+            <div class="order-last md:px-4 w-full max-w-screen-md md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 z-20">
+                <h1 class="text-4xl md:text-7xl">
+                    The world of <br> travel <span class="text-primary">reinvented</span>
+                </h1>
+                <p>
+                    Camino is a blockchain-powered B2B2C ecosystem fueled by the Camino token. The versatile platform offers the perfect opportunity to map and expand current business models and create new touristic products and ways to interact with travelers.
+                </p>
+                <div x-data="{ CaminoVideoModal: false }">
+                    <div class="flex justify-center items-center mt-6">
+                        <div class="button-gradient cursor-pointer mr-2" @click="CaminoVideoModal = true">Watch video</div>
+                        <a class="button-secondary" href="/ecosystem">Learn more</a>
+                    </div>
+                    <!-- Video modal -->
+                    <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50" onclick="pauseVideo()">
+                        <div class="bg-gray-800 mx-auto relative" @click.away="CaminoVideoModal = false">
+                            <div @click="CaminoVideoModal = false" onclick="pauseVideo()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            </div>
+                            <video id="caminoVideo" preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
                         </div>
-                        <video id="caminoVideo" preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
                     </div>
                 </div>
             </div>
 
-            <script> 
-                var myVideo = document.getElementById("caminoVideo"); 
-                function pauseVideo() { 
-                    myVideo.pause();
-                } 
-            </script> 
-
         </div>
 
-        <div class="mt-32 relative w-full h-[1400px]">
-            <img src="/static/images/globe.png" class="object-contain relative left-1/2 z-10 -translate-x-1/2 top-0 globuscamino w-[1200px] h-[1200px] rounded-full mx-auto" />
-            <img src="/static/images/camino-star.png" class="object-contain relative left-1/2 z-0 -translate-x-1/2 top-64 globuscamino2 w-[60px] h-[60px] opacity-0 rounded-full mx-auto" />
-        </div>
-
-        <script>
-            gsap.registerPlugin(ScrollTrigger);
-
-            gsap.set('.globuscamino', { position: 'absolute'});
-            gsap.set('.globuscamino2', { position: 'absolute'});
-
-            gsap.to('.globuscamino', {
-                scale: .25,
-                opacity: 0,
-                ease: 'power2',
-                scrollTrigger: {
-                    trigger: '.globuscamino',
-                    markers: true,
-                    start: '-128px top',
-                    end: '+=600px',
-                    scrub: true,
-                    pin: true,
-                }
-            })
-
-            gsap.to('.globuscamino2', {
-                scale: 10,
-                opacity: 1,
-                scrollTrigger: {
-                    trigger: '.globuscamino2',
-                    markers: true,
-                    start: '-700px top',
-                    end: '+=800px',
-                    scrub: true,
-                    pin: true,
-                }
-            })
-        </script>
-    </div>
 </section>
