@@ -42,27 +42,30 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
+
+
 <section>
     <h1 class="mb-12 text-center">Camino's specific features</h1>
-    <div class="md:flex items-start md:-mx-3">
-        <details class="bg-gray-800 rounded-camino text-center md:w-1/3 mx-3 hover:bg-caminoSky hover:text-gray-900 transition-colors">
-            <summary class="features flex items-center p-4 md:p-8 cursor-pointer">
-                <h2>Validator voting</h2>
-            </summary>
-            <div class="p-4 pt-0 md:p-8 md:pt-0">We are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept.</div>
-        </details>
-        <details class="bg-gray-800 rounded-camino text-center md:w-1/3 mx-3 hover:bg-caminoSky hover:text-gray-900 transition-colors mt-6 md:mt-0">
-            <summary class="features flex items-center p-4 md:p-8 cursor-pointer">
-                <h2>Gas fee voting</h2>
-            </summary>
-            <div class="p-4 pt-0 md:p-8 md:pt-0">We changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry.</div>
-        </details>
-        <details class="bg-gray-800 rounded-camino text-center md:w-1/3 mx-3 hover:bg-caminoSky hover:text-gray-900 transition-colors mt-6 md:mt-0">
-            <summary class="features flex items-center p-4 md:p-8 cursor-pointer">
-                <h2>KYB proof</h2>
-            </summary>
-            <div class="p-4 pt-0 md:p-8 md:pt-0">The network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment.</div>
-        </details>
+    
+    <div class="md:flex">
+
+        <div class="transition-colors hover:text-gray-900 hover:bg-caminoSky bg-gray-800 p-8 lg:p-12 rounded-camino md:mr-4 relative overflow-hidden">
+            <h2>🗳 Validator voting</h2>
+            <p>We are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a semi-permissioned PoSA concept.</p>
+            <img src="/static/images/glas/flower.png" class="max-w-lg object-contain absolute left-8 -bottom-64 opacity-0 md:opacity-75" alt="">
+        </div>
+
+        <div class="flex flex-col md:ml-4 md:w-1/2 flex-shrink-0 mt-8 md:mt-0">
+            <div class="transition-colors hover:text-gray-900 hover:bg-caminoSky bg-gray-800 p-8 lg:p-12 rounded-camino mb-8">
+                <h2>⛽️ Gas fee voting</h2>
+                <p>We changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry.</p>
+            </div>
+            <div class="transition-colors hover:text-gray-900 hover:bg-caminoSky bg-gray-800 p-8 lg:p-12 rounded-camino h-full mb-8 md:mb-0">
+                <h2>🧾 KYB proof</h2>
+                <p>The network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment.</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -191,15 +194,15 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<!-- SimpleText Start -->
-    {% set simpleTextTitle = "Everything you need to start building at one place" %}
-    {% set simpleTextSubtitle = "" %}
-    {% set simpleTextParagraph = "" %}
-    {% set simpleTextParagraph2 = "" %}
-    {% set simpleTextButton = "Go to Camino Documentation" %}
-    {% set simpleTextButtonLink = "https://docs.camino.foundation/" %}
-    {% set simpleTextBgImage = "cubes" %}
-    {% set simpleTextBg = "" %}
-    {% set simpleTextRadius = "" %}
-    {% include "simpleText.html" %}
-<!-- SimpleText End -->
+<section>
+    <div class="flex items-start">
+        <div class="md:w-1/2 text-center">
+            <h2>Start building with camino</h2>
+            <a class="button-secondary mt-8" href="https://docs.camino.foundation/" target="_blank" rel="noopener noreferrer">Go to Camino documentation</a>
+        </div>
+        <div class="md:w-1/2 text-center">
+            <h2>Join our discord server</h2>
+            <a class="button-secondary mt-8" href="https://discord.gg/Vzxf8cqn" target="_blank" rel="noopener noreferrer">Join our Discord community</a>
+        </div>
+    </div>
+</section>

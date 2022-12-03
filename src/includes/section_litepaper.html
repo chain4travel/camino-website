@@ -6,13 +6,20 @@
 {% set textImageButtonLabel =   "Download Litepaper" %}
 {% set textImageButtonLink =    "/static/Chain4Travel_Litepaper_June.pdf" %}
 
-<section>
+<section x-data="{ CaminoVideoModal: false }">
     <div class="container items-center grid grid-cols-12">
+
         {% if textImageImagePosition == 'left' %}
-        <div data-sal="zoom-out" class="col-span-12 md:col-span-5">
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-5 relative">
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-900/50 p-2 rounded-full hover:bg-primary hover:scale-125 transition-all cursor-pointer" @click="CaminoVideoModal = true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z" clip-rule="evenodd" />
+                </svg>                  
+            </div>
             <img class="w-full object-contain" src="/static/images/{{ textImageImage }}.png" alt="{{textImageImage}} - Camino Network">
         </div>
         {% endif %}
+
         <div data-sal="zoom-out" class="py-12 md:py-24 col-span-12 md:col-span-6 {% if textImageImagePosition == 'left' %} md:col-start-7 {% endif %}">
             {% if textImageCategory %}
             <h3 class="mb-2">{{ textImageCategory }}</h3>
@@ -23,31 +30,26 @@
             <p>{{ textImageParagraph2 }}</p>
             {% endif %}
             {% if textImageButtonLink %}
-            <div x-data="{ CaminoVideoModal: false }">
-                <div class="button-gradient cursor-pointer" @click="CaminoVideoModal = true">▶️ Watch video</div>
-                <a class="button mt-8 ml-2" href="{{ textImageButtonLink }}" target="_blank" rel="noopener noreferrer">📝 {{ textImageButtonLabel }}</a>
-                <!-- Video modal -->
-                <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 backdrop-blur-lg mx-auto fixed top-0 left-0 w-full h-full flex items-center justify-center overflow-y-auto z-50" onclick="pauseVid()">
-                    <div class="container" @click.away="CaminoVideoModal = false">
-                        <button @click="CaminoVideoModal = false" onclick="pauseVid()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </button>
-                        <video id="videoWhatIsCamino" preload="auto" class="w-full h-auto rounded-3xl shadow-xl" src="/static/videos/Camino_Introduction.mp4" controls></video>
-                        <script>
-                            var x = document.getElementById("videoWhatIsCamino"); 
-                            function playVid() { x.play(); }
-                            function pauseVid() { x.pause(); } 
-                        </script>
-                    </div>
+            <a class="button mt-8 mr-2" href="{{ textImageButtonLink }}" target="_blank" rel="noopener noreferrer"><span class="mr-2">📝</span> {{ textImageButtonLabel }}</a>
+            <div class="button-secondary cursor-pointer" @click="CaminoVideoModal = true"><span class="mr-2">▶️</span> Watch video</div>
+
+            <!-- Video modal -->
+            <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 backdrop-blur-lg mx-auto fixed top-0 left-0 w-full h-full flex items-center justify-center overflow-y-auto z-50" onclick="pauseVid()">
+                <div class="container" @click.away="CaminoVideoModal = false">
+                    <button @click="CaminoVideoModal = false" onclick="pauseVid()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                    <video id="videoWhatIsCamino" preload="auto" class="w-full h-auto rounded-3xl shadow-xl border border-gray-700" src="/static/videos/Camino_Introduction.mp4" controls></video>
+                    <script>
+                        var x = document.getElementById("videoWhatIsCamino"); 
+                        function playVid() { x.play(); }
+                        function pauseVid() { x.pause(); } 
+                    </script>
                 </div>
             </div>
+
             {% endif %}
         </div>
-        {% if textImageImagePosition == 'right' %}
-        <div data-sal="zoom-out" class="col-span-12 md:col-span-5 md:col-start-8 order-first md:order-last">
-            <img class="w-full object-contain" src="/static/images/{{ textImageImage }}.png" alt="{{textImageImage}} - Camino Network">
-        </div>
-        {% endif %}
     </div>
 
 </section>
