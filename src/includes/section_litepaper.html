@@ -27,12 +27,17 @@
                 <div class="button-gradient cursor-pointer" @click="CaminoVideoModal = true">▶️ Watch video</div>
                 <a class="button mt-8 ml-2" href="{{ textImageButtonLink }}" target="_blank" rel="noopener noreferrer">📝 {{ textImageButtonLabel }}</a>
                 <!-- Video modal -->
-                <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50" onclick="pauseVideo()">
-                    <div class="bg-gray-800 mx-auto relative" @click.away="CaminoVideoModal = false">
-                        <div @click="CaminoVideoModal = false" onclick="pauseVideo()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
+                <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 backdrop-blur-lg mx-auto fixed top-0 left-0 w-full h-full flex items-center justify-center overflow-y-auto z-50" onclick="pauseVid()">
+                    <div class="container" @click.away="CaminoVideoModal = false">
+                        <button @click="CaminoVideoModal = false" onclick="pauseVid()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </div>
-                        <video id="caminoVideo" preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
+                        </button>
+                        <video id="videoWhatIsCamino" preload="auto" class="w-full h-auto rounded-3xl shadow-xl" src="/static/videos/Camino_Introduction.mp4" controls></video>
+                        <script>
+                            var x = document.getElementById("videoWhatIsCamino"); 
+                            function playVid() { x.play(); }
+                            function pauseVid() { x.pause(); } 
+                        </script>
                     </div>
                 </div>
             </div>
@@ -44,4 +49,5 @@
         </div>
         {% endif %}
     </div>
+
 </section>
