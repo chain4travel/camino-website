@@ -105,7 +105,7 @@ layout:         default
         <div class="bg-gray-800 text-accent p-8 lg:p-12 rounded-camino md:ml-4 relative overflow-hidden">
             <h2 class="mb-6">Third <span class="ml-2">🙌</span></h2>
             <p>There's a strong community behind this network that's committed to making sure everyone succeeds and thrives. This means that even if you don't have any experience developing dApps or launching blockchain projects, they'll be happy to help you out along every step of the way, or even connect you with the ones that can.</p>
-            <a href="https://discord.com/channels/949247897688494150/949247897688494153" class="inline-block mt-4 py-3 px-4 rounded-2xl bg-gray-700 text-white">Discord chat</a>
+            <a href="https://discord.gg/camino" class="inline-block mt-4 py-3 px-4 rounded-2xl bg-gray-700 text-white">Discord chat</a>
             <img src="/static/images/glas/grid.png" class="object-contain absolute -right-1/4 bottom-0 lg:-bottom-16 xl:-bottom-1/4 opacity-0 md:opacity-75" alt="">
         </div>
 
@@ -194,15 +194,19 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<section>
-    <div class="flex flex-wrap items-start">
+<section class="py-32 md:py-48 relative">
+    <div class="flex flex-wrap items-start relative z-10">
         <div class="w-full md:w-1/2 text-center">
             <h2>Start building with camino</h2>
             <a class="button-secondary mt-8" href="https://docs.camino.foundation/" target="_blank" rel="noopener noreferrer">Go to Camino documentation</a>
         </div>
         <div class="w-full md:w-1/2 text-center mt-16 md:mt-0">
             <h2>Join our discord server</h2>
-            <a class="button-secondary mt-8" href="https://discord.gg/Vzxf8cqn" target="_blank" rel="noopener noreferrer">Join our Discord community</a>
+            <a class="button-secondary mt-8" href="https://discord.gg/camino" target="_blank" rel="noopener noreferrer">Join our Discord community</a>
         </div>
+    </div>
+    <div
+        class="rotate-12 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-[560px] h-[560px] opacity-30 bg-center bg-no-repeat bg-contain"
+        style="background-image: url(/static/images/glas/flower.png);">
     </div>
 </section>
