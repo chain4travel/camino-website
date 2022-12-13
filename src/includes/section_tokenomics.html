@@ -16,8 +16,12 @@
             <p>We are supporting USDollar stable coins. In a second phase we will also support stable EURO coins.</p>
         </div>
 
-        <div class="lg:w-1/2 mt-8 md:mt-0 md:p-16">
-            <canvas id="pie-chart"></canvas>
+        <div class="lg:w-1/2 mt-8 md:mt-0 relative">
+
+            <!-- <div class="w-96 h-96 rounded-full left-1/2 -translate-x-1/2 blur-3xl absolute gradient-full"></div> -->
+            
+            <canvas class="relative z-10" id="pie-chart"></canvas>
+
 
             <script>
                 new Chart(document.getElementById("pie-chart"), {
@@ -29,8 +33,9 @@
                         backgroundColor: ["#149EED","#358CF1","#5678F4","#7467F7","#9355FA","#B143FC","#A05DF0","#867EE0","#6D9FD0","#55C0C1","#38E6AF"],
                         data: [7,7.5,2.5,4.3,5,7.5,20,5,7.5,10,23.7],
                         borderColor: '#0F172A',
+                        borderWidth: .25,
                         fontColor: "white",
-                    }]
+                    }],
                 },
                 options: {
                     responsive: true,
@@ -38,7 +43,9 @@
                         display: true,
                         text: 'Token Supply in Percent (%)',
                         position: 'bottom',
-                        fontColor :  'white',
+                        fontColor : 'white',
+                        fontSize: 20,
+                        padding: 40,
                     },
                     legend: {
                         position: 'bottom',

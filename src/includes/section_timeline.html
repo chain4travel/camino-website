@@ -1,0 +1,73 @@
+<section id="roadmap" class="">
+    <h1 class="mb-12 text-center">Timeline</h1>
+    <div class="container py-12 md:py-24 bg-gray-900 rounded-camino shadow-gradient">
+        <div class="relative">
+            <!-- Vertical middle line-->
+            <div class="absolute w-px md:w-1 h-full left-10 md:left-1/2 md:-translate-x-1/2 animate-pulse bg-gradient-to-b from-gray-400 via-gray-600 to-transparent"></div> {%
+            for event in timeline %} <div class=""> {% if loop.index == '2' or loop.index == '4' or loop.index == '6' or
+                loop.index == '8' or loop.index == '10' %} <!-- Right section -->
+                <div class="mb-8">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-start justify-end w-full mx-auto">
+                            <div class="w-full md:w-1/2 pr-8 pl-24 md:px-16">
+                                <div class="font-headline text-3xl font-medium mt-1 mb-4 md:my-4">{{ event.title }}</div>
+                                <p class="text-gray-300">{{ event.date }} - {{ event.text }}</p>
+                            </div>
+                        </div>
+                        {% if event.type === "done" %}
+                        <div class="absolute flex items-center justify-center w-12 h-12 md:w-16 md:h-16 transform left-4 md:left-1/2 md:-translate-x-1/2 -translate-y-4 bg-accentDark text-accent rounded-full sm:translate-y-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8 animate-pulse">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                            </svg>     
+                        </div>     
+                        {% endif %}    
+                        {% if event.type === "active" %}
+                        <div class="absolute flex items-center justify-center w-12 h-12 md:w-16 md:h-16 transform left-4 md:left-1/2 md:-translate-x-1/2 -translate-y-4 gradient-full rounded-full sm:translate-y-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8 animate-spin duration-1000">
+                                <path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+                            </svg>
+                        </div>    
+                        {% endif %}    
+                        {% if event.type === "upcoming" %}
+                        <div class="absolute flex items-center justify-center w-12 h-12 md:w-16 md:h-16 transform left-4 md:left-1/2 md:-translate-x-1/2 -translate-y-4 bg-gray-700 text-gray-400 rounded-full sm:translate-y-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8">
+                                <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+                            </svg>
+                        </div>   
+                        {% endif %}     
+                    </div>
+                </div> {% else %} <!-- Left section -->
+                <div class="mb-8">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-start justify-start w-full mx-auto">
+                            <div class="w-full md:w-1/2 pr-8 pl-24 md:px-16 md:text-right">
+                                <div class="font-headline text-3xl font-medium mt-1 mb-4 md:my-4">{{ event.title }}</div>
+                                <p class="text-gray-300">{{ event.date }} - {{ event.text }}</p>
+                            </div>
+                        </div>
+                        {% if event.type === "done" %}
+                        <div class="absolute flex items-center justify-center w-12 h-12 md:w-16 md:h-16 transform left-4 md:left-1/2 md:-translate-x-1/2 -translate-y-4 bg-accentDark text-accent rounded-full sm:translate-y-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8 animate-pulse">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                            </svg>     
+                        </div>     
+                        {% endif %}    
+                        {% if event.type === "active" %}
+                        <div class="absolute flex items-center justify-center w-12 h-12 md:w-16 md:h-16 transform left-4 md:left-1/2 md:-translate-x-1/2 -translate-y-4 gradient-full rounded-full sm:translate-y-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8 animate-spin duration-1000">
+                                <path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+                            </svg>
+                        </div>    
+                        {% endif %}    
+                        {% if event.type === "upcoming" %}
+                        <div class="absolute flex items-center justify-center w-12 h-12 md:w-16 md:h-16 transform left-4 md:left-1/2 md:-translate-x-1/2 -translate-y-4 bg-gray-700 text-gray-400 rounded-full sm:translate-y-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8">
+                                <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+                            </svg>
+                        </div>   
+                        {% endif %} 
+                    </div>
+                </div> {% endif %}
+            </div> {% endfor %}
+        </div>
+</section>

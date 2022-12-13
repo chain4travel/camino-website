@@ -72,7 +72,7 @@ section {
 }
 
 .gradient-full {
-  @apply bg-gradient-to-tl from-[#B143FC] to-[#149EED];
+  @apply bg-gradient-to-tl from-[#B143FC] to-[#149eed];
 }
 
 .gradient {
@@ -81,6 +81,15 @@ section {
 
 .rounded-camino {
   @apply rounded-3xl xl:rounded-[64px];
+}
+
+.shadow-gradient {
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow:
+    inset 16px 16px 80px 0 rgba(177, 67, 252, .5),
+    inset -16px -16px 80px 0 rgba(20,158,237, .5),
+    -16px 16px 80px 0 rgba(177, 67, 252, .25),
+    16px -16px 80px 0 rgba(20,158,237, .25);
 }
 
 summary::marker {
