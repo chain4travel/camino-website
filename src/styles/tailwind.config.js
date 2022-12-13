@@ -18,6 +18,9 @@ module.exports = {
                 accentDark: "#15373E",
                 caminoSky: "#B5E3FD",
             },
+            animation: {
+                'spin-slow': 'spin 3s linear infinite',
+            }
         },
         fontFamily: {
             'body': ['Inter, system-ui, sans-serif'],
