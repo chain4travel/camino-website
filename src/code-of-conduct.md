@@ -10,7 +10,7 @@ layout: default
 
 ## Introduction
 
-This Code of Conduct helps us build a community that is rooted in kindness, collaboration, and mutual respect. The following describes our expectations and the consequences of unacceptable behavior. We encourage you to read it so that you can follow along with the conversations happening on this site.
+This Code of Conduct helps us build a community that is rooted in kindness, collaboration, and mutual transaparency. The following describes our expectations and the consequences of unacceptable behavior. We encourage you to read it so that you can follow along with the conversations happening on this site.
 
 ## Our Pledge
 
@@ -20,11 +20,13 @@ We understand that the open source community is made up of many different types 
 
 ## Our Standards
 
-- Be respectful, be civil and be collaborative
-- Be empathetic and considerate
-- Be open, honest and transparent
-- Be accountable, reliable and dependable
-- Respect confidentiality
+- We will always act with integrity and in the best interests of the foundation and those we serve.
+- We will be transparent and accountable in all our actions and decisions.
+- We will respect the rights and dignity of all individuals and treat them fairly and with kindness.
+- We will maintain confidentiality and protect sensitive information.
+- We will avoid conflicts of interest and disclose any potential conflicts to the appropriate authorities.
+- We will not engage in any illegal or unethical activities.
+- We will strive for excellence in everything we do and continuously seek to improve and learn.
 
 ## Unacceptable behaviour
 
