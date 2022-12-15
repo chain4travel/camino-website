@@ -11,7 +11,8 @@
                         <div class="flex items-start justify-end w-full mx-auto">
                             <div class="w-full md:w-1/2 pr-8 pl-24 md:px-16">
                                 <div class="font-headline text-3xl font-medium mt-1 mb-4 md:my-4">{{ event.title }}</div>
-                                <p class="text-gray-300">{{ event.date }} - {{ event.text }}</p>
+                                <div class="mb-4 font-bold text-accent">{{ event.date }}</div>
+                                <p class="text-gray-300">{{ event.text }}</p>
                             </div>
                         </div>
                         {% if event.type === "done" %}
@@ -42,7 +43,8 @@
                         <div class="flex items-start justify-start w-full mx-auto">
                             <div class="w-full md:w-1/2 pr-8 pl-24 md:px-16 md:text-right">
                                 <div class="font-headline text-3xl font-medium mt-1 mb-4 md:my-4">{{ event.title }}</div>
-                                <p class="text-gray-300">{{ event.date }} - {{ event.text }}</p>
+                                <div class="mb-4 font-bold text-accent">{{ event.date }}</div>
+                                <p class="text-gray-300">{{ event.text }}</p>
                             </div>
                         </div>
                         {% if event.type === "done" %}
