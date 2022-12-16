@@ -48,7 +48,7 @@ body {
 }
 
 section {
-  @apply container py-12 lg:py-24;
+  @apply container py-12 lg:py-24 overflow-x-hidden;
 }
 
 .hero {
@@ -56,15 +56,15 @@ section {
 }
 
 .button {
-  @apply whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-3 px-6 rounded-2xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-3 px-6 rounded-2xl;
 }
 
 .button-secondary {
-  @apply whitespace-nowrap inline-block transition-all bg-gray-600/75 hover:bg-gray-700 font-medium text-white py-3 px-6 rounded-2xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-gray-600/75 hover:bg-gray-700 font-medium text-white py-3 px-6 rounded-2xl;
 }
 
 .button-gradient {
-  @apply whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-3 px-6 rounded-2xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-3 px-6 rounded-2xl;
 }
 
 .card {
