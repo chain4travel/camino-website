@@ -38,7 +38,7 @@
                     <button @click="CaminoVideoModal = false" onclick="pauseVid()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
-                    <video id="videoWhatIsCamino" preload="auto" class="w-full h-auto rounded-3xl shadow-xl border border-gray-700" src="/static/videos/Camino_Introduction.mp4" controls playsinline></video>
+                    <video id="videoWhatIsCamino" preload="auto" class="w-full h-auto rounded-3xl shadow-xl border border-gray-700" src="/static/videos/Camino_Introduction.mp4" controls></video>
                     <script>
                         var x = document.getElementById("videoWhatIsCamino"); 
                         function playVid() { x.play(); }
