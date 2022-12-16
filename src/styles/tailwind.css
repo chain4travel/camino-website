@@ -132,3 +132,35 @@ h2+h3, h2+h4,
 h3+h4 {
   @apply mt-4 md:mt-8
 }
+
+/* COOKIE BANNER */
+
+.termsfeed-com---palette-dark.termsfeed-com---nb {
+  @apply bg-caminoSky rounded-tl-3xl !important;
+}
+
+.cc-nb-main-container {
+  @apply p-8 !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-title {
+  @apply font-headline tracking-wide font-medium mb-2 !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-text {
+  @apply text-sm !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-title,
+.termsfeed-com---palette-dark .cc-nb-text {
+  @apply text-gray-900 !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-okagree,
+.termsfeed-com---palette-dark .cc-nb-reject {
+  @apply bg-gray-900 text-white !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-changep {
+  @apply bg-gray-900/10 text-gray-900 !important;
+}
