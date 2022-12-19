@@ -14,7 +14,7 @@ module.exports = {
                 gray: colors.slate,
                 primary: "#0085FF",
                 secondary: "#B440FC",
-                accent: "#35E9AD",
+                accent: "#35e9ad",
                 accentDark: "#15373E",
                 caminoSky: "#B5E3FD",
             },

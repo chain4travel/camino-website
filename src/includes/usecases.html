@@ -1,19 +1,15 @@
-<div class="bg-caminoSky">
-    <section>
-        <h1 class="text-center mb-12 text-gray-900">Solutions that make a difference</h1>
-
-        <div class="md:columns-2 xl:columns-3 gap-4 md:gap-8">
-            {% for usecase in usecases %}
-                <div class="p-4 md:p-6 bg-sky-900/10 text-gray-900 rounded-3xl inline-block mb-7 text-center hover:scale-110 hover:bg-white hover:shadow-2xl transition-all">
-                    <div class="mb-4">
-                        <div class="text-4xl mb-3">{{ usecase.icon }}</div>
-                        <div class="font-headline text-xl font-semibold">{{ usecase.title }}</div>
-                    </div>
-                    <p class="mt-4">{{ usecase.paragraph1 }}</p>
-                    <p class="mt-4">{{ usecase.paragraph2 }}</p>
-                    <p class="mt-4">{{ usecase.paragraph3 }}</p>
+<section>
+    <h1 class="text-center mb-12">Solutions that make a difference</h1>
+    <div class="md:columns-2 xl:columns-3 gap-4 md:gap-8">
+        {% for usecase in usecases %}
+            <div class="p-4 md:p-8 rounded-3xl inline-block mb-7 hover:scale-105 hover:bg-white hover:shadow-2xl transition-all bg-caminoSky text-gray-900">
+                <div class="mb-4">
+                    <div class="font-headline text-3xl font-semibold">{{ usecase.title }}</div>
                 </div>
-            {% endfor %}
-        </div>
-    </section>
-</div>
+                <p class="mt-4 text-base">{{ usecase.paragraph1 }}</p>
+                <p class="mt-4 text-base">{{ usecase.paragraph2 }}</p>
+                <p class="mt-4 text-base">{{ usecase.paragraph3 }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>
