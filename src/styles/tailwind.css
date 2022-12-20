@@ -60,7 +60,7 @@ section {
 }
 
 .button-secondary {
-  @apply text-base whitespace-nowrap inline-block transition-all bg-gray-600/75 hover:bg-gray-700 font-medium text-white py-3 px-6 rounded-2xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-gray-600/75 hover:bg-white hover:text-gray-900 font-medium text-white py-3 px-6 rounded-2xl;
 }
 
 .button-gradient {
