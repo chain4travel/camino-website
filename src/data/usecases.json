@@ -1,156 +1,156 @@
 [
     {
         "title": "Trading B2B, B2B2C, C2C, D2C",
-        "icon": "📦",
         "paragraph1": "Trading can be done in various directions (B2B, B2B2C, C2C, D2C) and industries.",
         "paragraph2": "Here is an example for an airline industry: For instance, Bob buys a flight ticket to Norway and because of various reasons he is unable to take the flight and wants to 'trade' his flight ticket to Anna who wants to buy the ticket for a certain price.",
-        "paragraph3": "This would be done over a smart contract. Bob is able to sell his flight ticket & receives money and Anna is able to use his flight ticket and take the trip to Norway."
+        "paragraph3": "This would be done over a smart contract. Bob is able to sell his flight ticket & receives money and Anna is able to use his flight ticket and take the trip to Norway.",
+        "col": "1"
     },
     {
         "title": "Payment & settlement",
-        "icon": "💰",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "1"
     },
     {
         "title": "Incentives",
-        "icon": "🎒",
         "paragraph1": "Incentives are there to encourage people using various services on the Blockchain. ",
         "paragraph2": "This will help companies to build their product and gain more customers. ",
-        "paragraph3": "Moreover it could for instance help airlines to avoid over booking of flights"
+        "paragraph3": "Moreover it could for instance help airlines to avoid over booking of flights",
+        "col": "1"
     },
     {
         "title": "Loyalty",
-        "icon": "🌈",
         "paragraph1": "With our loyalty use case, users can save all their loyalty cards in one wallet and use it in various shops.",
         "paragraph2": "In the US, an individual belongs to about 16 loyalty programs. For every program they hold a physical card.",
-        "paragraph3": "Here we already partner with Miles & More which opens access to a number of partners joining us on the Blockchain."
+        "paragraph3": "Here we already partner with Miles & More which opens access to a number of partners joining us on the Blockchain.",
+        "col": "1"
     },
     {
         "title": "Wallet rates",
-        "icon": "👛",
         "paragraph1": "Wallet rates are direct rates from the business. May it be an airline or a small boutique hotel. Here you get your rates straight from the business.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "1"
     },
     {
         "title": "Digital collectibles",
-        "icon": "💎",
         "paragraph1": "Travellers love to collect things from their trip. Therefore, a use case of digital collectibles is very interesting and can be adopted in various directions.",
         "paragraph2": "From a collectible from a hotel to a local shop. Each business would generate this as an NFT and the end user can then collect these in their personal wallet.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "3"
     },
     {
         "title": "Pooling",
-        "icon": "🏟",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "3"
     },
     {
         "title": "Contracting / purchasing",
-        "icon": "📝",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "2"
     },
     {
         "title": "Demand generation",
-        "icon": "👋",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "2"
     },
     {
         "title": "Hotel / roomtype mapping",
-        "icon": "🛎",
         "paragraph1": "Each room can have an individual wallet. This will help the hotel owner to offer selected rooms to the end user and the end / other can send information to that wallet.",
         "paragraph2": "This will in the end give the user as much information as needed for a specific room. Things that could be send to a wallet address of a room:",
-        "paragraph3": "NFTs, Pictures, Reviews, Experiences, Architecture, Products used in that room and offered of the hotel."
+        "paragraph3": "NFTs, Pictures, Reviews, Experiences, Architecture, Products used in that room and offered of the hotel.",
+        "col": "2"
     },
     {
         "title": "Quality/ verification Seal (NFT)",
-        "icon": "🏅",
         "paragraph1": "As a business you can add a seal to your product/ service so users can see that it is verified by your business.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "2"
     },
     {
         "title": "Access to events & services (NFT)",
-        "icon": "🎟",
         "paragraph1": "With an NFT access to Events can easily be generated. Moreover, it can be tracked where user access to and to what time. From events to a boardcard this can be used in various fields.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "2"
     },
     {
         "title": "User generated content",
-        "icon": "💅",
         "paragraph1": "Users can generate content to diverse services/ products on the Blockchain. Once a wallet is created for a service, user can send information to this wallet.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "2"
     },
     {
         "title": "API substitution",
-        "icon": "🛰",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "1"
     },
     {
         "title": "Voucher",
-        "icon": "🤑",
         "paragraph1": "Voucher can easily be added by businesses and redeemed by the user. The setup is simple and good to implement in current business models.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "2"
     },
     {
         "title": "Souvenirs (NFT)",
-        "icon": "💠",
         "paragraph1": "People love to bring and give souvenirs to their loved ones. How cool is it to give an NFT souvenir? A company can generate NFT and user can buy/ get them through different options (scan of QR/ visit of certain hotel room (get wallet address of that room and withit an NFT), etc.",
         "paragraph2": "This NFT can then easily be send to another wallet.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "1"
     },
     {
         "title": "Information (Disaster, Airport)",
-        "icon": "💥",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "3"
     },
     {
         "title": "Climate Compensation",
-        "icon": "🍀",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "3"
     },
     {
         "title": "Gamification - Travelgadgets",
-        "icon": "👾",
         "paragraph1": "There are tons of possibilities to create a game on the Camino Blockchain. May this be a Travelgadget you receive as an NFT and you have to collect or a goodie which you get for buying a service/ product.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "3"
     },
     {
         "title": "Traveller Identity",
-        "icon": "🪪",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "3"
     },
     {
         "title": "Tracking",
-        "icon": "👀",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": ""
+        "paragraph3": "",
+        "col": "3"
     },
     {
         "title": "Automated Complaint Management",
-        "icon": "😡",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
-        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio."
+        "paragraph3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio blanditiis praesentium optio.",
+        "col": "3"
     }
 ]
