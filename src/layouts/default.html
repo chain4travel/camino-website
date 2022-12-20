@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>{{ title }} - Camino</title>
-    <meta name="description" content="{{ description }}">
-    <meta charset="UTF-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>{{ title }} - Camino</title>
+        <meta name="description" content="{{ description }}" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/style.css?v={% version %}"/>
-    <link rel="stylesheet" href="/sal.css?v={% version %}">
+        <!-- CSS -->
+        <link rel="stylesheet" href="/style.css?v={% version %}" />
+        <link rel="stylesheet" href="/sal.css?v={% version %}" />
 
-    <!-- JS -->
-    <script src="/js/alpine.js?v={% version %}" defer></script>
-    <script src="/js/sal.js?v={% version %}"></script>
+        <!-- JS -->
+        <script src="/js/alpine.js?v={% version %}" defer></script>
+        <script src="/js/sal.js?v={% version %}"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
-    <!-- Favicons and theme color -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/meta/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/meta/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png">
-    <link rel="manifest" href="/static/meta/site.webmanifest">
-    <link rel="mask-icon" href="/static/meta/safari-pinned-tab.svg" color="#0f172a">
-    <meta name="msapplication-TileColor" content="#0f172a">
-    <meta name="theme-color" content="#0F172A">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://www.camino.foundation/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{title}} - Camino">
-    <meta property="og:description" content="{{description}}">
-    <meta property="og:image" content="https://camino-foundation-website.netlify.app/static/images/social.png">
+        <!-- Favicons and theme color -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/meta/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/meta/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png" />
+        <link rel="manifest" href="/static/meta/site.webmanifest" />
+        <link rel="mask-icon" href="/static/meta/safari-pinned-tab.svg" color="#0f172a" />
+        <meta name="msapplication-TileColor" content="#0f172a" />
+        <meta name="theme-color" content="#0F172A" />
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@CaminoFndtn" />
-    <meta name="twitter:title" content="{{description}} - Camino">
-    <meta name="twitter:description" content="{{description}}">
-    <meta name="twitter:image" content="https://camino-foundation-website.netlify.app/static/images/social.png">
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://www.camino.foundation/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{{title}} - Camino" />
+        <meta property="og:description" content="{{description}}" />
+        <meta property="og:image" content="https://camino-foundation-website.netlify.app/static/images/social.png" />
 
-    <!-- Cookie Consent by TermsFeed Privacy Generator https://www.TermsFeed.com -->
-    <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-    <script type="text/javascript" charset="UTF-8">
-    document.addEventListener('DOMContentLoaded', function () {
-    cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Chain4Travel","website_privacy_policy_url":"https://chain4travel.com/data-privacy/"});
-    });
-    </script>
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@CaminoFndtn" />
+        <meta name="twitter:title" content="{{description}} - Camino" />
+        <meta name="twitter:description" content="{{description}}" />
+        <meta name="twitter:image" content="https://camino-foundation-website.netlify.app/static/images/social.png" />
 
-    <!-- Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-42BJLX9LC7"></script>
-    <script type="text/plain" cookie-consent="tracking">
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-42BJLX9LC7');
-    </script>
-    <!-- end of Google Analytics-->
+        <!-- Cookie Consent by TermsFeed Privacy Generator https://www.TermsFeed.com -->
+        <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+        <script type="text/javascript" charset="UTF-8">
+            document.addEventListener('DOMContentLoaded', function () {
+                cookieconsent.run({ notice_banner_type: 'simple', consent_type: 'express', palette: 'dark', language: 'en', page_load_consent_levels: ['strictly-necessary'], notice_banner_reject_button_hide: false, preferences_center_close_button_hide: false, page_refresh_confirmation_buttons: false, website_name: 'Chain4Travel', website_privacy_policy_url: 'https://chain4travel.com/data-privacy/' })
+            })
+        </script>
 
-    <noscript>ePrivacy and GPDR Cookie Consent management by <a href="https://www.TermsFeed.com/" rel="nofollow">TermsFeed Privacy Generator</a></noscript>
-    <!-- End Cookie Consent by TermsFeed Privacy Generator https://www.TermsFeed.com -->
+        <!-- Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-42BJLX9LC7"></script>
+        <script type="text/plain" cookie-consent="tracking">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-42BJLX9LC7');
+        </script>
+        <!-- end of Google Analytics-->
 
-</head>
-    <body class="bg-gray-900 overflow-x-hidden text-gray-50 md:text-xl" style="--sal-duration: .5s; --sal-delay: .125s;">
-        {% include "header.html" %}
-        {{ content | safe }}
-        {% include "footer.html" %}
+        <noscript>ePrivacy and GPDR Cookie Consent management by <a href="https://www.TermsFeed.com/" rel="nofollow">TermsFeed Privacy Generator</a></noscript>
+        <!-- End Cookie Consent by TermsFeed Privacy Generator https://www.TermsFeed.com -->
+    </head>
+    <body class="overflow-x-hidden bg-gray-900 text-gray-50 md:text-xl" style="--sal-duration: 0.5s; --sal-delay: 0.125s">
+        {% include "header.html" %} {{ content | safe }} {% include "footer.html" %}
     </body>
-    <script>sal();</script>
+    <script>
+        sal()
+    </script>
 </html>
