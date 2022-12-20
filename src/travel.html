@@ -24,36 +24,7 @@ layout:         default
 {% include "cardSolo.html" %}
 <!-- CardSolo End -->
 
-<section>
-    <h1 class="text-center mb-12">Validator node set-up made easy</h1>
-    <div class="grid grid-cols-2 gap-6 md:gap-12">
-        <div class="col-span-2 md:col-span-1 rounded-camino bg-primary  p-8 md:p-10 2xl:p-16">
-            <h2 class="mb-6">Few requirements, low entry barriers</h2>
-            <ul class="list-disc ml-4">
-                <li>Stake of 100,000 CAMs</li>
-                <li>KYB verification</li>
-                <li>Admittance as a validator by the validator consortia via a vote</li>
-            </ul>
-        </div>
-        <div class="col-span-2 md:col-span-1 rounded-camino bg-accent text-gray-900 p-8 md:p-10 2xl:p-16">
-            <h2 class="mb-6">Easy set-up, low mainenance</h2>
-            <ul class="list-disc ml-4">
-                <li>Set up takes only 1-2 hours</li>
-                <li>Cost of running the validator node is approx. 100 USD per month</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
 {% include "section_testimonials.html" %}
-
-<!-- TextImage Start -->
-    {% set textImageImage = "glas/rewards" %}
-    {% set textImageImagePosition = "right" %}
-    {% set textImageTitle = "Validator rewards" %}
-    {% set textImageParagraph = "On Camino, everyone is equal. It is not the stake in the network that determines how many transactions are assigned to one or how much voting power they have. On the contrary, everyone has contributed the same stake of 100,000 CAM. Moreover, the validators' share of the transaction fees is granted to each validator in proportion to their respective validation uptime. We believe in this fair and inclusive mechanism and invite larger and smaller companies to join the network." %}
-    {% include "textImage.html" %}
-<!-- TextImage End -->
 
 <!-- Use cases Start -->
 {% include "usecases.html" %}
@@ -84,5 +55,3 @@ layout:         default
     {% set textImageButtonLabel =   "Loyalty programs on Camino" %}
     {% include "textImage.html" %}
 <!-- TextImage End -->
-
-{% include "validatorForm.html" %}
