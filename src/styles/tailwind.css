@@ -56,15 +56,15 @@ section {
 }
 
 .button {
-  @apply text-base whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-3 px-6 rounded-2xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
 }
 
 .button-secondary {
-  @apply text-base whitespace-nowrap inline-block transition-all bg-gray-600/75 hover:bg-white hover:text-gray-900 font-medium text-white py-3 px-6 rounded-2xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-gray-600/75 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
 }
 
 .button-gradient {
-  @apply text-base whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-3 px-6 rounded-2xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-2 px-4 rounded-xl;
 }
 
 .card {
@@ -88,6 +88,15 @@ section {
     box-shadow:
     inset 12px 12px 48px 0 rgba(177, 67, 252, .5),
     inset -12px -12px 48px 0 rgba(20,158,237, .5),
+    0 0 24px 0 rgba(177, 67, 252, .3),
+    0 0 24px 0 rgba(20,158,237, .3);
+}
+
+.shadow-gradient-sm {
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow:
+    inset 8px 8px 16px 0 rgba(177, 67, 252, .75),
+    inset -8px -8px 16px 0 rgba(20,158,237, .75),
     0 0 24px 0 rgba(177, 67, 252, .3),
     0 0 24px 0 rgba(20,158,237, .3);
 }

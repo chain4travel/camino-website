@@ -9,7 +9,7 @@ layout:         default
 <!-- Hero Start -->
 {% set heroTitle = "Validators, the drivers of change" %}
 {% set heroSubtitle = "" %}
-{% set heroText = "Validators of Camino are key industry players who shape the vision of a decentralized travel industry. Get behind the steering wheel and become a validator." %}
+{% set heroText = "Validators secure and govern the Camino network" %}
 {% set heroBgImage = "cards" %}
 {% include "hero.html" %}
 <!-- Hero End -->
@@ -26,39 +26,6 @@ layout:         default
 {% set textImageButtonLabel =   "Block Explorer" %}
 {% include "textImage.html" %}
 <!-- TextImage End -->
-
-
-
-<!-- CardRow Start -->
-{% set cardRowTitle = "Many ways to connect" %}
-{% set cardRowSubtitle = "" %}
-{% set cardRowBgImage = "" %}
-
-{% set cardFirstImage = "generic-06" %}
-{% set cardFirstTitle = "Secure the travel industry of tomorrow" %}
-{% set cardFirstText = "Camino is growing everyday and so do the applications built on it. Be part of securing the network." %}
-{% set cardFirstLink = "" %}
-{% set cardFirstLinkLabel = "" %}
-
-{% set cardSecondImage = "generic-02" %}
-{% set cardSecondTitle = "No fear of slashing" %}
-{% set cardSecondText = "Unlike other layer one blockchains, we do not make use of slashing. Your stake is safe with us." %}
-{% set cardSecondLink = "" %}
-{% set cardSecondLinkLabel = "" %}
-
-{% set cardThirdImage = "generic-01" %}
-{% set cardThirdTitle = "Low hardware requirements" %}
-{% set cardThirdText = "We ensure low entry barriers as no high-tech equipment is necessary for operating a node." %}
-{% set cardThirdLink = "" %}
-{% set cardThirdLinkLabel = "" %}
-
-{% set cardFourthImage = "" %}
-{% set cardFourthTitle = "" %}
-{% set cardFourthText = "" %}
-{% set cardFourthLinkLabel = "" %}
-
-{% include "cardRow.html" %}
-<!-- CardRow End -->
 
 <section>
     <h1 class="text-center mb-12">Validator node set-up made easy</h1>
@@ -77,6 +44,34 @@ layout:         default
                 <li>Set up takes only 1-2 hours</li>
                 <li>Cost of running the validator node is approx. 100 USD per month</li>
             </ul>
+        </div>
+    </div>
+</section>
+
+{% include "section_validator_features.html" %}
+
+<section>
+    <div class="grid gap-6 grid-cols-12 text-center">
+        <div class="col-span-12 md:col-span-4 mb-8">
+            <div class="shadow-gradient-sm w-20 h-20 md:w-24 md:h-24 rounded-full mb-8 mx-auto flex items-center justify-center">
+                <svg class="w-6 h-6 md:w-12 md:h-12 text-caminoSky" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <div class="font-headline text-xl md:text-2xl tracking-wider mb-2 font-bold">Secure the travel industry</div>
+            <p class="text-gray-300 text-base">Camino is growing everyday and so do the applications built on it. Be part of securing the network.</p>
+        </div>
+        <div class="col-span-12 md:col-span-4 mb-8">
+            <div class="shadow-gradient-sm w-20 h-20 md:w-24 md:h-24 rounded-full mb-8 mx-auto flex items-center justify-center">
+                <svg class="w-6 h-6 md:w-12 md:h-12 text-caminoSky" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <div class="font-headline text-xl md:text-2xl tracking-wider mb-2 font-bold">No fear of slashing</div>
+            <p class="text-gray-300 text-base">Unlike other layer one blockchains, we do not make use of slashing. Your stake is safe with us.</p>
+        </div>
+        <div class="col-span-12 md:col-span-4 mb-8">
+            <div class="shadow-gradient-sm w-20 h-20 md:w-24 md:h-24 rounded-full mb-8 mx-auto flex items-center justify-center">
+                <svg class="w-6 h-6 md:w-12 md:h-12 text-caminoSky" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+            </div>
+            <div class="font-headline text-xl md:text-2xl tracking-wider mb-2 font-bold">Low hardware requirements</div>
+            <p class="text-gray-300 text-base">We ensure low entry barriers as no high-tech equipment is necessary for operating a node.</p>
         </div>
     </div>
 </section>
