@@ -19,15 +19,18 @@ layout:         default
     {% set cardFirstImage = "generic-01" %}
     {% set cardFirstTitle = "Supporter" %}
     {% set cardFirstText = "Shares our vision of a decentralized blockchain ecosystem for the travel industry. A supporter is listed on our website and in marketing material. The network of supporters has been steadily growing and growing." %}
-    {% set cardFirstLinkLabel = "" %}
+    {% set cardFirstLinkLabel = "Join as a supporter" %}
+    {% set cardFirstLink = "/community#contactForm" %}
     {% set cardSecondImage = "generic-06" %}
     {% set cardSecondTitle = "DApp Developer" %}
     {% set cardSecondText = "Builds and runs decentralized applications on Camino. The source code is open for everyone. Our ecosystem welcomes all travel enthusiasts and developers who would like to shape the future of travel." %}
-    {% set cardSecondLinkLabel = "" %}
+    {% set cardSecondLinkLabel = "Building on Camino" %}
+    {% set cardSecondLink = "/developer" %}
     {% set cardThirdImage = "generic-03" %}
     {% set cardThirdTitle = "Consortium Member" %}
     {% set cardThirdText = "Has an important role in governing and securing the Camino blockchain. To become a validator certain preconditions must be met and one must be accepted into the role by a vote of the currently active validators." %}
-    {% set cardThirdLinkLabel = "" %}
+    {% set cardThirdLinkLabel = "More about validators" %}
+    {% set cardThirdLink = "/validators" %}
     {% include "cardRow.html" %}
 <!-- CardRow ENd -->
 
@@ -35,10 +38,8 @@ layout:         default
 
 {% include "section_ecosystem.html" %}
 
-{% include "section_tokenomics.html" %}
-
 <!-- SimpleText Start -->
-    {% set simpleTextTitle = "Camino powered by its native token" %}
+    {% set simpleTextTitle = "Camino is powered by its native token" %}
     {% set simpleTextSubtitle = "Create a Camino wallet for storing assets and start engaging in the network." %}
     {% set simpleTextParagraph = "" %}
     {% set simpleTextParagraph2 = "" %}
@@ -49,3 +50,5 @@ layout:         default
     {% set simpleTextRadius = "" %}
     {% include "simpleText.html" %}
 <!-- SimpleText End -->
+
+{% include "section_tokenomics.html" %}

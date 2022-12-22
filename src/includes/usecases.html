@@ -1,11 +1,11 @@
-<section id="useCases">
+<section id="sectionUseCases">
     <h1 class="text-center mt-4 md:mt-6 mb-4 md:mb-12">
-        One global travel network for all
+        Use cases on Camino
     </h1>
     <div :class="{'h-[600px] lg:h-[800px]' : !useCasesisOpen}" class="relative md:p-6 overflow-hidden" x-data="{ useCasesisOpen: false }">
     <div class="grid grid-cols-12 gap-4 md:gap-8 pb-24">
         <div class="absolute z-10 bottom-0 flex justify-center left-0 right-0 pt-8 bg-gradient-to-t from-gray-900 to-transparent">
-            <a href="#useCases" class="button bottom-0" x-text="useCasesisOpen ? 'Close' : 'Show more'" @click="useCasesisOpen = !useCasesisOpen">Show more</a>
+            <a href="#sectionUseCases" class="button bottom-0" x-text="useCasesisOpen ? 'Close' : 'Show more'" @click="useCasesisOpen = !useCasesisOpen">Show more</a>
         </div>
         <div class="col-span-12 lg:col-span-4">
             {% for usecase in usecases %}

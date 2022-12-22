@@ -55,47 +55,26 @@ layout:         default
 <section>
     <div class="grid grid-cols-2 gap-6 md:gap-12">
         <div class="col-span-2 md:col-span-1 p-8 md:p-10 2xl:p-16 flex flex-col h-full items-center justify-center">
-            <h2 class="mb-6">Camino is for everyone with an idea</h2>
-            <p class="text-gray-300">Camino is a semi permissionless consortium blockchain that anyone can build on. There are no fees, and the only thing you need to get started is an idea.</p>
+            <h2>Camino opens the door to Web3 for the travel industry</h2>
+            <p class="text-gray-300">Camino transforms and elevates the world of travel by enabling and supporting blockchain based applications for the industry and travelers.</p>
         </div>
         <div class="col-span-2 md:col-span-1 rounded-camino bg-gray-900 rounded-camino shadow-gradient p-8 md:p-10 2xl:p-16">
             <h2 class="mb-6">Highly secure travel infrastructure</h2>
-            <p class="text-gray-300">As we put security at the heart of the design of the Camino blockchain and our developing efforts, we are following a multi-tier approach to ensure that we comply with the best practices and highest standards of security. The Camino blockchain, by design, is a consortium blockchain and all validators need to go through a KYB (Know-your-business) process. Additionally, any wallet address coded in a smart contract also needs to be verified to be deployed on the Camino chain.</p>
+            <p class="text-gray-300">As we put security at the heart of the design of the Camino blockchain and our developing efforts, we are following a multi-tier approach to ensure that we comply with the best practices and highest standards of security. The Camino blockchain, by design, is a consortium blockchain and all validators need to go through a KYB (Know-your-business) process. Additionally, any wallet address coded in a smart contract also needs to be verified to be deployed on the Camino chain.</p>
         </div>
     </div>
 </section>
 
-
-<!-- CardRow Start -->
-{% set cardRowTitle = "" %}
-{% set cardRowSubtitle = "" %}
-{% set cardRowBgImage = "" %}
-
-{% set cardFirstImage = "generic-validators" %}
-{% set cardFirstTitle = "Validators, the drivers of change" %}
-{% set cardFirstText = "Validators of Camino are key industry players who shape the vision of a decentralized travel industry. Get behind the steering wheel and become a validator." %}
-{% set cardFirstLink = "/validators" %}
-{% set cardFirstLinkLabel = "Learn more" %}
-
-{% set cardSecondImage = "generic-network" %}
-{% set cardSecondTitle = "Govern the decentral network of the global travel industry" %}
-{% set cardSecondText = "Camino is developed for the travel industry and run by a travel consortium consisting of multiple validators." %}
-{% set cardSecondLink = "/travel" %}
-{% set cardSecondLinkLabel = "Learn more" %}
-
-{% set cardThirdImage = "" %}
-{% set cardThirdTitle = "" %}
-{% set cardThirdText = "" %}
-{% set cardThirdLink = "" %}
-{% set cardThirdLinkLabel = "" %}
-
-{% set cardFourthImage = "" %}
-{% set cardFourthTitle = "" %}
-{% set cardFourthText = "" %}
-{% set cardFourthLinkLabel = "" %}
-
-{% include "cardRow.html" %}
-<!-- CardRow End -->
+<!-- TextImage Start -->
+    {% set textImageImage =         "glas/grid-companies" %}
+    {% set textImageImagePosition = "left" %}
+    {% set textImageTitle =         "Validators, the drivers of change" %}
+    {% set textImageParagraph =     "Validators of Camino are key industry players who shape the vision of a decentralized travel industry. Get behind the steering wheel and become a validator." %}
+    {% set textImageParagraph2 =     "" %}
+    {% set textImageButtonLink =    "/validators" %}
+    {% set textImageButtonLabel =    "Learn more about Validators" %}
+    {% include "textImage.html" %}
+<!-- TextImage End -->
 
 <!-- CardSolo Start -->
     {% set cardSoloBG = "accent" %}
