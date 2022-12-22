@@ -1,40 +1,11 @@
-<section class="relative overflow-hidden flex flex-col md:flex-row items-center justify-center text-center">
-
-            <div class="flex mt-8 md:mt-0 items-center">
-                <img
-                    data-sal="slide-left"
-                    data-sal-easing="easeInOutQuint"
-                    data-sal-delay="0"
-                    data-sal-duration="2000"
-                    src="/static/images/flares.png"
-                    class="w-2/12 md:max-w-screen-md xl:max-w-screen-lg object-contain"
-                />
-
-                <img
-                    data-sal="zoom-out"
-                    data-sal-easing="easeInOutQuint"
-                    data-sal-delay="0"
-                    data-sal-duration="2000"
-                    src="/static/images/globe.png"
-                    class="z-0 w-8/12 md:max-w-screen-md xl:max-w-screen-lg object-contain"
-                />
-
-                <img
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutQuint"
-                    data-sal-delay="0"
-                    data-sal-duration="2000"
-                    src="/static/images/flares-right.png"
-                    class="w-2/12 md:max-w-screen-md xl:max-w-screen-lg object-contain"
-                />
-            </div>
+<div class="relative py-8 lg:py-16 overflow-hidden">
 
             <div
                 data-sal="fade"
                 data-sal-easing="easeInOutQuint"
-                data-sal-delay="800"
+                data-sal-delay="100"
                 data-sal-duration="1000"
-                class="order-last md:px-4 w-full max-w-screen-sm md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 z-20"
+                class="text-center py-24 md:py-36 2xl:py-56 relative z-10 max-w-screen-sm mx-auto px-4"
             >
                 <h1 class="text-4xl md:text-6xl">
                     The world of <br> travel <span class="text-primary">reinvented</span>
@@ -42,21 +13,16 @@
                 <p>
                     Camino is a travel industry focused blockchain. Fueled by the Camino token, it is offering a versatile platform to expand current business models and to create new touristic products to delight travelers and business partners.
                 </p>
-                <div x-data="{ CaminoVideoModal: false }">
-                    <div class="flex justify-center items-center mt-6">
-                        <!--<a class="button-secondary" href="/ecosystem">Learn more</a>    -->
-                    </div>
-                    <!-- Video modal -->
-                    <div x-cloak x-transition x-show="CaminoVideoModal" class="bg-gray-900/75 mx-auto fixed p-8 lg:p-16 top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50" onclick="pauseVideo()">
-                        <div class="bg-gray-800 mx-auto relative" @click.away="CaminoVideoModal = false">
-                            <div @click="CaminoVideoModal = false" onclick="pauseVideo()" class="p-4 rounded-full z-20 bg-gray-700 hover:bg-gray-600 absolute top-2 right-2 cursor-pointer">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                            </div>
-                            <video id="caminoVideo" preload="auto" class="bg-gray-900" src="/static/videos/Camino_Introduction.mp4" controls></video>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
-</section>
+            <img
+            data-sal="fade"
+            data-sal-easing="easeInOutQuint"
+            data-sal-delay="500"
+            data-sal-duration="1000"
+            src="/static/images/globe.png"
+            class="max-w-xl md:max-w-5xl object-contain absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-0"
+        />
+
+</div>
