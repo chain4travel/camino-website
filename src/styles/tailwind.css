@@ -2,61 +2,185 @@
 @tailwind components;
 @tailwind utilities;
 
-/* plus-jakarta-sans-regular - latin */
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'ClashDisplay-Variable';
+  src: url('../static/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('../static/fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('../static/fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../static/fonts/plus-jakarta-sans-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../static/fonts/plus-jakarta-sans-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../static/fonts/inter-v12-latin-regular.woff2') format('woff2'),
+    url('../static/fonts/inter-v12-latin-regular.woff') format('woff');
 }
 
-/* plus-jakarta-sans-500 - latin */
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('../static/fonts/plus-jakarta-sans-v2-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../static/fonts/plus-jakarta-sans-v2-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../static/fonts/inter-v12-latin-500.woff2') format('woff2'),
+    url('../static/fonts/inter-v12-latin-500.woff') format('woff');
 }
 
-/* plus-jakarta-sans-700 - latin */
 @font-face {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('../static/fonts/plus-jakarta-sans-v2-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../static/fonts/plus-jakarta-sans-v2-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../static/fonts/inter-v12-latin-700.woff2') format('woff2'),
+    url('../static/fonts/inter-v12-latin-700.woff') format('woff');
 }
 
-/* plus-jakarta-sans-800 - latin */
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: local(''),
-       url('../static/fonts/plus-jakarta-sans-v2-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../static/fonts/plus-jakarta-sans-v2-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-.camino-bg {
-  background-image: url(../images/camino-bg.png);
-}
-
-/* prevents alpine content to blip */
 [x-cloak] {
   display: none !important;
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  @apply font-body
 }
 
-*[id]:target {
-  padding-top: 200px;
-  margin-top: -200px;
-  outline: 0;
+section {
+  @apply container py-8 lg:py-16 overflow-x-hidden;
+}
+
+.hero {
+  @apply container max-w-screen-lg text-center pt-32 md:pt-48 2xl:pt-64 pb-16 md:pb-24 2xl:pb-32;
+}
+
+.button {
+  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
+}
+
+.button-secondary {
+  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-gray-900 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
+}
+
+.button-secondary-outline {
+  @apply text-center text-base whitespace-nowrap inline-block transition-all border border-gray-900 text-gray-900 bg-transparent hover:bg-white hover:border-white font-medium py-2 px-4 rounded-xl;
+}
+
+.button-gradient {
+  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-2 px-4 rounded-xl;
+}
+
+.card {
+  @apply bg-gray-700/25 backdrop-blur-md p-6 pt-0 md:p-8 md:pt-0 rounded-camino;
+}
+
+.gradient-full {
+  @apply bg-gradient-to-tl from-[#B143FC] to-[#149eed];
+}
+
+.gradient {
+  @apply bg-gradient-to-bl from-[rgba(189,0,255,.33)] to-[rgba(0,172,255,.33)];
+}
+
+.rounded-camino {
+  @apply rounded-3xl xl:rounded-[64px];
+}
+
+.shadow-gradient {
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow:
+    inset 12px 12px 48px 0 rgba(177, 67, 252, .5),
+    inset -12px -12px 48px 0 rgba(20,158,237, .5),
+    0 0 24px 0 rgba(177, 67, 252, .3),
+    0 0 24px 0 rgba(20,158,237, .3);
+}
+
+.shadow-gradient-sm {
+  border: 1px solid rgba(255,255,255,.25);
+  box-shadow:
+  inset 8px 8px 16px 0 rgba(177, 67, 252, .75),
+  inset -8px -8px 16px 0 rgba(20,158,237, .75),
+  0 0 24px 0 rgba(177, 67, 252, .3),
+  0 0 24px 0 rgba(20,158,237, .3);
+}
+
+.shadow-gradient-inner-sm {
+  border: 1px solid rgba(255,255,255,.25);
+  box-shadow:
+  inset 8px 8px 16px 0 rgba(177, 67, 252, .75),
+  inset -8px -8px 16px 0 rgba(20,158,237, .75);
+}
+
+summary::marker {
+  content: "";
+  display:none;
+  list-style:none;
+}
+
+summary.features::after {
+  display: block;
+  content: "+";
+  font-size: 2.5rem;
+  margin-left: auto;
+}
+
+details[open] summary.features::after {
+  display: block;
+  content: "-";
+  font-size: 2.5rem;
+  margin-left: auto;
+}
+
+
+h1,h2,h3,h4 {
+  @apply font-headline tracking-wide font-medium
+}
+
+h1 { @apply text-3xl md:text-5xl }
+h2 { @apply text-2xl md:text-4xl }
+h3 { @apply text-xl md:text-3xl }
+h4 { @apply text-lg md:text-2xl }
+
+p+p {
+  @apply mt-4 md:mt-8
+}
+
+h1+p, h2+p, h3+p, h4+p,
+h1+h2, h1+h3, h1+h4,
+h2+h3, h2+h4,
+h3+h4 {
+  @apply mt-4 md:mt-8
+}
+
+/* COOKIE BANNER */
+
+.termsfeed-com---palette-dark.termsfeed-com---nb {
+  @apply bg-caminoSky rounded-tl-3xl !important;
+}
+
+.cc-nb-main-container {
+  @apply p-8 !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-title {
+  @apply font-headline tracking-wide font-medium mb-2 !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-text {
+  @apply text-sm !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-title,
+.termsfeed-com---palette-dark .cc-nb-text {
+  @apply text-gray-900 !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-okagree,
+.termsfeed-com---palette-dark .cc-nb-reject {
+  @apply bg-gray-900 text-white !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-changep {
+  @apply bg-gray-900/10 text-gray-900 !important;
 }

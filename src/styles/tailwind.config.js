@@ -9,24 +9,28 @@ module.exports = {
         require('@tailwindcss/forms'),
     ],
     theme: {
-        colors: {
-            white: '#fff',
-            gray: colors.slate,
-            primary: '#4BA6EE',
-            secondary: '#B440FC',
+        extend: {
+            colors: {
+                gray: colors.slate,
+                primary: "#0085FF",
+                secondary: "#B440FC",
+                accent: "#35e9ad",
+                accentDark: "#15373E",
+                caminoSky: "#B5E3FD",
+            },
+            animation: {
+                'spin-slow': 'spin 3s linear infinite',
+            }
         },
         fontFamily: {
-            'sans': ['Plus Jakarta Sans, system-ui, sans-serif'],
+            'body': ['Inter, system-ui, sans-serif'],
+            'headline': ['ClashDisplay-Variable, system-ui, sans-serif'],
         },
         container: {
             center: true,
             padding: {
-                DEFAULT: '1rem',
-                sm: '2rem',
-                lg: '4rem',
-                xl: '4rem',
-                '2xl': '4rem',
+                DEFAULT: '1.5rem',
                 },
         }
-      },
-  }
+    },
+}

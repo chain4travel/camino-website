@@ -1,0 +1,50 @@
+<div class="bg-contain bg-top bg-no-repeat relative">
+    <section class="text-center">
+
+        <div class="bg-{{ cardSoloBG }} rounded-camino flex flex-col md:flex-row items-center">
+        
+            {% if cardSoloImagePosition == 'left' %}
+            <div class="flex-shrink-0 md:w-1/3 flex order-last md:order-first">
+                <img class="w-full h-auto object-contain max-w-sm md:max-w-none" src="../static/images/{{ cardSoloImage }}.png" alt="{{ CardSoloImage }} - Camino Network">
+            </div>
+            {% endif %}
+
+            <div class="p-12 text-left flex flex-col justify-center {% if cardSoloBG == 'gray-800' %} text-white {% endif %} {% if cardSoloBG == 'primary' %} text-white {% endif %} {% if cardSoloBG == 'accent' %} text-gray-900 {% endif %} {% if cardSoloBG == 'caminoSky' %} text-gray-900 {% endif %}">
+                <h1 data-sal="fade" class="{% if cardSoloBG == 'accent' %} text-gray-900 {% endif %}">{{ cardSoloTitle }}</h1>
+                {% if cardSoloSubtitle %}
+                <h3 data-sal="fade" class="{% if cardSoloBG == 'accent' %} text-gray-900 {% endif %}">
+                    {{ cardSoloSubtitle }}
+                </h3>
+                {% endif %}
+                {% if cardSoloParagraph %}
+                <p data-sal="fade" >
+                    {{ cardSoloParagraph }}
+                </p>
+                {% endif %}
+                {% if cardSoloParagraph2 %}
+                <p data-sal="fade" >
+                    {{ cardSoloParagraph2 }}
+                </p>
+                {% endif %}
+                {% if cardSoloLinkLabel %}
+                <p data-sal="fade" >
+                    <a href="{{ cardSoloLink }}">{{ cardSoloLinkLabel }}</a>
+                </p>
+                {% endif %}
+                {% if cardSoloButton %}
+                <a target="_blank" data-sal="fade" class="inline-block w-fit transition-all py-3 px-6 rounded-2xl mt-6
+                    {% if cardSoloBG == 'gray-800' %} button {% endif %}
+                    {% if cardSoloBG == 'primary' %} button-secondary {% endif %}
+                    {% if cardSoloBG == 'accent' %} button-secondary {% endif %}
+                    {% if cardSoloBG == 'caminoSky' %} button-secondary {% endif %}"
+                href="{{ cardSoloButtonLink }}">{{ cardSoloButton }}</a>
+                {% endif %}
+            </div>
+            {% if cardSoloImagePosition == 'right' %}
+            <div data-sal="fade" class="flex-shrink-0 md:w-1/3">
+                <img class="w-full h-auto object-contain max-w-sm md:max-w-none" src="../static/images/{{ cardSoloImage }}.png" alt="{{ CardSoloImage }} - Camino Network">
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</div>

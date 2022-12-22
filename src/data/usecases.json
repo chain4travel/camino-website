@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Trading",
+        "paragraph1": "Trading can be done in various directions: B2B, B2B2C, C2C, and B2C. Blockchain enables automation, cost-efficiency, and flexibility in today's rigid trading process.",
+        "col": "1"
+    },
+    {
+        "title": "Payment & settlement",
+        "paragraph1": "B2B/ B2C settlement in travel is complex, time-consuming, and costly. Settlement and payment applications in the Camino network will streamline travel services' booking and paying process and enable worldwide peer-to-peer transactions with extremely fast reconciliation and much lower transaction costs.",
+        "col": "1"
+    },
+    {
+        "title": "Token rewards",
+        "paragraph1": "Token rewards (fungible and non-fungible tokens) are there to incentivize people using various services on the blockchain, such as bookings, reviews, referrals, sharing data, or other incentives",
+        "col": "1"
+    },
+    {
+        "title": "Loyalty",
+        "paragraph1": "The Camino blockchain offers the possibility for an application to effortlessly build a global or regional loyalty platform to welcome participation across different brands, all in the same network.",
+        "col": "3"
+    },
+    {
+        "title": "Wallet rates / Personalized offers",
+        "paragraph1": "Wallet rates use cases will enable personalization of offers with direct rates from the business/service provider.",
+        "col": "2"
+    },
+    {
+        "title": "Digital collectibles",
+        "paragraph1": "Travelers love collecting things from their trip, such as souvenirs and proof of travel. Therefore, a use case of digital collectibles is very interesting for additional income streams and customer loyalty. It can be adopted in variations.",
+        "col": "3"
+    },
+    {
+        "title": "Hotel / roomtype mapping",
+        "paragraph1": "Non-bookable content, such as reviews and information on the room amenities or view, is essential for the booking decision. This use case provides high personalization of room offers or extra specific room types by allocating a wallet to each room in a hotel.",
+        "col": "2"
+    },
+    {
+        "title": "API substitution",
+        "paragraph1": "The offering and exchange of information will be much easier.",
+        "col": "3"
+    },
+    {
+        "title": "Voucher",
+        "paragraph1": "Vouchers can easily be added by businesses and redeemed by the user. The setup is simple, just like the implementation in current business models.",
+        "col": "2"
+    },
+    {
+        "title": "Climate Compensation",
+        "paragraph1": "Blockchain helps monitor and report emission reduction trading due to its ",
+        "col": "2"
+    },
+    {
+        "title": "Token gated access",
+        "paragraph1": "With an NFT, a unique digital asset, access to events or services can be granted as a utility to the NFTs. Moreover, users can be tracked where they get access and to what time.",
+        "col": "1"
+    },
+    {
+        "title": "User generated content ",
+        "paragraph1": "Users can generate content for various services or products on the blockchain and, at the same time, get rewarded. Once a wallet is created for a service, users can send information to this wallet and are incentivized to do so.",
+        "col": "3"
+    }
+]

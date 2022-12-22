@@ -1,0 +1,24 @@
+<div
+    class="bg-cover md:bg-contain bg-top bg-no-repeat relative"
+    {% if heroBgImage %}
+    style="background-image:url('/static/images/heroBgImages/{{ heroBgImage }}.png');"
+    {% endif %}
+>
+    <div class="hero">
+        {% if heroTitle %}
+        <h1 data-sal="zoom-out" class="{% if heroSubtitle %}mb-8{% endif %}">
+            {{ heroTitle }}
+        </h1>
+        {% endif %}
+        {% if heroSubtitle %}
+        <h2 data-sal="zoom-out" class="{% if heroText %}mb-8{% endif %}">
+            {{ heroSubtitle }}
+        </h2>
+        {% endif %}
+        {% if heroText %}
+        <p data-sal="zoom-out" class="text-lg md:text-2xl">
+            {{ heroText }}
+        </p>
+        {% endif %}
+    </div>
+</div>

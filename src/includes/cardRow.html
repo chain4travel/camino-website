@@ -1,0 +1,79 @@
+<div
+    class="bg-contain bg-top bg-no-repeat relative"
+    {% if heroBgImage %}
+    style="background-image:url('/static/images/heroBgImages/{{ cardRowBgImage }}.png');--sal-duration: .75s; --sal-delay: .25s;"
+    {% endif %}
+>
+    <section class="text-center">
+        {% if cardRowTitle %}
+        <h1 class="{% if cardRowSubtitle %}mb-6{% endif %}">
+            {{ cardRowTitle }}
+        </h1>
+        {% endif %}
+        {% if cardRowSubtitle %}
+        <h2>
+            {{ cardRowSubtitle }}
+        </h3>
+        {% endif %}
+        {% if cardRowParagraph %}
+        <p class="max-w-screen-xl mx-auto">
+            {{ cardRowParagraph }}
+        </p>
+        {% endif %}
+        {% if cardRowParagraph2 %}
+        <p class="max-w-screen-xl mx-auto">
+            {{ cardRowParagraph2 }}
+        </p>
+        {% endif %}
+
+        <!-- CardRow Start -->
+        <div class="grid grid-cols-12 gap-6 mt-6 md:mt-12">
+
+            {% if cardFirstTitle %}
+            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-12 xl:pt-0 {% if cardFirstImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+                {% if cardFirstImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardFirstImage }}.png" alt="{{ cardFirstTitle }} - Camino Network">{% endif %}
+                <h2 class="{% if cardFirstText %} mb-6 {% endif %}">{{ cardFirstTitle }}</h2>
+                <p>{{ cardFirstText }}</p>
+                {% if cardFirstLinkLabel %}
+                <a {% if cardFirstLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardFirstLink }}">{{ cardFirstLinkLabel }}</a>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if cardSecondTitle %}
+            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-12 xl:pt-0 {% if cardSecondImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+                {% if cardSecondImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardSecondImage }}.png" alt="{{ cardSecondTitle }} - Camino Network">{% endif %}
+                <h2 class="{% if cardSecondText %} mb-6 {% endif %}">{{ cardSecondTitle }}</h2>
+                <p>{{ cardSecondText }}</p>
+                {% if cardSecondLinkLabel %}
+                <a {% if cardSecondLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardSecondLink }}">{{ cardSecondLinkLabel }}</a>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if cardThirdTitle %}
+            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-12 xl:pt-0 {% if cardThirdImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+                {% if cardThirdImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardThirdImage }}.png" alt="{{ cardThirdTitle }} - Camino Network">{% endif %}
+                <h2 class="{% if cardThirdText %} mb-6 {% endif %}">{{ cardThirdTitle }}</h2>
+                <p>{{ cardThirdText }}</p>
+                {% if cardThirdLinkLabel %}
+                <a {% if cardThirdLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardThirdLink }}">{{ cardThirdLinkLabel }}</a>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if cardFourthTitle %}
+            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-12 xl:pt-0 {% if cardFourthImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+                {% if cardFourthImage %}<img class="mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/{{ cardFourthImage }}.png" alt="{{ cardFourthTitle }} - Camino Network">{% endif %}
+                <h2 class="{% if cardFourthText %} mb-6 {% endif %}">{{ cardFourthTitle }}</h2>
+                <p>{{ cardFourthText }}</p>
+                {% if cardFourthLinkLabel %}
+                <a {% if cardFourthLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardFourthLink }}">{{ cardFourthLinkLabel }}</a>
+                {% endif %}
+            </div>
+            {% endif %}
+
+        </div>
+        <!-- CardRow End -->
+    </section>
+</div>

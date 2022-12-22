@@ -1,24 +1,109 @@
 ---
-title: Camino foundation
-description: Join the travel revolution now and be part of the future. Coming soon!
-layout: default
+title:          Homepage
+description:    Join the travel revolution now and be part of the future.
+layout:         default
 ---
 
-<div class="relative camino-bg bg-cover 2xl:bg-contain bg-no-repeat bg-center">
-    <div class="container flex flex-col justify-center items-center h-screen">
-        <div class="flex flex-col justify-center items-center relative z-10 -top-8">
-            <img data-sal="zoom-out" data-sal-duration="750" class="h-10 md:h-12" src="../images/camino-logo-dark.svg" alt="">
-            <h1 data-sal="zoom-out" data-sal-duration="750" data-sal-delay="500" class="text-3xl md:text-6xl lg:text-8xl my-12 text-center font-extrabold drop-shadow-2xl">
-                Connecting the <br> new world of travel
-            </h1>
-            <h2 data-sal="zoom-out" data-sal-duration="750" data-sal-delay="750" class="text-xl md:text-2xl text-gray-200 mb-12 text-center">
-                Join the travel revolution now and be part of the future. <span class="font-bold underline decoration-secondary decoration-4">Coming soon</span>
-            </h2>
-            <div data-sal="zoom-out" data-sal-duration="750" data-sal-delay="1000" class="flex -mx-2">
-                <a href="https://docs.camino.foundation/" target="_blank" class="transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-gradient-to-r from-primary to-secondary">Camino Docs</a>
-                <a href="https://www.chain4travel.com/" target="_blank" class="transform transition-transform active:scale-100 hover:scale-110 mx-2 whitespace-nowrap font-medium md:text-xl rounded-xl leading-6 py-3 md:py-4 px-4 md:px-8 bg-white/10">Chain4Travel</a>
+<!-- Hero Start -->
+    {% include "hero-home.html" %}
+<!-- Hero End -->
+
+{% include "section_stats.html" %}
+
+{% include "section_litepaper.html" %}
+
+<!-- Supporter Start -->
+    {% include "supporter.html" %}
+<!-- Supporter End -->
+
+<div
+    class="bg-contain bg-top bg-no-repeat relative"
+    {% if heroBgImage %}
+    {% endif %}
+>
+    <section class="text-center">
+        <h1 class="mb-6">
+            It is time to build the future of travel
+        </h1>
+        <p class="max-w-5xl mx-auto">
+            In today’s travel industry, the pace of innovation is decelerated due to the industry's nature of servicing with hardware, machines, and people. The entire travel industry relies on standard protocols that are more than 40 years old and desperately need enhancement.
+        </p>
+
+        <!-- CardRow Start -->
+        <div class="grid grid-cols-12 gap-6 mt-6 md:mt-12">
+            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
+                <img class="hover:scale-110 transition-all mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage03.png" alt="{{ cardFirstTitle }} - Camino Network">
+                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Fast</span> transaction processes</h3>
+            </div>
+            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
+                <img class="hover:scale-110 transition-all mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage04.png" alt="{{ cardFirstTitle }} - Camino Network">
+                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Modern</span> technological structures</h3>
+            </div>
+            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
+                <img class="hover:scale-110 transition-all mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage02.png" alt="{{ cardFirstTitle }} - Camino Network">
+                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Low</span> transaction <br> fees</h3>
+            </div>
+            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
+                <img class="hover:scale-110 transition-all mt-4 mb-4 max-h-48 md:max-w-full mx-auto" src="/static/images/cardImages/cardimage01.png" alt="{{ cardFirstTitle }} - Camino Network">
+                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Accelerated</span> innovation pace</h3>
             </div>
         </div>
-    </div>
-    <!-- <div class="bg-gradient-to-r from-primary to-secondary w-screen h-64 fixed left-0 right-0 -bottom-32 blur-[128px] opacity-75"></div> -->
+        <!-- CardRow End -->
+    </section>
 </div>
+
+<section>
+    <div class="grid grid-cols-2 gap-6 md:gap-12">
+        <div class="col-span-2 md:col-span-1 p-8 md:p-10 2xl:p-16 flex flex-col h-full items-center justify-center">
+            <h2>Camino opens the door to Web3 for the travel industry</h2>
+            <p class="text-gray-300">Camino transforms and elevates the world of travel by enabling and supporting blockchain based applications for the industry and travelers.</p>
+        </div>
+        <div class="col-span-2 md:col-span-1 rounded-camino bg-gray-900 rounded-camino shadow-gradient p-8 md:p-10 2xl:p-16">
+            <h2 class="mb-6">Highly secure travel infrastructure</h2>
+            <p class="text-gray-300">As we put security at the heart of the design of the Camino blockchain and our developing efforts, we are following a multi-tier approach to ensure that we comply with the best practices and highest standards of security. The Camino blockchain, by design, is a consortium blockchain and all validators need to go through a KYB (Know-your-business) process. Additionally, any wallet address coded in a smart contract also needs to be verified to be deployed on the Camino chain.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TextImage Start -->
+    {% set textImageImage =         "glas/grid-companies" %}
+    {% set textImageImagePosition = "left" %}
+    {% set textImageTitle =         "Validators, the drivers of change" %}
+    {% set textImageParagraph =     "Validators of Camino are key industry players who shape the vision of a decentralized travel industry. Get behind the steering wheel and become a validator." %}
+    {% set textImageParagraph2 =     "" %}
+    {% set textImageButtonLink =    "/validators" %}
+    {% set textImageButtonLabel =    "Learn more about validators" %}
+    {% include "textImage.html" %}
+<!-- TextImage End -->
+
+<!-- CardSolo Start -->
+    {% set cardSoloBG = "accent" %}
+    {% set cardSoloImage = "glas/stack" %}
+    {% set cardSoloImagePosition = "right" %}
+    {% set cardSoloTitle = "Camino is for everyone with an idea" %}
+    {% set cardSoloParagraph = "Camino is a semi-permissionless consortium blockchain that anyone can build on. There are no fees, and the only thing you need to get started is an idea." %}
+    {% set cardSoloButton = "Explore Camino" %}
+    {% set cardSoloButtonLink = "/ecosystem" %}
+    {% include "cardSolo.html" %}
+<!-- CardSolo End -->
+
+<!-- TextImage Start -->
+    {% set textImageImage =         "glas/grid" %}
+    {% set textImageImagePosition = "left" %}
+    {% set textImageTitle =         "The new world of travel is decentralized" %}
+    {% set textImageParagraph2 =    "Camino is the first Layer one blockchain specifically made for the travel industry." %}
+    {% set textImageParagraph =     "An open field of opportunities: Camino is an open-source, programmable smart contracts network for decentralized applications (dApps) of all kind of travel-related products & services." %}
+    {% include "textImage.html" %}
+<!-- TextImage End -->
+
+<!-- CardSolo Start -->
+    {% set cardSoloBG = "gray-800" %}
+    {% set cardSoloImage = "glas/squares" %}
+    {% set cardSoloImagePosition = "right" %}
+    {% set cardSoloTitle = "B2B travel applications powered by blockchain" %}
+    {% set cardSoloParagraph = "With Camino companies have access to an industry-owned travel blockchain, empowering peer-to-peer business and creating unimaginable travel innovation " %}
+    {% set cardSoloParagraph2 = "" %}
+    {% set cardSoloButton = "Explore use cases" %}
+    {% set cardSoloButtonLink = "/travel" %}
+    {% include "cardSolo.html" %}
+<!-- CardSolo End -->

@@ -1,0 +1,30 @@
+<section>
+    <div class="container items-center grid grid-cols-12">
+        {% if textImageImagePosition == 'left' %}
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-5">
+            <img class="w-full object-contain" src="/static/images/{{ textImageImage }}.png" alt="{{textImageImage}} - Network Camino">
+        </div>
+        {% endif %}
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-6 {% if textImageImagePosition == 'left' %} md:col-start-7 {% endif %}">
+            {% if textImageCategory %}
+            <h3 class="mb-2">{{ textImageCategory }}</h3>
+            {% endif %}
+            <h1>{{ textImageTitle }}</h1>
+            {% if textImageSubtitle %}
+            <h3>{{ textImageSubtitle }}</h3>
+            {% endif %}
+            <p>{{ textImageParagraph }}</p>
+            {% if textImageParagraph2 %}
+            <p>{{ textImageParagraph2 }}</p>
+            {% endif %}
+            {% if textImageButtonLink %}
+            <a class="button mt-6" href="{{ textImageButtonLink }}" target="_blank" rel="noopener noreferrer">{{ textImageButtonLabel }}</a>
+            {% endif %}
+        </div>
+        {% if textImageImagePosition == 'right' %}
+        <div data-sal="zoom-out" class="col-span-12 md:col-span-5 md:col-start-8 order-first md:order-last">
+            <img class="w-full object-contain" src="/static/images/{{ textImageImage }}.png" alt="{{textImageImage}} - Network Camino">
+        </div>
+        {% endif %}
+    </div>
+</section>
