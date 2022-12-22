@@ -1,5 +1,10 @@
 [
     {
+        "name": "51Nodes",
+        "slug": "51nodes",
+        "url": "https://www.51nodes.io/"
+    },
+    {
         "name": "a-five",
         "slug": "a-five",
         "url": "https://www.linkedin.com/company/a-five-business-solutions-network/"
@@ -105,6 +110,11 @@
         "url": "https://www.ennea.vc/"
     },
     {
+        "name": "Enwoke",
+        "slug": "enwoke",
+        "url": "mailto:gerrit@enwoke.com"
+    },
+    {
         "name": "Eurowings",
         "slug": "eurowings",
         "url": "https://www.eurowings.com/en.html"
@@ -113,6 +123,11 @@
         "name": "Eurowings Holidays",
         "slug": "eurowingsholidays",
         "url": "https://holidays.eurowings.com/de-de"
+    },
+    {
+        "name": "EOV",
+        "slug": "eov",
+        "url": "https://embarkingonvoyage.com/"
     },
     {
         "name": "Falkensteiner",
@@ -153,6 +168,16 @@
         "name": "Hahn Air",
         "slug": "hahnair",
         "url": "https://www.hahnair.com/en"
+    },
+    {
+        "name": "Greenfield Strategy",
+        "slug": "greenfield",
+        "url": "http://greenfieldstrategy.biz/"
+    },
+    {
+        "name": "hiberus",
+        "slug": "hiberus",
+        "url": "https://www.hiberus.com/"
     },
     {
         "name": "hlx.com",
@@ -225,6 +250,11 @@
         "url": "https://www.lufthansaholidays.com/en-de"
     },
     {
+        "name": "mc2.ventures",
+        "slug": "mc2",
+        "url": "https://www.mc2.ventures/"
+    },
+    {
         "name": "MIDOCO Group",
         "slug": "midoco",
         "url": "https://www.midoco.de/midoco-%C3%BCber-uns"
@@ -258,6 +288,11 @@
         "name": "Neusta",
         "slug": "neusta",
         "url": "https://www.neusta-tourism.de/"
+    },
+    {
+        "name": "Nevermined",
+        "slug": "nevermined",
+        "url": "https://nevermined.io/"
     },
     {
         "name": "OH.TEC Tourism Expert Consulting",
@@ -358,6 +393,11 @@
         "name": "Verband Internet Reisevertrieb e.V.",
         "slug": "vir",
         "url": "https://v-i-r.de/"
+    },
+    {
+        "name": "whispers",
+        "slug": "whispers",
+        "url": "https://www.whispers.at/"
     },
     {
         "name": "Xeni",
