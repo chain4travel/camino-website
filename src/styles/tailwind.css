@@ -48,7 +48,7 @@ body {
 }
 
 section {
-  @apply container py-12 lg:py-24 overflow-x-hidden;
+  @apply container py-8 lg:py-16 overflow-x-hidden;
 }
 
 .hero {
@@ -60,7 +60,11 @@ section {
 }
 
 .button-secondary {
-  @apply text-base whitespace-nowrap inline-block transition-all bg-gray-600/75 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
+  @apply text-base whitespace-nowrap inline-block transition-all bg-gray-900 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
+}
+
+.button-secondary-outline {
+  @apply text-base whitespace-nowrap inline-block transition-all border border-gray-900 text-gray-900 bg-transparent hover:bg-white hover:border-white font-medium py-2 px-4 rounded-xl;
 }
 
 .button-gradient {
@@ -126,10 +130,10 @@ h1,h2,h3,h4 {
   @apply font-headline tracking-wide font-medium
 }
 
-h1 { @apply font-semibold text-3xl md:text-5xl }
-h2 { @apply font-semibold text-2xl md:text-4xl }
-h3 { @apply font-medium text-xl md:text-3xl }
-h4 { @apply font-medium text-lg md:text-2xl }
+h1 { @apply text-3xl md:text-5xl }
+h2 { @apply text-2xl md:text-4xl }
+h3 { @apply text-xl md:text-3xl }
+h4 { @apply text-lg md:text-2xl }
 
 p+p {
   @apply mt-4 md:mt-8

@@ -12,6 +12,10 @@ layout:         default
 
 {% include "section_litepaper.html" %}
 
+<!-- Supporter Start -->
+    {% include "supporter.html" %}
+<!-- Supporter End -->
+
 <div
     class="bg-contain bg-top bg-no-repeat relative"
     {% if heroBgImage %}
@@ -51,7 +55,7 @@ layout:         default
 <section>
     <div class="grid grid-cols-2 gap-6 md:gap-12">
         <div class="col-span-2 md:col-span-1 p-8 md:p-10 2xl:p-16 flex flex-col h-full items-center justify-center">
-            <h1 class="mb-6">Camino is for everyone with an idea</h1>
+            <h2 class="mb-6">Camino is for everyone with an idea</h2>
             <p class="text-gray-300">Camino is a semi permissionless consortium blockchain that anyone can build on. There are no fees, and the only thing you need to get started is an idea.</p>
         </div>
         <div class="col-span-2 md:col-span-1 rounded-camino bg-gray-900 rounded-camino shadow-gradient p-8 md:p-10 2xl:p-16">
@@ -61,17 +65,44 @@ layout:         default
     </div>
 </section>
 
-<!-- Supporter Start -->
-    {% include "supporter.html" %}
-<!-- Supporter End -->
+
+<!-- CardRow Start -->
+{% set cardRowTitle = "" %}
+{% set cardRowSubtitle = "" %}
+{% set cardRowBgImage = "" %}
+
+{% set cardFirstImage = "generic-validators" %}
+{% set cardFirstTitle = "Validators, the drivers of change" %}
+{% set cardFirstText = "Validators of Camino are key industry players who shape the vision of a decentralized travel industry. Get behind the steering wheel and become a validator." %}
+{% set cardFirstLink = "/validators" %}
+{% set cardFirstLinkLabel = "Learn more" %}
+
+{% set cardSecondImage = "generic-network" %}
+{% set cardSecondTitle = "Govern the decentral network of the global travel industry" %}
+{% set cardSecondText = "Camino is developed for the travel industry and run by a travel consortium consisting of multiple validators." %}
+{% set cardSecondLink = "/travel" %}
+{% set cardSecondLinkLabel = "Learn more" %}
+
+{% set cardThirdImage = "" %}
+{% set cardThirdTitle = "" %}
+{% set cardThirdText = "" %}
+{% set cardThirdLink = "" %}
+{% set cardThirdLinkLabel = "" %}
+
+{% set cardFourthImage = "" %}
+{% set cardFourthTitle = "" %}
+{% set cardFourthText = "" %}
+{% set cardFourthLinkLabel = "" %}
+
+{% include "cardRow.html" %}
+<!-- CardRow End -->
 
 <!-- CardSolo Start -->
     {% set cardSoloBG = "accent" %}
     {% set cardSoloImage = "glas/stack" %}
     {% set cardSoloImagePosition = "right" %}
-    {% set cardSoloTitle = "Start building the new world of travel" %}
-    {% set cardSoloParagraph = "Camino offers a versatile platform to map and expand tourism’s current business models and create new touristic products and ways to interact with travelers." %}
-    {% set cardSoloParagraph2 = "The Camino blockchain is a Decentralized Autonomous Organization operated, maintained, and governed by the travel industry for travel enthusiasts." %}
+    {% set cardSoloTitle = "Camino is for everyone with an idea" %}
+    {% set cardSoloParagraph = "Camino is a semi-permissionless consortium blockchain that anyone can build on. There are no fees, and the only thing you need to get started is an idea." %}
     {% set cardSoloButton = "Explore Camino" %}
     {% set cardSoloButtonLink = "/ecosystem" %}
     {% include "cardSolo.html" %}
@@ -93,7 +124,7 @@ layout:         default
     {% set cardSoloTitle = "B2B travel applications powered by blockchain" %}
     {% set cardSoloParagraph = "With Camino companies have access to an industry-owned travel blockchain, empowering peer-to-peer business and creating unimaginable travel innovation " %}
     {% set cardSoloParagraph2 = "" %}
-    {% set cardSoloButton = "Explore travel possibilities" %}
+    {% set cardSoloButton = "Explore use cases" %}
     {% set cardSoloButtonLink = "/travel" %}
     {% include "cardSolo.html" %}
 <!-- CardSolo End -->

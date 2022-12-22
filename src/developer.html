@@ -90,9 +90,9 @@ layout:         default
                 <p>Building on the Camino blockchain is easy. The team has streamlined the process so that anyone with basic technical skills can get started. The set-up only takes 1-2 hours.</p>
                 <p class="font-bold mt-8 mb-6">Different set-up options:</p>
                 <div class="flex flex-wrap mt-auto">
-                    <a href="https://docs.camino.foundation/apps/nodes/run-camino-node" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white text-gray-900">Manual set-up</a>
-                    <a href="https://docs.camino.foundation/apps/nodes/set-up-node-with-installer" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Install script</a>
-                    <a href="https://docs.camino.foundation/apps/nodes/set-up-node-with-docker" class="mr-2 mb-2 py-3 px-4 rounded-2xl bg-white/20 text-white">Docker installation</a>
+                    <a href="https://docs.camino.foundation/apps/nodes/run-camino-node" class="mr-2 button-secondary mb-2">Manual set-up</a>
+                    <a href="https://docs.camino.foundation/apps/nodes/set-up-node-with-installer" class="mr-2 button-secondary-outline mb-2">Install script</a>
+                    <a href="https://docs.camino.foundation/apps/nodes/set-up-node-with-docker" class="mr-2 button-secondary-outline mb-2">Docker installation</a>
                 </div>
             </div>
     
@@ -102,10 +102,10 @@ layout:         default
             </div>
         </div>
 
-        <div class="bg-gray-800 text-accent p-8 lg:p-12 rounded-camino md:ml-4 relative overflow-hidden">
+        <div class="bg-gray-800 p-8 lg:p-12 rounded-camino md:ml-4 relative overflow-hidden">
             <h2 class="mb-6">Third</h2>
             <p>There's a strong community behind this network that's committed to making sure everyone succeeds and thrives. This means that even if you don't have any experience developing dApps or launching blockchain projects, they'll be happy to help you out along every step of the way, or even connect you with the ones that can.</p>
-            <a href="https://discord.gg/camino" class="inline-block mt-4 py-3 px-4 rounded-2xl bg-gray-700 text-white">Discord chat</a>
+            <a href="https://discord.gg/camino" class="mt-4 button">Discord chat</a>
             <img src="/static/images/glas/grid.png" class="object-contain absolute -right-1/4 bottom-0 lg:-bottom-16 xl:-bottom-1/4 opacity-0 md:opacity-75" alt="">
         </div>
 
@@ -176,7 +176,7 @@ layout:         default
     {% set cardFirstText = "To increase trust in Camino and prevent fraudulent or even illegal activities, all partners who deploy smart contracts or act as validators on the Camino blockchain must be at least KYC / KYB (Know-Your-Customer / Business) verified." %}
     {% set cardFirstLinkLabel = "" %}
 
-    {% set cardSecondImage = "generic-01" %}
+    {% set cardSecondImage = "generic-10" %}
     {% set cardSecondTitle = "Block Explorer" %}
     {% set cardSecondText = "Camino’s tech stack is complemented by a Block Explorer that helps track network activity and available smart contracts on the chain. It also includes a wallet that enables participants to stake their Camino tokens, move and bridge funds between chains." %}
     {% set cardSecondLinkLabel = "" %}
@@ -194,19 +194,33 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<section class="py-32 md:py-48 relative overflow-hidden">
-    <div class="flex flex-wrap items-start relative z-10">
-        <div class="w-full md:w-1/2 text-center">
-            <h2>Start building with camino</h2>
-            <a class="button-secondary mt-8" href="https://docs.camino.foundation/" target="_blank" rel="noopener noreferrer">Go to Camino documentation</a>
-        </div>
-        <div class="w-full md:w-1/2 text-center mt-16 md:mt-0">
-            <h2>Join our discord server</h2>
-            <a class="button-secondary mt-8" href="https://discord.gg/camino" target="_blank" rel="noopener noreferrer">Join our Discord community</a>
-        </div>
-    </div>
-    <div
-        class="rotate-12 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-[560px] h-[560px] opacity-30 bg-center bg-no-repeat bg-contain"
-        style="background-image: url(/static/images/glas/flower.png);">
-    </div>
-</section>
+<!-- CardRow Start -->
+{% set cardRowTitle = "Get into detail or join others" %}
+{% set cardRowSubtitle = "" %}
+{% set cardRowBgImage = "" %}
+
+{% set cardFirstImage = "generic-docs" %}
+{% set cardFirstTitle = "Start building with camino" %}
+{% set cardFirstText = "" %}
+{% set cardFirstLink = "https://docs.camino.foundation/" %}
+{% set cardFirstLinkLabel = "Camino Documentation" %}
+
+{% set cardSecondImage = "generic-discord" %}
+{% set cardSecondTitle = "Join our discord server" %}
+{% set cardSecondText = "" %}
+{% set cardSecondLink = "https://discord.gg/camino" %}
+{% set cardSecondLinkLabel = "Camino Discord" %}
+
+{% set cardThirdImage = "" %}
+{% set cardThirdTitle = "" %}
+{% set cardThirdText = "" %}
+{% set cardThirdLink = "" %}
+{% set cardThirdLinkLabel = "" %}
+
+{% set cardFourthImage = "" %}
+{% set cardFourthTitle = "" %}
+{% set cardFourthText = "" %}
+{% set cardFourthLinkLabel = "" %}
+
+{% include "cardRow.html" %}
+<!-- CardRow End -->

@@ -33,12 +33,11 @@ function nFormatter(num, digits) {
 
 const getNumberOfTxFee = async (startDate, endDate) => {
   try {
-    const txfeeAggregates = await api.get(
-      `/txfeeAggregates?chainID=${chainID}&startTime=${startDate}&endTime=${endDate}`
-    );
-    return nFormatter(txfeeAggregates.data.aggregates.txfee, 1);
+      const txfeeAggregates = await api.get(`/txfeeAggregates?chainID=${chainID}&startTime=${startDate}&endTime=${endDate}`)
+      const txfee = txfeeAggregates.data.aggregates.txfee * Math.pow(10, -9)
+      return nFormatter(txfee, 1).replace(/[,.]/g, (m) => (m === ',' ? '.' : ','))
   } catch (e) {
-    return "-";
+      return '-'
   }
 };
 const getNumberOfTransaction = async (startDate, endDate) => {
@@ -72,7 +71,7 @@ const getNumberOfValidators = async () => {
 };
 module.exports = async function () {
   const currentDate = DateTime.now().setZone("utc");
-  const startDate = currentDate.minus({ days: 7 });
+  const startDate = currentDate.minus({ hours: 24 });
   const endDate = currentDate.toISO();
   let results = await Promise.all([
     getNumberOfTxFee(startDate, endDate),

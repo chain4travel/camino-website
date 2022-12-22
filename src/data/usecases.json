@@ -47,6 +47,16 @@
     {
         "title": "Climate Compensation",
         "paragraph1": "Blockchain helps monitor and report emission reduction trading due to its ",
+        "col": "2"
+    },
+    {
+        "title": "Token gated access",
+        "paragraph1": "With an NFT, a unique digital asset, access to events or services can be granted as a utility to the NFTs. Moreover, users can be tracked where they get access and to what time.",
+        "col": "1"
+    },
+    {
+        "title": "User generated content ",
+        "paragraph1": "Users can generate content for various services or products on the blockchain and, at the same time, get rewarded. Once a wallet is created for a service, users can send information to this wallet and are incentivized to do so.",
         "col": "3"
     }
 ]
