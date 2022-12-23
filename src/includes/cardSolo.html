@@ -32,12 +32,12 @@
                 </p>
                 {% endif %}
                 {% if cardSoloButton %}
-                <a target="_blank" data-sal="fade" class="inline-block w-fit transition-all py-3 px-6 rounded-2xl mt-6
+                <a href="{{ cardSoloButtonLink }}" data-sal="fade" class="inline-block w-fit transition-all py-3 px-6 rounded-2xl mt-6
                     {% if cardSoloBG == 'gray-800' %} button {% endif %}
                     {% if cardSoloBG == 'primary' %} button-secondary {% endif %}
                     {% if cardSoloBG == 'accent' %} button-secondary {% endif %}
                     {% if cardSoloBG == 'caminoSky' %} button-secondary {% endif %}"
-                href="{{ cardSoloButtonLink }}">{{ cardSoloButton }}</a>
+                >{{ cardSoloButton }}</a>
                 {% endif %}
             </div>
             {% if cardSoloImagePosition == 'right' %}
