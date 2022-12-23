@@ -1,6 +1,6 @@
 ---
-title: Imprint 
-description: Join the travel revolution now and be part of the future.
+title: Privacy Policy 
+description: This policy explains and sets out the basis for why and when we collect personal information.
 layout: default
 ---
 

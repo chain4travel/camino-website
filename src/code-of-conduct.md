@@ -1,6 +1,6 @@
 ---
 title: Code of Conduct 
-description: Join the travel revolution now and be part of the future.
+description: This Code of Conduct helps us build a community that is rooted in kindness, collaboration, and mutual transaparency.
 layout: default
 ---
 
