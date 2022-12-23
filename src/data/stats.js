@@ -35,7 +35,7 @@ const getNumberOfTxFee = async (startDate, endDate) => {
   try {
       const txfeeAggregates = await api.get(`/txfeeAggregates?chainID=${chainID}&startTime=${startDate}&endTime=${endDate}`)
       const txfee = txfeeAggregates.data.aggregates.txfee * Math.pow(10, -9)
-      return nFormatter(txfee, 1).replace(/[,.]/g, (m) => (m === ',' ? '.' : ','))
+      return nFormatter(txfee, 1)
   } catch (e) {
       return '-'
   }
