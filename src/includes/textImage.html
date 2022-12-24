@@ -18,7 +18,7 @@
             <p>{{ textImageParagraph2 }}</p>
             {% endif %}
             {% if textImageButtonLink %}
-            <a class="button mt-6" href="{{ textImageButtonLink }}">{{ textImageButtonLabel }}</a>
+            <a {% if textImageButtonLinkBlank %} target="_blank" {% endif %} class="button mt-6" href="{{ textImageButtonLink }}">{{ textImageButtonLabel }}</a>
             {% endif %}
         </div>
         {% if textImageImagePosition == 'right' %}
