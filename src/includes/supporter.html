@@ -2,8 +2,10 @@
     <h1 class="text-center mb-12">Supporters of a decentralized travel industry</h1>
     <div class="flex justify-center flex-wrap">
         {% for supporter in supporter %}
+            {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
+            {% set logoalt = supporter.slug + " - Logo" %}
             <a href="{{supporter.url}}" class="group inline-flex flex-col items-center rounded-lg w-1/5 md:w-1/6 lg:w-[9%] flex-shrink-0" target="_blank">
-                <img class="opacity-50 group-hover:opacity-100 transition-all w-full max-w-[180px]" src="../static/images/supporter/{{supporter.slug}}.png" alt="Camino Network Supporter - {{supporter.name}}">
+                {% image logopath, logoalt, "", "opacity-50 group-hover:opacity-100 transition-all w-full max-w-[180px]" %}
                 <div class="text-gray-600 hidden">{{supporter.name}}</div>
             </a>
         {% endfor %}
