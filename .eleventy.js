@@ -10,13 +10,13 @@ async function imageShortcode(src, alt, sizes, imgClass) {
 
     let metadata = await Image(src, {
         widths: [300, 600, 1400],
-        formats: ['webp', 'jpeg'],
+        formats: ['webp', 'png'],
         urlPath: "/static/images/",
         outputDir: "./_site/static/images/"
     });
 
-    let lowsrc = metadata.jpeg[0];
-    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+    let lowsrc = metadata.png[0];
+    let highsrc = metadata.png[metadata.png.length - 1];
 
     return `<picture>
         ${Object.values(metadata).map(imageFormat => {
