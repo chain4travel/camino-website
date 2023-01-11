@@ -1,0 +1,98 @@
+<style>
+
+ div.highway-slider {
+	 display: flex;
+	 justify-content: center;
+	 width: 100%;
+}
+ div.highway-slider div.highway-barrier {
+	 overflow: hidden;
+	 position: relative;
+}
+ div.highway-slider ul.highway-lane {
+	 display: flex;
+	 height: 100%;
+}
+ div.highway-slider ul.highway-lane li.highway-car {
+	 flex: 1;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background: transparent;
+	 color: #343434;
+}
+ @keyframes translateinfinite {
+	 100% {
+		 transform: translateX(calc(-2160px));
+	}
+}
+ #infinite div.highway-barrier {
+	 background: transparent;
+}
+ #infinite div.highway-barrier::before, #infinite div.highway-barrier::after {
+	 content: " ";
+	 position: absolute;
+	 z-index: 9;
+	 width: 180px;
+	 height: 100%;
+}
+ #infinite div.highway-barrier::before {
+	 top: 0;
+	 left: 0;
+	 background: linear-gradient(to right,#0f172a 0%,rgba(255,255,255,0) 100%);
+}
+ #infinite div.highway-barrier::after {
+	 top: 0;
+	 right: 0;
+	 background: linear-gradient(to left,#0f172a 0%,rgba(255,255,255,0) 100%);
+}
+ #infinite div.highway-barrier ul.highway-lane {
+	 width: calc(20000px);
+}
+ #infinite div.highway-barrier ul.highway-lane li.highway-car {
+    animation: translateinfinite 50s linear infinite;
+}
+</style>
+
+<section class="pt-0">
+    <div id="infinite" class="highway-slider">
+    <div class="highway-barrier">
+        <ul class="highway-lane">
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/lufthansa.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/eurowings.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/holidaypirates.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/lufthansaholidays.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/hahnair.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/dataart.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/tui.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/miles-and-more.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            <li class="highway-car">
+                {% image "./src/static/images/supporter/peakwork.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+            </li>
+            {% for supporter in supporter %}
+            {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
+            {% set logoalt = supporter.slug + " - Logo" %}
+            <li class="highway-car">
+                {% image logopath, logoalt, "", "w-full opacity-75" %}
+            </li>
+            {% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
