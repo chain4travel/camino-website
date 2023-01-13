@@ -21,10 +21,8 @@
 	 background: transparent;
 	 color: #343434;
 }
- @keyframes translateinfinite {
-	 100% {
-		 transform: translateX(calc(-20000px));
-	}
+@keyframes translateinfinite {
+	100% { transform:translateX(calc(-180px * 100));  }
 }
  #infinite div.highway-barrier {
 	 background: transparent;
@@ -47,10 +45,10 @@
 	 background: linear-gradient(to left,#0f172a 0%,rgba(255,255,255,0) 100%);
 }
  #infinite div.highway-barrier ul.highway-lane {
-	 width: calc(20000px);
+    width:calc(180px * 200);
 }
  #infinite div.highway-barrier ul.highway-lane li.highway-car {
-    animation: translateinfinite 345s linear infinite;
+    animation: translateinfinite 280s linear infinite;
 }
 </style>
 
@@ -91,7 +89,42 @@
                 <li class="highway-car">
                     {% image logopath, logoalt, "", "w-full opacity-75" %}
                 </li>
-            {% endfor %}
+                {% endfor %}
+
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/lufthansa.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/eurowings.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/holidaypirates.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/lufthansaholidays.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/hahnair.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/dataart.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/tui.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/miles-and-more.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                <li class="highway-car">
+                    {% image "./src/static/images/supporter/peakwork.png", "Lufthansa Logo", "", "w-full opacity-75" %}
+                </li>
+                {% for supporter in supporter %}
+                {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
+                {% set logoalt = supporter.slug + " - Logo" %}
+                <li class="highway-car">
+                    {% image logopath, logoalt, "", "w-full opacity-75" %}
+                </li>
+                {% endfor %}
 			</ul>
 		</div>
 	</div>
