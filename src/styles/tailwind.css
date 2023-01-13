@@ -46,6 +46,13 @@
   display: none !important;
 }
 
+
+*[id]:target {
+  padding-top: 200px;
+  margin-top: -200px;
+  outline: 0;
+}
+
 body {
   @apply font-body
 }
