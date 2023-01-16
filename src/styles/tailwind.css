@@ -186,11 +186,21 @@ h3+h4 {
   @apply text-gray-900 !important;
 }
 
-.termsfeed-com---palette-dark .cc-nb-okagree,
-.termsfeed-com---palette-dark .cc-nb-reject {
+.termsfeed-com---nb .cc-nb-okagree, .termsfeed-com---nb .cc-nb-reject, .termsfeed-com---nb .cc-nb-changep {
+  @apply py-3 px-5 rounded-xl !important;
+}
+
+.termsfeed-com---palette-dark .cc-nb-okagree {
   @apply bg-gray-900 text-white !important;
 }
 
-.termsfeed-com---palette-dark .cc-nb-changep {
+.termsfeed-com---palette-dark .cc-nb-changep,
+.termsfeed-com---palette-dark .cc-nb-reject {
   @apply bg-gray-900/10 text-gray-900 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .termsfeed-com---nb-simple {
+    max-width: 100% !important;
+  }
 }
