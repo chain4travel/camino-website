@@ -42,7 +42,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({'./node_modules/sal.js/dist/sal.css': './sal.css',})
 
   eleventyConfig.addPassthroughCopy('src/static')
-  eleventyConfig.addPassthroughCopy('robots.txt')
+  eleventyConfig.addPassthroughCopy('src/robots.txt')
 
   eleventyConfig.addPassthroughCopy('src/Camino-Media-Kit.zip')
 
