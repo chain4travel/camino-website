@@ -1,16 +1,22 @@
-<div class="relative py-8 lg:py-16 h-screen flex items-center justify-center overflow-hidden">
+<div class="overflow-hidden relative bg-gradient-to-b from-[#101938] to-[#010103] flex items-center">
 
-    <div data-sal="fade" data-sal-easing="easeInOutQuint" data-sal-delay="100" data-sal-duration="1000" class="text-center py-24 md:py-36 2xl:py-80 relative z-10 max-w-screen-sm mx-auto px-4">
-        <h1 class="text-4xl md:text-6xl">
-            The world of <br> travel <span class="text-transparent bg-clip-text bg-gradient-to-br from-[#72C5F5] to-[#D38DFE]">reinvented</span>
+    <div
+        data-sal="fade"
+        data-sal-easing="easeInOutQuint"
+        data-sal-delay="100"
+        data-sal-duration="1000"
+        class="relative z-10 container py-80"
+    >
+        <h1 class="text-4xl md:text-7xl drop-shadow-lg">
+            The world of <br> travel <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">reinvented</span>
         </h1>
-        <p class="text-sm md:text-base">
+        <p class="text-base md:text-lg max-w-prose">
             Camino is the travel industry blockchain. Fueled by the Camino token, it is offering a versatile platform to expand current business models and to create new touristic products to delight travelers and business partners.
         </p>
     </div>
 
-    <div data-sal="fade" data-sal-easing="easeInOutQuint" data-sal-delay="500" data-sal-duration="1000">
-        {% image "./src/static/images/globe.png", "A globus in the Camino Network style", "", "max-w-xl sm:max-w-3xl md:max-w-4xl object-contain absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-0" %}
-    </div>
+    <video autoplay playsinline muted loop class="absolute w-full top-1/2 -right-[20%] -translate-y-1/2">
+        <source src="/static/videos/globe-full.mp4" type="video/mp4"></video>
+    </video>
 
 </div>
