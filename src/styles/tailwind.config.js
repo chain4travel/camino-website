@@ -25,6 +25,7 @@ module.exports = {
         fontFamily: {
             'body': ['Inter, system-ui, sans-serif'],
             'headline': ['ClashDisplay-Variable, system-ui, sans-serif'],
+            'mono': ['ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'],
         },
         container: {
             center: true,

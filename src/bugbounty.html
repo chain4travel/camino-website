@@ -1,0 +1,201 @@
+---
+title:          Bug Bounty
+description:    Become a bug bounty hunter for the world’s web3 travel ecosystem.
+layout:         default
+---
+
+<!-- Hero Start -->
+    {% set heroTitle = "Welcome to Camino’s Bug Bounty Program" %}
+    {% set heroSubtitle = "" %}
+    {% set heroText = "Become a bug bounty hunter for the world’s web3 travel ecosystem." %}
+    {% set heroBgImage = "bugbounty" %}
+    {% include "hero.html" %}
+<!-- Hero End -->
+
+<section class="md:flex items-start">
+    <div class="md:pr-24">
+        <h2>The Scope</h2>
+        <h3>We are interested in receiving reports on the following types of vulnerabilities:</h3>
+        <ul class="list-disc ml-4 mt-6 text-gray-300">
+            <li>Blockchain-specific vulnerabilities (e.g. consensus attacks, transaction malleability, forced hard-forks, etc)</li>
+            <li>Smart contract vulnerabilities (e.g. reentrancy attacks, funds draining, funds freezing, etc)</li>
+            <li>Security vulnerabilities in our web platform (e.g. Cross-Site Scripting, etc.)</li>
+        </ul>
+        <h3 class="mt-12">Out-of-scope vulnerabilities include those that:</h3>
+        <ol class="ml-4 list-decimal mt-6 text-gray-300">
+            <li>Are from the rest of the repositories in https://github.com/chain4travel/ that are not mentioned in the scope</li>
+            <li>Are a result of user error (e.g. weak passwords)</li>
+            <li>Are disclosed publicly</li>
+            <li>Are a result of automated tooling without a clear chain of exploitation</li>
+            <li>Duplicate: have already been disclosed to us</li>
+            <li>Affect outdated or unsupported version of the software</li>
+            <li>Are related to physical security or social engineering</li>
+        </ol>
+
+        <hr class="my-16 border-gray-700">
+
+        <h2>Eligibility Criteria (What we ask of You)</h2>
+        <h3>In order to be eligible for a reward, you must:</h3>
+        <ul class="list-disc ml-4 mt-6 text-gray-300">
+            <li>Be the first person to report the vulnerability to us</li>
+            <li>Provide sufficient information for us to reproduce and fix the issue</li>
+            <li>In case of High and Critical severity vulnerabilities introduce a PoC (Proof of Concept) on a local environment mimicking the production˜</li>
+            <li>Not be a current or former employee of Chain4Travel</li>
+            <li>Pass a KYC when required</li>
+        </ul>
+        
+        <hr class="my-16 border-gray-700">
+
+        <h2>Important notices</h2>
+
+        <h3>1. Non-disclosure</h3>
+        <p class="text-gray-300">We request that you do not disclose the vulnerability to any third parties until it has been fixed and we have had a chance to notify any affected parties. We will keep your submission confidential, but please note that we may need to share it with third parties (e.g. service providers) in order to fix the issue.</p>
+
+        <h3 class="mt-12">2. Responsible disclosure</h3>
+        <p class="text-gray-300">We ask that all submissions follow a responsible disclosure policy. This means that you give us a reasonable amount of time to fix the vulnerability before disclosing it to the public. We will make every effort to fix the issue as soon as possible.</p>
+
+        <h3 class="mt-12">3. Response time</h3>
+        <p class="text-gray-300">We will do our best to respond to submissions as quickly as possible. Our goal is to respond to all submissions within 14 business days. If your submission is eligible for a reward, we will notify you and begin working on a fix as soon as possible.</p>
+
+        <h3 class="mt-12">4. Changes to the program</h3>
+        <p class="text-gray-300">We reserve the right to change the terms of this bug bounty program at any time. Any changes will be posted on this page.</p>
+        
+        <hr class="my-16 border-gray-700">
+
+        <h2>Any Questions?</h2>
+        <p class="text-gray-300">If you have any questions about this program, please don’t hesitate to contact us at <a class="underline hover:text-primary" href="mailto:hello@chain4travel.com">hello@chain4travel.com</a>.</p>
+
+    </div>
+
+    <div class="p-12 rounded-3xl shadow-gradient-sm mt-16 md:mt-0 md:max-w-[500px]">
+        <a href="#" class="mb-8 block bg-primary hover:bg-caminoSky hover:text-gray-900 font-medium text-center w-full p-4 rounded-xl">
+            Submit vulnerabilities
+        </a>
+
+        <div class="mb-8">
+            <h4>Your rewards</h4>
+            <p class="text-gray-300 text-sm my-2">We offer the following rewards for eligible vulnerabilities:</p>
+            <ul>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-cyan-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Very low priority
+                    </div>
+                    <div class="font-mono">$50+</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Low priority
+                    </div>
+                    <div class="font-mono">$100+</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Medium priority
+                    </div>
+                    <div class="font-mono">$250+</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        High priority
+                    </div>
+                    <div class="font-mono">$500+</div>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                    <div>
+                        <span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Critical priority
+                    </div>
+                    <div class="font-mono">$1000+</div>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="mb-2">Web 2.0 severities</h4>
+            <ul>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Low
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 250 USD FIAT + 5000 CAM
+                    </div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Medium
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 500 USD FIAT + 10000 CAM
+                    </div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        High
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 2500 USD FIAT + 30000 CAM
+                    </div>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                    <div>
+                        <span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Critical
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 5000 USD FIAT + 50000 CAM
+                    </div>
+                </li>
+            </ul>
+
+            <h4 class="mt-8 mb-2">Web 3.0 severities</h4>
+            <ul>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Low
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 2500 USD FIAT + 75000 CAM
+                    </div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Medium
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 5000 USD FIAT + 350000 CAM
+                    </div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div>
+                        <span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        High
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 25000 USD FIAT + 750000 CAM
+                    </div>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                    <div>
+                        <span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
+                        Critical
+                    </div>
+                    <div class="text-sm font-mono">
+                        > 50000 USD FIAT + 1000000 CAM
+                    </div>
+                </li>
+            </ul>
+
+            <p class="text-gray-300 text-sm mt-6">Rewards are at the discretion of our security team and will be based on the impact, severity and complexity of the vulnerability. Out-of-scope findings are not eligible for reward by default, but can be reviewed as set a severity after manual review.</p>
+        </div>
+    </div>
+</section>
