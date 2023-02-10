@@ -66,7 +66,7 @@ section {
 }
 
 .button {
-  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
+  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-primary hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
 }
 
 .button-secondary {
