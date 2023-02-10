@@ -14,8 +14,49 @@ layout:         default
 
 <section class="md:flex items-start">
     <div class="md:pr-24">
-        <img class="mb-8 max-w-full h-auto" src="/static/images/camino-bugbounty.png" alt="">
-        <h2>The Scope</h2>
+        <img class="mb-8 max-w-full h-auto mx-auto" src="/static/images/camino-bugbounty.png" alt="">
+
+        <div class="grid grid-cols-12 gap-6">
+            <a href="https://docs.camino.network/" class="col-span-4 p-6 text-center border-2 border-gray-700 rounded-2xl hover:bg-caminoSky hover:text-gray-900 transition-colors">
+                <h3 class="mb-2">Hunt</h3>
+                <div class="flex items-center justify-center whitespace-nowrap">
+                    Explore ressources
+                    <svg class="w-6 h-6 ml-2" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </a>
+            <div class="col-span-4 p-6 text-center border-2 border-gray-700 rounded-2xl">
+                <h3 class="mb-2">Report</h3>
+                <div class="flex items-center justify-center whitespace-nowrap">
+                    How to report
+                    <svg class="w-6 h-6 ml-2" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-span-4 p-6 text-center border-2 border-gray-700 rounded-2xl">
+                <h3 class="mb-2">Collect</h3>
+                <div class="flex items-center justify-center whitespace-nowrap">
+                    See our rewards
+                    <svg class="w-6 h-6 ml-2" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-12" id="bugbounty-reporting">4 step reporting flow</h2>
+        <ol class="ml-4 list-decimal mt-6 text-gray-300">
+            <li>Researcher discovers and reports a vulnerability to <a href="mailto:bugbounty@chain4travel.com">bugbounty@chain4travel.com</a></li>
+            <li>Eventually the report will be forwarded to <a href="http://hexens.io" target="_blank" rel="noopener noreferrer">hexens.io</a> security team to triage the submission and assign its severity and impact levels. In case any additional information is needed, you will be contacted.</li>
+            <li>If the submission is eligible for a reward, we will notify the reporter and begin working on a fix</li>
+            <li>Once the fix has been implemented, we will notify the reporter and request that they retest and confirm the fix. Once the fix is confirmed, we will issue a reward and publicly acknowledge the hunter (if they have chosen to be credited)</li>
+        </ol>
+
+        <hr class="my-16 border-gray-700">
+
+        <h2 class="mt-12">The Scope</h2>
         <h3>We are interested in receiving reports on the following types of vulnerabilities:</h3>
         <ul class="list-disc ml-4 mt-6 text-gray-300">
             <li>Blockchain-specific vulnerabilities (e.g. consensus attacks, transaction malleability, forced hard-forks, etc)</li>
@@ -74,7 +115,7 @@ layout:         default
         </a>
 
         <div class="mb-8">
-            <h4>Your rewards</h4>
+            <h4 id="bugbounty-rewards">Your rewards</h4>
             <p class="text-gray-300 text-sm my-2">We offer the following rewards for eligible vulnerabilities:</p>
             <ul>
                 <li class="flex items-center justify-between py-2 border-b border-gray-700">
