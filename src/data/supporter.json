@@ -315,6 +315,11 @@
         "url": "https://www.oh-tec.de/"
     },
     {
+        "name": "openGeeksLab",
+        "slug": "opengeekslab",
+        "url": "https://opengeekslab.com/"
+    },
+    {
         "name": "Orchestra",
         "slug": "orchestra",
         "url": "https://www.orchestra.eu/en/"
