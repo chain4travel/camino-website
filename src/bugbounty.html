@@ -12,201 +12,180 @@ layout:         default
     {% include "hero.html" %}
 <!-- Hero End -->
 
-<section class="md:flex items-start">
-    <div class="md:pr-24">
-        <img class="mb-8 max-w-full h-auto mx-auto" src="/static/images/camino-bugbounty.png" alt="">
+<section>
 
-        <div class="grid grid-cols-12 gap-4">
-            <a href="https://docs.camino.network/" class="col-span-12 xl:col-span-4 p-3 xl:p-6 text-center border border-gray-700 rounded-2xl hover:bg-caminoSky hover:text-gray-900 transition-colors">
-                <h4 class="mb-2">Hunt</h4>
-                <div class="flex items-center justify-center whitespace-nowrap text-sm">
-                    Explore ressources
-                    <svg class="w-6 h-6 ml-2 flex-shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-            </a>
-            <div class="col-span-12 xl:col-span-4 p-3 xl:p-6 text-center border border-gray-700 rounded-2xl">
-                <h4 class="mb-2">Report</h4>
-                <div class="flex items-center justify-center whitespace-nowrap text-sm">
-                    How to report
-                    <svg class="w-6 h-6 ml-2 flex-shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
+    <img class="mb-8 max-w-full h-auto mx-auto" src="/static/images/camino-bugbounty.png" alt="">
+
+    <h2 class="mt-12 mb-6 text-center" id="bugbounty-reporting">4 step reporting flow</h2>
+    <ul class="w-full grid grid-cols-12 gap-6">
+        <li class="col-span-12 md:col-span-6 xl:col-span-3 pl-20 p-4 md:p-12 border-4 border-gray-800 rounded-3xl relative overflow-hidden hover:bg-gray-700 transition-colors">
+            <div class="flex items-center justify-center shadow-gradient-sm rounded-full text-4xl w-28 h-28 font-bold flex-shrink-0 mb-4 absolute -left-6 -top-6 opacity-80">1</div>
+            <div class="relative z-10">
+                Researcher discovers and reports a vulnerability to <a class="underline" href="mailto:bugbounty@chain4travel.com">bugbounty@chain4travel.com</a> <br><br>
+                <a href="#bugbounty-scope" class="underline hover:no-underline">Find all the in-scope project below</a>
             </div>
-            <div class="col-span-12 xl:col-span-4 p-3 xl:p-6 text-center border border-gray-700 rounded-2xl">
-                <h4 class="mb-2">Collect</h4>
-                <div class="flex items-center justify-center whitespace-nowrap text-sm">
-                    See our rewards
-                    <svg class="w-6 h-6 ml-2 flex-shrink-0" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="mt-12" id="bugbounty-reporting">4 step reporting flow</h2>
-        <ol class="mt-6">
-            <li class="py-4 flex items-center">
-                <div class="flex items-center justify-center shadow-gradient-sm rounded-full w-12 h-12 font-bold flex-shrink-0 mr-4">1</div>
-                <div>Researcher discovers and reports a vulnerability to <a class="underline" href="mailto:bugbounty@chain4travel.com">bugbounty@chain4travel.com</a></div>
-            </li>
-            <li class="py-4 flex items-center">
-                <div class="flex items-center justify-center shadow-gradient-sm rounded-full w-12 h-12 font-bold flex-shrink-0 mr-4">2</div>
-                <div>Eventually the report will be forwarded to <a class="underline" href="http://hexens.io" target="_blank" rel="noopener noreferrer">hexens.io</a> security team to triage the submission and assign its severity and impact levels. In case any additional information is needed, you will be contacted.</div>
-            </li>
-            <li class="py-4 flex items-center">
-                <div class="flex items-center justify-center shadow-gradient-sm rounded-full w-12 h-12 font-bold flex-shrink-0 mr-4">3</div>
-                <div>If the submission is eligible for a reward, we will notify the reporter and begin working on a fix</div>
-            </li>
-            <li class="py-4 flex items-center">
-                <div class="flex items-center justify-center shadow-gradient-sm rounded-full w-12 h-12 font-bold flex-shrink-0 mr-4">4</div>
-                <div>Once the fix has been implemented, we will notify the reporter and request that they retest and confirm the fix. Once the fix is confirmed, we will issue a reward and publicly acknowledge the hunter (if they have chosen to be credited)</div>
-            </li>
-        </ol>
-
-        <hr class="my-12 border-gray-900">
-
-        <h2 class="mt-12 mb-6">The Scope</h2>
-
-        <div class="grid grid-cols-2 items-center gap-1">
-            <div class="col-span-2 xl:col-span-1 bg-accent p-6 lg:p-10 text-gray-900 rounded-tl-3xl">
-                <h4>Included projects:</h4>
-                <h5 class="mt-6 mb-2 font-bold">Web 2.0</h5>
-                <ol class="">
-                    <li class="flex items-center py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                        </svg>
-                        <a class="hover:underline" href="https://github.com/chain4travel/camino-wallet" target="_blank" rel="noopener noreferrer">Camino-Wallet</a>
-                    </li>
-                    <li class="flex items-center py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                        </svg>
-                        <a class="hover:underline" href="https://github.com/chain4travel/caminojs" target="_blank" rel="noopener noreferrer">CaminoJS</a>
-                    </li>
-                    <li class="flex items-center py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                        </svg>
-                        <a class="hover:underline" href="https://github.com/chain4travel/chain4travel-website" target="_blank" rel="noopener noreferrer">Chain4Travel Website</a>
-                    </li>
-                    <li class="flex items-center py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                        </svg>
-                        <a class="hover:underline" href="https://github.com/chain4travel/camino-website" target="_blank" rel="noopener noreferrer">Camino Network Website</a>
-                    </li>
-                </ol>
-                
-                <h5 class="mt-6 mb-2 font-bold">Web 3.0</h5>
-                <ol class="">
-                    <li class="flex items-center py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                        </svg>
-                        <a class="hover:underline" href="https://github.com/chain4travel/caminogo" target="_blank" rel="noopener noreferrer">Camino GO</a>
-                    </li>
-                    <li class="flex items-center py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                        </svg>
-                        <a class="hover:underline" href="https://github.com/chain4travel/camino-node" target="_blank" rel="noopener noreferrer">Camino Node</a>
-                    </li>
-                    <li class="flex items-center py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                        </svg>
-                        <a class="hover:underline" href="https://github.com/chain4travel/caminoethvm" target="_blank" rel="noopener noreferrer">Camino ETH VM</a>
-                    </li>
-                </ol>
-            </div>
+        </li>
+        <li class="col-span-12 md:col-span-6 xl:col-span-3 pl-20 p-4 md:p-12 border-4 border-gray-800 rounded-3xl relative overflow-hidden hover:bg-gray-700 transition-colors">
+            <div class="flex items-center justify-center shadow-gradient-sm rounded-full text-4xl w-28 h-28 font-bold flex-shrink-0 mb-4 absolute -left-6 -top-6 opacity-80">2</div>
+            <div class="relative z-10">Eventually the report will be forwarded to <a class="underline" href="http://hexens.io" target="_blank" rel="noopener noreferrer">hexens.io</a> security team to triage the submission and assign its severity and impact levels. In case any additional information is needed, you will be contacted.</div>
+        </li>
+        <li class="col-span-12 md:col-span-6 xl:col-span-3 pl-20 p-4 md:p-12 border-4 border-gray-800 rounded-3xl relative overflow-hidden hover:bg-gray-700 transition-colors">
+            <div class="flex items-center justify-center shadow-gradient-sm rounded-full text-4xl w-28 h-28 font-bold flex-shrink-0 mb-4 absolute -left-6 -top-6 opacity-80">3</div>
+            <div class="relative z-10">If the submission is eligible for a reward, we will notify the reporter and begin working on a fix</div>
+        </li>
+        <li class="col-span-12 md:col-span-6 xl:col-span-3 pl-20 p-4 md:p-12 border-4 border-gray-800 rounded-3xl relative overflow-hidden hover:bg-gray-700 transition-colors">
+            <div class="flex items-center justify-center shadow-gradient-sm rounded-full text-4xl w-28 h-28 font-bold flex-shrink-0 mb-4 absolute -left-6 -top-6 opacity-80">4</div>
+            <div class="relative z-10">Once the fix has been implemented, we will notify the reporter and request that they retest and confirm the fix. Once the fix is confirmed, we will issue a reward and publicly acknowledge the hunter (if they have chosen to be credited)</div>
+        </li>
+    </ul>
     
-            <div class="col-span-2 xl:col-span-1 bg-gray-800 text-gray-400 h-full p-6 lg:p-10 rounded-tr-3xl">
-                <h4>Out-of-scope vulnerabilities</h4>
-                <ol class="ml-4 list-decimal mt-6 text-gray-400">
-                    <li>Are from the rest of the repositories in https://github.com/chain4travel/ that are not mentioned in the scope</li>
-                    <li>Are a result of user error (e.g. weak passwords)</li>
-                    <li>Are disclosed publicly</li>
-                    <li>Are a result of automated tooling without a clear chain of exploitation</li>
-                    <li>Duplicate: have already been disclosed to us</li>
-                    <li>Affect outdated or unsupported version of the software</li>
-                    <li>Are related to physical security or social engineering</li>
-                </ol>
-            </div>
+    <hr class="my-12 border-gray-700">
 
-            <a href="#" class="col-span-2 flex items-center justify-center bg-primary hover:bg-caminoSky hover:text-gray-900 font-medium text-center w-full py-6 rounded-bl-3xl rounded-br-3xl">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                    <path d="M12 3l0 4"></path>
-                    <path d="M12 21l0 -3"></path>
-                    <path d="M3 12l4 0"></path>
-                    <path d="M21 12l-3 0"></path>
-                    <path d="M12 12l0 .01"></path>
-                </svg>
-                Submit vulnerabilities
-            </a>
+    <h2>Reward system</h2>
+    <p class="mb-6 text-gray-300">Rewards are at the discretion of our security team and will be based on the impact, severity and complexity of the vulnerability. Out-of-scope findings are not eligible for reward by default, but can be reviewed as set a severity after manual review.</p>
+
+    <div class="grid grid-cols-12 gap-1 items-start">
+
+        <div class="col-span-12 md:col-span-4 p-6 lg:p-10 bg-gray-600 h-full rounded-t-3xl md:rounded-l-3xl">
+            <h4 id="bugbounty-rewards">Your rewards</h4>
+            <div class="text-gray-300 text-sm mb-6">We offer the following rewards for eligible vulnerabilities:</div>
+            <ul>
+                <li class="flex items-center justify-between py-2 border-b border-gray-500">
+                    <div><span class="bg-cyan-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Very low priority</div><div class="font-mono">$50+</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-500">
+                    <div><span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Low priority</div><div class="font-mono">$100+</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-500">
+                    <div><span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Medium priority</div><div class="font-mono">$250+</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-500">
+                    <div><span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>High priority</div><div class="font-mono">$500+</div>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                    <div><span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Critical priority</div><div class="font-mono">$1000+</div>
+                </li>
+            </ul>
         </div>
-
-        <hr class="my-12 border-gray-900">
-
-        <h2 class="mb-6">Eligibility Criteria   (What we ask of You)</h2>
-
-        <div class="flex bg-primary/20 border border-primary rounded-3xl p-6 md:p-10">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 mr-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                <path d="M12 8l.01 0"></path>
-                <path d="M11 12l1 0l0 4l1 0"></path>
-            </svg>
-            <div>
-                <h3>In order to be eligible for a reward, you must:</h3>
-                <ul class="list-disc ml-4 mt-6 text-gray-300">
-                    <li>Be the first person to report the vulnerability to us</li>
-                    <li>Provide sufficient information for us to reproduce and fix the issue</li>
-                    <li>In case of High and Critical severity vulnerabilities introduce a PoC (Proof of Concept) on a local environment mimicking the production˜</li>
-                    <li>Not be a current or former employee of Chain4Travel</li>
-                    <li>Pass a KYC when required</li>
-                </ul>
-            </div>
+    
+        <div class="col-span-12 md:col-span-4 p-6 lg:p-10 bg-gray-700 h-full">
+            <h4>Web 2.0 severities</h4>
+            <div class="text-gray-300 text-sm mb-6">We offer the following rewards for Web 2.0 vulnerabilities:</div>
+            <ul>
+                <li class="flex items-center justify-between py-2 border-b border-gray-600">
+                    <div><span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Low</div><div class="text-sm font-mono">> 250 USD FIAT + 5000 CAM</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-600">
+                    <div><span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Medium</div><div class="text-sm font-mono">> 500 USD FIAT + 10000 CAM</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-600">
+                    <div><span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>High</div><div class="text-sm font-mono">> 2500 USD FIAT + 30000 CAM</div>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                    <div><span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Critical</div><div class="text-sm font-mono">> 5000 USD FIAT + 50000 CAM</div>
+                </li>
+            </ul>
         </div>
-        
-        <hr class="my-12 border-gray-900">
-
-        <h2>Important notices</h2>
-
-        <div class="font-headline text-2xl mt-6 font-medium mb-2"><span class="text-caminoSky">1.</span> Non-disclosure</div>
-        <p class="text-gray-300">We request that you do not disclose the vulnerability to any third parties until it has been fixed and we have had a chance to notify any affected parties. We will keep your submission confidential, but please note that we may need to share it with third parties (e.g. service providers) in order to fix the issue.</p>
-
-        <div class="font-headline text-2xl mt-6 font-medium mb-2"><span class="text-caminoSky">2.</span> Responsible disclosure</div>
-        <p class="text-gray-300">We ask that all submissions follow a responsible disclosure policy. This means that you give us a reasonable amount of time to fix the vulnerability before disclosing it to the public. We will make every effort to fix the issue as soon as possible.</p>
-
-        <div class="font-headline text-2xl mt-6 font-medium mb-2"><span class="text-caminoSky">3.</span> Response time</div>
-        <p class="text-gray-300">We will do our best to respond to submissions as quickly as possible. Our goal is to respond to all submissions within 14 business days. If your submission is eligible for a reward, we will notify you and begin working on a fix as soon as possible.</p>
-
-        <div class="font-headline text-2xl mt-6 font-medium mb-2"><span class="text-caminoSky">4.</span> Changes to the program</div>
-        <p class="text-gray-300">We reserve the right to change the terms of this bug bounty program at any time. Any changes will be posted on this page.</p>
-        
-        <hr class="my-12 border-gray-900">
-
-        <h2>Any Questions?</h2>
-        <p class="text-gray-300">If you have any questions about this program, please don’t hesitate to contact us at <a class="underline hover:text-primary" href="mailto:hello@chain4travel.com">hello@chain4travel.com</a>.</p>
-
+    
+        <div class="col-span-12 md:col-span-4 p-6 lg:p-10 bg-gray-800 h-full rounded-b-3xl md:rounded-r-3xl">
+            <h4>Web 3.0 severities</h4>
+            <div class="text-gray-300 text-sm mb-6">We offer the following rewards for Web 3.0 vulnerabilities:</div>
+            <ul>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div><span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Low</div><div class="text-sm font-mono">> 2500 USD FIAT + 75000 CAM</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div><span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Medium</div><div class="text-sm font-mono">> 5000 USD FIAT + 350000 CAM</div>
+                </li>
+                <li class="flex items-center justify-between py-2 border-b border-gray-700">
+                    <div><span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>High</div><div class="text-sm font-mono">> 25000 USD FIAT + 750000 CAM</div>
+                </li>
+                <li class="flex items-center justify-between py-2">
+                    <div><span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-2"></span>Critical</div><div class="text-sm font-mono">> 50000 USD FIAT + 1000000 CAM</div>
+                </li>
+            </ul>
+        </div>
     </div>
+    
+    <hr class="my-12 border-gray-700">
 
-    <div class="p-12 rounded-3xl shadow-gradient-sm mt-16 md:mt-0 md:max-w-[500px]">
+    <h2 class="mt-12 mb-6" id="bugbounty-scope">The Scope</h2>
+    <div class="grid grid-cols-12 items-center gap-1">
+        <div class="col-span-12 xl:col-span-4 h-full bg-secondary p-6 lg:p-10 rounded-t-3xl md:rounded-tl-3xl">
+            <h4 class="mb-6">Hunt Web 2.0 vulnerabilities</h4>
+            <ol class="">
+                <li class="flex items-center p-4 bg-gray-900/25 mb-1 rounded-t-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                    <a class="hover:underline" href="https://github.com/chain4travel/camino-wallet" target="_blank" rel="noopener noreferrer">Camino-Wallet</a>
+                </li>
+                <li class="flex items-center p-4 bg-gray-900/25 mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                    <a class="hover:underline" href="https://github.com/chain4travel/caminojs" target="_blank" rel="noopener noreferrer">CaminoJS</a>
+                </li>
+                <li class="flex items-center p-4 bg-gray-900/25 mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                    <a class="hover:underline" href="https://github.com/chain4travel/chain4travel-website" target="_blank" rel="noopener noreferrer">Chain4Travel Website</a>
+                </li>
+                <li class="flex items-center p-4 bg-gray-900/25 mb-1 rounded-b-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                    <a class="hover:underline" href="https://github.com/chain4travel/camino-website" target="_blank" rel="noopener noreferrer">Camino Network Website</a>
+                </li>
+            </ol>
+        </div>
 
-        <a href="#" class="flex items-center justify-center bg-primary hover:bg-caminoSky hover:text-gray-900 font-medium text-center w-full py-6 rounded-3xl mb-6">
+        <div class="col-span-12 xl:col-span-4 h-full bg-secondary/50 p-6 lg:p-10  ">
+            <h4 class="mb-6">Hunt Web 3.0 vulnerabilities</h4>
+            <ol class="">
+                <li class="flex items-center p-4 bg-white/10 mb-1 rounded-t-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                    <a class="hover:underline" href="https://github.com/chain4travel/caminogo" target="_blank" rel="noopener noreferrer">Camino GO</a>
+                </li>
+                <li class="flex items-center p-4 bg-white/10 mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                    <a class="hover:underline" href="https://github.com/chain4travel/camino-node" target="_blank" rel="noopener noreferrer">Camino Node</a>
+                </li>
+                <li class="flex items-center p-4 bg-white/10 mb-1 rounded-b-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                    <a class="hover:underline" href="https://github.com/chain4travel/caminoethvm" target="_blank" rel="noopener noreferrer">Camino ETH VM</a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="col-span-12 xl:col-span-4 h-full bg-secondary/25 p-6 lg:p-10 md:rounded-tr-3xl">
+            <h4>Out-of-scope vulnerabilities</h4>
+            <ol class="ml-4 list-decimal mt-6 text-purple-300">
+                <li>Are from the rest of the repositories in https://github.com/chain4travel/ that are not mentioned in the scope</li>
+                <li>Are a result of user error (e.g. weak passwords)</li>
+                <li>Are disclosed publicly</li>
+                <li>Are a result of automated tooling without a clear chain of exploitation</li>
+                <li>Duplicate: have already been disclosed to us</li>
+                <li>Affect outdated or unsupported version of the software</li>
+                <li>Are related to physical security or social engineering</li>
+            </ol>
+        </div>
+
+        <a href="#" class="col-span-12 flex items-center justify-center bg-gradient-to-r from-primary to-secondary hover:bg-caminoSky hover:text-gray-900 font-medium text-center w-full py-6 rounded-bl-3xl rounded-br-3xl">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
@@ -218,131 +197,60 @@ layout:         default
             </svg>
             Submit vulnerabilities
         </a>
+    </div>
 
-        <div class="mb-8">
-            <h4 id="bugbounty-rewards">Your rewards</h4>
-            <p class="text-gray-300 text-sm my-2">We offer the following rewards for eligible vulnerabilities:</p>
-            <ul>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-cyan-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Very low priority
-                    </div>
-                    <div class="font-mono">$50+</div>
-                </li>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Low priority
-                    </div>
-                    <div class="font-mono">$100+</div>
-                </li>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Medium priority
-                    </div>
-                    <div class="font-mono">$250+</div>
-                </li>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        High priority
-                    </div>
-                    <div class="font-mono">$500+</div>
-                </li>
-                <li class="flex items-center justify-between py-2">
-                    <div>
-                        <span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Critical priority
-                    </div>
-                    <div class="font-mono">$1000+</div>
-                </li>
-            </ul>
-        </div>
+    <hr class="my-12 border-gray-700">
 
+    <h2 class="mb-6">Eligibility Criteria</h2>
+
+    <div class="flex bg-primary/20 border border-primary rounded-3xl p-6 md:p-10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 mr-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+            <path d="M12 8l.01 0"></path>
+            <path d="M11 12l1 0l0 4l1 0"></path>
+        </svg>
         <div>
-            <h4 class="mb-2">Web 2.0 severities</h4>
-            <ul>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Low
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 250 USD FIAT + 5000 CAM
-                    </div>
-                </li>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Medium
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 500 USD FIAT + 10000 CAM
-                    </div>
-                </li>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        High
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 2500 USD FIAT + 30000 CAM
-                    </div>
-                </li>
-                <li class="flex items-center justify-between py-2">
-                    <div>
-                        <span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Critical
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 5000 USD FIAT + 50000 CAM
-                    </div>
-                </li>
+            <h3>In order to be eligible for a reward, you must:</h3>
+            <ul class="list-disc ml-4 mt-6 text-gray-300">
+                <li>Be the first person to report the vulnerability to us</li>
+                <li>Provide sufficient information for us to reproduce and fix the issue</li>
+                <li>In case of High and Critical severity vulnerabilities introduce a PoC (Proof of Concept) on a local environment mimicking the production˜</li>
+                <li>Not be a current or former employee of Chain4Travel</li>
+                <li>Pass a KYC when required</li>
             </ul>
-
-            <h4 class="mt-8 mb-2">Web 3.0 severities</h4>
-            <ul>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-green-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Low
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 2500 USD FIAT + 75000 CAM
-                    </div>
-                </li>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-yellow-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Medium
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 5000 USD FIAT + 350000 CAM
-                    </div>
-                </li>
-                <li class="flex items-center justify-between py-2 border-b border-gray-700">
-                    <div>
-                        <span class="bg-orange-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        High
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 25000 USD FIAT + 750000 CAM
-                    </div>
-                </li>
-                <li class="flex items-center justify-between py-2">
-                    <div>
-                        <span class="bg-red-500 w-2 h-2 rounded-full inline-block relative -top-px mr-1"></span>
-                        Critical
-                    </div>
-                    <div class="text-sm font-mono">
-                        > 50000 USD FIAT + 1000000 CAM
-                    </div>
-                </li>
-            </ul>
-
-            <p class="text-gray-300 text-sm mt-6">Rewards are at the discretion of our security team and will be based on the impact, severity and complexity of the vulnerability. Out-of-scope findings are not eligible for reward by default, but can be reviewed as set a severity after manual review.</p>
         </div>
     </div>
+    
+    <hr class="my-12 border-gray-700">
+
+    <h2 class="mb-6">Important notices</h2>
+
+    <details class="border-b border-gray-700 pb-4">
+        <summary class="cursor-pointer hover:text-primary font-headline text-2xl mt-6 font-medium"><span class="text-caminoSky mr-2">1.</span> Non-disclosure</summary>
+        <p class="text-gray-300 mt-4">
+            We request that you do not disclose the vulnerability to any third parties until it has been fixed and we have had a chance to notify any affected parties. We will keep your submission confidential, but please note that we may need to share it with third parties (e.g. service providers) in order to fix the issue.
+        </p>
+    </details>
+    <details class="border-b border-gray-700 pb-4">
+        <summary class="cursor-pointer hover:text-primary font-headline text-2xl mt-6 font-medium"><span class="text-caminoSky mr-2">2.</span> Responsible disclosure</summary>
+        <p class="text-gray-300 mt-4">
+            We ask that all submissions follow a responsible disclosure policy. This means that you give us a reasonable amount of time to fix the vulnerability before disclosing it to the public. We will make every effort to fix the issue as soon as possible.
+        </p>
+    </details>
+    <details class="border-b border-gray-700 pb-4">
+        <summary class="cursor-pointer hover:text-primary font-headline text-2xl mt-6 font-medium"><span class="text-caminoSky mr-2">3.</span> Response time</summary>
+        <p class="text-gray-300 mt-4">
+            We will do our best to respond to submissions as quickly as possible. Our goal is to respond to all submissions within 14 business days. If your submission is eligible for a reward, we will notify you and begin working on a fix as soon as possible.
+        </p>
+    </details>
+    <details class="pb-4">
+        <summary class="cursor-pointer hover:text-primary font-headline text-2xl mt-6 font-medium"><span class="text-caminoSky mr-2">4.</span> Changes to the program</summary>
+        <p class="text-gray-300 mt-4">
+            We reserve the right to change the terms of this bug bounty program at any time. Any changes will be posted on this page.
+        </p>
+    </details>
+
+    <h2 class="mt-12">Any Questions?</h2>
+    <p class="text-gray-300">If you have any questions about this program, please don’t hesitate to contact us at <a class="underline hover:text-primary" href="mailto:hello@chain4travel.com">hello@chain4travel.com</a>.</p>
 </section>
