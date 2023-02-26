@@ -160,14 +160,14 @@ h3 { @apply text-xl md:text-3xl }
 h4 { @apply text-lg md:text-2xl }
 
 p+p {
-  @apply mt-4 md:mt-8
+  @apply mt-4 md:mt-6
 }
 
 h1+p, h2+p, h3+p, h4+p,
 h1+h2, h1+h3, h1+h4,
 h2+h3, h2+h4,
 h3+h4 {
-  @apply mt-4 md:mt-8
+  @apply mt-4 md:mt-6
 }
 
 /* COOKIE BANNER */
