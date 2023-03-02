@@ -14,13 +14,6 @@
         "col": "1"
     },
     {
-        "text": "At TUI, we were early adopters of blockchain technology and have already developed initial applications in the hotel sector. Chain4Travel offers new opportunities for our distribution and travel production - thanks to its technology and network. Bringing the travel industry together with blockchain technology is the right approach to drive innovation in the industry and keep transaction costs low.",
-        "person": "Frank Rosenberger",
-        "slug": "frankrosenberger",
-        "company": "Group CIO & CEO Future Markets TUI Group",
-        "col": "2"
-    },
-    {
         "text": "With Camino, Chain4Travel delivers a completely new approach to process structuring in tourism. We at FTI are very excited about the first dApps and benefits of a blockchain-based data protection approach. Both production and distribution of travel products are being fundamentally rethought here; great to be a part of it.",
         "person": "Ralph Schiller",
         "slug": "ralphschiller",
@@ -48,6 +41,13 @@
         "person": "Tom Dillon",
         "slug": "thomasdillon",
         "company": "CEO A3M Global Monitoring GmbH",
+        "col": "2"
+    },
+    {
+        "text": "At TUI, we were early adopters of blockchain technology and have already developed initial applications in the hotel sector. Chain4Travel offers new opportunities for our distribution and travel production - thanks to its technology and network. Bringing the travel industry together with blockchain technology is the right approach to drive innovation in the industry and keep transaction costs low.",
+        "person": "Frank Rosenberger",
+        "slug": "frankrosenberger",
+        "company": "Ex Group CIO & CEO Future Markets TUI Group",
         "col": "2"
     },
     {
