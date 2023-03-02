@@ -20,9 +20,19 @@
         "url": "https://www.aerticket.de/en"
     },
     {
+        "name": "Airxelerate",
+        "slug": "airxelerate",
+        "url": "https://www.airxelerate.com/"
+    },
+    {
         "name": "Alpitour",
         "slug": "alpitour",
         "url": "https://www.alpitourworld.com/"
+    },
+    {
+        "name": "Asian Trails",
+        "slug": "asiantrails",
+        "url": "https://www.asiantrails.travel"
     },
     {
         "name": "Avra Tours",
@@ -85,6 +95,16 @@
         "url": "https://www.cfmmedia.de/"
     },
     {
+        "name": "CodeGen",
+        "slug": "codegen",
+        "url": "https://codegen.co.uk/"
+    },
+    {
+        "name": "compecTA",
+        "slug": "compecTA",
+        "url": "https://www.compecta.com/"
+    },
+    {
         "name": "DataArt",
         "slug": "dataart",
         "url": "https://www.dataart.com/"
@@ -103,6 +123,11 @@
         "name": "e-confirm GmbH",
         "slug": "e-confirm",
         "url": "https://www.e-confirm.de/"
+    },
+    {
+        "name": "Eniyan",
+        "slug": "eniyan",
+        "url": "https://eniyan.de/"
     },
     {
         "name": "Ennea Capital Partners",
@@ -138,6 +163,11 @@
         "name": "Falkensteiner",
         "slug": "falkensteiner",
         "url": "https://www.falkensteiner.com/en"
+    },
+    {
+        "name": "Feratel",
+        "slug": "feratel",
+        "url": "https://www.feratel.at/"
     },
     {
         "name": "Fitbooktravel",
@@ -220,6 +250,11 @@
         "url": "https://www.hurra.com/en/"
     },
     {
+        "name": "Immutable",
+        "slug": "immutable",
+        "url": "https://immutableinsight.com/en"
+    },
+    {
         "name": "Hürzeler Bike Holiday",
         "slug": "huerzeler",
         "url": "https://www.huerzeler.com/en"
@@ -268,6 +303,16 @@
         "name": "mc2.ventures",
         "slug": "mc2",
         "url": "https://www.mc2.ventures/"
+    },
+    {
+        "name": "MeinReisebüro24",
+        "slug": "meinreisebuero24",
+        "url": "https://www.meinreisebuero24.com/"
+    },
+    {
+        "name": "MGC Consulting",
+        "slug": "mgconsulting",
+        "url": "http://mgc-frankfurt.de/"
     },
     {
         "name": "MIDOCO Group",
@@ -345,6 +390,21 @@
         "url": "https://www.riversoft.com.tw/"
     },
     {
+        "name": "SAN",
+        "slug": "san",
+        "url": "https://www.santsg.com/en/"
+    },
+    {
+        "name": "Schauinsland",
+        "slug": "schauinsland",
+        "url": "https://www.schauinsland-reisen.de/"
+    },
+    {
+        "name": "Servicereisen",
+        "slug": "servicereisen",
+        "url": "https://www.servicereisen.de"
+    },
+    {
         "name": "SH Financial",
         "slug": "shfinancial",
         "url": "https://sh-financial.com/"
@@ -378,6 +438,11 @@
         "name": "TraSo GmbH",
         "slug": "traso",
         "url": "https://www.traso.de/"
+    },
+    {
+        "name": "Triend",
+        "slug": "triend",
+        "url": "https://triend.io/"
     },
     {
         "name": "TUI",
