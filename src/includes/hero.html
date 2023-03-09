@@ -20,5 +20,10 @@
             {{ heroText }}
         </p>
         {% endif %}
+        {% if heroButtonLabel %}
+        <a href="{{ heroButtonUrl }}" data-sal="zoom-out" class="button mt-4">
+            {{ heroButtonLabel }}
+        </a>
+        {% endif %}
     </div>
 </div>
