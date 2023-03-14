@@ -93,7 +93,7 @@ We have implemented appropriate technical and organizational security measures d
 
 We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent's use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable, measures to promptly delete such data from our records.
 
-If you become aware of any data we have collected from children under age 18, please contact us at hello@chain4travel.com
+If you become aware of any data we have collected from children under age 18, please contact us at hello@camino.network
 
 ## What happens in case of data breach?
 
@@ -184,5 +184,5 @@ We may update this Cookie Policy from time to time in order to reflect, for exam
 
 ## Where can I get further information?
 
-If you have any questions about our use of cookies or other technologies, please email us at <a href="mailto:hello@chain4travel.com">hello@chain4travel.com</a>.
+If you have any questions about our use of cookies or other technologies, please email us at <a href="mailto:hello@camino.network">hello@camino.network</a>.
 </div>

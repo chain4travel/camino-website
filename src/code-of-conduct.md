@@ -46,7 +46,7 @@ Harmful content: Every person contributes to building a kind, respectful communi
 
 Bugs: Please understand that this network is, despite its success, an experiment with potential flaws, so it’s appreciated that community members help report any sort of exploits directly to the team before sharing publicly. 
 
-Please submit your reports to <a href="mailto:hello@chain4travel.com">hello@chain4travel.com</a>.
+Please submit your reports to <a href="mailto:hello@camino.network">hello@camino.network</a>.
 
 ## Conclusion
 We think that our Code of Conduct is a good first step towards making our community more inclusive. We will continue to refine it and make it even better in the future, but we're excited about what we've laid out here today!
