@@ -113,6 +113,13 @@ section {
     -4px -4px 32px 0 rgba(20,158,237, .75);
 }
 
+.shadow-gradient-out {
+  border: 1px solid rgba(255,255,255,.3);
+  box-shadow:
+    2px 2px 16px 0 rgba(177, 67, 252, .75),
+    -2px -2px 16px 0 rgba(20,158,237, .75);
+}
+
 .shadow-gradient-sm {
   border: 1px solid rgba(255,255,255,.25);
   box-shadow:
