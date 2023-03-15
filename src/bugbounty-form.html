@@ -1,0 +1,74 @@
+---
+title:          Bug Bounty Submission
+description:    Become a bug bounty hunter for the world’s web3 travel ecosystem.
+layout:         default
+permalink:      "/bugbounty-submission/"
+---
+
+<!-- Hero Start -->
+    {% set heroTitle = "Submit vulnerabilities" %}
+    {% set heroSubtitle = "" %}
+    {% set heroText = "Thank you for tracing down a vulnerability. Enter your submission below, and we will get back to you as soon as possible." %}
+    {% set heroBgImage = "bugbounty" %}
+    {% set heroButtonUrl = "/bugbounty"%}
+    {% set heroButtonLabel = "Learn more"%}
+    {% include "hero.html" %}
+<!-- Hero End -->
+
+<section class="max-w-screen-md mx-auto pt-0">
+    <form name="bugBountyForm" method="POST" action="/contact-success" data-netlify="true" netlify-honeypot="bot-field" class="">
+        <p class="hidden">
+            <label>
+                Don't fill this out if you're human: <input name="bot-field" />
+            </label>
+        </p>
+        <p class="">
+            <label class="">Name or alias:
+                <input required placeholder="Your name ..." type="text" name="name" class="placeholder-white0 bg-gray-800 border border-gray-700 rounded block w-full mt-1 focus:ring-2 text-white focus:ring-offset-gray-900 focus:ring-secondary" />
+            </label>
+        </p>
+        <p class="mt-6">
+            <label class="">Your e-mail:
+                <input required placeholder="Your email address ..." type="email" name="email" class="placeholder-white0 bg-gray-800 border border-gray-700 rounded block w-full mt-1 focus:ring-2 text-white focus:ring-offset-gray-900 focus:ring-secondary" />
+            </label>
+        </p>
+        <p class="mt-6">
+            <label class="">Detailed description of the vulnerability:
+                <textarea required placeholder="Your question ..." name="description" class="resize-none h-36 placeholder-white0 bg-gray-800 border border-gray-700 rounded block w-full mt-1 focus:ring-2 text-white focus:ring-offset-gray-900 focus:ring-secondary"></textarea>
+            </label>
+        </p>
+        <p class="mt-6">
+            <label class="">Steps to reproduce the vulnerability:
+                <textarea required placeholder="Your question ..." name="steps to reproduce" class="resize-none h-36 placeholder-white0 bg-gray-800 border border-gray-700 rounded block w-full mt-1 focus:ring-2 text-white focus:ring-offset-gray-900 focus:ring-secondary"></textarea>
+            </label>
+        </p>
+        <p class="mt-6">
+            <label class="">Any relevant PoC (proof of concept) code:
+                <textarea required placeholder="Your question ..." name="POC code" class="resize-none h-36 placeholder-white0 bg-gray-800 border border-gray-700 text-mono rounded block w-full mt-1 focus:ring-2 text-white focus:ring-offset-gray-900 focus:ring-secondary"></textarea>
+            </label>
+        </p>
+        <p class="mt-6">
+            <label>
+                <span>Add file:</span>
+                <input class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-gray-700 bg-gray-800 bg-clip-padding px-3 text-base font-normal text-gray-100 outline-none transition duration-300 ease-in-out file:-mx-3 file:-my-1.5 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-primary file:px-3 file:py-4 file:text-white file:transition file:duration-150 file:ease-in-out file:[margin-inline-end:0.75rem] file:[border-inline-end-width:1px] hover:file:bg-caminoSky hover:file:text-gray-900 focus:border-primary focus:bg-white focus:text-gray-700 focus:shadow-[0_0_0_1px] focus:shadow-primary focus:outline-none dark:bg-transparent dark:text-gray-200 dark:focus:bg-transparent" name="files" type="file" multiple />
+            </label>
+        </p>
+        <p class="mt-6">
+            <label class="">Remediation recommendations:
+                <textarea required placeholder="Your question ..." name="recommendations" class="resize-none h-36 placeholder-white0 bg-gray-800 border border-gray-700 rounded block w-full mt-1 focus:ring-2 text-white focus:ring-offset-gray-900 focus:ring-secondary"></textarea>
+            </label>
+        </p>
+        <p class="mt-6">
+            <label class="">Any additional notes:
+                <textarea required placeholder="Your question ..." name="additional notes" class="resize-none h-36 placeholder-white0 bg-gray-800 border border-gray-700 rounded block w-full mt-1 focus:ring-2 text-white focus:ring-offset-gray-900 focus:ring-secondary"></textarea>
+            </label>
+        </p>
+        <p class="mt-6">
+            <div class="flex text-base">
+                <input required type="checkbox" name="agreement" id="agreement" class="mt-2 rounded w-6 h-6 bg-dark border-primary text-primary focus:ring-primary focus:ring-offset-dark cursor-pointer">
+                <label for="agreement" class="ml-4 text-gray-400">I agree to the <a class="underline" href="/privacy-policy">privacy policy</a> and I consent to being contacted by Camino Network via email. I agree to the storage of my transmitted data for the required period of time.</label>
+            </div>
+        </p>
+        <button class="button mt-8 w-full" type="submit">Send</button>
+    </form>
+</section>

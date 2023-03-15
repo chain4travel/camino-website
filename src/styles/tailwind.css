@@ -66,7 +66,7 @@ section {
 }
 
 .button {
-  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-blue-600 hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
+  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-primary hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
 }
 
 .button-secondary {
@@ -173,7 +173,7 @@ h3+h4 {
 /* COOKIE BANNER */
 
 .termsfeed-com---palette-dark.termsfeed-com---nb {
-  @apply bg-caminoSky rounded-tl-3xl !important;
+  @apply bg-caminoSky rounded-t-3xl !important;
 }
 
 .cc-nb-main-container {
@@ -206,8 +206,50 @@ h3+h4 {
   @apply bg-gray-900/10 text-gray-900 !important;
 }
 
-@media screen and (max-width: 600px) {
+.termsfeed-com---nb-simple {
+  max-width: 100% !important;
+}
+
+@media screen and (min-width: 600px) {
   .termsfeed-com---nb-simple {
-    max-width: 100% !important;
+    max-width: 70% !important;
   }
+}
+
+@media screen and (min-width: 980px) {
+  .termsfeed-com---nb-simple {
+    max-width: 40% !important;
+  }
+}
+
+.cc-pc-container {
+  @apply rounded-2xl overflow-hidden !important
+}
+
+.cc-pc-head,
+.cc-cp-body-tabs,
+.cc-cp-foot {
+  @apply bg-gray-800 !important;
+}
+
+.cc-pc-container,
+.cc-cp-body,
+.termsfeed-com---palette-dark .cc-cp-body .cc-cp-body-content {
+  @apply bg-gray-900 !important;
+}
+
+.termsfeed-com---palette-dark .cc-cp-body-tabs .cc-cp-body-tabs-item {
+  @apply bg-gray-800 border-gray-700 !important;
+}
+
+.termsfeed-com---palette-dark .cc-cp-body-tabs .cc-cp-body-tabs-item[active="true"] {
+  @apply bg-primary !important;
+}
+
+.termsfeed-com---palette-dark .cc-cp-body-tabs .cc-cp-body-tabs-item:not([active="true"]) .cc-cp-body-tabs-item-link {
+  @apply text-gray-400 !important
+}
+
+.termsfeed-com---palette-dark .cc-cp-foot-save {
+  @apply bg-primary text-white !important
 }

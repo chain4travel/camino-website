@@ -45,11 +45,6 @@
         "url": "https://axisdata.net/"
     },
     {
-        "name": "BD4",
-        "slug": "bd4",
-        "url": "https://bd4.ai/"
-    },
-    {
         "name": "Biztribution",
         "slug": "biztribution",
         "url": "https://www.biztribution.net/"
@@ -115,6 +110,11 @@
         "url": "https://www.dertouristik.com/en/?lang=EN&rdeLocaleAttr=EN"
     },
     {
+        "name": "Dreamtime",
+        "slug": "dreamtime",
+        "url": "https://www.dreamtime.ch/"
+    },
+    {
         "name": "Dtravel",
         "slug": "dtravel",
         "url": "https://dtravel.com/"
@@ -123,6 +123,11 @@
         "name": "e-confirm GmbH",
         "slug": "e-confirm",
         "url": "https://www.e-confirm.de/"
+    },
+    {
+        "name": "Ekoios",
+        "slug": "ekoios",
+        "url": "https://ekoios.vn"
     },
     {
         "name": "Eniyan",
@@ -142,7 +147,7 @@
     {
         "name": "Eurowings",
         "slug": "eurowings",
-        "url": "https://www.eurowings.com/"
+        "url": "https://www.eurowings.com/en.html"
     },
     {
         "name": "Eurowings Holidays",
@@ -275,14 +280,24 @@
         "url": "https://www.involatus.com/"
     },
     {
+        "name": "ISO Travel Solutions",
+        "slug": "iso",
+        "url": "https://www.isotravel.com/en"
+    },
+    {
+        "name": "IT-kompass",
+        "slug": "itkompass",
+        "url": "https://www.it-kompass.com/en/"
+    },
+    {
         "name": "IT-Square",
         "slug": "itsquare",
         "url": "https://itsquare.de/"
     },
     {
-        "name": "ISO Travel Solutions",
-        "slug": "iso",
-        "url": "https://www.isotravel.com/en"
+        "name": "Juniper",
+        "slug": "juniper",
+        "url": "https://ejuniper.com/en/"
     },
     {
         "name": "Deutsche Lufthansa AG",
@@ -365,6 +380,11 @@
         "url": "https://www.orchestra.eu/en/"
     },
     {
+        "name": "openGeeksLab",
+        "slug": "opengeekslab",
+        "url": "https://opengeekslab.com/"
+    },
+    {
         "name": "OTS",
         "slug": "ots",
         "url": "https://otsglobe.com/"
@@ -395,19 +415,29 @@
         "url": "https://www.santsg.com/en/"
     },
     {
+        "name": "Saltours",
+        "slug": "saltours",
+        "url": "https://saltours.travel/"
+    },
+    {
         "name": "Schauinsland",
         "slug": "schauinsland",
         "url": "https://www.schauinsland-reisen.de/"
     },
     {
-        "name": "Servicereisen",
-        "slug": "servicereisen",
-        "url": "https://www.servicereisen.de"
+        "name": "Schmetterling",
+        "slug": "schmetterling",
+        "url": "https://schmetterling.de/"
     },
     {
         "name": "SH Financial",
         "slug": "shfinancial",
         "url": "https://sh-financial.com/"
+    },
+    {
+        "name": "Studio5 Liguria",
+        "slug": "studio5lab",
+        "url": "https://studio5.it/"
     },
     {
         "name": "Sugartrends",
@@ -438,6 +468,11 @@
         "name": "TraSo GmbH",
         "slug": "traso",
         "url": "https://www.traso.de/"
+    },
+    {
+        "name": "Travel Ledger",
+        "slug": "travelledger",
+        "url": "https://www.travelledger.org/"
     },
     {
         "name": "Triend",
