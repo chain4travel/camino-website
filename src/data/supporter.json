@@ -1,15 +1,5 @@
 [
     {
-        "name": "51Nodes",
-        "slug": "51nodes",
-        "url": "https://www.51nodes.io/"
-    },
-    {
-        "name": "a-five",
-        "slug": "a-five",
-        "url": "https://www.linkedin.com/company/a-five-business-solutions-network/"
-    },
-    {
         "name": "A3M Global Monitoring",
         "slug": "a3m",
         "url": "https://www.global-monitoring.com/en/"
@@ -40,21 +30,6 @@
         "url": "https://www.avratours.gr/"
     },
     {
-        "name": "Axis Data",
-        "slug": "axis",
-        "url": "https://axisdata.net/"
-    },
-    {
-        "name": "Biztribution",
-        "slug": "biztribution",
-        "url": "https://www.biztribution.net/"
-    },
-    {
-        "name": "Beereal",
-        "slug": "beereal",
-        "url": "https://beerealit.com/"
-    },
-    {
         "name": "Bentour",
         "slug": "bentour",
         "url": "https://www.bentour.de/"
@@ -70,24 +45,14 @@
         "url": "https://bewotec.de/"
     },
     {
-        "name": "Beyond Bookings",
-        "slug": "beyondbookings",
-        "url": "https://beyond-bookings.com/"
-    },
-    {
-        "name": "Busy Rooms",
-        "slug": "busyrooms",
-        "url": "https://www.busy-rooms.com/en"
-    },
-    {
-        "name": "CarbonClick",
-        "slug": "carbonclick",
-        "url": "https://www.carbonclick.com/"
-    },
-    {
         "name": "CFM_media GmbH",
         "slug": "cfm-media",
         "url": "https://www.cfmmedia.de/"
+    },
+    {
+        "name": "Chain4Travel",
+        "slug": "chain4travel",
+        "url": "https://chain4travel.com/"
     },
     {
         "name": "CodeGen",
@@ -98,11 +63,6 @@
         "name": "compecTA",
         "slug": "compecTA",
         "url": "https://www.compecta.com/"
-    },
-    {
-        "name": "DataArt",
-        "slug": "dataart",
-        "url": "https://www.dataart.com/"
     },
     {
         "name": "DER Touristik",
@@ -125,19 +85,9 @@
         "url": "https://www.e-confirm.de/"
     },
     {
-        "name": "Ekoios",
-        "slug": "ekoios",
-        "url": "https://ekoios.vn"
-    },
-    {
         "name": "Eniyan",
         "slug": "eniyan",
         "url": "https://eniyan.de/"
-    },
-    {
-        "name": "Ennea Capital Partners",
-        "slug": "ennea",
-        "url": "https://www.ennea.vc/"
     },
     {
         "name": "Enwoke",
@@ -150,21 +100,6 @@
         "url": "https://www.eurowings.com/en.html"
     },
     {
-        "name": "Eurowings Holidays",
-        "slug": "eurowingsholidays",
-        "url": "https://holidays.eurowings.com/de-de"
-    },
-    {
-        "name": "EOV",
-        "slug": "eov",
-        "url": "https://embarkingonvoyage.com/"
-    },
-    {
-        "name": "Event Scouts",
-        "slug": "eventscouts",
-        "url": "https://event-scouts.com/"
-    },
-    {
         "name": "Falkensteiner",
         "slug": "falkensteiner",
         "url": "https://www.falkensteiner.com/en"
@@ -175,14 +110,9 @@
         "url": "https://www.feratel.at/"
     },
     {
-        "name": "Fitbooktravel",
-        "slug": "fitbooktravel",
-        "url": "https://fitbooktravel.com/"
-    },
-    {
-        "name": "freshcells systems engineering GmbH",
-        "slug": "freshcells",
-        "url": "https://freshcells.de/"
+        "name": "Fraport AG",
+        "slug": "fraport",
+        "url": "https://www.fraport.com/de.html"
     },
     {
         "name": "FTI",
@@ -190,14 +120,9 @@
         "url": "https://www.fti.de/"
     },
     {
-        "name": "Fraport AG",
-        "slug": "fraport",
-        "url": "https://www.fraport.com/de.html"
-    },
-    {
-        "name": "Gerrit Halfmann Design",
-        "slug": "gerrithalfmann",
-        "url": "https://gerrithalfmann.com/"
+        "name": "freshcells systems engineering GmbH",
+        "slug": "freshcells",
+        "url": "https://freshcells.de/"
     },
     {
         "name": "Giata",
@@ -205,24 +130,9 @@
         "url": "https://www.giata.com/en/"
     },
     {
-        "name": "GP Solutions",
-        "slug": "gpsolutions",
-        "url": "https://www.software.travel/"
-    },
-    {
         "name": "Hahn Air",
         "slug": "hahnair",
         "url": "https://www.hahnair.com/en"
-    },
-    {
-        "name": "Greenfield Strategy",
-        "slug": "greenfield",
-        "url": "http://greenfieldstrategy.biz/"
-    },
-    {
-        "name": "hiberus",
-        "slug": "hiberus",
-        "url": "https://www.hiberus.com/"
     },
     {
         "name": "hlx.com",
@@ -230,19 +140,9 @@
         "url": "https://www.hlx.com/de-de"
     },
     {
-        "name": "Holiday Pirates",
-        "slug": "holidaypirates",
-        "url": "https://www.holidaypirates.com/"
-    },
-    {
         "name": "Holidaycheck",
         "slug": "holidaycheck",
         "url": "https://www.holidaycheck.de/"
-    },
-    {
-        "name": "Holidays AG",
-        "slug": "Holidaysag",
-        "url": "https://holidays.ch/"
     },
     {
         "name": "Hotelplan",
@@ -285,11 +185,6 @@
         "url": "https://www.isotravel.com/en"
     },
     {
-        "name": "IT-kompass",
-        "slug": "itkompass",
-        "url": "https://www.it-kompass.com/en/"
-    },
-    {
         "name": "IT-Square",
         "slug": "itsquare",
         "url": "https://itsquare.de/"
@@ -310,16 +205,6 @@
         "url": "https://lufthansa-city-center.com/en/"
     },
     {
-        "name": "Lufthansa Holidays",
-        "slug": "lufthansaholidays",
-        "url": "https://www.lufthansaholidays.com/en-de"
-    },
-    {
-        "name": "mc2.ventures",
-        "slug": "mc2",
-        "url": "https://www.mc2.ventures/"
-    },
-    {
         "name": "MeinReisebüro24",
         "slug": "meinreisebuero24",
         "url": "https://www.meinreisebuero24.com/"
@@ -330,11 +215,6 @@
         "url": "http://mgc-frankfurt.de/"
     },
     {
-        "name": "MIDOCO Group",
-        "slug": "midoco",
-        "url": "https://www.midoco.de/midoco-%C3%BCber-uns"
-    },
-    {
         "name": "Midnightdeal",
         "slug": "midnightdeal",
         "url": "https://midnightdeal.com/de"
@@ -343,6 +223,11 @@
         "name": "Miles & More",
         "slug": "miles-and-more",
         "url": "https://www.miles-and-more.com/de/en.html"
+    },
+    {
+        "name": "MIDOCO Group",
+        "slug": "midoco",
+        "url": "https://www.midoco.de/midoco-%C3%BCber-uns"
     },
     {
         "name": "MTS Globe",
@@ -365,11 +250,6 @@
         "url": "https://www.neusta-tourism.de/"
     },
     {
-        "name": "Nevermined",
-        "slug": "nevermined",
-        "url": "https://nevermined.io/"
-    },
-    {
         "name": "OH.TEC Tourism Expert Consulting",
         "slug": "ohtec",
         "url": "https://www.oh-tec.de/"
@@ -378,11 +258,6 @@
         "name": "Orchestra",
         "slug": "orchestra",
         "url": "https://www.orchestra.eu/en/"
-    },
-    {
-        "name": "openGeeksLab",
-        "slug": "opengeekslab",
-        "url": "https://opengeekslab.com/"
     },
     {
         "name": "OTS",
@@ -415,34 +290,19 @@
         "url": "https://www.santsg.com/en/"
     },
     {
-        "name": "Saltours",
-        "slug": "saltours",
-        "url": "https://saltours.travel/"
-    },
-    {
         "name": "Schauinsland",
         "slug": "schauinsland",
         "url": "https://www.schauinsland-reisen.de/"
     },
     {
-        "name": "Schmetterling",
-        "slug": "schmetterling",
-        "url": "https://schmetterling.de/"
+        "name": "Servicereisen",
+        "slug": "servicereisen",
+        "url": "https://www.servicereisen.de"
     },
     {
         "name": "SH Financial",
         "slug": "shfinancial",
         "url": "https://sh-financial.com/"
-    },
-    {
-        "name": "Studio5 Liguria",
-        "slug": "studio5lab",
-        "url": "https://studio5.it/"
-    },
-    {
-        "name": "Sugartrends",
-        "slug": "sugartrends",
-        "url": "https://www.sugartrends.com/en"
     },
     {
         "name": "Sunweb Group",
@@ -453,11 +313,6 @@
         "name": "Sunny Cars GmbH",
         "slug": "sunny-cars",
         "url": "https://www.sunnycars.de/"
-    },
-    {
-        "name": "TenetX",
-        "slug": "tenetx",
-        "url": "https://tenetx.io/"
     },
     {
         "name": "Traffics",
@@ -485,24 +340,9 @@
         "url": "https://www.tui.com/"
     },
     {
-        "name": "Turismo",
-        "slug": "turismo",
-        "url": "https://soluciones.turismoi.com/"
-    },
-    {
         "name": "Twerenbold Service AG",
         "slug": "twerenbold",
         "url": "https://www.twerenbold.ch/ueber-uns/team"
-    },
-    {
-        "name": "Unicsoft",
-        "slug": "unicsoft",
-        "url": "https://unicsoft.com/"
-    },
-    {
-        "name": "Universal Beach Hotels",
-        "slug": "universalbeachhotels",
-        "url": "https://www.universalbeachhotels.com/"
     },
     {
         "name": "Universal Travel",
@@ -510,23 +350,8 @@
         "url": "https://www.universaltravel.ch/"
     },
     {
-        "name": "Ventura",
-        "slug": "ventura",
-        "url": "https://www.venturatravel.org/"
-    },
-    {
         "name": "Verband Internet Reisevertrieb e.V.",
         "slug": "vir",
         "url": "https://v-i-r.de/"
-    },
-    {
-        "name": "whispers",
-        "slug": "whispers",
-        "url": "https://www.whispers.at/"
-    },
-    {
-        "name": "Xeni",
-        "slug": "xeni",
-        "url": "https://www.xeni.com/"
     }
 ]
