@@ -216,13 +216,16 @@ h3+h4 {
   width: 300px;
   height: 300px;
   background: #0f172a url(/static/images/world-map-dot.png);
-  border-radius: 50%;
+  border-radius: 999px;
   background-size: 610px;
   animation-name: rotate;
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  box-shadow: 
+    inset 0 0 24px 12px rgba(0,0,0,1),
+    inset -32px -32px 48px 16px rgba(0,0,0,1);
 }
 
 @keyframes rotate {
