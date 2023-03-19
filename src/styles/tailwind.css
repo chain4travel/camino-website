@@ -158,7 +158,7 @@ details[open] summary.features::after {
 
 
 h1,h2,h3,h4 {
-  @apply font-headline tracking-wide font-medium
+  @apply font-headline font-medium
 }
 
 h1 { @apply text-3xl md:text-5xl }
