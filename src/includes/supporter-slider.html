@@ -14,7 +14,6 @@
 	 height: 100%;
 }
  div.highway-slider ul.highway-lane li.highway-car {
-	 flex: 1;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
@@ -22,7 +21,7 @@
 	 color: #343434;
 }
 @keyframes translateinfinite {
-	100% { transform:translateX(calc(-180px * 100));  }
+	100% { transform:translateX(calc(-192px * 100));  }
 }
  #infinite div.highway-barrier {
 	 background: transparent;
@@ -31,7 +30,7 @@
 	 content: " ";
 	 position: absolute;
 	 z-index: 9;
-	 width: 180px;
+	 width: 192px;
 	 height: 100%;
 }
  #infinite div.highway-barrier::before {
@@ -45,10 +44,10 @@
 	 background: linear-gradient(to left,#0f172a 0%,rgba(255,255,255,0) 100%);
 }
  #infinite div.highway-barrier ul.highway-lane {
-    width:calc(180px * 200);
+    width:calc(192px * 200);
 }
  #infinite div.highway-barrier ul.highway-lane li.highway-car {
-    animation: translateinfinite 280s linear infinite;
+    animation: translateinfinite 120s linear infinite;
 }
 </style>
 
@@ -56,72 +55,11 @@
     <div id="infinite" class="highway-slider">
         <div class="highway-barrier">
             <ul class="highway-lane">
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/schauinsland.png", "Schauinsland Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/hotelplan.png", "Hotelplan Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/falkensteiner.png", "Falkensteiner Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/lufthansa.png", "Lufthansa Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/eurowings.png", "Eurowings Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/hahnair.png", "Hahnair Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/tui.png", "TUI Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/miles-and-more.png", "Miles and More Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/peakwork.png", "Lufthansa Logo", "", "w-full opacity-75" %}
-                </li>
                 {% for supporter in supporter %}
                 {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
                 {% set logoalt = supporter.slug + " - Logo" %}
                 <li class="highway-car">
-                    {% image logopath, logoalt, "", "w-full opacity-75" %}
-                </li>
-                {% endfor %}
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/schauinsland.png", "Schauinsland Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/hotelplan.png", "Hotelplan Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/lufthansa.png", "Lufthansa Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/eurowings.png", "Eurowings Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/falkensteiner.png", "Falkensteiner Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/hahnair.png", "Hahnair Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/tui.png", "TUI Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/miles-and-more.png", "Miles and More Logo", "", "w-full opacity-75" %}
-                </li>
-                <li class="highway-car">
-                    {% image "./src/static/images/supporter/peakwork.png", "Lufthansa Logo", "", "w-full opacity-75" %}
-                </li>
-                {% for supporter in supporter %}
-                {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
-                {% set logoalt = supporter.slug + " - Logo" %}
-                <li class="highway-car">
-                    {% image logopath, logoalt, "", "w-full opacity-75" %}
+                    {% image logopath, logoalt, "", "w-48 opacity-60" %}
                 </li>
                 {% endfor %}
 			</ul>
