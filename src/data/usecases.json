@@ -50,8 +50,69 @@
         "col": "1"
     },
     {
-        "title": "User generated content ",
+        "title": "User generated content",
         "paragraph1": "Users can generate content for various services or products on the blockchain and, at the same time, get rewarded. Once a wallet is created for a service, users can send information to this wallet and are incentivized to do so.",
+        "col": "3"
+    },
+
+    {
+        "title": "Contracting / purchasing",
+        "paragraph1": "With the help of web3 technology, such as smart contracts, the automation and security along the contracting/ purchasing process can be enhanced.",
+        "col": "1"
+    },
+    {
+        "title": "Disaster Information",
+        "paragraph1": "Companies can demonstrate their concern for the safety and well-being of their customers by providing up-to-date information on blockchain technology. Thus the company becomes a trusted resource, letting the customers make informed travel decisions.",
+        "col": "2"
+    },
+    {
+        "title": "Reduction of API’s",
+        "paragraph1": "The offering and exchange of information get much more accessible, inexpensive, and safer due to the reduced APIs via blockchain.",
+        "col": "3"
+    },
+    {
+        "title": "Information services",
+        "paragraph1": "Blockchain enables traceable information and rewardable reviews. Also, travelers can send their information to a specific wallet, allowing them to review, for example, a particular hotel room.",
+        "col": "1"
+    },
+    {
+        "title": "Gamification",
+        "paragraph1": "Camino offers various possibilities to indulge in gamification of travel services.",
+        "col": "2"
+    },
+    {
+        "title": "Travel identity",
+        "paragraph1": "Self-sovereign-identity will enable travelers to manage and secure their personal shared information, leading to increased economic efficiency and higher protection of personal privacy.",
+        "col": "3"
+    },
+    {
+        "title": "Tracking",
+        "paragraph1": "Using blockchain for tracking means having one single source of truth. This opens up new potentials when it comes to tracking of lost baggages or visitor streams.",
+        "col": "1"
+    },
+    {
+        "title": "Interlining",
+        "paragraph1": "The sale process and customer experience can get more straightforward and enjoyable on Camino as all players are connected.",
+        "col": "2"
+    },
+    {
+        "title": "Automated complaint management",
+        "paragraph1": "Complaint management could be connected to automatization and even compensation on another level.",
+        "col": "3"
+    },
+    {
+        "title": "Locking systems",
+        "paragraph1": "Locking systems can become more efficient and save. A physical key could become a thing of the past.",
+        "col": "1"
+    },
+    {
+        "title": "Reviews",
+        "paragraph1": "Web3 technology enables the customer to actually own and control the created review. The customer could get rewarded for a shared review, and fake reviews could be eliminated.",
+        "col": "2"
+    },
+    {
+        "title": "Insurance policies",
+        "paragraph1": "The existing trust gap between insurance providers and policyholders can get eliminated by automating all processes and trusting the decentralized network. It improves operational efficiency and also enhances the customer experience.",
         "col": "3"
     }
 ]
