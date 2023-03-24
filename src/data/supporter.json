@@ -70,11 +70,6 @@
         "url": "https://www.compecta.com/"
     },
     {
-        "name": "Codora",
-        "slug": "codora",
-        "url": "https://codora.io/"
-    },
-    {
         "name": "Cortex AG",
         "slug": "cortex",
         "url": "https://www.cortex-ag.com/en/"
@@ -328,11 +323,6 @@
         "name": "Sunny Cars GmbH",
         "slug": "sunny-cars",
         "url": "https://www.sunnycars.de/"
-    },
-    {
-        "name": "Tomorrow Explored",
-        "slug": "tx",
-        "url": "https://tx.company/"
     },
     {
         "name": "Traffics",
