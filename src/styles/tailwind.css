@@ -62,7 +62,7 @@ section {
 }
 
 .hero {
-  @apply container px-4 h-[640px] flex items-center;
+  @apply container px-4 flex items-center;
 }
 
 .button {
