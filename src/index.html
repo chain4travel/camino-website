@@ -8,100 +8,49 @@ layout:         default
     {% include "hero-home.html" %}
 <!-- Hero End -->
 
-{% include "section_litepaper.html" %}
+<div class="py-12 md:py-24">
+    <div class="container px-4">
+        <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-10 md:mb-20">
+            Secure and efficient transactions
+        </div>
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-4 text-center">
+                <div class="mx-auto mb-6 shadow-gradient-inner-sm w-28 h-28 flex items-center justify-center rounded-full">
+                    <svg class="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline fomt-medium text-3xl">
+                    Faster payments at lower costs
+                </div>
+            </div>
+            <div class="col-span-4 text-center">
+                <div class="mx-auto mb-6 shadow-gradient-inner-sm w-28 h-28 flex items-center justify-center rounded-full">
+                    <svg class="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline fomt-medium text-3xl">
+                    Faster payments at lower costs
+                </div>
+            </div>
+            <div class="col-span-4 text-center">
+                <div class="mx-auto mb-6 shadow-gradient-inner-sm w-28 h-28 flex items-center justify-center rounded-full">
+                    <svg class="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline fomt-medium text-3xl">
+                    Faster payments at lower costs
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Supporter Start -->
     {% include "supporter.html" %}
 <!-- Supporter End -->
-
-<div
-    class="bg-contain bg-top bg-no-repeat relative"
-    {% if heroBgImage %}
-    {% endif %}
->
-    <section class="text-center">
-        <h1 class="mb-6">
-            It is time to build the future of travel
-        </h1>
-        <p class="max-w-5xl mx-auto">
-            In today’s travel industry, the pace of innovation is decelerated due to the industry's nature of servicing with hardware, machines, and people. The entire travel industry relies on standard protocols that are more than 40 years old and desperately need enhancement.
-        </p>
-
-        <!-- CardRow Start -->
-        <div class="grid grid-cols-12 gap-6 mt-6 md:mt-12">
-            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
-                {% image "./src/static/images/cardImages/cardimage03.png", "Fast transaction processes", "", "hover:scale-110 transition-all mt-4 mb-4 max-h-48 w-auto mx-auto" %}
-                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Fast</span> transaction processes</h3>
-            </div>
-            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
-                {% image "./src/static/images/cardImages/cardimage04.png", "Modern technological structures", "", "hover:scale-110 transition-all mt-4 mb-4 max-h-48 w-auto mx-auto" %}
-                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Modern</span> technological structures</h3>
-            </div>
-            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
-                {% image "./src/static/images/cardImages/cardimage02.png", "Low transaction fees", "", "hover:scale-110 transition-all mt-4 mb-4 max-h-48 w-auto mx-auto" %}
-                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Low</span> transaction <br> fees</h3>
-            </div>
-            <div class="rounded-camino bg-gray-800 py-8 px-2 group col-span-12 sm:col-span-6 lg:col-span-3 duration-300 transition-colors hover:bg-caminoSky">
-                {% image "./src/static/images/cardImages/cardimage01.png", "Accelerated innovation pace", "", "hover:scale-110 transition-all mt-4 mb-4 max-h-48 w-auto mx-auto" %}
-                <h3 class="group-hover:text-gray-900 transition-colors"><span class="text-primary">Accelerated</span> innovation pace</h3>
-            </div>
-        </div>
-        <!-- CardRow End -->
-    </section>
-</div>
-
-<section>
-    <div class="grid grid-cols-2 gap-6 md:gap-12">
-        <div class="col-span-2 md:col-span-1 p-8 md:p-10 2xl:p-16 flex flex-col h-full items-center justify-center">
-            <h2>Camino opens the door to Web3 for the travel industry</h2>
-            <p class="text-gray-300">Camino transforms and elevates the world of travel by enabling and supporting blockchain based applications for the industry and travelers.</p>
-        </div>
-        <div class="col-span-2 md:col-span-1 rounded-camino bg-gray-900 rounded-camino shadow-gradient p-8 md:p-10 2xl:p-16">
-            <h2 class="mb-6">Highly secure travel infrastructure</h2>
-            <p class="text-gray-300">As we put security at the heart of the design of the Camino blockchain and our developing efforts, we are following a multi-tier approach to ensure that we comply with the best practices and highest standards of security. The Camino blockchain, by design, is a consortium blockchain and all validators need to go through a KYB (Know-your-business) process. Additionally, any wallet address coded in a smart contract also needs to be verified to be deployed on the Camino chain.</p>
-        </div>
-    </div>
-</section>
-
-<!-- TextImage Start -->
-    {% set textImageImage =         "glas/grid-companies" %}
-    {% set textImageImagePosition = "left" %}
-    {% set textImageTitle =         "Validators, the drivers of change" %}
-    {% set textImageParagraph =     "Validators of Camino are key industry players who shape the vision of a decentralized travel industry. Get behind the steering wheel and become a validator." %}
-    {% set textImageParagraph2 =     "" %}
-    {% set textImageButtonLink =    "/validators" %}
-    {% set textImageButtonLabel =    "Learn more about validators" %}
-    {% include "textImage.html" %}
-<!-- TextImage End -->
-
-<!-- CardSolo Start -->
-    {% set cardSoloBG = "accent" %}
-    {% set cardSoloImage = "glas/stack" %}
-    {% set cardSoloImagePosition = "right" %}
-    {% set cardSoloTitle = "Camino is for everyone with an idea" %}
-    {% set cardSoloParagraph = "Camino is a public & permissioned consortium blockchain that anyone can build on. There are no fees, and the only thing you need to get started is an idea." %}
-    {% set cardSoloButton = "Explore Camino" %}
-    {% set cardSoloButtonLink = "/ecosystem" %}
-    {% include "cardSolo.html" %}
-<!-- CardSolo End -->
-
-<!-- TextImage Start -->
-    {% set textImageImage =         "glas/grid" %}
-    {% set textImageImagePosition = "left" %}
-    {% set textImageTitle =         "The new world of travel is decentralized" %}
-    {% set textImageParagraph2 =    "Camino is the first Layer one blockchain specifically made for the travel industry." %}
-    {% set textImageParagraph =     "An open field of opportunities: Camino is an open-source, programmable smart contracts network for decentralized applications (dApps) of all kind of travel-related products & services." %}
-    {% include "textImage.html" %}
-<!-- TextImage End -->
-
-<!-- CardSolo Start -->
-    {% set cardSoloBG = "gray-800" %}
-    {% set cardSoloImage = "glas/squares" %}
-    {% set cardSoloImagePosition = "right" %}
-    {% set cardSoloTitle = "B2B travel applications powered by blockchain" %}
-    {% set cardSoloParagraph = "With Camino companies have access to an industry-owned travel blockchain, empowering peer-to-peer business and creating unimaginable travel innovation " %}
-    {% set cardSoloParagraph2 = "" %}
-    {% set cardSoloButton = "Explore use cases" %}
-    {% set cardSoloButtonLink = "/travel" %}
-    {% include "cardSolo.html" %}
-<!-- CardSolo End -->
