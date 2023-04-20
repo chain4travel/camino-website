@@ -4,53 +4,168 @@ description:    Discover the blockchain ecosystem of the travel industry.
 layout:         default
 ---
 
-<!-- Hero Start -->
-    {% set heroTitle = "Discover the world of Camino" %}
-    {% set heroSubtitle = "" %}
-    {% set heroText = "" %}
-    {% set heroBgImage = "bubbles" %}
-    {% set ecosystem = "true" %}
-    {% include "hero.html" %}
-<!-- Hero End -->
+<div class="hero">
+    <div class="flex flex-col md:flex-row w-full items-center">
+        <div class="text-center md:text-left w-full">
+            <div class="text-4xl xl:text-7xl font-headline font-medium">
+                Camino network: Innovative web3 Solutions for sustainable travel
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                Camino Network brings blockchain solutions to the travel industry. With Web3 connectivity participants can have more efficient and secure transactions. Camino is the path, which you can join at a very early stage.
+            </p>
+        </div>
+        <img class="order-first md:order-last" src="/img/glas-hexagon.png" alt="">
+    </div>
+</div>
 
 {% include "supporter-slider.html" %}
 
-<!-- CardRow Start -->
-    {% set cardRowTitle = "" %}
-    {% set cardRowBgImage = "" %}
-    {% set cardFirstImage = "generic-01" %}
-    {% set cardFirstTitle = "Supporter of Camino" %}
-    {% set cardFirstText = "Shares our vision of a decentralized blockchain ecosystem for the travel industry. A supporter is listed on our website and in marketing material. The network of supporters has been steadily growing and growing." %}
-    {% set cardFirstLinkLabel = "Join as a supporter" %}
-    {% set cardFirstLink = "/community#contactForm" %}
-    {% set cardSecondImage = "generic-06" %}
-    {% set cardSecondTitle = "DApp Developer" %}
-    {% set cardSecondText = "Builds and runs decentralized applications on Camino. The source code is open for everyone. Our ecosystem welcomes all travel enthusiasts and developers who would like to shape the future of travel." %}
-    {% set cardSecondLinkLabel = "Building on Camino" %}
-    {% set cardSecondLink = "/developer" %}
-    {% set cardThirdImage = "generic-03" %}
-    {% set cardThirdTitle = "Consortium Member" %}
-    {% set cardThirdText = "Has an important role in governing and securing the Camino blockchain. To become a validator certain preconditions must be met and one must be accepted into the role by a vote of the currently active validators." %}
-    {% set cardThirdLinkLabel = "More about validators" %}
-    {% set cardThirdLink = "/validators" %}
-    {% include "cardRow.html" %}
-<!-- CardRow ENd -->
+<div class="py-12 md:py-24">
+    <div class="container px-4">
+        <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-10 md:mb-20">
+            An ecosystem for all
+        </div>
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 md:col-span-3 text-left md:text-center">
+                <div class="mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" viewBox="0 0 64 64">
+                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M21.333 21.333h21.334m0 10.667H21.333m0 10.667H32M53.333 32V12.667a2 2 0 0 0-2-2H12.667a2 2 0 0 0-2 2v38.666a2 2 0 0 0 2 2H32m8-2.666 3.753 3.753a2 2 0 0 0 2.976-.165L56 42.667"/>
+                    </svg>
+                </div>
+                <div class="font-headline font-medium text-xl md:text-3xl my-4">
+                    Supporters
+                </div>
+                <p class="text-gray-300">
+                    Investors, developers, early adopters, partners, sharing the vision of the web3 travel ecosystem
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-3 text-left md:text-center">
+                <div class="mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline font-medium text-xl md:text-3xl my-4">
+                    Developers
+                </div>
+                <p class="text-gray-300">
+                    Professional devs and enthusiasts ready to launch dApps and plattforms
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-3 text-left md:text-center">
+                <div class="mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline font-medium text-xl md:text-3xl my-4">
+                    Validators
+                </div>
+                <p class="text-gray-300">
+                    Innovators who govern and secure the network and validate all transactions
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-3 text-left md:text-center">
+                <div class="mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline font-medium text-xl md:text-3xl my-4">
+                    Businesses
+                </div>
+                <p class="text-gray-300">
+                    Hotels, airlines, tour operators, cruise lines, car rentals, travel agencies etc.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24">
+    <div class="container px-4">
+        <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-10">
+            How does it work
+        </div>
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 md:col-span-4 text-left md:text-center">
+                <img class="max-w-[240px] mx-auto" src="/static/images/schema-web1.png" alt="">
+                <div class="font-headline font-medium text-xl md:text-3xl">
+                    Web 1.0
+                </div>
+                <div class="text-caminoSky text-sm font-semibold my-4">1900s — 2000</div>
+                <p class="text-gray-300">
+                    Static read only web pages
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-4 text-left md:text-center">
+                <img class="max-w-[240px] mx-auto" src="/static/images/schema-web2.png" alt="">
+                <div class="font-headline font-medium text-xl md:text-3xl">
+                    Web 2.0
+                </div>
+                <div class="text-caminoSky text-sm font-semibold my-4">2000s — 2020s</div>
+                <p class="text-gray-300">
+                    Information-centric and interactive
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-4 text-left md:text-center">
+                <img class="max-w-[240px] mx-auto" src="/static/images/schema-web3.png" alt="">
+                <div class="font-headline font-medium text-xl md:text-3xl">
+                    Web 3.0
+                </div>
+                <div class="text-caminoSky text-sm font-semibold my-4">2020s — ???</div>
+                <p class="text-gray-300">
+                    User-centric, decentralized, private and secure
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden h-64 md:h-[420px]">
+            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Secure and efficient transactions
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Faster payments at lower costs</li>
+                <li>Transparent and verified in real-time</li>
+                <li>Validated by travel industry companies</li>
+            </ul>
+            <a href="#" class="button">Learn more</a>
+        </div>
+    </div>
+</div>
 
 {% include "section_timeline.html" %}
 
-{% include "section_ecosystem.html" %}
-
-<!-- SimpleText Start -->
-    {% set simpleTextTitle = "Camino is powered by its native token" %}
-    {% set simpleTextSubtitle = "Create a Camino wallet for storing assets and start engaging in the network." %}
-    {% set simpleTextParagraph = "" %}
-    {% set simpleTextParagraph2 = "" %}
-    {% set simpleTextButton = "Create wallet" %}
-    {% set simpleTextButtonLink = "https://wallet.camino.foundation/" %}
-    {% set simpleTextBg = "caminoSky" %}
-    {% set simpleTextBgImage = "" %}
-    {% set simpleTextRadius = "" %}
-    {% include "simpleText.html" %}
-<!-- SimpleText End -->
-
 {% include "section_tokenomics.html" %}
+
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Web 3 in Travel |  Webinar
+            </div>
+            <p class="my-2 md:my-6 text-gray-300">
+                Learn how blockchain will influence:
+            </p>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Marketing and sales</li>
+                <li>Buesiness and operations</li>
+                <li>Technology and dvelopment</li>
+            </ul>
+            <a href="#" class="button">Secure your spot!</a>
+        </div>
+        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last rounded-lg overflow-hidden h-64 md:h-[420px]">
+            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        </div>
+    </div>
+</div>
