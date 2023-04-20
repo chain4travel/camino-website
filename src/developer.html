@@ -4,7 +4,7 @@ description:    Start building in the web3 ecosystem made for travel.
 layout:         default
 ---
 
-<div class="hero">
+<div class="hero-new">
     <div class="flex flex-col md:flex-row w-full items-center">
         <div class="text-center md:text-left w-full">
             <div class="text-4xl xl:text-7xl font-headline font-medium">
@@ -84,119 +84,85 @@ layout:         default
                 <li>Easy adoption of Ethereum Smart contracts and dApps</li>
             </ul>
         </div>
-        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last overflow-hidden rounded-lg h-64 md:h-[420px]">
-            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last overflow-hidden rounded-lg">
+            {% image "./src/static/images/glas/cubes.png", "imagealt", "", "w-full object-contain" %}
         </div>
     </div>
 </div>
 
-<section>
-    <h1 class="mb-12 text-center">Camino's specific features</h1>
-    <div class="md:flex">
-        <div class="transition-colors hover:text-gray-900 hover:bg-caminoSky bg-gray-800 p-8 lg:p-12 rounded-camino md:mr-4 relative overflow-hidden">
-            <h2>Validator voting</h2>
-            <p>We are changing the conditions of how to become and what it means to be a validator. For example, the stake itself does not equal power on the network and does not control the amount of rewards earned for the validation. Each validator has the same amount of stake and is also a KYC-/KYB-verified entity of the travel industry. Basically, we're not talking about a permissionless PoS anymore but a public & permissioned PoSA concept.</p>
-            <img src="/static/images/glas/flower.png" class="max-w-lg object-contain absolute left-8 -bottom-64 opacity-0 md:opacity-75" alt="Camino Glas Flower Design">
-        </div>
-        <div class="flex flex-col md:ml-4 md:w-1/2 flex-shrink-0 mt-8 md:mt-0">
-            <div class="transition-colors hover:text-gray-900 hover:bg-caminoSky bg-gray-800 p-8 lg:p-12 rounded-camino mb-8">
-                <h2>Gas fee voting</h2>
-                <p>We changed the way how transaction fees are computed and will allow the consortia to vote on the amount of gas fees payable to keep them at a reasonable and competitive level for the travel industry.</p>
+<div class="py-12 md:py-24 bg-cover" style="background-image: url(/static/images/heroBgImages/blocks.png);">
+    <div class="container px-4">
+        <div class="grid grid-cols-12 gap-6 text-center">
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-transform hover:scale-110">
+                {% image "./src/static/images/schema-chain-multi.png", "imagealt", "", "mx-auto w-48 object-contain" %}
+                <div class="font-headline font-medium text-2xl my-2">Platform (P) Chain</div>
+                <p class="text-gray-300">
+                    Validator Coordination <br>
+                    Token Staking / Locking <br>
+                    Subnet Management
+                </p>
             </div>
-            <div class="transition-colors hover:text-gray-900 hover:bg-caminoSky bg-gray-800 p-8 lg:p-12 rounded-camino h-full mb-8 md:mb-0">
-                <h2>KYB proof</h2>
-                <p>The network participants and, thus, big travel industry entities will not be willing to validate transactions on a foreign network they don't trust. Furthermore, foreign networks also have significantly higher hardware requirements and touchpoints outside their business segment.</p>
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-transform hover:scale-110">
+                {% image "./src/static/images/schema-chain-multi.png", "imagealt", "", "mx-auto w-48 object-contain" %}
+                <div class="font-headline font-medium text-2xl my-2">Contract (C) Chain</div>
+                <p class="text-gray-300">
+                    EVM Compatible <br>
+                    Deployment & Executetion  <br>
+                    of Smart-Contracts
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-transform hover:scale-110">
+                {% image "./src/static/images/schema-chain-single.png", "imagealt", "", "mx-auto w-48 object-contain" %}
+                <div class="font-headline font-medium text-2xl my-2">Exchange (X) Chain</div>
+                <p class="text-gray-300">
+                    Direct Acyclic Graph (DAG) Consensus <br>
+                    Fast Transactions <br>
+                    Manage Assets
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-accent transition-transform hover:scale-110">
+                {% image "./src/static/images/schema-chain-travel.png", "imagealt", "", "mx-auto w-48 object-contain" %}
+                <div class="font-headline font-medium text-2xl my-2">Travel (T) Chain</div>
+                <p class="text-gray-300">
+                    Availabilities <br>
+                    Allotments <br>
+                    Prices
+                </p>
             </div>
         </div>
     </div>
-</section>
+</div>
 
-
-<!-- CardRow Start -->
-    {% set cardRowTitle = "Our tech stack based on specialized chains" %}
-    {% set cardRowParagraph = "The core is developed using the GO language. Developers can quickly build applications on Camino using the EVM-compatible C-Chain. Decentralized frontend applications (dApps) can be built on top of the Camino backend. By maintaining full EVM compatibility, all common standards like ERC-20 (fungible token), ERC-721 (non-fungible token), ERC-2771 (meta transactions), and variants are supported in our backend. Beyond that, proven smart contracts and dApps running on Ethereum and compatible chains can be easily adopted." %}
-    {% set cardRowSubtitle = "" %}
-    {% set cardRowBgImage = "" %}
-
-    {% set cardFirstImage = "generic-04" %}
-    {% set cardFirstTitle = "P-Chain" %}
-    {% set cardFirstText = "The Platform Chain is used to manage and lock stake, validator, and network coordination." %}
-    {% set cardFirstLinkLabel = "" %}
-
-    {% set cardSecondImage = "generic-04" %}
-    {% set cardSecondTitle = "C-Chain" %}
-    {% set cardSecondText = "The Contract Chain provides full EVM compatibility for smart contracts." %}
-    {% set cardSecondLinkLabel = "" %}
-
-    {% set cardThirdImage = "generic-05" %}
-    {% set cardThirdTitle = "X-Chain" %}
-    {% set cardThirdText = "The Exchange Chain is used for fast asset creation and management." %}
-    {% set cardThirdLinkLabel = "" %}
-
-    {% set cardFourthImage = "" %}
-    {% set cardFourthTitle = "" %}
-    {% set cardFourthText = "" %}
-    {% set cardFourthLinkLabel = "" %}
-
-    {% include "cardRow.html" %}
-<!-- CardRow End -->
-
-<!-- TextImage Start -->
-    {% set textImageImage =         "glas/cubes" %}
-    {% set textImageImagePosition = "right" %}
-    {% set textImageTitle =         "Why three chains?" %}
-    {% set textImageParagraph =     "The philosophy behind the three specialized chains approach originates from Avalanche. Since Camino is built on Avalanche's advanced technical base, the same applies to us. Each of these chains is designed, optimized, and strictly considered a fully independent system, subject to its intended use." %}
-    {% set textImageParagraph2 =    "Who needs to work with which chain effectively depends on the requirements and the role of the unit/person who wants to work with it. Validators, for example, work with the P-Chain. For app developers, it depends on whether the X-Chain makes sense or whether they need to use the C-Chain for more complex application scenarios that require EVM-compatible techniques, such as smart contracts." %}
-    {% include "textImage.html" %}
-<!-- TextImage End -->
-
-<section>
-    <h1 class="mb-12 text-center">Empowering a new generation of travel</h1>
-    <p class="mb-12 text-center max-w-screen-xl mx-auto">We want to give you the opportunity to build something awesome, and we know that getting started can be tough. That's why we've made it easy for you to get started with a detailed description in our documentation.</p>
-    
-    <div class="md:flex">
-
-        <div class="flex flex-col md:mr-4 md:w-1/2 flex-shrink-0">
-            <div class="bg-primary p-8 lg:p-12 rounded-camino mb-8">
-                <h2 class="mb-6">Node set-up</h2>
-                <p>Building on the Camino blockchain is easy. The team has streamlined the process so that anyone with basic technical skills can get started. The set-up only takes 1-2 hours.</p>
-                <p class="font-bold mt-8 mb-6">Different set-up options:</p>
-                <div class="flex flex-wrap mt-auto">
-                    <a target="_blank" href="https://docs.camino.foundation/apps/nodes/run-camino-node" class="mr-2 button-secondary mb-2">Manual set-up</a>
-                    <a target="_blank" href="https://docs.camino.foundation/apps/nodes/set-up-node-with-installer" class="mr-2 button-secondary-outline mb-2">Install script</a>
-                    <a target="_blank" href="https://docs.camino.foundation/apps/nodes/set-up-node-with-docker" class="mr-2 button-secondary-outline mb-2">Docker installation</a>
-                </div>
-            </div>
-    
-            <div class="bg-secondary p-8 lg:p-12 rounded-camino h-full mb-8 md:mb-0">
-                <h2 class="mb-6">DApp incentives</h2>
-                <p>We offer dApp incentives. If you want to get started with a great idea but don’t have the funds, you can apply for the dApp inventive pool. The amount varies depending on how promising your project sounds. </p>
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="hidden md:block col-span-4 md:col-start-2 p-2 rounded-3xl bg-gradient-to-br from-caminoSky to-accent transition-transform hover:scale-110 text-center">
+            <div class="bg-gray-950 p-6 rounded-2xl">
+                {% image "./src/static/images/schema-chain-travel.png", "imagealt", "", "mx-auto w-48 object-contain" %}
+            <div class="font-headline font-medium text-2xl my-2">Travel (T) Chain</div>
+            <p class="text-gray-300">
+                Availabilities <br>
+                Allotments <br>
+                Prices
+            </p>
             </div>
         </div>
-
-        <div class="bg-gray-800 p-8 lg:p-12 rounded-camino md:ml-4 relative overflow-hidden">
-            <h2 class="mb-6">Join the Camino community</h2>
-            <p>There's a strong community behind this network that's committed to making sure everyone succeeds and thrives. This means that even if you don't have any experience developing dApps or launching blockchain projects, they'll be happy to help you out along every step of the way, or even connect you with the ones that can.</p>
-            <a target="_blank" href="https://discord.gg/camino" class="mt-4 button">Discord chat</a>
-            <img src="/static/images/glas/grid.png" class="object-contain absolute -right-1/4 bottom-0 lg:-bottom-16 xl:-bottom-1/4 opacity-0 md:opacity-75" alt="Camino Glas Grid">
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Travel  (T) Chain
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Streamlining travel data</li>
+                <li>Facilitating automation</li>
+                <li>Improving booking systems</li>
+                <li>Enabling new business models</li>
+                <li>Enhancing personalized recommendations</li>
+                <li>Travel-specific API VM</li>
+            </ul>
+        
+            <a href="#" class="button">Schedule a call with our team</a>
         </div>
-
     </div>
-</section>
-
-<!-- CardSolo Start -->
-    {% set cardSoloTitle = "Building travel applications on blockchain has never been easier" %}
-    {% set cardSoloSubtitle = "Create a local test network" %}
-    {% set cardSoloParagraph = "" %}
-    {% set cardSoloParagraph2 = "" %}
-    {% set cardSoloButton = "Start building on Camino" %}
-    {% set cardSoloButtonLink = "https://docs.camino.network/to/create-a-local-test-network" %}
-    {% set cardSoloButtonLinkBlank = "true" %}
-    {% set cardSoloImage = "glas/grid" %}
-    {% set cardSoloBG = "caminoSky" %}
-    {% set cardSoloImagePosition = "left" %}
-    {% include "cardSolo.html" %}
-<!-- CardSolo End -->
+</div>
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Network services" %}
@@ -227,35 +193,33 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<!-- CardRow Start -->
-{% set cardRowTitle = "Be part of the web3 travel ecosystem" %}
-{% set cardRowSubtitle = "" %}
-{% set cardRowBgImage = "" %}
-
-{% set cardFirstImage = "generic-docs" %}
-{% set cardFirstTitle = "Start building on Camino" %}
-{% set cardFirstText = "" %}
-{% set cardFirstLink = "https://docs.camino.foundation/" %}
-{% set cardFirstLinkLabel = "Camino Documentation" %}
-{% set cardFirstLinkBlank = "true" %}
-
-{% set cardSecondImage = "generic-discord" %}
-{% set cardSecondTitle = "Join our discord server" %}
-{% set cardSecondText = "" %}
-{% set cardSecondLink = "https://discord.gg/camino" %}
-{% set cardSecondLinkLabel = "Camino Discord" %}
-{% set cardSecondLinkBlank = "true" %}
-
-{% set cardThirdImage = "" %}
-{% set cardThirdTitle = "" %}
-{% set cardThirdText = "" %}
-{% set cardThirdLink = "" %}
-{% set cardThirdLinkLabel = "" %}
-
-{% set cardFourthImage = "" %}
-{% set cardFourthTitle = "" %}
-{% set cardFourthText = "" %}
-{% set cardFourthLinkLabel = "" %}
-
-{% include "cardRow.html" %}
-<!-- CardRow End -->
+<div class="py-12 md:py-24">
+    <div class="container px-4">
+        <div class="grid grid-cols-12 gap-6 text-center">
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-colors hover:border-caminoSky">
+                <div class="font-headline font-medium text-2xl mb-3">
+                    Start building 
+                </div>
+                <a href="#" class="button">Read more</a>
+            </div>
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-colors hover:border-caminoSky">
+                <div class="font-headline font-medium text-2xl mb-3">
+                    Join our discord
+                </div>
+                <a href="#" class="button">Read more</a>
+            </div>
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-colors hover:border-caminoSky">
+                <div class="font-headline font-medium text-2xl mb-3">
+                    Find bugs and get paid
+                </div>
+                <a href="#" class="button">Read more</a>
+            </div>
+            <div class="col-span-12 md:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-colors hover:border-caminoSky">
+                <div class="font-headline font-medium text-2xl mb-3">
+                    Get a camino grant
+                </div>
+                <a href="#" class="button">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>

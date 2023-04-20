@@ -4,13 +4,34 @@ description:    Join the Camino community on Discord, Twitter or Telegram.
 layout:         default
 ---
 
-<!-- Hero Start -->
-    {% set heroTitle = "Community" %}
-    {% set heroSubtitle = "" %}
-    {% set heroText = "Join the Camino community" %}
-    {% set heroBgImage = "cubes2" %}
-    {% include "hero.html" %}
-<!-- Hero End -->
+<div class="hero-new">
+    <div class="flex flex-col md:flex-row w-full items-center">
+        <div class="text-center md:text-left w-full">
+            <div class="text-4xl xl:text-7xl font-headline font-medium">
+                Camino network  community
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                Let’s build together a new efficient Internet for the whole travel industry, create new experiences, and find new models and approaches on the way to a sustainable future
+            </p>
+        </div>
+        <img class="order-first md:order-last w-1/2 flex-shrink-0" src="/img/glas-community.png" alt="">
+    </div>
+</div>
+
+{% include "supporter-slider.html" %}
+
+<div class="py-12 md:py-24">
+    <div class="container px-4">
+        <div class="bg-gray-950 rounded-camino shadow-gradient max-w-screen-lg mx-auto p-6 md:p-12">
+            <div class="font-headline font-medium text-2xl md:text-5xl mb-6">
+                Mission & values
+            </div>
+            <p class="text-gray-300">We, the members of Camino Network, are building the layer one blockchain tailored specifically to the travel industry.</p>
+            <p class="text-gray-300">Our mission is to create a more efficient and connected ecosystem that benefits all participants travelers, service providers, developers, validators, organizations, and businesses.</p>
+            <p class="text-gray-300">In Camino Network we believe that transparency and trust are essential for a decentralized network, which is why all validators go through a KYC and KYB process to maintain the integrity of the network. Efficiency is crucial to the travel industry, that is why we are committed to building a more efficient ecosystem.</p>
+        </div>
+    </div>
+</div>
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Many ways to connect" %}
@@ -38,13 +59,58 @@ layout:         default
     {% set cardThirdLinkLabel = "Join Camino on Telegram" %}
     {% set cardThirdLinkBlank = "true" %}
 
-    {% set cardFourthImage = "" %}
-    {% set cardFourthTitle = "" %}
+    {% set cardFourthImage = "generic-linkedin" %}
+    {% set cardFourthTitle = "Linkedin" %}
     {% set cardFourthText = "" %}
-    {% set cardFourthLinkLabel = "" %}
+    {% set cardFourthLink = "" %}
+    {% set cardFourthLinkLabel = "Follow Camino on Linkedin" %}
+    {% set cardFourthLinkBlank = "true" %}
 
     {% include "cardRow.html" %}
 <!-- CardRow End -->
+
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Everyone is welcome to join our Community
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Builders and developers, who play a critical role in our ecosystem by launching applications and platforms that utilize the capacity of the Camino blockchain</li>
+                <li>Service providers and suppliers will use these applications and platforms to enhance their offerings and provide more value to travelers</li>
+                <li>Travelers, who will provide us with feedback and insights to improve the travel ecosystem and find new business solutions</li>
+                <li>Organizations and initiatives that align with our mission and values</li>
+            </ul>
+        </div>
+        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last rounded-lg overflow-hidden h-64 md:h-[420px]">
+            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden h-64 md:h-[420px]">
+            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Develop innovative business models
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Collaboration with like-minded professionals</li>
+                <li>Learning opportunities with webinars, workshops, and training sessions</li>
+                <li>Networking with travel industry experts, partners, and investors</li>
+                <li>Business development, new opportunities, and partnerships to boost your revenue</li>
+                <li>Early access to new products, features, and technologies</li>
+                <li>Rewards and recognition for your contributions</li>
+                <li>Influence of the Camino Network community directions</li>
+                <li>Support from the community members</li>
+                <li>Being a part of the future of the travel industry</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <section>
     <h1 class="text-center mb-12">Camino in the news</h1>
