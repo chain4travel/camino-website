@@ -4,90 +4,137 @@ description:    Validators are key industry players who share the vision of a de
 layout:         default
 ---
 
-
-
-<!-- Hero Start -->
-{% set heroTitle = "Validators, the drivers of change" %}
-{% set heroSubtitle = "" %}
-{% set heroText = "Validators secure and govern the Camino Network" %}
-{% set heroBgImage = "cards" %}
-{% include "hero.html" %}
-<!-- Hero End -->
-
-
-<!-- TextImage Start -->
-{% set textImageImage =             "glas/travelcard" %}
-{% set textImageImagePosition =     "right" %}
-{% set textImageTitle =             "Validator network" %}
-{% set textImageSubtitle =          "Shaping the new world of travel" %}
-{% set textImageParagraph =         "Validators of Camino are key industry players who share the vision of a decentralized travel industry; therefore, validators see the transaction income as compensation for operating the node, not as a profit center. Each validator has an equal voice in the governance of the Camino Network, the distribution of development incentives, and the usage of the Camino foundation’s token reserves." %}
-{% set textImageParagraph2 =        "" %}
-{% set textImageButtonLink =        "https://explorer.camino.foundation/" %}
-{% set textImageButtonLabel =       "Block Explorer" %}
-{% set textImageButtonLinkBlank =   "true" %}
-{% include "textImage.html" %}
-<!-- TextImage End -->
-
-<section>
-    <h1 class="text-center mb-12">Validator node set-up made easy</h1>
-    <div class="grid grid-cols-2 gap-6 md:gap-12">
-        <div class="col-span-2 md:col-span-1 rounded-camino bg-primary  p-8 md:p-10 2xl:p-16">
-            <h2 class="mb-6">Few requirements, low entry barriers</h2>
-            <ul class="list-disc ml-4">
-                <li>Stake of 100,000 CAMs</li>
-                <li>KYB verification</li>
-                <li>Admittance as a validator by the validator consortia via a vote</li>
-            </ul>
+<div class="hero">
+    <div class="flex flex-col md:flex-row w-full items-center">
+        <div class="text-center md:text-left w-full">
+            <div class="text-4xl xl:text-7xl font-headline font-medium">
+                Grow your business and network with Camino 
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                Validator is a node (a computer) connected to others  which work together to process transactions and add new blocks of data to the blockchain. 
+            </p>
         </div>
-        <div class="col-span-2 md:col-span-1 rounded-camino bg-accent text-gray-900 p-8 md:p-10 2xl:p-16">
-            <h2 class="mb-6">Easy set-up, low node maintenance</h2>
-            <ul class="list-disc ml-4">
-                <li>Set up takes only 1-2 hours</li>
-                <li>Camino is a lightweight protocol which let nodes run on commodity hardware.</li>
-            </ul>
+        <img class="order-first md:order-last w-1/2 flex-shrink-0" src="/img/glas-validator.png" alt="">
+    </div>
+</div>
+
+{% include "supporter-slider.html" %}
+
+<div class="py-12 md:py-24">
+    <div class="container px-4">
+        <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-6 md:mb-12">
+            Unlock growth with validation benefits
+        </div>
+        <div class="bg-gray-950 rounded-camino shadow-gradient max-w-screen-lg mx-auto p-6 md:p-12">
+
+            <div class="flex items-center mb-6 md:mb-12">
+                <div class="shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="ml-6">
+                    <div class="font-headline font-medium text-xl md:text-3xl">
+                        Rewards
+                    </div>
+                    <p class="text-gray-300 mt-2">
+                        Validators can earn rewards in the form of tokens for contributing to the network's security and consensus mechanisms.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center mb-6 md:mb-12">
+                <div class="shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="ml-6">
+                    <div class="font-headline font-medium text-xl md:text-3xl">
+                        Influence
+                    </div>
+                    <p class="text-gray-300 mt-2">
+                        Validators play a critical role in the governance of the network and overall project by means of submitting proposals and voting for or against them.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center mb-6 md:mb-12">
+                <div class="shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="ml-6">
+                    <div class="font-headline font-medium text-xl md:text-3xl">
+                        Technical expertise
+                    </div>
+                    <p class="text-gray-300 mt-2">
+                        Validators have the opportunity to gain new technical skills and expertise, which can help them adopt new technical solutions to benefit the businesses.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center mb-6 md:mb-12">
+                <div class="shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="ml-6">
+                    <div class="font-headline font-medium text-xl md:text-3xl">
+                        Network building
+                    </div>
+                    <p class="text-gray-300 mt-2">
+                        Validators can work together to improve the network's infrastructure and security, which can lead to valuable connections and bonds.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="ml-6">
+                    <div class="font-headline font-medium text-xl md:text-3xl">
+                        Trust
+                    </div>
+                    <p class="text-gray-300 mt-2">
+                        Validators are responsible for ensuring the integrity and security of the network, which can lead to increased trust in the whole industry
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
-</section>
+</div>
 
-{% include "section_validator_features.html" %}
-
-{% include "section_validatorvideo.html" %}
-
-<section class="md:mt-24">
-    <div class="grid gap-6 grid-cols-12 text-center">
-        <div class="col-span-12 md:col-span-4 mb-8">
-            <div class="shadow-gradient-sm w-20 h-20 md:w-24 md:h-24 rounded-full mb-8 mx-auto flex items-center justify-center">
-                <svg class="w-6 h-6 md:w-12 md:h-12 text-caminoSky" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                How does it work
             </div>
-            <div class="font-headline text-xl md:text-2xl mb-2 font-medium">Secure the travel industry</div>
-            <p class="text-gray-300 text-base">Camino is growing everyday and so do the applications built on it. Be part of securing the network.</p>
+            <p class="my-2 md:my-6 text-gray-300">
+                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+            </p>
+            <a href="#" class="button">Download the litepaper</a>
         </div>
-        <div class="col-span-12 md:col-span-4 mb-8">
-            <div class="shadow-gradient-sm w-20 h-20 md:w-24 md:h-24 rounded-full mb-8 mx-auto flex items-center justify-center">
-                <svg class="w-6 h-6 md:w-12 md:h-12 text-caminoSky" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-            </div>
-            <div class="font-headline text-xl md:text-2xl mb-2 font-medium">No fear of slashing</div>
-            <p class="text-gray-300 text-base">Unlike other layer one blockchains, we do not make use of slashing. Your stake is safe with us.</p>
-        </div>
-        <div class="col-span-12 md:col-span-4 mb-8">
-            <div class="shadow-gradient-sm w-20 h-20 md:w-24 md:h-24 rounded-full mb-8 mx-auto flex items-center justify-center">
-                <svg class="w-6 h-6 md:w-12 md:h-12 text-caminoSky" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-            </div>
-            <div class="font-headline text-xl md:text-2xl mb-2 font-medium">Low hardware requirements</div>
-            <p class="text-gray-300 text-base">We ensure low entry barriers as no high-tech equipment is necessary for operating a node.</p>
+        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last rounded-lg h-64 md:h-[420px]">
+            <video poster="/static/images/video-poster-validators.jpg" id="videoCaminoValidators" preload="auto" class="w-full h-auto rounded-2xl shadow-xl border border-gray-700 shadow-gradient-lg" src="/static/videos/Camino_Validators.mp4" controls></video>
         </div>
     </div>
-</section>
+</div>
 
-<!-- TextImage Start -->
-{% set textImageImage = "glas/rewards" %}
-{% set textImageImagePosition = "left" %}
-{% set textImageTitle = "Democratic network" %}
-{% set textImageSubtitle = "" %}
-{% set textImageParagraph = "On Camino, everyone is equal. It is not the stake in the network that determines how many transactions are assigned to one or how much voting power they have. On the contrary, everyone has contributed the same stake of 100,000 CAM. Moreover, the validators' share of the transaction fees is granted to each validator in proportion to their respective validation uptime. We believe in this fair and inclusive mechanism and invite larger and smaller companies to join the network." %}
-{% include "textImage.html" %}
-<!-- TextImage End -->
-
-
-
-{% include "validatorForm.html" %}
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden h-64 md:h-[420px]">
+            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Become a Validator
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Seize a unique chance to boost your reputation and visibility as an early Validator</li>
+                <li>Establish yourself as a leader and innovator in the field.</li>
+                <li>Gain recognition and credibility.</li>
+                <li>Get the chance to be at the forefront of the new travel ecosystem. </li>
+            </ul>
+            <ul class="list-disc pl-4 mb-6 text-gray-300">
+                <li>Schedule a call with Pablo Castillo</li>
+                <li>Follow the given instructions and requirements</li>
+                <li>Receive the node and start validating the network</li>
+            </ul>
+            <a href="#" class="button">Schedule a call with our team</a>
+        </div>
+    </div>
+</div>

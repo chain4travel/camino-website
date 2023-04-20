@@ -4,14 +4,91 @@ description:    Start building in the web3 ecosystem made for travel.
 layout:         default
 ---
 
-<!-- Hero Start -->
-    {% set heroTitle = "Camino is developer-friendly" %}
-    {% set heroSubtitle = "" %}
-    {% set heroText = "Start building on the layer 1 for the travel industry" %}
-    {% set heroBgImage = "cards" %}
-    {% set developers = "true" %}
-    {% include "hero.html" %}
-<!-- Hero End -->
+<div class="hero">
+    <div class="flex flex-col md:flex-row w-full items-center">
+        <div class="text-center md:text-left w-full">
+            <div class="text-4xl xl:text-7xl font-headline font-medium">
+                Build the future of travel: Travel Tech needs you 
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                Camino community is building a new travel ecosystem to shape the future of the industry with new efficient solutions creating personalized travel experiences for billions of people around the world.
+            </p>
+        </div>
+        <img class="order-first md:order-last w-1/2 flex-shrink-0" src="/img/glas-developers.png" alt="">
+    </div>
+</div>
+
+{% include "supporter-slider.html" %}
+
+<div class="py-12 md:py-24">
+    <div class="container px-4">
+        <div class="grid grid-cols-12 gap-6 bg-gradient-to-b from-secondary/25 to-transparent rounded-camino p-6 md:p-24">
+            <div class="col-span-12 md:col-span-4 text-left md:text-center">
+                <div class="md:mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" viewBox="0 0 64 64">
+                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M21.333 21.333h21.334m0 10.667H21.333m0 10.667H32M53.333 32V12.667a2 2 0 0 0-2-2H12.667a2 2 0 0 0-2 2v38.666a2 2 0 0 0 2 2H32m8-2.666 3.753 3.753a2 2 0 0 0 2.976-.165L56 42.667"/>
+                    </svg>
+                </div>
+                <div class="font-headline font-medium text-xl md:text-3xl my-4">
+                    Community
+                </div>
+                <p class="text-gray-300">
+                    Join the community of devs, travel experts and travelers for collaboration and networking.
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-4 text-left md:text-center">
+                <div class="md:mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline font-medium text-xl md:text-3xl my-4">
+                    Adoption
+                </div>
+                <p class="text-gray-300">
+                    High adoption of blockchain solutions in the travel industry will result in high demand for devs
+                </p>
+            </div>
+            <div class="col-span-12 md:col-span-4 text-left md:text-center">
+                <div class="md:mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
+                    <svg class="w-10 md:w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3332 21.3334H42.6665M42.6665 32.0001H21.3332M21.3332 42.6667H31.9998M53.3332 32.0001V12.6667C53.3332 11.5622 52.4377 10.6667 51.3332 10.6667H12.6665C11.5619 10.6667 10.6665 11.5622 10.6665 12.6668V51.3334C10.6665 52.438 11.5619 53.3334 12.6665 53.3334H31.9998" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M40 50.6667L43.7533 54.42C44.5962 55.2629 45.9846 55.186 46.7292 54.2552L56 42.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="font-headline font-medium text-xl md:text-3xl my-4">
+                    Innovation
+                </div>
+                <p class="text-gray-300">
+                    Start developing platforms, dApps, and other products on Camino Network
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "section_developerstats.html" %}
+
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Tech stack and dev tools
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Core development language is GO</li>
+                <li>Quick launch of apps on the EVM-compatible C-Chain</li>
+                <li>dApps built on top of the Camino backend</li>
+                <li>Full EVM compatibility, supporting ERC-20, ERC-721, ERC-2771, and other.</li>
+                <li>Easy adoption of Ethereum Smart contracts and dApps</li>
+            </ul>
+        </div>
+        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last overflow-hidden rounded-lg h-64 md:h-[420px]">
+            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        </div>
+    </div>
+</div>
 
 <section>
     <h1 class="mb-12 text-center">Camino's specific features</h1>
@@ -34,7 +111,6 @@ layout:         default
     </div>
 </section>
 
-{% include "section_developerstats.html" %}
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Our tech stack based on specialized chains" %}

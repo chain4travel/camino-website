@@ -4,56 +4,88 @@ description:    An open field of opportunities powered by blockchain.
 layout:         default
 ---
 
-<!-- Hero Start -->
-{% set heroTitle = "Camino is made for travel" %}
-{% set heroSubtitle = "" %}
-{% set heroText = "An open field of opportunities powered by blockchain" %}
-{% set heroBgImage = "cubes" %}
-{% include "hero.html" %}
-<!-- Hero End -->
+<div class="hero">
+    <div class="flex flex-col md:flex-row w-full items-center">
+        <div class="text-center md:text-left w-full">
+            <div class="text-4xl xl:text-7xl font-headline font-medium">
+                New opportunities for the Travel Industry
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                Reach the next generation of travelers with Camino Network. Our ecosystem is designed to connect you with a new wave of tech-savvy, conscious travelers looking for unique and personalized experiences.
+            </p>
+        </div>
+        <img class="order-first md:order-last w-1/2 flex-shrink-0" src="/img/glas-hexagon.png" alt="">
+    </div>
+</div>
 
-<!-- CardSolo Start -->
-{% set cardSoloBG = "caminoSky" %}
-{% set cardSoloImage = "glas/stack" %}
-{% set cardSoloImagePosition = "right" %}
-{% set cardSoloTitle = "Camino, the operating system for the global travel industry" %}
-{% set cardSoloParagraph = "Camino will form the new operating system of the global travel industry, allowing all participants in the space, from airlines and hotels to rental car companies and tour operators, to interact with one another efficiently, reliably, and transparently." %}
-{% set cardSoloParagraph2 = "Many travel players are already developing their first use cases based on camino technology, which represent real added value." %}
-{% set cardSoloButton = "" %}
-{% set cardSoloButtonLink = "" %}
-{% include "cardSolo.html" %}
-<!-- CardSolo End -->
+{% include "supporter-slider.html" %}
 
-<!-- Use cases Start -->
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-contain" src="/static/images/schema-new-path.png" alt="Chain4Travel Logo">
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium mb-6 text-2xl xl:text-6xl">
+                The Structure of Global Travel Tomorrow
+            </div>
+            <div class="flex items-center font-headline font-medium text-xl mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 64 64"><path fill="#B5E3FD" d="M32 5.333c-14.667 0-26.667 12-26.667 26.667 0 14.667 12 26.667 26.667 26.667 14.666 0 26.666-12 26.666-26.667 0-14.667-12-26.667-26.666-26.667Zm0 48c-11.76 0-21.334-9.573-21.334-21.333 0-11.76 9.574-21.333 21.334-21.333S53.333 20.24 53.333 32c0 11.76-9.573 21.333-21.333 21.333Zm12.24-33.12L26.666 37.787l-6.906-6.88-3.76 3.76 10.666 10.666L48 24l-3.76-3.787Z"/></svg>
+                Open-source
+            </div>
+            <div class="flex items-center font-headline font-medium text-xl mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 64 64"><path fill="#B5E3FD" d="M32 5.333c-14.667 0-26.667 12-26.667 26.667 0 14.667 12 26.667 26.667 26.667 14.666 0 26.666-12 26.666-26.667 0-14.667-12-26.667-26.666-26.667Zm0 48c-11.76 0-21.334-9.573-21.334-21.333 0-11.76 9.574-21.333 21.334-21.333S53.333 20.24 53.333 32c0 11.76-9.573 21.333-21.333 21.333Zm12.24-33.12L26.666 37.787l-6.906-6.88-3.76 3.76 10.666 10.666L48 24l-3.76-3.787Z"/></svg>
+                Low transaction fees
+            </div>
+            <div class="flex items-center font-headline font-medium text-xl mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 64 64"><path fill="#B5E3FD" d="M32 5.333c-14.667 0-26.667 12-26.667 26.667 0 14.667 12 26.667 26.667 26.667 14.666 0 26.666-12 26.666-26.667 0-14.667-12-26.667-26.666-26.667Zm0 48c-11.76 0-21.334-9.573-21.334-21.333 0-11.76 9.574-21.333 21.334-21.333S53.333 20.24 53.333 32c0 11.76-9.573 21.333-21.333 21.333Zm12.24-33.12L26.666 37.787l-6.906-6.88-3.76 3.76 10.666 10.666L48 24l-3.76-3.787Z"/></svg>
+                Run by industry players
+            </div>
+            <div class="flex items-center font-headline font-medium text-xl mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 64 64"><path fill="#B5E3FD" d="M32 5.333c-14.667 0-26.667 12-26.667 26.667 0 14.667 12 26.667 26.667 26.667 14.666 0 26.666-12 26.666-26.667 0-14.667-12-26.667-26.666-26.667Zm0 48c-11.76 0-21.334-9.573-21.334-21.333 0-11.76 9.574-21.333 21.334-21.333S53.333 20.24 53.333 32c0 11.76-9.573 21.333-21.333 21.333Zm12.24-33.12L26.666 37.787l-6.906-6.88-3.76 3.76 10.666 10.666L48 24l-3.76-3.787Z"/></svg>
+                Decentralized governance
+            </div>
+            <div class="flex items-center font-headline font-medium text-xl mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 64 64"><path fill="#B5E3FD" d="M32 5.333c-14.667 0-26.667 12-26.667 26.667 0 14.667 12 26.667 26.667 26.667 14.666 0 26.666-12 26.666-26.667 0-14.667-12-26.667-26.666-26.667Zm0 48c-11.76 0-21.334-9.573-21.334-21.333 0-11.76 9.574-21.333 21.334-21.333S53.333 20.24 53.333 32c0 11.76-9.573 21.333-21.333 21.333Zm12.24-33.12L26.666 37.787l-6.906-6.88-3.76 3.76 10.666 10.666L48 24l-3.76-3.787Z"/></svg>
+                KYC & KYB verification*
+            </div>
+            <div class="flex items-center font-headline font-medium text-xl mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 64 64"><path fill="#B5E3FD" d="M32 5.333c-14.667 0-26.667 12-26.667 26.667 0 14.667 12 26.667 26.667 26.667 14.666 0 26.666-12 26.666-26.667 0-14.667-12-26.667-26.666-26.667Zm0 48c-11.76 0-21.334-9.573-21.334-21.333 0-11.76 9.574-21.333 21.334-21.333S53.333 20.24 53.333 32c0 11.76-9.573 21.333-21.333 21.333Zm12.24-33.12L26.666 37.787l-6.906-6.88-3.76 3.76 10.666 10.666L48 24l-3.76-3.787Z"/></svg>
+                Stable currencies
+            </div>
+            <div class="flex items-center font-headline font-medium text-xl mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 64 64"><path fill="#B5E3FD" d="M32 5.333c-14.667 0-26.667 12-26.667 26.667 0 14.667 12 26.667 26.667 26.667 14.666 0 26.666-12 26.666-26.667 0-14.667-12-26.667-26.666-26.667Zm0 48c-11.76 0-21.334-9.573-21.334-21.333 0-11.76 9.574-21.333 21.334-21.333S53.333 20.24 53.333 32c0 11.76-9.573 21.333-21.333 21.333Zm12.24-33.12L26.666 37.787l-6.906-6.88-3.76 3.76 10.666 10.666L48 24l-3.76-3.787Z"/></svg>
+                EVM compatible
+            </div>
+            <div class="text-caminoSky">
+                *Know-Your-Customer / Know-Your-Business
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "testimonial-four.html" %}
+
 {% include "usecases.html" %}
-<!-- Use cases End -->
 
-<!-- TextImage Start -->
-    {% set textImageImage =             "glas/pins" %}
-    {% set textImageImagePosition =     "right" %}
-    {% set textImageCategory =          "Use cases for travel" %}
-    {% set textImageTitle =             "Hotel content in web3" %}
-    {% set textImageParagraph =         "What sounds unimaginable today could become a reality powered by blockchain very soon: Complete and easily accessible hotel information. This will be possible by creating unique hotel wallets on Camino that are easily accessible with a simple API connection and entail all the hotel's content." %}
-    {% set textImageParagraph2 =        "" %}
-    {% set textImageButtonLink =        "https://youtu.be/hIxtQUQOfVw" %}
-    {% set textImageButtonLabel =       "Hotel information in web3" %}
-    {% set textImageButtonLinkBlank =   "true" %}
-    {% include "textImage.html" %}
-<!-- TextImage End -->
-
-<div class="-mb-8 lg:-mb-48"></div>
-
-<!-- TextImage Start -->
-    {% set textImageImage =             "glas/planes" %}
-    {% set textImageImagePosition =     "left" %}
-    {% set textImageCategory =          "Use cases for travel" %}
-    {% set textImageTitle =             "Loyalty programs on Camino" %}
-    {% set textImageParagraph =         "Customer loyalty programs spread rapidly across many industries. The result is a maze of point systems and redemption options, as well as complicated processes involving the exchange of points between program partners. Customer loyalty programs are ripe for innovation that will simplify their use. One solution offers blockchain." %}
-    {% set textImageParagraph2 =        "" %}
-    {% set textImageButtonLink =        "https://youtu.be/dtp5JCL-bOk" %}
-    {% set textImageButtonLabel =       "Loyalty programs on Camino" %}
-    {% set textImageButtonLinkBlank =   "true" %}
-    {% include "textImage.html" %}
-<!-- TextImage End -->
-
-{% include "section_testimonials.html" %}
+<div class="py-12 md:py-24">
+    <div class="container px-4 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-6xl">
+                Web 3 in Travel |  Webinar
+            </div>
+            <p class="my-2 md:my-6 text-gray-300">
+                Learn how blockchain will influence:
+            </p>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Marketing and sales</li>
+                <li>Buesiness and operations</li>
+                <li>Technology and dvelopment</li>
+            </ul>
+            <a href="#" class="button">Secure your spot!</a>
+        </div>
+        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last rounded-lg overflow-hidden h-64 md:h-[420px]">
+            <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
+        </div>
+    </div>
+</div>
