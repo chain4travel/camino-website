@@ -62,7 +62,7 @@ body {
 }
 
 section {
-  @apply container py-8 lg:py-16 overflow-x-hidden;
+  @apply container py-16 lg:py-24 overflow-x-hidden;
 }
 
 .hero-new {
