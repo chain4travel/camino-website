@@ -70,19 +70,19 @@ section {
 }
 
 .button {
-  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-primary hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all bg-primary hover:bg-caminoSky font-medium text-white hover:text-gray-900 py-2 px-4 rounded-xl;
 }
 
 .button-secondary {
-  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-gray-900 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all bg-gray-900 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
 }
 
 .button-secondary-outline {
-  @apply text-center text-base whitespace-nowrap inline-block transition-all border border-gray-900 text-gray-900 bg-transparent hover:bg-white hover:border-white font-medium py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-900 text-gray-900 bg-transparent hover:bg-white hover:border-white font-medium py-2 px-4 rounded-xl;
 }
 
 .button-gradient {
-  @apply text-center text-base whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-2 px-4 rounded-xl;
 }
 
 .card {
@@ -138,6 +138,13 @@ section {
   box-shadow:
   inset 8px 8px 16px 0 rgba(177, 67, 252, .75),
   inset -8px -8px 16px 0 rgba(20,158,237, .75);
+}
+
+.shadow-gradient-inner-xs {
+  border: 1px solid rgba(255,255,255,.25);
+  box-shadow:
+  inset 4px 4px 8px 0 rgba(177, 67, 252, .5),
+  inset -4px -4px 8px 0 rgba(20,158,237, .5);
 }
 
 summary::marker {
