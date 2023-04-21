@@ -17,108 +17,43 @@ layout:         default
                 Camino Network unites businesses, developers, and travelers to make the industry more efficient. Blockchain keeps the ecosystem safe, fair, and fast.
             </p>
         </div>
-        <img class="order-first md:order-last w-1/2 flex-shrink-0" src="/static/images/_header/glas-ecosystem.png" alt="">
+        <img class="order-first md:order-last w-1/2 flex-shrink-0 md:-mr-24" src="/static/images/glas/stack.png" alt="">
     </div>
 </div>
 
 {% include "supporter-slider.html" %}
 
-<div class="py-12 md:py-24">
-    <div class="container px-4">
-        <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-10 md:mb-20">
-            An ecosystem for all
-        </div>
-        <div class="grid grid-cols-12 gap-6">
-            <div class="col-span-12 md:col-span-3 text-left md:text-center">
-                <div class="md:mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
-                    {% image "./src/static/images/_icons/icon-supporter.png", "Icon Wallet", "flex-shrink-0", "w-12" %}
-                </div>
-                <div class="font-headline font-medium text-xl md:text-3xl my-4">
-                    Supporters
-                </div>
-                <p class="text-gray-300">
-                    Investors, developers, early adopters, partners, sharing the vision of the web3 travel ecosystem
-                </p>
-            </div>
-            <div class="col-span-12 md:col-span-3 text-left md:text-center">
-                <div class="md:mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
-                    {% image "./src/static/images/_icons/icon-developer.png", "Icon Wallet", "flex-shrink-0", "w-12" %}
-                </div>
-                <div class="font-headline font-medium text-xl md:text-3xl my-4">
-                    Developers
-                </div>
-                <p class="text-gray-300">
-                    Professional devs and enthusiasts ready to launch dApps and plattforms
-                </p>
-            </div>
-            <div class="col-span-12 md:col-span-3 text-left md:text-center">
-                <div class="md:mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
-                    {% image "./src/static/images/_icons/icon-validator.png", "Icon Wallet", "flex-shrink-0", "w-12" %}
-                </div>
-                <div class="font-headline font-medium text-xl md:text-3xl my-4">
-                    Validators
-                </div>
-                <p class="text-gray-300">
-                    Innovators who govern and secure the network and validate all transactions
-                </p>
-            </div>
-            <div class="col-span-12 md:col-span-3 text-left md:text-center">
-                <div class="md:mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
-                    {% image "./src/static/images/_icons/icon-business.png", "Icon Wallet", "flex-shrink-0", "w-12" %}
-                </div>
-                <div class="font-headline font-medium text-xl md:text-3xl my-4">
-                    Businesses
-                </div>
-                <p class="text-gray-300">
-                    Hotels, airlines, tour operators, cruise lines, car rentals, travel agencies etc.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- CardRow Start -->
+    {% set cardRowTitle = "An ecosystem for all" %}
+    {% set cardRowParagraph = "" %}
+    {% set cardRowSubtitle = "" %}
+    {% set cardRowBgImage = "" %}
+
+    {% set cardFirstImage = "generic-09" %}
+    {% set cardFirstTitle = "Supporters" %}
+    {% set cardFirstText = "Investors, developers, early adopters, partners, sharing the vision of the web3 travel ecosystem" %}
+    {% set cardFirstLinkLabel = "" %}
+
+    {% set cardSecondImage = "generic-11" %}
+    {% set cardSecondTitle = "Developers" %}
+    {% set cardSecondText = "Professional devs and enthusiasts ready to launch dApps and plattforms" %}
+    {% set cardSecondLinkLabel = "" %}
+
+    {% set cardThirdImage = "generic-10" %}
+    {% set cardThirdTitle = "Validators" %}
+    {% set cardThirdText = "Innovators who govern and secure the network and validate all transactions" %}
+    {% set cardThirdLinkLabel = "" %}
+
+    {% set cardFourthImage = "generic-08" %}
+    {% set cardFourthTitle = "Businesses" %}
+    {% set cardFourthText = "Hotels, airlines, tour operators, cruise lines, car rentals, travel agencies etc." %}
+    {% set cardFourthLinkLabel = "" %}
+
+    {% include "cardRow.html" %}
+<!-- CardRow End -->
 
 <div class="py-12 md:py-24">
-    <div class="container px-4">
-        <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-10">
-            How does it work
-        </div>
-        <div class="grid grid-cols-12 gap-6">
-            <div class="col-span-12 md:col-span-4 text-center border-2 border-gray-800 rounded-3xl pt-8 pb-12">
-                <img class="max-w-[240px] mx-auto" src="/static/images/schema-web1.png" alt="">
-                <div class="font-headline font-medium text-3xl mt-4">
-                    Web 1.0
-                </div>
-                <div class="text-caminoSky text-sm font-semibold my-2 md:my-4">1900s — 2000</div>
-                <p class="text-gray-300">
-                    Static read only web pages
-                </p>
-            </div>
-            <div class="col-span-12 md:col-span-4 text-center border-2 border-gray-800 rounded-3xl pt-8 pb-12">
-                <img class="max-w-[240px] mx-auto" src="/static/images/schema-web2.png" alt="">
-                <div class="font-headline font-medium text-3xl mt-4">
-                    Web 2.0
-                </div>
-                <div class="text-caminoSky text-sm font-semibold my-2 md:my-4">2000s — 2020s</div>
-                <p class="text-gray-300">
-                    Information-centric and interactive
-                </p>
-            </div>
-            <div class="col-span-12 md:col-span-4 text-center border-2 border-gray-800 rounded-3xl pt-8 pb-12">
-                <img class="max-w-[240px] mx-auto" src="/static/images/schema-web3.png" alt="">
-                <div class="font-headline font-medium text-3xl mt-4">
-                    Web 3.0
-                </div>
-                <div class="text-caminoSky text-sm font-semibold my-2 md:my-4">2020s — ???</div>
-                <p class="text-gray-300">
-                    User-centric, decentralized, private and secure
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="py-12 md:py-24">
-    <div class="container px-4">
+    <div class="max-w-screen-xl px-4 mx-auto">
         <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-10 md:mb-20">
             A collaborative technology: Blockchain
         </div>
@@ -141,8 +76,8 @@ layout:         default
     </div>
 </div>
 
-<div class="py-12 md:py-24">
-    <div class="container px-4 grid grid-cols-12 gap-4 md:gap-6 items-center">
+<div class="py-12 md:py-24 bg-cover" style="background-image: url(/static/images/heroBgImages/cubes2.png);">
+    <div class="max-w-screen-xl px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden h-64 md:h-[420px]">
             <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1065191436/de/foto/touristen-entdecken-die-eish%C3%B6hle.jpg?s=1024x1024&w=is&k=20&c=B5vaKxP7VVmp2LJOC4Evh-blpazzQOnMMmHwqmdqA2w=" alt="Chain4Travel Logo">
         </div>
@@ -165,7 +100,7 @@ layout:         default
 {% include "section_productmap.html" %}
 
 <div class="py-12 md:py-24">
-    <div class="container px-4 grid grid-cols-12 gap-4 md:gap-6 items-center">
+    <div class="max-w-screen-xl px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-6">
             <div class="font-headline font-medium text-2xl xl:text-6xl">
                 Web 3 in Travel |  Webinar
