@@ -1,4 +1,8 @@
 <div class="py-12 md:py-24">
+    <div :class="{'h-[500px] md:h-[720px]' : !testimonialsOpen}" class="relative md:p-6 overflow-hidden" x-data="{ testimonialsOpen: false }" id="sectionTestimonials">
+    <div class="absolute z-10 bottom-0 flex justify-center left-0 right-0 pt-8 bg-gradient-to-t from-gray-950 to-transparent">
+        <a href="#sectionTestimonials" class="button bottom-0" x-text="testimonialsOpen ? 'Close' : 'Show more'" @click="testimonialsOpen = !testimonialsOpen">Show more</a>
+    </div>
     <div class="container px-4 text-white grid grid-cols-12 relative">
         <div class="bg-gray-950 w-px absolute right-4 h-full"></div>
         <div class="bg-gray-950 h-px absolute bottom-0 w-full"></div>
@@ -54,5 +58,5 @@
             </div>
         {% endfor %}
     </div>
-
+    </div>
 </div>
