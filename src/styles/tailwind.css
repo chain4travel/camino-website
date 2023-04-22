@@ -62,11 +62,11 @@ body {
 }
 
 section {
-  @apply max-w-screen-xl px-4 mx-auto py-16 lg:py-24;
+  @apply max-w-screen-xl px-8 md:px-4 mx-auto py-16 lg:py-24;
 }
 
 .hero-new {
-  @apply max-w-screen-xl px-4 mx-auto flex items-center;
+  @apply max-w-screen-xl px-8 md:px-4 mx-auto flex items-center;
 }
 
 .button {

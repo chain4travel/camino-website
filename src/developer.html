@@ -14,56 +14,45 @@ layout:         default
                 Camino community is building a new travel ecosystem to shape the future of the industry with new efficient solutions creating personalized travel experiences for billions of people around the world.
             </p>
         </div>
-        <img class="order-first md:order-last w-1/2 flex-shrink-0 md:-mr-24" src="/static/images/_header/glas-cage.png" alt="">
+        {% image "./src/static/images/_header/glas-cage.png", "imagealt", "order-first md:order-last flex-shrink-0 -mb-8 md:mb-0 md:w-1/2 md:-mr-24", "" %}
     </div>
 </div>
 
 {% include "supporter-slider.html" %}
 
-<div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-4 mx-auto">
-        <div class="grid grid-cols-12 gap-6 bg-gradient-to-b from-secondary/25 to-transparent rounded-camino p-6 md:p-24">
-            <div class="col-span-12 md:col-span-4 text-center">
-                <div class="mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
-                    {% image "./src/static/images/_icons/icon-community.png", "Icon Wallet", "flex-shrink-0", "w-12" %}
-                </div>
-                <div class="font-headline font-medium text-xl md:text-3xl my-4">
-                    Community
-                </div>
-                <p class="text-gray-300">
-                    Join the community of devs, travel experts and travelers for collaboration and networking.
-                </p>
-            </div>
-            <div class="col-span-12 md:col-span-4 text-center">
-                <div class="mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
-                    {% image "./src/static/images/_icons/icon-adoption.png", "Icon Wallet", "flex-shrink-0", "w-12" %}
-                </div>
-                <div class="font-headline font-medium text-xl md:text-3xl my-4">
-                    Adoption
-                </div>
-                <p class="text-gray-300">
-                    High adoption of blockchain solutions in the travel industry will result in high demand for devs
-                </p>
-            </div>
-            <div class="col-span-12 md:col-span-4 text-center">
-                <div class="mx-auto shadow-gradient-inner-sm w-20 md:w-28 aspect-square flex flex-shrink-0 items-center justify-center rounded-full">
-                    {% image "./src/static/images/_icons/icon-innovation.png", "Icon Wallet", "flex-shrink-0", "w-12" %}
-                </div>
-                <div class="font-headline font-medium text-xl md:text-3xl my-4">
-                    Innovation
-                </div>
-                <p class="text-gray-300">
-                    Start developing platforms, dApps, and other products on Camino Network
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- CardRow Start -->
+    {% set cardRowTitle = "Secure and efficient transactions" %}
+    {% set cardRowParagraph = "" %}
+    {% set cardRowSubtitle = "" %}
+    {% set cardRowBgImage = "" %}
+
+    {% set cardFirstImage = "generic-10" %}
+    {% set cardFirstTitle = "Community" %}
+    {% set cardFirstText = "Join the community of devs, travel experts and travelers for collaboration and networking." %}
+    {% set cardFirstLinkLabel = "" %}
+
+    {% set cardSecondImage = "generic-12" %}
+    {% set cardSecondTitle = "Adoption" %}
+    {% set cardSecondText = "High adoption of blockchain solutions in the travel industry will result in high demand for devs" %}
+    {% set cardSecondLinkLabel = "" %}
+
+    {% set cardThirdImage = "generic-13" %}
+    {% set cardThirdTitle = "Innovation" %}
+    {% set cardThirdText = "Start developing platforms, dApps, and other products on Camino Network" %}
+    {% set cardThirdLinkLabel = "" %}
+
+    {% set cardFourthImage = "" %}
+    {% set cardFourthTitle = "" %}
+    {% set cardFourthText = "" %}
+    {% set cardFourthLinkLabel = "" %}
+
+    {% include "cardRow.html" %}
+<!-- CardRow End -->
 
 {% include "section_developerstats.html" %}
 
 <div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-6">
             <div class="font-headline font-medium text-2xl xl:text-6xl">
                 Tech stack and dev tools
@@ -83,7 +72,12 @@ layout:         default
 </div>
 
 <div class="py-12 md:py-24 bg-cover" style="background-image: url(/static/images/heroBgImages/blocks.png);">
-    <div class="max-w-screen-xl px-4 mx-auto">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+
+        <div class="font-headline font-medium text-center text-2xl xl:text-6xl mb-12">
+            Quad-chain approach perfectionized for the travel industry
+        </div>
+
         <div class="grid grid-cols-12 gap-6 text-center">
             <div class="col-span-12 md:col-span-6 xl:col-span-3 bg-gray-950 p-6 rounded-3xl border-2 border-gray-500 transition-transform hover:scale-110">
                 {% image "./src/static/images/schema-chain-multi.png", "imagealt", "", "mx-auto w-48 object-contain" %}
@@ -126,7 +120,7 @@ layout:         default
 </div>
 
 <div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="hidden md:block col-span-4 md:col-start-2 p-2 rounded-3xl bg-gradient-to-br from-caminoSky to-accent transition-transform hover:scale-110 text-center">
             <div class="bg-gray-950 p-6 rounded-2xl">
                 {% image "./src/static/images/schema-chain-travel.png", "imagealt", "", "mx-auto w-48 object-contain" %}
@@ -185,28 +179,17 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-4 mx-auto flex flex-wrap gap-4 md:gap-6 justify-center">
+<div class="py-24 md:py-32 bg-cover" style="background-image: url(/static/images/heroBgImages/blocks.png);">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
 
-        <a href="{{site.docs}}" class="relative inline-block transition-all hover:scale-110">
-            <div class="relative rounded-full z-10 bg-gray-950 px-6 md:px-8 py-3 md:py-4 font-headline font-medium text-xl md:text-2xl">Start building</div>
-            <div class="absolute rounded-full z-0 -inset-1 bg-gradient-to-r from-primary to-secondary blur"></div>
-        </a>
+        <div class="font-headline font-medium text-2xl xl:text-6xl mb-12">
+            Further developer ressources
+        </div>
 
-        <a href="{{site.discord}}" class="relative inline-block transition-all hover:scale-110">
-            <div class="relative rounded-full z-10 bg-gray-950 px-6 md:px-8 py-3 md:py-4 font-headline font-medium text-xl md:text-2xl">Discord</div>
-            <div class="absolute rounded-full z-0 -inset-1 bg-gradient-to-r from-primary to-secondary blur"></div>
-        </a>
-
-        <a href="/bugbounty" class="relative inline-block transition-all hover:scale-110">
-            <div class="relative rounded-full z-10 bg-gray-950 px-6 md:px-8 py-3 md:py-4 font-headline font-medium text-xl md:text-2xl">Bug Bounty</div>
-            <div class="absolute rounded-full z-0 -inset-1 bg-gradient-to-r from-primary to-secondary blur"></div>
-        </a>
-
-        <a href="/grant-program" class="relative inline-block transition-all hover:scale-110">
-            <div class="relative rounded-full z-10 bg-gray-950 px-6 md:px-8 py-3 md:py-4 font-headline font-medium text-xl md:text-2xl">Grant Program</div>
-            <div class="absolute rounded-full z-0 -inset-1 bg-gradient-to-r from-primary to-secondary blur"></div>
-        </a>
+        <a href="{{site.docs}}" class="button" target="_blank" rel="noopener noreferrer">Documentation</a>
+        <a href="{{site.discord}}" class="button ml-2" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="/bugbounty" class="button ml-2" target="_blank" rel="noopener noreferrer">Bug Bounty</a>
+        <a href="/grant-program" class="button ml-2" target="_blank" rel="noopener noreferrer">Grant Program</a>
 
     </div>
 </div>
