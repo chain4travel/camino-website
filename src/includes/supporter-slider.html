@@ -51,19 +51,21 @@
 }
 </style>
 
-<div class="text-center font-headline text-lg md:text-2xl font-medium">
-	Trusted by 80+ industry leaders
-</div>
-<div id="infinite" class="highway-slider">
-	<div class="highway-barrier">
-		<ul class="highway-lane">
-			{% for supporter in supporter %}
-			{% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
-			{% set logoalt = supporter.slug + " - Logo" %}
-			<li class="highway-car">
-				{% image logopath, logoalt, "", "w-48 opacity-60" %}
-			</li>
-			{% endfor %}
-		</ul>
+<div class="py-12 md:py-24">
+	<div class="text-center font-headline text-lg md:text-2xl font-medium">
+		Trusted by 80+ industry leaders
+	</div>
+	<div id="infinite" class="highway-slider">
+		<div class="highway-barrier">
+			<ul class="highway-lane">
+				{% for supporter in supporter %}
+				{% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
+				{% set logoalt = supporter.slug + " - Logo" %}
+				<li class="highway-car">
+					{% image logopath, logoalt, "", "w-48 opacity-60" %}
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
 	</div>
 </div>
