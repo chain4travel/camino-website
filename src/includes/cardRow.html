@@ -6,7 +6,7 @@
 >
     <section class="text-center">
         {% if cardRowTitle %}
-        <div class="{% if cardRowSubtitle %}mb-6{% endif %} font-headline font-medium text-2xl md:text-5xl text-center mb-8 md:mb-12">
+        <div class="{% if cardRowSubtitle %}mb-4{% endif %} font-headline font-medium text-2xl md:text-5xl text-center mb-8 md:mb-12">
             {{ cardRowTitle }}
         </div>
         {% endif %}
@@ -31,44 +31,56 @@
 
             {% if cardFirstTitle %}
             <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFirstImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
-                {% if cardFirstImage %}<img class="mb-4 w-4/5 h-auto mx-auto" src="/static/images/cardImages/{{ cardFirstImage }}.png" alt="{{ cardFirstTitle }} - Camino Network">{% endif %}
-                <h3 class="{% if cardFirstText %} mb-6 {% endif %}">{{ cardFirstTitle }}</h3>
+                {% if cardFirstImage %}
+                    {% set cardFirstImagePath = "./src/static/images/cardImages/" + cardFirstImage + ".png" %}
+                    {% image cardFirstImagePath, cardFirstImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                {% endif %}
+                <h3 class="{% if cardFirstText %} mb-4 {% endif %}">{{ cardFirstTitle }}</h3>
                 <p>{{ cardFirstText }}</p>
                 {% if cardFirstLinkLabel %}
-                <a {% if cardFirstLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardFirstLink }}">{{ cardFirstLinkLabel }}</a>
+                <a {% if cardFirstLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardFirstLink }}">{{ cardFirstLinkLabel }}</a>
                 {% endif %}
             </div>
             {% endif %}
 
             {% if cardSecondTitle %}
             <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardSecondImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
-                {% if cardSecondImage %}<img class="mb-4 w-4/5 h-auto mx-auto" src="/static/images/cardImages/{{ cardSecondImage }}.png" alt="{{ cardSecondTitle }} - Camino Network">{% endif %}
-                <h3 class="{% if cardSecondText %} mb-6 {% endif %}">{{ cardSecondTitle }}</h3>
+                {% if cardSecondImage %}
+                    {% set cardSecondImagePath = "./src/static/images/cardImages/" + cardSecondImage + ".png" %}
+                    {% image cardSecondImagePath, cardSecondImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                {% endif %}
+                <h3 class="{% if cardSecondText %} mb-4 {% endif %}">{{ cardSecondTitle }}</h3>
                 <p>{{ cardSecondText }}</p>
                 {% if cardSecondLinkLabel %}
-                <a {% if cardSecondLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardSecondLink }}">{{ cardSecondLinkLabel }}</a>
+                <a {% if cardSecondLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardSecondLink }}">{{ cardSecondLinkLabel }}</a>
                 {% endif %}
             </div>
             {% endif %}
 
             {% if cardThirdTitle %}
             <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardThirdImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
-                {% if cardThirdImage %}<img class="mb-4 w-4/5 h-auto mx-auto" src="/static/images/cardImages/{{ cardThirdImage }}.png" alt="{{ cardThirdTitle }} - Camino Network">{% endif %}
-                <h3 class="{% if cardThirdText %} mb-6 {% endif %}">{{ cardThirdTitle }}</h3>
+                {% if cardThirdImage %}
+                    {% set cardThirdImagePath = "./src/static/images/cardImages/" + cardThirdImage + ".png" %}
+                    {% image cardThirdImagePath, cardThirdImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                {% endif %}
+                <h3 class="{% if cardThirdText %} mb-4 {% endif %}">{{ cardThirdTitle }}</h3>
                 <p>{{ cardThirdText }}</p>
                 {% if cardThirdLinkLabel %}
-                <a {% if cardThirdLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardThirdLink }}">{{ cardThirdLinkLabel }}</a>
+                <a {% if cardThirdLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardThirdLink }}">{{ cardThirdLinkLabel }}</a>
                 {% endif %}
             </div>
             {% endif %}
 
             {% if cardFourthTitle %}
             <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFourthImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
-                {% if cardFourthImage %}<img class="mb-4 w-4/5 h-auto mx-auto" src="/static/images/cardImages/{{ cardFourthImage }}.png" alt="{{ cardFourthTitle }} - Camino Network">{% endif %}
-                <h3 class="{% if cardFourthText %} mb-6 {% endif %}">{{ cardFourthTitle }}</h3>
+                {% if cardFourthImage %}
+                    {% set cardFourthImagePath = "./src/static/images/cardImages/" + cardFourthImage + ".png" %}
+                    {% image cardFourthImagePath, cardFourthImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                {% endif %}
+                <h3 class="{% if cardFourthText %} mb-4 {% endif %}">{{ cardFourthTitle }}</h3>
                 <p>{{ cardFourthText }}</p>
                 {% if cardFourthLinkLabel %}
-                <a {% if cardFourthLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-6" href="{{ cardFourthLink }}">{{ cardFourthLinkLabel }}</a>
+                <a {% if cardFourthLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardFourthLink }}">{{ cardFourthLinkLabel }}</a>
                 {% endif %}
             </div>
             {% endif %}
