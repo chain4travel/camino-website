@@ -1,71 +1,157 @@
 <style>
-
- div.highway-slider {
-	 display: flex;
-	 justify-content: center;
-	 width: 100%;
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
 }
- div.highway-slider div.highway-barrier {
-	 overflow: hidden;
-	 position: relative;
+.slick-slide img {
+    width: 100%;
 }
- div.highway-slider ul.highway-lane {
-	 display: flex;
-	 height: 100%;
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
- div.highway-slider ul.highway-lane li.highway-car {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 background: transparent;
-	 color: #343434;
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
-@keyframes translateinfinite {
-	100% { transform:translateX(calc(-192px * 100));  }
+.slick-list:focus
+{
+    outline: none;
 }
- #infinite div.highway-barrier {
-	 background: transparent;
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
 }
- #infinite div.highway-barrier::before, #infinite div.highway-barrier::after {
-	 content: " ";
-	 position: absolute;
-	 z-index: 9;
-	 width: 192px;
-	 height: 100%;
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
 }
- #infinite div.highway-barrier::before {
-	 top: 0;
-	 left: 0;
-	 background: linear-gradient(to right,#020617 0%,rgba(255,255,255,0) 100%);
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
 }
- #infinite div.highway-barrier::after {
-	 top: 0;
-	 right: 0;
-	 background: linear-gradient(to left,#020617 0%,rgba(255,255,255,0) 100%);
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
 }
- #infinite div.highway-barrier ul.highway-lane {
-    width:calc(192px * 200);
+.slick-track:after
+{
+    clear: both;
 }
- #infinite div.highway-barrier ul.highway-lane li.highway-car {
-    animation: translateinfinite 120s linear infinite;
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
 </style>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <div class="py-12 md:py-24">
 	<div class="text-center font-headline text-lg md:text-2xl font-medium">
 		Trusted by 80+ industry leaders
 	</div>
-	<div id="infinite" class="highway-slider">
-		<div class="highway-barrier">
-			<ul class="highway-lane">
+	<div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+		<div class="customer-logos slider">
 				{% for supporter in supporter %}
+				<a class="slide" href="{{supporter.url}}" target="_blank" rel="noopener noreferrer">
 				{% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
 				{% set logoalt = supporter.slug + " - Logo" %}
-				<li class="highway-car">
-					{% image logopath, logoalt, "", "w-48 opacity-60" %}
-				</li>
+				{% image logopath, logoalt, "", "opacity-50 hover:opacity-100" %}
+				</a>
 				{% endfor %}
-			</ul>
 		</div>
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
