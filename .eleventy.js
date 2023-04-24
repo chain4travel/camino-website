@@ -2,7 +2,7 @@ const now = String(Date.now())
 const htmlmin = require('html-minifier')
 const Image = require("@11ty/eleventy-img")
 
-async function imageShortcode(src, alt, pictureClass, imgClass) {
+async function imageShortcode(src, alt, pictureClass, imgClass, sizes = "100vw") {
     if(alt === undefined) {
         // You bet we throw an error on missing alt (alt="" works okay)
         throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -20,7 +20,7 @@ async function imageShortcode(src, alt, pictureClass, imgClass) {
 
     return `<picture class="${pictureClass}">
         ${Object.values(metadata).map(imageFormat => {
-        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}">`;
+        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
         }).join("\n")}
         <img
             src="${lowsrc.url}"
