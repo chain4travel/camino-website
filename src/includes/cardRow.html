@@ -6,7 +6,7 @@
 >
     <section class="text-center">
         {% if cardRowTitle %}
-        <div class="{% if cardRowSubtitle %}mb-4{% endif %} font-headline font-medium text-2xl md:text-5xl text-center mb-8 md:mb-12">
+        <div class="{% if cardRowSubtitle %}mb-3 md:mb-6{% endif %} {% if cardRowParagraph %}mb-3 md:mb-6{% endif %} font-headline font-medium text-2xl md:text-5xl text-center">
             {{ cardRowTitle }}
         </div>
         {% endif %}
@@ -16,7 +16,7 @@
         </h3>
         {% endif %}
         {% if cardRowParagraph %}
-        <p class="max-w-screen-xl mx-auto">
+        <p class="max-w-screen-md mx-auto">
             {{ cardRowParagraph }}
         </p>
         {% endif %}
@@ -27,7 +27,7 @@
         {% endif %}
 
         <!-- CardRow Start -->
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-6 mt-8 md:mt-12">
 
             {% if cardFirstTitle %}
             <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFirstImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
