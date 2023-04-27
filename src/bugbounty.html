@@ -48,26 +48,6 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<div class="py-12 md:py-24 bg-gray-900">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
-        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
-            {% image "./src/static/images/cardImages/coins-dark-right.png", "imagealt", "", "w-full object-contain" %}
-        </div>
-        <div class="md:col-start-7 col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
-                In order to be eligible for a reward, you must:
-            </div>
-            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
-                <li>Be the first person to report the vulnerability to us</li>
-                <li>Provide sufficient information for us to reproduce and fix the issue</li>
-                <li>In case of high and critical severity vulnerabilities introduce a PoC (Proof of Concept) on a local environment mimicking the production</li>
-                <li>Not be a current or former employee of Chain4Travel</li>
-                <li>Pass a KYC when required</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 <div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <div class="font-headline font-medium text-2xl xl:text-5xl mb-6 text-center">
@@ -94,6 +74,57 @@ layout:         default
         </div>
     </div>
 </div>
+
+<div class="py-12 md:py-24 bg-gray-900">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+            {% image "./src/static/images/cardImages/coins-dark-right.png", "imagealt", "", "w-full object-contain" %}
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Reward criteria
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Report vulnerabilities promptly and exclusively to Camino Network</li>
+                <li>Share comprehensive information for the issue resolution</li>
+                <li>Provide a PoC for critical-severity issues</li>
+                <li>Current or former employees of Chain4Travel are not eligible</li>
+                <li>Know-Your-Customer verification</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-md px-8 md:px-4 mx-auto">
+        <div class="font-headline font-medium text-xl xl:text-3xl">
+            Non-disclosure
+        </div>
+        <p class="text-gray-300 mt-4">
+            We kindly request that you refrain from disclosing any vulnerabilities to third parties until we have had a chance to fix the issue and notify any affected parties. We will keep your submission confidential, but please note that we may need to share it with third parties (e.g. service providers) to address the issue.
+        </p>
+        <div class="font-headline font-medium text-xl xl:text-3xl mt-12">
+            Responsible disclosure
+        </div>
+        <p class="text-gray-300 mt-4">
+            We expect all submissions to adhere to our responsible disclosure policy. This means giving us a reasonable amount of time to fix the vulnerability before disclosing it to the public. We will make every effort to address the issue as soon as possible.
+        </p>
+        <div class="font-headline font-medium text-xl xl:text-3xl mt-12">
+            Responsible disclosure
+        </div>
+        <p class="text-gray-300 mt-4">
+            We aim to respond to all submissions promptly, within 14 business days. If your submission is eligible for a reward, we will notify you and start working on a fix as soon as possible.
+        </p>
+        <div class="font-headline font-medium text-xl xl:text-3xl mt-12">
+            Changes to the program
+        </div>
+        <p class="text-gray-300 mt-4">
+            We reserve the right to make changes to the terms of this bug bounty program at any time. Any updates or modifications will be posted on this page.
+        </p>
+    </div>
+</div>
+
+
 
 <div class="py-24 md:py-32 bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cubes.png);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">

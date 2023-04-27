@@ -30,10 +30,10 @@
         <div class="grid grid-cols-12 gap-6 mt-8 md:mt-12">
 
             {% if cardFirstTitle %}
-            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFirstImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+            <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFirstImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardFirstImage %}
                     {% set cardFirstImagePath = "./src/static/images/cardImages/" + cardFirstImage + ".png" %}
-                    {% image cardFirstImagePath, cardFirstImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                    {% image cardFirstImagePath, cardFirstImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
                 {% endif %}
                 <h3 class="{% if cardFirstText %} mb-4 {% endif %}">{{ cardFirstTitle }}</h3>
                 <p>{{ cardFirstText }}</p>
@@ -44,10 +44,10 @@
             {% endif %}
 
             {% if cardSecondTitle %}
-            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardSecondImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+            <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardSecondImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardSecondImage %}
                     {% set cardSecondImagePath = "./src/static/images/cardImages/" + cardSecondImage + ".png" %}
-                    {% image cardSecondImagePath, cardSecondImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                    {% image cardSecondImagePath, cardSecondImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
                 {% endif %}
                 <h3 class="{% if cardSecondText %} mb-4 {% endif %}">{{ cardSecondTitle }}</h3>
                 <p>{{ cardSecondText }}</p>
@@ -58,10 +58,10 @@
             {% endif %}
 
             {% if cardThirdTitle %}
-            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardThirdImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+            <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardThirdImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardThirdImage %}
                     {% set cardThirdImagePath = "./src/static/images/cardImages/" + cardThirdImage + ".png" %}
-                    {% image cardThirdImagePath, cardThirdImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                    {% image cardThirdImagePath, cardThirdImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
                 {% endif %}
                 <h3 class="{% if cardThirdText %} mb-4 {% endif %}">{{ cardThirdTitle }}</h3>
                 <p>{{ cardThirdText }}</p>
@@ -72,10 +72,10 @@
             {% endif %}
 
             {% if cardFourthTitle %}
-            <div class="overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFourthImage %} pt-0 md:pt-0 {% endif %} rounded-camino col-span-12 {% if cardFourthTitle %} md:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
+            <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFourthImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardFourthImage %}
                     {% set cardFourthImagePath = "./src/static/images/cardImages/" + cardFourthImage + ".png" %}
-                    {% image cardFourthImagePath, cardFourthImage, "", "mb-4 w-4/5 h-auto mx-auto" %}
+                    {% image cardFourthImagePath, cardFourthImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
                 {% endif %}
                 <h3 class="{% if cardFourthText %} mb-4 {% endif %}">{{ cardFourthTitle }}</h3>
                 <p>{{ cardFourthText }}</p>

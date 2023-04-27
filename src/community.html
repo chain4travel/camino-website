@@ -8,10 +8,10 @@ layout:         default
     <div class="flex flex-col md:flex-row w-full items-center">
         <div class="text-center md:text-left w-full">
             <div class="text-4xl xl:text-7xl font-headline font-medium">
-                Camino network  community
+                Camino Network community
             </div>
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
-                Let’s build together a new efficient Internet for the whole travel industry, create new experiences, and find new models and approaches on the way to a sustainable future
+                Let’s build together a new efficient Internet for the whole travel industry, create new experiences, and find new models and approaches on the way to a sustainable future.
             </p>
         </div>
         {% image "./src/static/images/cardImages/network-dark-left.png", "imagealt", "order-first md:order-last flex-shrink-0 -mb-8 md:mb-0 md:w-1/2 md:-mr-24", "" %}
@@ -20,15 +20,41 @@ layout:         default
 
 {% include "supporter-slider.html" %}
 
-<div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
-        <div class="bg-gray-950 rounded-camino shadow-gradient max-w-screen-lg mx-auto p-12">
-            <div class="font-headline font-medium text-2xl md:text-5xl mb-6">
-                Mission & values
+<div class="pt-12 md:pt-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Everyone is welcome to join 
             </div>
-            <p class="text-gray-300">We, the members of Camino Network, are building the layer one blockchain tailored specifically to the travel industry.</p>
-            <p class="text-gray-300">Our mission is to create a more efficient and connected ecosystem that benefits all participants travelers, service providers, developers, validators, organizations, and businesses.</p>
-            <p class="text-gray-300">In Camino Network we believe that transparency and trust are essential for a decentralized network, which is why all validators go through a KYC and KYB process to maintain the integrity of the network. Efficiency is crucial to the travel industry, that is why we are committed to building a more efficient ecosystem.</p>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Builders and developers to launch applications and platforms that utilize the capacity of the Camino blockchain</li>
+                <li>Service providers and suppliers to use applications and platforms to enhance offerings and provide more value to travelers</li>
+                <li>Travelers and enthusiasts to provide feedback and insights to improve the travel ecosystem and find new business models</li>
+                <li>Organizations and destinations aligned with Camino Network’s vision</li>
+            </ul>
+        </div>
+        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last overflow-hidden rounded-lg">
+            {% image "./src/static/images/glas/boxed.png", "imagealt", "", "w-full object-contain" %}
+        </div>
+    </div>
+</div>
+
+<div class="pb-12 md:pb-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+            {% image "./src/static/images/glas/planes.png", "imagealt", "", "w-full object-contain" %}
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Learn, grow and network
+            </div>
+            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
+                <li>Learn from industry leaders and experts</li>
+                <li>Grow the business with new partnerships</li>
+                <li>Network with like-minded professionals</li>
+                <li>Get early access to new products and technologies</li>
+                <li>Shape the future of travel with a supportive community</li>
+            </ul>
         </div>
     </div>
 </div>
@@ -69,59 +95,16 @@ layout:         default
 {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
-        <div class="col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
-                Everyone is welcome to join our Community
-            </div>
-            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
-                <li>Builders and developers, who play a critical role in our ecosystem by launching applications and platforms that utilize the capacity of the Camino blockchain</li>
-                <li>Service providers and suppliers will use these applications and platforms to enhance their offerings and provide more value to travelers</li>
-                <li>Travelers, who will provide us with feedback and insights to improve the travel ecosystem and find new business solutions</li>
-                <li>Organizations and initiatives that align with our mission and values</li>
-            </ul>
-        </div>
-        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last rounded-lg overflow-hidden">
-            {% image "./src/static/images/glas/boxed.png", "imagealt", "", "w-full object-contain" %}
-        </div>
-    </div>
-</div>
-
-<div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
-        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
-            {% image "./src/static/images/glas/planes.png", "imagealt", "", "w-full object-contain" %}
-        </div>
-        <div class="md:col-start-7 col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
-                Develop innovative business models
-            </div>
-            <ul class="list-disc pl-4 my-2 md:my-6 text-gray-300">
-                <li>Collaboration with like-minded professionals</li>
-                <li>Learning opportunities with webinars, workshops, and training sessions</li>
-                <li>Networking with travel industry experts, partners, and investors</li>
-                <li>Business development, new opportunities, and partnerships to boost your revenue</li>
-                <li>Early access to new products, features, and technologies</li>
-                <li>Rewards and recognition for your contributions</li>
-                <li>Influence of the Camino Network community directions</li>
-                <li>Support from the community members</li>
-                <li>Being a part of the future of the travel industry</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 <section>
     <h1 class="text-center mb-12">Camino in the news</h1>
 
     <article class="md:flex items-start py-16 border-b border-gray-700">
         <a target="_blank" class="md:w-1/3 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="https://www.traveldailynews.com/technology/travel-tech-provider-triend-sets-new-standard-for-web3-reviews-on-camino-network/">
-            <img class="rounded-3xl object-cover h-64 md:h-80 w-full" src="https://www.traveldailynews.com/wp-content/uploads/2023/03/Triend.png" alt="Camino Network News - Phocuswire02">
+            <img class="rounded-3xl object-cover h-64 md:h-56 w-full" src="https://www.traveldailynews.com/wp-content/uploads/2023/03/Triend.png" alt="Camino Network News - Phocuswire02">
         </a>
         <div class="p-0 md:px-16 mt-8 md:mt-0">
-            <h2 class="mb-6">Travel tech provider Triend sets new standard for web3 reviews on Camino Network</h2>
-            <p class="mb-6">UK based web3 company, Triend, implements a new standard for travel reviews on the consortium Camino blockchain facilitated by Chain4Travel. This new development will enable more transparent and secure reviews, addressing some of the major problems presented by current review systems.</p>
+            <div class="font-headline font-medium text-xl md:text-3xl mb-6">Travel tech provider Triend sets new standard for web3 reviews on Camino Network</div>
+            <p class="text-gray-300 mb-6 line-clamp-2">UK based web3 company, Triend, implements a new standard for travel reviews on the consortium Camino blockchain facilitated by Chain4Travel. This new development will enable more transparent and secure reviews, addressing some of the major problems presented by current review systems.</p>
             <a target="_blank" href="https://www.traveldailynews.com/technology/travel-tech-provider-triend-sets-new-standard-for-web3-reviews-on-camino-network/" class="button">
                 Read full article
             </a>
@@ -130,11 +113,11 @@ layout:         default
 
     <article class="md:flex items-start py-16 border-b border-gray-700">
         <a target="_blank" class="md:w-1/3 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="https://www.travolution.com/news/chain4travel-hits-%E2%82%AC5.2m-target-for-private-pre-sale-of-camino-crypto-tokens/">
-            <img class="rounded-3xl object-cover h-64 md:h-80 w-full" src="https://3.cdn.travolution.com/dynamic-images/21000-21999/21753/21753_c=(0,0,2000,1332)_w=800_h=533.webp?v=20220321141806" alt="Camino Network News - Phocuswire02">
+            <img class="rounded-3xl object-cover h-64 md:h-56 w-full" src="https://3.cdn.travolution.com/dynamic-images/21000-21999/21753/21753_c=(0,0,2000,1332)_w=800_h=533.webp?v=20220321141806" alt="Camino Network News - Phocuswire02">
         </a>
         <div class="p-0 md:px-16 mt-8 md:mt-0">
-            <h2 class="mb-6">Chain4Travel hits target for €5.2m private pre-sale of Camino crypto tokens</h2>
-            <p class="mb-6">More than 300 companies and private investors from Europe, Asia, North and South America and Australia participated in the sale</p>
+            <div class="font-headline font-medium text-xl md:text-3xl mb-6">Chain4Travel hits target for €5.2m private pre-sale of Camino crypto tokens</div>
+            <p class="text-gray-300 mb-6 line-clamp-2">More than 300 companies and private investors from Europe, Asia, North and South America and Australia participated in the sale</p>
             <a target="_blank" href="https://www.travolution.com/news/chain4travel-hits-%E2%82%AC5.2m-target-for-private-pre-sale-of-camino-crypto-tokens/" class="button">
                 Read full article
             </a>
@@ -143,11 +126,11 @@ layout:         default
 
     <article class="md:flex items-start py-16 border-b border-gray-700">
         <a target="_blank" class="md:w-1/3 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="https://skift.com/2022/05/27/swiss-travel-startup-chain4travel-raises-4-5-million/">
-            <img class="rounded-3xl object-cover h-64 md:h-80 w-full" src="/static/images/news/news-skift.png" alt="Camino Network News - Skift">
+            <img class="rounded-3xl object-cover h-64 md:h-56 w-full" src="/static/images/news/news-skift.png" alt="Camino Network News - Skift">
         </a>
         <div class="p-0 md:px-16 mt-8 md:mt-0">
-            <h2 class="mb-6">Swiss Travel Startup Chain4Travel Raises $4.5 Million for Blockchain</h2>
-            <p class="mb-6">Chain4Travel raised money to promote blockchain-based travel sales, but the track record of success is short and the technology's comparative advantage over what travel agencies use now remains to be proven.</p>
+            <div class="font-headline font-medium text-xl md:text-3xl mb-6">Swiss Travel Startup Chain4Travel Raises $4.5 Million for Blockchain</div>
+            <p class="text-gray-300 mb-6 line-clamp-2">Chain4Travel raised money to promote blockchain-based travel sales, but the track record of success is short and the technology's comparative advantage over what travel agencies use now remains to be proven.</p>
             <a target="_blank" href="https://skift.com/2022/05/27/swiss-travel-startup-chain4travel-raises-4-5-million/" class="button">
                 Read full article
             </a>
@@ -156,11 +139,11 @@ layout:         default
 
     <article class="md:flex items-start py-16">
         <a target="_blank" class="md:w-1/3 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="https://www.phocuswire.com/Chain4travel-seed-funding">
-            <img class="rounded-3xl object-cover h-64 md:h-80 w-full" src="/static/images/news/news-phocuswire02.png" alt="Camino Network News - Phocuswire02">
+            <img class="rounded-3xl object-cover h-64 md:h-56 w-full" src="/static/images/news/news-phocuswire02.png" alt="Camino Network News - Phocuswire02">
         </a>
         <div class="p-0 md:px-16 mt-8 md:mt-0">
-            <h2 class="mb-6">STARTUP STAGE: Chain4Travel prepares to launch blockchain run by travel industry</h2>
-            <p class="mb-6">Founded by Peakwork CEO Ralf Usbeck, Chain4Travel is the facilitator of the Camino consortium blockchain and has more than 50 supporters from the travel industry. Travel companies can join the presale of the Camino token until Sept. 23. Down the road, Camino will be operated and managed by travel industry partners. To enable this decentralized approach, Chain4Travel AG will transfer the entire intellectual property rights as well as the financial reserves to a dedicated foundation.</p>
+            <div class="font-headline font-medium text-xl md:text-3xl mb-6">STARTUP STAGE: Chain4Travel prepares to launch blockchain run by travel industry</div>
+            <p class="text-gray-300 mb-6 line-clamp-2">Founded by Peakwork CEO Ralf Usbeck, Chain4Travel is the facilitator of the Camino consortium blockchain and has more than 50 supporters from the travel industry. Travel companies can join the presale of the Camino token until Sept. 23. Down the road, Camino will be operated and managed by travel industry partners. To enable this decentralized approach, Chain4Travel AG will transfer the entire intellectual property rights as well as the financial reserves to a dedicated foundation.</p>
             <a target="_blank" href="https://www.phocuswire.com/chain4travel-blockchain-travel-partners" class="button">
                 Read full article
             </a>
@@ -169,11 +152,11 @@ layout:         default
 
     <article class="md:flex items-start py-16 border-b border-gray-700">
         <a target="_blank" class="md:w-1/3 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="https://www.phocuswire.com/Chain4travel-seed-funding">
-            <img class="rounded-3xl object-cover h-64 md:h-80 w-full" src="/static/images/news/news-phocuswire01.png" alt="Camino Network News - Phocuswire01">
+            <img class="rounded-3xl object-cover h-64 md:h-56 w-full" src="/static/images/news/news-phocuswire01.png" alt="Camino Network News - Phocuswire01">
         </a>
         <div class="p-0 md:px-16">
-            <h2 class="mb-6">Chain4Travel lands £3.6M in funding for blockchain platform</h2>
-            <p class="mb-6">Chain4Travel has raised seed funding of £3.6 million for the development of its blockchain-based travel platform, known as Camino. The Switzerland-based business was launched by Ralf Usbeck, who previously founded TravelTainment and Peakwork, Thomas Stirnimann, former CEO of Hotelplan, and Pablo Castillo, former CIO of Hotelplan.</p>
+            <div class="font-headline font-medium text-xl md:text-3xl mb-6">Chain4Travel lands £3.6M in funding for blockchain platform</div>
+            <p class="text-gray-300 mb-6 line-clamp-2">Chain4Travel has raised seed funding of £3.6 million for the development of its blockchain-based travel platform, known as Camino. The Switzerland-based business was launched by Ralf Usbeck, who previously founded TravelTainment and Peakwork, Thomas Stirnimann, former CEO of Hotelplan, and Pablo Castillo, former CIO of Hotelplan.</p>
             <a target="_blank" href="https://www.phocuswire.com/Chain4travel-seed-funding" class="button">
                 Read full article
             </a>
