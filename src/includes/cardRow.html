@@ -33,10 +33,10 @@
             <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFirstImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardFirstImage %}
                     {% set cardFirstImagePath = "./src/static/images/cardImages/" + cardFirstImage + ".png" %}
-                    {% image cardFirstImagePath, cardFirstImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
+                    {% image cardFirstImagePath, cardFirstImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 relative transition-all" %}
                 {% endif %}
-                <h3 class="{% if cardFirstText %} mb-4 {% endif %}">{{ cardFirstTitle }}</h3>
-                <p>{{ cardFirstText }}</p>
+                <div class="font-headline font-medium text-xl md:text-3xl {% if cardFirstText %} mb-2 {% endif %}">{{ cardFirstTitle }}</div>
+                <p class="text-gray-300 group-hover:text-gray-700 transition-colors">{{ cardFirstText }}</p>
                 {% if cardFirstLinkLabel %}
                 <a {% if cardFirstLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardFirstLink }}">{{ cardFirstLinkLabel }}</a>
                 {% endif %}
@@ -47,10 +47,10 @@
             <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardSecondImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardSecondImage %}
                     {% set cardSecondImagePath = "./src/static/images/cardImages/" + cardSecondImage + ".png" %}
-                    {% image cardSecondImagePath, cardSecondImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
+                    {% image cardSecondImagePath, cardSecondImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 relative transition-all" %}
                 {% endif %}
-                <h3 class="{% if cardSecondText %} mb-4 {% endif %}">{{ cardSecondTitle }}</h3>
-                <p>{{ cardSecondText }}</p>
+                <div class="font-headline font-medium text-xl md:text-3xl {% if cardSecondText %} mb-2 {% endif %}">{{ cardSecondTitle }}</div>
+                <p class="text-gray-300 group-hover:text-gray-700 transition-colors">{{ cardSecondText }}</p>
                 {% if cardSecondLinkLabel %}
                 <a {% if cardSecondLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardSecondLink }}">{{ cardSecondLinkLabel }}</a>
                 {% endif %}
@@ -61,10 +61,10 @@
             <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardThirdImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardThirdImage %}
                     {% set cardThirdImagePath = "./src/static/images/cardImages/" + cardThirdImage + ".png" %}
-                    {% image cardThirdImagePath, cardThirdImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
+                    {% image cardThirdImagePath, cardThirdImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 relative transition-all" %}
                 {% endif %}
-                <h3 class="{% if cardThirdText %} mb-4 {% endif %}">{{ cardThirdTitle }}</h3>
-                <p>{{ cardThirdText }}</p>
+                <div class="font-headline font-medium text-xl md:text-3xl {% if cardThirdText %} mb-2 {% endif %}">{{ cardThirdTitle }}</div>
+                <p class="text-gray-300 group-hover:text-gray-700 transition-colors">{{ cardThirdText }}</p>
                 {% if cardThirdLinkLabel %}
                 <a {% if cardThirdLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardThirdLink }}">{{ cardThirdLinkLabel }}</a>
                 {% endif %}
@@ -75,10 +75,10 @@
             <div class="group overflow-hidden bg-gray-700/25 hover:bg-caminoSky hover:text-gray-900 transition-colors pt-0 p-6 xl:p-6 xl:pt-0 {% if cardFourthImage %} pt-0 md:pt-0 {% endif %} rounded-3xl col-span-12 {% if cardFourthTitle %} md:col-span-6 lg:col-span-3 {% elseif cardThirdTitle %} md:col-span-4 {% else %} md:col-span-6 {% endif %}">
                 {% if cardFourthImage %}
                     {% set cardFourthImagePath = "./src/static/images/cardImages/" + cardFourthImage + ".png" %}
-                    {% image cardFourthImagePath, cardFourthImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 top-0 hover:-top-2 relative transition-all" %}
+                    {% image cardFourthImagePath, cardFourthImage, "", "w-4/5 h-auto mx-auto group-hover:scale-125 relative transition-all" %}
                 {% endif %}
-                <h3 class="{% if cardFourthText %} mb-4 {% endif %}">{{ cardFourthTitle }}</h3>
-                <p>{{ cardFourthText }}</p>
+                <div class="font-headline font-medium text-xl md:text-3xl {% if cardFourthText %} mb-2 {% endif %}">{{ cardFourthTitle }}</div>
+                <p class="text-gray-300 group-hover:text-gray-700 transition-colors">{{ cardFourthText }}</p>
                 {% if cardFourthLinkLabel %}
                 <a {% if cardFourthLinkBlank %} target="_blank" {% endif %} class="button hover:bg-white mt-4" href="{{ cardFourthLink }}">{{ cardFourthLinkLabel }}</a>
                 {% endif %}
