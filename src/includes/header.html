@@ -29,7 +29,7 @@
                 <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/travel' in page.url }}" href="/travel" >Travel Industry</a>
                 <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/validators' in page.url }}" href="/validators" >Validators</a>
                 <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/developer' in page.url }}" href="/developer" >Developers</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/grant-program' in page.url }}" href="/grant-program" >Grant Program</a>
+                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/grant-program' in page.url }}" href="/grant-program" >Grant program</a>
                 <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/bugbounty' in page.url }}" href="/bugbounty" >Bug Bounty</a>
                 <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/community' in page.url }}" href="/community" >Community</a>
                 <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/community' in page.url }}" target="_blank" href="{{site.wallet}}" >Create Wallet</a>
@@ -70,7 +70,7 @@
                 </div>
                 <div x-cloak x-show="developerMenu" @click.away="developerMenu = false" class="absolute bg-gray-900 flex flex-col rounded-md shadow-2xl p-3">
                     <a @click="menuOpen = !menuOpen" href="/developer" class="p-2 w-full text-left hover:text-white cursor-pointer {{ 'text-white font-bold' if '/developer' in page.url }}">Build on Camino</a>
-                    <a @click="menuOpen = !menuOpen" href="/grant-program" class="p-2 w-full text-left hover:text-white cursor-pointer {{ 'text-white font-bold' if '/grant-program' in page.url }}">Grant Program</a>
+                    <a @click="menuOpen = !menuOpen" href="/grant-program" class="p-2 w-full text-left hover:text-white cursor-pointer {{ 'text-white font-bold' if '/grant-program' in page.url }}">Grant program</a>
                     <a @click="menuOpen = !menuOpen" href="/bugbounty" class="p-2 hover:text-white cursor-pointer {{ 'text-white font-bold' if '/bugbounty' in page.url }}">Bug Bounty</a>
                 </div>
             </div>
