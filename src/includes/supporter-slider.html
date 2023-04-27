@@ -114,8 +114,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<div class="py-12 md:py-24">
-	<div class="text-center font-headline text-lg md:text-2xl font-medium">
+<div class="pt-12 md:pt-24">
+	<div class="text-center font-headline text-lg md:text-3xl font-medium mb-3 md:mb-6">
 		Trusted by 120+ industry leaders
 	</div>
 	<div class="max-w-screen-xl px-8 md:px-4 mx-auto">
@@ -135,22 +135,24 @@
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 6,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
+        rows: 3,
         dots: false,
         pauseOnHover: true,
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 4,
+                slidesToScroll: 2,
             }
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 2,
+                slidesToScroll: 2,
             }
         }]
     });

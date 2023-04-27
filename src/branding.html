@@ -4,15 +4,21 @@ description: Camino is something that belongs to everyone. Yet, ensuring the bra
 layout: default
 ---
 
-<!-- Hero Start -->
-    {% set heroTitle = "Branding Guidelines" %}
-    {% set heroSubtitle = "" %}
-    {% set heroText = "Camino is something that belongs to everyone. Yet, ensuring the brand stays true to its core is essential. Follow these guidelines when promoting Camino in marketing communications, including advertising, articles, websites or printed materials." %}
-    {% set heroBgImage = "cards" %}
-    {% include "hero.html" %}
-<!-- Hero End -->
+<div class="hero-new">
+    <div class="flex flex-col md:flex-row w-full items-center">
+        <div class="text-center md:text-left w-full">
+            <div class="text-4xl xl:text-7xl font-headline font-medium my-3 md:my-6">
+                Branding Guidelines
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300">
+                Camino is something that belongs to everyone. Yet, ensuring the brand stays true to its core is essential. Follow these guidelines when promoting Camino in marketing communications, including advertising, articles, websites or printed materials.
+            </p>
+        </div>
+        {% image "./src/static/images/cardImages/lightpaper-left-dark.png", "imagealt", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
+    </div>
+</div>
 
-<div class="container mt-12 md:my-32">
+<div class="max-w-screen-xl px-8 md:px-4 mx-auto my-12 md:my-32">
 
     <div class="mb-8">
         <div class="text-primary uppercase font-medium tracking-wider text-sm mb-4">Main Logo & Marks</div>
@@ -21,14 +27,14 @@ layout: default
 
     <div class="grid gap-4 grid-cols-12">
         <div class="col-span-6 bg-gray-800 rounded-xl py-10 relative">
-            <img class="mx-auto h-24 w-auto" src="/static/images/branding/Horizontal-Camino-Network-Light.svg" alt="Horizontal-Camino-Network-Light">
+            <img class="mx-auto h-24 w-auto p-4" src="/static/images/branding/Horizontal-Camino-Network-Light.svg" alt="Horizontal-Camino-Network-Light">
             <div class="absolute right-2 bottom-2 text-primary">
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Light.svg">.svg</a>
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Light@4x.png">.png</a>
             </div>
         </div>
         <div class="col-span-6 bg-gray-300 rounded-xl py-10 relative">
-            <img class="mx-auto h-24 w-auto" src="/static/images/branding/Horizontal-Camino-Network-Dark.svg" alt="Horizontal-Camino-Network-Dark">
+            <img class="mx-auto h-24 w-auto p-4" src="/static/images/branding/Horizontal-Camino-Network-Dark.svg" alt="Horizontal-Camino-Network-Dark">
             <div class="absolute right-2 bottom-2 text-primary">
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Dark.svg">.svg</a>
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Dark@4x.png">.png</a>
@@ -43,14 +49,14 @@ layout: default
     
     <div class="grid gap-4 grid-cols-12">
         <div class="col-span-6 bg-gray-800 rounded-xl py-10 relative">
-            <img class="mx-auto h-16 w-auto" src="/static/images/branding/Horizontal-Camino-Network-Full-Light.svg" alt="Icon-Camino-Network-Primary">
+            <img class="mx-auto h-16 w-auto p-4" src="/static/images/branding/Horizontal-Camino-Network-Full-Light.svg" alt="Icon-Camino-Network-Primary">
             <div class="absolute right-2 bottom-2 text-primary">
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Full-Light.svg">.svg</a>
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Full-Light@4x.png">.png</a>
             </div>
         </div>
         <div class="col-span-6 bg-gray-300 rounded-xl py-10 relative">
-            <img class="mx-auto h-16 w-auto" src="/static/images/branding/Horizontal-Camino-Network-Full-Dark.svg" alt="Icon-Camino-Network-Dark">
+            <img class="mx-auto h-16 w-auto p-4" src="/static/images/branding/Horizontal-Camino-Network-Full-Dark.svg" alt="Icon-Camino-Network-Dark">
             <div class="absolute right-2 bottom-2 text-primary">
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Full-Dark.svg">.svg</a>
                 <a target="_blank" class="hover:underline p-1" href="/static/images/branding/Horizontal-Camino-Network-Full-Dark@4x.png">.png</a>

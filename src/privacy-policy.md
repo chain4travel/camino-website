@@ -4,7 +4,7 @@ description: This policy explains and sets out the basis for why and when we col
 layout: default
 ---
 
-<div class="max-w-screen-lg mx-auto px-4 prose prose-invert prose-lg mt-32">
+<div class="max-w-screen-lg mx-auto px-4 prose prose-invert prose-lg my-32">
 
 # Privacy Policy
 

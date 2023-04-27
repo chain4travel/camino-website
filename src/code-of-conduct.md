@@ -4,7 +4,7 @@ description: This Code of Conduct helps us build a community that is rooted in k
 layout: default
 ---
 
-<div class="max-w-screen-lg mx-auto px-4 prose prose-invert prose-lg mt-32">
+<div class="max-w-screen-lg mx-auto px-4 prose prose-invert prose-lg my-32">
 
 # Code of Conduct
 
