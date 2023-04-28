@@ -9,8 +9,8 @@ async function imageShortcode(src, alt, pictureClass, imgClass, sizes = "100vw")
     }
 
     let metadata = await Image(src, {
-        widths: [300, 600, 1400],
-        formats: ['webp', 'png'],
+        widths: [30, 300, 600, 1200],
+        formats: ['avif', 'png'],
         urlPath: "/static/images/",
         outputDir: "./_site/static/images/"
     });
@@ -20,7 +20,7 @@ async function imageShortcode(src, alt, pictureClass, imgClass, sizes = "100vw")
 
     return `<picture class="${pictureClass}">
         ${Object.values(metadata).map(imageFormat => {
-        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+        return `<source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
         }).join("\n")}
         <img
             src="${lowsrc.url}"
@@ -49,7 +49,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('version', function () { return now })
 
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
+  eleventyConfig.addShortcode("image", imageShortcode)
 
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
