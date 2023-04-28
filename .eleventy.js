@@ -9,7 +9,7 @@ async function imageShortcode(src, alt, pictureClass, imgClass, sizes = "100vw")
     }
 
     let metadata = await Image(src, {
-        widths: [30, 300, 600, 1200],
+        widths: [160, 320, 640, 1280],
         formats: ['avif', 'png'],
         urlPath: "/static/images/",
         outputDir: "./_site/static/images/"
