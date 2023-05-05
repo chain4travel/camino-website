@@ -45,6 +45,11 @@
         "url": "https://bewotec.de/"
     },
     {
+        "name": "Cena pro",
+        "slug": "cenapro",
+        "url": "mailto:hello@cena.pro"
+    },
+    {
         "name": "CFM_media GmbH",
         "slug": "cfm-media",
         "url": "https://www.cfmmedia.de/"
