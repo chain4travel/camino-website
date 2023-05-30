@@ -2,12 +2,11 @@
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <div id="supporters" class="font-headline font-medium text-2xl md:text-5xl text-center mb-8 md:mb-12">Validators of Camino Network</div>
         <div class="flex justify-center flex-wrap">
-            {% for supporter in supporter %}
-                {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
-                {% set logoalt = supporter.slug + " - Logo" %}
-                <a href="{{supporter.url}}" class="group inline-flex flex-col items-center rounded-lg w-1/4 md:w-1/6 lg:w-[11%] flex-shrink-0" target="_blank">
-                    {% image logopath, logoalt, "", "opacity-50 group-hover:opacity-100 transition-all w-full max-w-[180px]" %}
-                    <div class="text-gray-600 hidden">{{supporter.name}}</div>
+            {% for i in partners.data %}
+            {% set x = i.attributes %}
+                <a href="{{x.companyWebsite}}" class="group inline-flex flex-col items-center justify-center rounded-lg w-1/4 md:w-1/6 lg:w-[11%] flex-shrink-0 p-4" target="_blank">
+                    <img src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="{{x.companyName}} Logo" class="opacity-50 group-hover:opacity-100 transition-all object-contain max-h-12">
+                    <div class="text-gray-600 hidden">{{x.companyName}}</div>
                 </a>
             {% endfor %}
         </div>

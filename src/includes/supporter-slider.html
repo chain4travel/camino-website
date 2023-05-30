@@ -1,7 +1,7 @@
 <style>
 /* Slider */
 .slick-slide {
-    margin: 0px 20px;
+    margin: 0;
 }
 .slick-slide img {
     width: 100%;
@@ -120,11 +120,12 @@
 	</div>
 	<div class="max-w-screen-xl px-8 md:px-4 mx-auto">
 		<div class="customer-logos slider">
-				{% for supporter in supporter %}
-				<a class="slide" href="{{supporter.url}}" target="_blank" rel="noopener noreferrer">
-                <img src="/static/images/supporter/{{supporter.slug}}.png" alt="{{supporter.name}} Logo" class="opacity-50 hover:opacity-100">
-				</a>
-				{% endfor %}
+            {% for i in partners.data %}
+            {% set x = i.attributes %}
+            <a class="slide p-8 h-24 flex items-center justify-center" href="{{x.companyWebsite}}" target="_blank" rel="noopener noreferrer">
+                <img src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="{{x.companyName}} Logo" class="opacity-50 hover:opacity-100 w-full h-full object-contain">
+            </a>
+            {% endfor %}
 		</div>
 	</div>
 </div>
@@ -137,7 +138,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
-        rows: 3,
+        rows: 2,
         dots: false,
         pauseOnHover: true,
         lazyLoad: 'progressive',
