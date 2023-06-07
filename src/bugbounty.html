@@ -66,9 +66,9 @@ layout:         default
             </div>
         </div>
 
-        <div class="text-center text-gray-300 max-w-screen-lg mx-auto">
+        <div class="text-center md:text-left text-gray-200 md:flex items-center border border-gray-800 p-8 rounded-3xl">
         
-            <svg class="mx-auto" width="128" viewBox="0 0 187 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="flex-shrink-0 mx-auto w-48" viewBox="0 0 187 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1910_2745)">
                 <path d="M178.89 0V11.14L167.61 0H161.91V22.06H168.9V10.77L180.25 22.06H185.87V0H178.89Z" fill="white"/>
                 <path d="M70.92 22.06H89.46V15.9H70.92V6.23H89.48V0H70.92H64.74H64V22.06H64.74H70.92Z" fill="white"/>
@@ -96,11 +96,33 @@ layout:         default
                 </defs>
             </svg>
 
-            <div class="my-6">
-                <strong>We use Hackenproof to submit and process payments.</strong> If the submission is eligible, we will notify you and begin working on fixing the issue. Security team to triage the submission and assign its severity and impact levels.  In case any additional information is needed, you will be contacted.
+            <div class="md:ml-12 md:pl-12 md:border-l border-gray-800">
+                <div class="my-6 md:my-0 md:mb-6">
+                    <strong>We use Hackenproof to submit and process payments.</strong> If the submission is eligible, we will notify you and begin working on fixing the issue. Security team to triage the submission and assign its severity and impact levels.  In case any additional information is needed, you will be contacted.
+                </div>
+                <a href="https://hackenproof.com/camino-network/camino-protocol" target="_blank" rel="noopener noreferrer" class="button">Submit vulnerabilities</a>
             </div>
-            
-            <a href="https://hackenproof.com/camino-network/camino-protocol" target="_blank" rel="noopener noreferrer" class="button">Submit vulnerabilities</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="py-12 md:py-24 bg-gray-900">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+            {% image "./src/static/images/cardImages/blockStair-dark-left.png", "", "", "w-full object-contain" %}
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Reward criteria
+            </div>
+            <ul class="list-disc pl-4 my-4 md:my-6 text-gray-300">
+                <li>Report vulnerabilities promptly and exclusively to Camino Network</li>
+                <li>Share comprehensive information for the issue resolution</li>
+                <li>Provide a PoC for critical-severity issues</li>
+                <li>Current or former employees of Chain4Travel are not eligible</li>
+                <li>Know-Your-Customer verification</li>
+            </ul>
         </div>
     </div>
 </div>
@@ -108,16 +130,6 @@ layout:         default
 <div class="py-12 md:py-24 border-t border-gray-800">
     <div class="max-w-screen-md px-8 md:px-4 mx-auto">
         <div class="font-headline font-medium text-xl xl:text-3xl">
-            Reward criteria
-        </div>
-        <ul class="list-disc pl-4 mt-4 text-gray-300">
-            <li>Report vulnerabilities promptly and exclusively to Camino Network</li>
-            <li>Share comprehensive information for the issue resolution</li>
-            <li>Provide a PoC for critical-severity issues</li>
-            <li>Current or former employees of Chain4Travel are not eligible</li>
-            <li>Know-Your-Customer verification</li>
-        </ul>
-        <div class="font-headline font-medium text-xl xl:text-3xl mt-12">
             Non-disclosure
         </div>
         <p class="text-gray-300 mt-4">
