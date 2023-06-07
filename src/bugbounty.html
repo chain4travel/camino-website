@@ -36,13 +36,13 @@ layout:         default
     {% set cardSecondLinkLabel = "" %}
 
     {% set cardThirdImage = "generic-11" %}
-    {% set cardThirdTitle = "Get reviewed by Hexens.io" %}
+    {% set cardThirdTitle = "Triage by Hexens" %}
     {% set cardThirdText = "If our partners consider the submission eligible, we will notify you to begin the process of fixing the issue." %}
     {% set cardThirdLinkLabel = "" %}
 
     {% set cardFourthImage = "generic-14" %}
     {% set cardFourthTitle = "Receive rewards" %}
-    {% set cardFourthText = "We will ask you to retest and verify the fix to get rewards and public acknowledgments (if you prefer to)" %}
+    {% set cardFourthText = "We will ask you to retest and verify the fix to get rewards and public acknowledgments (if you prefer to)." %}
     {% set cardFourthLinkLabel = "" %}
 
     {% include "cardRow.html" %}
@@ -58,27 +58,59 @@ layout:         default
         </div>
 
         <div class="grid grid-cols-12 gap-6 my-12 items-stretch">
-            <div class="col-span-12 lg:col-span-4">
-                {% include "severities_web2.html" %}
-            </div>
-            <div class="col-span-12 lg:col-span-4">
+            <div class="col-span-12 lg:col-span-6">
                 {% include "severities_web3.html" %}
             </div>
-            <div class="col-span-12 lg:col-span-4">
+            <div class="col-span-12 lg:col-span-6">
                 {% include "severities_out.html" %}
             </div>
         </div>
 
-        <div class="text-center text-gray-300 max-w-screen-lg mx-auto">
-            If the submission is eligible, we will notify you and begin working on fixing the issue.  Security team to triage the submission and assign its severity and impact levels.  In case any additional information is needed, you will be contacted.
+        <div class="text-center md:text-left text-gray-200 md:flex items-center border border-gray-800 p-8 rounded-3xl">
+        
+            <svg class="flex-shrink-0 mx-auto w-48" viewBox="0 0 187 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1910_2745)">
+                <path d="M178.89 0V11.14L167.61 0H161.91V22.06H168.9V10.77L180.25 22.06H185.87V0H178.89Z" fill="white"/>
+                <path d="M70.92 22.06H89.46V15.9H70.92V6.23H89.48V0H70.92H64.74H64V22.06H64.74H70.92Z" fill="white"/>
+                <path d="M136.42 22.06H153.51V16.51H136.42V13.46H153.51V8.52H136.42V5.55H153.51V0H136.42H130.07H129.5V22.06H130.19H136.42Z" fill="white"/>
+                <path d="M39.2203 17.1H49.5003V22.1H56.3903V0H32.3203V22.06H39.2203V17.1ZM39.2203 6.1H49.5003V11H39.2203V6.1Z" fill="white"/>
+                <path d="M6.92 14.22H17.02V22.06H23.95V0H17.02V7.68H6.92V0H0V22.06H6.92V14.22Z" fill="white"/>
+                <path d="M103.76 15.17H114.48L121.35 8.62H121.39V0H114.48V8.62H103.76V0H96.8398V22.06H103.76V15.17Z" fill="white"/>
+                <path d="M121.41 15.1699H114.49V22.0599H121.41V15.1699Z" fill="white"/>
+                <path d="M23 30.3201H0V52.3801H6.9V47.3801H24V30.3201H23ZM17.14 41.3201H6.9V36.4501H17.18L17.14 41.3201Z" fill="white"/>
+                <path d="M49.96 46.1399V52.4099H56.39V46.1399H49.96Z" fill="white"/>
+                <path d="M56.3604 30.3201H32.3604V52.4101H39.2904V46.1401H50.0004L56.4304 39.5901L56.3604 30.3201ZM49.5204 40.5501H39.2404V35.7301H49.5204V40.5501Z" fill="white"/>
+                <path d="M153.49 30.3201H136.42H131.03H129.53V39.9301V46.0701V52.3801H136.42V46.0701H153.49V39.9301H136.42V36.4501H153.49V30.3201Z" fill="white"/>
+                <path d="M82.56 30.3201H64V52.3801H89.48V30.3201H82.56ZM82.56 46.1101H70.94V36.4401H82.58L82.56 46.1101Z" fill="white"/>
+                <path d="M121.43 30.3201H96.8096V52.3801H121.43V36.5501V30.3201ZM114.53 46.1101H103.75V36.4401H114.53V46.1101Z" fill="white"/>
+                <path d="M174.744 46.6759C177.672 46.2007 179.66 43.4423 179.184 40.5149C178.709 37.5874 175.951 35.5995 173.023 36.0746C170.096 36.5498 168.108 39.3082 168.583 42.2357C169.058 45.1631 171.817 47.1511 174.744 46.6759Z" fill="white"/>
+                <path d="M185.22 37.6599V37.7799L186.03 37.5199V37.3899C185.415 35.5591 184.396 33.8897 183.05 32.5051C181.703 31.1205 180.063 30.0559 178.25 29.3899H178.13L177.84 30.1899H177.96C179.654 30.8095 181.186 31.8028 182.443 33.0961C183.7 34.3893 184.649 35.9493 185.22 37.6599Z" fill="white"/>
+                <path d="M185.13 45.36C184.524 47.0507 183.548 48.5845 182.272 49.8493C180.997 51.114 179.455 52.0778 177.76 52.67H177.63L177.91 53.47H178.03C179.848 52.8381 181.502 51.8067 182.869 50.4517C184.236 49.0967 185.282 47.4525 185.93 45.64V45.52L185.12 45.23L185.13 45.36Z" fill="white"/>
+                <path d="M162.57 45.15V45.02L161.76 45.29V45.42C162.385 47.2888 163.431 48.9888 164.818 50.3882C166.206 51.7876 167.896 52.8489 169.76 53.49H169.88L170.16 52.68H170.04C168.301 52.0812 166.723 51.0908 165.428 49.7851C164.132 48.4795 163.155 46.8936 162.57 45.15Z" fill="white"/>
+                <path d="M162.62 37.4499C163.233 35.703 164.241 34.1214 165.567 32.829C166.892 31.5365 168.498 30.5683 170.26 29.9999H170.39L170.13 29.1899H170C168.112 29.8023 166.391 30.8431 164.972 32.2309C163.553 33.6188 162.475 35.316 161.82 37.1899V37.3099L162.62 37.5899V37.4499Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1910_2745">
+                <rect width="186.07" height="53.53" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+
+            <div class="md:ml-12 md:pl-12 md:border-l border-gray-800">
+                <div class="my-6 md:my-0 md:mb-6">
+                    <strong>We use Hackenproof to submit and process payments.</strong> If the submission is eligible, we will notify you and begin working on fixing the issue. Security team to triage the submission and assign its severity and impact levels.  In case any additional information is needed, you will be contacted.
+                </div>
+                <a href="https://hackenproof.com/camino-network/camino-protocol" target="_blank" rel="noopener noreferrer" class="button">Submit vulnerabilities</a>
+            </div>
         </div>
     </div>
 </div>
 
+
 <div class="py-12 md:py-24 bg-gray-900">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
-            {% image "./src/static/images/cardImages/coins-dark-right.png", "", "", "w-full object-contain" %}
+            {% image "./src/static/images/cardImages/blockStair-dark-left.png", "", "", "w-full object-contain" %}
         </div>
         <div class="md:col-start-7 col-span-12 md:col-span-6">
             <div class="font-headline font-medium text-2xl xl:text-5xl">
@@ -95,7 +127,7 @@ layout:         default
     </div>
 </div>
 
-<div class="py-12 md:py-24">
+<div class="py-12 md:py-24 border-t border-gray-800">
     <div class="max-w-screen-md px-8 md:px-4 mx-auto">
         <div class="font-headline font-medium text-xl xl:text-3xl">
             Non-disclosure
@@ -123,16 +155,8 @@ layout:         default
 
 
 
-<div class="py-24 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cubes.png);">
+<div class="py-24 md:py-40 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cubes.png);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
-
-        <div class="font-headline font-medium text-2xl xl:text-5xl mb-6">
-            An ecosystem for all
-        </div>
-
-        <p class="max-w-screen-md mx-auto mb-6">If the submission is eligible, we will notify you and begin working on fixing the issue.  Security team to triage the submission and assign its severity and impact levels.  In case any additional information is needed, you will be contacted.</p>
-
-        <a href="/bugbounty-submission" class="button">Submit vulnerabilities</a>
-
+        <a href="https://hackenproof.com/camino-network/camino-protocol" target="_blank" rel="noopener noreferrer" class="button">Submit vulnerabilities</a>
     </div>
 </div>
