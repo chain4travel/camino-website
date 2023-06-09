@@ -1,0 +1,39 @@
+---
+title: Partner Showroom 
+description: Partner Showroom 
+layout: default
+---
+
+<div class="hero-new py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/blocks.png);">
+    <div class="text-center w-full" data-sal="zoom-out" data-sal-delay="250">
+        <div class="text-4xl md:text-5xl xl:text-7xl font-headline font-medium">
+            Partner Showroom
+        </div>
+        <p class="text-base lg:text-xl max-w-prose text-gray-300 mt-6 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus aut deleniti magnam dolores deserunt maxime.
+        </p>
+    </div>
+</div>
+
+
+
+
+<div class="pb-12 md:pb-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-2 items-stretch">
+            {% for y in partners.data %}
+            {% set x = y.attributes %}
+            <div class="col-span-3 border border-gray-700 {% if x.isConsortiumMember %} border-caminoSky {% endif %} rounded-3xl p-6 text-sm flex flex-col items-start">
+                <img class="object-contain max-w-[128px] h-10 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="cryptowisser cover image">
+                <div class="font-headline text-2xl leading-6 mb-2 font-medium">{{x.companyName}}</div>
+                <div class="text-gray-300 mb-2">{{x.companyCountry}}</div>
+                <div class="text-gray-300 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
+                <div class="flex overflow-hidden mt-auto -ml-2 w-full">
+                    {% for a in x.business_fields.data %}
+                    {% set b = a.attributes %}
+                        <span class="px-2 py-1 text-xs border border-gray-600 rounded-full whitespace-nowrap">{{b.BusinessField}}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+</div>
