@@ -6,6 +6,8 @@ pagination:
     addAllPagesToCollections: true
 permalink: "/partner/{{partner.attributes.companyName | slugify}}/"
 layout: default
+eleventyComputed:
+    title: "Partner {{partner.attributes.companyName}}"
 ---
 
 {% set title = partner.attributes.companyName %}
@@ -17,9 +19,10 @@ layout: default
 </div>
 
 <div class="pb-12 md:pb-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-6">
 
-            <img class="object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{partner.attributes.companyLogoLight.data.attributes.url}}" alt="cryptowisser cover image">
+            <div class="col-span-8">
+                <img class="object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{partner.attributes.companyLogoLight.data.attributes.url}}" alt="cryptowisser cover image">
             {{partner.attributes.companyName}} <br> <br>
             {{partner.attributes.companyCountry}} <br> <br>
             {{partner.attributes.companyShortDescription}} <br> <br>
@@ -31,6 +34,26 @@ layout: default
             {% set b = a.attributes %}
             <span class="px-2 mr-1 py-1 text-xs bg-gray-900 rounded-full whitespace-nowrap">{{b.BusinessField}}</span>
             {% endfor %}
+            </div>
+
+            <div class="col-span-4">
+                <div>
+                    {{partner.attributes.contactFirstname}}
+                    {{partner.attributes.contactLastname}}
+                </div>
+                <div>
+                    {{partner.attributes.companyCountry}}
+                </div>
+                <div>
+                    {{partner.attributes.contactEmail}}
+                </div>
+                <div>
+                    {{partner.attributes.contactPhone}}
+                </div>
+                <div>
+                    {{partner.attributes.companyWebsite}}
+                </div>
+            </div>
 
     </div>
 </div>
