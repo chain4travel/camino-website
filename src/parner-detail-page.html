@@ -13,45 +13,60 @@ eleventyComputed:
 {% set title = partner.attributes.companyName %}
 {% set description = partner.attributes.companyName %}
 
-
-<div class="max-w-screen-xl px-8 md:px-4 mx-auto">
-    <a href="/partners">Back to overview</a>
+<div class="py-4 border-b border-gray-800">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <a href="/partners" class="button-secondary">Back to overview</a>
+    </div>
 </div>
 
-<div class="pb-12 md:pb-24">
+<div class="pt-12 pb-32">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-6">
 
-            <div class="col-span-8">
-                <img class="object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{partner.attributes.companyLogoLight.data.attributes.url}}" alt="cryptowisser cover image">
-            {{partner.attributes.companyName}} <br> <br>
-            {{partner.attributes.companyCountry}} <br> <br>
-            {{partner.attributes.companyShortDescription}} <br> <br>
-            {{partner.attributes.companyLongDescription}} <br> <br>
-            {% if partner.attributes.isConsortiumMember %}
-            <div class="bg-gradient-to-br from-primary to-secondary px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
-            {% endif %}
-            {% for a in partner.attributes.business_fields.data %}
-            {% set b = a.attributes %}
-            <span class="px-2 mr-1 py-1 text-xs bg-gray-900 rounded-full whitespace-nowrap">{{b.BusinessField}}</span>
-            {% endfor %}
+            <div class="col-span-8 md:pr-24">
+                <div class="font-headline text-4xl font-medium mb-6">
+                    {{partner.attributes.companyName}}
+                </div>
+                {% if partner.attributes.isConsortiumMember %}
+                <div class="bg-caminoSky px-3 py-2 rounded-2xl text-gray-900 inline-block font-medium">Validator of Camino Network</div>
+                {% endif %}
+                <p class="text-gray-300 text-lg my-6">
+                    {{partner.attributes.companyShortDescription}}
+                </p>
+                <p class="">
+                    {{partner.attributes.companyLongDescription}}
+                </p>
+                <div class="flex flex-wrap overflow-hidden w-full relative mt-6">
+                    {% for a in partner.attributes.business_fields.data %}
+                    {% set b = a.attributes %}
+                    <span class="px-3 mr-1 py-2 text-sm bg-gray-900 rounded-full whitespace-nowrap">{{b.BusinessField}}</span>
+                    {% endfor %}
+                </div>
             </div>
 
-            <div class="col-span-4">
-                <div>
+            <div class="col-span-4 border border-gray-800 rounded-3xl">
+                <div class="w-full border-b border-gray-800 p-2 md:p-4">
+                    <img class="object-contain w-auto max-w-[200px] h-24 mb-2 mx-auto" src="https://api.strapi.camino.network/{{partner.attributes.companyLogoLight.data.attributes.url}}" alt="cryptowisser cover image">
+                </div>
+                <div class="w-full border-b border-gray-800 p-2 md:p-4">
+                    <div class="text-xs uppercase text-gray-400 mb-1">Company country</div>
+                    {{partner.attributes.companyCountry}}
+                </div>
+                <div class="w-full border-b border-gray-800 p-2 md:p-4">
+                    <div class="text-xs uppercase text-gray-400 mb-1">Direct contact</div>
                     {{partner.attributes.contactFirstname}}
                     {{partner.attributes.contactLastname}}
                 </div>
-                <div>
-                    {{partner.attributes.companyCountry}}
-                </div>
-                <div>
+                <div class="w-full border-b border-gray-800 p-2 md:p-4">
+                    <div class="text-xs uppercase text-gray-400 mb-1">Contact Email</div>
                     {{partner.attributes.contactEmail}}
                 </div>
-                <div>
+                <div class="w-full border-b border-gray-800 p-2 md:p-4">
+                    <div class="text-xs uppercase text-gray-400 mb-1">Contact Phone</div>
                     {{partner.attributes.contactPhone}}
                 </div>
-                <div>
-                    {{partner.attributes.companyWebsite}}
+                <div class="w-full p-2 md:p-4">
+                    <div class="text-xs uppercase text-gray-400 mb-1">Company website</div>
+                    <a href="http://{{partner.attributes.companyWebsite}}" class="hover:underline" target="_blank" rel="noopener noreferrer">{{partner.attributes.companyWebsite}}</a>
                 </div>
             </div>
 
