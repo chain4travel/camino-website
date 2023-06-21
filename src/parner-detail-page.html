@@ -27,7 +27,7 @@ eleventyComputed:
                     {{partner.attributes.companyName}}
                 </div>
                 {% if partner.attributes.isConsortiumMember %}
-                <div class="bg-caminoSky px-3 py-2 rounded-2xl text-gray-900 inline-block font-medium">Validator of Camino Network</div>
+                <div class="bg-gradient-to-r from-primary to-secondary px-3 py-2 rounded-2xl text-white inline-block font-medium">Validator of Camino Network</div>
                 {% endif %}
                 <p class="text-gray-300 text-lg my-6">
                     {{partner.attributes.companyShortDescription}}
@@ -44,9 +44,9 @@ eleventyComputed:
                 </p>
             </div>
 
-            <div class="col-span-4 border border-gray-800 rounded-3xl">
-                <div class="w-full border-b border-gray-800 p-2 md:p-4">
-                    <img class="object-contain w-auto max-w-[200px] h-24 mb-2 mx-auto" src="https://api.strapi.camino.network/{{partner.attributes.companyLogoLight.data.attributes.url}}" alt="cryptowisser cover image">
+            <div class="col-span-4 border border-gray-800 rounded-3xl overflow-hidden">
+                <div class="w-full border-b border-gray-800 p-2 md:p-4 bg-caminoSky">
+                    <img class="object-contain w-auto max-w-[200px] h-24 mb-2 mx-auto" src="https://api.strapi.camino.network/{{partner.attributes.companyLogoColor.data.attributes.url}}" alt="cryptowisser cover image">
                 </div>
                 <div class="w-full border-b border-gray-800 p-2 md:p-4">
                     <div class="text-xs uppercase text-gray-400 mb-1">Company country</div>
@@ -59,11 +59,12 @@ eleventyComputed:
                 </div>
                 <div class="w-full border-b border-gray-800 p-2 md:p-4">
                     <div class="text-xs uppercase text-gray-400 mb-1">Contact Email</div>
-                    {{partner.attributes.contactEmail}}
+                    <a class="hover:underline" href="mailto:{{partner.attributes.contactEmail}}">MailIcon</a>
+                    
                 </div>
                 <div class="w-full p-2 md:p-4">
                     <div class="text-xs uppercase text-gray-400 mb-1">Company website</div>
-                    <a href="{{partner.attributes.companyWebsite}}" class="hover:underline" target="_blank" rel="noopener noreferrer">{{partner.attributes.companyWebsite}}</a>
+                    <a href="{{partner.attributes.companyWebsite}}" class="hover:underline" target="_blank" rel="noopener noreferrer">WebsiteIcon</a>
                 </div>
             </div>
 
