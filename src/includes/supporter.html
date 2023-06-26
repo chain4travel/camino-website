@@ -1,15 +1,18 @@
 <div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
-        <div id="supporters" class="font-headline font-medium text-2xl md:text-5xl text-center mb-8 md:mb-12">Validators of Camino Network</div>
-        <div class="flex justify-center flex-wrap">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
+        <div id="supporters" class="font-headline font-medium text-2xl md:text-5xl text-center">
+            Validators of Camino Network
+        </div>
+        <div class="flex justify-center flex-wrap my-6 md:my-12">
             {% for supporter in supporter %}
-                {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
-                {% set logoalt = supporter.slug + " - Logo" %}
-                <a href="{{supporter.url}}" class="group inline-flex flex-col items-center rounded-lg w-1/4 md:w-1/6 lg:w-[11%] flex-shrink-0" target="_blank">
-                    {% image logopath, logoalt, "", "opacity-50 group-hover:opacity-100 transition-all w-full max-w-[180px]" %}
-                    <div class="text-gray-600 hidden">{{supporter.name}}</div>
-                </a>
+            {% set logopath = "./src/static/images/supporter/" + supporter.slug + ".png" %}
+            {% set logoalt = supporter.slug + " - Logo" %}
+            <a href="{{supporter.url}}" class="group inline-flex flex-col items-center rounded-lg w-1/4 md:w-1/6 lg:w-[10%] flex-shrink-0" target="_blank">
+                {% image logopath, logoalt, "", "opacity-50 group-hover:opacity-100 transition-all w-full max-w-[180px]" %}
+                <div class="text-gray-600 hidden">{{supporter.name}}</div>
+            </a>
             {% endfor %}
         </div>
+        <a href="/partners" class="button">Explore all 140+ partners</a>
     </div>
 </div>
