@@ -38,7 +38,9 @@ eleventyComputed:
                 <span class="px-3 mr-1 mb-2 py-2 text-sm border border-gray-700 rounded-full whitespace-nowrap">{{b.BusinessField}}</span>
                 {% endfor %}
             </div>
-            <div class="font-headline text-2xl font-medium mt-4">Description</div>
+            <div class="font-headline text-2xl font-medium mt-4">
+                Description
+            </div>
             <p class="mt-4">
                 {{partner.attributes.companyLongDescription}}
             </p>
@@ -58,7 +60,9 @@ eleventyComputed:
                 {{partner.attributes.contactLastname}}
             </div>
             <div class="w-full p-2 md:p-4">
-                <div class="text-xs uppercase text-gray-400 mb-1">Company links</div>
+                <div class="text-xs uppercase text-gray-400 mb-1">
+                    Company links
+                </div>
                 <div class="flex">
                     {% if partner.attributes.companyLinkedin %}
                     <a class="group p-2" href="{{partner.attributes.linkedin}}">
