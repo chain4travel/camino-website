@@ -27,7 +27,7 @@ eleventyComputed:
                 {{partner.attributes.companyName}}
             </div>
             {% if partner.attributes.isConsortiumMember %}
-            <div class="bg-gradient-to-r from-primary to-secondary px-3 py-2 rounded-2xl text-white inline-block font-medium">Validator of Camino Network</div>
+            <div class="bg-gradient-to-r from-secondary to-accent px-3 py-2 rounded-tl-2xl rounded-br-2xl text-white inline-block font-medium">Validator of Camino Network</div>
             {% endif %}
             <p class="text-gray-300 my-6">
                 {{partner.attributes.companyShortDescription}}
@@ -46,8 +46,8 @@ eleventyComputed:
             </p>
         </div>
 
-        <div class="col-span-4 h-auto border border-gray-800 rounded-3xl overflow-hidden">
-            <div class="w-full border-b border-gray-800 p-2 md:p-4 bg-caminoSky">
+        <div class="col-span-4 border border-gray-800 rounded-3xl overflow-hidden">
+            <div class="w-full border-b border-gray-800 p-2 md:p-4 bg-gray-200">
                 <img class="object-contain w-auto max-w-[200px] h-24 mb-2 mx-auto" src="https://api.strapi.camino.network/{{partner.attributes.companyLogoColor.data.attributes.url}}" alt="{{x.companyName}} - Logo">
             </div>
             <div class="w-full border-b border-gray-800 p-2 md:p-4">

@@ -4,14 +4,17 @@ description: Meet the travel and travel tech companies integrated into the Camin
 layout: default
 ---
 
-<div class="hero-new py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/blocks.png);">
-    <div class="text-center w-full" data-sal="zoom-out" data-sal-delay="250">
-        <div class="text-3xl md:text-4xl xl:text-5xl font-headline font-medium max-w-screen-lg mx-auto">
-            Companies shaping the <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">web3</span> travel ecosystem 
+<div class="hero-new">
+    <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
+        <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
+            <div class="text-4xl md:text-5xl xl:text-6xl font-headline font-medium">
+                Companies shaping the <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">web3</span> travel ecosystem
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                Meet the travel and travel tech companies integrated into the Camino Network - the community driving innovation and shaping the future of travel through web3 technologies.
+            </p>
         </div>
-        <p class="max-w-prose text-gray-300 mt-6 mx-auto">
-            Meet the travel and travel tech companies integrated into the Camino Network - the community driving innovation and shaping the future of travel through web3 technologies.
-        </p>
+        {% image "./src/static/images/_header/glas-community.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
     </div>
 </div>
 
@@ -23,7 +26,7 @@ layout: default
         {% if x.companyShortDescription and x.companyLongDescription %}
         <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border-2 border-gray-700 hover:bg-caminoSky transition-colors">
             {% if x.isConsortiumMember %}
-            <div class="bg-gradient-to-r from-primary to-secondary text-white px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
+            <div class="bg-gradient-to-r from-secondary to-accent text-white uppercase text-xs px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
             {% endif %}
             <img class="group-hover:hidden object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="{{x.companyName}} - Logo">
             <img class="hidden group-hover:block object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoColor.data.attributes.url}}" alt="{{x.companyName}} - Logo">
