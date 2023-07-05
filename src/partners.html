@@ -43,6 +43,15 @@ layout: default
         </a>
         {% endif %}
 
+        {% if loop.last %}
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-center justify-center overflow-hidden border-2 border-gray-800">
+            <div class="mb-4 text-lg font-semibold">
+                And many more!
+            </div>
+            <a href="/travel" class="button">Travel industry</a>
+        </div>
+        {% endif%}
+
         {% endfor %}
     </div>
 </div>
