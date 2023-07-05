@@ -120,10 +120,20 @@
 	</div>
 	<div class="max-w-screen-xl px-8 md:px-4 mx-auto my-3 md:my-6">
 		<div class="customer-logos slider">
-            {% for supporter in supporter %}
-            <a class="slide" href="{{supporter.url}}" target="_blank" rel="noopener noreferrer">
-                <img src="/static/images/supporter/{{supporter.slug}}.png" alt="{{supporter.name}} Logo" class="opacity-50 hover:opacity-100">
-            </a>
+            {% for y in partners.data | sort(attribute='attributes.companyName') %}
+            {% set x = y.attributes %}
+            {% if x.companyLogoLight.data.attributes.url %}
+            {% if x.companyName == "Chain4Travel" %}
+            {% else %}
+            <div class="slide">
+                <a class="flex items-center justify-center h-16 px-4" href="{{x.companyWebsite}}" target="_blank" rel="noopener noreferrer">
+                    {% set logoPath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
+                    {% set logoAlt = x.companyName + " Logo" %}
+                    {% image logoPath, logoAlt, "opacity-50 hover:opacity-100 w-full" %}
+                </a>
+            </div>
+            {% endif %}
+            {% endif %}
             {% endfor %}
 		</div>
 	</div>
