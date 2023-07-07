@@ -123,7 +123,7 @@
             {% for y in partners.data | sort(attribute='attributes.companyName') %}
             {% set x = y.attributes %}
             {% if x.companyLogoLight.data.attributes.url %}
-            {% if x.companyName == "Chain4Travel" or x.companyName == "Camino Network Foundation " %}
+            {% if x.companyName == "Chain4Travel" or x.companyName == "Camino Network Foundation" %}
             {% else %}
             <div class="slide">
                 <a class="flex items-center justify-center h-16 px-4" href="{{x.companyWebsite}}" target="_blank" rel="noopener noreferrer">

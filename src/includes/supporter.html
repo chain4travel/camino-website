@@ -6,6 +6,8 @@
         <div class="flex justify-center flex-wrap my-6 md:my-12">
             {% for y in partners.data | sort(attribute='attributes.companyName') %}
             {% set x = y.attributes %}
+            {% if x.companyName == "Chain4Travel" or x.companyName == "Camino Network Foundation" %}
+            {% else %}
             {% if x.companyLogoLight.data.attributes.url and x.isConsortiumMember %}
 
             {% set logopath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
@@ -15,6 +17,7 @@
                 <div class="text-gray-600 hidden">{{x.companyName}}</div>
             </a>
 
+            {% endif %}
             {% endif %}
             {% endfor %}
         </div>
