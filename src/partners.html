@@ -32,7 +32,7 @@ layout: default
 
         {% if x.companyLongDescription %}
 
-        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-700 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
+        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-800 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
             <div class="bg-gradient-to-r bg-accent  text-gray-950 uppercase text-xs px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
             <img class="md:group-hover:hidden md:group-focus:hidden object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="{{x.companyName}} - Logo">
             <img class="hidden md:group-hover:block md:group-focus:block object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoColor.data.attributes.url}}" alt="{{x.companyName}} - Logo">
@@ -43,7 +43,7 @@ layout: default
 
         {% else %}
 
-        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-700">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-800">
             <div class="bg-gradient-to-r bg-accent  text-gray-950 uppercase text-xs px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
             <img class="object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="{{x.companyName}} - Logo">
             <div class="font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
@@ -62,7 +62,7 @@ layout: default
 
         {% if x.companyLongDescription %}
 
-        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-700 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
+        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-800 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
             <img class="md:group-hover:hidden md:group-focus:hidden object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="{{x.companyName}} - Logo">
             <img class="hidden md:group-hover:block md:group-focus:block object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoColor.data.attributes.url}}" alt="{{x.companyName}} - Logo">
             <div class="md:group-hover:text-gray-800 md:group-focus:text-gray-800 font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
@@ -72,7 +72,7 @@ layout: default
 
         {% else %}
 
-        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-700">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm flex flex-col items-start overflow-hidden border border-gray-800">
             <img class="object-contain max-w-[128px] h-12 mb-2" src="https://api.strapi.camino.network/{{x.companyLogoLight.data.attributes.url}}" alt="{{x.companyName}} - Logo">
             <div class="font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
             <div class="text-gray-400 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
