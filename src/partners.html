@@ -28,7 +28,7 @@ layout: default
 
         {% for y in partners.data | sort(attribute='attributes.companyName') %}
         {% set x = y.attributes %}
-        {% if x.isConsortiumMember %}
+        {% if x.isConsortiumMember and x.companyShortDescription %}
 
         {% if x.companyLongDescription %}
 
@@ -58,7 +58,7 @@ layout: default
 
         {% for y in partners.data | sort(attribute='attributes.companyName') %}
         {% set x = y.attributes %}
-        {% if x.isConsortiumMember == false %}
+        {% if x.isConsortiumMember == false and x.companyShortDescription  %}
 
         {% if x.companyLongDescription %}
 
