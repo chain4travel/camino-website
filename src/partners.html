@@ -21,11 +21,7 @@ layout: default
 <div class="pb-12 md:pb-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 items-stretch">
 
-        <!--
-            1. Validatoren nach oben
-            2. Nur mit lonDescript klickbar
-        -->
-
+        <!-- Pull a partners that are validators -->
         {% for y in partners.data | sort(attribute='attributes.companyName') %}
         {% set x = y.attributes %}
         {% if x.isConsortiumMember and x.companyShortDescription %}
@@ -56,6 +52,7 @@ layout: default
         {% endif %}
         {% endfor %}
 
+        <!-- Pull a partners that are not validators -->
         {% for y in partners.data | sort(attribute='attributes.companyName') %}
         {% set x = y.attributes %}
         {% if x.isConsortiumMember == false and x.companyShortDescription  %}
