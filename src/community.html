@@ -78,7 +78,7 @@ layout:         default
 {% set cardFirstLinkBlank = "true" %}
 
 {% set cardSecondImage = "generic-twitter" %}
-{% set cardSecondTitle = "Twitter" %}
+{% set cardSecondTitle = "X" %}
 {% set cardSecondText = "" %}
 {% set cardSecondLink = site.twitter %}
 {% set cardSecondLinkLabel = "Follow Camino on Twitter" %}
@@ -102,7 +102,7 @@ layout:         default
 <!-- CardRow End -->
 
 <section>
-    <h1 class="text-center mb-12">Camino in the news</h1>
+    <h1 class="font-headline font-medium text-2xl md:text-5xl text-center mb-12">Camino in the news</h1>
 
     {% for a in newsarticles.data | sort(attribute='attributes.date') | reverse %}
     {% set x = a.attributes %}
