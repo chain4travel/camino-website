@@ -1,0 +1,44 @@
+---
+title:          Blog
+description:    description_todo
+layout:         default
+---
+
+<div class="hero-new">
+    <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
+        <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
+            <div class="text-caminoSky uppercase font-headline text-base md:text-xl font-medium tracking-widest">
+                Camino Blog
+            </div>
+            <div class="text-4xl xl:text-7xl font-headline font-medium my-6">
+                Lorem ipsum dolor sit adipisicing elit.
+            </div>
+            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                Let’s build together a new efficient Internet for the whole travel industry, create new experiences, and find new models and approaches on the way to a sustainable future.
+            </p>
+        </div>
+        {% image "./src/static/images/_header/glas-community.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
+    </div>
+</div>
+
+<div class="py-12 md:py-24">
+    <div class="font-headline font-medium text-2xl md:text-5xl text-center mb-8">
+        Recent articles
+    </div>
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        {% for blogpost in blogposts %}
+        <div class="col-span-4">
+            <a href="/{{blogpost.title | slugify}}" class="block overflow-hidden rounded-2xl bg-gray-900 border border-gray-600 hover:border-gray-400 hover:scale-105 transition-all">
+                <div class="bg-gradient-to-br from-primary/10 to-secondary/10">
+                    {% image blogpost.heroImage, "", "", "h-64 object-cover" %}
+                </div>
+                <div class="p-6">
+                    <div class="font-headline font-medium text-2xl mb-4">{{blogpost.title}}</div>
+                    <p class="text-gray-200 mb-4">{{blogpost.description}}</p>
+                    <p class="text-gray-400">{{blogpost.date}} • {{blogpost.author}}</p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
