@@ -8,12 +8,6 @@ placement:      developers
 <div class="hero-new">
     <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
         <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
-            <a href="/static/docs/Camino_Network_Audit_Report.pdf" target="_blank" class="text-sm inline-block p-1 rounded-full bg-gradient-to-r from-accent to-secondary mb-3 md:mb-6 hover:scale-110 transition-transform">
-                <span class="inline-flex px-4 py-2 rounded-full bg-gray-950/70 items-center">
-                    <span class="font-semibold">New</span>: Read the Camino Audit Report
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m10 7 5 5-5 5"/></svg>
-                </span>
-            </a>
             <div class="text-caminoSky uppercase font-headline text-base md:text-xl font-medium tracking-widest">
                 Developers
             </div>
@@ -29,6 +23,23 @@ placement:      developers
 </div>
 
 {% include "supporter-slider.html" %}
+
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-5 overflow-hidden rounded-lg">
+            {% image "./src/static/images/audit-pass.png", "", "", "w-full object-contain" %}
+        </div>
+        <div class="col-span-12 md:col-span-6 md:col-start-7">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Camino Network Successfully Passes Hexens Security Audit
+            </div>
+            <p class="text-gray-300 my-4 md:my-6">
+                In the pursuit of transparency, enabling informed decisions, and fostering continuous improvement, Camino Network proudly presents the Audit Report by Hexens. Dive in to discover the details.
+            </p>
+            <a href="https://audit-report--camino-network-website.netlify.app/static/docs/Camino_Network_Audit_Report.pdf" target="_blank" class="button" rel="noopener noreferrer">Read the report</a>
+        </div>
+    </div>
+</div>
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Benefits" %}
