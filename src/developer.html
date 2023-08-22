@@ -17,12 +17,43 @@ placement:      developers
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
                 The Camino community is building a new travel ecosystem to shape the future of the industry with new efficient solutions creating personalized travel experiences for billions of people around the world.
             </p>
+            <div class="flex">
+                <a href="https://audit-report--camino-network-website.netlify.app/static/docs/Camino_Network_Audit_Report.pdf" target="_blank" class="button" rel="noopener noreferrer">
+                    Security Audit
+                    <svg class="ml-2 w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
+                <a class="button-secondary ml-2" href="{{site.docs}}" target="_blank" rel="noopener noreferrer">Documentation</a>
+            </div>
         </div>
         {% image "./src/static/images/_header/glas-cage.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
     </div>
 </div>
 
 {% include "supporter-slider.html" %}
+
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-5 overflow-hidden rounded-lg">
+            {% image "./src/static/images/audit-pass.png", "", "", "w-full object-contain" %}
+        </div>
+        <div class="col-span-12 md:col-span-6 md:col-start-7">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Camino Network successfully passes Hexens security audit
+            </div>
+            <p class="text-gray-300 my-4 md:my-6">
+                In the pursuit of transparency, enabling informed decisions, and fostering continuous improvement, Camino Network proudly presents the Audit Report by Hexens. Dive in to discover the details.
+            </p>
+            <a href="https://audit-report--camino-network-website.netlify.app/static/docs/Camino_Network_Audit_Report.pdf" target="_blank" class="button" rel="noopener noreferrer">
+                Security Audit
+                <svg class="ml-2 w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Benefits" %}
