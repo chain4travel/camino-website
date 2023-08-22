@@ -52,6 +52,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
 
+  eleventyConfig.addCollection("blogposts", function(collectionsBlogposts) {
+    return collectionsBlogposts.getFilteredByGlob("./src/posts/*.html");
+  });
+
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
       process.env.ELEVENTY_PRODUCTION &&
