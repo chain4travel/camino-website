@@ -27,7 +27,7 @@ layout:         default
     </div>
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6">
 
-        {% for post in collections.blogposts | sort(false, true, 'post.data.postDate') | reverse %}
+        {% for post in collections.blogposts | sort(false, false, 'post.data.postDate') | reverse %}
         <div class="col-span-12 md:col-span-4">
             <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl bg-gray-900 border border-gray-600 hover:border-gray-400 hover:scale-105 transition-all">
                 <div class="bg-gradient-to-br from-primary/10 to-secondary/10">
