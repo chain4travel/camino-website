@@ -28,13 +28,13 @@ layout:         default
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6">
 
         {% for post in collections.blogposts | sort(false, true, 'post.data.postDate') | reverse %}
-        <div class="col-span-4">
+        <div class="col-span-12 md:col-span-4">
             <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl bg-gray-900 border border-gray-600 hover:border-gray-400 hover:scale-105 transition-all">
                 <div class="bg-gradient-to-br from-primary/10 to-secondary/10">
-                    {% image post.data.heroImage, "", "", "w-full h-64 object-cover" %}
+                    {% image post.data.heroImage, "", "", "w-full h-48 md:h-64 object-cover" %}
                 </div>
-                <div class="p-6">
-                    <div class="font-headline font-medium text-2xl mb-4 line-clamp-2">{{post.data.title}}</div>
+                <div class="p-4 md:p-6">
+                    <div class="font-headline font-medium text-xl md:text-2xl mb-4 md:line-clamp-2">{{post.data.title}}</div>
                     <p class="text-gray-400 mb-4">{{post.data.postDate}}</p>
                     <p class="text-gray-200 line-clamp-3">{{post.data.description}}</p>
                 </div>
