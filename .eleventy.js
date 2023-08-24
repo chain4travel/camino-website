@@ -52,6 +52,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
 
+  // Create collection for all elements inside posts folder
+  eleventyConfig.addCollection("blogposts", function(collectionsBlogposts) {
+    return collectionsBlogposts.getFilteredByGlob("./src/posts/*.html");
+  });
+
+  // Minify html output
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
       process.env.ELEVENTY_PRODUCTION &&
