@@ -6,7 +6,7 @@ layout: default
 
 <div class="max-w-screen-lg mx-auto px-4 prose prose-invert prose-lg my-32">
 
-# Camino Network: Code of conduct
+# Code of Conduct
 
 The purpose of this code of conduct (“Code of Conduct”) is to define how the ecosystem participants of the Camino Network (the “Camino Network Community”) should interact on a day-to-day basis. It also reflects the day-to-day operations, core values and overall culture of the Camino Network Community. 
 
