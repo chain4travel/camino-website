@@ -129,7 +129,7 @@
                 <a class="flex items-center justify-center h-24 px-2" href="{{x.companyWebsite}}" target="_blank" rel="noopener noreferrer">
                     {% set logoPath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
                     {% set logoAlt = x.companyName + " Logo" %}
-                    {% image logoPath, logoAlt, "opacity-50 hover:opacity-100 w-full h-full p-2", "object-contain w-full h-full" %}
+                    {% image logoPath, logoAlt, "opacity-50 hover:opacity-100 w-full h-full p-2 max-h-20", "object-contain w-full h-full" %}
                 </a>
             </div>
             {% endif %}
@@ -143,14 +143,13 @@
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 8,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
         arrows: false,
         rows: 1,
         dots: false,
         pauseOnHover: true,
-        lazyLoad: 'progressive',
         responsive: [{
             breakpoint: 768,
             settings: {
