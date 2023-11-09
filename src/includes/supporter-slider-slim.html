@@ -1,8 +1,8 @@
-<div class="bg-gray-900 px-8 py-4 overflow-hidden">
+<div class="bg-gray-900 px-8 py-2 overflow-hidden">
 <div x-data="{ swiper: null }"
   x-init="swiper = new Swiper($refs.container, {
       loop: true,
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 0,
       autoplay: {
         delay: 1500,
@@ -10,28 +10,20 @@
       },
       breakpoints: {
         640: {
-          slidesPerView: 6,
+          slidesPerView: 5,
           spaceBetween: 0,
         },
         768: {
-          slidesPerView: 8,
+          slidesPerView: 7,
           spaceBetween: 0,
         },
         1024: {
           slidesPerView: 10,
           spaceBetween: 0,
         },
-        1280: {
-          slidesPerView: 12,
-          spaceBetween: 16,
-        },
-        1440: {
-          slidesPerView: 16,
-          spaceBetween: 16,
-        },
       },
     })"
-  class="relative w-full mx-auto flex flex-row"
+  class="relative max-w-screen-xl px-8 md:px-4 mx-auto flex flex-row"
 >
 
   <div class="swiper-container" x-ref="container">
