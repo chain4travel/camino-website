@@ -10,10 +10,12 @@
         <!-- CSS -->
         <link rel="stylesheet" href="/style.css?v={% version %}" />
         <link rel="stylesheet" href="/sal.css?v={% version %}" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
 
         <!-- JS -->
         <script src="/js/alpine.js?v={% version %}" defer></script>
         <script src="/js/sal.js?v={% version %}"></script>
+        <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
         <!-- Favicons and theme color -->
         <link rel="apple-touch-icon" sizes="180x180" href="/static/meta/apple-touch-icon.png" />
@@ -38,13 +40,7 @@
         <meta name="twitter:description" content="{{description}}" />
         <meta name="twitter:image"  content="{% if socialImage %}https://camino.network/static/meta/{{socialImage}}.png {% else %} https://camino.network/static/meta/social.png {% endif %}" />
 
-        <!-- Cookie Consent by TermsFeed Privacy Generator https://www.TermsFeed.com -->
-        <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-        <script type="text/javascript" charset="UTF-8">
-            document.addEventListener('DOMContentLoaded', function () {
-                cookieconsent.run({ notice_banner_type: 'simple', consent_type: 'express', palette: 'dark', language: 'en', page_load_consent_levels: ['strictly-necessary'], notice_banner_reject_button_hide: false, preferences_center_close_button_hide: false, page_refresh_confirmation_buttons: false, website_name: 'Camino Network', website_privacy_policy_url: 'https://camino.network/privacy-policy' })
-            })
-        </script>
+
 
         <!-- Google Analytics -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
