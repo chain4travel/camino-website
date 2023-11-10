@@ -1,17 +1,15 @@
 ---
+layout: default
 pagination:
     data: partners.data
     size: 1
     alias: partner
     addAllPagesToCollections: true
 permalink: "/partner/{{partner.attributes.companyName | slugify}}/"
-layout: default
 eleventyComputed:
     title: "Partner {{partner.attributes.companyName}}"
+    description: "{{partner.attributes.companyShortDescription}}"
 ---
-
-{% set title = partner.attributes.companyName %}
-{% set description = partner.attributes.companyName %}
 
 <div class="py-4 border-b border-gray-800">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
@@ -23,9 +21,9 @@ eleventyComputed:
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto md:grid grid-cols-12 gap-6">
 
         <div class="col-span-8 md:pr-24 mb-12 md:mb-0">
-            <div class="font-headline text-3xl md:text-4xl font-medium mb-6">
+            <h1 class="font-headline text-3xl md:text-4xl font-medium mb-6">
                 {{partner.attributes.companyName}}
-            </div>
+            </h1>
             {% if partner.attributes.isConsortiumMember %}
             <div class="bg-gradient-to-r bg-accent px-3 py-2 rounded-bl-2xl rounded-tr-2xl text-gray-950 inline-block font-medium">Validator of Camino Network</div>
             {% endif %}

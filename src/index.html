@@ -5,13 +5,13 @@ layout:         default
 placement:      homepage
 ---
 
-<div class="hero-new -mt-48 md:mt-0 md:-mb-12">
-    <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
-        <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
-            <div class="text-4xl md:text-5xl xl:text-7xl font-headline font-medium">
+<div class="hero-new pb-16" style="height: calc(100vh - 72px - 96px);">
+    <div class="flex flex-col md:flex-row w-full items-center">
+        <div class="text-center md:text-left w-full">
+            <div class="text-4xl md:text-5xl xl:text-7xl font-headline font-medium mb-3 md:mb-6">
                 The <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">web3</span><br> travel ecosystem
             </div>
-            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+            <p class="hidden md:block text-sm lg:text-xl max-w-prose text-gray-300 mb-3 md:mb-6">
                 Camino is the travel industry blockchain. Fueled by the Camino token, it is offering a versatile network to expand current business models and to create new touristic products to delight travelers and business partners.
             </p>
             <div class="flex items-center justify-center md:justify-start">
@@ -23,44 +23,13 @@ placement:      homepage
                 </a>
             </div>
         </div>
-        {% image "./src/static/images/_header/glas-globe.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
+        {% image "./src/static/images/_header/glas-globe.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24 max-w-xs md:max-w-none", "" %}
     </div>
 </div>
 
-<!-- CardRow Start -->
-    {% set cardRowTitle = "Secure and efficient transactions" %}
-    {% set cardRowParagraph = "" %}
-    {% set cardRowSubtitle = "" %}
-    {% set cardRowBgImage = "" %}
+{% include "supporter-slider-slim.html" %}
 
-    {% set cardFirstImage = "generic-01" %}
-    {% set cardFirstTitle = "Faster payments at lower costs" %}
-    {% set cardFirstText = "" %}
-    {% set cardFirstLinkLabel = "" %}
-
-    {% set cardSecondImage = "generic-02" %}
-    {% set cardSecondTitle = "Transparent and verified in real-time" %}
-    {% set cardSecondText = "" %}
-    {% set cardSecondLinkLabel = "" %}
-
-    {% set cardThirdImage = "generic-03" %}
-    {% set cardThirdTitle = "Validated by travel industry companies" %}
-    {% set cardThirdText = "" %}
-    {% set cardThirdLinkLabel = "" %}
-
-    {% set cardFourthImage = "" %}
-    {% set cardFourthTitle = "" %}
-    {% set cardFourthText = "" %}
-    {% set cardFourthLinkLabel = "" %}
-
-    {% include "cardRow.html" %}
-<!-- CardRow End -->
-
-<!-- Supporter Start -->
-    {% include "supporter.html" %}
-<!-- Supporter End -->
-
-<div class="py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards.png);">
+<div class="py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards-50.png);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
             {% image "./src/static/images/glas/stack.png", "", "", "w-full object-contain" %}
