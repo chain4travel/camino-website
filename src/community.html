@@ -107,8 +107,8 @@ layout:         default
     {% for a in newsarticles.data | sort(attribute='attributes.date') | reverse %}
     {% set x = a.attributes %}
     <article class="md:flex items-start py-16 border-b border-gray-700">
-        <a target="_blank" class="md:w-1/4 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="{{x.link}}">
-            <img class="rounded-3xl object-cover h-40 md:h-56 w-full" src="https://api.strapi.camino.network/{{x.image.data.attributes.url}}" alt="cryptowisser cover image">
+        <a target="_blank" class="md:w-1/3 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="{{x.linkToArticle}}">
+            <img class="rounded-2xl object-cover h-40 md:h-56 w-full border border-gray-700" src="https://api.strapi.camino.network/{{x.image.data.attributes.url}}" alt="cryptowisser cover image">
         </a>
         <div class="p-0 md:px-16 mt-8 md:mt-0">
             <div class="font-headline font-medium text-xl md:text-3xl mb-6">{{x.title}}</div>
