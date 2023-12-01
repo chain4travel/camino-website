@@ -57,6 +57,14 @@ eleventyComputed:
                 {{partner.attributes.contactFirstname}}
                 {{partner.attributes.contactLastname}}
             </div>
+            {% if partner.attributes.spotlightPartnerLink %}
+            <div class="w-full border-b border-gray-800 p-2 md:p-4">
+                <div class="text-xs uppercase text-gray-400 mb-1">Builders Spotlight</div>
+                <a class="text-primary underline hover:text-caminoSky" href="{{partner.attributes.spotlightPartnerLink}}">
+                    Learn more about {{partner.attributes.companyName}} ->
+                </a>
+            </div>
+            {% endif %}
             <div class="w-full p-2 md:p-4">
                 <div class="text-xs uppercase text-gray-400 mb-1">
                     Company links
