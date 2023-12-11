@@ -21,6 +21,19 @@ eleventyComputed:
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto md:grid grid-cols-12 gap-6">
 
         <div class="col-span-8 md:pr-24 mb-12 md:mb-0">
+
+            {% if partner.attributes.spotlightPartnerLink %}
+            <a href="{{partner.attributes.spotlightPartnerLink}}" class="mb-8 bg-gradient-to-r from-primary to-secondary p-1 group inline-block rounded-2xl w-full">
+                <div class="bg-gray-950 md:flex items-center gap-4 rounded-2xl overflow-hidden w-full group-hover:bg-gray-900 transition-colors">
+                    {% image "./src/static/images/glas/stack.png", "Sleap.io", "flex-shrink-0", "w-full h-32 md:w-auto object-cover" %}
+                    <div class="w-full p-6 lg:p-8">
+                        <div class="font-bold uppercase text-primary mb-2">Learn more</div>
+                        <div class="text-2xl lg:text-4xl font-headline font-medium">Builder Spotlight: {{partner.attributes.companyName}}</div>
+                    </div>
+                </div>
+            </a>
+            {% endif %}
+
             <h1 class="font-headline text-3xl md:text-4xl font-medium mb-6">
                 {{partner.attributes.companyName}}
             </h1>
@@ -36,6 +49,7 @@ eleventyComputed:
                 <span class="px-3 mr-1 mb-2 py-2 text-sm border border-gray-700 rounded-full whitespace-nowrap">{{b.BusinessField}}</span>
                 {% endfor %}
             </div>
+            <hr class="border border-gray-700">
             <div class="font-headline text-xl md:text-2xl font-medium mt-4">
                 Description
             </div>
@@ -57,14 +71,6 @@ eleventyComputed:
                 {{partner.attributes.contactFirstname}}
                 {{partner.attributes.contactLastname}}
             </div>
-            {% if partner.attributes.spotlightPartnerLink %}
-            <div class="w-full border-b border-gray-800 p-2 md:p-4">
-                <div class="text-xs uppercase text-gray-400 mb-1">Builders Spotlight</div>
-                <a class="text-primary underline hover:text-caminoSky" href="{{partner.attributes.spotlightPartnerLink}}">
-                    Learn more about {{partner.attributes.companyName}} ->
-                </a>
-            </div>
-            {% endif %}
             <div class="w-full p-2 md:p-4">
                 <div class="text-xs uppercase text-gray-400 mb-1">
                     Company links
