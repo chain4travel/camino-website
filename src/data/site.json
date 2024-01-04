@@ -9,5 +9,6 @@
     "wallet": "https://wallet.camino.network",
     "docs": "https://docs.camino.network",
     "explorer": "https://explorer.camino.network",
-    "suite": "https://suite.camino.network"
+    "suite": "https://suite.camino.network",
+    "whitepaper": "https://camino.network/static/docs/Camino_Network_Whitepaper.pdf"
 }
