@@ -83,22 +83,69 @@ layout:         default
 <div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <div class="bg-gradient-to-r from-primary to-secondary p-1 rounded-tl-[64px] rounded-br-[64px]">
-            <div class="bg-gray-950 rounded-tl-[60px] rounded-br-[60px] p-12 pl-[300px] relative">
-                CONTENT <br>CONTENT <br>CONTENT <br>CONTENT <br>CONTENT <br>CONTENT <br>CONTENT <br>CONTENT <br>CONTENT <br>
+            <div class="bg-gray-950/90 rounded-tl-[60px] rounded-br-[60px] p-6 md:p-12 pt-24 md:pt-12 md:pl-[280px] relative">
+                <div class="font-headline font-medium text-2xl xl:text-3xl">
+                    Public Sale
+                </div>
+                <div class="flex items-center py-6 border-b border-white/10">
+                    <div class="">
+                        <div class="text-caminoSky uppercase font-headline text-sm font-medium tracking-widest">Price (Tranche #1)</div>
+                        <div class="font-headline text-3xl xl:text-3xl">CHF 0.150</div>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        ->
+                    </div>
+                    <div class="">
+                        <div class="text-caminoSky uppercase font-headline text-xs font-medium tracking-widest">Price (#2)</div>
+                        <div class="font-headline text-xl whitespace-nowrap">CHF 0.150</div>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        ->
+                    </div>
+                    <div class="">
+                        <div class="text-caminoSky uppercase font-headline text-xs font-medium tracking-widest">Price (#3)</div>
+                        <div class="font-headline text-xl whitespace-nowrap">CHF 0.150</div>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="flex items-center py-6 border-b border-white/10">
+                    <div class="flex-1">
+                        <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Price</div>
+                        <div class="font-headline text-xl">CHF 0.150</div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Price</div>
+                        <div class="font-headline text-xl">CHF 0.150</div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Price</div>
+                        <div class="font-headline text-xl">CHF 0.150</div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Price</div>
+                        <div class="font-headline text-xl">CHF 0.150</div>
+                    </div>
+                </div>
+                <!-- Third Row -->
+                <div class="flex flex-col md:flex-row items-center gap-4 mt-6">
+                    <a href="#" class="w-full md:w-auto button">Buy CAM now</a>
+                    <a href="#" class="w-full md:w-auto button-secondary">Disclaimer</a>
+                    <a href="#" class="w-full md:w-auto button-secondary">Terms & Conditions</a>
+                </div>
 
-                {% image "./src/static/images/glas/camino-token-single.png", "", "w-[400px] absolute -left-32 top-1/2 -translate-y-1/2 rotate-12" %}
+                {% image "./src/static/images/glas/camino-token-single.png", "", "w-[300px] md:w-[440px] absolute -top-32 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-32 md:top-1/2 md:-translate-y-1/2 rotate-12" %}
             </div>
         </div>
     </div>
 </div>
 
-<div class="py-12 md:py-24 bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/bubbles.png);">
+<div class="py-12 md:py-24">
     <div class="font-headline font-medium text-2xl xl:text-4xl mb-12 text-center">
         Frequently Asked Questions
     </div>
-    <div class="max-w-screen-lg px-8 md:px-4 mx-auto text-gray-300">
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+    <div class="max-w-screen-md px-8 md:px-4 mx-auto text-gray-300">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 How many tokens will be distributed?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -109,8 +156,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">75,000,000 CHF will be distributed in the second sale.</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 How can I buy CAM?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -130,8 +177,8 @@ layout:         default
                 <p>Please feel free to contact us at hello@camino.network if you have any queries or need assistance at any point in this process.</p>
             </div>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 Is there a minimum ticket amount?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -142,8 +189,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">Yes, the second sale is open for all ticket sizes above 5,000 CHF.</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 Who can participate?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -154,8 +201,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">The second sale is the first sale open to the public. Anyone who follows the verification process can participate.</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 Do I need KYC?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -166,8 +213,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">Yes, you need to undergo a KYC verification done by SumSub. This takes about two minutes. Proof of verification is required, such as your ID.</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 Can I pay with crypto?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -178,8 +225,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">No, payments can only be made in FIAT. Supported are… </p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 How long is the second sale running? 
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -190,8 +237,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">The sale will continue until all tranches are sold. A total of 75,000,000 CAM will be distributed in 3 tranches.</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 Where will my tokens be sent?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -202,8 +249,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">Your tokens will be sent to your wallet. The address will be requested during the process.</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 When do I receive my tokens?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -214,8 +261,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">After completing all steps and signing the agreement, the tokens will be transferred to your wallet within 5 business days.</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 When will CAM be listed?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -226,8 +273,8 @@ layout:         default
             </summary>
             <p class="p-4 md:p-6 pt-0 md:pt-0">The Foundation has released a statement regarding the listing, which can be found here: <a href="https://foundation.camino.network/statement/" target="_blank" rel="noopener noreferrer">Camino Network Foundation Statement</a> .</p>
         </details>
-        <details class="appearance-none w-full border border-white/10 bg-gray-950/50 backdrop-blur-md hover:bg-gray-950/80 rounded-xl mb-4">
-            <summary class="text-xl text-gray-200 w-full cursor-pointer flex items-center justify-between p-4 md:p-6">
+        <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                 I didn’t find an answer to my question, what can I do?
                 <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
