@@ -3,8 +3,7 @@
 {% set textImageTitle =         "Camino makes blockchain technology accessible for the travel industry" %}
 {% set textImageParagraph =     "The Camino blockchain is a Decentralized Autonomous Organization operated, maintained, and governed by the travel ecosystem, including industry service providers, technology developers, and even travelers. " %}
 {% set textImageParagraph2 =    "" %}
-{% set textImageButtonLabel =   "Download litepaper" %}
-{% set textImageButtonLink =    "/static/static/docs/Chain4Travel_Litepaper_June.pdf" %}
+{% set textImageButtonLabel =   "Download Whitepaper" %}
 
 <section x-data="{ CaminoVideoModal: false }">
     <div class="container items-center grid grid-cols-12">
@@ -23,10 +22,7 @@
             {% if textImageParagraph2 %}
             <p>{{ textImageParagraph2 }}</p>
             {% endif %}
-            {% if textImageButtonLink %}
-            <a class="button mt-8 mr-2 mb-4 lg:mb-0" href="{{ textImageButtonLink }}" target="_blank" rel="noopener noreferrer">{{ textImageButtonLabel }}</a>
-
-            {% endif %}
+            <a class="button mt-8 mr-2 mb-4 lg:mb-0" href="{{ site.whitepaper }}" target="_blank" rel="noopener noreferrer">Camino Whitepaper</a>
         </div>
     </div>
 
