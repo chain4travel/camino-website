@@ -91,11 +91,11 @@ section {
 }
 
 .button {
-  @apply text-center whitespace-nowrap inline-flex items-center transition-all bg-gradient-to-r from-primary to-secondary hover:brightness-125 font-medium text-white py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block items-center transition-all bg-gradient-to-r from-primary to-secondary hover:brightness-125 font-medium text-white py-2 px-4 rounded-xl;
 }
 
 .button-secondary {
-  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-700 bg-gray-800 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-700 bg-gray-900/80 backdrop-blur-md hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
 }
 
 .button-secondary-outline {
@@ -167,15 +167,15 @@ section {
 /* Card styles */
 
 .card {
-  @apply bg-gray-950/60 backdrop-blur-lg border border-white/20
+  @apply bg-gray-950/75 backdrop-blur-lg border border-white/20 z-10;
 }
 
 .card-primary {
-  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5;
 }
 
 .card-primary-extra {
-  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-primary
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-primary;
 }
 
 summary::marker {

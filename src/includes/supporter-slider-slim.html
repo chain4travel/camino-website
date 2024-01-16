@@ -1,4 +1,4 @@
-<div class="bg-gray-900 md:py-2 overflow-hidden">
+<div class="overflow-hidden">
   <div x-data="{ swiper: null }"
     x-init="swiper = new Swiper($refs.container, {
         loop: true,
@@ -18,7 +18,7 @@
             spaceBetween: 0,
           },
           1024: {
-            slidesPerView: 10,
+            slidesPerView: 8,
             spaceBetween: 0,
           },
         },
@@ -39,7 +39,7 @@
         <div class="swiper-slide flex items-center justify-center">
           {% set logoPath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
           {% set logoAlt = x.companyName + " Logo" %}
-          {% image logoPath, logoAlt, "opacity-50 hover:opacity-100 w-full h-full p-2", "object-contain w-full h-full max-h-16" %}
+          {% image logoPath, logoAlt, "opacity-70 hover:opacity-100 w-full h-full p-3", "object-contain w-full h-full max-h-16" %}
         </div>
         {% endif %}
         {% endif %}
