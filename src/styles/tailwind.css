@@ -106,10 +106,6 @@ section {
   @apply text-center whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-2 px-4 rounded-xl;
 }
 
-.card {
-  @apply bg-gray-700/25 backdrop-blur-md p-6 pt-0 md:p-8 md:pt-0 rounded-camino;
-}
-
 .gradient-full {
   @apply bg-gradient-to-tl from-[#B143FC] to-[#149eed];
 }
@@ -166,6 +162,20 @@ section {
   box-shadow:
   inset 4px 4px 8px 0 rgba(177, 67, 252, .5),
   inset -4px -4px 8px 0 rgba(20,158,237, .5);
+}
+
+/* Card styles */
+
+.card {
+  @apply bg-gray-950/60 backdrop-blur-lg border border-white/20
+}
+
+.card-primary {
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5
+}
+
+.card-primary-extra {
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-primary
 }
 
 summary::marker {
