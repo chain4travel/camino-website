@@ -137,28 +137,71 @@ placement:      homepage
     </div>
 </div>
 
-<div class="py-12 md:py-24 ">
+<div class="pt-12 md:pt-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
             {% image "./src/static/images/glas/user-shield.png", "", "", "w-full object-contain" %}
         </div>
         <div class="md:col-start-7 col-span-12 md:col-span-6">
             <div class="font-headline font-medium text-2xl xl:text-5xl">
-                Shared Infrastructure
+                Your business, your network, shared growth
             </div>
             <p class="my-4 md:my-6 text-gray-300">
-                The consortium structure of Camino Network ensures equal participation and benefits for all members.
+                Camino Network is a shared technology, where consortium memebers navigate the future developments, secure the network and support each other.
             </p>
             <a class="button" href="/validators">Join the consortium</a>
         </div>
     </div>
 </div>
 
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Build for the next generation of travelers
+            </div>
+            <p class="my-4 md:my-6 text-gray-300">
+                Camino Network provides digital technologies and a collaborative environment for travel companies to explore new markets and build innovative products with web3 tools.
+            </p>
+            <a class="button" href="/partners">Discover use cases</a>
+        </div>
+        <div class="col-span-12 md:col-span-6 rounded-lg overflow-hidden">
+            {% image "./src/static/images/glas/block-sphere.png", "", "", "w-full object-contain" %}
+        </div>
+    </div>
+</div>
+
+<div class="pb-12 md:pb-24">
+    <div class="font-headline font-medium text-2xl xl:text-5xl mb-8 text-center">
+        Recent articles
+    </div>
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6">
+
+        {% for post in collections.blogposts | sort(attribute='data.order') %}
+
+        {% if loop.index0 < 3 %}
+            <div class="col-span-12 md:col-span-4">
+                <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl card-primary">
+                    {% image post.data.heroImage, "", "", "w-full h-48 md:h-64 object-contain bg-gray-950" %}
+                    <div class="p-4 md:p-6 border-t border-white/20">
+                        <div class="font-headline font-medium text-xl md:text-2xl mb-4 md:line-clamp-2">{{post.data.title}}</div>
+                        <p class="text-gray-400 mb-4">{{post.data.postDate}}</p>
+                        <p class="text-gray-200 line-clamp-3">{{post.data.description}}</p>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endfor %}
+        
+    </div>
+</div>
+
 <div class="py-24 md:pt-24 md:pb-[32rem] bg-cover md:bg-contain bg-bottom bg-no-repeat" style="background-image: url(/static/images/background/globe-bottom.jpg);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
-        <div class="font-headline font-medium text-2xl xl:text-5xl mb-6 md:mb-12">
+        <div class="font-headline font-medium text-2xl xl:text-5xl">
             An ecosystem for all
         </div>
+        <p class="text-gray-400 my-6 md:my-12 max-w-prose mx-auto">Camino Network is an inclusive ecosystem. It is open to all eager to innovate in the travel industry. Contribute, learn, and grow and build to enhance travel technologies for all.</p>
         <a href="{{site.discord}}" target="_blank" rel="noopener noreferrer" class="button">Join the community</a>
     </div>
 </div>
