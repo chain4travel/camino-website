@@ -28,22 +28,22 @@ layout:         default
     {% set cardRowSubtitle = "" %}
     {% set cardRowBgImage = "" %}
 
-    {% set cardFirstImage = "generic-08" %}
+    {% set cardFirstImage = "generic-01" %}
     {% set cardFirstTitle = "1. Request" %}
     {% set cardFirstText = "Submit a request for a project" %}
     {% set cardFirstLinkLabel = "" %}
 
-    {% set cardSecondImage = "generic-09" %}
+    {% set cardSecondImage = "generic-02" %}
     {% set cardSecondTitle = "2. Assess" %}
     {% set cardSecondText = "Get a review from the Camino Foundation" %}
     {% set cardSecondLinkLabel = "" %}
 
-    {% set cardThirdImage = "generic-11" %}
+    {% set cardThirdImage = "generic-03" %}
     {% set cardThirdTitle = "3. Consult" %}
     {% set cardThirdText = "Refine and finalize the plan" %}
     {% set cardThirdLinkLabel = "" %}
 
-    {% set cardFourthImage = "generic-14" %}
+    {% set cardFourthImage = "generic-08" %}
     {% set cardFourthTitle = "4. Build" %}
     {% set cardFourthText = "Get the grant and deliver accordingly" %}
     {% set cardFourthLinkLabel = "" %}
@@ -51,7 +51,7 @@ layout:         default
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<div class="py-12 md:py-24 bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards.png);">
+<div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
             {% image "./src/static/images/glas/chip-camino-shine.png", "", "", "w-full object-contain" %}
