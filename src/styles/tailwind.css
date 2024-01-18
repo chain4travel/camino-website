@@ -99,7 +99,7 @@ section {
 }
 
 .button-secondary-outline {
-  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-800 text-gray-800 bg-transparent hover:bg-white hover:border-white font-medium py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-600 text-gray-200 bg-transparent hover:bg-white hover:border-white hover:text-gray-950 font-medium py-2 px-4 rounded-xl;
 }
 
 .button-gradient {
