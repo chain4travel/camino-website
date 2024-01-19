@@ -3,7 +3,6 @@
   x-init="swiper = new Swiper($refs.container, {
       loop: true,
       slidesPerView: 3,
-      spaceBetween: 16,
       autoplay: {
         delay: 1500,
         disableOnInteraction: false,
@@ -37,7 +36,7 @@
       <div class="swiper-slide flex items-center justify-center">
         {% set logoPath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
         {% set logoAlt = x.companyName + " Logo" %}
-        {% image logoPath, logoAlt, "w-full h-full p-2", "object-contain w-full h-full max-h-16" %}
+        {% image logoPath, logoAlt, "w-full h-full px-6", "object-contain w-full h-full max-h-14" %}
       </div>
       {% else %}
       {% endif %}
