@@ -136,14 +136,6 @@
         "placement": "validators"
     },
     {
-        "name": "Mathieu Montmessin",
-        "company": "EVP Research & Development / Hahn Air Lines GmbH",
-        "slug": "mathieumontmessin",
-        "shortText": "Hahn Air is proud to contribute to empowering the travel industry...",
-        "longText": "Hahn Air is proud to contribute to empowering the travel industry to move to a technology that will bring transparency, security and efficiency. We are looking forward to exploring the many possibilities opened by blockchain technology by becoming a validator for the Camino Network and joining Chain4Travel.",
-        "placement": "validators"
-    },
-    {
         "name": "Ingo Burmester",
         "company": "CEO DER Touristik Central Europe",
         "slug": "ingoburmester",
@@ -205,6 +197,6 @@
         "slug": "ericvanderhout",
         "shortText": "From the moment we learned about Camino and the way blockchain technology can be...",
         "longText": "From the moment we learned about Camino and the way blockchain technology can be used to empower the travel community, Netmatch directly started to rethink the status quo. Camino will change the way business is done. We are now implementing the first use cases for our preferred clients to accelerate their growth. C4T is our valued partner, strong supporter and source of inspiration.",
-        "placement": "subpage"
+        "placement": "validators"
     }
 ]
