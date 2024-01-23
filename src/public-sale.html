@@ -59,8 +59,8 @@ layout:         default
                     <span class="button mt-4 touch-none pointer-events-none">Active</span>
                 </div>
                 <div class="">
-                    <div class="text-caminoSky uppercase font-headline text-sm font-medium tracking-widest">2024</div>
-                    <div class="font-headline mt-2 text-2xl xl:text-4xl">Listing</div>
+                    <div class="text-caminoSky uppercase font-headline text-sm font-medium tracking-widest opacity-50">2024</div>
+                    <div class="font-headline mt-2 text-2xl xl:text-4xl opacity-50">Listing</div>
                     <a href="https://foundation.camino.network/statement/" target="_blank" rel="noopener noreferrer" class="button-secondary-outline mt-4">More info</a>
                 </div>
                 <div class="bg-gradient-to-br from-primary to-secondary opacity-50 blur-3xl -rotate-6 absolute inset-8 rounded-full -z-10"></div>
@@ -77,17 +77,17 @@ layout:         default
                     Public Sale
                 </div>
                 <div class="text-gray-300 text-sm mt-4">
-                    The minimum ticket size is 1,000 CHF. Purchased CAM tokens are locked for 2.5 years, with 1-year vesting starting after 2.5 years. Token holders receive a 3% reward per annum of unlocked tokens, which can be claimed at any time.
+                    The minimum ticket size is 1,000 CHF. Purchased CAM tokens are locked for 1.5 years, with 1-year vesting starting after 1.5 years. Token holders receive a 3% reward per annum (non-compounding for 2 years) of unlocked tokens, which can be claimed at any time.
                 </div>
                 <div class="flex flex-col md:flex-row items-center mt-4">
                     <div class="flex-1 w-full relative pl-8 md:pl-0">
                         <div class="w-2 left-0 top-0 bottom-0 absolute bg-gray-700 md:hidden">
-                            <div class="h-1/2 bg-caminoSky w-2"></div>
+                            <div class="h-full bg-caminoSky w-2"></div>
                         </div>
                         <div class="text-caminoSky uppercase font-headline text-sm font-medium tracking-widest">Price (Tranche #1)</div>
                         <div class="font-headline font-medium text-3xl mt-2 mb-4">CHF 0.150</div>
                         <div class="w-full bg-gray-700 h-2 hidden md:block">
-                            <div class="w-1/3 bg-caminoSky h-2"></div>
+                            <div class="w-4/5 bg-caminoSky h-2"></div>
                         </div>
                     </div>
                     <div class="flex-1 w-full relative pl-8 md:pl-0">
@@ -103,14 +103,8 @@ layout:         default
                         <div class="w-full bg-gray-700 h-2 hidden md:block"></div>
                     </div>
                 </div>
-                <!-- Third Row -->
-                <div class="flex flex-col md:flex-row items-center gap-4 mt-6">
-                    <a href="https://wallet-wizard.camino.network" target="_blank" class="w-full md:w-auto button">Buy CAM now</a>
-                    <a target="_blank" href="/public-sale-disclaimer" class="w-full md:w-auto button-secondary">Disclaimer</a>
-                    <a target="_blank" href="/public-sale-terms" class="w-full md:w-auto button-secondary">Terms & Conditions</a>
-                </div>
                 <!-- Second Row -->
-                <div class="flex flex-col md:flex-row items-center pt-6 mt-6 border-t border-white/10">
+                <div class="flex flex-col md:flex-row items-center pb-6 mt-6 border-b border-white/10">
                     <div class="flex-1 w-full">
                         <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Available</div>
                         <div class="font-headline text-xl font-medium">75 000 000 CAM</div>
@@ -120,13 +114,19 @@ layout:         default
                         <div class="font-headline text-xl font-medium">3% p.a.</div>
                     </div>
                     <div class="flex-1 w-full">
-                        <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Lock</div>
-                        <div class="font-headline text-xl font-medium">2.5 years</div>
+                        <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Cliff</div>
+                        <div class="font-headline text-xl font-medium">1.5 years</div>
                     </div>
                     <div class="flex-1 w-full">
                         <div class="text-caminoSky uppercase font-headline text-xs md:text-sm font-medium tracking-widest">Vesting</div>
                         <div class="font-headline text-xl font-medium">1 year</div>
                     </div>
+                </div>
+                <!-- Third Row -->
+                <div class="flex flex-col md:flex-row items-center gap-4 mt-6">
+                    <a href="https://wallet-wizard.camino.network" target="_blank" class="w-full md:w-auto button">Buy CAM now</a>
+                    <a target="_blank" href="/public-sale-disclaimer" class="w-full md:w-auto button-secondary">Disclaimer</a>
+                    <a target="_blank" href="/public-sale-terms" class="w-full md:w-auto button-secondary">Terms & Conditions</a>
                 </div>
 
                 {% image "./src/static/images/glas/camino-token-single.png", "", "w-[300px] md:w-[440px] absolute -top-32 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-32 md:top-1/2 md:-translate-y-1/2 rotate-12" %}
@@ -198,7 +198,31 @@ layout:         default
     </div>
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-gray-300 grid md:grid-cols-2 md:gap-4">
         <div>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
+                <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
+                    What does locking mean?
+                    <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="hidden open:block" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </summary>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">Token lockup (also known as vesting or blocking period) is a specific period of time during which cryptocurrency tokens cannot be traded or transferred. CAM tokens purchased in the public sale are locked for 2.5 years, after which a 1-year vesting period begins, during which tokens are gradually unlocked.</p>
+            </details>
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
+                <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
+                    What is vesting?
+                    <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="hidden open:block" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </summary>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">Vesting is the distribution of tokens in portions over a predetermined period of time. For the CAM public sale, tokens will become available ("vest") over the course of 1 year after the 2.5 year lock-up period. This means that token holders will gradually gain the ability to use or sell CAM.</p>
+            </details>
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     How many tokens will be distributed?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -210,7 +234,7 @@ layout:         default
                 </summary>
                 <p class="p-4 md:p-6 pt-0 md:pt-0">A total of CHF 75,000,000 will be distributed in three tranches in the second sale.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     How can I buy CAM?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -226,10 +250,10 @@ layout:         default
                     <p class="mb-4">Wallet Wizard: After registering, you will be given access to a "Wallet Wizard". After accepting the T&C's, you will receive your key phrase, which you should store securely. To begin the process, you must verify that you have memorized your key phrase by filling in the blanks. You will be asked to enter basic information, including your name, address and e-mail, as well as the purchase amount and currency. A mandatory Know Your Customer (KYC) verification via the provider Sumsub follows. </p>
                     <p class="mb-4">Token Agreement: Upon successful KYC verification, the Foundation will generate a Token Agreement. This document will be sent to you via DocuSign along with a payment request.</p>
                     <p class="mb-4">Send Payment & Receive Token: Once payment is received, the tokens will be transferred to your wallet within 5 business days.</p>
-                    <p>Please feel free to contact us at hello@camino.network.com if you have any questions or need assistance at any point in this process.</p>
+                    <p>Please feel free to contact us at <a class="underline text-caminoSky" href="mailto:hello@camino.network.com">hello@camino.network.com</a> if you have any questions or need assistance at any point in this process.</p>
                 </div>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     Is there a minimum ticket size?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +265,7 @@ layout:         default
                 </summary>
                 <p class="p-4 md:p-6 pt-0 md:pt-0">Yes, the second sale is open for all ticket sizes above 1,000 CHF.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     Who can participate?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +277,7 @@ layout:         default
                 </summary>
                 <p class="p-4 md:p-6 pt-0 md:pt-0">The second sale will be the first public sale. However, there are international regulations or sanctions that restrict or prohibit persons resident in certain jurisdictions from participating in this sale. If you are in any doubt as to the legality of your participation in the sale, please seek professional advice. For information purposes, you may consult the list of countries that, at the time of publication, may participate in our project through the purchase and sale of Camino tokens.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     Do I need KYC?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +289,7 @@ layout:         default
                 </summary>
                 <p class="p-4 md:p-6 pt-0 md:pt-0">Yes, due to legal obligations you need to undergo a KYC verification which is fulfilled by SumSub. On Camino Network, KYC / KYB is also mandatory for validators and builders deploying smart contracts. The process requires proof of verification, such as your ID.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     Do I get rewards? 
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -279,7 +303,7 @@ layout:         default
             </details>
         </div>
         <div>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     Can I pay with crypto?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -289,9 +313,9 @@ layout:         default
                         <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </summary>
-                <p class="p-4 md:p-6 pt-0 md:pt-0">Yes, you can also buy CAM token in crypto. Supported crypto currencies are USD, USDC, ETH, BTC.</p>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">Yes, you can also buy CAM token in crypto. Supported crypto currencies are USDT, USDC, ETH, BTC.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     Can I pay with FIAT?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -303,7 +327,7 @@ layout:         default
                 </summary>
                 <p class="p-4 md:p-6 pt-0 md:pt-0">Yes, you can pay with FIAT. Supported currencies are EUR, CHF, USD.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     Where will my tokens be sent?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -315,7 +339,7 @@ layout:         default
                 </summary>
                 <p class="p-4 md:p-6 pt-0 md:pt-0">Your tokens will be sent to the wallet you created using the wallet wizard. If you already have a Camino wallet and would like to have your tokens transferred to this address, please contact hello@camino.network.com.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
                     When do I receive my tokens?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -325,11 +349,11 @@ layout:         default
                         <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </summary>
-                <p class="p-4 md:p-6 pt-0 md:pt-0">After completing all steps and signing the agreement, the tokens will be transferred to your wallet within 10 business days.</p>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">The tokens will be transferred to your wallet within 10 business days of signing the agreement and sending the payment.</p>
             </details>
-            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/30 mb-3">
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
                 <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
-                    Where can I find more information about the Camino Network Foundation?
+                    What is CHF?
                     <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
@@ -337,7 +361,31 @@ layout:         default
                         <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </summary>
-                <p class="p-4 md:p-6 pt-0 md:pt-0">More information on the Camino Network Foundation can be found <a href="https://foundation.camino.network" target="_blank" rel="noopener noreferrer">here</a> .</p>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">CHF is the abbreviation for the Swiss franc, which is the official currency of Switzerland.</p>
+            </details>
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
+                <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
+                    Where can I find more info about the Camino Wallet?
+                    <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="hidden open:block" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </summary>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">The Camino Wallet is a non-custodial wallet. The Camino Network Foundation has no control over the passwords or the CAM tokens in the wallet. Please find the Terms of Use <a class="underline text-caminoSky" href="https://suite.camino.network/legal" target="_blank" rel="noopener noreferrer">https://suite.camino.network/legal</a>.</p>
+            </details>
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
+                <summary class="text-lg text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
+                    Where can I find more information about the Foundation?
+                    <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="hidden open:block" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </summary>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">More information on the Camino Network Foundation can be found <a class="underline text-caminoSky" href="https://foundation.camino.network" target="_blank" rel="noopener noreferrer">here</a>.</p>
             </details>
         </div>
     </div>
