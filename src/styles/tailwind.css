@@ -91,23 +91,19 @@ section {
 }
 
 .button {
-  @apply text-center whitespace-nowrap inline-flex items-center transition-all bg-gradient-to-r from-primary to-secondary hover:brightness-125 font-medium text-white py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block items-center transition-all bg-gradient-to-r from-primary to-secondary hover:brightness-125 font-medium text-white py-2 px-4 rounded-xl;
 }
 
 .button-secondary {
-  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-700 bg-gray-800 hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-700 bg-gray-900/80 backdrop-blur-md hover:bg-white hover:text-gray-900 font-medium text-white py-2 px-4 rounded-xl;
 }
 
 .button-secondary-outline {
-  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-800 text-gray-800 bg-transparent hover:bg-white hover:border-white font-medium py-2 px-4 rounded-xl;
+  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-600 text-gray-200 bg-transparent hover:bg-white hover:border-white hover:text-gray-950 font-medium py-2 px-4 rounded-xl;
 }
 
 .button-gradient {
   @apply text-center whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-2 px-4 rounded-xl;
-}
-
-.card {
-  @apply bg-gray-700/25 backdrop-blur-md p-6 pt-0 md:p-8 md:pt-0 rounded-camino;
 }
 
 .gradient-full {
@@ -166,6 +162,20 @@ section {
   box-shadow:
   inset 4px 4px 8px 0 rgba(177, 67, 252, .5),
   inset -4px -4px 8px 0 rgba(20,158,237, .5);
+}
+
+/* Card styles */
+
+.card {
+  @apply bg-gray-950/75 backdrop-blur-lg border border-white/20 z-10;
+}
+
+.card-primary {
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5 hover:border-white;
+}
+
+.card-primary-extra {
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-primary;
 }
 
 summary::marker {

@@ -1,50 +1,54 @@
-<div class="bg-gray-900 py-2 overflow-hidden">
-<div x-data="{ swiper: null }"
-  x-init="swiper = new Swiper($refs.container, {
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 0,
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 5,
-          spaceBetween: 0,
+<div class="bg-gray-900 md:py-2 overflow-hidden">
+  <div x-data="{ swiper: null }"
+    x-init="swiper = new Swiper($refs.container, {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 0,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
         },
-        768: {
-          slidesPerView: 7,
-          spaceBetween: 0,
+        lazy: {
+          loadPrevNext: true,
+          loadPrevNextAmount: 2
         },
-        1024: {
-          slidesPerView: 10,
-          spaceBetween: 0,
+        breakpoints: {
+          640: {
+            slidesPerView: 5,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 7,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 10,
+            spaceBetween: 0,
+          },
         },
-      },
-    })"
-  class="relative max-w-screen-xl md:px-4 mx-auto flex flex-row"
->
+      })"
+    class="relative max-w-screen-xl md:px-4 mx-auto flex flex-row"
+  >
 
-  <div class="swiper-container" x-ref="container">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-    
+    <div class="swiper-container" x-ref="container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+      
 
-      {% for y in partners.data | sort(attribute='attributes.companyName') %}
-      {% set x = y.attributes %}
-      {% if x.companyLogoLight.data.attributes.url %}
-      {% if x.companyName == "Chain4Travel" or x.companyName == "Camino Network Foundation" %}
-      {% else %}
-      <div class="swiper-slide flex items-center justify-center">
-        {% set logoPath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-        {% set logoAlt = x.companyName + " Logo" %}
-        {% image logoPath, logoAlt, "opacity-50 hover:opacity-100 w-full h-full p-2", "object-contain w-full h-full max-h-16" %}
+        {% for y in partners.data | sort(attribute='attributes.companyName') %}
+        {% set x = y.attributes %}
+        {% if x.companyLogoLight.data.attributes.url %}
+        {% if x.companyName == "Chain4Travel" or x.companyName == "Camino Network Foundation" %}
+        {% else %}
+        <div class="swiper-slide flex items-center justify-center">
+          {% set logoPath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
+          {% set logoAlt = x.companyName + " Logo" %}
+          {% image logoPath, logoAlt, "opacity-50 hover:opacity-100 w-full h-full p-2", "object-contain w-full h-full max-h-16" %}
+        </div>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
       </div>
-      {% endif %}
-      {% endif %}
-      {% endfor %}
     </div>
   </div>
-</div>
 </div>

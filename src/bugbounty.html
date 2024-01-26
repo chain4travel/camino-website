@@ -15,7 +15,7 @@ layout:         default
                 Camino’s bug bounty program encourages independent security researchers to find and report vulnerabilities in our Web 2.0 and Web 3.0 systems. Join the hunt to help us shape the global web3 ecosystem for the travel industry.
             </p>
         </div>
-        {% image "./src/static/images/_header/glas-bugbounty.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
+        {% image "./src/static/images/glas/bug-bounty-chip.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
     </div>
 </div>
 
@@ -25,12 +25,12 @@ layout:         default
     {% set cardRowSubtitle = "" %}
     {% set cardRowBgImage = "" %}
 
-    {% set cardFirstImage = "generic-08" %}
+    {% set cardFirstImage = "generic-02" %}
     {% set cardFirstTitle = "Start hunting for bugs" %}
     {% set cardFirstText = "Search for vulnerabilities and report any that you discover. Rewards for eligible submissions are listed below." %}
     {% set cardFirstLinkLabel = "" %}
 
-    {% set cardSecondImage = "generic-09" %}
+    {% set cardSecondImage = "generic-10" %}
     {% set cardSecondTitle = "Submit your report" %}
     {% set cardSecondText = "Our security team will review the submission. If we need any additional information, we will contact you." %}
     {% set cardSecondLinkLabel = "" %}
@@ -40,7 +40,7 @@ layout:         default
     {% set cardThirdText = "If our partners consider the submission eligible, we will notify you to begin the process of fixing the issue." %}
     {% set cardThirdLinkLabel = "" %}
 
-    {% set cardFourthImage = "generic-14" %}
+    {% set cardFourthImage = "generic-12" %}
     {% set cardFourthTitle = "Receive rewards" %}
     {% set cardFourthText = "We will ask you to retest and verify the fix to get rewards and public acknowledgments (if you prefer to)." %}
     {% set cardFourthLinkLabel = "" %}
@@ -107,10 +107,10 @@ layout:         default
 </div>
 
 
-<div class="py-12 md:py-24 bg-gray-900">
+<div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
-            {% image "./src/static/images/cardImages/blockStair-dark-left.png", "", "", "w-full object-contain" %}
+            {% image "./src/static/images/glas/pyramids.png", "", "", "w-full object-contain" %}
         </div>
         <div class="md:col-start-7 col-span-12 md:col-span-6">
             <div class="font-headline font-medium text-2xl xl:text-5xl">
@@ -127,35 +127,56 @@ layout:         default
     </div>
 </div>
 
-<div class="py-12 md:py-24 border-t border-gray-800">
-    <div class="max-w-screen-md px-8 md:px-4 mx-auto">
-        <div class="font-headline font-medium text-xl xl:text-3xl">
-            Non-disclosure
+<div class="py-12 md:py-24">
+    <div class="font-headline font-medium text-2xl xl:text-4xl mb-12 text-center">
+        Bug Bounty information
+    </div>
+    <div class="max-w-screen-lg px-8 md:px-4 mx-auto text-gray-300">
+        <div>
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
+                <summary class="text-xl font-medium text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
+                    Non-disclosure
+                    <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="hidden open:block" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </summary>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">
+                    We kindly request that you refrain from disclosing any vulnerabilities to third parties until we have had a chance to fix the issue and notify any affected parties. We will keep your submission confidential, but please note that we may need to share it with third parties (e.g. service providers) to address the issue.</p>
+            </details>
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
+                <summary class="text-xl font-medium text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
+                    Responsible disclosure
+                    <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="hidden open:block" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </summary>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">We expect all submissions to adhere to our responsible disclosure policy. This means giving us a reasonable amount of time to fix the vulnerability before disclosing it to the public. We will make every effort to address the issue as soon as possible. <br> <br> We aim to respond to all submissions promptly, within 14 business days. If your submission is eligible for a reward, we will notify you and start working on a fix as soon as possible. </p>
+            </details>
+            <details class="appearance-none border border-gray-700 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/20 mb-3">
+                <summary class="text-xl font-medium text-gray-200 w-full cursor-pointer flex items-center justify-between p-4">
+                    Changes to the program
+                    <svg class="w-6 h-6 open:hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="hidden open:block" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12h-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </summary>
+                <p class="p-4 md:p-6 pt-0 md:pt-0">We reserve the right to make changes to the terms of this bug bounty program at any time. Any updates or modifications will be posted on this page.</p>
+            </details>
         </div>
-        <p class="text-gray-300 mt-4">
-            We kindly request that you refrain from disclosing any vulnerabilities to third parties until we have had a chance to fix the issue and notify any affected parties. We will keep your submission confidential, but please note that we may need to share it with third parties (e.g. service providers) to address the issue.
-        </p>
-        <div class="font-headline font-medium text-xl xl:text-3xl mt-12">
-            Responsible disclosure
-        </div>
-        <p class="text-gray-300 mt-4">
-            We expect all submissions to adhere to our responsible disclosure policy. This means giving us a reasonable amount of time to fix the vulnerability before disclosing it to the public. We will make every effort to address the issue as soon as possible.
-        </p>
-        <p class="text-gray-300 mt-4">
-            We aim to respond to all submissions promptly, within 14 business days. If your submission is eligible for a reward, we will notify you and start working on a fix as soon as possible.
-        </p>
-        <div class="font-headline font-medium text-xl xl:text-3xl mt-12">
-            Changes to the program
-        </div>
-        <p class="text-gray-300 mt-4">
-            We reserve the right to make changes to the terms of this bug bounty program at any time. Any updates or modifications will be posted on this page.
-        </p>
     </div>
 </div>
 
 
 
-<div class="py-24 md:py-40 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cubes.png);">
+<div class="py-24 md:pt-24 md:pb-[32rem] bg-cover md:bg-contain bg-bottom bg-no-repeat" style="background-image: url(/static/images/background/globe-bottom.jpg);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
         <a href="https://hackenproof.com/camino-network/camino-network-protocol" target="_blank" rel="noopener noreferrer" class="button">Submit vulnerabilities</a>
     </div>

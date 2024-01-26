@@ -5,16 +5,16 @@ layout:         default
 placement:      homepage
 ---
 
-<div class="hero-new pb-16" style="height: calc(100vh - 72px - 96px);">
-    <div class="flex flex-col md:flex-row w-full items-center">
-        <div class="text-center md:text-left w-full">
-            <div class="text-4xl md:text-5xl xl:text-7xl font-headline font-medium mb-3 md:mb-6">
-                The <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">web3</span><br> travel ecosystem
+<div class="py-12 md:py-24 overflow-hidden md:h-[calc(100vh-72px-96px)]">
+    <div class="max-w-screen-2xl mx-auto text-center">
+        <div class="max-w-3xl px-8 md:px-4 mx-auto relative z-10">
+            <div data-sal="slide-up" data-sal-delay="120" class="text-4xl xl:text-7xl font-headline font-medium mb-4">
+                Welcome to <br> Camino Network
             </div>
-            <p class="hidden md:block text-sm lg:text-xl max-w-prose text-gray-300 mb-3 md:mb-6">
-                Camino is the travel industry blockchain. Fueled by the Camino token, it is offering a versatile network to expand current business models and to create new touristic products to delight travelers and business partners.
+            <p data-sal="slide-up" data-sal-delay="250" class="text-base lg:text-xl max-w-xl mx-auto text-gray-300 mb-4">
+                The L1 blockchain designed for the travel industry and fueled with CAM token.
             </p>
-            <div class="flex items-center justify-center md:justify-start">
+            <div class="flex items-center justify-center">
                 <a href="/ecosystem" title="Discover the blockchain ecosystem of the travel industry" class="button mr-2">
                     About the ecosystem
                 </a>
@@ -23,72 +23,186 @@ placement:      homepage
                 </a>
             </div>
         </div>
-        {% image "./src/static/images/_header/glas-globe.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24 max-w-xs md:max-w-none", "" %}
+        <div class="z-0 md:-mt-32 xl:-mt-40" data-sal="slide-up" data-sal-delay="500">
+            {% image "./src/static/images/_header/globe-public-sale.png", "", "w-full h-auto" %}
+        </div>
     </div>
 </div>
 
 {% include "supporter-slider-slim.html" %}
 
-<div class="py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards-50.png);">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
-        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
-            {% image "./src/static/images/glas/stack.png", "", "", "w-full object-contain" %}
-        </div>
-        <div class="md:col-start-7 col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
-                Develop innovative business models
+<div class="py-12 md:py-32">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="font-headline text-3xl font-medium mb-6 text-center">Web3 infrastructure for the travel industry</div>
+        <div class="grid grid-cols-1 md:grid-cols-5 items-center gap-2 md:gap-4 relative font-medium text-center">
+            <div class="card flex md:flex-col justify-center items-center gap-3 rounded-xl p-4 md:p-5">
+                <svg class="text-caminoSky w-10 md:w-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 18h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3Zm0 0v3m0 0h2m-2 0h-2M7 8h3a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3Zm0 0v3m0 0h2m-2 0H5m10-6h3a1 1 0 0 1 1 1v3M9 19H6a1 1 0 0 1-1-1v-3"/></svg>
+                P2P connectivity
             </div>
-            <p class="my-4 md:my-6 text-gray-300">
-                Meet the demands of the new wave of tech-savvy and conscious travelers. Build personalized experiences and tailored products based on the p2p connectivity provided by Camino Network. Develop new business models with secure, efficient, and transparent transactions.
-            </p>
-            <a href="/developer" class="button">Learn more</a>
+            <div class="card flex md:flex-col justify-center items-center gap-3 rounded-xl p-4 md:p-5">
+                <svg class="text-caminoSky w-10 md:w-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v6M3 7v5m0 0v5c0 1.904 2.992 3.497 7 3.9M3 12c0 1.904 2.992 3.497 7 3.9m5 1.1-2 2 2 2m4-4 2 2-2 2"/></svg>
+                Data standards
+            </div>
+            <div class="card flex md:flex-col justify-center items-center gap-3 rounded-xl p-4 md:p-5">
+                <svg class="text-caminoSky w-10 md:w-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 7H5a2 2 0 0 0-2 2v2m16-4V3.403a1 1 0 0 0-1.326-.946L4.5 7M19 7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-6m3-7h.01M6 13v2m0 0a2.99 2.99 0 0 1 2.121.879M6 15a2.99 2.99 0 0 0-2.121.879M1 18h2m0 0c0-.828.336-1.578.879-2.121M3 18c0 .828.336 1.578.879 2.121M6 21v2m0-2a2.99 2.99 0 0 1-2.121-.879M6 21a2.99 2.99 0 0 0 2.121-.879M9 18h2m-2 0a2.99 2.99 0 0 0-.879-2.121M9 18a2.99 2.99 0 0 1-.879 2.121m0-4.242L9.5 14.5m-7 0 1.379 1.379m0 4.242L2.5 21.5m5.621-1.379L9.5 21.5"/></svg>
+                Multisignature wallets
+            </div>
+            <div class="card flex md:flex-col justify-center items-center gap-3 rounded-xl p-4 md:p-5">
+                <svg class="text-caminoSky w-10 md:w-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 9v-.172a2 2 0 0 0-.586-1.414l-3.828-3.828A2 2 0 0 0 14.172 3H14m6 6h-4a2 2 0 0 1-2-2V3m6 6v2m-6-8H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4m-2-4h2m-2-4h4M8 9h3m7 9-3.5-1.7M18 18l3.5-1.7M18 18v3.5m-.447-7.276-3 1.5a1 1 0 0 0-.553.894v2.764a1 1 0 0 0 .553.894l3 1.5a1 1 0 0 0 .894 0l3-1.5a1 1 0 0 0 .553-.894v-2.764a1 1 0 0 0-.553-.894l-3-1.5a1 1 0 0 0-.894 0Z"/></svg>
+                Smart contracts
+            </div>
+            <div class="card flex md:flex-col justify-center items-center gap-3 rounded-xl p-4 md:p-5">
+                <svg class="text-caminoSky w-10 md:w-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm0 0h-5m0 4h2.172a2 2 0 0 1 1.414.586L17.5 18.5m0-13-1.914 1.914A2 2 0 0 1 14.172 8H12M8.268 6A2 2 0 1 1 12 5v14a2 2 0 1 1-4 0M6 8.732a2 2 0 1 1 2-3.464M5 8.17A3.001 3.001 0 0 0 6 14m-1.236 0A3 3 0 0 0 9 18.236M19 18a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0-16a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/></svg>
+                AI infrastructure
+            </div>
+            <div class="gradient absolute z-0 inset-0 blur-2xl rounded-full"></div>
         </div>
     </div>
 </div>
 
-{% include "testimonial-four.html" %}
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+            {% image "./src/static/images/glas/airplane-smartphone-token.png", "", "", "w-full object-contain" %}
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Get started
+            </div>
+            <p class="my-4 md:my-6 text-gray-300">
+                Discover Camino Network's token economy, technology, features, and strategic roadmap, along with its potential impact and benefits.
+            </p>
+            <a href="{{site.whitepaper}}" target="_blank" class="button">Read the Whitepaper</a>
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <!-- write me a container with a 2x2 grid  -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all hover:scale-105">
+                <div class="font-headline text-3xl font-medium">Join the network</div>
+                <p class="text-gray-300 mt-2">Become a validator of the network</p>
+                <a class="button-secondary mt-3" href="/validators">Learn more</a>
+                <div class="absolute -right-8 -bottom-16 md:-right-16 md:-bottom-24 -z-10">
+                    {% image "./src/static/images/glas/validator-network-connect.png", "", "", "w-64 md:w-96 object-contain" %}
+                </div>
+            </div>
+            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all hover:scale-105">
+                <div class="font-headline text-3xl font-medium">Build applications</div>
+                <p class="text-gray-300 mt-2">Read the documentation and start building</p>
+                <a class="button-secondary mt-3" href="{{site.docs}}">Visit Docs</a>
+                <div class="absolute -right-8 -bottom-16 md:-right-16 md:-bottom-24 -z-10">
+                    {% image "./src/static/images/glas/developer-notebook.png", "", "", "w-64 md:w-96 object-contain" %}
+                </div>
+            </div>
+            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all hover:scale-105">
+                <div class="font-headline text-3xl font-medium">Receive a grant</div>
+                <p class="text-gray-300 mt-2">Apply for a grant from the Camino Network Foundation</p>
+                <a class="button-secondary mt-3" href="/grant-program">Learn more</a>
+                <div class="absolute -right-8 -bottom-16 md:-right-8 md:-bottom-16 -z-10">
+                    {% image "./src/static/images/glas/rocket-grant-program.png", "", "", "w-56 md:w-72 object-contain" %}
+                </div>
+            </div>
+            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all hover:scale-105">
+                <div class="font-headline text-3xl font-medium">Search for bugs</div>
+                <p class="text-gray-300 mt-2">Find vulnerabilities in code and get rewards</p>
+                <a class="button-secondary mt-3" href="/bugbounty">Start hunting</a>
+                <div class="absolute -right-8 -bottom-16 md:-right-8 md:-bottom-16 -z-10">
+                    {% image "./src/static/images/glas/bug-bounty-chip.png", "", "", "w-56 md:w-72 object-contain" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "testimonial-three.html" %}
+
+<div class="py-12 md:py-32 bg-gradient-to-br from-primary/5 to-secondary/20">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-5">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                One connector for all travel products — <span class="text-caminoSky">one credential for all product suppliers</span>
+            </div>
+            <p class="my-6 text-gray-300">
+                Camino Messenger transforms B2B travel distribution with its efficient, fast, and cost-effective  platform, enabling personalized offers at scale.
+            </p>
+            <a class="button" href="/contact">Request a demo</a>
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6 order-first md:order-last rounded-lg overflow-hidden">
+            <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/QCluUHE0h4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pt-12 md:pt-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+            {% image "./src/static/images/glas/user-shield.png", "", "", "w-full object-contain" %}
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="font-headline font-medium text-2xl xl:text-5xl">
+                Your business, your network, shared growth
+            </div>
+            <p class="my-4 md:my-6 text-gray-300">
+                Camino Network is a distributed ledger, where consortium members navigate future developments, secure the network and support each other.
+            </p>
+            <a class="button" href="/validators">Join the consortium</a>
+        </div>
+    </div>
+</div>
 
 <div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-6">
             <div class="font-headline font-medium text-2xl xl:text-5xl">
-                How does it work
+                Build for the next generation of travelers
             </div>
             <p class="my-4 md:my-6 text-gray-300">
-                Camino Network is a blockchain-based ecosystem connecting travel businesses and developers to create innovative solutions for the industry. Participants can get rewards and have a say in the network's governance by becoming validators ensuring secure and transparent travel-related transactions and interactions.
+                Camino Network provides digital technologies and a collaborative environment for travel companies to explore new markets and build innovative products with web3 tools.
             </p>
-            <a target="_blank" href="{{site.whitepaper}}" class="button">Whitepaper</a>
+            <a href="/developer" class="button">Developers</a>
         </div>
-        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last rounded-lg overflow-hidden">
-            <div class="video-container">
-                <iframe src="https://www.youtube-nocookie.com/embed/dLhj5Gwt2LI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <div class="col-span-12 md:col-span-6 rounded-lg overflow-hidden">
+            {% image "./src/static/images/glas/block-sphere.png", "", "", "w-full object-contain" %}
         </div>
     </div>
 </div>
 
 <div class="pb-12 md:pb-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
-        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
-            {% image "./src/static/images/_header/kyb-post.png", "", "", "w-full object-contain" %}
-        </div>
-        <div class="md:col-start-7 col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
-                Business Verification (KYB) on Camino Network
+    <div class="font-headline font-medium text-2xl xl:text-5xl mb-8 text-center">
+        Recent articles
+    </div>
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6">
+
+        {% for post in collections.blogposts | sort(attribute='data.order') %}
+
+        {% if loop.index0 < 3 %}
+            <div class="col-span-12 md:col-span-4">
+                <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl card-primary">
+                    {% image post.data.heroImage, "", "", "w-full h-48 md:h-64 object-contain bg-gray-950" %}
+                    <div class="p-4 md:p-6 border-t border-white/20">
+                        <div class="font-headline font-medium text-xl md:text-2xl mb-4 md:line-clamp-2">{{post.data.title}}</div>
+                        <p class="text-gray-400 mb-4">{{post.data.postDate}}</p>
+                        <p class="text-gray-200 line-clamp-3">{{post.data.description}}</p>
+                    </div>
+                </a>
             </div>
-            <p class="my-4 md:my-6 text-gray-300">
-                KYB is the powerful tool of Camino Network which solves two important issues in the digital travel space: authenticity and transparency. Emulating strategies of platforms like Twitter, which have introduced verification processes to combat bot manipulation, KYB serves as a Unique Value Proposition within the whole travel industry.
-            </p>
-            <a class="button" href="/business-verification-kyb-on-camino-network">Learn more</a>
-        </div>
+            {% endif %}
+        {% endfor %}
+        
     </div>
 </div>
 
-<div class="py-24 md:py-32 bg-contain bg-top bg-no-repeat border-t border-gray-800" style="background-image: url(/static/images/heroBgImages/cubes.png);">
+<div class="py-24 md:pt-24 md:pb-[32rem] bg-cover md:bg-contain bg-bottom bg-no-repeat" style="background-image: url(/static/images/background/globe-bottom.jpg);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
-        <div class="font-headline font-medium text-2xl xl:text-5xl mb-6 md:mb-12">
+        <div class="font-headline font-medium text-2xl xl:text-5xl">
             An ecosystem for all
         </div>
+        <p class="text-gray-400 my-6 md:my-12 max-w-prose mx-auto">Camino Network is an inclusive ecosystem. It is open to all eager to innovate in the travel industry. Contribute, learn, and grow and build to enhance travel technologies for all.</p>
         <a href="{{site.discord}}" target="_blank" rel="noopener noreferrer" class="button">Join the community</a>
     </div>
 </div>
