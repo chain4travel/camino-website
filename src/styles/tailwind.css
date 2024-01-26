@@ -171,7 +171,7 @@ section {
 }
 
 .card-primary {
-  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5 hover:border-white;
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5 md:hover:border-white/25;
 }
 
 .card-primary-extra {
