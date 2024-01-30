@@ -103,25 +103,24 @@ placement:      ecosystem
 
 {% include "section_tokenomics.html" %}
 
-
-
 <div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <!-- write me a container with a 2x2 grid  -->
         <div class="grid md:grid-cols-2 gap-8">
-            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all hover:scale-105">
-                <div class="font-headline text-3xl font-medium">Get a grant</div>
+            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all">
+                <div class="font-headline text-3xl font-medium">Receive a grant</div>
                 <p class="text-gray-300 mt-2">Apply for a grant from the Camino Network Foundation</p>
                 <a class="button-secondary mt-3" href="/grant-program">Learn more</a>
-                <div class="absolute -right-8 -bottom-16">
-                    {% image "./src/static/images/glas/rocket-grant-program.png", "", "", "w-72 object-contain" %}
+                <div class="absolute -right-8 -bottom-16 md:-right-8 md:-bottom-16 -z-10">
+                    {% image "./src/static/images/glas/rocket-grant-program.png", "", "", "w-56 md:w-72 object-contain" %}
                 </div>
             </div>
-            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all hover:scale-105">
+            <div class="overflow-hidden relative card-primary p-8 md:pr-32 lg:pr-60 pb-24 rounded-2xl transition-all">
                 <div class="font-headline text-3xl font-medium">Search for bugs</div>
                 <p class="text-gray-300 mt-2">Find vulnerabilities in code and get rewards</p>
-                <a class="button-secondary mt-3" href="/bug-bounty">Start hunting</a>
-                <div class="absolute -right-8 -bottom-16">
-                    {% image "./src/static/images/glas/bug-bounty-chip.png", "", "", "w-72 object-contain" %}
+                <a class="button-secondary mt-3" href="/bugbounty">Start hunting</a>
+                <div class="absolute -right-8 -bottom-16 md:-right-8 md:-bottom-16 -z-10">
+                    {% image "./src/static/images/glas/bug-bounty-chip.png", "", "", "w-56 md:w-72 object-contain" %}
                 </div>
             </div>
         </div>
