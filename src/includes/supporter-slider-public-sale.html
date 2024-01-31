@@ -36,7 +36,7 @@
       {% for y in partners.data | sort(attribute='attributes.companyName') %}
       {% set x = y.attributes %}
       {% if x.companyLogoLight.data.attributes.url %}
-      {% if x.companyName == "Alpitour" or  x.companyName == "AERTiCKET" or  x.companyName == "DER Touristik" or  x.companyName == "Eurowings" or  x.companyName == "Fraport" or  x.companyName == "GIATA" or  x.companyName == "hlx" or  x.companyName == "HolidayCheck" or  x.companyName == "Hotelplan Group" or  x.companyName == "Juniper Travel Technology" or  x.companyName == "Lufthansa" or  x.companyName == "Miles & More" or  x.companyName == "Schauinsland Reisen" or  x.companyName == "Sixt" or  x.companyName == "TUI Group" %}
+      {% if x.companyName == "Alpitour" or  x.companyName == "AERTiCKET" or  x.companyName == "DER Touristik" or  x.companyName == "Eurowings" or  x.companyName == "Fraport" or  x.companyName == "GIATA" or  x.companyName == "HolidayCheck" or  x.companyName == "Hotelplan Group" or  x.companyName == "Juniper Travel Technology" or  x.companyName == "Lufthansa" or  x.companyName == "Miles & More" or  x.companyName == "Schauinsland Reisen" or  x.companyName == "Sixt" or  x.companyName == "TUI Group" %}
       <div class="swiper-slide flex items-center justify-center">
         {% set logoPath = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
         {% set logoAlt = x.companyName + " Logo" %}
@@ -49,7 +49,7 @@
     </div>
   </div>
 </div>
-<div class="text-center mt-8 text-gray-300">
+<div class="text-center mt-8 px-4 text-gray-300">
   <a class="underline text-caminoSky" href="/partners">170+</a> committed global travel brands and web3 startups
 </div>
 </div>
