@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
       }
   
       let metadata = await Image(src, {
-          widths: [160, 640, 960, 1200, 1800, 2400],
+          widths: [160, 640, 960, 1200, 1800],
           formats: ['png', 'webp'],
           outputDir: "./_site/static/images/",
           urlPath: "/static/images/"
@@ -42,9 +42,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({'./node_modules/sal.js/dist/sal.js': './js/sal.js',})
   eleventyConfig.addPassthroughCopy({'./node_modules/sal.js/dist/sal.css': './sal.css',})
-
-  eleventyConfig.addPassthroughCopy({'./node_modules/swiper/swiper-bundle.min.js': './js/swiper.js',})
-  eleventyConfig.addPassthroughCopy({'./node_modules/swiper/swiper-bundle.min.css': './js/swiper.css',})
 
   eleventyConfig.addPassthroughCopy('src/img')
   eleventyConfig.addPassthroughCopy('src/static')
