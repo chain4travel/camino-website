@@ -10,12 +10,12 @@
         <!-- CSS -->
         <link rel="stylesheet" href="/style.css?v={% version %}" />
         <link rel="stylesheet" href="/sal.css?v={% version %}" />
-        <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/swiper.css?v={% version %}" />
 
         <!-- JS -->
         <script src="/js/alpine.js?v={% version %}" defer></script>
         <script src="/js/sal.js?v={% version %}"></script>
-        <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+        <script src="/js/swiper.js?v={% version %}"></script>
 
         <!-- Favicons and theme color -->
         <link rel="apple-touch-icon" sizes="180x180" href="/static/meta/apple-touch-icon.png" />
@@ -61,7 +61,7 @@
         <noscript>ePrivacy and GPDR Cookie Consent management by <a href="https://www.TermsFeed.com/" rel="nofollow">TermsFeed Privacy Generator</a></noscript>
         <!-- End Cookie Consent by TermsFeed Privacy Generator https://www.TermsFeed.com -->
 </head>
-    <body class="bg-gray-950 overflow-x-hidden text-gray-50 selection:bg-primary selection:text-caminoSky" style="--sal-duration: .5s;">
+    <body class="overflow-x-hidden bg-gray-950 text-gray-50 selection:bg-primary selection:text-caminoSky" style="--sal-duration: .5s;">
         {% include "header.html" %}
         {{ content | safe }}
         {% include "footer.html" %}

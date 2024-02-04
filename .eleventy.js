@@ -39,8 +39,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/styles/tailwind.css')
 
   eleventyConfig.addPassthroughCopy({'./node_modules/alpinejs/dist/cdn.js': './js/alpine.js',})
+
   eleventyConfig.addPassthroughCopy({'./node_modules/sal.js/dist/sal.js': './js/sal.js',})
   eleventyConfig.addPassthroughCopy({'./node_modules/sal.js/dist/sal.css': './sal.css',})
+
+  eleventyConfig.addPassthroughCopy({'./node_modules/swiper/swiper-bundle.min.js': './js/swiper.js',})
+  eleventyConfig.addPassthroughCopy({'./node_modules/swiper/swiper-bundle.min.css': './js/swiper.css',})
 
   eleventyConfig.addPassthroughCopy('src/img')
   eleventyConfig.addPassthroughCopy('src/static')
