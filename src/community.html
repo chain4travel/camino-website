@@ -5,18 +5,18 @@ layout:         default
 ---
 
 <div class="hero-new">
-    <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
-        <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
-            <div class="text-caminoSky uppercase font-headline text-base md:text-xl font-medium tracking-widest">
+    <div class="flex flex-col items-center w-full md:flex-row" data-sal="zoom-out">
+        <div class="w-full text-center md:text-left" data-sal="zoom-out" data-sal-delay="250">
+            <div class="text-base font-medium tracking-widest uppercase text-caminoSky font-headline md:text-xl">
                 Community
             </div>
-            <div class="text-4xl xl:text-7xl font-headline font-medium my-6">
+            <div class="my-6 text-4xl font-medium xl:text-7xl font-headline">
                 Camino Network community
             </div>
-            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+            <p class="my-6 text-base text-gray-300 lg:text-xl max-w-prose">
                 Let’s build together a new efficient Internet for the whole travel industry, create new experiences, and find new models and approaches on the way to a sustainable future.
             </p>
-            <a href="/partners" title="Discover the blockchain ecosystem of the travel industry" class="button mr-2">
+            <a href="/partners" title="Discover the blockchain ecosystem of the travel industry" class="mr-2 button">
                 Explore partners
             </a>
         </div>
@@ -27,34 +27,34 @@ layout:         default
 {% include "supporter-slider.html" %}
 
 <div class="pt-12 md:pt-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+    <div class="grid items-center max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-6">
         <div class="col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
+            <div class="text-2xl font-medium font-headline xl:text-5xl">
                 Everyone is welcome to join 
             </div>
-            <ul class="list-disc pl-4 my-4 md:my-6 text-gray-300">
+            <ul class="pl-4 my-4 text-gray-300 list-disc md:my-6">
                 <li>Builders and developers to launch applications and platforms that utilize the capacity of the Camino blockchain</li>
                 <li>Service providers and suppliers to use applications and platforms to enhance offerings and provide more value to travelers</li>
                 <li>Travelers and enthusiasts to provide feedback and insights to improve the travel ecosystem and find new business models</li>
                 <li>Organizations and destinations aligned with Camino Network’s vision</li>
             </ul>
         </div>
-        <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last overflow-hidden rounded-lg">
+        <div class="order-first col-span-12 overflow-hidden rounded-lg md:col-start-8 md:col-span-5 md:order-last">
             {% image "./src/static/images/glas/bag-travel-check.png", "", "", "w-full object-contain" %}
         </div>
     </div>
 </div>
 
 <div class="pb-12 md:pb-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
-        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+    <div class="grid items-center max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-6">
+        <div class="col-span-12 overflow-hidden rounded-lg md:col-span-5">
             {% image "./src/static/images/glas/user-shield.png", "", "", "w-full object-contain" %}
         </div>
-        <div class="md:col-start-7 col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
+        <div class="col-span-12 md:col-start-7 md:col-span-6">
+            <div class="text-2xl font-medium font-headline xl:text-5xl">
                 Learn, grow & network
             </div>
-            <ul class="list-disc pl-4 my-4 md:my-6 text-gray-300">
+            <ul class="pl-4 my-4 text-gray-300 list-disc md:my-6">
                 <li>Learn from industry leaders and experts</li>
                 <li>Grow the business with new partnerships</li>
                 <li>Network with like-minded professionals</li>
@@ -102,17 +102,17 @@ layout:         default
 <!-- CardRow End -->
 
 <section>
-    <h1 class="font-headline font-medium text-2xl md:text-5xl text-center mb-12">Camino in the news</h1>
+    <h2 class="mb-12 text-2xl font-medium text-center font-headline md:text-5xl">Camino in the news</h2>
 
     {% for a in newsarticles.data | sort(attribute='attributes.date') | reverse %}
     {% set x = a.attributes %}
-    <article class="md:flex items-start py-16 border-b border-gray-700">
-        <a target="_blank" class="md:w-1/3 flex-shrink-0 mb-6 md:mb-0 opacity-90 hover:opacity-100" href="{{x.linkToArticle}}">
-            <img class="rounded-2xl object-cover h-40 md:h-56 w-full border border-gray-700" src="https://api.strapi.camino.network/{{x.image.data.attributes.url}}" alt="cryptowisser cover image">
+    <article class="items-start py-16 border-b border-gray-700 md:flex">
+        <a target="_blank" class="flex-shrink-0 mb-6 md:w-1/3 md:mb-0 opacity-90 hover:opacity-100" href="{{x.linkToArticle}}">
+            <img class="object-cover w-full h-40 border border-gray-700 rounded-2xl md:h-56" src="https://api.strapi.camino.network/{{x.image.data.attributes.url}}" alt="cryptowisser cover image">
         </a>
-        <div class="p-0 md:px-16 mt-8 md:mt-0">
-            <div class="font-headline font-medium text-xl md:text-3xl mb-6">{{x.title}}</div>
-            <p class="text-gray-300 mb-6 line-clamp-2">{{x.articleTeaser}}</p>
+        <div class="p-0 mt-8 md:px-16 md:mt-0">
+            <div class="mb-6 text-xl font-medium font-headline md:text-3xl">{{x.title}}</div>
+            <p class="mb-6 text-gray-300 line-clamp-2">{{x.articleTeaser}}</p>
             <a target="_blank" href="{{x.linkToArticle}}" class="button">
                 Read full article
             </a>

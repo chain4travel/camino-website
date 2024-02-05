@@ -1,5 +1,5 @@
 <section>
-    <div class="container items-center grid grid-cols-12">
+    <div class="container grid items-center grid-cols-12">
         {% if textImageImagePosition == 'left' %}
         <div data-sal="zoom-out" class="col-span-12 md:col-span-5">
             {% set imagepath = "./src/static/images/" + textImageImage + ".png" %}
@@ -11,7 +11,7 @@
             {% if textImageCategory %}
             <h3 class="mb-2">{{ textImageCategory }}</h3>
             {% endif %}
-            <h1>{{ textImageTitle }}</h1>
+            <h2>{{ textImageTitle }}</h2>
             {% if textImageSubtitle %}
             <h3>{{ textImageSubtitle }}</h3>
             {% endif %}
@@ -20,11 +20,11 @@
             <p>{{ textImageParagraph2 }}</p>
             {% endif %}
             {% if textImageButtonLink %}
-            <a {% if textImageButtonLinkBlank %} target="_blank" {% endif %} class="button mt-6" href="{{ textImageButtonLink }}">{{ textImageButtonLabel }}</a>
+            <a {% if textImageButtonLinkBlank %} target="_blank" {% endif %} class="mt-6 button" href="{{ textImageButtonLink }}">{{ textImageButtonLabel }}</a>
             {% endif %}
         </div>
         {% if textImageImagePosition == 'right' %}
-        <div data-sal="zoom-out" class="col-span-12 md:col-span-5 md:col-start-8 order-first md:order-last">
+        <div data-sal="zoom-out" class="order-first col-span-12 md:col-span-5 md:col-start-8 md:order-last">
             {% set imagepath = "./src/static/images/" + textImageImage + ".png" %}
             {% set imagealt = textImageImage + " - Camino Network" %}
             {% image imagepath, imagealt, "", "w-full object-contain" %}

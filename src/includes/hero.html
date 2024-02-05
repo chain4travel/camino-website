@@ -1,14 +1,14 @@
 <div
-    class="bg-contain bg-top bg-no-repeat md:bg-contain bg-top bg-no-repeat relative"
+    class="relative bg-top bg-no-repeat bg-contain md:bg-contain"
     {% if heroBgImage %}
     style="background-image:url('/static/images/heroBgImages/{{ heroBgImage }}.png');"
     {% endif %}
 >
     <div class="hero">
         {% if heroTitle %}
-        <h1 data-sal="zoom-out" class="{% if heroSubtitle %}mb-8{% endif %}">
+        <h2 data-sal="zoom-out" class="{% if heroSubtitle %}mb-8{% endif %}">
             {{ heroTitle }}
-        </h1>
+        </h2>
         {% endif %}
         {% if heroSubtitle %}
         <h2 data-sal="zoom-out" class="{% if heroText %}mb-8{% endif %}">
@@ -21,7 +21,7 @@
         </p>
         {% endif %}
         {% if heroButtonLabel %}
-        <a href="{{ heroButtonUrl }}" data-sal="zoom-out" class="button mt-4">
+        <a href="{{ heroButtonUrl }}" data-sal="zoom-out" class="mt-4 button">
             {{ heroButtonLabel }}
         </a>
         {% endif %}

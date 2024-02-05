@@ -1,25 +1,25 @@
 <!-- Stats Start -->
 <div>
-    <div class="gradient-full py-6 md:py-12">
+    <div class="py-6 gradient-full md:py-12">
         <div class="container" data-sal="zoom-out">
-            <div class="sm:flex text-center">
-                <a href="{{site.explorer}}" target="_blank" class="block sm:w-1/3 mb-4 md:mb-0 sm:border-r border-gray-900/20 hover:opacity-80">
-                    <h1>{{ stats.numberOfValidators }}</h1>
+            <div class="text-center sm:flex">
+                <a href="{{site.explorer}}" target="_blank" class="block mb-4 sm:w-1/3 md:mb-0 sm:border-r border-gray-900/20 hover:opacity-80">
+                    <h2>{{ stats.numberOfValidators }}</h2>
                     <p class="mt-0 md:mt-4">Validators</p>
                 </a>
-                <a href="{{site.explorer}}" target="_blank" class="block sm:w-1/3 mb-4 md:mb-0 sm:border-r border-gray-900/20 hover:opacity-80">
-                    <h1>{{ stats.numOfTransaction }}</h1>
+                <a href="{{site.explorer}}" target="_blank" class="block mb-4 sm:w-1/3 md:mb-0 sm:border-r border-gray-900/20 hover:opacity-80">
+                    <h2>{{ stats.numOfTransaction }}</h2>
                     <p class="mt-0 md:mt-4">Transactions</p>
                 </a>
                 <a href="{{site.explorer}}" target="_blank" class="block sm:w-1/3 hover:opacity-80">
-                    <h1>{{ stats.txfee }} CAM</h1>
+                    <h2>{{ stats.txfee }} CAM</h2>
                     <p class="mt-0 md:mt-4">Gas fees</p>
                 </a>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="md:text-xl font-headline text-center mt-4 opacity-50 tracking-widest">
+        <div class="mt-4 tracking-widest text-center opacity-50 md:text-xl font-headline">
             <a class="hover:underline" href="{{site.explorer}}" target="_blank">See Explorer live stats last 24h</a>
         </div>
     </div>
