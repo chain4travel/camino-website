@@ -5,15 +5,15 @@ layout:         default
 ---
 
 <div class="hero-new">
-    <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
-        <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
-            <div class="text-caminoSky uppercase font-headline text-base md:text-xl font-medium tracking-widest">
+    <div class="flex flex-col items-center w-full md:flex-row" data-sal="zoom-out">
+        <div class="w-full text-center md:text-left" data-sal="zoom-out" data-sal-delay="250">
+            <div class="text-base font-medium tracking-widest uppercase text-caminoSky font-headline md:text-xl">
                 Blog
             </div>
-            <div class="text-4xl xl:text-7xl font-headline font-medium my-6">
+            <div class="my-6 text-4xl font-medium xl:text-7xl font-headline">
                 Horizons by Camino Network
             </div>
-            <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+            <p class="my-6 text-base text-gray-300 lg:text-xl max-w-prose">
                 With Horizons, you will stay informed about the rapid development, innovative features, decentralized applications launching on Camino Network and everything web3 in travel.
             </p>
         </div>
@@ -22,18 +22,18 @@ layout:         default
 </div>
 
 <div class="pb-12 md:pb-24">
-    <div class="font-headline font-medium text-2xl md:text-3xl text-center mb-8">
+    <div class="mb-8 text-2xl font-medium text-center font-headline md:text-3xl">
         Recent articles
     </div>
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6">
+    <div class="grid max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-6">
 
         {% for post in collections.blogposts | sort(attribute='data.order') %}
             <div class="col-span-12 md:col-span-4">
                 <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl card-primary">
-                    {% image post.data.heroImage, "", "", "w-full h-48 md:h-64 object-contain" %}
-                    <div class="p-4 md:p-6">
-                        <div class="font-headline font-medium text-xl md:text-2xl mb-4 md:line-clamp-2">{{post.data.title}}</div>
-                        <p class="text-gray-400 mb-4">{{post.data.postDate}}</p>
+                    {% image post.data.heroImage, "", "", "w-full object-contain -mt-24" %}
+                    <div class="p-4 -mt-12 md:p-6">
+                        <div class="mb-4 text-xl font-medium font-headline md:text-2xl md:line-clamp-2">{{post.data.title}}</div>
+                        <p class="mb-4 text-gray-400">{{post.data.postDate}}</p>
                         <p class="text-gray-200 line-clamp-3">{{post.data.description}}</p>
                     </div>
                 </a>
