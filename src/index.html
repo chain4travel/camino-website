@@ -34,18 +34,18 @@ placement:      homepage
 
 {% include "supporter-slider-slim.html" %}
 
-<div class="py-12 md:py-24">
+<div class="pt-12 md:pt-24">
     <div class="grid items-center max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-6">
-        <div class="col-span-12 md:col-span-6">
+        <div class="col-span-12 p-6 md:p-10 md:col-span-7 card-primary-extra rounded-xl">
             <div class="text-2xl font-medium font-headline xl:text-5xl">
-                CAM token <span class="text-caminoSky">public sale</span> live for early adopters
+                CAM Public Sale live
             </div>
             <p class="my-4 text-gray-300 md:my-6">
-                CAM is the native token of Camino Network and plays an important role in driving the seamless operation and growth of the global web3 travel ecosystem. Legally classified as a hybrid token, CAM serves dual purposes as both a payment and utility token within the L1 for global travel.
+                CAM is the native token of Camino Network and plays an important role in driving the seamless operation and growth of the global web3 travel ecosystem.
             </p>
             <a href="/public-sale" class="button">CAM public sale -></a>
         </div>
-        <div class="col-span-12 overflow-hidden rounded-lg md:col-span-6">
+        <div class="hidden col-span-12 overflow-hidden rounded-lg md:col-span-5 md:block">
             {% image "./src/static/images/glas/camino-token.png", "", "", "w-full object-contain" %}
         </div>
     </div>
@@ -189,7 +189,7 @@ placement:      homepage
             </p>
             <a href="/developer" class="button">Developers</a>
         </div>
-        <div class="col-span-12 overflow-hidden rounded-lg md:col-span-6">
+        <div class="order-first col-span-12 overflow-hidden rounded-lg md:col-span-6 md:order-last">
             {% image "./src/static/images/glas/block-sphere.png", "", "", "w-full object-contain" %}
         </div>
     </div>
