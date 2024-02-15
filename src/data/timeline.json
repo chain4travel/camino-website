@@ -1,32 +1,62 @@
 [
     {
-        "title": "Foundation",
-        "date": "Q4 2021",
-        "text": "The Camino Network was initiated by Chain4Travel AG, a group of travel industry innovators with years of experience in travel and technology. As a joint industry approach, their mission is to connect the new world of travel.",
-        "type": "done"
+        "label": "Q4 2021",
+        "title": "Chain4Travel AG Founded",
+        "text": "Team formation and the start of development"
     },
     {
-        "title": "Testnet launch",
-        "date": "Q2 2022",
-        "text": "The Columbus testnet has been up and running for travel industry supporters and validators to test the network capabilities and to start working on creating new travel-related products or rethink entire business models.",
-        "type": "done"
+        "label": "Q2 2022",
+        "title": "Seed Investment",
+        "text": "Closing 4.3M CHF seed investment"
     },
     {
-        "title": "Private pre-sale",
-        "date": "Q3 2022",
-        "text": "We have successfully closed our private pre-sale with 5 million CHF. Over 300 investors believed in our vision of a shared, decentralized network for the travel industry and locked their tokens for either three, four, or five years.",
-        "type": "done"
+        "label": "Q2 2022",
+        "title": "Columbus Testnet Launch",
+        "text": "Development of the first B2B decentralized travel applications"
     },
     {
-        "title": "Mainnet launch",
-        "date": "Q2 2023",
-        "text": "To ensure the chain's reliability and security, this process needs time and a lot of testing. Once live, the dApps from the testnet can be easily transferred on the chain, and the travel industry can start reinventing itself.",
-        "type": "active"
+        "label": "Q3 2022",
+        "title": "Private Pre-Sale of Camino Token",
+        "text": "Closing the pre-sale with 4.6M CHF from 300+ entities"
     },
     {
-        "title": "Camino token IEO",
-        "date": "2023",
-        "text": "After the private pre-sale in 2022 and a successful launch of the Camino mainnet in 2023, the Camino token (CAM) will be officially traded on exchanges. More information on where to buy Camino will follow at the beginning of 2023.",
-        "type": "upcoming"
+        "label": "2024",
+        "title": "Initial Exchange Offering (IEO)",
+        "text": "Focus on the ecosystem's growth with new use cases and increased transactions before listing"
+    },
+    {
+        "label": "Q4 2024",
+        "title": "Camino Messenger PoC",
+        "text": "Presentation of the first p2p messenger for the travel industry and its further development."
+    },
+    {
+        "label": "Q3 2023",
+        "title": "Establishment of the Camino Network Foundation",
+        "text": "The Foundation is set up to lead the future development of the decentralized network"
+    },
+    {
+        "label": "Q2 2023",
+        "title": "Camino Network Mainnet Launch",
+        "text": "Soft launch of the mainnet in several stages. First dApps deployed on Camino Network"
+    },
+    {
+        "label": "Q1 2024",
+        "title": "Camino Messenger Testnet",
+        "text": "'Berlin' phase deployment with a beta version of Camino Messenger"
+    },
+    {
+        "label": "Q2 2024",
+        "title": "Camino Messenger Live",
+        "text": "Cross-chain communication and distribution via Camino Messenger"
+    },
+    {
+        "label": "Q3 2024",
+        "title": "Block Explorer 2.0",
+        "text": "Enhanced user experience to intuitively navigate through the web3 travel ecosystem"
+    },
+    {
+        "label": "Q4 2024",
+        "title": "Camino Wallet 2.0",
+        "text": "Introduction of new features and improved UX/UI"
     }
 ]
