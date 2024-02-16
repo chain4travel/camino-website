@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<div class="bg-gradient-to-b from-gray-950 via-primary/5 to-primary/20 pb-6 md:pb-0">
+<div class="pb-6 bg-gradient-to-b from-gray-950 via-primary/5 to-primary/20 md:pb-0">
     <div class="hero-new">
-        <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
-            <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
-                <div class="text-4xl xl:text-7xl font-headline font-medium">
+        <div class="flex flex-col items-center w-full md:flex-row" data-sal="zoom-out">
+            <div class="w-full text-center md:text-left" data-sal="zoom-out" data-sal-delay="250">
+                <div class="text-4xl font-medium xl:text-6xl font-headline">
                     {{title}}
                 </div>
-                <div class="text-caminoSky uppercase font-headline text-base md:text-xl font-medium tracking-widest my-3 md:my-6">
+                <div class="my-3 text-base font-medium tracking-widest uppercase text-caminoSky font-headline md:text-xl md:my-6">
                     {{postDate}}
                 </div>
-                <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
+                <p class="my-6 text-base text-gray-300 lg:text-xl max-w-prose">
                     {{description}}
                 </p>
             </div>
@@ -21,8 +21,8 @@ layout: default
     </div>
 </div>
 
-<div class="mt-12 md:mt-0 py-6 md:py-12">
-<div class="prose prose-invert max-w-screen-lg px-8 md:px-4 mx-auto prose-p:text-gray-400 prose-img:rounded-2xl prose-img:w-full prose-img:border prose-img:border-gray-800 prose-img:mx-auto prose-th:p-4 prose-td:p-4 prose-th:bg-gray-900">
+<div class="py-6 mt-12 md:mt-0 md:py-12">
+<div class="max-w-screen-lg px-8 mx-auto prose prose-invert md:px-4 prose-p:text-gray-300 prose-img:rounded-2xl prose-img:w-full prose-img:border prose-img:border-gray-800 prose-img:mx-auto prose-th:p-4 prose-td:p-4 prose-th:bg-gray-900">
 
 {{ content | safe }}
 
@@ -30,13 +30,13 @@ layout: default
 </div>
 
 <div class="py-24 md:pt-24 md:pb-[32rem] bg-cover md:bg-contain bg-bottom bg-no-repeat" style="background-image: url(/static/images/background/globe-bottom.jpg);">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
+    <div class="max-w-screen-xl px-8 mx-auto text-center md:px-4">
 
-        <div class="font-headline font-medium text-2xl xl:text-5xl mb-6 md:mb-12">
+        <div class="mb-6 text-2xl font-medium font-headline xl:text-5xl md:mb-12">
             An ecosystem for all
         </div>
 
-        <a href="{{site.discord}}" target="_blank" rel="noopener noreferrer" class="button sm:mr-2 mb-2">Join the community</a>
+        <a href="{{site.discord}}" target="_blank" rel="noopener noreferrer" class="mb-2 button sm:mr-2">Join the community</a>
         <a href="{{site.wallet}}" target="_blank" rel="noopener noreferrer" class="button">Create Wallet</a>
 
     </div>
