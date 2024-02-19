@@ -15,13 +15,9 @@ socialImage: social-spotlight-sleap
             {{description}}
         </p>
         <div class="flex flex-wrap gap-2 justify-center text-sm my-4 md:my-6">
-            <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">Paying with crypto</div>
-            <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">Personalized hotel offers</div>
-            <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">Better rates</div>
-            <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">NFTs</div>
-            <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">AI</div>
-            <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">GenZ</div>
-            <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">B2C</div>
+            {% for tag in tags %}
+                <div class="bg-gray-800 rounded-lg px-2 md:px-3 py-1">{{ tag }}</div>
+            {% endfor %}
         </div>
         {% image heroImage, title, "", "w-full mx-auto border-none mt-12 aspect-video rounded-lg shadow-gradient" %}
     </div>
