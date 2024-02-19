@@ -216,19 +216,36 @@ order:          0
 
 <p>This is the first model, and with the development of the messenger push models, where ARI (Availability, Rates, and Inventory) are pushed to distribution systems for pre-packaging, fast initial search results, and extended functionality like calendar views will be implemented.</p>
 
-<p><strong>Search</strong>: distributors looking for flights, hotels, and other products send out a request to various suppliers to check what is available.</p>
-
-<p><strong>Check</strong>: after receiving the replies, they pick up suitable options and double-check the information to ensure the offers are still available at the offered price — confirm before paying.</p>
-
-<p><strong>Book</strong>: after confirmation, the booking is finalized with records on the blockchain, and a digital asset is minted. The payment is sent automatically to the provider, and the booking details are transferred to the agency, all in one go.</p>
-
-<p><strong>RetrieveBooking</strong> provides distributors and suppliers with a tool to ensure their records match the records on the blockchain. It is like double-checking the reservation details for errors. Such a check can be done with the blockchain record, with the supplier record, or with both. There is also a BookingList request variant to check the status of bookings made between specific DateTime stamps and a BookingDetails request to retrieve all the details of a particular booking.</p>
-
-<p><strong>CancellationRequest</strong> is used when a travel service needs to be canceled. A distributor checks if cancelation is possible and at what price.</p>
-
-<p><strong>Upselling Request</strong> provides confirmed bookings with the flexibility to add extra services, like an upgraded room or a special tour. Suppliers can suggest additional services to personalize the offer. The AdditionalServices Request communicates to the supplier reference to identify the booking. In the Response, any optional or alternative product or service can be offered.</p>
-
-<p><strong>The BookingModification Request</strong> enables the distributor to adjust the booking details as long as the changes are available and have been previously discussed. It can be anything like switching to a different hotel or changing travel dates. This request also can be used to add optional services to the booking as required.</p>
+<table>
+    <tr>
+        <th>🔎 Search</th>
+        <td>distributors looking for flights, hotels, and other products send out a request to various suppliers to check what is available.</td>
+    </tr>
+    <tr>
+        <th>✅ Check</th>
+        <td>after receiving the replies, they pick up suitable options and double-check the information to ensure the offers are still available at the offered price — confirm before paying.</td>
+    </tr>
+    <tr>
+        <th>🧾 Book</th>
+        <td>after confirmation, the booking is finalized with records on the blockchain, and a digital asset is minted. The payment is sent automatically to the provider, and the booking details are transferred to the agency, all in one go.</td>
+    </tr>
+    <tr>
+        <th>ℹ️ RetrieveBooking</th>
+        <td>provides distributors and suppliers with a tool to ensure their records match the records on the blockchain. It is like double-checking the reservation details for errors. Such a check can be done with the blockchain record, with the supplier record, or with both. There is also a BookingList request variant to check the status of bookings made between specific DateTime stamps and a BookingDetails request to retrieve all the details of a particular booking.</td>
+    </tr>
+    <tr>
+        <th>🚫 CancellationRequest</th>
+        <td>is used when a travel service needs to be canceled. A distributor checks if cancelation is possible and at what price.</td>
+    </tr>
+    <tr>
+        <th>⬆️ Upselling Request</th>
+        <td>provides confirmed bookings with the flexibility to add extra services, like an upgraded room or a special tour. Suppliers can suggest additional services to personalize the offer. The AdditionalServices Request communicates to the supplier reference to identify the booking. In the Response, any optional or alternative product or service can be offered.</td>
+    </tr>
+    <tr>
+        <th>📝 The BookingModification Request</th>
+        <td>enables the distributor to adjust the booking details as long as the changes are available and have been previously discussed. It can be anything like switching to a different hotel or changing travel dates. This request also can be used to add optional services to the booking as required.</td>
+    </tr>
+</table>
 
 <h2>New business opportunities with Camino Messenger</h2>
 
@@ -236,7 +253,7 @@ order:          0
 
 <ul>
     <li>Effortless integration and adoption of diverse travel <strong>microservices</strong> for new revenue streams with minimal effort and cost.</li>
-    <li>Streamlined and e<strong>fficient travel data management</strong> for informed decision-making in the booking process.</li>
+    <li>Streamlined and <strong>efficient travel data management</strong> for informed decision-making in the booking process.</li>
     <li><strong>Micropayments</strong> eliminate unnecessary costs by paying only for actual service requests and allow the marketing of low-value products at scale.</li>
     <li><strong>Fast partner connectivity</strong> within the network for efficient transactions.</li>
     <li><strong>Increased efficiency</strong> via swift communications and operations across the travel ecosystem.</li>
@@ -246,6 +263,6 @@ order:          0
 
 <p>The use of the <a href="https://protobuf.dev/" target="_blank" rel="noopener noreferrer">protobuf</a> format cuts the message size in responses from providers to distributors by almost 50%. Additionally, by omitting unnecessary static data from search responses and including the information in the ProductInfo message, the outgoing traffic for providers is further reduced by half. This not only lowers hosting costs for providers but also enhances processing efficiency on the distribution side.</p>
 
-<h3>Camino Messenger is live — join and shape the future travel</h3>
+<h3>Camino Messenger is live — join and shape the future of travel</h3>
 
 <p>The Camino Network Foundation invites all travel-related companies and travel tech enthusiasts to explore Messenger and its capabilities to change the way travel data is managed and exchanged. You can start with <a href="https://docs.camino.network/camino-messenger/introduction/index.html" target="_blank" rel="noopener noreferrer">official documents</a> or by joining <a href="https://discord.gg/camino" target="_blank" rel="noopener noreferrer">Discord</a>.</p>
