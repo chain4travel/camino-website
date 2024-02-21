@@ -111,7 +111,7 @@ section {
 }
 
 .gradient {
-  @apply bg-gradient-to-bl from-[rgba(189,0,255,.33)] to-[rgba(0,172,255,.33)];
+  @apply bg-gradient-to-r from-primary/30 to-secondary/30;
 }
 
 .rounded-camino {
