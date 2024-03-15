@@ -20,6 +20,7 @@ module.exports = {
             animation: {
                 'spin-slow': 'spin 3s linear infinite',
                 'gradient-xy':'gradient-xy 3s ease infinite',
+                ["infinite-slider"]: "infiniteSlider 30s linear infinite",
             },
             keyframes: {
                 'gradient-xy': {
@@ -31,7 +32,13 @@ module.exports = {
                         'background-size':'200% 200%',
                         'background-position': 'right center'
                     }
-                }
+                },
+                infiniteSlider: {
+                    "0%": { transform: "translateX(0)" },
+                    "100%": {
+                      transform: "translateX(calc(-300px * 10))",
+                    },
+                },
             }
         },
         fontFamily: {
