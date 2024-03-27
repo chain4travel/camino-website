@@ -18,17 +18,13 @@ eleventyComputed:
 <div class="pt-12 pb-32">
     <div class="max-w-screen-xl grid-cols-12 gap-6 px-8 mx-auto md:px-4 md:grid items-start">
         <div class="col-span-8 mb-12 md:pr-24 md:mb-0">
-            {% if partner.attributes.spotlightPartnerLink %}
-            <a href="{{partner.attributes.spotlightPartnerLink}}" class="inline-block w-full p-1 mb-8 bg-gradient-to-r from-primary to-secondary group rounded-2xl">
-                <div class="items-center w-full gap-4 overflow-hidden transition-colors bg-gray-950 md:flex rounded-2xl group-hover:bg-gray-900">
-                    {% image "./src/static/images/glas/stack.png", "Sleap.io", "flex-shrink-0", "w-full h-32 md:w-auto object-cover" %}
-                    <div class="w-full p-6 lg:p-8">
-                        <div class="mb-2 font-bold uppercase text-primary">Learn more</div>
-                        <div class="text-2xl font-medium lg:text-4xl font-headline">Builder Spotlight: {{partner.attributes.companyName}}</div>
-                    </div>
+            {% if partner.attributes.spotlightPartnerLink %}<a href="{{partner.attributes.spotlightPartnerLink}}" class="flex w-full p-1 mb-8 card-primary rounded-2xl">
+                <div class="w-full p-6 lg:p-8">
+                    <div class="mb-2 font-bold uppercase text-primary">Learn more</div>
+                    <div class="text-2xl font-medium lg:text-3xl font-headline">Builder Spotlight: {{partner.attributes.companyName}}</div>
                 </div>
-            </a>
-            {% endif %}
+                {% image "./src/static/images/glas/bug-bounty-chip.png", "Sleap.io", "flex-shrink-0", "w-full h-32 md:w-auto object-cover" %}
+            </a>{% endif %}
             <h2 class="mb-6 text-3xl font-medium font-headline md:text-4xl">
                 {{partner.attributes.companyName}}
             </h2>
