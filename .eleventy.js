@@ -59,6 +59,10 @@ module.exports = function (eleventyConfig) {
     return collectionsBlogposts.getFilteredByGlob("./src/posts/*.html");
   });
 
+  eleventyConfig.addCollection("spotlights", function(collectionsSpotlights) {
+    return collectionsSpotlights.getFilteredByGlob("./src/spotlights/*.html");
+  });
+
   // Minify html output
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
