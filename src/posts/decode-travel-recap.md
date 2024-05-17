@@ -35,11 +35,6 @@ The four-day event was designed to create a comfortable space for innovation at 
 
 ![decode3.jpeg](/static/images/decode3.jpeg)
 
-> Over the next few days, participants engaged in intensive brainstorming and hacking sessions to upload the presentation by the end of the third day prior to a special event: the Ramen Night, sponsored by [GP Solutions](https://www.notion.so/ffa2659bb2754f2bbaf6fd9986074afc?pvs=21), which served as a perfect networking opportunity among the attendees.
-> 
-> 
-> The culmination was the pitch day and award ceremony.
-
 ## Challenges
 
 All the challenges presented at Decode Travel were crafted to address real business bottlenecks faced by participating companies directly. Hence, the hackathon was highly productive and resulted in the development of applicable solutions relevant to the needs of the companies and the industry.
@@ -51,20 +46,19 @@ All the challenges presented at Decode Travel were crafted to address real busin
 Polygon ID provides an innovative set of tools for identity management in the travel industry through the concept of Self-Sovereign Identity (SSI). Using the SDK, developers can securely create, issue, and authenticate verifiable credentials using blockchain technology and [zero-knowledge proofs](/static/images/lygon ID provides an innovative set of tools for identity management in the travel industry through the concept of Self-Sovereign Identity (SSI). Using the SDK, developers can securely create, issue, and authenticate verifiable credentials using blockchain technology and [zero-knowledge proofs)
 
 > At the hackathon, Polygon ID introduced three challenges that showcased the potential of these technologies as the foundational layer in travel.
-> 
 
-### **Challenge 1: privacy and personalization in travel**
+### Challenge 1: privacy and personalization in travel
 
 Travelers often need to share personal data to receive customized services. Polygon ID enables travelers to manage and share their preferences selectively, without compromising privacy. With this technology travel service providers as hotels or airlines can create and scale personalized offers without accessing personal information broadly. The challenge includes implementing a KYC process, allowing hotels to verify identity and booking ownership without full data exposure, and deploying local verification systems for higher data security.
 
 <iframe class="border border-gray-700 rounded-xl w-full aspect-video" src="https://www.youtube-nocookie.com/embed/dTdjPTaAato" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### **Challenge 2: preferential rates for travelers**
+### Challenge 2: preferential rates for travelers
 
 Travelers often miss out on preferential rates because service providers can't verify their eligibility without personal data. Polygon ID allows suppliers to verify a traveler's eligibility for special rates and offers based on nationality or residency through secure, verifiable credentials. This system supports privacy-preserving verification at any point, from booking to check-in. Thus, travelers can access special rates without unnecessary personal data disclosure.
 
-### **Challenge 3: Seamless identity verification across travel touchpoints**
+### Challenge 3: Seamless identity verification across travel touchpoints
 
 The multiple identity checks during travel are often inefficient and repetitive. Polygon ID offers an approach where travelers can verify their identity and booking details with a single click at each checkpoint, securely proving identity and details. It is fast and satisfying for a traveler.
 
@@ -115,7 +109,7 @@ The challenge was created to address the difficulty in engaging guests in marine
 
 [Camino Network Foundation](https://foundation.camino.network/) is a non-profit organization behind Camino Network, the layer 1 blockchain designed for the travel industry, based in Zug, Switzerland. It facilitates the development and growth of the web3 travel ecosystem through educational, bug bounty and grant programs, community events, and media outreach.
 
-## **Challenge: optimizing the booking process with Camino Messenger**
+## Challenge: optimizing the booking process with Camino Messenger
 
 This challenge aims to reshape travel product distribution via wallet-2-wallet communication between network participants, exploring the potential of Camino Messenger to improve the existing travel data management and distribution systems. Traditional systems are known for fragmented communication, which results in inefficiencies and high costs due to multiple APIs, manual processes, and a lack of standards. Camino Messenger simplifies interactions through a unified travel standards, designed to reduce complexity and costs for travel companies.
 
@@ -151,7 +145,7 @@ Guys supporting the hackers did a great job; most teams, in the end, had working
 > 
 > 
 > ***Daniel, Bytepitch***
-> 
+>
 
 ## Decode Travel in numbers
 
@@ -166,8 +160,6 @@ An impressive group of sponsors supported the hackathon. They provided technolog
 - **Security Partner:** Hexens.io opened its comprehensive 360º cybersecurity platform Remedy to hackers.
 - **Hotel Partner:** Sleap.io provided personalized offers for the event participants.
 - **Tech Partners:** YourInsight Digital, GP Solutions, DFNS, CortexAG, Companion D, A3M Global Monitoring, ISO Travel Solutions, Camino Scan, VIR, Avra Tours, BytePitch, IT-Kompass.
-    
-    
 
 ![decode-sponsors.png](/static/images/decode-sponsors.png)
 
@@ -179,6 +171,6 @@ On behalf of the Camino Network Foundation, we would like to thank the Chain4Tra
 
 ## Next web3 travel hackathons
 
-This event was a perfect kick-off. The feedback provided by participants, sponsors, judges, and organizers, Camino Network Foundation strongly supports the initiative and invites all the travel companies willing to solve existing business challenges with contemporary and robust digital technologies in a short period of time, conduct research, educate teams on emerging technologies or present innovative solutions, to contact the Chain4Travel team.
+This event was a perfect kick-off. The feedback provided by participants, sponsors, judges, and organizers, Camino Network Foundation strongly supports the initiative and invites all the travel companies willing to solve existing business challenges with contemporary and robust digital technologies in a short period of time, conduct research, educate teams on emerging technologies or present innovative solutions, to [contact the Chain4Travel team](https://chain4travel.com/contact/).
 
 Decode Travel hackathon is your next step into the world of efficient travel technologies in the era of connected consumer behavior.
