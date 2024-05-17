@@ -1,6 +1,6 @@
 ---
-title:          How Decode Travel Hackathon Drives Innovation In a Matter of Days
-description:    Setting the global standard in travel data management and distribution
+title:          Decode Travel Hackathon
+description:    From challenge to working prototype in just 48 hours.
 layout:         blog_layout
 permalink:      decode-travel-recap/
 socialImage:    social-messenger-blogpost
@@ -8,8 +8,6 @@ heroImage:      "./src/static/images/decode-recap.png"
 postDate:       May 17, 2024
 order:          0
 ---
-
-# Decode Travel Recap / How Decode Travel Hackathon Drives Innovation In a Matter of Days
 
 Decode Travel hackathon organized by Chain4Travel in April 2024 became the opening for a series of events to be held around the globe. The event was well-aligned with the mission of the Camino Network Foundation, which is to encourage a collaborative environment that helps traditional travel businesses smoothly join the web3 travel ecosystem.
 
