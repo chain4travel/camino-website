@@ -56,7 +56,7 @@ module.exports = function (eleventyConfig) {
 
   // Create collection for all elements inside posts folder
   eleventyConfig.addCollection("blogposts", function(collectionsBlogposts) {
-    return collectionsBlogposts.getFilteredByGlob("./src/posts/*.html");
+    return collectionsBlogposts.getFilteredByGlob("./src/posts/*");
   });
 
   eleventyConfig.addCollection("spotlights", function(collectionsSpotlights) {
