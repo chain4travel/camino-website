@@ -43,7 +43,7 @@ All the challenges presented at Decode Travel were crafted to address real busin
 
 ## Polygon ID
 
-Polygon ID provides an innovative set of tools for identity management in the travel industry through the concept of Self-Sovereign Identity (SSI). Using the SDK, developers can securely create, issue, and authenticate verifiable credentials using blockchain technology and [zero-knowledge proofs](/static/images/lygon ID provides an innovative set of tools for identity management in the travel industry through the concept of Self-Sovereign Identity (SSI). Using the SDK, developers can securely create, issue, and authenticate verifiable credentials using blockchain technology and [zero-knowledge proofs)
+Polygon ID provides an innovative set of tools for identity management in the travel industry through the concept of Self-Sovereign Identity (SSI). Using the SDK, developers can securely create, issue, and authenticate verifiable credentials using blockchain technology and [zero-knowledge proofs](https://chain4travel.com/check-in-to-the-future-of-travel-with-secured-private-data-and-shrunk-queues/). Now, travelers can prove personal attributes needed for various travel-related processes without compromising their privacy.
 
 > At the hackathon, Polygon ID introduced three challenges that showcased the potential of these technologies as the foundational layer in travel.
 
@@ -113,7 +113,7 @@ The challenge was created to address the difficulty in engaging guests in marine
 
 This challenge aims to reshape travel product distribution via wallet-2-wallet communication between network participants, exploring the potential of Camino Messenger to improve the existing travel data management and distribution systems. Traditional systems are known for fragmented communication, which results in inefficiencies and high costs due to multiple APIs, manual processes, and a lack of standards. Camino Messenger simplifies interactions through a unified travel standards, designed to reduce complexity and costs for travel companies.
 
-[Decode Travel Github](/static/images/ecode Travel Github)
+[Decode Travel Github](https://github.com/DecodeTravel)
 
 <iframe class="border border-gray-700 rounded-xl w-full aspect-video" src="https://www.youtube-nocookie.com/embed/3CWZ2hjZXuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
