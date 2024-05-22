@@ -5,7 +5,7 @@ layout:         blog_layout
 permalink:      decode-travel-recap/
 socialImage:    social-decode-recap
 heroImage:      "./src/static/images/decode-recap.png"
-postDate:       May 17, 2024
+postDate:       May 22, 2024
 order:          0
 ---
 
