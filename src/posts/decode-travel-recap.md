@@ -3,7 +3,7 @@ title:          Decode Travel Hackathon
 description:    From challenge to working prototype in just 48 hours.
 layout:         blog_layout
 permalink:      decode-travel-recap/
-socialImage:    social-messenger-blogpost
+socialImage:    social-decode-recap
 heroImage:      "./src/static/images/decode-recap.png"
 postDate:       May 17, 2024
 order:          0
