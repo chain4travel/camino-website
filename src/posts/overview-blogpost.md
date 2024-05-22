@@ -9,7 +9,7 @@ postDate:       May 19, 2024
 order:          0
 ---
 
-# Chain4Travel AG, Camino Network & the Camino Network Foundation: overview
+# Chain4Travel AG, Camino Network & the Camino Network Foundation
 
 Chain4Travel AG, Camino Network, and the Camino Network Foundation are interconnected organizations working to merge blockchain technologies and the travel industry to establish healthy and efficient relations within the new web3 travel ecosystem.
 
@@ -27,11 +27,11 @@ At Chain4Travel AG, the unique selling proposition is rooted in a profound under
 
 Camino Network is the Layer 1 blockchain project managed by the Camino Network Foundation and supported by consortium members and, in particular, by Chain4Travel AG, which is a tech lab of the Camino Network. By leveraging blockchain technology, the foundation aims to transform the travel industry with a decentralized, transparent, and efficient web3 travel ecosystem for businesses, service providers, and travelers. The network is live and healthy with 47 validators, 4000+ wallets, and an average of over 1000 weekly transactions (as of 22 January 2024).
 
-## Open Collaboration
+## Open collaboration
 
 Camino Network encourages collaboration between businesses, service providers, and travelers by providing an open ecosystem where ideas, resources, and knowledge can be shared. This collaborative environment promotes the development of innovative solutions and improves the overall travel experience.
 
-## Incentivizing Participation
+## Incentivizing participation
 
 To further engage and motivate community members, Camino Network offers incentives. 20% of the [tokenomics](https://camino.network/ecosystem/) are assigned for grants to help dApp developments. 5% of tokenomics will be used for marketing activities, including airdrops. The network creates a thriving ecosystem that benefits everyone involved by rewarding contributions such as network maintenance, development of new applications, and sharing valuable insights.
 
@@ -59,7 +59,7 @@ The Camino Network Foundation will rely on the Consortium of Network participant
 
 The Camino Network Foundation will rely on the Consortium of Network participants in the development of its activities, asking for their vote in some decisions, considering that Camino Network was created for these participants and that their interests and/or opinions are particularly relevant for the Camino Network Foundation.
 
-### The Consortium: Validators & governance
+### The consortium: validators & governance
 
 Camino Network is operated by a Consortium of travel industry-related entities (the "**Camino Consortium**"). This structure ensures that each member has a vested interest in the success and sustainability of Camino Network.
 
@@ -70,13 +70,13 @@ The principle of validator equality is central to the Camino Network's governanc
 
 Companies who want to join the Camino Consortium undergo an application process to become validators. Transparency is key: all applicants must fully disclose their identity via a KYC and KYB verification, plus a vote by the existing Consortium members who will judge whether a business is relevant to travel and can thus bring value to the industry at large, as members will, in turn, decide on industry-affecting matters, such as the shaping of standards.
 
-### Community Support
+### Community support
 
 The Camino Network Foundation will offer support and resources for community members to learn, grow, and thrive within the ecosystem. This includes educational content, networking opportunities, technical support, development, and access to a global community of like-minded individuals who share a passion for travel and technology.
 
 ![web3-travel-schema](/static/images/web3-travel-schema.png)
 
-### Transparent Communication
+### Transparent communication
 
 Transparency is a core value of the ecosystem. Chain4Travel AG openly communicated the project's objectives to the community from the first day. With the Camino Network Foundation, this principle will be further kept. All the critical decisions and updates will be communicated openly with the community, fostering trust and facilitating honest dialogue among stakeholders.
 
