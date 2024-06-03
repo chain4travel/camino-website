@@ -5,7 +5,7 @@ layout:         blog_layout
 permalink:      ecosystem-overview/
 socialImage:    social-overview
 heroImage:      "./src/static/images/overview-blogpost.png"
-postDate:       May 19, 2024
+postDate:       June 4, 2024
 order:          0
 ---
 
