@@ -25,25 +25,25 @@ At Chain4Travel AG, the unique selling proposition is rooted in a profound under
 
 ## Camino Network
 
-Camino Network is the Layer 1 blockchain project managed by the Camino Network Foundation and supported by consortium members and, in particular, by Chain4Travel AG, which is a tech lab of Camino Network. By leveraging blockchain technology, the foundation aims to transform the travel industry with a decentralized, transparent, and efficient web3 travel ecosystem for businesses, service providers, and travelers. The network is live and healthy with 50 validators, 4000+ wallets, and an average of over 1000 weekly transactions (as of May 23, 2024).
+Camino Network is the Layer 1 blockchain project managed by the Camino Network Foundation and supported by consortium members and, in particular, by Chain4Travel AG, which is a tech lab of Camino Network. By leveraging blockchain technology, the foundation aims to transform the travel industry with a decentralized, transparent, and efficient web3 travel ecosystem for businesses, service providers, and travelers. The network is live and healthy with 52 validators, 6 100+ wallets, and over 101 000 completed transactions (as of June 3, 2024).
 
 ## Open collaboration
 
 Camino Network encourages collaboration between businesses, service providers, and travelers by providing an open ecosystem where ideas, resources, and knowledge can be shared. This collaborative environment promotes the development of innovative solutions and improves the overall travel experience.
 
-## Incentivizing participation
-
-To further engage and motivate community members, Camino Network Foundation offers incentives. 20% of the [tokenomics](https://camino.network/ecosystem/) are assigned for grants to help dApp developments. 5% of tokenomics will be used for marketing activities, including airdrops. The Foundation creates a thriving ecosystem that benefits everyone involved by rewarding contributions such as network maintenance, development of new applications, and sharing valuable insights.
-
 ## Camino Network Foundation
 
 As Camino Network's development progressed, Chain4Travel AG initiated the [establishment of the Camino Network Foundation](https://www.travolution.com/news/suppliers/the-camino-network-foundation-partners-with-chain4travel-to-build-industry-first-blockchain-ecosystem/). The Camino Network Foundation is based in Switzerland and manages and governs Camino Network, ensuring alignment with the core principles of blockchain technology. The mission of the Camino Network Foundation is to develop the web3 travel ecosystem, enhancing travel technologies for all, through democratic and transparent relations within the network, fostering trust and collaboration among all participants in the travel ecosystem. The Camino Network Foundation has also taken charge of the finances, ensuring proper management.
+
+## Incentivizing participation
+
+To further engage and motivate community members, the Camino Network Foundation offers incentives. 20% of the [tokenomics](https://camino.network/ecosystem/) are assigned for grants to help dApp developments. 5% of tokenomics will be used for marketing activities, including airdrops. The Foundation creates a thriving ecosystem that benefits everyone involved by rewarding contributions such as network maintenance, development of new applications, and sharing valuable insights.
 
 ## Camino Token
 
 The Camino token (also referred to as "CAM") is the native token of Camino Network, facilitating transactions and incentivizing participation in the Consortium. The CAM tokens are under the full control of the Camino Network Foundation, although they were initially distributed by Chain4Travel AG for the exclusive purpose of developing and promoting Camino Network.
 
-> As an essential component of the Camino Network, the CAM token serves several fundamental functions and roles within the ecosystem: transaction utility, validators’ “bond,” proposal creation, and payments.
+> As an essential component of Camino Network, the CAM token serves several fundamental functions and roles within the ecosystem: transaction utility, validators’ “bond,” proposal creation, and payments.
 
 Given the functions of the CAM token described above, the Camino Network Foundation has requested legal opinions to qualify its legal nature by Swiss law and European regulations, in particular, Regulation (EU) 2023/1114 on markets in crypto-assets ("MiCAR").
 
