@@ -1,17 +1,14 @@
 ---
-title:          Camino ecosystem overview
-description:    Setting the global standard in travel data management and distribution
+title:          Chain4Travel AG, Camino Network & Foundation
+description:    Chain4Travel AG, Camino Network, and the Camino Network Foundation are interconnected organizations working to merge blockchain technologies and the travel industry to establish healthy and efficient relations within the new web3 travel ecosystem.
 layout:         blog_layout
 permalink:      ecosystem-overview/
 socialImage:    social-overview
 heroImage:      "./src/static/images/overview-blogpost.png"
-postDate:       June 4, 2024
+postDate:       June 27, 2024
 order:          0
 ---
 
-# Chain4Travel AG, Camino Network & the Camino Network Foundation
-
-Chain4Travel AG, Camino Network, and the Camino Network Foundation are interconnected organizations working to merge blockchain technologies and the travel industry to establish healthy and efficient relations within the new web3 travel ecosystem.
 
 ## Chain4Travel AG
 
@@ -19,7 +16,7 @@ The founders of [Chain4Travel AG](https://chain4travel.com/) recognized the pote
 
 > In 2021, the idea of Camino Network was launched as a collaborative network that enabled digital innovation in the global travel industry.
 
-## Deep industry knowledge
+### Deep industry knowledge
 
 At Chain4Travel AG, the unique selling proposition is rooted in a profound understanding of the travel industry and expertise in emerging digital technology. The company is creating tangible value for the industry through the innovative web3 ecosystem and decentralized applications, leveraging the insights and experience necessary to drive such a transformation and set new benchmarks.
 
@@ -27,7 +24,7 @@ At Chain4Travel AG, the unique selling proposition is rooted in a profound under
 
 Camino Network is the Layer 1 blockchain project managed by the Camino Network Foundation and supported by consortium members and, in particular, by Chain4Travel AG, which is a tech lab of Camino Network. By leveraging blockchain technology, the foundation aims to transform the travel industry with a decentralized, transparent, and efficient web3 travel ecosystem for businesses, service providers, and travelers. The network is live and healthy with 52 validators, 6 100+ wallets, and over 101 000 completed transactions (as of June 3, 2024).
 
-## Open collaboration
+### Open collaboration
 
 Camino Network encourages collaboration between businesses, service providers, and travelers by providing an open ecosystem where ideas, resources, and knowledge can be shared. This collaborative environment promotes the development of innovative solutions and improves the overall travel experience.
 
@@ -35,7 +32,7 @@ Camino Network encourages collaboration between businesses, service providers, a
 
 As Camino Network's development progressed, Chain4Travel AG initiated the [establishment of the Camino Network Foundation](https://www.travolution.com/news/suppliers/the-camino-network-foundation-partners-with-chain4travel-to-build-industry-first-blockchain-ecosystem/). The Camino Network Foundation is based in Switzerland and manages and governs Camino Network, ensuring alignment with the core principles of blockchain technology. The mission of the Camino Network Foundation is to develop the web3 travel ecosystem, enhancing travel technologies for all, through democratic and transparent relations within the network, fostering trust and collaboration among all participants in the travel ecosystem. The Camino Network Foundation has also taken charge of the finances, ensuring proper management.
 
-## Incentivizing participation
+### Incentivizing participation
 
 To further engage and motivate community members, the Camino Network Foundation offers incentives. 20% of the [tokenomics](https://camino.network/ecosystem/) are assigned for grants to help dApp developments. 5% of tokenomics will be used for marketing activities, including airdrops. The Foundation creates a thriving ecosystem that benefits everyone involved by rewarding contributions such as network maintenance, development of new applications, and sharing valuable insights.
 
