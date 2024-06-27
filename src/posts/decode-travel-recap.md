@@ -6,7 +6,7 @@ permalink:      decode-travel-recap/
 socialImage:    social-decode-recap
 heroImage:      "./src/static/images/decode-recap.png"
 postDate:       May 22, 2024
-order:          0
+order:          1
 ---
 
 Decode Travel hackathon organized by Chain4Travel in April 2024 became the opening for a series of events to be held around the globe. The event was well-aligned with the mission of the Camino Network Foundation, which is to encourage a collaborative environment that helps traditional travel businesses smoothly join the web3 travel ecosystem.
