@@ -264,3 +264,7 @@ details[open] summary.features::after {
 .termsfeed-com---palette-dark .cc-cp-foot-save {
   @apply bg-primary text-white !important
 }
+
+.video-container iframe {
+  @apply aspect-video w-full border border-gray-700 rounded-xl
+}
