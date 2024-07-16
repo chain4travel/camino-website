@@ -268,3 +268,7 @@ details[open] summary.features::after {
 .video-container iframe {
   @apply aspect-video w-full border border-gray-700 rounded-xl
 }
+
+.button-chain4travel {
+  @apply text-center whitespace-nowrap inline-block items-center transition-all bg-[#fa6400] hover:brightness-125 font-medium text-white py-2 px-4 rounded-xl;
+}
