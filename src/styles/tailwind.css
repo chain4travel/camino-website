@@ -70,7 +70,7 @@ section {
 }
 
 .hero-new {
-  @apply max-w-screen-xl px-8 md:px-4 mx-auto flex items-center;
+  @apply max-w-screen-xl px-8 md:px-4 mb-16 mx-auto flex items-center;
 }
 
 .button {
