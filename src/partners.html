@@ -19,94 +19,17 @@ layout: default
 </div>
 
 <div class="pb-12 pt-12 md:pb-24 md:pt-0">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto flex flex-col gap-8">
         {% for s in collections.spotlights | reverse %}
-        <a href="{{s.url}}" class="card-primary rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex items-start ">
-            {% image s.data.partnerPageImg, s.data.title, "h-full w-1/3 flex-shrink-0", "h-full object-cover" %}
-            <div class="w-full p-6">
-                <div class="text-sm uppercase text-caminoSky mb-2">
-                    Builders Spotlight – <span class="font-semibold">{{s.data.company}}</span>
+        <a href="{{s.url}}" class="card rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex items-start">
+            {% image s.data.partnerPageImg, s.data.title, "h-full w-2/5 flex-shrink-0 border-r border-gray-700", "h-full object-cover" %}
+            <div class="w-full p-8">
+                <div href="https://foundation.camino.network/update-june-12-2024/" target="_blank" class="bg-gradient-to-r from-primary/50 to-secondary/50 rounded-full px-3 py-1 text-wrap inline-block font-medium mb-4 uppercase">
+                    {{s.data.company}}
                 </div>
-                <div class="text-xl md:text-2xl font-headline font-medium">{{s.data.partnerPageText}}</div>
+                <div class="text-xl md:text-3xl xl:text-4xl/tight font-headline font-medium">{{s.data.partnerPageText}}</div>
             </div>
         </a>
-        {% endfor %}
-    </div>
-</div>
-
-<div class="pb-12 md:pb-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 items-stretch">
-
-        <!-- Pull a partners that are validators -->
-        {% for y in partners.data | sort(attribute='attributes.companyName') %}
-        {% set x = y.attributes %}
-        {% if x.isConsortiumMember and x.companyShortDescription %}
-
-        {% if x.companyLongDescription %}
-
-        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
-            <div class="bg-gradient-to-r bg-accent  text-gray-950 uppercase text-xs px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
-            {% set partnerLogoLightHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightHash, partnerAltLightHash, "md:group-hover:hidden md:group-focus:hidden  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            {% set partnerLogoColorHash = "https://api.strapi.camino.network/" + x.companyLogoColor.data.attributes.url %}
-            {% set partnerAltColorHash = x.companyName + " - Logo" %}
-            {% image partnerLogoColorHash, partnerAltColorHash, "hidden md:group-hover:block md:group-focus:block  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="md:group-hover:text-gray-800 md:group-focus:text-gray-800 font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
-        </a>
-
-        {% else %}
-
-        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800">
-            <div class="bg-gradient-to-r bg-accent  text-gray-950 uppercase text-xs px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
-            {% set partnerLogoLightNoDescriptionHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightNoDescriptionHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightNoDescriptionHash, partnerAltLightNoDescriptionHash, " max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
-        </div>
-
-        {% endif %}
-
-        {% endif %}
-        {% endfor %}
-
-        <!-- Pull a partners that are not validators -->
-        {% for y in partners.data | sort(attribute='attributes.companyName') %}
-        {% set x = y.attributes %}
-        {% if x.isConsortiumMember == false and x.companyShortDescription  %}
-
-        {% if x.companyLongDescription %}
-
-        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
-            {% set partnerLogoLightNoValidatorHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightNoValidatorHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightNoValidatorHash, partnerAltLightNoValidatorHash, "md:group-hover:hidden md:group-focus:hidden  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            {% set partnerLogoColorNoValidatorHash = "https://api.strapi.camino.network/" + x.companyLogoColor.data.attributes.url %}
-            {% set partnerAltColorNoValidatorHash = x.companyName + " - Logo" %}
-            {% image partnerLogoColorNoValidatorHash, partnerAltColorNoValidatorHash, "hidden md:group-hover:block md:group-focus:block  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="md:group-hover:text-gray-800 md:group-focus:text-gray-800 font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
-        </a>
-
-        {% else %}
-
-        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800">
-            {% set partnerLogoLightNoValidatorNoDescriptionHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightNoValidatorNoDescriptionHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightNoValidatorNoDescriptionHash, partnerAltLightNoValidatorNoDescriptionHash, " max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
-        </div>
-
-        {% endif %}
-
-        {% endif %}
         {% endfor %}
     </div>
 </div>
