@@ -1,93 +1,106 @@
-<header class="sticky top-0 z-50 bg-gray-950/75 backdrop-blur-lg" @scroll.window="atTop = ( window.pageYOffset > 0 ) ? false : true">
-    <div class="flex items-center justify-start max-w-screen-xl px-8 py-3 mx-auto md:px-4 md:py-4">
-        
+<header class="absolute z-50 left-0 right-0 top-0 w-screen backdrop-blur-3xl">
+    <div class="flex items-center justify-between max-w-screen-xl mx-auto px-4 py-4">
         <!-- Camino logo -->
         <a href="/" aria-label="Camino Network" class="flex items-center font-medium transition-all text-gray-950 hover:brightness-125">
             <h1 class="hidden">Camino Network</h1>
-            <svg class="h-8 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 139 40"><path fill="url(#a)" fill-rule="evenodd" d="m10.8 5 6.8 13.4 1.2-.2V2.5a17.4 17.4 0 0 0-8 2.6Zm10.4-2.5V18h1.2l6.8-13a17.4 17.4 0 0 0-8-2.6Zm10 4-6.1 11.7h.8l9.6-6.4a17.6 17.6 0 0 0-4.3-5.3Zm5.3 7.6-6.7 4.6c2.5.3 5.4.7 7.8 1.3a17.5 17.5 0 0 0-1-5.9Zm-5.8 7.1a108.7 108.7 0 0 0-6.4-.6 35.2 35.2 0 0 0-1.2 0 32.1 32.1 0 0 0-3 0 27.4 27.4 0 0 0-2.4.2l-.2-1.2.2 1.2a22.7 22.7 0 0 0-2.2.5l-1.4.4a12 12 0 0 0-8.3 8.6C9 34.7 14 37.6 20 37.6a17.6 17.6 0 0 0 5.1-.8 11.8 11.8 0 0 1-3.3-5 6.6 6.6 0 0 1 1.2-6.1c1.3-1.7 3.4-3 6-4l1.7-.5Zm-3 14.6c-2-1.7-3.1-3.3-3.5-4.7-.5-1.5-.2-2.8.7-4 1-1.1 2.6-2.2 5-3 2-.7 4.5-1.2 7.4-1.3-.9 5.7-4.6 10.5-9.7 13ZM4 27.5c1-2.3 3-5.3 7.2-7.3l-7.9-6a17.5 17.5 0 0 0-1 5.8c0 2.7.7 5.3 1.7 7.5ZM4.4 12l9.6 7.3a21.8 21.8 0 0 1 1-.3L8.9 6.5A17.6 17.6 0 0 0 4.4 12Zm4-8.3A20 20 0 0 1 20 0a20 20 0 0 1 11.5 3.6 20 20 0 0 1 6.7 8.1A20 20 0 0 1 40 20v1.6a20 20 0 0 1-12 16.8 20 20 0 0 1-8 1.6 20 20 0 0 1-16.6-8.8A20 20 0 0 1 0 20c0-3 .6-5.7 1.8-8.3a20 20 0 0 1 6.7-8Z" clip-rule="evenodd"/><path fill="#F8FAFC" d="M58.1 30.3c-1.3 0-2.4-.2-3.5-.7a8.5 8.5 0 0 1-2.9-2 9 9 0 0 1-1.8-2.9 10 10 0 0 1-.7-3.7c0-1.3.2-2.5.7-3.6.4-1.2 1-2.1 1.8-3a8.2 8.2 0 0 1 2.9-1.9 9 9 0 0 1 3.5-.7c1.3 0 2.5.2 3.5.7 1 .4 1.8 1 2.6 1.7.7.7 1.2 1.5 1.5 2.3l-3 1.4a4.9 4.9 0 0 0-1.7-2.2c-.8-.6-1.7-.9-2.9-.9-1 0-2 .3-3 .8-.8.5-1.4 1.2-2 2.2a7 7 0 0 0-.6 3.2c0 1.3.2 2.4.7 3.3.5 1 1.1 1.7 2 2.2.8.5 1.8.8 3 .8 1 0 2-.3 2.8-.9a5 5 0 0 0 1.7-2.2l3 1.4c-.3.8-.8 1.6-1.5 2.3a8.6 8.6 0 0 1-6 2.4Zm13.7 0a5 5 0 0 1-3.3-1 3.4 3.4 0 0 1-1.2-2.8c0-1 .4-2 1-2.7.8-.7 2-1.2 3.5-1.4l3.9-.7v-.4c0-.5-.2-1-.7-1.4-.4-.4-1-.6-1.7-.6a3 3 0 0 0-1.8.6 3 3 0 0 0-1.1 1.4l-2.6-1.2c.4-1 1-1.9 2.1-2.5 1-.6 2.2-1 3.5-1 1 0 2 .3 2.8.7.8.3 1.5.9 2 1.6.4.7.6 1.5.6 2.4V30h-3v-1.4a5.3 5.3 0 0 1-4 1.7Zm-1.2-3.9c0 .5.1.8.5 1.1.3.3.7.4 1.3.4a3.2 3.2 0 0 0 3.3-3.2V24l-3.3.6c-1.2.2-1.8.8-1.8 1.7ZM81.7 30V17h3v1.6c.3-.7.8-1.1 1.5-1.5.6-.3 1.3-.4 2.1-.4 1 0 1.7.1 2.4.5s1.3 1 1.7 1.6c.4-.7 1-1.3 1.7-1.6.7-.4 1.5-.5 2.3-.5a4.5 4.5 0 0 1 4.2 2.4c.4.7.6 1.5.6 2.5V30h-3.1v-7.7c0-.8-.2-1.5-.7-2-.4-.5-1-.8-1.8-.8s-1.4.3-1.8.8a3 3 0 0 0-.7 2V30h-3.2v-7.7c0-.8-.2-1.5-.7-2-.4-.5-1-.8-1.8-.8s-1.4.3-1.8.8a3 3 0 0 0-.7 2V30h-3.2ZM104 15.5V12h3.2v3.4h-3.2Zm0 14.5V17h3.2v13h-3.2Zm6 0V17h3v1.6a3.4 3.4 0 0 1 1.5-1.5 5 5 0 0 1 2.2-.4c1 0 1.8.2 2.5.6.8.4 1.4 1 1.8 1.7.4.8.6 1.6.6 2.6V30h-3.1v-7.7c0-.8-.3-1.5-.8-2-.4-.5-1-.8-1.9-.8-.7 0-1.4.3-1.9.8s-.7 1.2-.7 2V30H110Zm20.7.3a7 7 0 0 1-3.5-.9 6.8 6.8 0 0 1-2.5-2.4c-.6-1-1-2.2-1-3.5 0-1.3.4-2.5 1-3.5a6.8 6.8 0 0 1 2.5-2.5 7 7 0 0 1 3.5-.8 7 7 0 0 1 3.4.8 6.7 6.7 0 0 1 2.5 2.5c.6 1 1 2.2 1 3.5 0 1.3-.4 2.5-1 3.5a6.8 6.8 0 0 1-2.5 2.4 7 7 0 0 1-3.4.9Zm0-2.9a3.4 3.4 0 0 0 3-1.9c.4-.6.6-1.3.6-2s-.2-1.5-.5-2a3.5 3.5 0 0 0-1.3-1.4c-.5-.4-1.1-.6-1.8-.6s-1.4.2-2 .6c-.5.3-1 .8-1.2 1.4-.3.5-.5 1.2-.5 2s.2 1.4.5 2c.3.6.7 1 1.3 1.4.5.3 1.2.5 1.9.5Z"/><defs><linearGradient id="a" x1="0" x2="40" y1="20" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#0085FF"/><stop offset="1" stop-color="#B440FC"/></linearGradient></defs></svg>
+            <svg class="h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 139 40"><path fill="url(#a)" fill-rule="evenodd" d="m10.8 5 6.8 13.4 1.2-.2V2.5a17.4 17.4 0 0 0-8 2.6Zm10.4-2.5V18h1.2l6.8-13a17.4 17.4 0 0 0-8-2.6Zm10 4-6.1 11.7h.8l9.6-6.4a17.6 17.6 0 0 0-4.3-5.3Zm5.3 7.6-6.7 4.6c2.5.3 5.4.7 7.8 1.3a17.5 17.5 0 0 0-1-5.9Zm-5.8 7.1a108.7 108.7 0 0 0-6.4-.6 35.2 35.2 0 0 0-1.2 0 32.1 32.1 0 0 0-3 0 27.4 27.4 0 0 0-2.4.2l-.2-1.2.2 1.2a22.7 22.7 0 0 0-2.2.5l-1.4.4a12 12 0 0 0-8.3 8.6C9 34.7 14 37.6 20 37.6a17.6 17.6 0 0 0 5.1-.8 11.8 11.8 0 0 1-3.3-5 6.6 6.6 0 0 1 1.2-6.1c1.3-1.7 3.4-3 6-4l1.7-.5Zm-3 14.6c-2-1.7-3.1-3.3-3.5-4.7-.5-1.5-.2-2.8.7-4 1-1.1 2.6-2.2 5-3 2-.7 4.5-1.2 7.4-1.3-.9 5.7-4.6 10.5-9.7 13ZM4 27.5c1-2.3 3-5.3 7.2-7.3l-7.9-6a17.5 17.5 0 0 0-1 5.8c0 2.7.7 5.3 1.7 7.5ZM4.4 12l9.6 7.3a21.8 21.8 0 0 1 1-.3L8.9 6.5A17.6 17.6 0 0 0 4.4 12Zm4-8.3A20 20 0 0 1 20 0a20 20 0 0 1 11.5 3.6 20 20 0 0 1 6.7 8.1A20 20 0 0 1 40 20v1.6a20 20 0 0 1-12 16.8 20 20 0 0 1-8 1.6 20 20 0 0 1-16.6-8.8A20 20 0 0 1 0 20c0-3 .6-5.7 1.8-8.3a20 20 0 0 1 6.7-8Z" clip-rule="evenodd"/><path fill="#F8FAFC" d="M58.1 30.3c-1.3 0-2.4-.2-3.5-.7a8.5 8.5 0 0 1-2.9-2 9 9 0 0 1-1.8-2.9 10 10 0 0 1-.7-3.7c0-1.3.2-2.5.7-3.6.4-1.2 1-2.1 1.8-3a8.2 8.2 0 0 1 2.9-1.9 9 9 0 0 1 3.5-.7c1.3 0 2.5.2 3.5.7 1 .4 1.8 1 2.6 1.7.7.7 1.2 1.5 1.5 2.3l-3 1.4a4.9 4.9 0 0 0-1.7-2.2c-.8-.6-1.7-.9-2.9-.9-1 0-2 .3-3 .8-.8.5-1.4 1.2-2 2.2a7 7 0 0 0-.6 3.2c0 1.3.2 2.4.7 3.3.5 1 1.1 1.7 2 2.2.8.5 1.8.8 3 .8 1 0 2-.3 2.8-.9a5 5 0 0 0 1.7-2.2l3 1.4c-.3.8-.8 1.6-1.5 2.3a8.6 8.6 0 0 1-6 2.4Zm13.7 0a5 5 0 0 1-3.3-1 3.4 3.4 0 0 1-1.2-2.8c0-1 .4-2 1-2.7.8-.7 2-1.2 3.5-1.4l3.9-.7v-.4c0-.5-.2-1-.7-1.4-.4-.4-1-.6-1.7-.6a3 3 0 0 0-1.8.6 3 3 0 0 0-1.1 1.4l-2.6-1.2c.4-1 1-1.9 2.1-2.5 1-.6 2.2-1 3.5-1 1 0 2 .3 2.8.7.8.3 1.5.9 2 1.6.4.7.6 1.5.6 2.4V30h-3v-1.4a5.3 5.3 0 0 1-4 1.7Zm-1.2-3.9c0 .5.1.8.5 1.1.3.3.7.4 1.3.4a3.2 3.2 0 0 0 3.3-3.2V24l-3.3.6c-1.2.2-1.8.8-1.8 1.7ZM81.7 30V17h3v1.6c.3-.7.8-1.1 1.5-1.5.6-.3 1.3-.4 2.1-.4 1 0 1.7.1 2.4.5s1.3 1 1.7 1.6c.4-.7 1-1.3 1.7-1.6.7-.4 1.5-.5 2.3-.5a4.5 4.5 0 0 1 4.2 2.4c.4.7.6 1.5.6 2.5V30h-3.1v-7.7c0-.8-.2-1.5-.7-2-.4-.5-1-.8-1.8-.8s-1.4.3-1.8.8a3 3 0 0 0-.7 2V30h-3.2v-7.7c0-.8-.2-1.5-.7-2-.4-.5-1-.8-1.8-.8s-1.4.3-1.8.8a3 3 0 0 0-.7 2V30h-3.2ZM104 15.5V12h3.2v3.4h-3.2Zm0 14.5V17h3.2v13h-3.2Zm6 0V17h3v1.6a3.4 3.4 0 0 1 1.5-1.5 5 5 0 0 1 2.2-.4c1 0 1.8.2 2.5.6.8.4 1.4 1 1.8 1.7.4.8.6 1.6.6 2.6V30h-3.1v-7.7c0-.8-.3-1.5-.8-2-.4-.5-1-.8-1.9-.8-.7 0-1.4.3-1.9.8s-.7 1.2-.7 2V30H110Zm20.7.3a7 7 0 0 1-3.5-.9 6.8 6.8 0 0 1-2.5-2.4c-.6-1-1-2.2-1-3.5 0-1.3.4-2.5 1-3.5a6.8 6.8 0 0 1 2.5-2.5 7 7 0 0 1 3.5-.8 7 7 0 0 1 3.4.8 6.7 6.7 0 0 1 2.5 2.5c.6 1 1 2.2 1 3.5 0 1.3-.4 2.5-1 3.5a6.8 6.8 0 0 1-2.5 2.4 7 7 0 0 1-3.4.9Zm0-2.9a3.4 3.4 0 0 0 3-1.9c.4-.6.6-1.3.6-2s-.2-1.5-.5-2a3.5 3.5 0 0 0-1.3-1.4c-.5-.4-1.1-.6-1.8-.6s-1.4.2-2 .6c-.5.3-1 .8-1.2 1.4-.3.5-.5 1.2-.5 2s.2 1.4.5 2c.3.6.7 1 1.3 1.4.5.3 1.2.5 1.9.5Z"/><defs><linearGradient id="a" x1="0" x2="40" y1="20" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#0085FF"/><stop offset="1" stop-color="#B440FC"/></linearGradient></defs></svg>
         </a>
 
-        <div x-data="{ menuOpen: false }" class="ml-auto lg:ml-0">
-            <!-- Mobile trigger -->
-            <div class="flex items-center justify-center w-12 h-12 text-white cursor-pointer lg:hidden hover:opacity-80" @click="menuOpen = !menuOpen" tabindex="0"><svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20 8H4v2h16V8Zm0 6H4v2h16v-2Z" /></svg></div>
-            <!-- Mobile menu -->
-            <nav x-cloak x-show="menuOpen" x-transition @click.away="menuOpen = false" class="fixed top-0 left-0 right-0 z-50 flex flex-col h-screen p-8 pt-16 text-3xl font-light text-gray-300 bg-gray-950 bg-gradient-to-br from-secondary/25 font-headline">
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/' === page.url }}" href="/" >Homepage</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/ecosystem' in page.url }}" href="/ecosystem" >Ecosystem</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/travel' in page.url }}" href="/travel" >Travel Industry</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/validators' in page.url }}" href="/validators" >Validators</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/developer' in page.url }}" href="/developer" >Developers</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/grant-program' in page.url }}" href="/grant-program" >Grant Program</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/bugbounty' in page.url }}" href="/bugbounty" >Bug Bounty</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/community' in page.url }}" href="/community" >Community</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/partners' in page.url }}" href="/partners" >Partners</a>
-                <a @click="menuOpen = !menuOpen" class="p-2 hover:text-white {{ 'text-white font-medium' if '/blog' in page.url }}" href="/blog" >Blog</a>
-
-                <div class="flex items-center gap-1 mt-2 text-white ">
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.twitter}}" target="_blank" rel="noopener noreferrer"><svg class="w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4 20 6.857-6.857m0 0L16 20h4l-6.857-9.143m-2.286 2.286L4 4h4l5.143 6.857m0 0L20 4"/></svg></a>
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.linkedin}}" target="_blank" rel="noopener noreferrer"><svg class="w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 11v5m8 0v-3c0-.667-.4-2-2-2s-2 1.333-2 2m0 3v-3m0 0v-2M8 8h.01M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"/></svg></a>
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.discord}}" target="_blank" rel="noopener noreferrer"><svg class="w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 16.925 6 20c-1.5 0-3.333-1.667-4-3-1-2-.5-5.833 1.5-11.5L8 4l1 2s2.195-.5 3-.5c.805 0 3 .5 3 .5l1-2 4.5 1.5C22.5 11.167 23 15 22 17c-.667 1.333-2.5 3-4 3l-3-3.075m-6 0c-1.856-.139-3-.425-3-.425m3 .425c.598.045 2.27.075 3 .075s2.402-.03 3-.075m0 0c1.856-.139 3-.425 3-.425M8 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></a>
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.telegram}}" target="_blank" rel="noopener noreferrer"><svg class="w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.554 13.58-5.705-1.437c-1.045-.263-1.156-1.715-.163-2.136L18.987 3.09c.819-.347 1.694.357 1.54 1.238l-2.66 15.186a1.119 1.119 0 0 1-1.842.653L8.554 13.58Zm0 0 5.044-3.953"/></svg></a>
-                </div>  
-
-                <!-- Closing X -->
-                <div class="absolute flex items-center justify-center w-12 h-12 cursor-pointer top-5 right-4" @click="menuOpen = !menuOpen" tabindex="0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-10 h-10" viewBox="0 0 24 24"><path fill="currentColor" d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6 6-6z"/></svg>
+        <div class="flex items-center justify-center">
+            <div class="group relative">
+                <div class="text-nowrap p-4 cursor-pointer text-gray-400 group-hover:text-white transition-colors">❖ Ecosystem</div>
+                <div class="absolute transition-all left-1/2 -translate-x-1/2 top-20 group-hover:top-14 opacity-0 pointer-events-none group-hover:pointer-events-auto p-1.5 bg-gray-950 border border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col gap-1.5 w-80">
+                    <a href="/ecosystem" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/ecosystem' in page.url }}">
+                        <div class="text-white font-medium">The Network</div>
+                        <p class="text-gray-400 mt-1 text-sm">Innovative web3 solutions for sustainable travel.</p>
+                    </a>
+                    <a href="/partners" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/partners' in page.url }}">
+                        <div class="text-white font-medium">Use Cases</div>
+                        <p class="text-gray-400 mt-1 text-sm">Companies shaping the web3 travel ecosystem.</p>
+                    </a>
+                    <a href="/validators" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/validators' in page.url }}">
+                        <div class="text-white font-medium">Validators</div>
+                        <p class="text-gray-400 mt-1 text-sm">Grow your business and network.</p>
+                    </a>
                 </div>
-            </nav>
+            </div>
+    
+            <div class="group relative">
+                <div class="text-nowrap p-4 cursor-pointer text-gray-400 group-hover:text-white transition-colors">✈ Travel Industry</div>
+                <div class="absolute transition-all left-1/2 -translate-x-1/2 top-20 group-hover:top-14 opacity-0 pointer-events-none group-hover:pointer-events-auto p-1.5 bg-gray-950 border border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col gap-1.5 w-80">
+                    <a href="/travel" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/travel' in page.url }}">
+                        <div class="text-white font-medium">Web3 Travel</div>
+                        <p class="text-gray-400 mt-1 text-sm">Reach the next generation of travelers with Camino Network.</p>
+                    </a>
+                    <a href="/messenger" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/partners' in page.url }}">
+                        <div class="text-white font-medium">Camino Messenger ↗</div>
+                        <p class="text-gray-400 mt-1 text-sm">A sleek, fast, and cost-effective communication platform for B2B travel distribution.</p>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="group relative">
+                <div class="text-nowrap p-4 cursor-pointer text-gray-400 group-hover:text-white transition-colors">{} Developers</div>
+                <div class="absolute transition-all left-1/2 -translate-x-1/2 top-20 group-hover:top-14 opacity-0 pointer-events-none group-hover:pointer-events-auto p-1.5 bg-gray-950 border border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col gap-1.5 w-80">
+                    <a href="/developer" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/developer' in page.url }}">
+                        <div class="text-white font-medium">Start Building</div>
+                        <p class="text-gray-400 mt-1 text-sm">Build the future of travel.</p>
+                    </a>
+                    <a href="/grant-program" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/grant-program' in page.url }}">
+                        <div class="text-white font-medium">Grant Program</div>
+                        <p class="text-gray-400 mt-1 text-sm">Grow your project on Camino.</p>
+                    </a>
+                    <a href="/bugbounty" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/bugbounty' in page.url }}">
+                        <div class="text-white font-medium">Bug Bounty</div>
+                        <p class="text-gray-400 mt-1 text-sm">Find bugs, get rewards.</p>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="group relative">
+                <div class="text-nowrap p-4 cursor-pointer text-gray-400 group-hover:text-white transition-colors">✦ Discover</div>
+                <div class="absolute transition-all left-1/2 -translate-x-1/2 top-20 group-hover:top-14 opacity-0 pointer-events-none group-hover:pointer-events-auto p-1.5 bg-gray-950 border border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col gap-1.5 w-80">
+                    <a href="/community" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/community' in page.url }}">
+                        <div class="text-white font-medium">Community</div>
+                        <p class="text-gray-400 mt-1 text-sm">The largest web3 travel community with over 6000 Discord members .</p>
+                    </a>
+                    <a href="/blog" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/blog' in page.url }}">
+                        <div class="text-white font-medium">Blog</div>
+                        <p class="text-gray-400 mt-1 text-sm">With Horizons, you will stay informed about everything web3 in travel.</p>
+                    </a>
+                    <a href="/news" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/news' in page.url }}">
+                        <div class="text-white font-medium">Press</div>
+                        <p class="text-gray-400 mt-1 text-sm">Stay up to date with the latest news and stories about the L1 for travel.</p>
+                    </a>
+                    <a href="/entities" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/entities' in page.url }}">
+                        <div class="text-white font-medium">Entities</div>
+                        <p class="text-gray-400 mt-1 text-sm">Get to know the core teams building and growing Camino Network.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="text-nowrap p-4 cursor-pointer text-gray-400 group-hover:text-white transition-colors">⚛ Suite</div>
+                <div class="absolute transition-all left-1/2 -translate-x-1/2 top-20 group-hover:top-14 opacity-0 pointer-events-none group-hover:pointer-events-auto p-1.5 bg-gray-950 border border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col gap-1.5 w-80">
+                    <a href="/community" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/community' in page.url }}">
+                        <div class="text-white font-medium">Wallet ↗</div>
+                        <p class="text-gray-400 mt-1 text-sm">The largest web3 travel community with over 6000 Discord members .</p>
+                    </a>
+                    <a href="/blog" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/blog' in page.url }}">
+                        <div class="text-white font-medium">Blog ↗</div>
+                        <p class="text-gray-400 mt-1 text-sm">With Horizons, you will stay informed about everything web3 in travel.</p>
+                    </a>
+                    <a href="/news" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/news' in page.url }}">
+                        <div class="text-white font-medium">Explorer ↗</div>
+                        <p class="text-gray-400 mt-1 text-sm">Stay up to date with the latest news and stories about the L1 for travel.</p>
+                    </a>
+                    <a href="/entities" class="block p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/entities' in page.url }}">
+                        <div class="text-white font-medium">Wallet ↗</div>
+                        <p class="text-gray-400 mt-1 text-sm">Get to know the core teams building and growing Camino Network.</p>
+                    </a>
+                </div>
+            </div>
+            <a target="_blank" href="{{site.wallet}}" class="button-secondary ml-4">Create Wallet ↗</a>
         </div>
-
-        <div class="flex-wrap items-center hidden w-full text-base text-gray-300 lg:flex lg:ml-4 xl:ml-16">
-
-            <div class="group">
-                <div class="flex items-center py-2 pl-1 xl:pl-2">
-                    <a class="inline-flex items-center hover:text-white cursor-pointer {{ 'text-white font-bold' if '/ecosystem' in page.url }}  {{ 'text-white font-bold' if '/community' in page.url }} {{ 'text-white font-bold' if '/partners' in page.url }}" href="/ecosystem">
-                        Ecosystem
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 10-5 5-5-5"></path></svg>
-                    </a>
-                </div>
-                <div class="absolute flex-col hidden p-3 bg-gray-900 rounded-md shadow-2xl group-hover:flex">
-                    <a href="/partners" class="p-2 w-full text-left hover:text-white cursor-pointer {{ 'text-white font-bold' if '/partners' in page.url }}">Partners</a>
-                    <a href="/community" class="p-2 w-full text-left hover:text-white cursor-pointer {{ 'text-white font-bold' if '/community' in page.url }}">Community</a>
-                </div>
-            </div>
-
-            <a href="/travel" class="py-2 px-1 xl:px-2 hover:text-white cursor-pointer {{ 'text-white font-bold' if '/travel' in page.url }}">Travel Industry</a>
-            <a href="/validators" class="py-2 px-1 xl:px-2 hover:text-white cursor-pointer {{ 'text-white font-bold' if '/validators' in page.url }}">Validators</a>
-
-            <div class="group">
-                <div class="flex items-center py-2 pl-1 xl:pl-2">
-                    <a class="inline-flex items-center hover:text-white cursor-pointer {{ 'text-white font-bold' if '/bugbounty' in page.url }}  {{ 'text-white font-bold' if '/grant-program' in page.url }} {{ 'text-white font-bold' if '/developer' in page.url }}" href="/developer">
-                        Developers
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 10-5 5-5-5"></path></svg>
-                    </a>
-                </div>
-                <div class="absolute flex-col hidden p-3 bg-gray-900 rounded-md shadow-2xl group-hover:flex">
-                    <a href="/grant-program" class="p-2 w-full text-left hover:text-white cursor-pointer {{ 'text-white font-bold' if '/grant-program' in page.url }}">Grant Program</a>
-                    <a href="/bugbounty" class="p-2 hover:text-white cursor-pointer {{ 'text-white font-bold' if '/bugbounty' in page.url }}">Bug Bounty</a>
-                </div>
-            </div>
-
-            <a href="/blog" class="py-2 px-1 xl:px-2 hover:text-white cursor-pointer {{ 'text-white font-bold' if '/blog' in page.url }}">Blog</a>
-
-                <div class="flex items-center gap-1 ml-auto text-white">
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.twitter}}" target="_blank" rel="noopener noreferrer">
-                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 20 6.857-6.857m0 0L16 20h4l-6.857-9.143m-2.286 2.286L4 4h4l5.143 6.857m0 0L20 4"/></svg>
-                    </a>
-
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.linkedin}}" target="_blank" rel="noopener noreferrer">
-                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11v5m8 0v-3c0-.667-.4-2-2-2s-2 1.333-2 2m0 3v-3m0 0v-2M8 8h.01M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"/></svg>
-                    </a>
-        
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.discord}}" target="_blank" rel="noopener noreferrer">
-                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16.925 6 20c-1.5 0-3.333-1.667-4-3-1-2-.5-5.833 1.5-11.5L8 4l1 2s2.195-.5 3-.5c.805 0 3 .5 3 .5l1-2 4.5 1.5C22.5 11.167 23 15 22 17c-.667 1.333-2.5 3-4 3l-3-3.075m-6 0c-1.856-.139-3-.425-3-.425m3 .425c.598.045 2.27.075 3 .075s2.402-.03 3-.075m0 0c1.856-.139 3-.425 3-.425M8 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
-                    </a>
-        
-                    <a class="p-2 hover:bg-gray-700 rounded-xl" href="{{site.telegram}}" target="_blank" rel="noopener noreferrer">
-                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.554 13.58-5.705-1.437c-1.045-.263-1.156-1.715-.163-2.136L18.987 3.09c.819-.347 1.694.357 1.54 1.238l-2.66 15.186a1.119 1.119 0 0 1-1.842.653L8.554 13.58Zm0 0 5.044-3.953"/></svg>
-                    </a>
-                    <a target="_blank" href="{{site.wallet}}" class="ml-auto button">Create Wallet</a>
-                </div>                
-            </div>
     </div>
 </header>

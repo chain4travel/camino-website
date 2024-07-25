@@ -26,6 +26,7 @@
     "alpinejs": "^3.13.8",
     "axios": "^1.6.8",
     "chart.js": "^4.4.2",
+    "css-doodle": "^0.39.2",
     "html-minifier": "^4.0.0",
     "luxon": "^3.4.4",
     "sal.js": "^0.8.5",

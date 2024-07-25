@@ -89,6 +89,14 @@ section {
   @apply text-center whitespace-nowrap inline-block transition-all bg-gradient-to-tl from-[#B143FC] to-[#149EED] text-white py-2 px-4 rounded-xl;
 }
 
+.button-lg {
+  @apply text-center whitespace-nowrap inline-block items-center transition-all bg-gradient-to-r from-primary to-secondary hover:brightness-125 font-medium text-white py-4 px-6 rounded-2xl text-lg;
+}
+
+.button-secondary-lg {
+  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-700 bg-gray-900/80 backdrop-blur-md hover:bg-white hover:text-gray-900 font-medium text-white py-4 px-6 rounded-2xl text-lg;
+}
+
 .gradient-full {
   @apply bg-gradient-to-tl from-[#B143FC] to-[#149eed];
 }
@@ -151,6 +159,14 @@ section {
 
 .card {
   @apply bg-gray-950/75 backdrop-blur-lg border border-white/20 z-10;
+}
+
+.card-primary-header {
+  @apply transition-all bg-opacity-0 hover:bg-opacity-100 bg-gradient-to-br from-secondary/0 via-secondary/0 to-primary/0 hover:from-secondary/5 hover:via-secondary/10 hover:to-primary/30 border border-white/0 hover:border-white/15;
+}
+
+.card-primary-header-active {
+  @apply transition-all bg-gradient-to-br from-secondary/5 via-secondary/10 to-primary/30 border border-white/15;
 }
 
 .card-primary {

@@ -1,0 +1,60 @@
+<div class="flex items-center justify-center h-svh overflow-hidden relative">
+  
+    <div class="absolute">
+      <div class="mx-auto max-w-screen-xl">
+          <div class="relative z-10 px-8 mx-auto md:px-4 text-center">
+              <div class="text-base font-medium tracking-widest uppercase text-caminoSky font-headline md:text-xl">
+                  Introducing Camino Messenger
+              </div>
+              <div class="my-6 text-4xl font-medium md:text-5xl lg:text-6xl xl:text-8xl font-headline tracking-tight">
+                Fluent travel <br> distribution
+              </div>
+              <div class="flex items-center justify-center gap-4">
+                  <a href="/ecosystem" title="Discover the blockchain ecosystem of the travel industry" class="button-lg shadow-xl">
+                      Contact Devs
+                  </a>
+                  <a href="{{site.whitepaper}}" title="Camino Network Whitepaper" class="button-secondary-lg shadow-xl" target="_blank" rel="noopener noreferrer">
+                      Get the Deck
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+    <css-doodle class="w-full h-full overflow-hidden flex items-center justify-center">
+        :doodle {
+            @grid: 400x1/ 50vmin;
+          }
+          :container {
+            perspective: 20vmin;
+          }
+          
+          @place-cell: center;
+          @size: 30% 4px;
+          
+          will-change: transform, opacity;
+          transform-style: preserve-3d;
+          
+          background: linear-gradient(to left,
+            @multi(@p([2-8]), @p(#0284ff, #b241fc)),
+            transparent @r(50%)
+          );
+        
+          animation: move @r(1s, 8s, .1) linear infinite;
+          animation-delay: -@r(.1s, 2s);
+        
+          --trans:
+            translateX(50%)
+            rotateX(@r(-180deg, 180deg))
+            rotateY(@r(-180deg, 180deg))
+            rotateZ(@r(-180deg, 180deg));
+        
+          transform-origin: 0 center;
+          transform: var(--trans) scale(2);
+          opacity: 0;
+        
+          @keyframes move {
+            20% { opacity: 1; }
+            100% { transform: var(--trans) scale(0); }
+          }
+    </css-doodle>
+</div>
