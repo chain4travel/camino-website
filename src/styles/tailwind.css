@@ -90,11 +90,11 @@ section {
 }
 
 .button-lg {
-  @apply text-center whitespace-nowrap inline-block items-center transition-all bg-gradient-to-r from-primary to-secondary hover:brightness-125 font-medium text-white py-4 px-6 rounded-2xl text-lg;
+  @apply text-center whitespace-nowrap inline-block items-center transition-all bg-gradient-to-r from-primary to-secondary hover:brightness-125 font-medium text-white py-3 px-5 rounded-2xl text-lg;
 }
 
 .button-secondary-lg {
-  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-700 bg-gray-900/80 backdrop-blur-md hover:bg-white hover:text-gray-900 font-medium text-white py-4 px-6 rounded-2xl text-lg;
+  @apply text-center whitespace-nowrap inline-block transition-all border border-gray-700 bg-gray-900/80 backdrop-blur-md hover:bg-white hover:text-gray-900 font-medium text-white py-3 px-5 rounded-2xl text-lg;
 }
 
 .gradient-full {
