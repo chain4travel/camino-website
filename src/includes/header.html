@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-50" x-data="{ mobileMenu: false }">
+<header class="absolute w-full top-0 z-50" x-data="{ mobileMenu: false }">
     <div class="flex items-center justify-between max-w-screen-xl mx-auto px-4 py-4">
         <!-- Camino logo -->
         <a href="/" aria-label="Camino Network" class="flex items-center font-medium transition-all text-gray-950 hover:brightness-125">
@@ -108,112 +108,10 @@
             </nav>
 
             <a target="_blank" href="{{site.wallet}}" class="button-secondary">Wallet ↗</a>
-            <a class="button-secondary lg:hidden" @click="mobileMenu = !mobileMenu" tabindex="0">Menu <span class="rotate-90 inline-block relative top-px">Ⅲ</span></a>
+            <a class="button-secondary lg:hidden" @click="mobileMenu = !mobileMenu" tabindex="0"><span class="rotate-90 inline-block relative top-px">Ⅲ</span></a>
         </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div class="lg:hidden fixed lg:relative z-50 inset-0 w-screen h-svh overflow-auto md:flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-center bg-gray-950/80 backdrop-blur-3xl p-4 pt-8" x-cloak x-show="mobileMenu" x-transition @click.away="mobileMenu = false">
+        {% include "mobile-menu.html" %}
 
-            <!-- Closing X -->
-            <div class="absolute flex items-center justify-center w-12 h-12 cursor-pointer top-5 right-4 z-50" @click="mobileMenu = !mobileMenu" tabindex="0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6" viewBox="0 0 24 24"><path fill="currentColor" d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6 6-6z"/></svg>
-            </div>
-
-
-            <div class="group relative w-full">
-                <div class="text-nowrap p-1.5 lg:p-3 cursor-pointer text-gray-400 group-hover:text-white transition-colors">❖ Ecosystem</div>
-                <div class="lg:absolute transition-all lg:left-1/2 lg:-translate-x-1/2 lg:top-20 lg:group-hover:top-12 lg:opacity-0 lg:pointer-events-none group-hover:pointer-events-auto lg:p-1.5 bg-gray-950 lg:border lg:border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col lg:gap-1.5 w-full lg:w-80">
-                    <a href="/ecosystem" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/ecosystem' in page.url }}">
-                        <div class="text-white font-medium">The Network</div>
-                        <p class="text-gray-400 mt-1 text-sm">Innovative web3 solutions for sustainable travel.</p>
-                    </a>
-                    <a href="/partners" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/partners' in page.url }}">
-                        <div class="text-white font-medium">Use Cases</div>
-                        <p class="text-gray-400 mt-1 text-sm">Companies shaping the web3 travel ecosystem.</p>
-                    </a>
-                    <a href="/validators" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/validators' in page.url }}">
-                        <div class="text-white font-medium">Validators</div>
-                        <p class="text-gray-400 mt-1 text-sm">Grow your business and network.</p>
-                    </a>
-                </div>
-            </div>
-    
-            <div class="group relative w-full">
-                <div class="text-nowrap p-1.5 lg:p-3 cursor-pointer text-gray-400 group-hover:text-white transition-colors">✈ Travel Industry</div>
-                <div class="lg:absolute transition-all lg:left-1/2 lg:-translate-x-1/2 lg:top-20 lg:group-hover:top-12 lg:opacity-0 lg:pointer-events-none group-hover:pointer-events-auto lg:p-1.5 bg-gray-950 lg:border lg:border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col lg:gap-1.5 w-full lg:w-80">
-                    <a href="/travel" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/travel' in page.url }}">
-                        <div class="text-white font-medium">Web3 Travel</div>
-                        <p class="text-gray-400 mt-1 text-sm">Reach the next generation of travelers with Camino Network.</p>
-                    </a>
-                    <a href="/messenger" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/messenger' in page.url }}">
-                        <div class="text-white font-medium">Camino Messenger ↗</div>
-                        <p class="text-gray-400 mt-1 text-sm">A sleek, fast, and cost-effective communication platform for B2B travel distribution.</p>
-                    </a>
-                </div>
-            </div>
-    
-            <div class="group relative w-full">
-                <div class="text-nowrap p-1.5 lg:p-3 cursor-pointer text-gray-400 group-hover:text-white transition-colors">{} Developers</div>
-                <div class="lg:absolute transition-all lg:left-1/2 lg:-translate-x-1/2 lg:top-20 lg:group-hover:top-12 lg:opacity-0 lg:pointer-events-none group-hover:pointer-events-auto lg:p-1.5 bg-gray-950 lg:border lg:border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col lg:gap-1.5 w-full lg:w-80">
-                    <a href="/developer" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/developer' in page.url }}">
-                        <div class="text-white font-medium">Start Building</div>
-                        <p class="text-gray-400 mt-1 text-sm">Build the future of travel.</p>
-                    </a>
-                    <a href="/grant-program" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/grant-program' in page.url }}">
-                        <div class="text-white font-medium">Grant Program</div>
-                        <p class="text-gray-400 mt-1 text-sm">Grow your project on Camino.</p>
-                    </a>
-                    <a href="/bugbounty" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/bugbounty' in page.url }}">
-                        <div class="text-white font-medium">Bug Bounty</div>
-                        <p class="text-gray-400 mt-1 text-sm">Find bugs, get rewards.</p>
-                    </a>
-                </div>
-            </div>
-    
-            <div class="group relative w-full">
-                <div class="text-nowrap p-1.5 lg:p-3 cursor-pointer text-gray-400 group-hover:text-white transition-colors">✦ Discover</div>
-                <div class="lg:absolute transition-all lg:left-1/2 lg:-translate-x-1/2 lg:top-20 lg:group-hover:top-12 lg:opacity-0 lg:pointer-events-none group-hover:pointer-events-auto lg:p-1.5 bg-gray-950 lg:border lg:border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col lg:gap-1.5 w-full lg:w-80">
-                    <a href="/community" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/community' in page.url }}">
-                        <div class="text-white font-medium">Community</div>
-                        <p class="text-gray-400 mt-1 text-sm">The largest web3 travel community with over 6000 Discord members .</p>
-                    </a>
-                    <a href="/blog" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/blog' in page.url }}">
-                        <div class="text-white font-medium">Blog</div>
-                        <p class="text-gray-400 mt-1 text-sm">With Horizons, you will stay informed about everything web3 in travel.</p>
-                    </a>
-                    <a href="/news" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/news' in page.url }}">
-                        <div class="text-white font-medium">Press</div>
-                        <p class="text-gray-400 mt-1 text-sm">Stay up to date with the latest news and stories about the L1 for travel.</p>
-                    </a>
-                    <a href="/entities" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/entities' in page.url }}">
-                        <div class="text-white font-medium">Entities</div>
-                        <p class="text-gray-400 mt-1 text-sm">Get to know the core teams building and growing Camino Network.</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="group relative w-full">
-                <div class="text-nowrap p-1.5 lg:p-3 cursor-pointer text-gray-400 group-hover:text-white transition-colors">⚛ Suite</div>
-                <div class="lg:absolute transition-all lg:left-1/2 lg:-translate-x-1/2 lg:top-20 lg:group-hover:top-12 lg:opacity-0 lg:pointer-events-none group-hover:pointer-events-auto lg:p-1.5 bg-gray-950 lg:border lg:border-gray-800 text-gray-300 rounded-2xl rounded-b-2xl shadow-2xl group-hover:opacity-100 flex flex-col lg:gap-1.5 w-full lg:w-80">
-                    <a href="/community" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/community' in page.url }}">
-                        <div class="text-white font-medium">Wallet ↗</div>
-                        <p class="text-gray-400 mt-1 text-sm">The largest web3 travel community with over 6000 Discord members .</p>
-                    </a>
-                    <a href="/blog" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/blog' in page.url }}">
-                        <div class="text-white font-medium">Blog ↗</div>
-                        <p class="text-gray-400 mt-1 text-sm">With Horizons, you will stay informed about everything web3 in travel.</p>
-                    </a>
-                    <a href="/news" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/news' in page.url }}">
-                        <div class="text-white font-medium">Explorer ↗</div>
-                        <p class="text-gray-400 mt-1 text-sm">Stay up to date with the latest news and stories about the L1 for travel.</p>
-                    </a>
-                    <a href="/entities" class="block p-2 lg:p-3 w-full rounded-xl text-left card-primary-header cursor-pointer {{ 'card-primary-header-active' if '/entities' in page.url }}">
-                        <div class="text-white font-medium">Wallet ↗</div>
-                        <p class="text-gray-400 mt-1 text-sm">Get to know the core teams building and growing Camino Network.</p>
-                    </a>
-                </div>
-            </div>
-            <a target="_blank" href="{{site.wallet}}" class="button-secondary ml-4">Create Wallet ↗</a>
-        </div>
     </div>
 </header>

@@ -1,0 +1,72 @@
+
+
+
+        <!-- Mobile Menu Overlay -->
+        <div class="lg:hidden fixed lg:relative z-50 inset-0 w-screen h-svh overflow-auto md:flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-center bg-gray-950/80 backdrop-blur-3xl p-4" x-cloak x-show="mobileMenu" x-transition @click.away="mobileMenu = false">
+
+            <!-- Closing X -->
+            <div class="absolute flex items-center justify-center w-12 h-12 cursor-pointer top-4 right-4 z-50" @click="mobileMenu = !mobileMenu" tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6" viewBox="0 0 24 24"><path fill="currentColor" d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6 6-6z"/></svg>
+            </div>
+
+
+            <div class="border-b border-gray-800">
+                <div class="text-gray-400 p-2.5 text-xs uppercase tracking-wider">❖ Ecosystem</div>
+                <div class="">
+                    <a href="/ecosystem" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/ecosystem' in page.url }}">
+                        <div class="text-white">The Network</div>
+                    </a>
+                    <a href="/partners" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/partners' in page.url }}">
+                        <div class="text-white">Use Cases</div>
+                    </a>
+                    <a href="/validators" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/validators' in page.url }}">
+                        <div class="text-white">Validators</div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="border-b border-gray-800">
+                <div class="text-gray-400 p-2.5 text-xs uppercase tracking-wider">✈ Travel Industry</div>
+                <div class="">
+                    <a href="/travel" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/travel' in page.url }}">
+                        <div class="text-white">Web3 Travel</div>
+                    </a>
+                    <a href="/messenger" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/messenger' in page.url }}">
+                        <div class="text-white">Camino Messenger ↗</div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="border-b border-gray-800">
+                <div class="text-gray-400 p-2.5 text-xs uppercase tracking-wider">{} Developers</div>
+                <div class="">
+                    <a href="/developer" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/developer' in page.url }}">
+                        <div class="text-white">Start Building</div>
+                    </a>
+                    <a href="/grant-program" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/grant-program' in page.url }}">
+                        <div class="text-white">Grant Program</div>
+                    </a>
+                    <a href="/bugbounty" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/bugbounty' in page.url }}">
+                        <div class="text-white">Bug Bounty</div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="">
+                <div class="text-gray-400 p-2.5 text-xs uppercase tracking-wider">✦ Discover</div>
+                <div class="">
+                    <a href="/community" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/community' in page.url }}">
+                        <div class="text-white">Community</div>
+                    </a>
+                    <a href="/blog" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/blog' in page.url }}">
+                        <div class="text-white">Blog</div>
+                    </a>
+                    <a href="/news" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/news' in page.url }}">
+                        <div class="text-white">Press</div>
+                    </a>
+                    <a href="/entities" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/entities' in page.url }}">
+                        <div class="text-white">Entities</div>
+                    </a>
+                </div>
+            </div>
+        </div>
