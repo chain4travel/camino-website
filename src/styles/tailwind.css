@@ -158,7 +158,7 @@ section {
 /* Card styles */
 
 .card {
-  @apply bg-gray-950/75 backdrop-blur-lg border border-white/20 z-10;
+  @apply bg-gray-900/75 backdrop-blur-lg border border-white/10 z-10;
 }
 
 .card-primary-header {
@@ -175,6 +175,14 @@ section {
 
 .card-primary-extra {
   @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-primary;
+}
+
+.card-gradient-primary {
+  @apply bg-gradient-to-r from-transparent to-primary/20 border border-[#123e66];
+}
+
+.card-gradient-secondary {
+  @apply bg-gradient-to-r from-transparent to-secondary/20 border border-[#3f1658];
 }
 
 summary::marker {
