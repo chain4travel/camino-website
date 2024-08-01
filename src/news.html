@@ -1,0 +1,28 @@
+---
+title:          Camino in the news
+description:    Join the Camino community on Discord, Twitter or Telegram.
+layout:         default
+---
+
+<img class="absolute -z-50 top-0 left-0 right-0 w-screen object-cover" src="/static/images/glas/homepage-bg-2.svg" alt="">
+<div class="py-16 md:py-32">
+    <div class="mx-auto max-w-screen-xl text-center">
+        <div class="font-medium text-5xl lg:text-6xl xl:text-7xl font-headline tracking-tight">
+            Camino in the news
+        </div>
+    </div>
+</div>
+
+<section class="flex flex-col gap-8">
+    {% for a in newsarticles.data | sort(attribute='attributes.date') | reverse %}
+    {% set x = a.attributes %}
+    <a class="p-4 card-primary rounded-2xl flex flex-col md:flex-row group" target="_blank" href="{{x.linkToArticle}}">
+        <img class="flex-shrink-0 md:w-1/3 rounded-xl group-hover:brightness-110 transition-all object-cover" src="https://api.strapi.camino.network/{{x.image.data.attributes.url}}" alt="cryptowisser cover image">
+        <div class="p-0 mt-8 md:px-12 md:py-8 md:mt-0">
+            <div class="text-xl font-medium font-headline md:text-3xl xl:text-4xl">{{x.title}}</div>
+            <p class="my-3 md:my-6 text-gray-300 line-clamp-2">{{x.articleTeaser}}</p>
+            <div class="button-secondary">Read full article ↗</div>
+        </div>
+    </a>
+    {% endfor %}
+</section>
