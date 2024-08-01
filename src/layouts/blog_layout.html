@@ -2,55 +2,47 @@
 layout: default
 ---
 
-<div class="pb-6 bg-gradient-to-b from-gray-950 via-primary/5 to-primary/20 md:pb-0">
-    <div class="hero-new">
-        <div class="flex flex-col items-center w-full md:flex-row" data-sal="zoom-out">
-            <div class="w-full text-center md:text-left" data-sal="zoom-out" data-sal-delay="250">
-                <div class="text-4xl font-medium xl:text-6xl font-headline">
-                    {{title}}
-                </div>
-                <div class="my-3 text-base font-medium tracking-widest uppercase text-caminoSky font-headline md:text-xl md:my-6">
-                    {{postDate}}
-                </div>
-                <p class="my-6 text-base text-gray-300 lg:text-xl max-w-prose">
-                    {{description}}
-                </p>
-            </div>
-            {% image heroImage, "", "order-first md:order-last flex-shrink-0 max-w-[300px] md:max-w-none md:w-1/2 md:-mr-24", "" %}
+<div class="py-16 md:py-24 overflow-hidden">
+    <img class="absolute -z-50 top-0 left-0 right-0 w-screen object-cover" src="/static/images/glas/homepage-bg-2.svg" alt="">
+    <div class="mx-auto max-w-screen-lg px-8 md:px-4">
+        <div class="my-3 text-base font-medium tracking-widest uppercase text-caminoSky font-headline md:text-xl md:my-6">
+            {{postDate}}
+        </div>
+        <div class="font-medium text-5xl lg:text-6xl xl:text-8xl font-headline tracking-tight">
+            {{title}}
+        </div>
+        <p class="my-6 text-base text-gray-300 lg:text-2xl max-w-prose">
+            {{description}}
+        </p>
+        <div class="flex gap-2 mt-2">
+            <a
+                target="_blank"
+                href="https://twitter.com/share?text=Check out this new blog post by Camino Network &url=https://camino.network/{{permalink}}"
+                class="button-secondary">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 20 6.86-6.86m0 0L16 20h4l-6.86-9.14m-2.28 2.28L4 4h4l5.14 6.86m0 0L20 4"/></svg>
+            </a>
+            <a
+                target="_blank"
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://camino.network/{{permalink}}&title={{title}}&summary={{description}}&source=https://camino.network/{{permalink}}"
+                class="button-secondary">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11v5m8 0v-3c0-.67-.4-2-2-2s-2 1.33-2 2m0 3v-3m0 0v-2M8 8h.01M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2Z"/></svg>
+            </a>
+            <a
+                target="_blank"
+                href="https://www.reddit.com/submit?url=https://camino.network/{{permalink}}&title=Check out this new blog post by Camino Network "
+                class="button-secondary">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.86 0-5.4.96-7.05 2.46a2.5 2.5 0 1 0-1.93 4.5C3.34 18.32 7.24 21 12 21c4.76 0 8.66-2.67 8.98-6.05a2.5 2.5 0 1 0-1.93-4.49A10.55 10.55 0 0 0 12 8Zm0 0 1-5 5 1m-8 13a5 5 0 0 0 2 .5 5 5 0 0 0 2-.5m4-13a1 1 0 1 0 2 0 1 1 0 0 0-2 0Zm-8.5 9a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm6 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/></svg>
+            </a>
+            <a
+                href="mailto:?subject=Check out this new blog post by Camino Network &body=Hi,I found this blog post and thought you might like it https://camino.network/{{permalink}}"
+                class="button-secondary">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 3.75 3a2 2 0 0 0 2.5 0L17 9M3 17V7c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+            </a>
         </div>
     </div>
 </div>
 
-<div class="border-b border-gray-800 py-4">
-    <div class="flex items-center justify-center gap-2">
-        <span class="hidden mr-2 text-sm text-gray-400 md:inline-block">Share:</span>
-        <a
-            target="_blank"
-            href="https://twitter.com/share?text=Check out this new blog post by Camino Network &url=https://camino.network/{{permalink}}"
-            class="button-secondary">
-                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 20 6.86-6.86m0 0L16 20h4l-6.86-9.14m-2.28 2.28L4 4h4l5.14 6.86m0 0L20 4"/></svg>
-        </a>
-        <a
-            target="_blank"
-            href="https://www.linkedin.com/shareArticle?mini=true&url=https://camino.network/{{permalink}}&title={{title}}&summary={{description}}&source=https://camino.network/{{permalink}}"
-            class="button-secondary">
-                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11v5m8 0v-3c0-.67-.4-2-2-2s-2 1.33-2 2m0 3v-3m0 0v-2M8 8h.01M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2Z"/></svg>
-        </a>
-        <a
-            target="_blank"
-            href="https://www.reddit.com/submit?url=https://camino.network/{{permalink}}&title=Check out this new blog post by Camino Network "
-            class="button-secondary">
-                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.86 0-5.4.96-7.05 2.46a2.5 2.5 0 1 0-1.93 4.5C3.34 18.32 7.24 21 12 21c4.76 0 8.66-2.67 8.98-6.05a2.5 2.5 0 1 0-1.93-4.49A10.55 10.55 0 0 0 12 8Zm0 0 1-5 5 1m-8 13a5 5 0 0 0 2 .5 5 5 0 0 0 2-.5m4-13a1 1 0 1 0 2 0 1 1 0 0 0-2 0Zm-8.5 9a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm6 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/></svg>
-        </a>
-        <a
-            href="mailto:?subject=Check out this new blog post by Camino Network &body=Hi,I found this blog post and thought you might like it https://camino.network/{{permalink}}"
-            class="button-secondary">
-                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 3.75 3a2 2 0 0 0 2.5 0L17 9M3 17V7c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
-        </a>
-    </div>
-</div>
-
-<div class="py-6 mt-12 md:mt-0 md:py-12">
+<div class="py-6 md:py-12 bg-gray-950 border-t border-gray-700">
     <div class="max-w-screen-lg px-8 mx-auto prose-headings:font-medium prose-headings:font-headline prose xl:prose-lg prose-invert md:px-4 prose-p:text-gray-300 prose-img:rounded-2xl prose-img:w-full prose-img:border prose-img:border-gray-800 prose-img:mx-auto prose-th:p-4 prose-td:p-4 prose-th:bg-gray-900 prose-table:border prose-table:border-gray-700 prose-th:font-medium">
         {{ content | safe }}
     </div>
