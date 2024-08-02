@@ -178,11 +178,11 @@ section {
 }
 
 .card-gradient-primary {
-  @apply bg-gradient-to-r from-transparent to-primary/20 border border-[#123e66] transition-colors;
+  @apply bg-gradient-to-r from-transparent to-primary/20 border border-[#123e66] transition-colors backdrop-blur;
 }
 
 .card-gradient-secondary {
-  @apply bg-gradient-to-r from-transparent to-secondary/20 border border-[#3f1658] transition-colors;
+  @apply bg-gradient-to-r from-transparent to-secondary/20 border border-[#3f1658] transition-colors backdrop-blur;
 }
 
 summary::marker {
