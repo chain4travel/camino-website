@@ -28,15 +28,62 @@ placement:      developers
 
 {% include "logo-slider.html" %}
 
-<div class="py-12 md:py-24">
+<div class="py-12 md:py-32">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <div class="font-headline font-medium text-center text-2xl xl:text-5xl">
             Tech stack specialized <br> for the travel industry
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div class="card col-span-1 p-8 rounded-2xl"></div>
-            <div class="card col-span-1 p-8 rounded-2xl"></div>
-            <div class="card col-span-1 p-8 rounded-2xl"></div>
+        <div class="grid grid-cols-12 gap-6 mt-16">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 card bg-gradient-to-b from-gray-950 to-gray-900 p-6 rounded-2xl flex flex-col justify-between">
+                <div class="flex gap-2 group">
+                    {% image "./src/static/images/glas/settings-icon.png", "", "flex-shrink-0", "size-12 lg:size-16 object-contain group-hover:size-20 group-hover:animate-spin transition-all" %}
+                    <div>
+                        <div class="font-headline font-medium text-2xl mb-1">Platform (P) Chain</div>
+                        <p class="text-gray-400">Validator Coordination, Token Bonding / Locking, Subnet Management</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 w-full h-px my-8 md:my-4 lg:my-0"></div>
+                <div class="flex gap-2 group">
+                    {% image "./src/static/images/glas/settings-icon.png", "", "flex-shrink-0", "size-12 lg:size-16 object-contain group-hover:size-20 group-hover:animate-spin transition-all" %}
+                    <div>
+                        <div class="font-headline font-medium text-2xl mb-1">Contract (C) Chain</div>
+                        <p class="text-gray-400">EVM Compatible, Deployment & Execution of Smart-Contracts</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 w-full h-px my-8 md:my-4 lg:my-0"></div>
+                <div class="flex gap-2 group">
+                    {% image "./src/static/images/glas/settings-icon.png", "", "flex-shrink-0", "size-12 lg:size-16 object-contain group-hover:size-20 group-hover:animate-spin transition-all" %}
+                    <div>
+                        <div class="font-headline font-medium text-2xl mb-1">Exchange (X) Chainn</div>
+                        <p class="text-gray-400">Direct Acyclic Graph (DAG) Consensus, Fast Transactions, Manage Assets</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 card-primary rounded-2xl overflow-hidden md:overflow-visible group">
+                {% image "./src/static/images/glas/messenger-layers-2.png", "", "", "w-full object-contain -mt-16 group-hover:scale-110 transition-all" %}
+                <div class="p-8 pt-0">
+                    <div class="font-headline font-medium text-2xl md:text-4xl lg:text-5xl mb-2">Camino Messenger</div>
+                    <p class="text-gray-400">Messenger Protocol, Camino Bot, Travel Data Standards</p>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-12 lg:col-span-4 rounded-2xl flex lg:flex-col justify-between gap-6">
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full font-headline font-medium text-xl lg:text-2xl mb-1">KYC / KYB verified actors</div>
+                    {% image "./src/static/images/cardImages/generic-03.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full font-headline font-medium text-xl lg:text-2xl mb-1">PoSA consensus model</div>
+                    {% image "./src/static/images/cardImages/generic-01.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full font-headline font-medium text-xl lg:text-2xl mb-1">Fixed transaction fee</div>
+                    {% image "./src/static/images/cardImages/generic-02.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full font-headline font-medium text-xl lg:text-2xl mb-1">Multisignature wallets</div>
+                    {% image "./src/static/images/cardImages/generic-04.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+            </div>
         </div>
     </div>
 </div>
