@@ -71,60 +71,33 @@ layout:         default
     </div>
 </div>
 
-<div class="pb-12 md:pb-24">
-    <div class="grid items-center max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-6">
-        <div class="col-span-12 overflow-hidden rounded-lg md:col-span-5">
-            {% image "./src/static/images/glas/user-shield.png", "", "", "w-full object-contain" %}
-        </div>
-        <div class="col-span-12 md:col-start-7 md:col-span-6">
-            <div class="text-2xl font-medium font-headline xl:text-5xl">
-                Learn, grow & network
-            </div>
-            <ul class="pl-4 my-4 text-gray-300 list-disc md:my-6">
-                <li>Learn from industry leaders and experts</li>
-                <li>Grow the business with new partnerships</li>
-                <li>Network with like-minded professionals</li>
-                <li>Get early access to new products and technologies</li>
-                <li>Shape the future of travel with a supportive community</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 <!-- CardRow Start -->
-{% set cardRowTitle = "Many ways to connect" %}
-{% set cardRowSubtitle = "" %}
-{% set cardRowBgImage = "" %}
+    {% set cardRowTitle = "Learn, grow & network" %}
+    {% set cardRowParagraph = "" %}
+    {% set cardRowSubtitle = "" %}
+    {% set cardRowBgImage = "" %}
 
-{% set cardFirstImage = "generic-discord" %}
-{% set cardFirstTitle = "Discord" %}
-{% set cardFirstText = "" %}
-{% set cardFirstLink = site.discord %}
-{% set cardFirstLinkLabel = "Join now" %}
-{% set cardFirstLinkBlank = "true" %}
+    {% set cardFirstImage = "generic-06" %}
+    {% set cardFirstTitle = "Learn" %}
+    {% set cardFirstText = "Gain insights from industry leaders and experts." %}
+    {% set cardFirstLinkLabel = "" %}
 
-{% set cardSecondImage = "generic-twitter" %}
-{% set cardSecondTitle = "X" %}
-{% set cardSecondText = "" %}
-{% set cardSecondLink = site.twitter %}
-{% set cardSecondLinkLabel = "Follow now" %}
-{% set cardSecondLinkBlank = "true" %}
+    {% set cardSecondImage = "generic-12" %}
+    {% set cardSecondTitle = "Grow" %}
+    {% set cardSecondText = "Expand your business through new partnerships." %}
+    {% set cardSecondLinkLabel = "" %}
 
-{% set cardThirdImage = "generic-telegram" %}
-{% set cardThirdTitle = "Telegram" %}
-{% set cardThirdText = "" %}
-{% set cardThirdLink = site.telegram %}
-{% set cardThirdLinkLabel = "Join now" %}
-{% set cardThirdLinkBlank = "true" %}
+    {% set cardThirdImage = "generic-10" %}
+    {% set cardThirdTitle = "Network" %}
+    {% set cardThirdText = "Connect with like-minded professionals." %}
+    {% set cardThirdLinkLabel = "" %}
 
-{% set cardFourthImage = "generic-linkedin" %}
-{% set cardFourthTitle = "Linkedin" %}
-{% set cardFourthText = "" %}
-{% set cardFourthLink = site.linkedin %}
-{% set cardFourthLinkLabel = "Follow now" %}
-{% set cardFourthLinkBlank = "true" %}
+    {% set cardFourthImage = "generic-11" %}
+    {% set cardFourthTitle = "Shape" %}
+    {% set cardFourthText = "Collaborate to shape the future of travel." %}
+    {% set cardFourthLinkLabel = "" %}
 
-{% include "cardRow.html" %}
+    {% include "cardRow.html" %}
 <!-- CardRow End -->
 
 {% include "contact.html" %}
