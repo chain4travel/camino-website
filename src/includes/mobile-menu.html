@@ -2,7 +2,7 @@
 
 
         <!-- Mobile Menu Overlay -->
-        <div class="lg:hidden fixed lg:relative z-50 inset-0 w-screen h-svh overflow-auto md:flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-center bg-gray-950/80 backdrop-blur-3xl p-4" x-cloak x-show="mobileMenu" x-transition @click.away="mobileMenu = false">
+        <div class="lg:hidden fixed lg:relative z-50 inset-0 w-screen h-svh overflow-auto md:flex flex-col lg:flex-row lg:items-center lg:justify-center bg-gray-950/80 backdrop-blur-3xl p-4" x-cloak x-show="mobileMenu" x-transition @click.away="mobileMenu = false">
 
             <!-- Closing X -->
             <div class="absolute flex items-center justify-center w-12 h-12 cursor-pointer top-4 right-4 z-50" @click="mobileMenu = !mobileMenu" tabindex="0">
@@ -10,7 +10,7 @@
             </div>
 
 
-            <div class="border-b border-gray-800">
+            <div class="border-b border-gray-800 py-2">
                 <div class="text-gray-400 p-2.5 text-xs uppercase tracking-wider">Ecosystem</div>
                 <div class="">
                     <a href="/ecosystem" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/ecosystem' in page.url }}">
@@ -25,19 +25,19 @@
                 </div>
             </div>
     
-            <div class="border-b border-gray-800">
+            <div class="border-b border-gray-800 py-2">
                 <div class="text-gray-400 p-2.5 text-xs uppercase tracking-wider">Travel Industry</div>
                 <div class="">
                     <a href="/travel" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/travel' in page.url }}">
                         <div class="text-white">Web3 Travel</div>
                     </a>
                     <a href="/messenger" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/messenger' in page.url }}">
-                        <div class="text-white">Camino Messenger ↗</div>
+                        <div class="text-white">Camino Messenger</div>
                     </a>
                 </div>
             </div>
     
-            <div class="border-b border-gray-800">
+            <div class="border-b border-gray-800 py-2">
                 <div class="text-gray-400 p-2.5 text-xs uppercase tracking-wider">Developers</div>
                 <div class="">
                     <a href="/developer" class="block p-2.5 w-full rounded-xl text-left card-primary-header {{ 'card-primary-header-active' if '/developer' in page.url }}">

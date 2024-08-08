@@ -3,12 +3,12 @@
         <div class="mb-32 text-2xl font-medium text-center font-headline xl:text-5xl">
             What industry leaders say
         </div>
-        <div class="grid grid-cols-3 gap-24 md:gap-8 w-full">
+        <div class="grid grid-cols-3 gap-12 md:gap-24 w-full">
             {% for x in testimonials %}
             {% if x.placement === placement %}
             <div class="col-span-3 md:col-span-1 p-8 card flex flex-col gap-4 items-center text-center rounded-xl" x-data="{ {{x.slug}}Modal:false }">
                 {% set avatarPath = "./src/static/images/people/" + x.slug + ".png" %}
-                <div class="aspect-square rounded-full flex-shrink-0 overflow-hidden size-32 -mt-24">
+                <div class="aspect-square rounded-full flex-shrink-0 overflow-hidden size-24 -mt-12 md:size-32 md:-mt-24">
                     {% image avatarPath, x.name, "", "w-full h-full object-cover" %}
                 </div>
                 <p class="md:text-xl line-clamp-3 md:line-clamp-none">

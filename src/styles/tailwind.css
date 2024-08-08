@@ -70,7 +70,7 @@ section {
 }
 
 .hero-new {
-  @apply max-w-screen-xl px-4 pt-8 mx-auto flex items-center;
+  @apply max-w-screen-xl px-4 py-8 mx-auto flex items-center;
 }
 
 .button {
@@ -162,11 +162,11 @@ section {
 }
 
 .card-primary-header {
-  @apply bg-opacity-0 hover:bg-opacity-100 bg-gradient-to-br from-secondary/0 via-secondary/0 to-primary/0 hover:from-secondary/10 hover:via-secondary/15 hover:to-primary/35 border border-white/0 hover:border-white/15 transition-colors;
+  @apply bg-opacity-0 hover:bg-opacity-100 bg-gradient-to-br from-secondary/0 via-secondary/0 to-primary/0 hover:from-secondary/15 hover:via-secondary/20 hover:to-primary/40 border border-white/0 hover:border-white/15 transition-colors;
 }
 
 .card-primary-header-active {
-  @apply bg-gradient-to-br from-secondary/10 via-secondary/15 to-primary/35 border border-white/15 transition-colors;
+  @apply bg-gradient-to-br from-secondary/15 via-secondary/20 to-primary/40 border border-white/10 transition-colors;
 }
 
 .card-primary {
