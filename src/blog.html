@@ -24,19 +24,15 @@ keywords:       blockchain, travel, news
 
 <div class="pb-12 md:pb-24">
     <div class="grid max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-8">
-
         {% for post in collections.blogposts | sort(attribute='data.order') %}
-            <div class="col-span-12 md:col-span-4">
-                <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl card">
-                    {% image post.data.heroImage, "", "", "w-full object-contain -mt-24" %}
-                    <div class="p-4 -mt-10 md:p-8">
-                        <div class="mb-3 text-xl font-medium font-headline md:text-3xl md:line-clamp-2">{{post.data.title}}</div>
-                        <p class="mb-3 text-gray-400">{{post.data.postDate}}</p>
-                        <p class="text-gray-200 line-clamp-2">{{post.data.description}}</p>
-                    </div>
-                </a>
+        <a href="/{{post.data.permalink}}" class="col-span-12 md:col-span-4 block overflow-hidden rounded-2xl card hover:border-primary transition-colors">
+            {% image post.data.heroImage, "", "", "w-full object-contain -my-4 md:-my-8" %}
+            <div class="p-4 md:p-8">
+                <p class="mb-3 text-gray-400">{{post.data.postDate}}</p>
+                <div class="mb-3 text-title md:line-clamp-2">{{post.data.title}}</div>
+                <p class="text-gray-400 line-clamp-2">{{post.data.description}}</p>
             </div>
+        </a>
         {% endfor %}
-        
     </div>
 </div>

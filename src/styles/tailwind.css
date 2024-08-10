@@ -205,6 +205,20 @@ details[open] summary.features::after {
   margin-left: auto;
 }
 
+/* === Typography === */
+
+.text-headline {
+  @apply font-medium font-headline text-3xl md:text-4xl lg:text-5xl
+}
+
+.text-subheadline {
+  @apply font-medium font-headline text-xl md:text-2xl lg:text-3xl
+}
+
+.text-title {
+  @apply font-medium font-headline text-lg md:text-xl lg:text-2xl
+}
+
 /* COOKIE BANNER */
 
 .termsfeed-com---palette-dark.termsfeed-com---nb {
