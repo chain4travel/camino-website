@@ -8,14 +8,17 @@ keywords:       travel, blockchain
 
 <div class="overflow-hidden">
     <div class="mx-auto text-center max-w-screen-xl relative">
-        <div class="relative z-10 max-w-3xl px-8 mx-auto md:px-4 pt-8 lg:pt-16 pb-48 sm:pb-80 md:pb-96 lg:pb-[28rem]">
-            <div data-sal="slide-up" data-sal-delay="100" class="my-6 font-medium text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-headline">
+        <div class="relative z-10 max-w-4xl px-8 mx-auto md:px-4 pt-8 lg:pt-16 pb-48 sm:pb-80 md:pb-96 lg:pb-[28rem]" data-sal="slide-down" data-sal-delay="150">
+            <a href="/messenger" class="rounded-full px-5 py-2.5 card-primary-header-active inline-block text-sm font-medium">
+                Introducing Camino Messenger ->
+            </a>
+            <div class="my-6 lg:my-8 font-medium text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-headline">
                 Welcome to <br> Camino Network
             </div>
-            <p data-sal="slide-up" data-sal-delay="200" class="max-w-xl mx-auto text-base text-gray-300 lg:text-xl">
+            <p class="max-w-xl mx-auto text-base text-gray-300 lg:text-xl">
                 The L1 blockchain designed for the travel industry and fueled with CAM token.
             </p>
-            <div class="flex items-center justify-center mt-6" data-sal="slide-up" data-sal-delay="300">
+            <div class="flex items-center justify-center mt-6">
                 <a href="/ecosystem" title="Discover the blockchain ecosystem of the travel industry" class="mr-2 button shadow-xl">
                     The ecosystem
                 </a>
@@ -24,7 +27,7 @@ keywords:       travel, blockchain
                 </a>
             </div>
         </div>
-        <img class="absolute -z-50 bottom-0 left-0 right-0 w-full" src="/static/images/glas/homepage-bg.svg" alt="">
+        <img class="absolute -z-50 bottom-0 left-0 right-0 w-full"  data-sal="slide-up" data-sal-delay="150" src="/static/images/glas/homepage-bg.svg" alt="">
     </div>
 </div>
 
@@ -62,9 +65,23 @@ keywords:       travel, blockchain
 
 <div class="py-10 md:py-24">
     <div class="max-w-screen-xl px-8 mx-auto md:px-4">
-        <!-- write me a container with a 2x2 grid  -->
         <div class="grid gap-8 lg:gap-12 sm:grid-cols-2">
-            <div class="relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
+
+            <div class="col-span-2 p-2 bg-gradient-to-r from-secondary/20 to-primary/20 rounded-2xl">
+                <div class="relative pl-4 md:pl-10 py-6 md:py-16 overflow-hidden transition-all card-primary pr-6 sm:pr-48 md:pr-64 lg:pr-96 rounded-xl">
+                    <div class="flex flex-col h-full">
+                        <div class="text-headline mb-3 md:mb-6">Camino Messenger</div>
+                        <p class="mb-2 text-gray-300 hidden md:block">Travel distribution messenger, Unified travel standard, Open-source message types</p>
+                        <p class="text-gray-300 mb-3 md:mb-6">The open-source B2B wallet2wallet travel distribution platform fuelled by the CAM token and operating on Camino Network.</p>
+                        <div class="mt-auto">
+                            <a class="button" href="/messenger">Explore Messenger</a>
+                        </div>
+                    </div>
+                    {% image "./src/static/images/glas/messenger-layers.png", "", "absolute right-0 translate-x-1/3 top-full sm:top-1/2 -translate-y-1/2 -z-10 w-2/3 sm:w-1/2", "object-contain" %}
+                </div>
+            </div>
+
+            <div class="col-span-2 md:col-span-1 relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
                 <div class="flex flex-col h-full">
                     <div class="text-subheadline">Join the network</div>
                     <p class="mt-2 text-gray-300">Become a validator of the network</p>
@@ -74,7 +91,7 @@ keywords:       travel, blockchain
                     {% image "./src/static/images/glas/validator-network-connect.png", "", "", "w-64 md:w-96 object-contain" %}
                 </div>
             </div>
-            <div class="relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
+            <div class="col-span-2 md:col-span-1 relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
                 <div class="flex flex-col h-full">
                     <div class="text-subheadline">Build applications</div>
                     <p class="mt-2 text-gray-300">Read the documentation and start building</p>
@@ -84,7 +101,7 @@ keywords:       travel, blockchain
                     {% image "./src/static/images/glas/developer-notebook.png", "", "", "w-64 md:w-96 object-contain" %}
                 </div>
             </div>
-            <div class="relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
+            <div class="col-span-2 md:col-span-1 relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
                 <div class="flex flex-col h-full">
                     <div class="text-subheadline">Receive a grant</div>
                     <p class="mt-2 text-gray-300">Apply for a grant from the Camino Network Foundation</p>
@@ -94,7 +111,7 @@ keywords:       travel, blockchain
                     {% image "./src/static/images/glas/rocket-grant-program.png", "", "", "w-56 md:w-72 object-contain" %}
                 </div>
             </div>
-            <div class="relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
+            <div class="col-span-2 md:col-span-1 relative p-6 md:p-10 overflow-hidden transition-all card-primary pr-24 md:pr-32 lg:pr-60 rounded-2xl">
                 <div class="flex flex-col h-full">
                     <div class="text-subheadline">Search for bugs</div>
                     <p class="mt-2 text-gray-300">Find vulnerabilities in code and get rewards</p>
@@ -104,28 +121,6 @@ keywords:       travel, blockchain
                     {% image "./src/static/images/glas/bug-bounty-chip.png", "", "", "w-56 md:w-72 object-contain" %}
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="py-10 md:py-24">
-    <div class="grid items-center max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-6">
-        <div class="col-span-12 md:col-span-6">
-            <div class="text-headline">
-                Camino Messenger
-            </div>
-            <ul class="mt-4 md:mt-6">
-                <li class="py-1">-> Travel distribution messenger</li>
-                <li class="py-1">-> Unified travel standard</li>
-                <li class="py-1">-> Open-source message types</li>
-            </ul>
-            <p class="my-4 md:my-6 text-gray-300">
-                The open-source B2B wallet2wallet travel distribution platform fuelled by the CAM token and operating on Camino Network.
-            </p>
-            <a href="/messenger" class="button">Explore the Messenger</a>
-        </div>
-        <div class="order-first col-span-12 overflow-hidden rounded-lg md:col-span-6 md:order-last">
-            {% image "./src/static/images/glas/messenger-layers.png", "", "", "w-full object-contain" %}
         </div>
     </div>
 </div>
@@ -140,15 +135,13 @@ keywords:       travel, blockchain
 
         {% for post in collections.blogposts | sort(attribute='data.order') %}
         {% if loop.index0 < 3 %}
-        <div class="col-span-12 md:col-span-4">
-            <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl card">
-                {% image post.data.heroImage, "", "", "w-full object-contain -mt-24" %}
-                <div class="p-4 -mt-10 md:p-8">
-                    <p class="mb-3 text-gray-400">{{post.data.postDate}}</p>
-                    <div class="text-subheadline md:line-clamp-2">{{post.data.title}}</div>
-                </div>
-            </a>
-        </div>
+        <a href="/{{post.data.permalink}}" class="col-span-12 md:col-span-4 block overflow-hidden rounded-2xl card">
+            {% image post.data.heroImage, "", "", "w-full object-contain -my-4 md:-my-8" %}
+            <div class="p-4 md:p-8">
+                <p class="mb-3 text-gray-400">{{post.data.postDate}}</p>
+                <div class="text-subheadline md:line-clamp-2">{{post.data.title}}</div>
+            </div>
+        </a>
         {% endif %}
         {% endfor %}
         

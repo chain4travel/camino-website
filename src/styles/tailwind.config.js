@@ -18,7 +18,7 @@ module.exports = {
                 caminoSky: "#B5E3FD",
             },
             animation: {
-                  'infinite-scroll': 'infinite-scroll 30s linear infinite',
+                  'infinite-scroll': 'infinite-scroll 60s linear infinite',
             },
             keyframes: {
                 'infinite-scroll': {
