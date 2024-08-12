@@ -1,4 +1,16 @@
-<div class="w-full max-w-screen-xl mx-auto px-4 text-center py-12">
+<div class="w-full max-w-screen-xl mx-auto px-4 py-12">
+    <div class="text-center">
+        <div class="text-subheadline">
+            Guiding the $11 Trillion Travel Industry into Web3
+        </div>
+        <div class="items-center justify-center gap-2 text-sm hidden md:flex mt-4">
+            <div class="card-primary py-2 px-4 rounded-full">P2P Connections</div>
+            <div class="card-primary py-2 px-4 rounded-full">Travel Data Standards</div>
+            <div class="card-primary py-2 px-4 rounded-full">Multisig-Wallets</div>
+            <div class="card-primary py-2 px-4 rounded-full">Smart Contracts</div>
+            <div class="card-primary py-2 px-4 rounded-full">AI Infrastructure</div>
+        </div>
+    </div>
     <div
         x-data="{}"
         x-init="$nextTick(() => {
@@ -6,7 +18,7 @@
             ul.insertAdjacentHTML('afterend', ul.outerHTML);
             ul.nextSibling.setAttribute('aria-hidden', 'true');
         })"
-        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+        class="mt-8 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
     >
         <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-6 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
             <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/aerticket.svg" alt="aerticket logo"></li>
