@@ -1,112 +1,131 @@
 ---
-title: Companies shaping the web3 travel ecosystem 
-description: Meet the travel and travel tech companies integrated into the Camino Network - the community driving innovation and shaping the future of travel through web3 technologies.
-layout: default
+title:          Blockchain use cases in Travel and web3 touristic applications.
+description:    Explore top blockchain use cases in travel and innovative Web3 touristic decentralized applications. Web3 loyalty, cross-border payments, RWA, tokenization.
+layout:         default
+keywords:       blockchain, use cases
 ---
 
 <div class="hero-new">
     <div class="flex flex-col md:flex-row w-full items-center" data-sal="zoom-out">
         <div class="text-center md:text-left w-full" data-sal="zoom-out" data-sal-delay="250">
             <div class="text-4xl md:text-5xl xl:text-6xl font-headline font-medium">
-                Companies shaping the <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">web3</span> travel ecosystem
+                Blockchain Use Cases in Travel
             </div>
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
-                Meet the travel and travel tech companies integrated into the Camino Network - the community driving innovation and shaping the future of travel through web3 technologies.
+                B2B and B2C travel applications built on top of Camino Network 
             </p>
+            <a href="{{site.partners}}" target="_blank" class="button">Builders ↗</a>
         </div>
-        {% image "./src/static/images/glas/network-partners.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
+        {% image "./src/static/images/glas/user-shield.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
     </div>
 </div>
 
 <div class="pb-12 pt-12 md:pb-24 md:pt-0">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto flex flex-col gap-8">
         {% for s in collections.spotlights | reverse %}
-        <a href="{{s.url}}" class="card-primary rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex items-start ">
-            {% image s.data.partnerPageImg, s.data.title, "h-full w-1/3 flex-shrink-0", "h-full object-cover" %}
-            <div class="w-full p-6">
-                <div class="text-sm uppercase text-caminoSky mb-2">
-                    Builders Spotlight – <span class="font-semibold">{{s.data.company}}</span>
+        <a href="{{s.url}}" class="card rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex flex-col md:flex-row items-start">
+            {% image s.data.partnerPageImg, s.data.title, "w-full md:w-2/5 h-40 md:h-full flex-shrink-0 border-r border-gray-700", "h-full object-cover" %}
+            <div class="w-full p-6 md:p-8">
+                <div href="https://foundation.camino.network/update-june-12-2024/" target="_blank" class="bg-gradient-to-r from-primary/50 to-secondary/50 rounded-full px-3 py-1 text-wrap inline-block font-medium mb-4 uppercase">
+                    {{s.data.company}}
                 </div>
-                <div class="text-xl md:text-2xl font-headline font-medium">{{s.data.partnerPageText}}</div>
+                <div class="text-subheadline">{{s.data.partnerPageText}}</div>
             </div>
         </a>
         {% endfor %}
     </div>
 </div>
 
-<div class="pb-12 md:pb-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 items-stretch">
-
-        <!-- Pull a partners that are validators -->
-        {% for y in partners.data | sort(attribute='attributes.companyName') %}
-        {% set x = y.attributes %}
-        {% if x.isConsortiumMember and x.companyShortDescription %}
-
-        {% if x.companyLongDescription %}
-
-        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
-            <div class="bg-gradient-to-r bg-accent  text-gray-950 uppercase text-xs px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
-            {% set partnerLogoLightHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightHash, partnerAltLightHash, "md:group-hover:hidden md:group-focus:hidden  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            {% set partnerLogoColorHash = "https://api.strapi.camino.network/" + x.companyLogoColor.data.attributes.url %}
-            {% set partnerAltColorHash = x.companyName + " - Logo" %}
-            {% image partnerLogoColorHash, partnerAltColorHash, "hidden md:group-hover:block md:group-focus:block  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="md:group-hover:text-gray-800 md:group-focus:text-gray-800 font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
-        </a>
-
-        {% else %}
-
-        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800">
-            <div class="bg-gradient-to-r bg-accent  text-gray-950 uppercase text-xs px-3 py-2 absolute top-0 right-0 rounded-bl-2xl font-medium">Validator</div>
-            {% set partnerLogoLightNoDescriptionHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightNoDescriptionHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightNoDescriptionHash, partnerAltLightNoDescriptionHash, " max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
+<div class="py-6 mb-16" x-data="{ activeTab: 'tab1' }">
+    <div class="text-headline text-center mb-8">
+        Companies shaping the <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">web3</span> travel ecosystem
+    </div>
+    <div class="flex max-w-screen-xl px-8 md:px-4 mx-auto gap-2 md:gap-4 flex-wrap items-center justify-center mb-12">
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab1'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab1' }">
+            <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M22 19V8.35c0-.82-.5-1.55-1.26-1.86l-8-3.2c-.48-.19-1.01-.19-1.49 0l-8 3.2C2.5 6.8 2 7.54 2 8.35V19c0 1.1.9 2 2 2h3v-9h10v9h3c1.1 0 2-.9 2-2Zm-11 0H9v2h2v-2Zm2-3h-2v2h2v-2Zm2 3h-2v2h2v-2Z"/></svg>              
+            <div class="">Distribution</div>
         </div>
-
-        {% endif %}
-
-        {% endif %}
-        {% endfor %}
-
-        <!-- Pull a partners that are not validators -->
-        {% for y in partners.data | sort(attribute='attributes.companyName') %}
-        {% set x = y.attributes %}
-        {% if x.isConsortiumMember == false and x.companyShortDescription  %}
-
-        {% if x.companyLongDescription %}
-
-        <a href="/partner/{{x.companyName | slugify}}" class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800 hover:border-caminoSky md:hover:bg-caminoSky md:focus:bg-caminoSky transition-colors">
-            {% set partnerLogoLightNoValidatorHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightNoValidatorHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightNoValidatorHash, partnerAltLightNoValidatorHash, "md:group-hover:hidden md:group-focus:hidden  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            {% set partnerLogoColorNoValidatorHash = "https://api.strapi.camino.network/" + x.companyLogoColor.data.attributes.url %}
-            {% set partnerAltColorNoValidatorHash = x.companyName + " - Logo" %}
-            {% image partnerLogoColorNoValidatorHash, partnerAltColorNoValidatorHash, "hidden md:group-hover:block md:group-focus:block  max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="md:group-hover:text-gray-800 md:group-focus:text-gray-800 font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 md:group-hover:text-gray-700 md:group-focus:text-gray-700 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
-        </a>
-
-        {% else %}
-
-        <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 group relative rounded-2xl p-6 text-sm overflow-hidden border border-gray-800">
-            {% set partnerLogoLightNoValidatorNoDescriptionHash = "https://api.strapi.camino.network/" + x.companyLogoLight.data.attributes.url %}
-            {% set partnerAltLightNoValidatorNoDescriptionHash = x.companyName + " - Logo" %}
-            {% image partnerLogoLightNoValidatorNoDescriptionHash, partnerAltLightNoValidatorNoDescriptionHash, " max-w-[128px]", "object-contain object-left max-w-[128px] h-12 mb-2"%}
-            <div class="font-headline text-xl leading-6 mb-2 font-semibold">{{x.companyName}}</div>
-            <div class="text-gray-400 mb-2 uppercase text-xs font-medium tracking-wider">{{x.companyCountry}}</div>
-            <div class="text-gray-300 mb-2 line-clamp-3">{{x.companyShortDescription}}</div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab2'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab2' }">
+            <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M9 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8Zm0 11.5c-.55 0-1-.45-1-1v-4H6.75c-.41 0-.75-.34-.75-.75S6.34 9 6.75 9h4.5c.41 0 .75.34.75.75s-.34.75-.75.75H10v4c0 .55-.45 1-1 1ZM20.25 3.75l1.75.79a.5.5 0 0 1 0 .91l-1.75.79L19.46 8a.5.5 0 0 1-.91 0l-.79-1.75L16 5.46a.5.5 0 0 1 0-.91l1.75-.79.79-1.76a.5.5 0 0 1 .91 0l.8 1.75Zm0 14 1.75.79a.5.5 0 0 1 0 .91l-1.75.79-.79 1.76a.5.5 0 0 1-.91 0l-.79-1.75-1.76-.79a.5.5 0 0 1 0-.91l1.75-.79.79-1.76a.5.5 0 0 1 .91 0l.8 1.75Z"/></svg>              
+            <div class="">Tokenization</div>
         </div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab3'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab3' }">
+            <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42ZM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7Zm11.77 8.27-3.92 3.92c-.2.2-.51.2-.71 0l-3.92-3.92a2.53 2.53 0 0 1-.67-2.34c.19-.88.89-1.61 1.76-1.84.94-.25 1.85.04 2.44.65l.75.72.73-.73a2.503 2.503 0 0 1 3.54 3.54Z"/></svg>              
+            <div class="">Loyalty</div>
+        </div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab4'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab4' }">
+            <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M3 6h13c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1s.45 1 1 1Zm12 11h2v-3h.18c.63 0 1.1-.58.98-1.2l-1-5c-.09-.46-.5-.8-.98-.8H2.82c-.48 0-.89.34-.98.8l-1 5c-.12.62.35 1.2.98 1.2H2v5c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-5h4v3Zm-6 1H4v-4h5v4Z"/><path d="M22 18h-2v-2c0-.55-.45-1-1-1s-1 .45-1 1v2h-2c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1v-2h2c.55 0 1-.45 1-1s-.45-1-1-1Z"/></svg>              
+            <div class="">Ancillaries</div>
+        </div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab5'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab5' }">
+            <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M18.06 2.83c-1.15-.77-2.46-1.32-3.86-1.61-.62-.12-1.2.35-1.2.99 0 .46.31.88.76.97 1.17.23 2.26.7 3.21 1.34.39.26.9.19 1.23-.14.46-.45.39-1.2-.14-1.55ZM11 2.21c0-.64-.58-1.11-1.2-.99-1.4.29-2.71.84-3.86 1.61-.52.35-.59 1.1-.15 1.54.33.33.84.4 1.23.14.96-.64 2.04-1.1 3.21-1.34.46-.08.77-.5.77-.96ZM4.38 5.79a1 1 0 0 0-1.54.15A10.66 10.66 0 0 0 1.23 9.8a1 1 0 0 0 .98 1.2c.46 0 .88-.31.97-.76.23-1.17.7-2.26 1.34-3.22.25-.38.18-.9-.14-1.23ZM21.79 11a1 1 0 0 0 .98-1.2c-.29-1.4-.84-2.7-1.61-3.86-.35-.52-1.1-.6-1.54-.15-.33.33-.4.84-.14 1.23.64.96 1.1 2.05 1.34 3.22.09.45.51.76.97.76ZM8 12.46l2.44 1.11 1.1 2.43a.5.5 0 0 0 .91 0l1.11-2.44 2.44-1.1a.5.5 0 0 0 0-.91l-2.44-1.11L12.46 8a.5.5 0 0 0-.91 0l-1.11 2.44L8 11.54c-.39.18-.39.74 0 .92Z"/><path d="M12 21a8.96 8.96 0 0 1-7.46-4H6c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-1.7c1.99 2.84 5.27 4.7 9 4.7 4.45 0 8.27-2.64 10-6.43a1.01 1.01 0 0 0-.69-1.39c-.45-.1-.93.11-1.12.54C18.77 18.83 15.64 21 12 21Z"/></svg>              
+            <div class="">Automation</div>
+        </div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab6'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab6' }">
+            <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M23 8v10c0 1.1-.9 2-2 2H5c-.55 0-1-.45-1-1s.45-1 1-1h16V8c0-.55.45-1 1-1s1 .45 1 1ZM4 16c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h12c1.66 0 3 1.34 3 3v7c0 1.1-.9 2-2 2H4Zm3-6c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3Z"/></svg>              
+            <div class="">Payment</div>
+        </div>
+    </div>
+    <div x-show="activeTab === 'tab1'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            {% image "./src/static/images/usecase-logos-distribution.png", "", "", "object-contain rounded-xl border border-gray-800" %}
+            <div class="">
+                <div class="font-headline font-medium text-2xl md:text-3xl xl:text-5xl">Distribution</div>
+                <p class="text-gray-300 mt-4 mb-6">The blockchain connectivity provided by Camino Messenger enables travel companies to develop new ways of distribution in the digital environment, leveraging fast transactions, full transparency of operations, and reduced amounts of data stored.</p>
+            </div>
+        </div>
+    </div>
+    <div x-show="activeTab === 'tab2'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="">
+                <div class="font-headline font-medium text-2xl md:text-3xl xl:text-5xl">Tokenization</div>
+                <p class="text-gray-300 mt-4 mb-6">Camino Network facilitates the tokenization of travel services via digital tokens representing ownership or rights over specific travel products. This approach allows for secure, transparent transactions, simplifies booking management, and automates processes.</p>
+            </div>
+            {% image "./src/static/images/usecase-logos-ticketing.png", "", "", "object-contain rounded-xl border border-gray-800" %}
+        </div>
+    </div>
+    <div x-show="activeTab === 'tab3'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            {% image "./src/static/images/usecase-logos-loyalty.png", "", "", "object-contain rounded-xl border border-gray-800" %}
+            <div class="">
+                <div class="font-headline font-medium text-2xl md:text-3xl xl:text-5xl">Loyalty</div>
+                <p class="text-gray-300 mt-4 mb-6">Camino Network enables the transformation of legacy loyalty programs into blockchain-based systems, where digital tokens represent loyalty points. This ensures secure and transparent rewards tracking, simplifies the redemption process, and allows for integration across services and verticals, increasing customer engagement and retention.</p>
+            </div>
+        </div>
+    </div>
+    <div x-show="activeTab === 'tab4'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="">
+                <div class="font-headline font-medium text-2xl md:text-3xl xl:text-5xl">Ancillaries</div>
+                <p class="text-gray-300 mt-4 mb-6">Camino Network provides new opportunities for companies to manage and sell ancillary services. Most of the manual processes associated with purchases and tracking can be automated with Smart Contracts, ensuring transparency in transactions and providing easy integrations across different travel platforms and verticals, boosting revenue and providing travelers with a higher degree of personalization.</p>
+            </div>
+            {% image "./src/static/images/usecase-logos-ancillaries.png", "", "", "object-contain rounded-xl border border-gray-800" %}
+        </div>
+    </div>
+    <div x-show="activeTab === 'tab5'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            {% image "./src/static/images/usecase-logos-automation.png", "", "", "object-contain rounded-xl border border-gray-800" %}
+            <div class="">
+                <div class="font-headline font-medium text-2xl md:text-3xl xl:text-5xl">Automation</div>
+                <p class="text-gray-300 mt-4 mb-6">Camino Network provides blockchain technology to automate repetitive and manual processes. Using Smart Contracts, tasks like booking confirmations, payments, and ticketing can be handled automatically with a high degree of accuracy and efficiency. This automation reduces human error, speeds up operations, and creates a smoother, more reliable experience for both companies and travelers.</p>
+            </div>
+        </div>
+    </div>
+    <div x-show="activeTab === 'tab6'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="">
+                <div class="font-headline font-medium text-2xl md:text-3xl xl:text-5xl">Payment</div>
+                <p class="text-gray-300 mt-4 mb-6">Camino Network enables new opportunities for travel payments. Blockchain-based instant and secure transactions eliminate delays and reduce transaction fees. They accelerate the payment process in a high-level security and transparency environment.</p>
+            </div>
+            {% image "./src/static/images/usecase-logos-payment.png", "", "", "object-contain rounded-xl border border-gray-800" %}
+        </div>
+    </div>
+</div>
 
-        {% endif %}
-
-        {% endif %}
-        {% endfor %}
+<div class="py-24 md:pt-24 md:pb-[32rem] bg-contain bg-bottom bg-no-repeat overflow-hidden" style="background-image: url(/static/images/glas/homepage-bg.svg);">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
+        <div class="text-headline mb-6 md:mb-12">Further Developer Resources</div>
+        <a href="{{site.partners}}" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Explore Partners</a>
+        <a href="/travel#contact" class="button-secondary ml-2 mb-4 md:mb-0">Suggest a Use Case</a>
     </div>
 </div>

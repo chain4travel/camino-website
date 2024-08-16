@@ -18,28 +18,14 @@ module.exports = {
                 caminoSky: "#B5E3FD",
             },
             animation: {
-                'spin-slow': 'spin 3s linear infinite',
-                'gradient-xy':'gradient-xy 3s ease infinite',
-                ["infinite-slider"]: "infiniteSlider 30s linear infinite",
+                  'infinite-scroll': 'infinite-scroll 60s linear infinite',
             },
             keyframes: {
-                'gradient-xy': {
-                    '0%, 100%': {
-                        'background-size':'400% 400%',
-                        'background-position': 'left center'
-                    },
-                    '50%': {
-                        'background-size':'200% 200%',
-                        'background-position': 'right center'
-                    }
-                },
-                infiniteSlider: {
-                    "0%": { transform: "translateX(0)" },
-                    "100%": {
-                      transform: "translateX(calc(-300px * 10))",
-                    },
-                },
-            }
+                'infinite-scroll': {
+                from: { transform: 'translateX(0)' },
+                to: { transform: 'translateX(-100%)' },
+                }
+            }                    
         },
         fontFamily: {
             'body': ['Inter, system-ui, sans-serif'],

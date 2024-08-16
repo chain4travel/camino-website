@@ -40,6 +40,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({'./node_modules/alpinejs/dist/cdn.js': './js/alpine.js',})
 
+  eleventyConfig.addPassthroughCopy({'./node_modules/css-doodle/css-doodle.min.js': './js/css-doodle.js',})
+
   eleventyConfig.addPassthroughCopy({'./node_modules/sal.js/dist/sal.js': './js/sal.js',})
   eleventyConfig.addPassthroughCopy({'./node_modules/sal.js/dist/sal.css': './sal.css',})
 

@@ -1,7 +1,8 @@
 ---
-title:          Horizons by Camino Network
-description:    With Horizons, you will stay informed about the rapid development, innovative features, decentralized applications launching on Camino Network and everything web3 in travel.
+title:          Recent blockchain and  web3 travel ecosystem news.
+description:    Follow the recent news from the blockchain and web3 travel ecosystem of Camino Network on community growth, new blockchain use cases, tech updates, and more.
 layout:         default
+keywords:       blockchain, travel, news
 ---
 
 <div class="hero-new">
@@ -22,23 +23,16 @@ layout:         default
 </div>
 
 <div class="pb-12 md:pb-24">
-    <div class="mb-8 text-2xl font-medium text-center font-headline md:text-3xl">
-        Recent articles
-    </div>
     <div class="grid max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-8">
-
         {% for post in collections.blogposts | sort(attribute='data.order') %}
-            <div class="col-span-12 md:col-span-4">
-                <a href="/{{post.data.permalink}}" class="block overflow-hidden rounded-2xl card-primary">
-                    {% image post.data.heroImage, "", "", "w-full object-contain -mt-24" %}
-                    <div class="p-4 -mt-10 md:p-8">
-                        <div class="mb-3 text-xl font-medium font-headline md:text-3xl md:line-clamp-2">{{post.data.title}}</div>
-                        <p class="mb-3 text-gray-400">{{post.data.postDate}}</p>
-                        <p class="text-gray-200 line-clamp-2">{{post.data.description}}</p>
-                    </div>
-                </a>
+        <a href="/{{post.data.permalink}}" class="col-span-12 md:col-span-4 block overflow-hidden rounded-2xl card hover:border-primary transition-colors">
+            {% image post.data.heroImage, "", "", "w-full object-contain -my-4 md:-my-8" %}
+            <div class="p-4 md:p-8">
+                <p class="mb-3 text-gray-400">{{post.data.postDate}}</p>
+                <div class="mb-3 text-title md:line-clamp-2">{{post.data.title}}</div>
+                <p class="text-gray-400 line-clamp-2">{{post.data.description}}</p>
             </div>
+        </a>
         {% endfor %}
-        
     </div>
 </div>

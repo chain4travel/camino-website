@@ -1,45 +1,47 @@
-<div id="contact" class="relative py-12 text-white bg-bottom bg-no-repeat bg-contain md:py-24" id="contactForm" style="background-image: url(/static/images/background/blocks-bottom.jpg);">
-    <div class="items-center max-w-screen-xl px-8 mx-auto md:px-4 lg:flex">
-        <div class="lg:w-1/2 lg:pr-24">
-        <h2 class="text-2xl font-medium text-center font-headline md:text-5xl md:text-left">Get in touch</h2>
-        <p class="my-8 text-lg">
-            If you'd like more information about Camino Network, please get in touch. We would love to hear from you!
-        </p>
-        </div>
-        <div class="relative lg:w-1/2">
-        <form name="caminoContactForm" method="POST" action="/contact-success" data-netlify="true" netlify-honeypot="bot-field" class="relative block p-4 mx-auto shadow-lg card md:p-8 rounded-3xl">
-            <p class="hidden">
-            <label>
-                Don't fill this out if you're human: <input name="bot-field" />
-            </label>
+<div id="contact">
+    <div class="relative py-12 md:py-24 text-white bg-bottom bg-no-repeat bg-contain" id="contactForm" style="background-image: url(/static/images/background/blocks-bottom.jpg);">
+        <div class="items-center max-w-screen-xl px-8 mx-auto md:px-4 lg:flex">
+            <div class="lg:w-1/2 lg:pr-24">
+            <h2 class="text-headline text-center md:text-left">Get in Touch</h2>
+            <p class="my-8 text-lg">
+                Discover what Camino Network can do for you. Contact us for more information!
             </p>
-            <div>
-                <label class="">Your Name:
-                    <input required placeholder="Your name ..." type="text" name="name" class="block w-full mt-1 text-white placeholder-white border rounded bg-white/10 border-white/20 focus:ring-2 focus:ring-offset-gray-900 focus:ring-secondary" />
+            </div>
+            <div class="relative lg:w-1/2">
+            <form name="caminoContactForm" method="POST" action="/contact-success" data-netlify="true" netlify-honeypot="bot-field" class="relative block p-4 mx-auto shadow-lg card md:p-8 rounded-3xl">
+                <p class="hidden">
+                <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
                 </label>
+                </p>
+                <div>
+                    <label class="">Your name:
+                        <input required placeholder="Your name and surname ..." type="text" name="name" class="block w-full mt-1 text-white placeholder-gray-500 border rounded bg-white/10 border-white/20 focus:ring-2 focus:ring-offset-gray-900 focus:ring-secondary" />
+                    </label>
+                </div>
+                <p class="mt-4">
+                <label class="">Your email:
+                    <input required placeholder="Your email address ..." type="email" name="email" class="block w-full mt-1 text-white placeholder-gray-500 border rounded bg-white/10 border-white/20 focus:ring-2 focus:ring-offset-gray-900 focus:ring-secondary" />
+                </label>
+                </p>
+                <p class="mt-4">
+                <label class="">Message:
+                    <textarea required placeholder="Hi Camino Network, ..." name="message" class="block w-full mt-1 text-white placeholder-gray-500 border rounded resize-none h-36 bg-white/10 border-white/20 focus:ring-2 focus:ring-offset-gray-900 focus:ring-secondary"></textarea>
+                </label>
+                </p>
+                <p class="mt-4">
+                <div class="flex text-base">
+                    <input required type="checkbox" name="agreement" id="agreement" class="w-6 h-6 mt-2 rounded cursor-pointer bg-dark border-primary text-primary focus:ring-primary focus:ring-offset-dark">
+                    <label for="agreement" class="ml-4 text-sm text-gray-400">I agree to the <a class="underline" href="/privacy-policy">privacy policy</a> and I consent to being contacted by Camino Network via email. I agree to the storage of my transmitted data for the required period of time.</label>
+                </div>
+                </p>
+                <p>
+                <div class="text-center">
+                    <button class="w-full mt-6 text-center button" type="submit">Send</button>
+                </div>
+                </p>
+            </form>
             </div>
-            <p class="mt-4">
-            <label class="">Your Email:
-                <input required placeholder="Your email address ..." type="email" name="email" class="block w-full mt-1 text-white placeholder-white border rounded bg-white/10 border-white/20 focus:ring-2 focus:ring-offset-gray-900 focus:ring-secondary" />
-            </label>
-            </p>
-            <p class="mt-4">
-            <label class="">Message:
-                <textarea required placeholder="Your question ..." name="message" class="block w-full mt-1 text-white placeholder-white border rounded resize-none h-36 bg-white/10 border-white/20 focus:ring-2 focus:ring-offset-gray-900 focus:ring-secondary"></textarea>
-            </label>
-            </p>
-            <p class="mt-4">
-            <div class="flex text-base">
-                <input required type="checkbox" name="agreement" id="agreement" class="w-6 h-6 mt-2 rounded cursor-pointer bg-dark border-primary text-primary focus:ring-primary focus:ring-offset-dark">
-                <label for="agreement" class="ml-4 text-sm text-gray-400">I agree to the <a class="underline" href="/privacy-policy">privacy policy</a> and I consent to being contacted by Camino Network via email. I agree to the storage of my transmitted data for the required period of time.</label>
-            </div>
-            </p>
-            <p>
-            <div class="text-center">
-                <button class="w-full mt-6 text-center button" type="submit">Send</button>
-            </div>
-            </p>
-        </form>
         </div>
     </div>
 </div>

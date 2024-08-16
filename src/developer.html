@@ -1,8 +1,9 @@
 ---
-title:          Developer-friendly
-description:    Start building in the web3 ecosystem made for travel.
+title:          Web3 travel tech developers building on Camino Network.
+description:    Join the web3 travel tech and blockchain developers building travel products and decentralized travel applications on Camino Network infrastructure. 
 layout:         default
 placement:      developers
+keywords:       Web3, travel tech, developers
 ---
 
 <div class="hero-new">
@@ -12,12 +13,12 @@ placement:      developers
                 Developers
             </div>
             <div class="text-4xl xl:text-7xl font-headline font-medium my-3 md:my-6">
-                Build the future of travel
+                Build the Future of Travel
             </div>
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
                 The Camino community is building a new travel ecosystem to shape the future of the industry with new efficient solutions creating personalized travel experiences for billions of people around the world.
             </p>
-            <div class="flex justify-center items-center">
+            <div class="inline-flex justify-center md:justify-left">
                 <a href="https://hexens.io/audits#camino" class="button" target="_blank" rel="noopener noreferrer">Security Audit</a>
                 <a class="button-secondary ml-2" href="{{site.docs}}" target="_blank" rel="noopener noreferrer">Documentation</a>
             </div>
@@ -28,14 +29,74 @@ placement:      developers
 
 {% include "logo-slider.html" %}
 
-<div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center justify-center">
-        <div class="col-span-12 md:col-span-5 overflow-hidden rounded-lg">
+<div class="py-12 md:py-32">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="text-headline text-center">
+            Blockchain Tech Stack for the Travel Industry
+        </div>
+        <div class="grid grid-cols-12 gap-6 mt-16">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 card bg-gradient-to-b from-gray-950 to-gray-900 p-6 rounded-2xl flex flex-col justify-between">
+                <div class="flex gap-2 group">
+                    {% image "./src/static/images/glas/settings-icon.png", "", "flex-shrink-0", "size-12 lg:size-16 object-contain group-hover:size-20 group-hover:animate-spin transition-all" %}
+                    <div>
+                        <div class="text-title">Platform (P) Chain</div>
+                        <p class="text-gray-400">Validator Coordination, Token Bonding / Locking, Subnet Management</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 w-full h-px my-8 md:my-4 lg:my-0"></div>
+                <div class="flex gap-2 group">
+                    {% image "./src/static/images/glas/settings-icon.png", "", "flex-shrink-0", "size-12 lg:size-16 object-contain group-hover:size-20 group-hover:animate-spin transition-all" %}
+                    <div>
+                        <div class="text-title">Contract (C) Chain</div>
+                        <p class="text-gray-400">EVM Compatible, Deployment & Execution of Smart-Contracts</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 w-full h-px my-8 md:my-4 lg:my-0"></div>
+                <div class="flex gap-2 group">
+                    {% image "./src/static/images/glas/settings-icon.png", "", "flex-shrink-0", "size-12 lg:size-16 object-contain group-hover:size-20 group-hover:animate-spin transition-all" %}
+                    <div>
+                        <div class="text-title">Exchange (X) Chainn</div>
+                        <p class="text-gray-400">Direct Acyclic Graph (DAG) Consensus, Fast Transactions, Manage Assets</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 card-primary rounded-2xl overflow-hidden md:overflow-visible group">
+                {% image "./src/static/images/glas/messenger-layers-2.png", "", "", "w-full px-6 object-contain -mt-16 group-hover:scale-110 transition-all" %}
+                <div class="p-8 pt-0">
+                    <div class="text-headline mb-2">Camino Messenger</div>
+                    <p class="text-gray-400">Messenger Protocol, Camino Bot, Travel Data Standards</p>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-12 lg:col-span-4 rounded-2xl flex flex-col justify-between gap-3 md:gap-6">
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full text-title mb-1">KYC / KYB verified actors</div>
+                    {% image "./src/static/images/cardImages/generic-03.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full text-title mb-1">PoSA consensus model</div>
+                    {% image "./src/static/images/cardImages/generic-01.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full text-title mb-1">Fixed transaction fee</div>
+                    {% image "./src/static/images/cardImages/generic-02.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+                <div class="w-full relative overflow-hidden flex gap-2 items-center card-gradient-primary h-full p-4 lg:p-8 rounded-2xl group hover:border-caminoSky">
+                    <div class="drop-shadow-lg w-full text-title mb-1">Multisignature wallets</div>
+                    {% image "./src/static/images/cardImages/generic-04.png", "", "", "absolute top-0 bottom-0 h-full object-cover -right-1/2 -z-50 opacity-75 group-hover:scale-150 transition-all" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-10 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-5 overflow-hidden rounded-lg">
             {% image "./src/static/images/audit-pass.png", "", "", "w-full object-contain" %}
         </div>
-        <div class="col-span-12 md:col-span-6 md:col-start-7 text-center md:text-leftz">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
-                Camino Network successfully passes Hexens security audit
+        <div class="col-span-12 md:col-span-6 md:col-start-7">
+            <div class="text-headline">
+                Security Audit by Hexens
             </div>
             <p class="text-gray-300 my-4 md:my-6">
                 In the pursuit of transparency, enabling informed decisions, and fostering continuous improvement, Camino Network proudly presents the Audit Report by Hexens. Dive in to discover the details.
@@ -53,7 +114,7 @@ placement:      developers
 
     {% set cardFirstImage = "generic-03" %}
     {% set cardFirstTitle = "Community" %}
-    {% set cardFirstText = "Join the community of devs, travel experts and travelers for collaboration and networking." %}
+    {% set cardFirstText = "Join the Community of devs, travel experts and travelers for collaboration and networking." %}
     {% set cardFirstLinkLabel = "" %}
 
     {% set cardSecondImage = "generic-05" %}
@@ -76,11 +137,11 @@ placement:      developers
 
 {% include "section_developerstats.html" %}
 
-<div class="py-12 md:py-24">
+<div class="py-10 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
-                Tech stack and dev tools
+            <div class="text-headline">
+                Tech Stack and Dev Tools
             </div>
             <ul class="list-disc pl-4 my-4 md:my-6 text-gray-300">
                 <li>Core development language is GO</li>
@@ -97,58 +158,19 @@ placement:      developers
     </div>
 </div>
 
-<div class="py-12 md:py-24 bg-contain bg-bottom bg-no-repeat" style="background-image: url(/static/images/background/background-globe.jpg);">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
-
-        <div class="font-headline font-medium text-center text-2xl xl:text-5xl mb-12">
-            Tech stack specialized for the travel industry
-        </div>
-
-        <div class="grid grid-cols-12 gap-3 md:gap-6 text-center">
-            <div class="col-span-6 xl:col-span-4 card p-4 md:p-6 rounded-3xl transition-transform hover:scale-110">
-                {% image "./src/static/images/schema-chain-multi.png", "", "", "mx-auto w-48 object-contain" %}
-                <div class="font-headline font-medium text-xl md:text-2xl mb-2">Platform (P) Chain</div>
-                <p class="text-gray-300 text-xs md:text-base">
-                    Validator Coordination <br>
-                    Token Bonding / Locking <br>
-                    Subnet Management
-                </p>
-            </div>
-            <div class="col-span-6 xl:col-span-4 card p-4 md:p-6 rounded-3xl transition-transform hover:scale-110">
-                {% image "./src/static/images/schema-chain-multi.png", "", "", "mx-auto w-48 object-contain" %}
-                <div class="font-headline font-medium text-xl md:text-2xl mb-2">Contract (C) Chain</div>
-                <p class="text-gray-300 text-xs md:text-base">
-                    EVM Compatible <br>
-                    Deployment & Execution  <br>
-                    of Smart-Contracts
-                </p>
-            </div>
-            <div class="col-span-6 xl:col-span-4 card p-4 md:p-6 rounded-3xl transition-transform hover:scale-110">
-                {% image "./src/static/images/schema-chain-single.png", "", "", "mx-auto w-48 object-contain" %}
-                <div class="font-headline font-medium text-xl md:text-2xl mb-2">Exchange (X) Chain</div>
-                <p class="text-gray-300 text-xs md:text-base">
-                    Direct Acyclic Graph (DAG) Consensus <br>
-                    Fast Transactions <br>
-                    Manage Assets
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="py-12 md:py-24">
+<div class="pb-10 md:pb-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
         <div class="col-span-12 md:col-span-5">
             {% image "./src/static/images/glas/monitor.png", "", "", "mx-auto w-full object-contain" %}
         </div>
         <div class="md:col-start-7 col-span-12 md:col-span-6">
-            <div class="font-headline font-medium text-2xl xl:text-5xl">
+            <div class="text-headline">
                 Camino Messenger 
             </div>
             <p class="text-gray-300 my-4 md:my-6">
                 Camino Messenger is a sleek, fast, and cost-effective communication platform for B2B travel distribution. Built on top of Camino Network, it streamlines peer-to-peer interactions with the help of bots, standardized message types, micropayments, and microservices, enabling personalized offers at scale.
             </p>
-            <a href="/community#contact" class="button">Request a demo</a>
+            <a href="/community#contact" class="button">Request a Demo</a>
         </div>
     </div>
 </div>
@@ -156,7 +178,7 @@ placement:      developers
 {% include "testimonial-four.html" %}
 
 <!-- CardRow Start -->
-    {% set cardRowTitle = "Network services" %}
+    {% set cardRowTitle = "Network Services" %}
     {% set cardRowParagraph = "" %}
     {% set cardRowSubtitle = "" %}
     {% set cardRowBgImage = "" %}
@@ -173,7 +195,7 @@ placement:      developers
     {% set cardSecondLinkLabel = "" %}
 
     {% set cardThirdImage = "generic-11" %}
-    {% set cardThirdTitle = "Data storage" %}
+    {% set cardThirdTitle = "Data Storage" %}
     {% set cardThirdText = "Creating travel products requires low-cost data storage. For this purpose, a cryptographic data storage implementation based on Swarm will be provided. This ensures flexibility for changing data and the selective disclosure of information to parties off-chain" %}
     {% set cardThirdLinkLabel = "" %}
 
@@ -185,18 +207,13 @@ placement:      developers
     {% include "cardRow.html" %}
 <!-- CardRow End -->
 
-<div class="py-24 md:pt-24 md:pb-[32rem] bg-cover md:bg-contain bg-bottom bg-no-repeat" style="background-image: url(/static/images/background/globe-bottom.jpg);">
+<div class="py-24 md:pt-24 md:pb-[32rem] bg-contain bg-bottom bg-no-repeat overflow-hidden" style="background-image: url(/static/images/glas/homepage-bg.svg);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
-
-        <div class="font-headline font-medium text-2xl xl:text-5xl mb-6 md:mb-12">
-            Further developer resources
-        </div>
-
+        <div class="text-headline mb-6 md:mb-12">Further Developer Resources</div>
         <a href="{{site.docs}}" class="button mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Documentation</a>
-        <a href="{{site.github}}" class="button ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="{{site.discord}}" class="button ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Discord</a>
-        <a href="/bugbounty" class="button ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Bug Bounty</a>
-        <a href="/grant-program" class="button ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Grant Program</a>
-
+        <a href="{{site.github}}" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="{{site.discord}}" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="/bugbounty" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Bug Bounty</a>
+        <a href="/grant-program" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Grant Program</a>
     </div>
 </div>

@@ -1,17 +1,17 @@
 <section>
-    <div id="sectionUseCases" class="font-headline font-medium text-2xl xl:text-5xl mb-8 text-center">
-        Use cases on Camino
+    <div id="sectionUseCases" class="text-headline mb-8 text-center">
+        Use Cases on Camino
     </div>
     <div :class="{'h-[600px] lg:h-[800px]' : !useCasesisOpen}" class="relative md:p-6 overflow-hidden" x-data="{ useCasesisOpen: false }">
     <div class="grid grid-cols-12 gap-4 md:gap-8 pb-24">
         <div class="absolute z-10 bottom-0 flex justify-center left-0 right-0 pt-8 bg-gradient-to-t from-gray-950 to-transparent">
-            <a href="#sectionUseCases" class="button bottom-0" x-text="useCasesisOpen ? 'Close' : 'Show more'" @click="useCasesisOpen = !useCasesisOpen">Show more</a>
+            <a href="#sectionUseCases" class="button bottom-0" x-text="useCasesisOpen ? 'Close' : 'Show more'" @click="useCasesisOpen = !useCasesisOpen">Show More</a>
         </div>
         <div class="col-span-12 lg:col-span-4">
             {% for usecase in usecases %}
                 {% if usecase.col === "1" %}
                     <div class="p-6 md:p-8 card-primary rounded-3xl inline-block mb-6 transition-all hover:scale-105">
-                        <div class="font-headline text-xl md:text-3xl font-semibold">{{ usecase.title }}</div>
+                        <div class="text-title">{{ usecase.title }}</div>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph1 }}</p>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph2 }}</p>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph3 }}</p>
@@ -23,7 +23,7 @@
             {% for usecase in usecases %}
                 {% if usecase.col === "2" %}
                     <div class="p-6 md:p-8 card-primary rounded-3xl inline-block mb-6 transition-all hover:scale-105">
-                        <div class="font-headline text-xl md:text-3xl font-semibold">{{ usecase.title }}</div>
+                        <div class="text-title">{{ usecase.title }}</div>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph1 }}</p>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph2 }}</p>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph3 }}</p>
@@ -35,7 +35,7 @@
             {% for usecase in usecases %}
                 {% if usecase.col === "3" %}
                     <div class="p-6 md:p-8 card-primary rounded-3xl inline-block mb-6 transition-all hover:scale-105">
-                        <div class="font-headline text-xl md:text-3xl font-semibold">{{ usecase.title }}</div>
+                        <div class="text-title">{{ usecase.title }}</div>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph1 }}</p>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph2 }}</p>
                         <p class="text-gray-400 mt-4 text-base">{{ usecase.paragraph3 }}</p>
