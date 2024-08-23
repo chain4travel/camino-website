@@ -1,3 +1,4 @@
 [[redirects]]
   from = "/partner/*"
   to = "/partners"
+  status = 301
