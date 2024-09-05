@@ -1,6 +1,6 @@
 ---
-title:          Chain4Travel AG, Camino Network & Foundation
-description:    Chain4Travel AG, Camino Network, and the Camino Network Foundation are interconnected organizations working to merge blockchain technologies and the travel industry to establish healthy and efficient relations within the new web3 travel ecosystem.
+title:          Camino Network, Foundation and Chain4Travel
+description:    Camino Network, Camino Network Foundation and Chain4Travel are interconnected organizations working to merge blockchain technologies and the travel industry to establish healthy and efficient relations within the new web3 travel ecosystem.
 layout:         blog_layout
 permalink:      ecosystem-overview/
 socialImage:    social-overview
@@ -8,13 +8,6 @@ heroImage:      "./src/static/images/overview-blogpost.png"
 postDate:       June 27, 2024
 order:          0
 ---
-
-
-## Chain4Travel AG
-
-The founders of [Chain4Travel AG](https://chain4travel.com/) recognized the potential of blockchain technology in the travel industry and assembled a dedicated team to raise investments and build the world's first Layer 1 blockchain explicitly designed for travel. Ralf Usbeck, Thomas Stirnimann (current Chairman of the Council of the Camino Network Foundation), and Pablo Castillo possess decades of experience in the travel tech sector and identified the challenges faced by the industry, as well as the transformative potential of web3 technologies used in other sectors.
-
-> In 2021, the idea of Camino Network was launched as a collaborative network that enabled digital innovation in the global travel industry.
 
 ### Deep industry knowledge
 
@@ -31,6 +24,12 @@ Camino Network encourages collaboration between businesses, service providers, a
 ## Camino Network Foundation
 
 As Camino Network's development progressed, Chain4Travel AG initiated the [establishment of the Camino Network Foundation](https://www.travolution.com/news/suppliers/the-camino-network-foundation-partners-with-chain4travel-to-build-industry-first-blockchain-ecosystem/). The Camino Network Foundation is based in Switzerland and manages and governs Camino Network, ensuring alignment with the core principles of blockchain technology. The mission of the Camino Network Foundation is to develop the web3 travel ecosystem, enhancing travel technologies for all, through democratic and transparent relations within the network, fostering trust and collaboration among all participants in the travel ecosystem. The Camino Network Foundation has also taken charge of the finances, ensuring proper management.
+
+## Chain4Travel AG
+
+The founders of [Chain4Travel AG](https://chain4travel.com/) recognized the potential of blockchain technology in the travel industry and assembled a dedicated team to raise investments and build the world's first Layer 1 blockchain explicitly designed for travel. Ralf Usbeck, Thomas Stirnimann (current Chairman of the Council of the Camino Network Foundation), and Pablo Castillo possess decades of experience in the travel tech sector and identified the challenges faced by the industry, as well as the transformative potential of web3 technologies used in other sectors.
+
+> In 2021, the idea of Camino Network was launched as a collaborative network that enabled digital innovation in the global travel industry.
 
 ### Incentivizing participation
 
