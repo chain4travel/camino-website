@@ -223,6 +223,10 @@ details[open] summary.features::after {
   @apply font-medium font-headline text-lg md:text-xl lg:text-2xl
 }
 
+.text-subtitle {
+  @apply font-headline md:text-lg lg:text-xl
+}
+
 /* COOKIE BANNER */
 
 .termsfeed-com---palette-dark.termsfeed-com---nb {
