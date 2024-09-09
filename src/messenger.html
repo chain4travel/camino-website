@@ -125,51 +125,54 @@ keywords:       Travel distribution, messenger
             <div class="">Hotels & Tour Operators</div>
         </div>
         <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab2'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab2' }">
-            <div class="">Local Activity & Provider & Airlines</div>
+            <div class="">Local Activity Provider & Airlines</div>
         </div>
         <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-3 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="activeTab = 'tab3'" :class="{ 'active bg-primary pointer-events-none' : activeTab === 'tab3' }">
             <div class="">Charter Airlines & Distributors</div>
         </div>
     </div>
     <div x-show="activeTab === 'tab1'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
-        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 text-center">
-            <div>
-                {% image "./src/static/images/challenge-01.png", "", "", "object-contain w-1/3 mx-auto" %}
-                <div class="text-subheadline mb-4">Challenge:</div>
-                <p class="text-gray-300">Italian hotels seek to attract more German tourists to grow their bookings and increase revenue. To achieve this, they need a streamlined way to connect with German tour operators who can facilitate access to this specific market.</p>
-            </div>
-            <div>
-                {% image "./src/static/images/challenge-02.png", "", "", "object-contain w-1/3 mx-auto" %}
-                <div class="text-subheadline mb-4">Solution:</div>
-                <p class="text-gray-300">Camino Messenger is a free, easy-to-setup, and inexpensive platform. Hotels can connect with tour operators without complex software setups and start trading directly via the “accommodation” message type.</p>
+        <div class="card-primary p-6 md:p-12 rounded-2xl text-center">
+            {% image "./src/static/images/messenger-use-case-01.png", "", "", "object-contain mb-8" %}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <div class="text-subheadline mb-4">Challenge:</div>
+                    <p class="text-gray-300">Italian hotels seek to attract more German tourists to grow their bookings and increase revenue. To achieve this, they need a streamlined way to connect with German tour operators who can facilitate access to this specific market.</p>
+                </div>
+                <div>
+                    <div class="text-subheadline mb-4">Solution:</div>
+                    <p class="text-gray-300">Camino Messenger is a free, easy-to-setup, and inexpensive platform. Hotels can connect with tour operators without complex software setups and start trading directly via the “accommodation” message type.</p>
+                </div>
             </div>
         </div>
     </div>
     <div x-show="activeTab === 'tab2'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
-        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 text-center">
-            <div>
-                {% image "./src/static/images/challenge-01.png", "", "", "object-contain w-1/3 mx-auto" %}
-                <div class="text-subheadline mb-4">Challenge:</div>
-                <p class="text-gray-300">A surf school in Bali is looking to expand its reach and sell surf classes to a global audience of tourists. The school aims to attract tourists from various countries interested in surfing lessons during their stay in Bali.</p>
-            </div>
-            <div>
-                {% image "./src/static/images/challenge-02.png", "", "", "object-contain w-1/3 mx-auto" %}
-                <div class="text-subheadline mb-4">Solution:</div>
-                <p class="text-gray-300">Camino Messenger provides the surf school with a defined “activity” message type to seamlessly connect and trade with airlines that bring tourists to Bali. The surf school (supplier) gets higher sales, the airline (distributor) widens the range of services.</p>
+        <div class="card-primary p-6 md:p-12 rounded-2xl text-center">
+            {% image "./src/static/images/messenger-use-case-02.png", "", "", "object-contain mb-8" %}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <div class="text-subheadline mb-4">Challenge:</div>
+                    <p class="text-gray-300">A surf school in Bali is looking to expand its reach and sell surf classes to a global audience of tourists. The school aims to attract tourists from various countries interested in surfing lessons during their stay in Bali.</p>
+                </div>
+                <div>
+                    <div class="text-subheadline mb-4">Solution:</div>
+                    <p class="text-gray-300">Camino Messenger provides the surf school with a defined “activity” message type to seamlessly connect and trade with airlines that bring tourists to Bali. The surf school (supplier) gets higher sales, the airline (distributor) widens the range of services.</p>
+                </div>
             </div>
         </div>
     </div>
     <div x-show="activeTab === 'tab3'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
-        <div class="card-primary p-6 md:p-12 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-16 text-center">
-            <div>
-                {% image "./src/static/images/challenge-01.png", "", "", "object-contain w-1/3 mx-auto" %}
-                <div class="text-subheadline mb-4">Challenge:</div>
-                <p class="text-gray-300">A charter airline company with 5 aircraft (from 6 to 20 passengers) operates from airports in DACH region. 50% of sale go through resellers. 50% — through direct marketing and recommendation. The airline aims to simplify payment processes and reduce complications from fees to last-minute changes and cancellations.</p>
-            </div>
-            <div>
-                {% image "./src/static/images/challenge-02.png", "", "", "object-contain w-1/3 mx-auto" %}
-                <div class="text-subheadline mb-4">Solution:</div>
-                <p class="text-gray-300">Connecting with Camino Messenger, the airline transforms the distribution flow. Smart contracts automate payments and eliminate disputes. Now, the free resources can be redirected toward new customer experiences and a stronger brand identity to increase direct sales.</p>
+        <div class="card-primary p-6 md:p-12 rounded-2xl text-center">
+            {% image "./src/static/images/messenger-use-case-03.png", "", "", "object-contain mb-8" %}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <div class="text-subheadline mb-4">Challenge:</div>
+                    <p class="text-gray-300">A charter airline company with 5 aircraft (from 6 to 20 passengers) operates from airports in DACH region. 50% of sale go through resellers. 50% — through direct marketing and recommendation. The airline aims to simplify payment processes and reduce complications from fees to last-minute changes and cancellations.</p>
+                </div>
+                <div>
+                    <div class="text-subheadline mb-4">Solution:</div>
+                    <p class="text-gray-300">Connecting with Camino Messenger, the airline transforms the distribution flow. Smart contracts automate payments and eliminate disputes. Now, the free resources can be redirected toward new customer experiences and a stronger brand identity to increase direct sales.</p>
+                </div>
             </div>
         </div>
     </div>
