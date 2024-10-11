@@ -21,6 +21,29 @@ keywords:       blockchain, use cases
 </div>
 
 <div class="pb-12 pt-12 md:pb-24 md:pt-0">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <h2 class="text-headline text-center mb-8">Builder Stories From Travel Un'chained 24</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {% for vid in tu24youtubevideos %}
+            <div class="card rounded-xl overflow-hidden">
+                <div class="aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/{{vid.id}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-headline text-xl/6 font-medium line-clamp-3 mb-4">{{vid.title}}</h3>
+                    <a href="{{vid.link}}" target="_blank" rel="noopener noreferrer" class="text-caminoSky hover:underline">Watch on youtube -></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center">
+            <a class="button w-full md:w-auto mt-8" href="https://www.youtube.com/playlist?list=PLDEyzD25DrB1QbaYIiChfk0c7zkSMRzbd" target="_blank" rel="noopener noreferrer">Watch all videos -></a>
+        </div>
+    </div>
+</div>
+
+<div class="pb-12 pt-12 md:pb-24 md:pt-0">
+    <h2 class="text-headline text-center mb-8">Builder spotlights</h2>
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto flex flex-col gap-8">
         {% for s in collections.spotlights | reverse %}
         <a href="{{s.url}}" class="card rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex flex-col md:flex-row items-start">
@@ -35,6 +58,7 @@ keywords:       blockchain, use cases
         {% endfor %}
     </div>
 </div>
+
 
 <div class="py-6 mb-16" x-data="{ activeTab: 'tab1' }">
     <div class="text-headline text-center mb-8">
