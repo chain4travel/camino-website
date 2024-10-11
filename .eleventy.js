@@ -1,6 +1,7 @@
 const now = String(Date.now())
 const htmlmin = require('html-minifier')
 const Image = require("@11ty/eleventy-img")
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
 
@@ -63,6 +64,16 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("spotlights", function(collectionsSpotlights) {
     return collectionsSpotlights.getFilteredByGlob("./src/spotlights/*.html");
+  });
+
+  // Add date filter
+  eleventyConfig.addFilter("date", function(date, format) {
+    return DateTime.fromJSDate(date).toFormat(format);
+  });
+
+  // Add dateFormat filter
+  eleventyConfig.addFilter("dateFormat", function(date) {
+    return DateTime.fromJSDate(date).toFormat("MMMM d, yyyy");
   });
 
   // Minify html output

@@ -6,7 +6,7 @@ layout: default
     <img class="absolute -z-50 top-0 left-0 right-0 w-screen object-cover" src="/static/images/glas/homepage-bg-2.svg" alt="">
     <div class="mx-auto max-w-screen-lg px-8 md:px-4">
         <div class="my-3 text-base font-medium tracking-widest uppercase text-caminoSky font-headline md:text-xl md:my-6">
-            {{postDate}}
+            {{postDate | dateFormat}}
         </div>
         <div class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium font-headline">
             {{title}}

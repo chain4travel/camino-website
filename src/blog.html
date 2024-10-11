@@ -24,12 +24,12 @@ keywords:       blockchain, travel, news
 
 <div class="pb-12 md:pb-24">
     <div class="grid max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-8">
-        {% for post in collections.blogposts | sort(attribute='data.order') %}
-        <a href="/{{post.data.permalink}}" class="col-span-12 md:col-span-4 block overflow-hidden rounded-2xl card hover:border-primary transition-colors">
-            {% image post.data.heroImage, "", "", "w-full object-contain -my-4 md:-my-8" %}
-            <div class="p-4 md:p-8">
-                <p class="mb-3 text-gray-400">{{post.data.postDate}}</p>
-                <div class="mb-3 text-title md:line-clamp-2">{{post.data.title}}</div>
+        {% for post in collections.blogposts | sort(attribute='data.postDate') | reverse %}
+        <a href="/{{post.data.permalink}}" class="col-span-12 md:col-span-4 block overflow-hidden rounded-2xl hover:border-primary transition-colors {% if loop.first %}card-gradient-primary ring-4 ring-primary/50 {% else %}card{% endif %}">
+            <div class="p-4 md:p-8 relative">
+                {% if loop.first %}<div class="absolute bg-primary text-wrap px-3 py-2 top-0 right-0 rounded-bl-xl">New!</div>{% endif %}
+                <p class="mb-3 text-gray-400">{{ post.data.postDate | dateFormat }}</p>
+                <div class="mb-3 text-title md:line-clamp-3">{{post.data.title}}</div>
                 <p class="text-gray-400 line-clamp-2">{{post.data.description}}</p>
             </div>
         </a>
