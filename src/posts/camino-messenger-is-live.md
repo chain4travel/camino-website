@@ -4,7 +4,8 @@ description:    Connect by the end of 2024 and get a grant of 20 000 CAM tokens 
 layout:         blog_layout
 permalink:      camino-messenger-is-live/
 heroImage:      "./src/static/images/_header/camino-network-go-live.png"
-postDate:       2024-10-10
+socialImage:    social-messenger-live
+postDate:       2024-10-11
 order:          0
 ---
 
@@ -23,11 +24,11 @@ The Messenger abstracts blockchain for users. The system operates via the Partne
 
 ## Readme
 
-- [Product page ->](https://camino.network/messenger/)
-- [Tech Article ->](https://camino.network/camino-messenger-sets-the-global-standard-in-travel-data-management-and-distribution/)
-- [Business Article ->](https://chain4travel.com/camino-messenger-when-less-is-more/)
-- [Documentation and SDK ->](https://docs.camino.network/camino-messenger)
-- [Tech support channel ->](https://discord.gg/camino)
+- [Product page](https://camino.network/messenger/)
+- [Tech Article](https://camino.network/camino-messenger-sets-the-global-standard-in-travel-data-management-and-distribution/)
+- [Business Article](https://chain4travel.com/camino-messenger-when-less-is-more/)
+- [Documentation and SDK](https://docs.camino.network/camino-messenger)
+- [Tech support channel](https://discord.gg/camino)
 
 ## Unique Value for Early Adopters
 
