@@ -1,0 +1,177 @@
+[
+    {
+        "cat": "🎨 Art",
+        "description": "Platforms where digital artworks are created, bought, and sold, often as NFTs.",
+        "name": "OpenSea",
+        "nameplus": "A leading marketplace for buying, selling, and trading NFTs",
+        "namelink": "https://opensea.io/"
+    },
+    {
+        "cat": "🏘️ Crowdfunding",
+        "description": "Platforms that help raise funds for new projects and startups directly from investors using blockchain.",
+        "name": "Gitcoin",
+        "nameplus": "A platform for funding creative projects using blockchain technology",
+        "namelink": "https://www.gitcoin.co/"
+    },
+    {
+        "cat": "🤑 DeFi",
+        "description": "Decentralized Finance applications that provide financial services without central authorities.",
+        "name": "Uniswap",
+        "nameplus": "A decentralized exchange protocol for trading cryptocurrencies",
+        "namelink": "https://uniswap.org/"
+    },
+    {
+        "cat": "📈 Exchange",
+        "description": "Platforms where users can trade cryptocurrencies or digital assets.",
+        "name": "Coinbase",
+        "nameplus": "A popular cryptocurrency exchange platform",
+        "namelink": "https://www.coinbase.com/en-gb/"
+    },
+    {
+        "cat": "🏪 Front Ends",
+        "description": "User interfaces for interacting with blockchain applications.",
+        "name": "MetaMask",
+        "nameplus": "A widely used browser extension for interacting with Ethereum-based applications",
+        "namelink": "http://metamask.io/"
+    },
+    {
+        "cat": "🕹️ Games",
+        "description": "Interactive games built on blockchain technology, often incorporating NFTs or crypto rewards.",
+        "name": "Axie Infinity",
+        "nameplus": "A blockchain-based game where players can earn cryptocurrency by playing",
+        "namelink": "https://axieinfinity.com/"
+    },
+    {
+        "cat": "🛡️ Guilds",
+        "description": "Interactive games built on blockchain technology, often incorporating NFTs or crypto rewards.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🪪 Identity",
+        "description": "Systems that manage digital identities using blockchain.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🗂️ Indexer",
+        "description": "Services that organize and enable efficient querying of blockchain data.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🚦 Infrastructure",
+        "description": "Fundamental technology and systems that support the operation and growth of blockchain networks.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "📦 Libraries & Frameworks",
+        "description": "Collections of pre-written code that developers use to build blockchain applications more easily.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🌊 Liquid Staking",
+        "description": "A method of participating in blockchain network security using tokens without locking them up.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🏪 Marketplaces",
+        "description": "Online platforms where users buy, sell, or trade goods, services, or digital assets using blockchain.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "📊 Monitoring",
+        "description": "Tools that provide real-time monitoring and alerts for blockchain networks and assets.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🖼️ NFT",
+        "description": "Platforms to create, buy, sell, and trade Non-Fungible Tokens, unique digital assets.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "👛 Onramp & offramp",
+        "description": "Services that allow users to convert between fiat money and cryptocurrencies.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🔮 Oracles",
+        "description": "Services that feed real-world data into blockchains to enable smart contracts to execute with current data.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "💳 Payments",
+        "description": "Systems that enable users to make and receive payments in cryptocurrencies securely.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🌱 Regenerative project",
+        "description": "Blockchain projects aimed at promoting sustainability and positive environmental impacts.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🛡️ Security",
+        "description": "Tools and protocols designed to protect blockchain networks and applications from attacks.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "👋 Social",
+        "description": "Platforms that combine social networking features with blockchain technology.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "💵 Stablecoins",
+        "description": "Cryptocurrencies designed to have a stable value, often pegged to a fiat currency or commodity.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🗄️ Storage",
+        "description": "Solutions for securely storing blockchain data and digital assets.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "🛠️ Tooling",
+        "description": "Tools and utilities that assist developers in building and deploying blockchain applications.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    },
+    {
+        "cat": "👑 Treasury",
+        "description": "Services that manage the financial assets and holdings of a blockchain organization or project.",
+        "name": "name",
+        "nameplus": "nameplus",
+        "namelink": "namelink"
+    }
+]
