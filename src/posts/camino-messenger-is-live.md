@@ -22,13 +22,16 @@ Built on Camino Network, the blockchain designed by travel tech professionals fo
 
 The Messenger abstracts blockchain for users. The system operates via the Partner Configurator and Camino Bots, which are used to read the blockchain data and mint NFTs. This setup offers several benefits: a single, reliable source of truth, secure and transparent transactions backed by KYC and KYB, and low-cost payments. It also reduces the complexity of managing multiple APIs.
 
-## Readme
+---
 
-- [Product page](https://camino.network/messenger/)
-- [Tech Article](https://camino.network/camino-messenger-sets-the-global-standard-in-travel-data-management-and-distribution/)
-- [Business Article](https://chain4travel.com/camino-messenger-when-less-is-more/)
-- [Documentation and SDK](https://docs.camino.network/camino-messenger)
-- [Tech support channel](https://discord.gg/camino)
+## Readme
+- 📜 [Product page](https://camino.network/messenger/)
+- 📰 [Tech Article](https://camino.network/camino-messenger-sets-the-global-standard-in-travel-data-management-and-distribution/)
+- 👔 [Business Article](https://chain4travel.com/camino-messenger-when-less-is-more/)
+- 📄 [Documentation and SDK](https://docs.camino.network/camino-messenger)
+- 📣 [Tech support channel](https://discord.gg/camino)
+
+---
 
 ## Unique Value for Early Adopters
 
@@ -38,8 +41,8 @@ The Messenger abstracts blockchain for users. The system operates via the Partne
 
 To accelerate the integration, the Foundation encourages businesses to onboard a partner they already work with through traditional APIs. This setup allows seamless transition and faster testing with familiar entities. When you and your partner connect to Camino Messenger, each will receive a grant of 20,000 CAM, if completed in 2024. Once the data exchange begins, an additional 20,000 CAM tokens will be split between the two businesses, making the entire process financially attractive. Moreover, both companies will receive full onboarding support to ensure a smooth integration.
 
-## **How to Get Started in 3 Steps**
+## How to Get Started in 3 Steps
 
-1. Book [a demo call](https://outlook.office365.com/book/CaminoNetworkDeepDive1hourSamAnke@chain4travel.com/)
-2. Follow step-by-step instructions
-3. Start using Camino Messenger
+1. 📆 Book your [demo call](https://outlook.office365.com/book/CaminoNetworkDeepDive1hourSamAnke@chain4travel.com/)
+2. ➡️ Follow step-by-step instructions
+3. 🚀 Start using Camino Messenger
