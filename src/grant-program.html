@@ -23,23 +23,6 @@ keywords:       web3 grant
     </div>
 </div>
 
-<div class="py-10 md:py-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
-        <h2 class="text-3xl md:text-4xl font-headline font-medium mb-8 text-center">Categories we are looking for</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {% for program in grantprograms %}
-                {% if program.cat != "cat" %}
-                    <div class="card-primary rounded-2xl p-6 flex flex-col">
-                        <h3 class="text-title mb-3">{{ program.cat }}</h3>
-                        <p class="text-gray-300 mb-4 flex-grow">{{ program.description }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-
 <!-- CardRow Start -->
     {% set cardRowTitle = "How to Take-off" %}
     {% set cardRowParagraph = "" %}
@@ -68,6 +51,25 @@ keywords:       web3 grant
 
     {% include "cardRow.html" %}
 <!-- CardRow End -->
+
+<div class="py-10 md:py-24 overflow-hidden relative" :class="{'h-[560px] md:h-[720px]' : !programsOpen}" x-data="{ programsOpen: false }">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto" id="sectionPrograms">
+        <h2 class="text-3xl md:text-4xl font-headline font-medium mb-8 text-center">
+            Request for Proposals
+        </h2>
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+            {% for program in grantprograms %}
+                <div class="card rounded-2xl p-6 flex flex-col">
+                    <h3 class="text-title mb-3">{{ program.cat }}</h3>
+                    <p class="text-gray-300 mb-4 flex-grow text-sm md:text-base">{{ program.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="absolute z-10 bottom-0 flex justify-center left-0 right-0 pt-16 bg-gradient-to-t from-gray-950 to-transparent">
+            <a href="#sectionPrograms" class="button bottom-0" x-text="programsOpen ? 'Close' : 'Show more'" @click="programsOpen = !programsOpen">Show more</a>
+        </div>
+    </div>
+</div>
 
 <div class="py-10 md:py-24">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">

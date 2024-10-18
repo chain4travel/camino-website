@@ -224,7 +224,7 @@ details[open] summary.features::after {
 }
 
 .text-subtitle {
-  @apply font-headline md:text-lg lg:text-xl
+  @apply font-medium font-headline md:text-lg lg:text-xl
 }
 
 /* COOKIE BANNER */
