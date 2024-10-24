@@ -220,7 +220,7 @@ details[open] summary.features::after {
 }
 
 .text-title {
-  @apply font-medium font-headline text-lg md:text-xl lg:text-2xl/7
+  @apply font-medium font-headline text-lg/6 md:text-xl lg:text-2xl/7
 }
 
 .text-subtitle {
