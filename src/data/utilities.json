@@ -1,0 +1,37 @@
+[
+    {
+        "utility": "Transaction Fees",
+        "description": "Travel service providers like airlines and travel service distributors like OTAs use CAM to pay for on-chain transactions.",
+        "status": "Active"
+    },
+    {
+        "utility": "Validator Rewards",
+        "description": "Validators (travel-related companies) get CAM token rewards for validating transactions.",
+        "status": "Active"
+    },
+    {
+        "utility": "Exclusive Perks",
+        "description": "Travelers can access exclusive offers for holding and paying in CAM tokens.",
+        "status": "Active"
+    },
+    {
+        "utility": "Community Funding",
+        "description": "Web3 and travel tech can apply for a grant in CAM tokens to provide infrastructure, or dApps needed in the network.",
+        "status": "Active"
+    },
+    {
+        "utility": "Travel Payment",
+        "description": "Travel dApps can use CAM to pay for bookings.",
+        "status": "Active"
+    },
+    {
+        "utility": "Traveler Rewards",
+        "description": "Travelers can get rewards in CAM for using Camino Network dApps.",
+        "status": "In progress"
+    },
+    {
+        "utility": "Governance",
+        "description": "KYB-verified consortium member can submit proposals and vote.",
+        "status": "In progress"
+    }
+]

@@ -1,0 +1,34 @@
+<div class="w-full max-w-screen-xl mx-auto px-4">
+    <div
+        x-data="{}"
+        x-init="$nextTick(() => {
+            let ul = $refs.logos;
+            ul.insertAdjacentHTML('afterend', ul.outerHTML);
+            ul.nextSibling.setAttribute('aria-hidden', 'true');
+        })"
+        class="mt-8 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+    >
+        <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:m¨x-6 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse">
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/aerticket.svg" alt="aerticket logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/alpitour.svg" alt="alpitour logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/bentour.svg" alt="bentour logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/der.svg" alt="der logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/eurowings.svg" alt="eurowings logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/falkensteiner.svg" alt="falkensteiner logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/fraport.svg" alt="fraport logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/lufthansa.svg" alt="lufthansa logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/universal.svg" alt="universal logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/giata.svg" alt="giata logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/hexens.svg" alt="hexens logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/hlx.svg" alt="hlx logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/holidaycheck.svg" alt="holidaycheck logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/hotelplan.svg" alt="hotelplan logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/juniper.svg" alt="juniper logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/lcc.svg" alt="lcc logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/miles.svg" alt="miles logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/sixt.svg" alt="sixt logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/sunnycars.svg" alt="sunnycars logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/tui.svg" alt="tui logo"></li>
+        </ul>                
+    </div>
+</div>
