@@ -15,8 +15,8 @@ keywords:       blockchain, use cases
                 Travelers can pay for web3 travel products with CAM tokens, access exclusive offers, and redeem loyalty points. Travel businesses use the token to streamline operations, and access advanced B2B services within a decentralized network. 
             </p>
             <div class="flex items-center gap-4 justify-center md:justify-start">
-                <a href="#" target="_blank" class="button">Get CAM ↓</a>
-                <a href="#" target="_blank" class="button-secondary">Get Whitelisted ↓</a>
+                <a href="#airdrops" class="button">Get CAM ↓</a>
+                <a href="#token-form" class="button-secondary">Get Whitelisted ↓</a>
             </div>
         </div>
         <div class="relative h-full">
@@ -31,7 +31,7 @@ keywords:       blockchain, use cases
 
 <style>iframe{height:400px !important}</style>
 
-<div class="py-12 md:py-32 bg-cover" style="background-image: url(/static/images/background/blocks-bottom.jpg);">
+<div class="py-12 md:py-32 bg-cover" id="token-form" style="background-image: url(/static/images/background/blocks-bottom.jpg);">
     <div class="max-w-screen-xl px-4 mx-auto">
         <div class="bg-gradient-to-tr from-primary to-secondary p-2 rounded-3xl">
             <div style="height: 400px;" class="border-2 border-white/25 rounded-2xl overflow-hidden" data-tf-live="01JAYR1NJJ8GMXKEVWSVG4NANH"></div>
@@ -75,7 +75,7 @@ keywords:       blockchain, use cases
         <h2 class="text-headline font-medium mb-4 text-center">
             Own CAM. Own Global Travel.
         </h2>
-        <p class="max-w-prose mx-auto text-gray-300 text-center mb-8">
+        <p class="max-w-3xl mx-auto text-gray-300 text-center mb-8">
             CAM powers every transaction, linking travel industry players globally. From seamless payments to fueling business growth, CAM is the backbone of the travel ecosystem's future.
         </p>
         <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
@@ -93,45 +93,46 @@ keywords:       blockchain, use cases
     </div>
 </div>
 
-<!-- CardRow Start -->
-{% set cardRowTitle = "Airdrop Opportunities" %}
-{% set cardRowParagraph = "Participate in the CAM airdrop campaigns. Complete education and engagement tasks like joining social media, engaging with content, or helping beta test the network to qualify for rewards." %}
-{% set cardRowSubtitle = "" %}
-{% set cardRowBgImage = "" %}
+<div id="airdrops">
+    <!-- CardRow Start -->
+    {% set cardRowTitle = "Airdrop Opportunities" %}
+    {% set cardRowParagraph = "Participate in the CAM airdrop campaigns. Complete education and engagement tasks like joining social media, engaging with content, or helping beta test the network to qualify for rewards." %}
+    {% set cardRowSubtitle = "" %}
+    {% set cardRowBgImage = "" %}
 
-{% set cardFirstImage = "generic-14" %}
-{% set cardFirstTitle = "Zealy" %}
-{% set cardFirstText = "" %}
-{% set cardFirstLinkLabel = "Get CAMs ->" %}
-{% set cardFirstLink = "https://zealy.io/cw/caminonetwork" %}
+    {% set cardFirstImage = "generic-zealy" %}
+    {% set cardFirstTitle = " " %}
+    {% set cardFirstText = "" %}
+    {% set cardFirstLinkLabel = "Get CAMs ->" %}
+    {% set cardFirstLink = "https://zealy.io/cw/caminonetwork" %}
 
-{% set cardSecondImage = "generic-14" %}
-{% set cardSecondTitle = "Taskon" %}
-{% set cardSecondText = "" %}
-{% set cardSecondLinkLabel = "Get CAMs ->" %}
-{% set cardSecondLink = "https://rewards.taskon.xyz/quest/294163026" %}
+    {% set cardSecondImage = "generic-taskon" %}
+    {% set cardSecondTitle = " " %}
+    {% set cardSecondText = "" %}
+    {% set cardSecondLinkLabel = "Get CAMs ->" %}
+    {% set cardSecondLink = "https://rewards.taskon.xyz/quest/294163026" %}
 
-{% set cardThirdImage = "generic-14" %}
-{% set cardThirdTitle = "Galxe" %}
-{% set cardThirdText = "" %}
-{% set cardThirdLinkLabel = "Get CAMs ->" %}
-{% set cardThirdLink = "https://app.galxe.com/quest/9NETBeW8iqnvTy7rD79zvH/GCnUVtKid8" %}
+    {% set cardThirdImage = "generic-galxe" %}
+    {% set cardThirdTitle = " " %}
+    {% set cardThirdText = "" %}
+    {% set cardThirdLinkLabel = "Get CAMs ->" %}
+    {% set cardThirdLink = "https://app.galxe.com/quest/9NETBeW8iqnvTy7rD79zvH/GCnUVtKid8" %}
 
-{% set cardFourthImage = "generic-14" %}
-{% set cardFourthTitle = "Intrackt" %}
-{% set cardFourthText = "" %}
-{% set cardFourthLinkLabel = "Get CAMs ->" %}
-{% set cardFourthLink = "https://www.intract.io/quest/67190043526cec686e5371dd" %}
+    {% set cardFourthImage = "generic-intrackt" %}
+    {% set cardFourthTitle = " " %}
+    {% set cardFourthText = "" %}
+    {% set cardFourthLinkLabel = "Get CAMs ->" %}
+    {% set cardFourthLink = "https://www.intract.io/quest/67190043526cec686e5371dd" %}
 
-{% include "cardRow.html" %}
-<!-- CardRow End -->
+    {% include "cardRow.html" %}
+    <!-- CardRow End -->
+</div>
 
 <div class="py-24 md:pt-24 md:pb-[32rem] bg-contain bg-bottom bg-no-repeat overflow-hidden" style="background-image: url(/static/images/glas/homepage-bg.svg);">
     <div class="max-w-screen-md px-8 md:px-4 mx-auto text-center">
-        <div class="text-headline mb-6 md:mb-12">Two Simple Steps to Join</div>
-        <a href="https://suite.camino.network/login" class="button-secondary mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">1. Create Wallet</a>
-        <span class="mx-2 font-bold">---></span>
-        <a href="https://discord.gg/camino" target="_blank" rel="noopener noreferrer" class="button-secondary mb-4 md:mb-0">2. Join Discord</a>
+        <a href="#airdrops" class="button-secondary mb-4 md:mb-0">Get Airdrops</a>
+        <a href="#token-form" class="button-secondary mb-4 md:mb-0 md:mx-2">Get Updates</a>
+        <a href="{{site.whitepaper}}" target="_blank" rel="noopener noreferrer" class="button-secondary mb-4 md:mb-0">Whitepaper</a>
         <div class="text-subheadline mt-6 md:mt-12">Be part of the growing web3 travel community on X, Telegram and Discord to stay informed about the project’s updates.</div>
     </div>
 </div>
