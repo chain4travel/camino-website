@@ -5,14 +5,14 @@ layout:         default
 keywords:       blockchain, use cases
 ---
 
-<div class="max-w-screen-xl px-4 mx-auto flex items-center;">
+<div class="max-w-screen-xl px-4 mx-auto flex items-center pb-12 md:pb-24">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center min-h-[50vh]" data-sal="zoom-out">
         <div class="text-center md:text-left w-full py-12" data-sal="zoom-out" data-sal-delay="250">
             <div class="text-5xl md:text-6xl xl:text-7xl font-headline font-medium">
                 Where travel meets crypto
             </div>
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
-                Travelers earn CAM by using web3 travel products, access exclusive offers, redeem loyalty points, and seamlessly pay for reservations. Travel businesses use the token to streamline operations, reduce costs, and access advanced B2B services within a decentralized network.
+                Travelers can pay for web3 travel products with CAM tokens, access exclusive offers, and redeem loyalty points. Travel businesses use the token to streamline operations, and access advanced B2B services within a decentralized network. 
             </p>
             <div class="flex items-center gap-4 justify-center md:justify-start">
                 <a href="#" target="_blank" class="button">Get CAM ↓</a>
@@ -29,16 +29,22 @@ keywords:       blockchain, use cases
 {% include "logo-slider-validators.html" %}
 {% include "logo-slider-grants.html" %}
 
+<style>iframe{height:400px !important}</style>
+
 <div class="py-12 md:py-32 bg-cover" style="background-image: url(/static/images/background/blocks-bottom.jpg);">
     <div class="max-w-screen-xl px-4 mx-auto">
         <div class="bg-gradient-to-tr from-primary to-secondary p-2 rounded-3xl">
-            <div class="border-2 border-white/25 rounded-2xl overflow-hidden" data-tf-live="01JAYR1NJJ8GMXKEVWSVG4NANH"></div><script src="//embed.typeform.com/next/embed.js"></script>
+            <div style="height: 400px;" class="border-2 border-white/25 rounded-2xl overflow-hidden" data-tf-live="01JAYR1NJJ8GMXKEVWSVG4NANH"></div>
+            <script src="//embed.typeform.com/next/embed.js"></script>
         </div>
     </div>
 </div>
 
 <div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-4 mx-auto">
+        <h2 class="text-headline font-medium mb-4 text-center">
+            CAM Token History
+        </h2>
         <div class="w-full md:flex card-primary rounded-2xl p-8">
             <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-8 md:w-1/4">
                 <div class="absolute bg-primary border-4 rounded-full w-7 h-7 border-gray-950 -left-4 md:left-8 md:-top-4"></div>
@@ -74,10 +80,13 @@ keywords:       blockchain, use cases
         </p>
         <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {% for program in utilities %}
-                <div class="card rounded-2xl p-6">
-                    <div class="inline-block px-3 py-1 text-sm font-semibold rounded-full {% if program.status == 'Active' %}bg-green-400 text-green-950{% else %}bg-gray-500 text-gray-200{% endif %}">{{ program.status }}</div>
+                <div class="card rounded-2xl p-6 flex flex-col">
+                    <div>
+                        <div class="inline-block px-3 py-1 text-sm font-semibold rounded-full {% if program.status == 'Active' %}bg-primary text-white{% else %}bg-gray-500 text-gray-200{% endif %}">{{ program.status }}</div>
+                    </div>
                     <h2 class="text-title my-3">{{ program.utility }}</h2>
-                    <p class="text-gray-300 flex-grow text-sm md:text-base">{{ program.description }}</p>
+                    <p class="text-gray-300 flex-grow text-sm md:text-base mb-4">{{ program.description }}</p>
+                    <div class="size-16 bg-no-repeat bg-contain mt-auto" style="background-image: url({{program.icon}})"></div>
                 </div>
             {% endfor %}
         </div>
