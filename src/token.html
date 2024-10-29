@@ -44,36 +44,36 @@ keywords:       blockchain, use cases
 
 <div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-4 mx-auto">
-        <h2 class="text-headline font-medium mb-8 text-center">
+        <h2 class="text-headline font-medium md:mb-8 text-center">
             CAM Token History
         </h2>
-        <div class="w-full md:flex rounded-2xl p-8 text-center">
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+        <div class="w-full md:flex rounded-2xl p-8 md:text-center">
+            <div class="relative px-8 pt-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
                     <img src="/static/images/camino-logo.gif" alt="">
                 </div>
-                <div class="mb-2 text-sm font-medium text-gray-400">Seed (Q1 2022)</div>
+                <div class="md:mb-2 text-sm font-medium text-gray-400">Seed (Q1 2022)</div>
                 <div class="text-subheadline">4.95m USD</div>
             </div>
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+            <div class="relative px-8 pt-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
                     <img src="/static/images/camino-logo.gif" alt="">
                 </div>
-                <div class="mb-2 text-sm font-medium text-gray-400">Pre-sale (Q3 2022)</div>
+                <div class="md:mb-2 text-sm font-medium text-gray-400">Pre-sale (Q3 2022)</div>
                 <div class="text-subheadline">5.1m USD</div>
             </div>
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+            <div class="relative px-8 pt-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
                     <img src="/static/images/camino-logo.gif" alt="">
                 </div>
-                <div class="mb-2 text-sm font-medium text-gray-400">TGE (Q2 2023)</div>
+                <div class="md:mb-2 text-sm font-medium text-gray-400">TGE (Q2 2023)</div>
                 <div class="text-subheadline">Mainnet go-live</div>
             </div>
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+            <div class="relative px-8 pt-8 pb-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
                     <img src="/static/images/camino-logo.gif" alt="">
                 </div>
-                <div class="mb-2 text-sm font-medium text-gray-400">Listing (Q4 2024)</div>
+                <div class="md:mb-2 text-sm font-medium text-gray-400">Listing (Q4 2024)</div>
                 <div class="text-subheadline">TBA</div>
             </div>
         </div>
@@ -90,14 +90,14 @@ keywords:       blockchain, use cases
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {% for program in utilities %}
-                <div class="card rounded-2xl p-6 flex flex-col">
+                <div class="card rounded-2xl p-4 md:p-6 flex flex-col">
                     <div>
-                        <div class="inline-block px-3 py-1 text-sm rounded-full bg-gray-800">Utility</div>
-                        <div class="inline-block px-3 py-1 text-sm rounded-full {% if program.status == 'Active' %}bg-primary text-white{% else %}bg-gray-500 text-gray-200{% endif %}">{{ program.status }}</div>
+                        <div class="inline-block px-3 py-1 text-xs rounded-full bg-gray-800">Utility</div>
+                        <div class="inline-block px-3 py-1 text-xs rounded-full {% if program.status == 'Active' %}bg-primary text-white{% else %}bg-gray-500 text-gray-200{% endif %}">{{ program.status }}</div>
                     </div>
-                    <h2 class="text-title my-3">{{ program.utility }}</h2>
-                    <p class="text-gray-300 flex-grow text-sm md:text-base mb-4">{{ program.description }}</p>
-                    <div class="size-16 bg-no-repeat bg-contain mt-auto animate-spin-slow" style="background-image: url({{program.icon}})"></div>
+                    <h2 class="text-title my-2 md:my-3">{{ program.utility }}</h2>
+                    <p class="text-gray-300 flex-grow text-sm md:text-base mb-2 md:mb-4">{{ program.description }}</p>
+                    <div class="size-12 md:size-16 bg-no-repeat bg-contain mt-auto animate-spin-slow" style="background-image: url({{program.icon}})"></div>
                 </div>
             {% endfor %}
         </div>
