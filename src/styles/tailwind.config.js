@@ -18,6 +18,7 @@ module.exports = {
                 caminoSky: "#B5E3FD",
             },
             animation: {
+                'spin-slow': 'spin 3s linear infinite',
                 'infinite-scroll': 'infinite-scroll 60s linear infinite',
                 'infinite-scroll-reverse': 'infinite-scroll-reverse 60s linear infinite',
             },

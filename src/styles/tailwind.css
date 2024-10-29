@@ -162,7 +162,7 @@ section {
 /* Card styles */
 
 .card {
-  @apply bg-gray-900/75 backdrop-blur-lg border border-white/10 z-10 transition-colors;
+  @apply bg-gray-900/80 backdrop-blur-lg border border-white/10 z-10 transition-colors;
 }
 
 .card-primary-header {

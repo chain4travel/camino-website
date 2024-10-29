@@ -44,27 +44,35 @@ keywords:       blockchain, use cases
 
 <div class="py-12 md:py-24">
     <div class="max-w-screen-xl px-4 mx-auto">
-        <h2 class="text-headline font-medium mb-4 text-center">
+        <h2 class="text-headline font-medium mb-8 text-center">
             CAM Token History
         </h2>
-        <div class="w-full md:flex card-primary rounded-2xl p-8">
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-8 md:w-1/4">
-                <div class="absolute bg-primary border-4 rounded-full w-7 h-7 border-gray-950 -left-4 md:left-8 md:-top-4"></div>
+        <div class="w-full md:flex rounded-2xl p-8 text-center">
+            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+                    <img src="/static/images/camino-logo.gif" alt="">
+                </div>
                 <div class="mb-2 text-sm font-medium text-gray-400">Seed (Q1 2022)</div>
                 <div class="text-subheadline">4.95m USD</div>
             </div>
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-8 md:w-1/4">
-                <div class="absolute bg-primary border-4 rounded-full w-7 h-7 border-gray-950 -left-4 md:left-8 md:-top-4"></div>
+            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+                    <img src="/static/images/camino-logo.gif" alt="">
+                </div>
                 <div class="mb-2 text-sm font-medium text-gray-400">Pre-sale (Q3 2022)</div>
                 <div class="text-subheadline">5.1m USD</div>
             </div>
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-8 md:w-1/4">
-                <div class="absolute bg-primary border-4 rounded-full w-7 h-7 border-gray-950 -left-4 md:left-8 md:-top-4"></div>
+            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+                    <img src="/static/images/camino-logo.gif" alt="">
+                </div>
                 <div class="mb-2 text-sm font-medium text-gray-400">TGE (Q2 2023)</div>
                 <div class="text-subheadline">Mainnet go-live</div>
             </div>
-            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-8 md:w-1/4">
-                <div class="absolute bg-primary border-4 rounded-full w-7 h-7 border-gray-950 -left-4 md:left-8 md:-top-4"></div>
+            <div class="relative flex-shrink-0 px-8 pt-2 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
+                <div class="absolute bg-gray-950 border-2 rounded-full w-20 h-20 border-primary -left-4 md:left-1/2 md:-translate-x-1/2 md:-top-10">
+                    <img src="/static/images/camino-logo.gif" alt="">
+                </div>
                 <div class="mb-2 text-sm font-medium text-gray-400">Listing (Q4 2024)</div>
                 <div class="text-subheadline">TBA</div>
             </div>
@@ -72,7 +80,7 @@ keywords:       blockchain, use cases
     </div>
 </div>
 
-<div class="py-12 md:py-24">
+<div class="py-12 md:py-24 bg-cover bg-top" style="background-image: url(/static/images/background/waves.jpg);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <h2 class="text-headline font-medium mb-4 text-center">
             Own CAM. Own Global Travel.
@@ -89,7 +97,7 @@ keywords:       blockchain, use cases
                     </div>
                     <h2 class="text-title my-3">{{ program.utility }}</h2>
                     <p class="text-gray-300 flex-grow text-sm md:text-base mb-4">{{ program.description }}</p>
-                    <div class="size-16 bg-no-repeat bg-contain mt-auto" style="background-image: url({{program.icon}})"></div>
+                    <div class="size-16 bg-no-repeat bg-contain mt-auto animate-spin-slow" style="background-image: url({{program.icon}})"></div>
                 </div>
             {% endfor %}
         </div>
