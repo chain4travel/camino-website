@@ -80,11 +80,12 @@ keywords:       blockchain, use cases
         <p class="max-w-3xl mx-auto text-gray-300 text-center mb-8">
             CAM powers every transaction, linking travel industry players globally. From seamless payments to fueling business growth, CAM is the backbone of the travel ecosystem's future.
         </p>
-        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {% for program in utilities %}
                 <div class="card rounded-2xl p-6 flex flex-col">
                     <div>
-                        <div class="inline-block px-3 py-1 text-sm font-semibold rounded-full {% if program.status == 'Active' %}bg-primary text-white{% else %}bg-gray-500 text-gray-200{% endif %}">{{ program.status }}</div>
+                        <div class="inline-block px-3 py-1 text-sm rounded-full bg-gray-800">Utility</div>
+                        <div class="inline-block px-3 py-1 text-sm rounded-full {% if program.status == 'Active' %}bg-primary text-white{% else %}bg-gray-500 text-gray-200{% endif %}">{{ program.status }}</div>
                     </div>
                     <h2 class="text-title my-3">{{ program.utility }}</h2>
                     <p class="text-gray-300 flex-grow text-sm md:text-base mb-4">{{ program.description }}</p>
@@ -133,8 +134,31 @@ keywords:       blockchain, use cases
 <div class="py-24 md:pt-24 md:pb-[32rem] bg-contain bg-bottom bg-no-repeat overflow-hidden" style="background-image: url(/static/images/glas/homepage-bg.svg);">
     <div class="max-w-screen-md px-8 md:px-4 mx-auto text-center">
         <a href="#airdrops" class="button-secondary mb-4 md:mb-0">Get Airdrops</a>
-        <a href="#token-form" class="button-secondary mb-4 md:mb-0 md:mx-2">Get Updates</a>
-        <a href="{{site.whitepaper}}" target="_blank" rel="noopener noreferrer" class="button-secondary mb-4 md:mb-0">Whitepaper</a>
+        <a href="#token-form" class="button-secondary mb-4 md:mb-0 md:ml-2">Get Updates</a>
+        <a href="{{site.whitepaper}}" target="_blank" rel="noopener noreferrer" class="button-secondary mb-4 md:mb-0 md:ml-2">Whitepaper</a>
+        <span x-data="{ isOpen: false }" class="mb-4 md:mb-0 md:ml-2">
+            <button @click="isOpen = true" class="button-secondary">Disclaimer</button>
+            <div x-cloak x-transition x-show="isOpen" class="bg-gray-900/75 mx-auto fixed top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50">
+                <div class="max-w-2xl mx-auto p-4 rounded overflow-y-auto flex flex-col items-center justify-center text-left">
+                    <div class="bg-gray-800 text-sm rounded-2xl p-8 shadow-lg" @click.away="isOpen = false">
+                        <h2 class="text-2xl font-bold mb-4">Disclaimer</h2>
+                        <p class="mb-3">
+                            The content published on this site has not been reviewed, verified, approved, or endorsed by any regulatory or supervisory authority. Please note that the information provided may not be comprehensive and does not constitute a contractual relationship.
+                        </p>
+                        <p class="mb-3">
+                            Nothing on this site should be construed as a prospectus, an offer to sell, a solicitation of investment advice, or an invitation to purchase securities in any jurisdiction. Accordingly, this website is not an invitation to invest and does not constitute or relate in any way to an offer of securities. In addition, it does not contain any information that should be construed as a recommendation or used as a basis for an investment decision.
+                        </p>
+                        <p class="mb-3">
+                            The content of this site is for informational purposes only. None of the information or materials on this site should be relied upon for any purpose or used as part of a professional recommendation. All information and materials are provided "AS IS" without warranty of any kind, either express or implied, to the fullest extent permitted by applicable law.
+                        </p>
+                        <p class="mb-3">
+                            Under no circumstances, including but not limited to negligence, shall Camino Network Foundation or any third party providing information or materials on this site, or their respective affiliates, be liable for any direct, special, or consequential damages arising out of the access, use, or inability to use the materials on this site”.
+                        </p>
+                        <button @click="isOpen = false" class="button-secondary">Close</button>
+                    </div>
+                </div>
+            </div>
+        </span>
         <div class="text-subheadline mt-6 md:mt-12">Be part of the growing web3 travel community on X, Telegram and Discord to stay informed about the project’s updates.</div>
     </div>
 </div>
