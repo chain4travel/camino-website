@@ -1,0 +1,22 @@
+<div class="w-full max-w-screen-xl mx-auto px-4 relative">
+    <div class="bg-gradient-to-r from-gray-950/0 to-gray-950 to-20% h-full right-0 top-0 bottom-0 md:absolute flex items-center justify-center z-10 md:pr-4 md:pl-12 text-gray-400 text-center">Grant <br class="hidden md:block"> Recipients</div>
+    <div
+        x-data="{}"
+        x-init="$nextTick(() => {
+            let ul = $refs.logos;
+            ul.insertAdjacentHTML('afterend', ul.outerHTML);
+            ul.nextSibling.setAttribute('aria-hidden', 'true');
+        })"
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+    >
+        <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-6 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/sleap.svg" alt="sleap logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/visitorapp.svg" alt="visitorapp logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/devest.svg" alt="devest logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/dcm.svg" alt="dcm logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/bytepitch.svg" alt="bytepitch logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/avata.svg" alt="avata logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/listscouts.svg" alt="listscouts logo"></li>
+        </ul>                
+    </div>
+</div>

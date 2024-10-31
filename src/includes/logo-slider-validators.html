@@ -1,0 +1,24 @@
+<div class="w-full max-w-screen-xl mx-auto px-4 relative">
+    <div class="bg-gradient-to-r from-gray-950 to-gray-950/0 from-80% h-full left-0 top-0 bottom-0 md:absolute flex items-center justify-center z-10 md:pl-4 md:pr-12 text-gray-400 text-center">Token <br class="hidden md:block"> Owners</div>
+    <div
+        x-data="{}"
+        x-init="$nextTick(() => {
+            let ul = $refs.logos;
+            ul.insertAdjacentHTML('afterend', ul.outerHTML);
+            ul.nextSibling.setAttribute('aria-hidden', 'true');
+        })"
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+    >
+        <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-6 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse">
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/aerticket.svg" alt="aerticket logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/alpitour.svg" alt="alpitour logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/der.svg" alt="der logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/hahnair.svg" alt="hahnair logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/eurowings.svg" alt="eurowings logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/hotelplan.svg" alt="hotelplan logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/invia.svg" alt="invia logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/sunnycars.svg" alt="sunnycars logo"></li>
+            <li><img class="w-24 md:w-36 max-h-10" src="/static/images/logo-slider/tui.svg" alt="tui logo"></li>
+        </ul>                
+    </div>
+</div>

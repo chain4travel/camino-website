@@ -162,7 +162,7 @@ section {
 /* Card styles */
 
 .card {
-  @apply bg-gray-900/75 backdrop-blur-lg border border-white/10 z-10 transition-colors;
+  @apply bg-gray-900/80 backdrop-blur-lg border border-white/10 z-10 transition-colors;
 }
 
 .card-primary-header {
@@ -220,7 +220,7 @@ details[open] summary.features::after {
 }
 
 .text-title {
-  @apply font-medium font-headline text-lg md:text-xl lg:text-2xl/7
+  @apply font-medium font-headline text-lg/6 md:text-xl lg:text-2xl/7
 }
 
 .text-subtitle {
