@@ -26,13 +26,42 @@ keywords:       blockchain, use cases
     </div>
 </div>
 
-<div class="py-12 flex flex-col gap-12">
-    {% include "logo-slider-validators.html" %}
-    {% include "logo-slider-grants.html" %}
+<div id="airdrops">
+    <!-- CardRow Start -->
+    {% set cardRowTitle = "Airdrop Opportunities" %}
+    {% set cardRowParagraph = "Participate in the CAM airdrop campaigns. Complete education and engagement tasks like joining social media, engaging with content, or helping beta test the network to qualify for rewards." %}
+    {% set cardRowSubtitle = "" %}
+    {% set cardRowBgImage = "" %}
+
+    {% set cardFirstImage = "generic-zealy" %}
+    {% set cardFirstTitle = " " %}
+    {% set cardFirstText = "" %}
+    {% set cardFirstLinkLabel = "Get CAMs ->" %}
+    {% set cardFirstLink = "https://zealy.io/cw/caminonetwork" %}
+
+    {% set cardSecondImage = "generic-taskon" %}
+    {% set cardSecondTitle = " " %}
+    {% set cardSecondText = "" %}
+    {% set cardSecondLinkLabel = "Get CAMs ->" %}
+    {% set cardSecondLink = "https://rewards.taskon.xyz/quest/294163026" %}
+
+    {% set cardThirdImage = "generic-galxe" %}
+    {% set cardThirdTitle = " " %}
+    {% set cardThirdText = "" %}
+    {% set cardThirdLinkLabel = "Get CAMs ->" %}
+    {% set cardThirdLink = "https://app.galxe.com/quest/9NETBeW8iqnvTy7rD79zvH/GCnUVtKid8" %}
+
+    {% set cardFourthImage = "generic-intrackt" %}
+    {% set cardFourthTitle = " " %}
+    {% set cardFourthText = "" %}
+    {% set cardFourthLinkLabel = "Get CAMs ->" %}
+    {% set cardFourthLink = "https://www.intract.io/quest/67190043526cec686e5371dd" %}
+
+    {% include "cardRow.html" %}
+    <!-- CardRow End -->
 </div>
 
 <style>iframe{height:400px !important;}</style>
-
 <div class="relative py-12 md:py-24 text-white bg-bottom bg-no-repeat bg-contain" id="token-form" style="background-image: url(/static/images/background/blocks-bottom.jpg);">
     <div class="max-w-screen-xl px-4 mx-auto">
         <div class="bg-gradient-to-tr from-primary/50 to-secondary/50 backdrop-blur-lg p-2 rounded-3xl">
@@ -42,7 +71,14 @@ keywords:       blockchain, use cases
     </div>
 </div>
 
-<div class="py-12 md:py-24">
+<!--
+<div class="py-12 flex flex-col gap-12">
+    {% include "logo-slider-validators.html" %}
+    {% include "logo-slider-grants.html" %}
+</div>
+-->
+
+<div class="pt-12 md:pt-24">
     <div class="max-w-screen-xl px-4 mx-auto">
         <h2 class="text-headline font-medium md:mb-8 text-center">
             CAM Token History
@@ -80,6 +116,27 @@ keywords:       blockchain, use cases
     </div>
 </div>
 
+{% include "section_tokenomics.html" %}
+
+<div class="py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards-50.png);">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-5 rounded-lg overflow-hidden">
+            {% image "./src/static/images/glas/block-sphere.png", "", "", "w-full object-contain" %}
+        </div>
+        <div class="md:col-start-7 col-span-12 md:col-span-6">
+            <div class="text-headline">
+                Travel Smarter: Streamlined. Secured. Tokenized.
+            </div>
+            <p class="my-4 md:my-6 text-gray-300">
+                For crypto twitter users who travel occasionally, Camino Network is the only choice that bridges real-world travel with the digital economy by tokenizing travel assets, providing security and transparency, and ensuring decentralized ownership. 
+            </p>
+            <p class="text-gray-300">
+                Our approach streamlines the travel experience by enabling payments with crypto, digital identities for faster processing, and AI-driven personalization of offers and pricing. 
+            </p>
+        </div>
+    </div>
+</div>
+
 <div class="py-12 md:py-24 bg-cover bg-top" style="background-image: url(/static/images/background/waves.jpg);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <h2 class="text-headline font-medium mb-4 text-center">
@@ -104,39 +161,28 @@ keywords:       blockchain, use cases
     </div>
 </div>
 
-<div id="airdrops">
-    <!-- CardRow Start -->
-    {% set cardRowTitle = "Airdrop Opportunities" %}
-    {% set cardRowParagraph = "Participate in the CAM airdrop campaigns. Complete education and engagement tasks like joining social media, engaging with content, or helping beta test the network to qualify for rewards." %}
-    {% set cardRowSubtitle = "" %}
-    {% set cardRowBgImage = "" %}
-
-    {% set cardFirstImage = "generic-zealy" %}
-    {% set cardFirstTitle = " " %}
-    {% set cardFirstText = "" %}
-    {% set cardFirstLinkLabel = "Get CAMs ->" %}
-    {% set cardFirstLink = "https://zealy.io/cw/caminonetwork" %}
-
-    {% set cardSecondImage = "generic-taskon" %}
-    {% set cardSecondTitle = " " %}
-    {% set cardSecondText = "" %}
-    {% set cardSecondLinkLabel = "Get CAMs ->" %}
-    {% set cardSecondLink = "https://rewards.taskon.xyz/quest/294163026" %}
-
-    {% set cardThirdImage = "generic-galxe" %}
-    {% set cardThirdTitle = " " %}
-    {% set cardThirdText = "" %}
-    {% set cardThirdLinkLabel = "Get CAMs ->" %}
-    {% set cardThirdLink = "https://app.galxe.com/quest/9NETBeW8iqnvTy7rD79zvH/GCnUVtKid8" %}
-
-    {% set cardFourthImage = "generic-intrackt" %}
-    {% set cardFourthTitle = " " %}
-    {% set cardFourthText = "" %}
-    {% set cardFourthLinkLabel = "Get CAMs ->" %}
-    {% set cardFourthLink = "https://www.intract.io/quest/67190043526cec686e5371dd" %}
-
-    {% include "cardRow.html" %}
-    <!-- CardRow End -->
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
+        <div class="col-span-12 md:col-span-6">
+            <div class="text-headline">
+                Travel connects us, but who connects travel?
+            </div>
+            <ul class="list-disc pl-4 my-4 md:my-6 text-gray-300">
+                <li>Travel industry-specific L1 blockchain</li>
+                <li>Run by 100+ travel industry participants</li>
+                <li>Unified travel data standards</li>
+                <li>KYB & KYC verification implemented</li>
+                <li>EVM-compatible</li>
+            </ul>
+            <div class="card-primary text-title p-8 rounded-2xl flex items-center gap-6">
+                <div class="text-headline font-bold">10x</div>
+                <div>more efficient travel distribution and sourcing.</div>
+            </div>
+        </div>
+        <div class="md:col-start-8 col-span-6 order-first md:order-last overflow-hidden rounded-lg">
+            {% image "./src/static/images/schema-new-path.png", "", "", "w-full object-contain" %}
+        </div>
+    </div>
 </div>
 
 <div class="py-24 md:pt-24 md:pb-[32rem] bg-contain bg-bottom bg-no-repeat overflow-hidden" style="background-image: url(/static/images/glas/homepage-bg.svg);">
