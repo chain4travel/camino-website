@@ -8,7 +8,10 @@ keywords:       blockchain, use cases
 <div class="max-w-screen-xl px-4 mx-auto flex items-center">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center min-h-[50vh]" data-sal="zoom-out">
         <div class="text-center md:text-left w-full py-12" data-sal="zoom-out" data-sal-delay="250">
-            <div class="text-5xl md:text-6xl xl:text-7xl font-headline font-medium">
+            <div class="text-caminoSky uppercase font-headline text-base md:text-xl font-medium tracking-widest">
+                CAM Token
+            </div>
+            <div class="text-5xl md:text-6xl xl:text-7xl font-headline font-medium mt-6">
                 Where Travel Meets Crypto
             </div>
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
@@ -26,39 +29,37 @@ keywords:       blockchain, use cases
     </div>
 </div>
 
-<div id="airdrops">
-    <!-- CardRow Start -->
-    {% set cardRowTitle = "Airdrop Opportunities" %}
-    {% set cardRowParagraph = "Join our ongoing campaigns across Galxe, Zealy, TaskOn, and Intract! With regular distributions, each platform offers unique opportunities to earn CAM based on your activity. Airdrops are distributed at the end of each sprint individually—one platform, one airdrop—so explore each platform's quests and conditions to maximize your rewards." %}
-    {% set cardRowSubtitle = "" %}
-    {% set cardRowBgImage = "" %}
-
-    {% set cardFirstImage = "generic-zealy" %}
-    {% set cardFirstTitle = " " %}
-    {% set cardFirstText = "Monthly rewards" %}
-    {% set cardFirstLinkLabel = "Get CAMs ->" %}
-    {% set cardFirstLink = "https://zealy.io/cw/caminonetwork" %}
-
-    {% set cardSecondImage = "generic-taskon" %}
-    {% set cardSecondTitle = " " %}
-    {% set cardSecondText = "Biweekly rewards" %}
-    {% set cardSecondLinkLabel = "Get CAMs ->" %}
-    {% set cardSecondLink = "https://rewards.taskon.xyz/quest/294163026" %}
-
-    {% set cardThirdImage = "generic-galxe" %}
-    {% set cardThirdTitle = " " %}
-    {% set cardThirdText = "Monthly rewards" %}
-    {% set cardThirdLinkLabel = "Get CAMs ->" %}
-    {% set cardThirdLink = "https://app.galxe.com/quest/9NETBeW8iqnvTy7rD79zvH/GCnUVtKid8" %}
-
-    {% set cardFourthImage = "generic-intrackt" %}
-    {% set cardFourthTitle = " " %}
-    {% set cardFourthText = "Biweekly rewards" %}
-    {% set cardFourthLinkLabel = "Get CAMs ->" %}
-    {% set cardFourthLink = "https://www.intract.io/quest/67190043526cec686e5371dd" %}
-
-    {% include "cardRow.html" %}
-    <!-- CardRow End -->
+<div class="py-12 md:py-24">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto" id="airdrops">
+        <h2 class="text-headline font-medium mb-4 text-center">
+            Airdrop Opportunities
+        </h2>
+        <p class="max-w-3xl mx-auto text-gray-300 text-center mb-8">
+            Join our ongoing campaigns across Galxe, Zealy, TaskOn, and Intract! With regular distributions, each platform offers unique opportunities to earn CAM based on your activity. Airdrops are distributed at the end of each sprint individually—one platform, one airdrop—so explore each platform's quests and conditions to maximize your rewards.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="card-primary p-6 rounded-2xl text-center">
+                <img src="/static/images/cardImages/generic-zealy.png" alt="" class="-my-4 md:-my-10">
+                <div class="my-3 text-primary text-sm">Monthly rewards</div>
+                <a href="https://zealy.io/cw/caminonetwork" class="button">Get CAMs -></a>
+            </div>
+            <div class="card-primary p-6 rounded-2xl text-center">
+                <img src="/static/images/cardImages/generic-taskon.png" alt="" class="-my-4 md:-my-10">
+                <div class="my-3 text-primary text-sm">Biweekly rewards</div>
+                <a href="https://rewards.taskon.xyz/quest/294163026" class="button">Get CAMs -></a>
+            </div>
+            <div class="card-primary p-6 rounded-2xl text-center">
+                <img src="/static/images/cardImages/generic-galxe.png" alt="" class="-my-4 md:-my-10">
+                <div class="my-3 text-primary text-sm">Monthly rewards</div>
+                <a href="https://app.galxe.com/quest/9NETBeW8iqnvTy7rD79zvH/GCnUVtKid8" class="button">Get CAMs -></a>
+            </div>
+            <div class="card-primary p-6 rounded-2xl text-center">
+                <img src="/static/images/cardImages/generic-intrackt.png" alt="" class="-my-4 md:-my-10">
+                <div class="my-3 text-primary text-sm">Biweekly rewards</div>
+                <a href="https://www.intract.io/quest/67190043526cec686e5371dd" class="button">Get CAMs -></a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="py-12 md:py-24 ">
@@ -181,7 +182,7 @@ keywords:       blockchain, use cases
                 <div>more efficient travel distribution and sourcing.</div>
             </div>
         </div>
-        <div class="md:col-start-8 col-span-6 order-first md:order-last overflow-hidden rounded-lg">
+        <div class="md:col-start-8 col-span-12 order-first md:order-last overflow-hidden rounded-lg">
             {% image "./src/static/images/schema-new-path.png", "", "", "w-full object-contain" %}
         </div>
     </div>
