@@ -6,7 +6,7 @@ permalink:      camino-messenger-is-live/
 heroImage:      "./src/static/images/_header/camino-network-go-live.png"
 socialImage:    social-messenger-live
 postDate:       2024-10-11
-order:          0
+order:          1
 ---
 
 The travel industry has long been fragmented by numerous APIs, disjointed systems, and inefficient data exchange. Camino Messenger aims to solve these pain points with a wallet-to-wallet (W2W) communication system designed specifically for travel businesses.

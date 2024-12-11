@@ -47,7 +47,7 @@ keywords:       blockchain, use cases
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto flex flex-col gap-8">
         {% for spotlight in collections.spotlights | reverse %}
         <a href="{{spotlight.url}}" class="card rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex flex-col md:flex-row items-start">
-            {% image s.data.partnerPageImg, s.data.title, "w-full md:w-2/5 h-40 md:h-full flex-shrink-0 border-r border-gray-700", "h-full object-cover" %}
+            {% image spotlight.data.partnerPageImg, spotlight.data.title, "w-full md:w-2/5 h-40 md:h-full flex-shrink-0 border-r border-gray-700", "h-full object-cover" %}
             <div class="w-full p-6 md:p-8">
                 <div href="https://foundation.camino.network/update-june-12-2024/" target="_blank" class="bg-gradient-to-r from-primary/50 to-secondary/50 rounded-full px-3 py-1 text-wrap inline-block font-medium mb-4 uppercase">
                     {{spotlight.data.company}}
