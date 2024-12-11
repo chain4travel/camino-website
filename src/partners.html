@@ -45,15 +45,15 @@ keywords:       blockchain, use cases
 <div class="pb-12 pt-12 md:pb-24 md:pt-0">
     <h2 class="text-headline text-center mb-8">Builder spotlights</h2>
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto flex flex-col gap-8">
-        {% for s in collections.spotlights | reverse %}
-        <a href="{{s.url}}" class="card rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex flex-col md:flex-row items-start">
+        {% for spotlight in collections.spotlights | reverse %}
+        <a href="{{spotlight.url}}" class="card rounded-xl overflow-hidden hover:ring-8 ring-primary/30 transition-all flex flex-col md:flex-row items-start">
             {% image s.data.partnerPageImg, s.data.title, "w-full md:w-2/5 h-40 md:h-full flex-shrink-0 border-r border-gray-700", "h-full object-cover" %}
             <div class="w-full p-6 md:p-8">
                 <div href="https://foundation.camino.network/update-june-12-2024/" target="_blank" class="bg-gradient-to-r from-primary/50 to-secondary/50 rounded-full px-3 py-1 text-wrap inline-block font-medium mb-4 uppercase">
-                    {{s.data.company}}
+                    {{spotlight.data.company}}
                 </div>
-                <div class="text-subheadline">{{s.data.partnerPageText}}</div>
-                <p class="mt-4 text-gray-300">{{s.data.description}}</p>
+                <div class="text-subheadline">{{spotlight.data.partnerPageText}}</div>
+                <p class="mt-4 text-gray-300">{{spotlight.data.description}}</p>
             </div>
         </a>
         {% endfor %}
