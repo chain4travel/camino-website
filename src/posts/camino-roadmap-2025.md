@@ -10,11 +10,11 @@ postDate:       2025-01-14
 
 Camino Network enters 2025 with a comprehensive development plan focused on the growth of the web3 travel ecosystem through partnerships, use cases, transactions, and dApps deployed. This roadmap addresses key technical implementations and delivers practical benefits for travel businesses - possible, thanks to the web3 infrastructure.
 
-## 🔧 Core infrastructure improvements
+## 🏗️ Core infrastructure improvements
 
 The network's tech foundation will be strengthened through automated testing frameworks to ensure reliable performance and reduced system failures. The Cairo phase of the protocol will establish network independence, optimize fee structures, and improve transaction speed - critical factors for large-scale business operations.
 
-## 💳 TravelFi: travel financial solutions
+## 💳 TravelFi: travel financial solutions on-chain
 
 Camino Network will launch new travel payment solutions through integration with EURe and EURSH stablecoins, along with additional providers. This step will enable new B2B travel use cases built on Camino Network, thanks to faster settlements, reduced transaction costs, and multiple payment options.
 
@@ -22,9 +22,9 @@ Camino Network will launch new travel payment solutions through integration with
 
 Camino Suite 2.0 brings significant upgrades to the platform's interface. Integration with external wallets like Metamask and Fireblocks, combined with FIAT gateway implementation, will simplify payment processing for travel businesses.
 
-The new Camino Name Service will introduce user-friendly addressing across all chains, making asset management more straightforward for companies. Today's crypto addresses like this **0x4c9c...796ef0** will become **YourCompanyName.CAM**
+The new Camino Name Service will introduce user-friendly addressing across all chains, making asset management more straightforward for companies. Today's crypto addresses like this ***0x4c9c40aba14b1e2f12ec115c86437be21b119b64c91517e0184a8796ef0*** will become ***YourCompanyName.CAM***
 
-## 🌐 Web3 travel solutions
+## ⛱️ Web3 travel solutions
 
 The CLINKS system will introduce one-click booking capabilities through standardized blockchain actions. This development will reduce technical complexity while making it easier for travel businesses to integrate blockchain features into existing systems.
 
@@ -36,22 +36,19 @@ Camino Messenger will mature with new message types and improved error handling.
 
 An upgraded CaminoScan will boost the network's transparency and visibility of transactions and statistics across all chains, helping businesses track on-chain operations effectively.
 
-## ⚖️ On-chain governance
+## 🏛️ On-chain governance
 
 The Decentralized Autonomous Consortium (DAC) will receive new functionalities for network governance. These will allow validators securing the network to participate in on-chain decision-making processes like transaction fee adjustments (reminder: transaction fees are fixed) by submitting proposals and voting. This makes Camino Network the most transparent and collaborative travel infrastructure available.
 
-## 🔨 Other technical infrastructure
+## 🔧 Other technical infrastructure developments
 
 Throughout 2025, Camino Network will evolve as a more reliable, efficient, and user-friendly blockchain platform specifically designed for travel industry needs thanks to:
 
-- High system availability
-- Comprehensive error handling
 - AI-powered integration tools
 - Standardized APIs for travel operations
-- New security features
 - Cross-chain communication
 
-## 💰 CAM Token Development
+## 🪙 CAM Token Development
 
 Following [Gate.io's](http://gate.io/) interest in listing CAM, the Camino Network Foundation is in discussions with additional centralized exchanges (CEX) to expand token accessibility. The Foundation is also exploring opportunities to bring decentralized exchanges (DEX) to Camino Network in a secure and compliant way.
 
