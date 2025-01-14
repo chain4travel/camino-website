@@ -38,7 +38,7 @@ An upgraded CaminoScan will boost the network's transparency and visibility of t
 
 ## 🏛️ On-chain governance
 
-The Decentralized Autonomous Consortium (DAC) will receive new functionalities for network governance. These will allow validators securing the network to participate in on-chain decision-making processes like transaction fee adjustments (reminder: transaction fees are fixed) by submitting proposals and voting. This makes Camino Network the most transparent and collaborative travel infrastructure available.
+The Camino Governance will receive new functionalities for network governance. These will allow validators securing the network to participate in on-chain decision-making processes like transaction fee adjustments (reminder: transaction fees are fixed) by submitting proposals and voting. This makes Camino Network the most transparent and collaborative travel infrastructure available.
 
 ## 🔧 Other technical infrastructure developments
 
@@ -48,7 +48,7 @@ Throughout 2025, Camino Network will evolve as a more reliable, efficient, and u
 - Standardized APIs for travel operations
 - Cross-chain communication
 
-## 🪙 CAM Token Development
+## 🪙 CAM accessibility
 
 Following [Gate.io's](http://gate.io/) interest in listing CAM, the Camino Network Foundation is in discussions with additional centralized exchanges (CEX) to expand token accessibility. The Foundation is also exploring opportunities to bring decentralized exchanges (DEX) to Camino Network in a secure and compliant way.
 
