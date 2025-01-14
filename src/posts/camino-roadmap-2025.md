@@ -1,5 +1,5 @@
 ---
-title:          Camino Network roadmap 2025
+title:          The Camino Network Roadmap 2025
 description:    Growth of the ecosystem, partners, use cases, transactions and dApps.
 layout:         blog_layout
 permalink:      camino-network-roadmap-2025/
