@@ -22,7 +22,7 @@ Camino Network will launch new travel payment solutions through integration with
 
 Camino Suite 2.0 brings significant upgrades to the platform's interface. Integration with external wallets like Metamask and Fireblocks, combined with FIAT gateway implementation, will simplify payment processing for travel businesses.
 
-The new Camino Name Service will introduce user-friendly addressing across all chains, making asset management more straightforward for companies. Today's crypto addresses like this ***0x4c9c40aba14b1e2f12ec115c86437be21b119b64c91517e0184a8796ef0*** will become ***YourCompanyName.CAM***
+The new Camino Name Service will introduce user-friendly addressing across all chains, making asset management more straightforward for companies. Today's crypto addresses like this `0x4c9c40...796ef0` will become `YourCompanyName.CAM`
 
 ## ⛱️ Web3 travel solutions
 
