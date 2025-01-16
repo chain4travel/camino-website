@@ -11,6 +11,7 @@
     "explorer": "https://explorer.camino.network",
     "suite": "https://suite.camino.network",
     "partners": "https://suite.camino.network/partners",
-    "whitepaper": "https://camino.network/static/docs/Camino_Network_Whitepaper.pdf#view=fit",
+    "whitepaper": "https://camino.network/static/docs/Camino_Paper.pdf#view=fit",
+    "micapaper": "https://camino.network/static/docs/camino-network-whitepaper.pdf",
     "walletwizard": "https://wallet-wizard.camino.network"
 }
