@@ -172,7 +172,25 @@ socialImage:    social-token
     <div class="max-w-screen-md px-8 md:px-4 mx-auto text-center">
         <a href="#airdrops" class="button-secondary mb-4 md:mb-0">Get Airdrops</a>
         <a href="#token-form" class="button-secondary mb-4 md:mb-0 md:ml-2">Get Updates</a>
-        <a href="{{site.whitepaper}}" target="_blank" rel="noopener noreferrer" class="button-secondary mb-4 md:mb-0 md:ml-2">Whitepaper</a>
+
+        <span x-data="{ whitepaperModal: false }" class="mb-4 md:mb-0 md:ml-2">
+            <button @click="whitepaperModal = true" class="button-secondary">Whitepaper</button>
+            <div x-cloak x-transition x-show="whitepaperModal" class="fixed inset-0 bg-gray-900/75 flex items-center justify-center z-50">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-xs md:max-w-md w-full">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-medium">Camino Whitepaper</h3>
+                        <button @click="whitepaperModal = false" class="button-secondary">X</button>
+                    </div>
+                    <div class="mb-4">
+                        <a href="{{site.micapaper}}" target="_blank" rel="noopener noreferrer" class="w-full button">Whitepaper Jan 2025 -></a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="{{site.micapaper}}" target="_blank" rel="noopener noreferrer" class="w-full button-secondary">Whitepaper Jan 2024 (no longer valid) -></a>
+                    </div>
+                </div>
+            </div>
+        </span>
+
         <span x-data="{ isOpen: false }" class="mb-4 md:mb-0 md:ml-2">
             <button @click="isOpen = true" class="button-secondary">Disclaimer</button>
             <div x-cloak x-transition x-show="isOpen" class="bg-gray-900/75 mx-auto fixed top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50">
