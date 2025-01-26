@@ -85,12 +85,15 @@ socialImage:    social-token
         </div>
     </div>
 
-    <div class="bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5 md:hover:border-white/25 transition-colors rounded-2xl p-4 md:p-8" x-data="{ isOpen: false }">
-        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">CAM Price (<a href="https://www.coingecko.com/en/coins/camino-network" target="_blank" class="underline hover:text-white" rel="noopener noreferrer">Coingecko</a>) </h3>
+    <div class="relative bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5 md:hover:border-white/25 transition-colors rounded-2xl p-4 md:p-8" x-data="{ isOpen: false }">
+        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">CAM Price</h3>
         <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide flex items-center justify-end gap-2">
             $<span x-text="price"></span> <svg class="size-6 hover:opacity-50 cursor-pointer" @click="isOpen = true" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </div>
         {% include "modal_campricedisclaimer.html" %}
+        <div class="absolute -bottom-8 right-1 text-sm">
+            <a href="https://www.coingecko.com/en/coins/camino-network" target="_blank" class="text-gray-500 hover:underline hover:text-white" rel="noopener noreferrer">By Coingecko</a>
+        </div>
     </div>
 
 </div>
