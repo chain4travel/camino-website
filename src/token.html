@@ -15,7 +15,7 @@ socialImage:    social-token
             
             init() {
                 this.fetchData();
-                setInterval(() => this.fetchData(), 60000);
+                setInterval(() => this.fetchData(), 300000);
             },
 
             async fetchData() {
@@ -31,9 +31,9 @@ socialImage:    social-token
                     this.totalSupply = Number(tsData.result).toLocaleString('en-US', {maximumFractionDigits: 0});
 
                     // Fetch price
-                    const priceResponse = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=camino-network&vs_currencies=usd');
+                    const priceResponse = await fetch('https://supply.camino.network/price');
                     const priceData = await priceResponse.json();
-                    this.price = Number(priceData['camino-network'].usd).toFixed(4);
+                    this.price = Number(priceData.result).toFixed(4);
                 } catch (error) {
                     console.error('Error fetching data:', error);
                 }
