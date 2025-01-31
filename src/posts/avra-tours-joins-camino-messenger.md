@@ -4,7 +4,7 @@ description:    Build it once, and it will work for everyone! Dimitris Mylonas, 
 layout:         blog_layout
 permalink:      avra-tours-joins-camino-messenger/
 heroImage:      "./src/static/images/_header/camino-network-go-live.png"
-socialImage:    social-camino-roadmap-2025
+socialImage:    social-avra-messenger
 postDate:       2025-01-31
 ---
 
