@@ -18,34 +18,38 @@ It operates on the Camino Messenger Protocol — a new universal language for tr
 
 For years, Avra Tours has been connecting travelers with unforgettable experiences across Greece. As their network of partners grew, so did the challenges of managing countless connections and APIs.
 
-IMAGE
+![](/static/images/messenger-use-case-avra.png)
+
+| Challenge | Solution |
+|-----------|----------|
+| German tour operators seek to expand their Greek travel offerings and increase bookings through efficient partnerships. They need a streamlined way to connect with Avra Tours, a leading Greek travel provider, to access comprehensive inventory and deliver exceptional experiences to their customers. | Camino Messenger is a free, easy-to-setup, and inexpensive platform. Tour operators can connect with Avra Tours without complex software setups and start trading directly via standardized message types. One integration grants access to complete Greek travel inventory, saving on technical maintenance and transaction fees. |
 
 ## Avra Tours brings web3 travel tech to Greece
 
 The company leverages Camino Messenger to expand global reach and cut distribution costs, attracting next-gen travelers who demand more than legacy OTAs' clunky interfaces. Their newly-built web3-powered [booking platform](https://www.notion.so/Avra-Tours-Joins-Camino-Messenger-to-Scale-Their-Business-and-Reduce-Distribution-Costs-1836ba184e67802ba50acb34a8fd784d?pvs=21) will deliver new experiences for new generations of travelers.
 
-Tech ⚙️
+### Tech ⚙️
 
-Integration completed in two weeks by a single full-stack developer
-Detailed documentation enabled rapid adoption
-Seamless connection between inventory systems and global distributors
-Significant reduction in data exchanged
+- Integration completed in two weeks by a single full-stack developer
+- Detailed documentation enabled rapid adoption
+- Seamless connection between inventory systems and global distributors
+- Significant reduction in data exchanged
 
-Operational 🗂
+### Operational 🗂
 
-Substantial decrease in API management fees through direct network connections
-Reduced transaction costs compared to traditional distribution methods
-Developer time redirected from maintenance to innovation
-Easy and fast creation of new partnerships via the Camino Partner Showroom
+- Substantial decrease in API management fees through direct network connections
+- Reduced transaction costs compared to traditional distribution methods
+- Developer time redirected from maintenance to innovation
+- Easy and fast creation of new partnerships via the Camino Partner Showroom
 
-Business 📊
+### Business 📊
 
-New capability to bundle various travel products through standardized message types
-Ability to include optional extras and low-value products (wine bottles, massages, flowers, chocolate) into offerings
-Expanded network of potential trading partners within the Camino ecosystem
-New opportunities to deliver personalized travel experiences using digital identity, travel purpose information, and AI
-Ability to receive payments faster and with lower clearing costs by using EURe, ERC, and USDC
-Access to techy-savvy and crypto-native travel market
+- New capability to bundle various travel products through standardized message types
+- Ability to include optional extras and low-value products (wine bottles, massages, flowers, chocolate) into offerings
+- Expanded network of potential trading partners within the Camino ecosystem
+- New opportunities to deliver personalized travel experiences using digital identity, travel purpose information, and AI
+- Ability to receive payments faster and with lower clearing costs by using EURe, ERC, and USDC
+- Access to techy-savvy and crypto-native travel market
 
 ## Vision and anticipated impact
 
@@ -53,7 +57,7 @@ Avra Tours's immediate focus is establishing new business relationships and cost
 
 <div class="max-w-xl mx-auto">
     <div class="video-container">
-        <iframe src="https://www.youtube-nocookie.com/embed/UC0cHuA2GmiQiznQBQCB4PJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/f4Og-0BxhLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -65,9 +69,8 @@ Avra Tours demonstrates how traditional companies can use innovative products li
 
 Camino Messenger democratizes the travel industry. An established tour operator (like Alpitour, DERTOUR) or a growing OTA (like [Speap.io](http://speap.io/)) can expand their Greek portfolio by connecting to Avra Tours via the Camino Messenger. This connection grants direct access to comprehensive Greek travel inventory while saving on transaction fees and technical connection maintenance.
 
-Getting started is straightforward:
-
-visit Avra Tours' partner [profile](https://suite.camino.network/partners/AVRA%20Tours);
-follow the [integration guide](https://docs.camino.network/camino-messenger/bot/)
+### Getting started is straightforward:
+- visit Avra Tours' partner [profile](https://suite.camino.network/partners/AVRA%20Tours);
+- follow the [integration guide](https://docs.camino.network/camino-messenger/bot/)
 
 For any additional information or support with integration or onboarding, <a href="https://outlook.office365.com/book/CaminoNetworkDeepDive1hourSamAnke@chain4travel.com/">reach out</a> today to join the growing network and benefit from fluent travel distribution.
