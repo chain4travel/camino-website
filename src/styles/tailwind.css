@@ -178,7 +178,7 @@ section {
 }
 
 .card-primary-extra {
-  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border border-primary transition-colors;
+  @apply bg-gradient-to-br from-primary/5 to-secondary/30 border-2 border-primary transition-colors;
 }
 
 .card-gradient-primary {
