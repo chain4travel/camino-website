@@ -1,4 +1,4 @@
-<div class="text-base border-t border-gray-800 bg-gray-950">
+<div class="text-base border-t border-gray-800 bg-gray-950" x-data="{ whitepaperModal: false }">
     <div class="max-w-screen-xl px-8 py-12 mx-auto md:px-4">
         <div class="flex flex-wrap gap-6">
             <div class="flex-1"> 
@@ -44,7 +44,7 @@
                 <div class="flex flex-wrap items-center gap-3">
                     <a target="_blank" href="{{site.suite}}" class="button-secondary">Application Suite</a>
                     <a target="_blank" href="{{site.docs}}" class="button-secondary">Documentation</a>
-                    <a target="_blank" href="{{site.whitepaper}}" class="button-secondary">Whitepaper</a>
+                    <button @click="whitepaperModal = true" class="button-secondary">Whitepaper</button>
                 </div>
             </div>
             <div class="flex flex-wrap justify-between gap-16 mt-8 text-gray-400 whitespace-nowrap xl:mt-0">
@@ -62,6 +62,7 @@
                     <a class="py-1 hover:text-gray-200" href="/blog">Blog</a>
                     <a class="py-1 hover:text-gray-200" href="/news">News</a>
                     <a class="py-1 hover:text-gray-200" href="/entities">Entities</a>
+                    <span @click="whitepaperModal = true" class="py-1 hover:text-gray-200 cursor-pointer">Camino Whitepaper</span>
                 </div>
                 <div class="flex flex-col w-auto mb-8 md:mb-0">
                     <div class="mb-2 font-bold tracking-wide text-white">Organizational</div>
@@ -75,8 +76,11 @@
             </div>
         </div>
     </div>
+
+    {% include "modal_whitepaper.html" %}
+
 </div>
 
 <div class="flex items-center justify-center p-4 text-sm text-center text-gray-300 bg-gray-900">
-    © 2024 Camino Network Foundation. All rights reserved.
+    © 2025 Camino Network Foundation. All rights reserved.
 </div>

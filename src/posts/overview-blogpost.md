@@ -47,7 +47,7 @@ Given the functions of the CAM token described above, the Camino Network Foundat
 
 2. Per EU legislation, under MiCAR, the CAM token is neither considered an e-money nor an asset-referenced token due to the lack of backing with FIAT money or a combination of different assets; it is a utility token that serves as a protocol-specific transaction fee vessel and key to network validation.
 
-The distribution of CAM tokens has been carefully designed to ensure long-term sustainability and growth. [A significant amount](https://camino.network/ecosystem/) will be allocated to the community treasury to support ecosystem development, while other allocations will be reserved for strategic partners, team members, marketing activities, and future ecosystem expansion. You can learn more about the token from the [whitepaper](https://camino.network/static/docs/Camino_Network_Whitepaper.pdf#view=fit).
+The distribution of CAM tokens has been carefully designed to ensure long-term sustainability and growth. [A significant amount](https://camino.network/ecosystem/) will be allocated to the community treasury to support ecosystem development, while other allocations will be reserved for strategic partners, team members, marketing activities, and future ecosystem expansion. You can learn more about the token from the [Whitepaper Jan 2025](https://camino.network/static/docs/Camino_Paper.pdf#view=fit).
 
 
 ## Governance
@@ -78,5 +78,5 @@ Transparency is a core value of the ecosystem. Chain4Travel AG openly communicat
 
 In conclusion, Chain4Travel's creation of Camino Network and the establishment of the Camino Network Foundation have set the stage for a decentralized and transparent network that empowers businesses and travelers and places the broader community at the heart of the travel industry's future. This community-focused approach leads to collaboration, innovation, and trust, ensuring that Camino Network becomes a beacon of progress within the travel industry.
 
-Learn more details in the [Whitepaper](https://camino.network/static/docs/Camino_Network_Whitepaper.pdf#view=fit) or join the [community](https://bento.me/caminonetwork).
+Learn more details in the [Whitepaper Jan 2025](https://camino.network/static/docs/Camino_Network_Whitepaper.pdf#view=fit) or join the [community](https://bento.me/caminonetwork).
 

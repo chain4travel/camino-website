@@ -4,6 +4,7 @@ description:    Become a validator of Camino Network to secure the network, earn
 layout:         default
 placement:      validators
 keywords:       validator
+socialImage:    cn-validators
 ---
 
 <div class="hero-new">
@@ -111,7 +112,10 @@ keywords:       validator
                 <li>Know-Your-Business verification</li>
                 <li>Admittance by the Camino Network consortium</li>
             </ul>
-            <a target="_blank" href="{{site.whitepaper}}" class="button">Whitepaper</a>
+            <span x-data="{ whitepaperModal: false }" class="mb-4 md:mb-0 md:ml-2">
+                <button @click="whitepaperModal = true" class="button-secondary">Whitepaper</button>
+                {% include "modal_whitepaper.html" %}
+            </span>
         </div>
         <div class="md:col-start-8 col-span-12 md:col-span-5 order-first md:order-last rounded-lg ">
             <div class="video-container">

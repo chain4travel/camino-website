@@ -1,10 +1,46 @@
 ---
-title:          CAM Token — Where Travel Meets Crypto
+title:          CAM Token — Fueling Web3 Travel
 description:    Join the CAM airdrop campaigns with up to 1 million CAM in rewards. Complete quests and join 60,000+ participants in earning CAM tokens.
 layout:         default
 keywords:       blockchain, use cases
-socialImage:    social-token
+socialImage:    cn-token
 ---
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('tokenSupply', () => ({
+            circulatingSupply: '0',
+            totalSupply: '0',
+            price: '0',
+            
+            init() {
+                this.fetchData();
+                setInterval(() => this.fetchData(), 300000);
+            },
+
+            async fetchData() {
+                try {
+                    // Fetch circulating supply
+                    const csResponse = await fetch('https://supply.camino.network/cs');
+                    const csData = await csResponse.json();
+                    this.circulatingSupply = Number(csData.result).toLocaleString('en-US', {maximumFractionDigits: 0});
+                    
+                    // Fetch total supply
+                    const tsResponse = await fetch('https://supply.camino.network/ts');
+                    const tsData = await tsResponse.json();
+                    this.totalSupply = Number(tsData.result).toLocaleString('en-US', {maximumFractionDigits: 0});
+
+                    // Fetch price
+                    const priceResponse = await fetch('https://supply.camino.network/price');
+                    const priceData = await priceResponse.json();
+                    this.price = Number(priceData.result).toFixed(4);
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            }
+        }));
+    });
+</script>
 
 <div class="max-w-screen-xl px-4 mx-auto flex items-center">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center min-h-[50vh]" data-sal="zoom-out">
@@ -13,15 +49,12 @@ socialImage:    social-token
                 CAM Token
             </div>
             <div class="text-5xl md:text-6xl xl:text-7xl font-headline font-medium mt-6">
-                Where Travel Meets Crypto
+                Fueling Web3 Travel
             </div>
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
-                Join the CAM airdrop campaigns with up to 1 million CAM in rewards. Complete quests and join 60,000+ participants in earning CAM tokens.
+                Travelers can pay for web3 travel products with CAM and access exclusive offers. Travel businesses use the token to streamline operations, and access advanced B2B services within a decentralized network.
             </p>
-            <div class="flex items-center gap-4 justify-center md:justify-start">
-                <a href="#airdrops" class="button">Get CAM ↓</a>
-                <a href="#token-form" class="button-secondary">Get Whitelisted ↓</a>
-            </div>
+            <a href="#token-form" class="button">Get updates ↓</a>
         </div>
         <div class="relative h-full">
             <div class="left-0 top-0 bottom-0 h-1/2 md:h-full w-full md:w-1/2 absolute bg-gradient-to-t md:bg-gradient-to-l from-gray-950/0 to-gray-950"></div>
@@ -30,71 +63,40 @@ socialImage:    social-token
     </div>
 </div>
 
-<div class="py-12 md:py-24">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center" id="airdrops">
-        <h2 class="text-headline font-medium mb-4 text-center">
-            Airdrop Opportunities
-        </h2>
-        <p class="max-w-3xl mx-auto text-gray-300 text-center mb-8">
-            Join our ongoing airdrop campaigns on Zealy! With regular distributions, Zealy offers unique opportunities to earn CAM based on your activity.
-        </p>
-        <img src="/static/images/cardImages/generic-zealy.png" alt="" class="-mt-12 -mb-6 mx-auto max-w-52">
-        <a href="https://zealy.io/cw/caminonetwork" class="button text-sm">Get CAMs -></a>
-    </div>
-</div>
-
-
-<style>iframe{height:400px !important;}</style>
-<div class="py-12 md:py-24 bg-bottom bg-no-repeat bg-contain w-full h-full" style="background-image: url(/static/images/background/blocks-bottom.jpg);">
-    <div class="relative text-white" id="token-form">
-        <div class="max-w-screen-xl px-4 mx-auto">
-            <div class="bg-gradient-to-tr from-primary/50 to-secondary/50 backdrop-blur-lg p-2 rounded-3xl">
-                <div style="height: 400px;" class="border-2 border-white/25 rounded-2xl overflow-hidden" data-tf-live="01JAYR1NJJ8GMXKEVWSVG4NANH"></div>
-                <script src="//embed.typeform.com/next/embed.js"></script>
-            </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-screen-lg mx-auto px-4 py-12 md:py-24" x-data="tokenSupply">
+    <div class="card-primary rounded-2xl p-4 md:p-8">
+        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">Circulating Supply</h3>
+        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide">
+            <span x-text="circulatingSupply"></span> CAM
         </div>
     </div>
-</div>
-
-<div class="pt-12 md:pt-24">
-    <div class="max-w-screen-xl px-4 mx-auto">
-        <h2 class="text-headline font-medium md:mb-8 text-center">
-            CAM Token History
-        </h2>
-        <div class="w-full md:flex rounded-2xl p-8 md:text-center">
-            <div class="relative px-8 pt-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
-                    <img src="/static/images/camino-logo.gif" alt="">
-                </div>
-                <div class="md:mb-2 text-sm font-medium text-gray-400">Seed (Q1 2022)</div>
-                <div class="text-subheadline">4.95m USD</div>
-            </div>
-            <div class="relative px-8 pt-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
-                    <img src="/static/images/camino-logo.gif" alt="">
-                </div>
-                <div class="md:mb-2 text-sm font-medium text-gray-400">Pre-sale (Q3 2022)</div>
-                <div class="text-subheadline">5.1m USD</div>
-            </div>
-            <div class="relative px-8 pt-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
-                    <img src="/static/images/camino-logo.gif" alt="">
-                </div>
-                <div class="md:mb-2 text-sm font-medium text-gray-400">TGE (Q2 2023)</div>
-                <div class="text-subheadline">Mainnet go-live</div>
-            </div>
-            <div class="relative px-8 pt-8 pb-8 border-l-4 md:border-l-0 md:border-t-4 border-primary md:pt-16 md:w-1/4">
-                <div class="absolute bg-gray-950 border-2 rounded-full w-12 h-12 md:w-20 md:h-20 border-primary -left-6 md:left-1/2 md:-translate-x-1/2 md:-top-10">
-                    <img src="/static/images/camino-logo.gif" alt="">
-                </div>
-                <div class="md:mb-2 text-sm font-medium text-gray-400">Listing</div>
-                <div class="text-subheadline">TBA</div>
-            </div>
+    
+    <div class="card-primary rounded-2xl p-4 md:p-8">
+        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">Total Supply</h3>
+        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide">
+            <span x-text="totalSupply"></span> CAM
         </div>
     </div>
-</div>
+    
+    <div class="card-primary rounded-2xl p-4 md:p-8">
+        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">Maximum Supply</h3>
+        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide">
+            1,000,000,000 CAM
+        </div>
+    </div>
 
-{% include "section_tokenomics.html" %}
+    <div class="relative bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5 md:hover:border-white/25 transition-colors rounded-2xl p-4 md:p-8" x-data="{ isOpen: false }">
+        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">CAM Price</h3>
+        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide flex items-center justify-end gap-2">
+            $<span x-text="price"></span> <svg class="size-6 hover:opacity-50 cursor-pointer" @click="isOpen = true" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        {% include "modal_campricedisclaimer.html" %}
+        <div class="absolute -bottom-8 right-1 text-sm">
+            <a href="https://www.coingecko.com/en/coins/camino-network" target="_blank" class="text-gray-500 hover:underline hover:text-white" rel="noopener noreferrer">By Coingecko</a>
+        </div>
+    </div>
+
+</div>
 
 <div class="py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards-50.png);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto grid grid-cols-12 gap-4 md:gap-6 items-center">
@@ -114,6 +116,8 @@ socialImage:    social-token
         </div>
     </div>
 </div>
+
+{% include "section_tokenomics.html" %}
 
 <div class="flex flex-col gap-6 md:gap-12 py-8 md:py-12 border-y border-gray-800">
     {% include "logo-slider-validators.html" %}
@@ -159,7 +163,7 @@ socialImage:    social-token
             </ul>
             <div class="card-primary text-subtitle p-6 rounded-full flex items-center gap-6">
                 <div class="text-headline font-bold">10x</div>
-                <div>more efficient travel distribution and sourcing.</div>
+                <div class="text-xl md:text-2xl xl:text-3xl">more efficient travel distribution and sourcing</div>
             </div>
         </div>
         <div class="md:col-start-8 col-span-12 order-first md:order-last overflow-hidden rounded-lg">
@@ -168,18 +172,33 @@ socialImage:    social-token
     </div>
 </div>
 
+<style>iframe{height:400px !important;}</style>
+<div class="py-12 md:py-24">
+    <div class="relative text-white" id="token-form">
+        <div class="max-w-screen-xl px-4 mx-auto">
+            <div class="bg-gradient-to-tr from-primary/50 to-secondary/50 backdrop-blur-lg p-2 rounded-3xl">
+                <div style="height: 400px;" class="border-2 border-white/25 rounded-2xl overflow-hidden" data-tf-live="01JAYR1NJJ8GMXKEVWSVG4NANH"></div>
+                <script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="py-24 md:pt-24 md:pb-[32rem] bg-contain bg-bottom bg-no-repeat overflow-hidden" style="background-image: url(/static/images/glas/homepage-bg.svg);">
     <div class="max-w-screen-md px-8 md:px-4 mx-auto text-center">
-        <a href="#airdrops" class="button-secondary mb-4 md:mb-0">Get Airdrops</a>
         <a href="#token-form" class="button-secondary mb-4 md:mb-0 md:ml-2">Get Updates</a>
-        <a href="{{site.whitepaper}}" target="_blank" rel="noopener noreferrer" class="button-secondary mb-4 md:mb-0 md:ml-2">Whitepaper</a>
+        <span x-data="{ whitepaperModal: false }" class="mb-4 md:mb-0 md:ml-2">
+            <button @click="whitepaperModal = true" class="button-secondary">Whitepaper</button>
+            {% include "modal_whitepaper.html" %}
+        </span>
+
         <span x-data="{ isOpen: false }" class="mb-4 md:mb-0 md:ml-2">
             <button @click="isOpen = true" class="button-secondary">Disclaimer</button>
             <div x-cloak x-transition x-show="isOpen" class="bg-gray-900/75 mx-auto fixed top-0 left-0 w-full h-full flex items-center overflow-y-auto z-50">
                 <div class="max-w-2xl mx-auto p-4 rounded overflow-y-auto flex flex-col items-center justify-center text-left">
-                    <div class="bg-gray-800 text-sm rounded-2xl p-8 shadow-lg" @click.away="isOpen = false">
-                        <h2 class="text-2xl font-bold mb-4">Disclaimer</h2>
-                        <p class="mb-3">
+                    <div class="bg-gray-800 text-sm 4ounded-2xl p-6 md:p-8 shadow-lg" @click.away="isOpen = false">
+                        <h2 class="text-xs md:text-2xl fon:-bold mb164">Disclaimer</h2>
+                        <p class="base-3">
                             The content published on this site has not been reviewed, verified, approved, or endorsed by any regulatory or supervisory authority. Please note that the information provided may not be comprehensive and does not constitute a contractual relationship.
                         </p>
                         <p class="mb-3">
@@ -189,7 +208,7 @@ socialImage:    social-token
                             The content of this site is for informational purposes only. None of the information or materials on this site should be relied upon for any purpose or used as part of a professional recommendation. All information and materials are provided "AS IS" without warranty of any kind, either express or implied, to the fullest extent permitted by applicable law.
                         </p>
                         <p class="mb-3">
-                            Under no circumstances, including but not limited to negligence, shall Camino Network Foundation or any third party providing information or materials on this site, or their respective affiliates, be liable for any direct, special, or consequential damages arising out of the access, use, or inability to use the materials on this site”.
+                            Under no circumstances, including but not limited to negligence, shall Camino Network Foundation or any third party providing information or materials on this site, or their respective affiliates, be liable for any direct, special, or consequential damages arising out of the access, use, or inability to use the materials on this site"".
                         </p>
                         <button @click="isOpen = false" class="button-secondary">Close</button>
                     </div>
