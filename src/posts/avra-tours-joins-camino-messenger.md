@@ -67,7 +67,7 @@ Avra Tours demonstrates how traditional companies can use innovative products li
 
 ## How to work with Avra Tours via Camino Messenger
 
-Camino Messenger democratizes the travel industry. An established tour operator (like Alpitour, DERTOUR) or a growing OTA (like [Speap.io](http://speap.io/)) can expand their Greek portfolio by connecting to Avra Tours via the Camino Messenger. This connection grants direct access to comprehensive Greek travel inventory while saving on transaction fees and technical connection maintenance.
+Camino Messenger democratizes the travel industry. An established tour operator (like Alpitour, DERTOUR) or a growing OTA (like [Sleap.io](http://sleap.io/)) can expand their Greek portfolio by connecting to Avra Tours via the Camino Messenger. This connection grants direct access to comprehensive Greek travel inventory while saving on transaction fees and technical connection maintenance.
 
 ### Getting started is straightforward:
 - visit Avra Tours' partner [profile](https://suite.camino.network/partners/AVRA%20Tours);
