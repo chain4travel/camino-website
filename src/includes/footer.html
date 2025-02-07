@@ -1,4 +1,17 @@
-<div class="text-base border-t border-gray-800 bg-gray-950" x-data="{ whitepaperModal: false }">
+<div class="text-base border-t border-gray-800 bg-gray-950" x-data="{ 
+    whitepaperModal: false,
+    init() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('whitepaper') === 'true' || window.location.hash === '#whitepaper') {
+            this.whitepaperModal = true;
+        }
+        window.addEventListener('hashchange', () => {
+            if (window.location.hash === '#whitepaper') {
+                this.whitepaperModal = true;
+            }
+        });
+    }
+}">
     <div class="max-w-screen-xl px-8 py-12 mx-auto md:px-4">
         <div class="flex flex-wrap gap-6">
             <div class="flex-1"> 
