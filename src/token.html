@@ -52,7 +52,7 @@ socialImage:    cn-token
                 Fueling Web3 Travel
             </div>
             <p class="text-base lg:text-xl max-w-prose text-gray-300 my-6">
-                Travelers can pay for web3 travel products with CAM and access exclusive offers. Travel businesses use the token to streamline operations, and access advanced B2B services within a decentralized network.
+                Travel businesses use the token to streamline operations, and access advanced B2B services within a decentralized network.
             </p>
             <a href="#token-form" class="button">Get updates ↓</a>
         </div>
@@ -61,41 +61,6 @@ socialImage:    cn-token
             {% image "./src/static/images/cam-token-page-hero.jpg", "", "w-full h-full", "w-full h-full object-cover" %}
         </div>
     </div>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-screen-lg mx-auto px-4 py-12 md:py-24" x-data="tokenSupply">
-    <div class="card-primary rounded-2xl p-4 md:p-8">
-        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">Circulating Supply</h3>
-        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide">
-            <span x-text="circulatingSupply"></span> CAM
-        </div>
-    </div>
-    
-    <div class="card-primary rounded-2xl p-4 md:p-8">
-        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">Total Supply</h3>
-        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide">
-            <span x-text="totalSupply"></span> CAM
-        </div>
-    </div>
-    
-    <div class="card-primary rounded-2xl p-4 md:p-8">
-        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">Maximum Supply</h3>
-        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide">
-            1,000,000,000 CAM
-        </div>
-    </div>
-
-    <div class="relative bg-gradient-to-br from-primary/5 to-secondary/30 border border-white/5 md:hover:border-white/25 transition-colors rounded-2xl p-4 md:p-8" x-data="{ isOpen: false }">
-        <h3 class="text-sm lg:text-base uppercase font-semibold font-headline text-caminoSky tracking-wide mb-8 md:mb-16">CAM Price</h3>
-        <div class="text-2xl lg:text-4xl font-headline text-right font-semibold tracking-wide flex items-center justify-end gap-2">
-            $<span x-text="price"></span> <svg class="size-6 hover:opacity-50 cursor-pointer" @click="isOpen = true" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </div>
-        {% include "modal_campricedisclaimer.html" %}
-        <div class="absolute -bottom-8 right-1 text-sm">
-            <a href="https://www.coingecko.com/en/coins/camino-network" target="_blank" class="text-gray-500 hover:underline hover:text-white" rel="noopener noreferrer">By Coingecko</a>
-        </div>
-    </div>
-
 </div>
 
 <div class="py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards-50.png);">
