@@ -63,7 +63,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("spotlights", function(collectionsSpotlights) {
-    return collectionsSpotlights.getFilteredByGlob("./src/spotlights/*.html");
+    return collectionsSpotlights.getFilteredByGlob("./src/spotlights/*.html")
+      .sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
   });
 
   // Add date filter
