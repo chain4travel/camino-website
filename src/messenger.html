@@ -8,114 +8,215 @@ socialImage:    cn-messenger
 
 {% include "hero-messenger.html" %}
 
-<div class="pb-10 md:pb-24">
-    <div class="grid items-center max-w-screen-xl grid-cols-12 gap-4 px-8 mx-auto md:px-4 md:gap-6">
-        <div class="col-span-12 md:col-span-6">
-            <div class="text-headline">
-                Travel Connects Us, But Who Connects Travel?
-            </div>
-            <p class="my-4 md:my-6 text-gray-300">
-                Camino Messenger is the first B2B Web3 distribution platform designed to unify the travel ecosystem. It establishes a universal standard for buying and selling travel products—whether it's insurance, plane seats, ancillaries, or entire package holidays.
-            </p>
-            <a href="https://outlook.office365.com/owa/calendar/CaminoNetworkDeepDive1hourSamAnke@chain4travel.com/bookings/" target="_blank" class="button">Book Demo ↗</a>
-        </div>
-        <div class="order-first col-span-12 overflow-hidden rounded-lg md:col-span-6 md:order-last">
-            {% image "./src/static/images/glas/messenger-layers-3-2.png", "", "", "w-full object-contain" %}
-        </div>
-    </div>
+<div class="flex flex-col gap-6 md:gap-12 py-8 md:py-12 border-y border-gray-800">
+    {% include "logo-slider-validators.html" %}
+    {% include "logo-slider-grants.html" %}
 </div>
 
-<div class="pb-16 md:pb-32">
-    <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            <div class="card col-span-1 p-8 lg:p-12 rounded-2xl">
-                <div class="text-subheadline">Utilize & Profit from <span class="relative">Micropayments <div class="absolute h-1 md:h-1.5 bg-gradient-to-r from-primary/20 to-primary w-full left-0 bottom-0 -z-50 -rotate-1 rounded-full"></div></span></div>
-                <p class="text-gray-300 mt-4 md:mt-6 md:text-lg">Handle any check-size transaction cost-effectively.</p>
-            </div>
-            <div class="card col-span-1 p-8 lg:p-12 rounded-2xl">
-                <div class="text-subheadline">Buy & Sell with a <br> <span class="relative">Unified Data Standard <div class="absolute h-1 md:h-1.5 bg-gradient-to-r from-primary/20 to-primary w-full left-0 bottom-0 -z-50 -rotate-1 rounded-full"></div></span></div>
-                <p class="text-gray-300 mt-4 md:mt-6 md:text-lg">Cut cost spent on post-booking hustle.</p>
-            </div>
-        </div>
-        <a class="button mt-8" href="https://camino.network/camino-messenger-sets-the-global-standard-in-travel-data-management-and-distribution/" target="_blank" rel="noopener noreferrer">Learn more</a>
-    </div>
-</div>
-
-<div class="py-12 md:py-32 relative overflow-hidden border-t border-gray-800">
+<div class="py-12 md:py-32 relative overflow-hidden">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <div class="text-headline text-center">
-            Travel Distribution with Zero Complexity
+            Future-Proof Travel Sales
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mb-36">
-            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-0 shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-0 shadow-2xl shadow-primary/30 hover:border-white/30">
                 {% image "./src/static/images/cardImages/generic-02.png", "", "", "object-contain" %}
-                <div class="flex flex-col h-full p-6">
-                    <div class="font-headline font-medium text-2xl xl:text-3xl">Keep Bookings, Payments, and Confirmations in Order</div>
-                    <ul class="text-caminoSky text-sm my-8">
-                        <li>-> Book, pay, and confirm all in one transaction</li>
-                        <li>-> Avoid disputes with a single source of truth</li>
+                <div class="flex flex-col h-full p-6 pt-0">
+                    <div class="font-headline font-medium text-2xl xl:text-3xl">
+                        Scale your Pricing
+                    </div>
+                    <ul class="text-caminoSky mt-4">
+                        <li>React to market changes in real time</li>
+                        <li>Offer prices as unique as your customers</li>
+                        <li>Explore smarter pricing for greater returns</li>
                     </ul>
-                    <div class=""><a href="https://chain4travel.com/smart-contracts-the-key-to-trust-and-efficiency-in-travel/" target="_blank" class="button">Explore Smart Contracts</a></div>
                 </div>
             </div>
-            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-12 shadow-2xl">
+            <div class="col-span-1 flex flex-col card rounded-2xl shadow-2xl shadow-primary/30 hover:border-white/30">
                 {% image "./src/static/images/cardImages/generic-03.png", "", "", "object-contain" %}
-                <div class="flex flex-col h-full p-6">
-                    <div class="font-headline font-medium text-2xl xl:text-3xl">Keep Your Offers Updated by Syncing with Partner Updates</div>
-                    <ul class="text-caminoSky text-sm my-8">
-                        <li>-> Get live data about the status of any deal</li>
-                        <li>-> Provide customers with “fresh” offers only</li>
+                <div class="flex flex-col h-full p-6 pt-0">
+                    <div class="font-headline font-medium text-2xl xl:text-3xl">
+                        Scale your Sales
+                    </div>
+                    <ul class="text-caminoSky mt-4">
+                        <li>Connect directly with your partners </li>
+                        <li>Stay in control of every transaction</li>
+                        <li>Adapt quickly to market opportunities</li>
                     </ul>
-                    <div class=""><a href="https://chain4travel.com/camino-messenger-when-less-is-more/" target="_blank" class="button">Explore Use Cases</a></div>
                 </div>
             </div>
-            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-24 shadow-2xl">
+            <div class="col-span-1 flex flex-col card rounded-2xl shadow-2xl shadow-primary/30 hover:border-white/30">
                 {% image "./src/static/images/cardImages/generic-05.png", "", "", "object-contain" %}
-                <div class="flex flex-col h-full p-6">
-                    <div class="font-headline font-medium text-2xl xl:text-3xl">Speed Up Processing with 50% Smaller Message Sizes</div>
-                    <ul class="text-caminoSky text-sm my-8">
-                        <li>-> Avoid duplicated data</li>
-                        <li>-> Let your servers relax</li>
+                <div class="flex flex-col h-full p-6 pt-0">
+                    <div class="font-headline font-medium text-2xl xl:text-3xl">
+                        Scale your Profits
+                    </div>
+                    <ul class="text-caminoSky mt-4">
+                        <li>Keep more of what you earn</li>
+                        <li>Find new revenue streams</li>
+                        <li>Stay competitive and ready for the future </li>
                     </ul>
-                    <div class=""><a href="https://docs.camino.network/camino-messenger/introduction/index.html#why-protobuf" target="_blank" class="button">Explore the Integration Docs</a></div>
                 </div>
             </div>
         </div>
     </div>
-    <img class="absolute -z-50 top-0 left-0 right-0 w-screen object-cover" src="/static/images/glas/homepage-bg-2.svg" alt="">
+    <img class="absolute -z-50 top-0 left-0 right-0 w-screen object-cover rotate-180" src="/static/images/glas/homepage-bg-2.svg" alt="">
 </div>
 
-<!-- CardRow Start -->
-{% set cardRowTitle = "Stay competitive in the digital era" %}
-{% set cardRowParagraph = "" %}
-{% set cardRowSubtitle = "" %}
-{% set cardRowBgImage = "" %}
+<div class="py-10 md:py-24" x-data="{ verticalsActiveTab: 'verticalsTab1' }">
+    <div class="text-headline text-center mb-8">
+        Travel Distribution Web 3.0
+    </div>
+    <div class="flex max-w-screen-xl px-8 md:px-4 mx-auto gap-2 md:gap-3 flex-wrap items-center justify-center mb-8">
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-2 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="verticalsActiveTab = 'verticalsTab1'" :class="{ 'active bg-primary pointer-events-none' : verticalsActiveTab === 'verticalsTab1' }">
+            <div class="">Airlines</div>
+        </div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-2 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="verticalsActiveTab = 'verticalsTab2'" :class="{ 'active bg-primary pointer-events-none' : verticalsActiveTab === 'verticalsTab2' }">
+            <div class="">Hotels</div>
+        </div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-2 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="verticalsActiveTab = 'verticalsTab3'" :class="{ 'active bg-primary pointer-events-none' : verticalsActiveTab === 'verticalsTab3' }">
+            <div class="">TO's</div>
+        </div>
+        <div class="text-sm lg:text-base flex items-center gap-2 justify-center py-2 px-4 rounded-full border-2 border-primary/40 hover:bg-primary transition-all cursor-pointer" @click="verticalsActiveTab = 'verticalsTab4'" :class="{ 'active bg-primary pointer-events-none' : verticalsActiveTab === 'verticalsTab4' }">
+            <div class="">Agencies</div>
+        </div>
+    </div>
+    <div x-show="verticalsActiveTab === 'verticalsTab1'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-4">
+            <div class="md:w-1/2">
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Who is this use case for?</div>
+                <p class="mb-6 text-xl font-semibold">For Airlines ready to upgrade their sales without changing their existing systems.</p>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">What is the use case?</div>
+                <div class="mb-6 text-xl font-semibold">Cut airline's distribution costs to maximize revenue</div>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Why is your solution better?</div>
+                <ul class="flex flex-col gap-2">
+                    <li>-> Reduce distribution costs by up to 90%</li>
+                    <li>-> Speed up payment settlements by 50%</li>
+                    <li>-> Upsell at scale</li>
+                </ul>
+            </div>
+            <div class="video-container w-full md:w-1/2">
+                <iframe src="https://www.youtube-nocookie.com/embed/PTAQ6azDSRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div x-show="verticalsActiveTab === 'verticalsTab2'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-4">
+            <div class="md:w-1/2">
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Who is this use case for?</div>
+                <p class="mb-6 text-xl font-semibold">For hotel owners and executives focused on guests and their experiences.</p>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">What is the use case?</div>
+                <div class="mb-6 text-xl font-semibold">Pay less, sell more and keep guests loyal.</div>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Why is your solution better?</div>
+                <ul class="flex flex-col gap-2">
+                    <li>-> Build stronger global B2B partnerships</li>
+                    <li>-> Cut out the 3% card fees</li>
+                    <li>-> Feed AI with verified data for personalisation at scale</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 overflow-hidden">
+                {% image "./src/static/images/messenger-usecases-02.jpg", "", "", "border border-gray-800 rounded-2xl w-full h-full object-contain" %}
+            </div>
+        </div>
+    </div>
+    <div x-show="verticalsActiveTab === 'verticalsTab3'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-4">
+            <div class="md:w-1/2">
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Who is this use case for?</div>
+                <p class="mb-6 text-xl font-semibold">For tour operators evolving with trends, market shifts, and customer demands.</p>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">What is the use case?</div>
+                <div class="mb-6 text-xl font-semibold">More choice, faster offers at lower costs.</div>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Why is your solution better?</div>
+                <ul class="flex flex-col gap-2">
+                    <li>-> Access a wide range of travel products at low cost</li>
+                    <li>-> Launch new offers in real-time to meet customers’ needs</li>
+                    <li>-> Adjust prices on the fly to match market trends</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 overflow-hidden">
+                {% image "./src/static/images/messenger-usecases-03.jpg", "", "", "border border-gray-800 rounded-2xl w-full h-full object-contain" %}
+            </div>
+        </div>
+    </div>
+    <div x-show="verticalsActiveTab === 'verticalsTab4'" class="tab-content max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="card-primary p-6 md:p-8 rounded-2xl flex flex-col md:flex-row items-center gap-4">
+            <div class="md:w-1/2">
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Who is this use case for?</div>
+                <p class="mb-6 text-xl font-semibold">For travel agencies turning bookings into unforgettable experiences.</p>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">What is the use case?</div>
+                <div class="mb-6 text-xl font-semibold">Direct access to destinations and ancillaries</div>
+                
+                <div class="text-xs text-caminoSky font-bold tracking-wider uppercase mb-2">Why is your solution better?</div>
+                <ul class="flex flex-col gap-2">
+                    <li>-> Build loyalty programs that amplify clients’ satisfaction</li>
+                    <li>-> All your content in one place for comfortable sales</li>
+                    <li>-> Automate commission structures without hidden fees</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 overflow-hidden">
+                {% image "./src/static/images/messenger-usecases-04.jpg", "", "", "border border-gray-800 rounded-2xl w-full h-full object-contain" %}
+            </div>
+        </div>
+    </div>
+</div>
 
-{% set cardFirstImage = "generic-09" %}
-{% set cardFirstTitle = "Launch travel products and services fast: up to 90% reduced time-to-market" %}
-{% set cardFirstText = "" %}
-{% set cardFirstLinkLabel = "" %}
+<div class="py-12 md:py-32 relative overflow-hidden">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="text-headline text-center">
+            Become your travel e-commerce
+        </div>
+        <div class="text-title text-center mt-4">
+            Cut distribution costs by 90% and fully control offers, pricing, sales, and profits.
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-12 relative">
+            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-0 shadow-2xl shadow-primary/30 !border-primary/30">
+                {% image "./src/static/images/cardImages/generic-03.png", "", "", "object-contain hidden md:block" %}
+                <div class="flex flex-col h-full p-6 md:pt-0">
+                    <div class="font-headline font-medium text-2xl xl:text-3xl text-center">
+                        Connect directly with travel partners globally
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 flex flex-col card !border-2 rounded-2xl shadow-2xl shadow-primary/30 !border-primary/60">
+                {% image "./src/static/images/cardImages/generic-01.png", "", "", "object-contain hidden md:block" %}
+                <div class="flex flex-col h-full p-6 md:pt-0">
+                    <div class="font-headline font-medium text-2xl xl:text-3xl text-center">
+                        Trade existing or launch new travel products
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 flex flex-col card !border-4 rounded-2xl shadow-2xl shadow-primary/30 !border-primary/90">
+                {% image "./src/static/images/cardImages/generic-04.png", "", "", "object-contain hidden md:block" %}
+                <div class="flex flex-col h-full p-6 md:pt-0">
+                    <div class="font-headline font-medium text-2xl xl:text-3xl text-center">
+                        Speed up your cash flow with instant payments
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -z-10 top-0 md:top-[calc(50%-4px)] left-[calc(50%-4px)] md:left-0 w-2 md:w-full h-full md:h-2 bg-gradient-to-b md:bg-gradient-to-r from-primary/30 to-primary/90"></div>
+        </div>
+        <div class="mx-auto text-center mt-12">
+            <a href="https://outlook.office365.com/owa/calendar/CaminoNetworkDeepDive1hourSamAnke@chain4travel.com/bookings/" class="button mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Request a Demo ↗</a>
+        </div>
+    </div>
+</div>
 
-{% set cardSecondImage = "generic-14" %}
-{% set cardSecondTitle = "Introduce new message types for innovative travel products" %}
-{% set cardSecondText = "" %}
-{% set cardSecondLink = "" %}
-{% set cardSecondLinkLabel = "" %}
 
-{% set cardThirdImage = "generic-12" %}
-{% set cardThirdTitle = "Customize transaction fees based on business agreements with partners" %}
-{% set cardThirdText = "" %}
-{% set cardThirdLink = "" %}
-{% set cardThirdLinkLabel = "" %}
 
-{% set cardFourthImage = "generic-11" %}
-{% set cardFourthTitle = "Trade travel products globally with CAM token even in financially underdeveloped countries " %}
-{% set cardFourthText = "" %}
-{% set cardFourthLink = "" %}
-{% set cardFourthLinkLabel = "" %}
-
-{% include "cardRow.html" %}
-<!-- CardRow End -->
+<div class="py-12 md:py-32 xl:py-48 relative border-y border-gray-800 overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url(/static/images/glas/homepage-bg-3.svg);">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
+        <div class="text-headline">Join the Camino Community</div>
+        <p class="mt-4 mb-6 md:text-xl">Join travel tech innovators exploring new business opportunities available with web3 technologies.</p>
+        <a href="{{site.bento}}" class="button-secondary" target="_blank" rel="noopener noreferrer">Join Camino Community</a>
+    </div>
+</div>
 
 <div class="py-10 md:py-24" x-data="{ activeTab: 'tab1' }">
     <div class="text-headline text-center mb-8">
