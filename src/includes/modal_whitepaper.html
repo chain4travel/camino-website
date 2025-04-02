@@ -1,18 +1,17 @@
 <div x-cloak x-transition x-show="whitepaperModal" @x-show.transition.in.duration.300ms="window.location.hash = '#whitepaper'" @x-show.transition.out.duration.300ms="window.location.hash = ''" class="fixed inset-0 bg-gray-900/75 flex items-center justify-center z-50">
     <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-xs md:max-w-md w-full">
         <div class="flex justify-between items-center mb-4">
-            <h3 class="text-xl font-medium">Camino Litepaper</h3>
-            <button @click="whitepaperModal = false; window.location.hash = ''" class="button-secondary">X</button>
+            <h3 class="text-xl font-medium">Camino Whitepaper</h3>
+            <button @click="whitepaperModal = false" class="button-secondary">X</button>
         </div>
-        <div class="mb-4 hidden">
+        <div class="mb-4">
             <a href="{{site.micapaper}}" target="_blank" rel="noopener noreferrer" class="w-full button">
                 Whitepaper Jan 2025 ->
-                <div class="text-xs">(Current version - under review)</div>
             </a>
         </div>
         <div class="mb-4">
             <a href="{{site.whitepaper}}" target="_blank" rel="noopener noreferrer" class="w-full button-secondary">
-                Litepaper Jan 2024 ->
+                Whitepaper Jan 2024 ->
                 <div class="text-xs">(no longer valid)</div>
             </a>
         </div>
