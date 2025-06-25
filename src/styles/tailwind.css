@@ -181,6 +181,11 @@ section {
   @apply bg-gradient-to-br from-primary/5 to-secondary/30 border-2 border-primary transition-colors;
 }
 
+.card-summer {
+  @apply bg-gradient-to-b from-[#FFD65C]/20 to-[#FF4800]/20 border border-white/20 transition-colors;
+}
+
+
 .card-gradient-primary {
   @apply bg-gradient-to-r from-transparent to-primary/20 border border-[#123e66] transition-colors backdrop-blur;
 }
