@@ -323,3 +323,200 @@ details[open] summary.features::after {
 .button-chain4travel {
   @apply text-center whitespace-nowrap inline-block items-center transition-all bg-[#fa6400] hover:brightness-125 font-medium text-white py-2 px-4 rounded-xl;
 }
+
+/* BRIDGE WIDGET */
+
+.widget-wrapper {
+  @apply p-0 bg-transparent;
+}
+
+.widget-wrapper bridge-widget {
+  display: block;
+}
+
+/* Header styles */
+.widget-wrapper .header {
+  text-align: center;
+  @apply text-gray-50 mb-8;
+}
+
+.widget-wrapper .header h1 {
+  @apply text-3xl md:text-4xl font-headline font-medium mb-3 text-white;
+}
+
+.widget-wrapper .header p {
+  @apply text-gray-300 text-base md:text-lg;
+}
+
+/* Exchange container styles */
+.widget-wrapper .container-wrapper {
+  @apply h-auto;
+}
+
+.widget-wrapper .exchange-container {
+  @apply bg-gray-950 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-2xl p-4 text-white ring-8 ring-primary/20 border border-gray-600 min-h-max;
+}
+
+.widget-wrapper .exchange-input-container {
+  @apply bg-gray-900/80 backdrop-blur-lg border border-white/10 rounded-2xl mb-4 text-white;
+}
+
+/* Label styles */
+.widget-wrapper .label-container label {
+  @apply text-gray-300 font-medium;
+}
+
+/* Token selector styles */
+
+.widget-wrapper .token-symbol {
+  @apply text-white;
+}
+
+.widget-wrapper .token-trigger-button {
+  @apply !bg-gray-800 text-white border border-white/10 hover:border-white/20 transition-colors rounded-xl;
+}
+
+.widget-wrapper .token-dropdown {
+  @apply bg-gray-900 border border-white/10 rounded-xl;
+}
+
+.widget-wrapper .token-dropdown-item {
+  @apply text-gray-300 hover:bg-gray-800/50 transition-colors;
+}
+
+/* Input styles */
+.widget-wrapper .amount-input {
+  @apply bg-transparent text-white placeholder-gray-500 pl-2;
+}
+
+.widget-wrapper .amount-input-field {
+  @apply bg-transparent text-white placeholder-gray-500;
+}
+
+.widget-wrapper .amount-messages {
+  @apply relative z-50
+}
+
+/* Button styles */
+.widget-wrapper .exchange-button {
+  @apply bg-gradient-to-r from-primary to-secondary hover:brightness-125 text-white font-medium rounded-xl transition-all;
+}
+
+.widget-wrapper .exchange-button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Balance and fee display */
+.widget-wrapper .usd-value {
+  @apply text-gray-400 text-sm;
+}
+
+.widget-wrapper .user-balance {
+  @apply text-gray-400 text-sm;
+}
+
+.widget-wrapper .fee-display {
+  @apply bg-gray-800/50 border border-white/10 rounded-xl py-2 px-3 text-gray-300 mb-1;
+}
+
+.widget-wrapper .fee-display span {
+  @apply text-gray-300 p-0;
+}
+
+.widget-wrapper .fee-display span .mat-icon {
+  @apply !text-caminoSky mr-1;
+}
+
+/* Balance error messages */
+.widget-wrapper .balance-error {
+  @apply text-red-400 text-sm;
+}
+
+.widget-wrapper .balance-error.warning {
+  @apply text-orange-400;
+}
+
+/* Footer styles */
+.widget-wrapper .footer {
+  @apply mt-8 text-center text-gray-400 text-sm;
+}
+
+/* Status messages */
+.widget-wrapper .status {
+  @apply bg-gray-800/50 border border-white/10 rounded-xl p-4 mt-5 text-gray-300 font-mono text-sm;
+}
+
+.widget-wrapper .status.success {
+  @apply bg-green-500/20 border-green-500/50 text-green-400;
+}
+
+.widget-wrapper .status.error {
+  @apply bg-red-500/20 border-red-500/50 text-red-400;
+}
+
+/* Processing and completed states */
+.widget-wrapper .processing-content,
+.widget-wrapper .completed-content {
+  @apply text-white;
+}
+
+.widget-wrapper .processing-content h2,
+.widget-wrapper .completed-content h2 {
+  @apply text-white font-headline font-medium;
+}
+
+.widget-wrapper .processing-content p,
+.widget-wrapper .completed-content p {
+  @apply text-gray-300;
+}
+
+.widget-wrapper .transaction-details {
+  @apply text-gray-300;
+}
+
+.widget-wrapper .transaction-item {
+  @apply text-gray-300;
+}
+
+.widget-wrapper .hash-link {
+  @apply text-primary hover:text-secondary transition-colors;
+}
+
+.widget-wrapper .go-back-button {
+  @apply bg-gradient-to-r from-primary to-secondary hover:brightness-125 text-white font-medium rounded-xl transition-all;
+}
+
+/* Chain info styles */
+.widget-wrapper .chain-info {
+  @apply text-gray-300;
+}
+
+.widget-wrapper .chain-info img {
+  @apply rounded-full;
+}
+
+/* Material icons within widget */
+.widget-wrapper mat-icon {
+  @apply text-gray-400;
+}
+
+.widget-wrapper .direction-icon {
+  @apply !my-0;
+}
+
+.widget-wrapper .direction-icon mat-icon {
+  @apply text-primary;
+}
+
+/* Info icon */
+.widget-wrapper .info-icon {
+  @apply text-gray-400;
+}
+
+.widget-wrapper .wallet-input-field {
+  @apply bg-transparent text-white placeholder-gray-500 pl-2;
+}
+
+.widget-wrapper .action-buttons {
+  @apply mt-2;
+}

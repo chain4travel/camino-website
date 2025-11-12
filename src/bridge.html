@@ -1,0 +1,75 @@
+---
+title:          "Bridge: Transfer tokens across blockchain networks"
+description:    Bridge tokens between Ethereum and Camino Network. A simple web component for seamless cross-chain token transfers.
+layout:         default
+keywords:       bridge, token bridge, cross-chain, ethereum, camino network
+socialImage:    cn-token
+---
+
+<div class="py-12 md:py-24 bg-cover md:bg-contain bg-top bg-no-repeat" style="background-image: url(/static/images/heroBgImages/cards.png);">
+    <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
+            <div class="text-center md:text-left" data-sal="slide-down">
+                <div class="text-caminoSky uppercase font-headline text-base md:text-xl font-medium tracking-widest mb-4">
+                    Camino Bridge Tokens
+                </div>
+                <div class="text-4xl xl:text-5xl text-headline">
+                    Transfer Tokens Across <br> Blockchain Networks
+                </div>
+                <p class="text-gray-300 mt-6 text-base lg:text-xl">
+                    Seamlessly bridge tokens between Ethereum and Camino Network using our simple bridge widget. 
+                    Connect your wallet and transfer tokens in just a few clicks.
+                </p>
+            </div>
+
+            <div class="widget-wrapper">
+                <bridge-widget></bridge-widget>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto mt-16 md:mt-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="card-primary rounded-2xl p-6 md:p-8" data-sal="slide-up" data-sal-delay="200">
+                    <div class="text-subheadline mb-4">How It Works</div>
+                    <ol class="list-decimal list-inside space-y-3 text-gray-300">
+                        <li>Connect your Web3 wallet (MetaMask, etc.)</li>
+                        <li>Select the source chain (Ethereum or Camino)</li>
+                        <li>Enter the token amount you want to bridge</li>
+                        <li>Select the target chain</li>
+                        <li>Confirm the transaction in your wallet</li>
+                    </ol>
+                </div>
+
+                <div class="card-primary rounded-2xl p-6 md:p-8" data-sal="slide-up" data-sal-delay="300">
+                    <div class="text-subheadline mb-4">Requirements</div>
+                    <ul class="list-disc list-inside space-y-3 text-gray-300">
+                        <li>Modern browser with Web Components support</li>
+                        <li>Web3 wallet extension installed</li>
+                        <li>Sufficient balance for gas fees</li>
+                        <li>Tokens available on the source chain</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto mt-12">
+            <div class="card-primary rounded-2xl p-6 md:p-8" data-sal="fade-up" data-sal-delay="400">
+                <div class="text-subheadline mb-4">Security & Fees</div>
+                <p class="text-gray-300 mb-4">
+                    All bridge transactions are secured by smart contracts and verified by the network validators. 
+                    Bridge fees are calculated based on network conditions and gas prices at the time of transaction.
+                </p>
+                <p class="text-gray-300">
+                    Always verify the transaction details in your wallet before confirming. 
+                    Double-check the source and target chains to ensure you're bridging to the correct network.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="/static/js/bridge-widget.js?v={% version %}" defer></script>
+
