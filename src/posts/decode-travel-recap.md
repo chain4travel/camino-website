@@ -29,7 +29,7 @@ The event was hosted in the spacious headquarters of the [w3.fund](https://www.w
 
 ## Agenda
 
-The four-day event was designed to create a comfortable space for innovation at the intersection of blockchain technology and travel. Starting on April 23 with an initial kick-off, the hackathon included a series of challenge presentations and team-building activities, followed by a relaxing pizza night sponsored by [CaminoScan](https://caminoscan.com/). 
+The four-day event was designed to create a comfortable space for innovation at the intersection of blockchain technology and travel. Starting on April 23 with an initial kick-off, the hackathon included a series of challenge presentations and team-building activities, followed by a relaxing pizza night sponsored by [CaminoScan](https://caminoscan.com/).
 
 ![decode4.jpeg](/static/images/decode4.jpeg)
 
@@ -84,7 +84,7 @@ HolidayCheck is a digital enterprise that offers solutions for planning and book
 
 ### Challenge: Proof-of-stay when submitting reviews
 
-HolidayCheck focused on solving the issue of travel review integrity. They identified the review system involved three main actors: the hotel, the user, and the review platform. The existing systems are easy to manipulate either independently or collaboratively. This leads to fake reviews that can deceive consumers and unfairly benefit brands. 
+HolidayCheck focused on solving the issue of travel review integrity. They identified the review system involved three main actors: the hotel, the user, and the review platform. The existing systems are easy to manipulate either independently or collaboratively. This leads to fake reviews that can deceive consumers and unfairly benefit brands.
 
 Leveraging Camino Network and [Zero-Knowledge Proofs](https://chain4travel.com/check-in-to-the-future-of-travel-with-secured-private-data-and-shrunk-queues/) (ZKP), teams need to build a verifiable system for travel reviews confirming that a reviewer has genuinely stayed at the hotel.
 
@@ -107,7 +107,7 @@ The challenge was created to address the difficulty in engaging guests in marine
 
 ## Camino Network Foundation
 
-[Camino Network Foundation](https://foundation.camino.network/) is a non-profit organization behind Camino Network, the layer 1 blockchain designed for the travel industry, based in Zug, Switzerland. It facilitates the development and growth of the web3 travel ecosystem through educational, bug bounty and grant programs, community events, and media outreach.
+[Camino Network Foundation](https://foundation.camino.network/) is a non-profit organization behind Camino Network, the layer 1 blockchain designed for the travel industry, based in Zug, Switzerland. It facilitates the development and growth of the web3 travel ecosystem through educational and grant programs, community events, and media outreach.
 
 ## Challenge: optimizing the booking process with Camino Messenger
 
@@ -120,7 +120,7 @@ This challenge aims to reshape travel product distribution via wallet-2-wallet c
 
 ## Judges
 
-The panel of judges was formed from recognized leaders in their respective fields within the travel and technology sectors. 
+The panel of judges was formed from recognized leaders in their respective fields within the travel and technology sectors.
 
 - Konark Modi, VP of Technology at HolidayCheck
 - Sylvia Aran, Director of Technical Sales at Polygon ID
@@ -142,14 +142,14 @@ Blockchain developers received guidance to better understand the travel tech bac
 
 > It was great to see how every project made such a big step forward code-wise. This time, teams all brought different tech stacks, which was nice to see through various interesting approaches and technologies used. I've learned a lot from hackers just by looking through their projects.
 Guys supporting the hackers did a great job; most teams, in the end, had working projects that integrated a wide range of technologies. Even though I couldn't be present there, from my perspective, the organization levelled up as well. Looking forward to events in the future and hope I can be present at the next ones.
-> 
-> 
+>
+>
 > ***Daniel, Bytepitch***
 >
 
 ## Decode Travel in numbers
 
-Over the course of the event, more than 50 participants from over 10 different countries came together to learn, build and bond, pushing the boundaries of travel technologies. 
+Over the course of the event, more than 50 participants from over 10 different countries came together to learn, build and bond, pushing the boundaries of travel technologies.
 
 ![decode6.jpeg](/static/images/decode6.jpeg)
 
