@@ -72,14 +72,6 @@
         "placement": "ecosystem"
     },
     {
-        "name": "Tom Dillon",
-        "company": "CEO A3M Global Monitoring GmbH",
-        "slug": "tomdillon",
-        "shortText": "Today's solutions are however limited, both technically and economically posing challenges to serve...",
-        "longText": "Leading the field in digital crisis communication whilst streamlining and structuring the flow of information between source and the travelling customer. Our task at A3M is to provide the travelling public with punctual, accurate, in-depth and time critical information and this at a very high frequency. A task we are mastering daily in close cooperation with our tour operators, travel retailers, OBEs and corporate customers. Today's solutions are however limited, both technically and economically posing challenges to serve customer demands going forward. This is one reason why blockchain is so important for A3M's future business model.",
-        "placement": "ecosystem"
-    },
-    {
         "name": "Manuel Saballus",
         "company": "CEO Peakwork GmbH",
         "slug": "manuelsaballus",
@@ -142,14 +134,6 @@
         "shortText": "Once you understand how blockchain works and the new possibilities...",
         "longText": "Once you understand how blockchain works and the new possibilities it offers in IT, production and sales, you will be thrilled. I am already looking forward to the first concrete implementations in our company.",
         "placement": "validators"
-    },
-    {
-        "name": "Michele Ruberl",
-        "company": "Senior IT Leader Alpitour",
-        "slug": "micheleruberl",
-        "shortText": "Alpitour recognizes blockchain as one of the technologies...",
-        "longText": "Alpitour recognizes blockchain as one of the technologies to be watched closely as part of its approach to systematic innovation, and has experimented successfully with the first hotel NFT booking in the world and other initiatives around loyalty and collaborative sourcing in destination.",
-        "placement": "subpage"
     },
     {
         "name": "Norman Rose",

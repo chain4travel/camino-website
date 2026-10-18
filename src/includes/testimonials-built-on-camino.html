@@ -1,0 +1,60 @@
+<div class="pt-16 md:pt-24 pb-10">
+    <div class="max-w-screen-xl px-8 mx-auto md:px-4">
+        <div class="grid grid-cols-3 gap-x-12 gap-y-20 md:gap-y-28 w-full relative">
+            {% for x in testimonials %}
+            <div class="col-span-3 md:col-span-1" x-data="{ {{x.slug}}Modal:false }">
+                <div class="p-8 h-full card flex flex-col gap-4 items-center text-center rounded-xl">
+                    {% set avatarPath = "./src/static/images/people/" + x.slug + ".png" %}
+                    <div class="aspect-square rounded-full flex-shrink-0 overflow-hidden size-24 -mt-12 md:size-32 md:-mt-24">
+                        {% image avatarPath, x.name, "", "w-full h-full object-cover" %}
+                    </div>
+                    <p class="md:text-xl line-clamp-3 md:line-clamp-none">
+                        “{{x.shortText}}”
+                    </p>
+                    <div class="text-sm text-gray-300 md:text-base md:my-4">
+                        <strong>{{x.name}}</strong> 
+                        <p>{{x.company}}</p>
+                    </div>
+
+                    <div class="flex items-center cursor-pointer text-caminoSky hover:text-white" @click="{{x.slug}}Modal = true">
+                        <svg aria-hidden="true" fill="none" stroke="currentColor" class="w-6 h-6 mr-2" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        Read More
+                    </div>
+                </div>
+
+                <div x-cloak x-transition x-show="{{x.slug}}Modal" class="fixed top-0 left-0 z-50 flex items-center w-full h-full mx-auto overflow-y-auto bg-gray-950/75 backdrop-blur-md">
+                    <div class="flex flex-col items-center justify-center max-w-3xl p-4 mx-auto overflow-y-auto rounded">
+                        <div class="p-1 bg-gradient-to-r from-primary to-secondary rounded-2xl">
+                            <div class="relative p-4 text-white bg-gray-900 shadow-lg rounded-2xl md:p-8" @click.away="{{x.slug}}Modal = false">
+    
+                                <span class="absolute top-0 right-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer hover:opacity-70" @click="{{x.slug}}Modal = false">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"/></svg>
+                                </span>
+    
+                                <p class="md:text-2xl">
+                                    "{{x.longText}}"
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    {% set avatarPath = "./src/static/images/people/" + x.slug + ".png" %}
+                                    {% image avatarPath, x.name, "w-12 md:w-24 h-12 md:h-24 rounded-full overflow-hidden", "" %}
+                                    <div class="ml-3">
+                                        <div class="text-xl font-bold">
+                                            {{x.name}}
+                                        </div>
+                                        <div class="text-sm">
+                                            {{x.company}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

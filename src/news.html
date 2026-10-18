@@ -1,6 +1,6 @@
 ---
-title:          News about the web3 travel ecosystem of Camino Network.
-description:    Find recent articles, interviews, reports, and reviews about the web3 travel ecosystem of Camino Network. Follow the recent touristic blockchain development.
+title:          Camino Network in the press
+description:    Articles, interviews and reports about Camino Network in the press, 2022 to 2025.
 layout:         default
 keywords:       web3, travel, news
 socialImage:    cn-news
@@ -10,21 +10,21 @@ socialImage:    cn-news
 <div class="py-16 md:py-32">
     <div class="mx-auto max-w-screen-xl text-center">
         <div class="font-medium text-5xl lg:text-6xl xl:text-7xl font-headline tracking-tight">
-            Camino Network in the News
+            Camino Network in the Press
         </div>
     </div>
 </div>
 
 <section class="flex flex-col gap-8">
-    {% for a in newsarticles.data | sort(attribute='attributes.date') | reverse %}
-    {% set x = a.attributes %}
-    <a class="p-4 card-primary rounded-2xl flex flex-col md:flex-row group" target="_blank" href="{{x.linkToArticle}}">
-        <img class="flex-shrink-0 md:w-1/3 rounded-xl group-hover:brightness-110 transition-all object-cover" src="https://api.strapi.camino.network/{{x.image.data.attributes.url}}" alt="cryptowisser cover image">
+    {% for x in newsarticles %}
+    {% if x.link %}<a class="p-4 card-primary rounded-2xl flex flex-col md:flex-row group" target="_blank" rel="noopener noreferrer" href="{{x.link}}">{% else %}<div class="p-4 card-primary rounded-2xl flex flex-col md:flex-row group">{% endif %}
+        <img class="flex-shrink-0 md:w-1/3 rounded-xl group-hover:brightness-110 transition-all object-cover" src="{{x.image}}" alt="" loading="lazy">
         <div class="p-0 mt-8 md:px-12 md:py-8 md:mt-0">
-            <div class="text-subheadline">{{x.title}}</div>
-            <p class="my-3 md:my-6 text-gray-300 line-clamp-2">{{x.articleTeaser}}</p>
-            <div class="button-secondary">Read full Article ↗</div>
+            <p class="text-sm text-gray-400">{{x.date}}{% if x.outlet %} · {{x.outlet}}{% endif %}</p>
+            <div class="text-subheadline mt-2">{{x.title}}</div>
+            <p class="my-3 md:my-6 text-gray-300 line-clamp-2">{{x.teaser}}</p>
+            {% if x.link %}<div class="button-secondary">Read full Article ↗</div>{% endif %}
         </div>
-    </a>
+    {% if x.link %}</a>{% else %}</div>{% endif %}
     {% endfor %}
 </section>

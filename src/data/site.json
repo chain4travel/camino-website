@@ -1,7 +1,12 @@
 {
+    "url": "https://camino.network",
+    "channels": {
+        "discord": true,
+        "telegram": false
+    },
     "linkedin": "https://www.linkedin.com/company/caminonetwork/",
     "discord": "https://discord.gg/camino",
-    "twitter": "https://twitter.com/camino_network",
+    "twitter": "https://x.com/camino_network",
     "telegram": "https://t.me/camino_network",
     "telegramAnnouncements": "https://t.me/caminoannouncements",
     "youtube": "https://www.youtube.com/@caminonetwork",
@@ -9,9 +14,13 @@
     "wallet": "https://wallet.camino.network",
     "docs": "https://docs.camino.network",
     "explorer": "https://explorer.camino.network",
+    "caminoscan": "https://caminoscan.com/",
     "suite": "https://suite.camino.network",
     "partners": "https://suite.camino.network/partners",
+    "rpcC": "https://api.camino.network/ext/bc/C/rpc",
+    "rpcP": "https://api.camino.network/ext/bc/P",
+    "rpcX": "https://api.camino.network/ext/bc/X",
+    "chainId": "500",
     "whitepaper": "https://camino.network/static/docs/Camino_Paper.pdf#view=fit",
-    "micapaper": "https://camino.network/static/docs/Camino_Network_Whitepaper.pdf#view=fit",
-    "walletwizard": "https://wallet-wizard.camino.network"
+    "micapaper": "https://camino.network/static/docs/Camino_Network_Whitepaper.pdf#view=fit"
 }

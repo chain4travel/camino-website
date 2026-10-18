@@ -1,6 +1,6 @@
 ---
-title:          Web3 travel tech developers building on Camino Network.
-description:    Join the web3 travel tech and blockchain developers building travel products and decentralized travel applications on Camino Network infrastructure.
+title:          Build on Camino Network
+description:    EVM-compatible C-Chain, RPC endpoints, SDKs and documentation for building on Camino Network.
 layout:         default
 placement:      developers
 keywords:       Web3, travel tech, developers
@@ -20,15 +20,14 @@ socialImage:    cn-developer
                 The Camino community is building a new travel ecosystem to shape the future of the industry with new efficient solutions creating personalized travel experiences for billions of people around the world.
             </p>
             <div class="inline-flex justify-center md:justify-left">
-                <a href="https://hexens.io/audits#camino" class="button" target="_blank" rel="noopener noreferrer">Security Audit</a>
-                <a class="button-secondary ml-2" href="{{site.docs}}" target="_blank" rel="noopener noreferrer">Documentation</a>
+                <a class="button" href="{{site.docs}}" target="_blank" rel="noopener noreferrer">Documentation</a>
+                <a href="#rpc" class="button-secondary ml-2">RPC endpoints</a>
             </div>
         </div>
         {% image "./src/static/images/glas/developer-notebook.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
     </div>
 </div>
 
-{% include "logo-slider.html" %}
 
 <div class="py-12 md:py-32">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
@@ -56,7 +55,7 @@ socialImage:    cn-developer
                 <div class="flex gap-2 group">
                     {% image "./src/static/images/glas/settings-icon.png", "", "flex-shrink-0", "size-12 lg:size-16 object-contain group-hover:size-20 group-hover:animate-spin transition-all" %}
                     <div>
-                        <div class="text-title">Exchange (X) Chainn</div>
+                        <div class="text-title">Exchange (X) Chain</div>
                         <p class="text-gray-400">Direct Acyclic Graph (DAG) Consensus, Fast Transactions, Manage Assets</p>
                     </div>
                 </div>
@@ -119,8 +118,8 @@ socialImage:    cn-developer
     {% set cardFirstLinkLabel = "" %}
 
     {% set cardSecondImage = "generic-05" %}
-    {% set cardSecondTitle = "Adoption" %}
-    {% set cardSecondText = "High adoption of blockchain solutions in the travel industry will result in high demand for devs" %}
+    {% set cardSecondTitle = "Open source" %}
+    {% set cardSecondText = "Node, wallet, explorer and SDKs are public on GitHub." %}
     {% set cardSecondLinkLabel = "" %}
 
     {% set cardThirdImage = "generic-08" %}
@@ -151,7 +150,6 @@ socialImage:    cn-developer
                 <li>Full EVM compatibility, supporting every Smart-Contract based standard. For instance ERC-20 (Fungible Token), ERC-721 (Non-Fungible Token), ERC-1155 (Fungibility-Agnostic Token) and ERC-2771 (Secure Meta-Transactions).</li>
                 <li>Easy adoption of Ethereum Smart contracts and dApps</li>
             </ul>
-            <a href="{{site.discord}}" target="_blank" class="button" rel="noopener noreferrer">Join Discord</a>
         </div>
         <div class="md:col-start-8 col-span-6 order-first md:order-last overflow-hidden rounded-lg">
             {% image "./src/static/images/glas/chip-camino.png", "", "", "w-full object-contain" %}
@@ -169,14 +167,49 @@ socialImage:    cn-developer
                 Camino Messenger
             </div>
             <p class="text-gray-300 my-4 md:my-6">
-                Camino Messenger is a sleek, fast, and cost-effective communication platform for B2B travel distribution. Built on top of Camino Network, it streamlines peer-to-peer interactions with the help of bots, standardized message types, micropayments, and microservices, enabling personalized offers at scale.
+                Camino Messenger is a B2B transactional distribution layer for travel. Built on top of Camino Network, it streamlines peer-to-peer interactions with the help of bots, standardized message types, micropayments, and microservices, enabling personalized offers at scale.
             </p>
-            <a href="/community#contact" class="button">Request a Demo</a>
+            <a href="/messenger/#how-it-works" class="button">How it works</a>
         </div>
     </div>
 </div>
 
-{% include "testimonial-four.html" %}
+
+<div class="py-10 md:py-24" id="rpc">
+    <div class="max-w-screen-md px-8 md:px-4 mx-auto">
+        <div class="text-headline text-center mb-8 md:mb-12">Networks &amp; RPC</div>
+        <div class="border border-white/20 rounded-2xl overflow-hidden text-sm md:text-base">
+            <div class="grid grid-cols-[minmax(120px,0.6fr)_1fr] border-b border-white/20 bg-white/5">
+                <div class="p-3 md:p-4 font-headline font-medium text-gray-200"></div>
+                <div class="p-3 md:p-4 font-headline font-medium text-gray-200 border-l border-white/20">Mainnet</div>
+            </div>
+            <div class="grid grid-cols-[minmax(120px,0.6fr)_1fr] border-b border-white/20">
+                <div class="p-3 md:p-4 text-gray-300">C-Chain RPC</div>
+                <div class="p-3 md:p-4 border-l border-white/20 break-all"><code>{{site.rpcC}}</code></div>
+            </div>
+            <div class="grid grid-cols-[minmax(120px,0.6fr)_1fr] border-b border-white/20">
+                <div class="p-3 md:p-4 text-gray-300">Chain ID</div>
+                <div class="p-3 md:p-4 border-l border-white/20"><code>{{site.chainId}}</code></div>
+            </div>
+            <div class="grid grid-cols-[minmax(120px,0.6fr)_1fr] border-b border-white/20">
+                <div class="p-3 md:p-4 text-gray-300">Currency</div>
+                <div class="p-3 md:p-4 border-l border-white/20">CAM</div>
+            </div>
+            <div class="grid grid-cols-[minmax(120px,0.6fr)_1fr] border-b border-white/20">
+                <div class="p-3 md:p-4 text-gray-300">Explorer</div>
+                <div class="p-3 md:p-4 border-l border-white/20 break-all"><a class="text-caminoSky hover:underline" href="{{site.explorer}}" target="_blank" rel="noopener noreferrer">{{site.explorer | replace("https://", "")}}</a></div>
+            </div>
+            <div class="grid grid-cols-[minmax(120px,0.6fr)_1fr] border-b border-white/20">
+                <div class="p-3 md:p-4 text-gray-300">Community explorer</div>
+                <div class="p-3 md:p-4 border-l border-white/20 break-all"><a class="text-caminoSky hover:underline" href="{{site.caminoscan}}" target="_blank" rel="noopener noreferrer">CaminoScan ↗</a>, C-Chain explorer with token and transaction detail</div>
+            </div>
+            <div class="grid grid-cols-[minmax(120px,0.6fr)_1fr]">
+                <div class="p-3 md:p-4 text-gray-300">P-Chain / X-Chain API</div>
+                <div class="p-3 md:p-4 border-l border-white/20 break-all"><code>{{site.rpcP}}</code>, <code>{{site.rpcX}}</code></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- CardRow Start -->
     {% set cardRowTitle = "Network Services" %}
@@ -196,8 +229,8 @@ socialImage:    cn-developer
     {% set cardSecondLinkLabel = "" %}
 
     {% set cardThirdImage = "generic-11" %}
-    {% set cardThirdTitle = "Data Storage" %}
-    {% set cardThirdText = "Creating travel products requires low-cost data storage. For this purpose, a cryptographic data storage implementation based on Swarm will be provided. This ensures flexibility for changing data and the selective disclosure of information to parties off-chain" %}
+    {% set cardThirdTitle = "Public RPC" %}
+    {% set cardThirdText = "Mainnet C-Chain JSON-RPC at " + site.rpcC + " (chain ID " + site.chainId + "), plus P-Chain and X-Chain APIs." %}
     {% set cardThirdLinkLabel = "" %}
 
     {% set cardFourthImage = "" %}
@@ -213,6 +246,6 @@ socialImage:    cn-developer
         <div class="text-headline mb-6 md:mb-12">Further Developer Resources</div>
         <a href="{{site.docs}}" class="button mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Documentation</a>
         <a href="{{site.github}}" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="{{site.discord}}" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Discord</a>
+        {% if site.channels.discord %}<a href="{{site.discord}}" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Ask the community ↗</a>{% endif %}
     </div>
 </div>

@@ -1,6 +1,6 @@
 ---
-title:          Recent blockchain and  web3 travel ecosystem news.
-description:    Follow the recent news from the blockchain and web3 travel ecosystem of Camino Network on community growth, new blockchain use cases, tech updates, and more.
+title:          "Horizons, the Camino Network blog"
+description:    Posts on the development, features and applications of Camino Network, 2023 to 2025.
 layout:         default
 keywords:       blockchain, travel, news
 socialImage:    cn-blog
@@ -16,7 +16,7 @@ socialImage:    cn-blog
                 Horizons by Camino Network
             </div>
             <p class="my-6 text-base text-gray-300 lg:text-xl max-w-prose">
-                With Horizons, you will stay informed about the rapid development, innovative features, decentralized applications launching on Camino Network and everything web3 in travel.
+                Posts on the development, features and applications of Camino Network and on web3 in travel, from 2023 to 2025.
             </p>
         </div>
         {% image "./src/static/images/glas/paper-blog.png", "", "order-first md:order-last flex-shrink-0 md:w-1/2 md:-mr-24", "" %}
@@ -28,7 +28,6 @@ socialImage:    cn-blog
         {% for post in collections.blogposts | sort(attribute='data.postDate') | reverse %}
         <a href="/{{post.data.permalink}}" class="col-span-12 md:col-span-4 block overflow-hidden rounded-2xl hover:border-primary transition-colors {% if loop.first %}card-gradient-primary ring-4 ring-primary/50 {% else %}card{% endif %}">
             <div class="p-4 md:p-8 relative">
-                {% if loop.first %}<div class="absolute bg-primary text-wrap px-3 py-2 top-0 right-0 rounded-bl-xl">New!</div>{% endif %}
                 <p class="mb-3 text-gray-400">{{ post.data.postDate | dateFormat }}</p>
                 <div class="mb-3 text-title md:line-clamp-3">{{post.data.title}}</div>
                 <p class="text-gray-400 line-clamp-2">{{post.data.description}}</p>

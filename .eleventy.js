@@ -50,6 +50,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/img')
   eleventyConfig.addPassthroughCopy('src/static')
   eleventyConfig.addPassthroughCopy('src/robots.txt')
+  eleventyConfig.addPassthroughCopy('src/_headers')
+
+  // Footer links follow site.channels.discord / site.channels.telegram; /code-of-conduct/ exists only if at least one is true
+  const channels = require('./src/data/site.json').channels
+  if (!(channels.discord || channels.telegram)) {
+    eleventyConfig.ignores.add('src/code-of-conduct.html')
+  }
 
   eleventyConfig.addPassthroughCopy('src/Camino-Media-Kit.zip')
 

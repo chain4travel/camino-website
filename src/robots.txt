@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://www.camino.network/sitemap.xml
+Sitemap: https://camino.network/sitemap.xml

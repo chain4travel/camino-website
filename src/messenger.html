@@ -1,12 +1,24 @@
 ---
-title:          Camino Messenger is a B2B travel distribution platform.
-description:    Camino Messenger is the web3 travel distribution, data management, and B2B communication platform with blockchain connectivity and unified data standards.
+title:          "Camino Messenger: B2B transactional distribution for travel"
+description:    Camino Messenger lets travel suppliers and distributors search, book and pay through one connection. It continues as the open-source Travel Token Messenger.
 layout:         default
 keywords:       Travel distribution, messenger
 socialImage:    cn-messenger
 ---
 
 {% include "hero-messenger.html" %}
+
+<div class="max-w-screen-lg px-8 md:px-4 mx-auto" id="travel-token-messenger">
+    <div class="card-primary rounded-2xl p-6 md:p-8">
+        <div class="text-title">Camino Messenger continues as Travel Token Messenger</div>
+        <p class="mt-3 text-gray-300">Camino Messenger is a B2B transactional distribution layer for travel, first built on Camino Network: suppliers and distributors connect once, then search, book and pay through the same connection. Its development continues as Travel Token Messenger, open source under LGPLv3.</p>
+        <p class="mt-4 text-sm text-gray-300 flex flex-wrap gap-x-4 gap-y-2">
+            <a class="text-caminoSky hover:underline" href="https://travel-token.net/en/products/travel-token-messenger" target="_blank" rel="noopener noreferrer">Travel Token Messenger ↗</a>
+            <a class="text-caminoSky hover:underline" href="https://traveltokenmarketplace.github.io/travel-token-messenger-docs/" target="_blank" rel="noopener noreferrer">Documentation ↗</a>
+            <span>Source code: <a class="text-caminoSky hover:underline" href="https://github.com/TravelTokenMarketplace/travel-token-messenger-bot" target="_blank" rel="noopener noreferrer">bot</a>, <a class="text-caminoSky hover:underline" href="https://github.com/TravelTokenMarketplace/travel-token-messenger-protocol" target="_blank" rel="noopener noreferrer">protocol</a>, <a class="text-caminoSky hover:underline" href="https://github.com/TravelTokenMarketplace/travel-token-messenger-contracts" target="_blank" rel="noopener noreferrer">contracts</a></span>
+        </p>
+    </div>
+</div>
 
 <div class="py-16 md:py-32 relative">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
@@ -23,7 +35,7 @@ socialImage:    cn-messenger
             </div>
             <div class="card-primary col-span-1 p-6 rounded-2xl">
                 <div class="text-title">Proven network & standards</div>
-                <p class="text-gray-300 mt-4 text-sm">Built for complex B2B transactions & payments across 50+ integrated partners. Agents access this foundation through MCP deployment alongside the Messenger infrastructure, rather than building payment & integration systems from scratch.</p>
+                <p class="text-gray-300 mt-4 text-sm">Built for complex B2B transactions and payments between many partners. Agents use the same booking and payment messages as any other participant, rather than building payment and integration systems from scratch.</p>
             </div>
             <div class="card-primary col-span-1 p-6 rounded-2xl">
                 <div class="text-title">Multi-party coordination</div>
@@ -52,7 +64,7 @@ socialImage:    cn-messenger
             <p class="my-4 md:my-6 text-gray-300">
                 Camino Messenger is the first B2B Web3 distribution platform designed to unify the travel ecosystem. It establishes a universal standard for buying and selling travel products—whether it's insurance, plane seats, ancillaries, or entire package holidays.
             </p>
-            <a href="https://outlook.office365.com/owa/calendar/CaminoNetworkDeepDive1hourSamAnke@chain4travel.com/bookings/" target="_blank" class="button">Book Demo ↗</a>
+            <a href="#how-it-works" class="button">How it works ↓</a>
         </div>
         <div class="order-first col-span-12 overflow-hidden rounded-lg md:col-span-6 md:order-last">
             {% image "./src/static/images/glas/messenger-layers-3-2.png", "", "", "w-full object-contain" %}
@@ -76,44 +88,36 @@ socialImage:    cn-messenger
     </div>
 </div>
 
-<div class="py-12 md:py-32 relative overflow-hidden border-t border-gray-800">
+<div class="py-12 md:py-32 relative overflow-hidden border-t border-gray-800" id="how-it-works">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto">
         <div class="text-headline text-center">
-            Travel Distribution with Zero Complexity
+            How the Messenger <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">works</span>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mb-36">
-            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-0 shadow-2xl">
-                {% image "./src/static/images/cardImages/generic-02.png", "", "", "object-contain" %}
-                <div class="flex flex-col h-full p-6">
-                    <div class="font-headline font-medium text-2xl xl:text-3xl">Keep Bookings, Payments, and Confirmations in Order</div>
-                    <ul class="text-caminoSky text-sm my-8">
-                        <li>-> Book, pay, and confirm all in one transaction</li>
-                        <li>-> Avoid disputes with a single source of truth</li>
-                    </ul>
-                    <div class=""><a href="https://chain4travel.com/smart-contracts-the-key-to-trust-and-efficiency-in-travel/" target="_blank" class="button">Explore Smart Contracts</a></div>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12 md:mb-24">
+            <div class="card-primary rounded-2xl p-6 md:p-8">
+                <div class="text-caminoSky font-headline text-2xl">1</div>
+                <div class="text-title mt-2">Partner Plugin: connect once</div>
+                <p class="text-gray-300 mt-3 text-sm md:text-base">A partner plugin translates a company's booking system into the Messenger protocol: versioned Protocol Buffers message types for accommodation, transport, activities and product lists. Each company integrates once and reaches every counterparty that speaks the same protocol.</p>
             </div>
-            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-12 shadow-2xl">
-                {% image "./src/static/images/cardImages/generic-03.png", "", "", "object-contain" %}
-                <div class="flex flex-col h-full p-6">
-                    <div class="font-headline font-medium text-2xl xl:text-3xl">Keep Your Offers Updated by Syncing with Partner Updates</div>
-                    <ul class="text-caminoSky text-sm my-8">
-                        <li>-> Get live data about the status of any deal</li>
-                        <li>-> Provide customers with “fresh” offers only</li>
-                    </ul>
-                    <div class=""><a href="https://chain4travel.com/camino-messenger-when-less-is-more/" target="_blank" class="button">Explore Use Cases</a></div>
-                </div>
+            <div class="card-primary rounded-2xl p-6 md:p-8">
+                <div class="text-caminoSky font-headline text-2xl">2</div>
+                <div class="text-title mt-2">Bot and Matrix: one bot per company</div>
+                <p class="text-gray-300 mt-3 text-sm md:text-base">Each company runs its own bot, on its own infrastructure. The bot holds the company's keys, signs every request and response, and exchanges them with other bots over Matrix, an end-to-end encrypted, federated transport.</p>
             </div>
-            <div class="col-span-1 flex flex-col card rounded-2xl relative md:top-24 shadow-2xl">
-                {% image "./src/static/images/cardImages/generic-05.png", "", "", "object-contain" %}
-                <div class="flex flex-col h-full p-6">
-                    <div class="font-headline font-medium text-2xl xl:text-3xl">Speed Up Processing with 50% Smaller Message Sizes</div>
-                    <ul class="text-caminoSky text-sm my-8">
-                        <li>-> Avoid duplicated data</li>
-                        <li>-> Let your servers relax</li>
-                    </ul>
-                    <div class=""><a href="https://docs.camino.network/camino-messenger/introduction/index.html#why-protobuf" target="_blank" class="button">Explore the Integration Docs</a></div>
-                </div>
+            <div class="card-primary rounded-2xl p-6 md:p-8">
+                <div class="text-caminoSky font-headline text-2xl">3</div>
+                <div class="text-title mt-2">CMAccount: identity on-chain</div>
+                <p class="text-gray-300 mt-3 text-sm md:text-base">Every participant has a smart-contract account (CMAccount) that lists its bots, the services it offers and its payment settings. Counterparties verify it on-chain before they trade.</p>
+            </div>
+            <div class="card-primary rounded-2xl p-6 md:p-8">
+                <div class="text-caminoSky font-headline text-2xl">4</div>
+                <div class="text-title mt-2">Booking token: search, book, cancel</div>
+                <p class="text-gray-300 mt-3 text-sm md:text-base">A distributor searches many suppliers in parallel, validates the chosen offer, then books it. The booking is minted as a token, so delivery and payment happen together; cancellations follow the same path.</p>
+            </div>
+            <div class="card-primary rounded-2xl p-6 md:p-8">
+                <div class="text-caminoSky font-headline text-2xl">5</div>
+                <div class="text-title mt-2">Cheques: pay per request</div>
+                <p class="text-gray-300 mt-3 text-sm md:text-base">Distributors pay suppliers per request with signed cheques (EIP-712) that accumulate off-chain and settle on-chain in batches, so high request volumes do not congest the chain. Settlement runs in stablecoins such as EURe or in the network token.</p>
             </div>
         </div>
     </div>
@@ -161,7 +165,7 @@ socialImage:    cn-messenger
                 <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10">
                     <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Architecture</div>
                     <div class="p-3 md:p-4 text-sm md:text-base text-gray-400 border-l border-white/20">Centralized servers and proprietary API structure.</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Distributed ledger (Layer-1 blockchain) with Camino Messenger as a decentralized connectivity layer. From siloed APIs to a unified messaging standard</div>
+                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Distributed ledger (Layer-1 blockchain) with Camino Messenger as a decentralized connectivity layer. From siloed APIs to a unified transaction standard</div>
                 </div>
                 <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10 bg-white/5">
                     <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Integration</div>
@@ -174,26 +178,6 @@ socialImage:    cn-messenger
                     <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Companies retain ownership; credentials and transactions are verified on-chain. Enhances transparency, data integrity, and partner trust.</div>
                 </div>
 
-                <!-- Governance & Ownership Section -->
-                <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-y border-white/20 bg-primary/20">
-                    <div colspan="3" class="col-span-3 px-3 md:px-4 py-2 text-base md:text-lg font-headline font-medium text-gray-100">🏫 Governance & Ownership</div>
-                </div>
-                <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10">
-                    <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Ownership</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-400 border-l border-white/20">Privately owned company (traditional SaaS aggregator).</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Industry-managed and self-autonomous network; nodes operated by travel companies.</div>
-                </div>
-                <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10 bg-white/5">
-                    <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Control</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-400 border-l border-white/20">Controlled by the aggregator</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Controlled collectively by the Camino DAO (governance by industry airlines/participants).</div>
-                </div>
-                <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10">
-                    <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Trust Model</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-400 border-l border-white/20">Users trust the aggregator as an intermediary.</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Trust is algorithmic and verifiable (on-chain verification, decentralized governance).</div>
-                </div>
-
                 <!-- Economics & Cost Structure Section -->
                 <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-y border-white/20 bg-primary/20">
                     <div colspan="3" class="col-span-3 px-3 md:px-4 py-2 text-base md:text-lg font-headline font-medium text-gray-100">💰 Economics & Cost Structure</div>
@@ -201,7 +185,7 @@ socialImage:    cn-messenger
                 <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10">
                     <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Revenue Model</div>
                     <div class="p-3 md:p-4 text-sm md:text-base text-gray-400 border-l border-white/20">Transaction and integration fees paid to the aggregator.</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Ultra-low network fees, jointly controlled by airlines/members (no central profit extraction). Eliminates rent-seeking intermediaries; value stays within the ecosystem.</div>
+                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Ultra-low network fees (no central profit extraction). Eliminates rent-seeking intermediaries; value stays within the ecosystem.</div>
                 </div>
                 <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10 bg-white/5">
                     <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Payments</div>
@@ -216,7 +200,7 @@ socialImage:    cn-messenger
                 <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10 bg-white/5">
                     <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Security</div>
                     <div class="p-3 md:p-4 text-sm md:text-base text-gray-400 border-l border-white/20">Central point of failure; dependent on the aggregator's infrastructure.</div>
-                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Decentralized, Proof-of-Stake-and-Authority consensus ensures high resilience. improves uptime, redundancy, and data protection.</div>
+                    <div class="p-3 md:p-4 text-sm md:text-base text-gray-200 border-l border-white/20 gradient">Decentralized, Proof-of-Stake-and-Authority consensus ensures high resilience, improves uptime, redundancy, and data protection.</div>
                 </div>
                 <div class="grid grid-cols-[minmax(100px,0.5fr)_1fr_1fr] gap-0 border-b border-white/10">
                     <div class="p-3 md:p-4 text-sm md:text-base font-medium text-gray-300">Innovation</div>
@@ -345,8 +329,13 @@ socialImage:    cn-messenger
 
 <div class="py-24 md:pt-24 md:pb-[32rem] bg-contain bg-bottom bg-no-repeat overflow-hidden" style="background-image: url(/static/images/glas/homepage-bg.svg);">
     <div class="max-w-screen-xl px-8 md:px-4 mx-auto text-center">
-        <div class="text-headline mb-6 md:mb-12">Start scaling direct sales today</div>
-        <a href="https://outlook.office365.com/owa/calendar/CaminoNetworkDeepDive1hourSamAnke@chain4travel.com/bookings/" class="button mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Book Demo ↗</a>
-        <a href="{{site.github}}" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div class="text-headline mb-4">Documentation and source code</div>
+        <p class="text-gray-300 max-w-prose mx-auto mb-8">The Messenger is developed today as Travel Token Messenger, open source under LGPLv3.</p>
+        <a href="https://travel-token.net/en/products/travel-token-messenger" class="button mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Travel Token Messenger ↗</a>
+        <a href="https://traveltokenmarketplace.github.io/travel-token-messenger-docs/" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Documentation ↗</a>
+        <a href="https://github.com/TravelTokenMarketplace/travel-token-messenger-bot" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Bot ↗</a>
+        <a href="https://github.com/TravelTokenMarketplace/travel-token-messenger-protocol" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Protocol ↗</a>
+        <a href="https://github.com/TravelTokenMarketplace/travel-token-messenger-contracts" class="button-secondary ml-2 mb-4 md:mb-0" target="_blank" rel="noopener noreferrer">Contracts ↗</a>
+        <p class="mt-8 text-sm text-gray-400">Original sources: <a class="text-caminoSky hover:underline" href="https://docs.camino.network/camino-messenger/introduction/" target="_blank" rel="noopener noreferrer">Camino Messenger documentation ↗</a> · <a class="text-caminoSky hover:underline" href="https://github.com/chain4travel/camino-messenger-bot" target="_blank" rel="noopener noreferrer">camino-messenger-bot</a> · <a class="text-caminoSky hover:underline" href="https://github.com/chain4travel/camino-messenger-protocol" target="_blank" rel="noopener noreferrer">camino-messenger-protocol</a> · <a class="text-caminoSky hover:underline" href="https://github.com/chain4travel/camino-messenger-contracts" target="_blank" rel="noopener noreferrer">camino-messenger-contracts</a></p>
     </div>
 </div>

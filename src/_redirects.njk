@@ -1,0 +1,17 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+/partner/*                      /partners/   301
+/community                      /history/    301
+/community/                     /history/    301
+/entities                       /history/    301
+/entities/                      /history/    301
+/quests-terms-and-conditions    /terms/      301
+/quests-terms-and-conditions/   /terms/      301
+/contact-success                /            301
+/contact-success/               /            301
+{%- if not (site.channels.discord or site.channels.telegram) %}
+/code-of-conduct                /            301
+/code-of-conduct/               /            301
+{%- endif %}
