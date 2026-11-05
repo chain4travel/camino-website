@@ -29,7 +29,7 @@ The event was hosted in the spacious headquarters of the [w3.fund](https://www.w
 
 ## Agenda
 
-The four-day event was designed to create a comfortable space for innovation at the intersection of blockchain technology and travel. Starting on April 23 with an initial kick-off, the hackathon included a series of challenge presentations and team-building activities, followed by a relaxing pizza night sponsored by [CaminoScan](https://caminoscan.com/).
+The four-day event was designed to create a comfortable space for innovation at the intersection of blockchain technology and travel. Starting on April 23 with an initial kick-off, the hackathon included a series of challenge presentations and team-building activities, followed by a relaxing pizza night sponsored by [CaminoScan](https://web.archive.org/web/20260607192225/https://caminoscan.com/).
 
 ![decode4.jpeg](/static/images/decode4.jpeg)
 
